@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="adding readMe and timeLog.md" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="adding OneNote" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,6 +131,7 @@
       <updated>1612032671104</updated>
       <workItem from="1612032678308" duration="6267000" />
       <workItem from="1612156074086" duration="790000" />
+      <workItem from="1612248126731" duration="192000" />
     </task>
     <task id="LOCAL-00001" summary="adding readMe and timeLog.md">
       <created>1612156785894</created>
@@ -139,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612156785894</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="adding OneNote">
+      <created>1612248266500</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1612248266500</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,9 +163,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding readMe and timeLog.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding readMe and timeLog.md" />
+    <MESSAGE value="adding OneNote" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding OneNote" />
   </component>
 </project>
