@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="adding log4j2.properties">
-      <change afterPath="$PROJECT_DIR$/.idea/intellij-javadocs-4.0.1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TestClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timeLog.md" beforeDir="false" afterPath="$PROJECT_DIR$/timeLog.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +157,8 @@
       <workItem from="1612249312789" duration="621000" />
       <workItem from="1612338538344" duration="7255000" />
       <workItem from="1612632175694" duration="4326000" />
-      <workItem from="1612639510796" duration="793000" />
+      <workItem from="1612639510796" duration="830000" />
+      <workItem from="1612641982756" duration="373000" />
     </task>
     <task id="LOCAL-00001" summary="adding readMe and timeLog.md">
       <created>1612156785894</created>
@@ -205,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612346304768</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="adding log4j2.properties">
+      <created>1612640628172</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1612640628172</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
