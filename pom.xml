@@ -15,6 +15,7 @@
 
   <properties>
     <maven.compiler.release>11</maven.compiler.release>
+    <log4j-version>2.10.0</log4j-version>
     <junit.version>4.12</junit.version>
     <javax.version>7.0</javax.version>
     <!-- TODO make sure your mysql driver version matches your mysql version -->
@@ -23,6 +24,17 @@
   </properties>
 
   <dependencies>
+    <!-- Logging Log4J dependencies  -->
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-api</artifactId>
+      <version>${log4j-version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>${log4j-version}</version>
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
