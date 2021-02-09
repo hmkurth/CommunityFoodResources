@@ -19,34 +19,46 @@ NOT MODIFIED YET!!
    pages.  JDBCRealm used for authentication (users, users_roles, and roles table).
 1. If authentication fails, show error message/page.
 
-### View Trail Report
+### View WELCOME, Home page
 
-1. Page sends a request to view trail reports servlet along with criteria
-   (all, region, date, name, etc).
-1. Servlet uses the trailreports dao to select reports according to criteria
+1. Page sends a request to view resources servlet along with criteria
+   (all, zipcode search, date, type, resource owner/provider  etc).
+1. Servlet uses the resourcereports dao to select reports according to criteria
 1. Dao performs select and creates report objects from results.
 1. Dao returns list of report matching criteria to servlet.
-1. Servlet sends list back to trail reports jsp.
-1. Trail reports jsp displays the reports.
+1. Servlet sends list back to resource reports jsp.
+1. resource reports jsp displays the reports.
 1. Consider paging results so page does not get super long and too much data
    is sent.
 
-### View Trail
+### View individual Resources
 
-1. Page sends a request to view trail servlet along with criteria
+1. Page sends a request to view individual Resources servlet along with criteria
    (all, region, name, etc).
-1. Servlet uses the trail dao to select trails according to criteria
-1. Dao performs select and creates trail objects from results.
-1. Dao returns list of trails matching criteria to servlet.
-1. Servlet sends list back to trail  jsp.
-1. Trail reports jsp displays the trails.
-1. Consider paging results so page does not get super long and too much data
-   is sent.
+1. Servlet uses the individual Resources dao to select individual Resources according to criteria
+        ###########can't this be done by a link to the individual resources? 
+         ###if i'm only choosing one result to view at a time????#######
+1. Dao performs select and creates individual Resources objects from results.
+1. Dao returns  individual Resources matching criteria/button id??? to servlet.
+1. Servlet sends list back to individual Resources  jsp.
+1. individual Resources reports jsp displays the trails.
+
 
 ### About
 
 1. Static page - html only?
 1. Consider making contact info configurable.
+
+
+
+
+
+###DO I HAVE TIME TO DO THE ADD RESOURCES?  WOULD I WANT TO??????  
+##Admin could review, could grant certain people add priveledges
+
+
+
+###
 
 ### Add Trail Report
 1. Option only available to logged in users with proper role

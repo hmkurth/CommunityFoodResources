@@ -4,21 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="updating timelog">
-      <change afterPath="$PROJECT_DIR$/DesignDocs/applicationFlow.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignDocs/cfrlRoughERD.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignDocs/dbDiagramExample.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignDocs/projectPlan.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/img_8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/readMe.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timeLog.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/timeLog.md" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="adding rough draft or ERD">
+      <change beforePath="$PROJECT_DIR$/DesignDocs/applicationFlow.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/applicationFlow.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +172,7 @@
       <workItem from="1612639510796" duration="830000" />
       <workItem from="1612641982756" duration="1373000" />
       <workItem from="1612745975871" duration="441000" />
-      <workItem from="1612837909625" duration="1594000" />
+      <workItem from="1612837909625" duration="3048000" />
     </task>
     <task id="LOCAL-00001" summary="adding readMe and timeLog.md">
       <created>1612156785894</created>
@@ -250,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612746485445</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="adding rough draft or ERD">
+      <created>1612844548444</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1612844548444</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,6 +273,7 @@
     <MESSAGE value="adding log4j2.properties" />
     <MESSAGE value="adding junit dependencies" />
     <MESSAGE value="updating timelog" />
-    <option name="LAST_COMMIT_MESSAGE" value="updating timelog" />
+    <MESSAGE value="adding rough draft or ERD" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding rough draft or ERD" />
   </component>
 </project>
