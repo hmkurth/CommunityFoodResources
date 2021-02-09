@@ -9,4 +9,4 @@ Solution:  With the myriad of resources; public, governmental, private, communit
 •	?not sure if this is MVP, but volunteer search opportunities
 •	Log in
 •	Get updates from local resources, news, events
-![img_2.png](img_2.png)
+![img_2.png](DesignDocs/img_2.png)

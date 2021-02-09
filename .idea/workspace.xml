@@ -4,11 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="adding junit dependencies">
-      <change afterPath="$PROJECT_DIR$/img_8.png" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="updating timelog">
+      <change afterPath="$PROJECT_DIR$/DesignDocs/applicationFlow.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignDocs/cfrlRoughERD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignDocs/dbDiagramExample.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignDocs/projectPlan.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timeLog.md" beforeDir="false" afterPath="$PROJECT_DIR$/timeLog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/img_8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/readMe.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timeLog.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/timeLog.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +71,23 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\DesignDocs" />
+    </key>
+  </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 8.5.57" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="11">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment />
@@ -158,7 +184,8 @@
       <workItem from="1612632175694" duration="4326000" />
       <workItem from="1612639510796" duration="830000" />
       <workItem from="1612641982756" duration="1373000" />
-      <workItem from="1612745975871" duration="387000" />
+      <workItem from="1612745975871" duration="441000" />
+      <workItem from="1612837909625" duration="1594000" />
     </task>
     <task id="LOCAL-00001" summary="adding readMe and timeLog.md">
       <created>1612156785894</created>
@@ -216,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612642536807</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="updating timelog">
+      <created>1612746485445</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1612746485445</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +278,7 @@
     <MESSAGE value="updating onenote, research on similar services" />
     <MESSAGE value="adding log4j2.properties" />
     <MESSAGE value="adding junit dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding junit dependencies" />
+    <MESSAGE value="updating timelog" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating timelog" />
   </component>
 </project>
