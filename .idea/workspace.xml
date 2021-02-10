@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="editing erd to include address and delivery bool" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="editing erd to change date offered to a varchar, since there may be a range of dates or days of the week resource is offered">
+      <change afterPath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/resourcesFromSocialMedia.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/FLP_milwaukee_lansing.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/projectPlan.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/projectPlan.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/~$urnal.md.docx" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,6 +61,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -173,7 +180,7 @@
       <workItem from="1612641982756" duration="1373000" />
       <workItem from="1612745975871" duration="441000" />
       <workItem from="1612837909625" duration="3937000" />
-      <workItem from="1612914628621" duration="6780000" />
+      <workItem from="1612914628621" duration="9490000" />
     </task>
     <task id="LOCAL-00001" summary="adding readMe and timeLog.md">
       <created>1612156785894</created>
@@ -287,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612923401018</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="editing erd to change date offered to a varchar, since there may be a range of dates or days of the week resource is offered">
+      <created>1612923682993</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1612923682993</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,6 +336,7 @@
     <MESSAGE value="updated timeLog.md" />
     <MESSAGE value="Ready for checkpoint 1, technologies used file is updated, but will need further updating" />
     <MESSAGE value="editing erd to include address and delivery bool" />
-    <option name="LAST_COMMIT_MESSAGE" value="editing erd to include address and delivery bool" />
+    <MESSAGE value="editing erd to change date offered to a varchar, since there may be a range of dates or days of the week resource is offered" />
+    <option name="LAST_COMMIT_MESSAGE" value="editing erd to change date offered to a varchar, since there may be a range of dates or days of the week resource is offered" />
   </component>
 </project>

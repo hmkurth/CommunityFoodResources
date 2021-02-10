@@ -55,6 +55,8 @@
 - [ ] Weekly reflection- [ ] 
 ### Week 9
 - [ ] implement java accessibility api
+- [ ] implement other apis... freelittlepantry.org?? is that an api?? can it be one?
+
 - [ ] identify and utilize other accessibility tools, html checker, contrast checker, other?
 - [ ] Weekly reflection
 
