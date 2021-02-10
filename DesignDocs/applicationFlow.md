@@ -1,5 +1,7 @@
 # Application Flow
-NOT MODIFIED YET!!
+Is modified, but I'm very insecure about it ;)
+I'm not sure how much to implement for the MVP,
+I'm not sure at all how much work each thing takes...
 
 ### User Sign up
 
@@ -55,6 +57,8 @@ NOT MODIFIED YET!!
 
 ###DO I HAVE TIME TO DO THE ADD RESOURCES?  WOULD I WANT TO??????  
 ##Admin could review, could grant certain people add priveledges
+##alternately, could have a mailto button if plain users want to add a resource and send and email to admin
+
 
 
 

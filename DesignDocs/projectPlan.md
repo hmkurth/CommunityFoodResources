@@ -9,7 +9,7 @@
 - [ ] List technologies, versions and how they will be used
 - [ x] Weekly reflection
 - [ ] Write project plan
-- [ ] Document application flow in text and pictures - I'll use wireframes that have clickable links for the screen design. Use Balsamiq?
+- [x ] Document application flow in text and pictures - I'll use wireframes that have clickable links for the screen design. Use Balsamiq?
 - [ ] Triple-check for Checkpoint 1
 
 ### Week 4
@@ -27,60 +27,50 @@
 
 
 
-
+### Honestly, I don't know all the things I need to do.....
 
 
 ### Week 5
-- [ ] Final Presentation
-- [ ] Create video, add video link to readme.md
-- [ ] Finalize all documentation
-- [ ] Code quality check
+- [ ] Finalize ERD
+- [ ] add remaining tables to ?hibernate?
+- [ ] start collating resources gained from social networks
+- [ ] "" photos ""
+- [] create a diagram about app flow with all the jsps and servlets 
+
+
 ### Week 6
-- [ ] Final Presentation
-- [ ] Create video, add video link to readme.md
-- [ ] Finalize all documentation
-- [ ] Code quality check
+- [ ] start creating the class and jsp files
+
+
 ### Week 7
-- [ ] Final Presentation
-- [ ] Create video, add video link to readme.md
-- [ ] Finalize all documentation
-- [ ] Code quality check
+- [ ] database input
+- [ ] research accessibility in java
+- [ ] research APIS
+
+
 ### Week 8
-- [ ] Final Presentation
-- [ ] Create video, add video link to readme.md
-- [ ] Finalize all documentation
-- [ ] Code quality check
+- [ ] bootstrap implement
+- [ ] 
+- [ ] 
 ### Week 9
 - [ ] Final Presentation
-- [ ] Create video, add video link to readme.md
-- [ ] Finalize all documentation
-- [ ] Code quality check
+- [ ] 
 ### Week 10
 - [ ] Final Presentation
-- [ ] Create video, add video link to readme.md
-- [ ] Finalize all documentation
-- [ ] Code quality check
+- [ ] 
 ### Week 11
 - [ ] Final Presentation
-- [ ] Create video, add video link to readme.md
-- [ ] Finalize all documentation
-- [ ] Code quality check
+- [ ]
 ### Week 12
 - [ ] Final Presentation
-- [ ] Create video, add video link to readme.md
-- [ ] Finalize all documentation
-- [ ] Code quality check
+- [ ] 
+
 ### Week 13
 - [ ] Final Presentation
-- [ ] Create video, add video link to readme.md
-- [ ] Finalize all documentation
-- [ ] Code quality check
+- [ ] 
 ### Week 14
 - [ ] Final Presentation
-- [ ] Create video, add video link to readme.md
-- [ ] Finalize all documentation
-- [ ] Code quality check
-
+- [ ] 
 ### Week 15
 - [ ] Final Presentation
 - [ ] Create video, add video link to readme.md
