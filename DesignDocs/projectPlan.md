@@ -46,18 +46,21 @@
 
 ### Week 7
 - [ ] database input
-- [ ] research accessibility in java
+- [ ] research accessibility in java...make it a goal to adhere to gov access standards??
 - [ ] research APIS
 - [ ] Weekly reflection
 
 ### Week 8
-- [ ] bootstrap implement, consider usability concerns
+- [ ] bootstrap implement, consider usability concerns\
+- [ ] research how to make buttons for espanol and hmong language redirects,
+    make it easy for them to find info, does that happen through browser tools???
+
 - [ ] Weekly reflection- [ ] 
 ### Week 9
 - [ ] implement java accessibility api
 - [ ] implement other apis... freelittlepantry.org?? is that an api?? can it be one?
 
-- [ ] identify and utilize other accessibility tools, html checker, contrast checker, other?
+- [ ] identify and utilize other accessibility tools, AXE extension,  html checker, contrast checker, goverment checker
 - [ ] Weekly reflection
 
 ### Week 10

@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="editing erd to change date offered to a varchar, since there may be a range of dates or days of the week resource is offered">
-      <change afterPath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/resourcesFromSocialMedia.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/FLP_milwaukee_lansing.jpg" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="adding my first resource contacts in a typescript file, adding an image folder with my first community image !!! YAY!">
+      <change afterPath="$PROJECT_DIR$/DesignDocs/img_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/governmentGuidelinesForAccessibility/guidelines.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/FLP_milwaukee_lansing2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/FLP_milwaukee_lansing3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesignDocs/projectPlan.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/projectPlan.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/~$urnal.md.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/resourcesFromSocialMedia.ts" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/resourcesFromSocialMedia.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/timeLog.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/timeLog.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +183,7 @@
       <workItem from="1612641982756" duration="1373000" />
       <workItem from="1612745975871" duration="441000" />
       <workItem from="1612837909625" duration="3937000" />
-      <workItem from="1612914628621" duration="9490000" />
+      <workItem from="1612914628621" duration="11253000" />
     </task>
     <task id="LOCAL-00001" summary="adding readMe and timeLog.md">
       <created>1612156785894</created>
@@ -301,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612923682993</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="adding my first resource contacts in a typescript file, adding an image folder with my first community image !!! YAY!">
+      <created>1612927112217</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1612927112263</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,6 +347,7 @@
     <MESSAGE value="Ready for checkpoint 1, technologies used file is updated, but will need further updating" />
     <MESSAGE value="editing erd to include address and delivery bool" />
     <MESSAGE value="editing erd to change date offered to a varchar, since there may be a range of dates or days of the week resource is offered" />
-    <option name="LAST_COMMIT_MESSAGE" value="editing erd to change date offered to a varchar, since there may be a range of dates or days of the week resource is offered" />
+    <MESSAGE value="adding my first resource contacts in a typescript file, adding an image folder with my first community image !!! YAY!" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding my first resource contacts in a typescript file, adding an image folder with my first community image !!! YAY!" />
   </component>
 </project>
