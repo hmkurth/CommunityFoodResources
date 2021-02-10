@@ -36,52 +36,61 @@
 - [ ] start collating resources gained from social networks
 - [ ] "" photos ""
 - [] create a diagram about app flow with all the jsps and servlets 
+- [ ] Weekly reflection
 
 
 ### Week 6
 - [ ] start creating unit tests for class and jsp files
 - [ ] start creating the class and jsp files..this will probably flow into upcoming weeks as well
-
+- [ ] Weekly reflection
 
 ### Week 7
 - [ ] database input
 - [ ] research accessibility in java
 - [ ] research APIS
-
+- [ ] Weekly reflection
 
 ### Week 8
 - [ ] bootstrap implement, consider usability concerns
-- [ ] 
-- [ ] 
+- [ ] Weekly reflection- [ ] 
 ### Week 9
 - [ ] implement java accessibility api
 - [ ] identify and utilize other accessibility tools, html checker, contrast checker, other?
-
+- [ ] Weekly reflection
 
 ### Week 10
 - [ ] Work on code et al
-- [ ] 
+- [ ] Weekly reflection
+
 ### Week 11
 - [ ] work on code et al
-- [ ]
+- [ ] Weekly reflection
+
 ### Week 12
 - [ ] work on code et al, it better be complete!!
   
 - [ ] review project specs, documentation to be sure you have everything
+- [ ] Weekly reflection
 
 ### Week 13
 
 - [ ] debugging, refactoring
 - [ ] QA, test it!  have other people use it!
+- [ ] Weekly reflection
+
 ### Week 14
 - [ ] debugging, refactoring
 - [ ] tie up loose ends
+- [ ] Weekly reflection
+
 ### Week 15
 - [ ] Final Presentation
 - [ ] Create video, add video link to readme.md
 - [ ] Finalize all documentation
 - [ ] Code quality check
+- [ ] Weekly reflection
 
 ### Week 16
 - [ ] Weekly journal entry
-- [ ] Final touches before code complete
+- [ ] Final touches before code complete 
+- [ ] Weekly reflection
