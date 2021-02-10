@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="Ready for checkpoint 1, technologies used file is updated, but will need further updating">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/projectPlan.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/projectPlan.md" afterDir="false" />
-    </list>
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="editing erd to include address and delivery bool" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -176,7 +173,7 @@
       <workItem from="1612641982756" duration="1373000" />
       <workItem from="1612745975871" duration="441000" />
       <workItem from="1612837909625" duration="3937000" />
-      <workItem from="1612914628621" duration="6437000" />
+      <workItem from="1612914628621" duration="6780000" />
     </task>
     <task id="LOCAL-00001" summary="adding readMe and timeLog.md">
       <created>1612156785894</created>
@@ -276,7 +273,21 @@
       <option name="project" value="LOCAL" />
       <updated>1612921844469</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="editing erd to include address and delivery bool">
+      <created>1612923370913</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1612923370913</updated>
+    </task>
+    <task id="LOCAL-00016" summary="editing erd to include address and delivery bool">
+      <created>1612923401018</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1612923401018</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,6 +321,7 @@
     <MESSAGE value="updated user stories, project plan, added journal" />
     <MESSAGE value="updated timeLog.md" />
     <MESSAGE value="Ready for checkpoint 1, technologies used file is updated, but will need further updating" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ready for checkpoint 1, technologies used file is updated, but will need further updating" />
+    <MESSAGE value="editing erd to include address and delivery bool" />
+    <option name="LAST_COMMIT_MESSAGE" value="editing erd to include address and delivery bool" />
   </component>
 </project>
