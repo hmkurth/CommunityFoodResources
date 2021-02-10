@@ -5,12 +5,12 @@
 - [ x] Create project structure in intellij and push
 - [ x] Add link to list of indie projects in student repo.
 - [ x] Complete Problem Statement
-- [ ] Determine possible Web Services or APIs to use
-- [ ] List technologies, versions and how they will be used
+- [ x] Determine possible Web Services or APIs to use
+- [ x] List technologies, versions and how they will be used
 - [ x] Weekly reflection
-- [ ] Write project plan
+- [ x] Write project plan
 - [x ] Document application flow in text and pictures - I'll use wireframes that have clickable links for the screen design. Use Balsamiq?
-- [ ] Triple-check for Checkpoint 1
+- [ x] Triple-check for Checkpoint 1
 
 ### Week 4
 #### This week's focus is the User Sign Up Story
@@ -39,7 +39,8 @@
 
 
 ### Week 6
-- [ ] start creating the class and jsp files
+- [ ] start creating unit tests for class and jsp files
+- [ ] start creating the class and jsp files..this will probably flow into upcoming weeks as well
 
 
 ### Week 7
@@ -49,28 +50,32 @@
 
 
 ### Week 8
-- [ ] bootstrap implement
+- [ ] bootstrap implement, consider usability concerns
 - [ ] 
 - [ ] 
 ### Week 9
 - [ ] implement java accessibility api
-- [ ] 
+- [ ] identify and utilize other accessibility tools, html checker, contrast checker, other?
+
+
 ### Week 10
-- [ ] Final Presentation
+- [ ] Work on code et al
 - [ ] 
 ### Week 11
-- [ ] Final Presentation
+- [ ] work on code et al
 - [ ]
 ### Week 12
-- [ ] Final Presentation
-- [ ] 
+- [ ] work on code et al, it better be complete!!
+  
+- [ ] review project specs, documentation to be sure you have everything
 
 ### Week 13
-- [ ] Final Presentation
-- [ ] 
+
+- [ ] debugging, refactoring
+- [ ] QA, test it!  have other people use it!
 ### Week 14
-- [ ] Final Presentation
-- [ ] 
+- [ ] debugging, refactoring
+- [ ] tie up loose ends
 ### Week 15
 - [ ] Final Presentation
 - [ ] Create video, add video link to readme.md
