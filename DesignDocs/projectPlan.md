@@ -13,7 +13,7 @@
 - [ x] Triple-check for Checkpoint 1
 
 ### Week 4
-#### This week's focus is the User Sign Up Story
+#### This week's focus is the com.hmkurth.entity.User Sign Up Story
 - [ ] Create the database
 - [ ] Select Template | Design CSS
 - [ ] new user jsp

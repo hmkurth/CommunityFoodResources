@@ -3,7 +3,7 @@ Najjar, L. J. (2005). Accessible Java application user interface design guidelin
 
 
 
-Accessible Java Application User Interface Design Guidelines
+Accessible Java Application com.hmkurth.entity.User Interface Design Guidelines
 Lawrence J. Najjar, Ph.D.
 
 BMC Software*
@@ -79,7 +79,7 @@ Operating system accessibility features may include changing the color scheme (t
 "(c) A well-defined on-screen indication of the current focus shall be provided that moves among interactive interface elements as the input focus changes.  The focus shall be programmatically exposed so that assistive technology can track focus and focus changes.”  (General Services Administration, 2005)
 The focus, such as a light purple box around an entry field, shows users where an action will occur when users press keyboard keys.  Focus is helpful to users operating only keyboards.  Always provide obvious visual indicators for the current focus.  Programmatically expose the focus so that assistive technologies, such as screen readers and voice recognition applications, can track focus and focus changes.  When users move focus out of a window then back into the window, users may have difficulty finding the focus and moving it to the object that originally had focus.  So, when users move focus back to a window, put the focus on the object that last had the focus.
 
-1.1.9 Information on User Interface Elements
+1.1.9 Information on com.hmkurth.entity.User Interface Elements
 “(d) Sufficient information about a user interface element including the identity, operation and state of the element shall be available to assistive technology.  When an image represents a program element, the information conveyed by the image must also be available in text.” (General Services Administration, 2005)
 For assistive technology to work well, the information technology must have access to the information about an application’s user interface controls (or “elements”).  With this access, assistive technology can tell users the existence, location, and status of user interface elements.
 
@@ -154,7 +154,7 @@ To prevent errors, use hints to tell a user what to type or select.  Make it eas
 1.2 Paragraph 1194.31 Functional Performance Criteria
 These requirements are related to the way an interactive software application works.
 
-1.2.1 User Vision
+1.2.1 com.hmkurth.entity.User Vision
 “(a) At least one mode of operation and information retrieval that does not require user vision shall be provided, or support for assistive technology used by people who are blind or visually impaired shall be provided.” (General Services Administration, 2005)
 The assistive technology that is most popular for software users with visual challenges is the screen reader.  The most popular screen reader among users with visual challenges is JAWS Professional (Freedom Scientific, 2005).  JAWS is also the only popular screen reader that works with Java applications.
 
@@ -170,7 +170,7 @@ The assistive technology that is most popular for software users who can see, bu
 
 Make sure your application works well with ZoomText.  Test every window and every function to confirm that ZoomText users can see all user interface controls and perform all application functions.  Ideally, ask representative users who have low vision to perform typical tasks with your application using ZoomText.  Ask these users to give you feedback on accessibility and usability.  Include tasks such as installing the application, opening the application, customizing the application, using the application (including retrieving information), reading product support documentation, and contacting customer support for assistance.
 
-1.2.3 User Hearing
+1.2.3 com.hmkurth.entity.User Hearing
 “(c) At least one mode of operation and information retrieval that does not require user hearing shall be provided, or support for assistive technology used by people who are deaf or hard of hearing shall be provided." (General Services Administration, 2005)
 The Windows operating system provides settings to support users with hearing challenges.  Turn on the Windows SoundSentry visual warning accessibility option.  In Windows XP, it is available by going to Start > Settings > Control Panel > Accessibility Options > Sound.  Make sure that the Windows SoundSentry visual warning accessibility option works with your application when an error occurs and a tone usually sounds (for example, when users type an alphabetic character in a numeric-only field).
 
@@ -182,7 +182,7 @@ Do not make audio information important for the use of a product.  So, do not us
 
 Make sure that the Windows SoundSentry visual warning accessibility option works when an error occurs on a window in your application.  In Windows XP, SoundSentry is available by going to Start > Settings > Control Panel > Accessibility Options > Sound.
 
-1.2.5 User Speech
+1.2.5 com.hmkurth.entity.User Speech
 “(e) At least one mode of operation and information retrieval that does not require user speech shall be provided, or support for assistive technology used by people with disabilities shall be provided.” (General Services Administration, 2005)
 Some users (such as users who cannot hear or users with cerebral palsy) have challenges speaking clearly.  These users cannot use speech recognition to operate a software application.  So, do not require user speech to use your application.
 

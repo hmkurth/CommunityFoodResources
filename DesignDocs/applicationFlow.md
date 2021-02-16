@@ -3,20 +3,20 @@ Is modified, but I'm very insecure about it ;)
 I'm not sure how much to implement for the MVP,
 I'm not sure at all how much work each thing takes...
 
-### User Sign up
+### com.hmkurth.entity.User Sign up
 
-1. User chooses sign up on the menu (available on all pages, unless the user
+1. com.hmkurth.entity.User chooses sign up on the menu (available on all pages, unless the user
    is signed in already).
-1. User fills out the sign up form and submits.
+1. com.hmkurth.entity.User fills out the sign up form and submits.
 1. Request goes to sign up servlet.
 1. Servlet creates a user object and then creates user in the database.
 1. Response to user confirming addition (show a message on the jsp)
 
-### User Sign In
+### com.hmkurth.entity.User Sign In
 
-1. User chooses sign in on the menu (available on all pages, unless the user
+1. com.hmkurth.entity.User chooses sign in on the menu (available on all pages, unless the user
    is signed in already).
-1. User enters username and password on form and submits.
+1. com.hmkurth.entity.User enters username and password on form and submits.
 1. If user is authenticated, the server will handle allowing access to edit
    pages.  JDBCRealm used for authentication (users, users_roles, and roles table).
 1. If authentication fails, show error message/page.
@@ -66,8 +66,8 @@ I'm not sure at all how much work each thing takes...
 
 ### Add Trail Report
 1. Option only available to logged in users with proper role
-1. User selects trail to report on
-1. User enters trail report details
+1. com.hmkurth.entity.User selects trail to report on
+1. com.hmkurth.entity.User enters trail report details
 1. Details are sent to Add Trail Report servlet
 1. Servlet creates trail report object
 1. Servlet sends object to dao
@@ -76,7 +76,7 @@ I'm not sure at all how much work each thing takes...
 
 ### Add Trail
 1. Option only available to logged in users with proper role
-1. User enters trail  details
+1. com.hmkurth.entity.User enters trail  details
 1. Details are sent to Add Trail  servlet
 1. Servlet creates trail  object
 1. Servlet sends object to dao

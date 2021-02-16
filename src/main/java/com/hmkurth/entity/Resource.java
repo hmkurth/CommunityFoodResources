@@ -1,4 +1,4 @@
-package com.hmkurth.CommunityFoodResources;
+package com.hmkurth.entity;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
