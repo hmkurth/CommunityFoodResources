@@ -12,19 +12,19 @@ import java.sql.Date;
  * @author hmkurth
  */
 @Entity(name = "User")
-@Table(name = "user")//case sensitive
+@Table(name = "users")//case sensitive
 public class User {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO, generator = "native")
     @GenericGenerator(name="native",strategy="native")
     private int id;
-    //@Column(name=firstName)  don't need if names are the same
+    @Column(name="first_name")  //don't need if names are the same
     private String firstName;
-   // @Column(name=lastName)
+    @Column(name="last_name")
     private String lastName;
-   // @Column(name=userName)
+   @Column(name="user_name")
     private String userName;
-  //  @Column(name=password)
+    @Column(name="user_password")
     private String password;
   //  @Column(name=email)
     private String email;

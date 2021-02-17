@@ -1,0 +1,20 @@
+[INFO ] 2021-02-17 16:25:55.428 [main] UserDaoTest - running setup
+[DEBUG] 2021-02-17 16:25:55.835 [main] UserDao - The list of users by last name []
+[INFO ] 2021-02-17 16:25:55.864 [main] UserDaoTest - running setup
+[DEBUG] 2021-02-17 16:25:55.893 [main] UserDao - The list of users []
+[INFO ] 2021-02-17 16:29:28.281 [main] UserDaoTest - running setup
+[DEBUG] 2021-02-17 16:29:28.593 [main] UserDao - The list of users by last name []
+[INFO ] 2021-02-17 16:29:28.609 [main] UserDaoTest - running setup
+[DEBUG] 2021-02-17 16:29:28.625 [main] UserDao - The list of users []
+[INFO ] 2021-02-17 16:30:41.838 [main] UserDaoTest - running setup
+[DEBUG] 2021-02-17 16:30:42.178 [main] UserDao - The list of users by last name []
+[INFO ] 2021-02-17 16:30:42.194 [main] UserDaoTest - running setup
+[DEBUG] 2021-02-17 16:30:42.209 [main] UserDao - The list of users []
+[INFO ] 2021-02-17 16:31:18.650 [main] UserDaoTest - running setup
+[DEBUG] 2021-02-17 16:31:18.966 [main] UserDao - The list of users by last name []
+[INFO ] 2021-02-17 16:31:18.980 [main] UserDaoTest - running setup
+[DEBUG] 2021-02-17 16:31:18.989 [main] UserDao - The list of users []
+[INFO ] 2021-02-17 16:36:50.779 [main] UserDaoTest - running setup
+[DEBUG] 2021-02-17 16:36:51.125 [main] UserDao - The list of users by last name [com.hmkurth.entity.User@2c9fdb64]
+[INFO ] 2021-02-17 16:36:51.125 [main] UserDaoTest - running setup
+[DEBUG] 2021-02-17 16:36:51.141 [main] UserDao - The list of users [com.hmkurth.entity.User@56fda064, com.hmkurth.entity.User@6cdee57]
