@@ -1,0 +1,268 @@
+
+Week 1: 7 hrs
+Week 2: 13  hrs
+Week 3: 19 hrs
+
+
+•
+Mon, 1/31/21- 2.	  3hrs researching, reviewing, looking over docs for indie project, generating user stories
+Looked up how to add onenote file to git…didn't find what I wanted
+
+•	Need to start drilling down features/mvp
+•	How many pages?  SPA? Or do I need a results servlet/jsp?
+	Welcome page with featured resources/new/events, sign in/sign up, search form
+	Add listing form?? Or for later?
+	Results page
+	About/contact
+•	   ?Which software for wireframes? Figma?
+•	  Don't forget WHITE SPACE IS GOOD
+•	How to use Agile dev practices?
+	Use template, review
+
+•	Think about how to do the search by location, zipcode functions, need google map API thing?  Need to separate by service locations, not corp address
+•	  Pare down user stories
+•	  Which apis to use?
+•	  Started thinking about entities and ERD
+•	  What are my entities?? I need some many to many relationships, how do decide what they are?SuperClasses/subclasses, inheritance, INTERFACES?
+•	   What about api data?? How is that modeled/mapped?
+•	  How much are you going to input into database vs APIs?
+
+From <https://d.docs.live.net/adc24b2eae462860/Documents/Enterprise%20Java%20journal.docx>
+
+Developing a class:
+•	Figure out what the class is supposed to do,
+•	list variables and methods
+•	Write prep code
+•	Test code
+•	Implement, test, debug
+Mon 1/31/21
+830pm-10
+Exploring Monday.com project mgt software, per Lisa on Slack, watched a couple of intro videos, but my cat just died, so I wasn't really into it.
+-seems like it's just for keeping track of tasks and goals, etc…limited scope for what I need, I want something that helps me figure out what to do LOL!
+Okay, let's research Java planning then….SEE JAVA PLANNING SECTION
+!?  I really need to organize and plan how I am going to accomplish this
+  Think about sociological aspects of my users and how I can incorporate into UXUI
+•	How is this important?/does it really matter?
+•	Vulnerable populations!
+o	Immigrants/some not legally recognized, let them know if documentation is needed
+o	Language!!!  Hmong, Spanish option/buttons
+o	Sensitivity to situations, beware of judging, stereotyping
+JAVA PLANNING SECTION/notes
+
+
+  *they would only need to think of creating "good object-oriented, thread-safe designs."
+What's up with threads??!!
+•	Ways to improve the design of your objects
+•	Building class hierarchies
+•	What are interfaces for?
+•	What is the point of polymorphism?
+•	Choosing between composition and inheritance
+•	Designing for thread safety
+•	Designing for thread cooperation
+•	The Model/Controller/View architecture used by the JFC classes
+•	Design patterns
+
+From <https://www.infoworld.com/article/2076601/introduction-to--design-techniques-.html>
+
+From <https://www.infoworld.com/article/2076601/introduction-to--design-techniques-.html>
+As you define the system, you will likely want to document your work in one or more technical specifications. Documentation allows you to communicate the design to other interested parties in the organization and to get their feedback. You can pass out the specification, call a design review meeting, then present the system design at the meeting. The group can discuss your design and hopefully find any problems and make suggestions. Getting feedback -- and making adjustments to your system design as a result of the feedback -- is an example of iteration in the process of software development.
+
+From <https://www.infoworld.com/article/2076601/introduction-to--design-techniques-.html>
+Tuesday, 2/1/21, 3 hrs
+
+Thinking about design, wireframing, do I want to draw on paper or use a program?
+-Adding figma project to start wireframing
+Programs are so boxy, though, aesthetically and mentally…  you have to choose from already made stuff instead of creating, which I should like, premade code being reused…
+o	I don't want it to be like everything else…  I suppose every dev says that, and I vaguely remember warnings about trying to reinvent the wheel in UIUX class…
+There are patterns for a reason.
+In the words of Harry Chapin, "Flowers are red, and green, leaves are green,
+There is no need to see flowers any other way than the way they always have been seen…"  Cue chorus of children.."But there are so many colors in the rainbow, so many colors in the morning sun, there are so many colors in the flowers, and I see every one".
+
+  I realize I need to learn much more about the basics before I can get creative, same with any craft…
+I want non boxes, wavy, soft lines and gradients…
+Color that gives a sense of trust and care…blue/purple?  Trust?? How to achieve a friendly space??  Comfort, Family, Grandma…
+ Evoke HEARTH…fire, warmth, shelter, community…sharing a pot of soup and bread,   you could go much further into this psychology if you wanted to really grow the community, it becomes a culture…the sharing of food creates community, universal, primal,
+PHOTOS of food, community, the people working for food security!
+Probably more for future development, but it would be nice to have photos, bios, of the orgs providing services, to build trust and community
+Again, don't forget white space
+CAN YOU ACTUALLY ACHIEVE THIS WITH CSS??
+IS THIS A GOAL FOR MVP, OR FOR LATER????
+
+Revelation, or not, but this is my favorite part of this whole Web Dev stuff.  I kinda knew it while taking UIUX class with Kari, but I figure everyone likes it because it's fun and creative, it's like the candy you get for doing the rest of the not so fun work…  I've gathered that it's really hard to break into the UIUX field, and I don't have the graphic design background that most are looking for.  My favorite part is the sociology; delving into the problem that you are trying to solve, or the product and it's target market in commercial venues…and researching the social variables, configuring user research experiments and testing…  That would be my dream job…
+But, it's only a small part of this project, so I shouldn't become too consumed with that aspect.
+
+Don't forget about accessibility!  How does that relate to java, besides making the html labeled and navigable?
+Wed:  research, 2 hours;
+*searched for photos to use,  trying to convey a welcoming hearth….downloaded some free food pictures,
+ but I think I might try to
+ get some pictures from the community, they would mean more…
+*research existing services/sites that provide similar services
+https://www.feedingamerica.org/find-your-local-foodbank  -this only has Second harvest in this area!  Only members
+are included in search
+https://www.hungerresourcenetwork.org/news
+https://mazon.org/covid-19-response/50-state-hunger-guide/
+
+https://communityfoodshare.org/get-food/find-food-pantry/      I contacted this org to ask for any advice
+ about their app/experience
+
+
+
+
+
+https://www.foodpantries.org/    This is a good one!
+Whelp, they already have everything I wanted to do…Now I feel conflicted…
+why reinvent the wheel if this org has already put in the work?!
+It feels disrespectful, almost…but that's the way it is in software, I guess… I need to do something, after all…
+
+make it Local, make it personal, make it welcoming!  Make it Madison!
+Try to reduce stigma…..?how?
+•	It's not just a tool, it's an invitation to welcoming and helping hands and community,
+o	(although some of those features may not be in the first release, like member chatting thingies, blogs??)
+•	It reminds you that you are not alone!  Neighbors care, we won't let you go hungry.
+•	It's informative and forthcoming, offering the services of our area like a cornucopia….
+•	It's easy to read and accessible!!!  To seniors, language barriers, sight
+•	Simple, easy to understand language and navigation
+
+
+
+Sat:
+4.5 hrs   class work; log4j, added to project,
+Sun: 4 hrs, class , junit, very frustrating
+
+WEEK 4; 15 hrs
+
+Mon: 4 hrs, captcha exercise,
+Review project docs
+Created dbERD diagram in vertabello
+Created application flow md
+Worked on wireframes
+The Entity Relationship diagram, Wireframes,
+I still have some fine tuning, need some feedback…
+Do I want/have time to do the add resource function?
+Need to save some time to CSS, accessibility concerns….
+Lots of icons
+Large, simple UI
+Other java accessibility stuff????
+Aria labels
+Html/contrast checkers
+Java accessibility API!!!
+
+I need to look into how to make the language changing button
+Do I need to have separate jsps for each entity view?
+
+
+Tuesday:  2/9/21  4 hours
+
+Used my social media network to solicit food resources and information from
+Community groups, I'm hoping this will give me some good contacts and leads on.
+Generating a lot of interest!
+Lesser known resources like the little pantries people have in their yards.
+Also asked for photos for the website
+
+Makes me wonder abour permissions and info sharing rules/legality..
+Do I need their permission to share it?
+What's the general rule?
+/
+!!  Don't forget to add boolean Delivery in resources!!  I forgot that!!!
+AND open days/times
+
+Thinking about what the expansion of this app would look like…out of Dane county…????????
+Additional resources
+
+Working on paring down user stories into the minimum viable product…
+Do I want to add the capability for users to add their own resource??
+Do I have the time???
+I have no idea how much time this all will take!!!!
+I want to have time to create a great UI/UX!!!!!!!!!!!!!!!!!
+With state of the art accessibilty for java!!!!!!
+
+How do classes and hierarchy affect my db design and implementation?
+I only need certain info for each type, so putting them all in one resource table would seem like overkill, but I can make extra fields nullable, though that is probably not a good practice.
+?are there going to be any methods in these classes besides get and set?  Is the resource class like the ‘directory class’ or do I need another controller class beside servlets  -yes, the db classes, daos
+
+Resource(abstract) => Food resource => each type of resource
+
+Started writing some class files..resources, users, ran into a source release problem that I had to do some research on and work out.
+
+-I should add an Event Class
+-service location; should it be an array of zipcodes?? Or would that be hard to figure out and obtain that data, or should it be a string description?
+
+
+
+
+
+Thursday 2/11 5 hrs
+	Going through social media responses;  I got a very welcoming response, much encouragement, and great ideas for future releases!  People suggested more information to include about the resources, such as nearest bus stop, actual address,  who they serve, if proof of income, who qualifies/ paperwork needed(now included as something in the db)  where delivery is served, schools with curbside pickup, whether they have pet food, whether they have non-food essentials.
+I received a lot of great info on resources.  Someone suggested having a rating system, commenting, or advice on pantries, which would def be a 2 -3 rd release.
+It seems like a heck of a lot of columns for 1 table, I would probably have to break it up somehow??
+!!!plan to add a fb or website as a resource! Think about how that data model will differ from super class.
+
+!!Don’t forget CRUD!!  You will need to create an admin form/view/jsp!
+
+
+Going through feedback from checkpoint 1:
+			WOW!!!! I am impressed @hmkurth! Look how much you've done already! Reviewing your repository so far was liking drinking from that proverbial firehose! It's clear you put a lot of time and thought into this work.
+I think you've done a good job paring down to MVP. I do want you to know that it is ok if you do not hit every single thing on the MVP list (that sometimes stresses students out as we near the end of the semester). Hitting much of the MVP and the project requirements like full crud (create, read, update, date), authentication/authorization, etc, is perfectly ok!
+My thoughts, observations, and questions:
+•	  Markdown may be new to you. If so, or even if it isn't, this is a good resource to help understand how to format with GitHub markdown: https://guides.github.com/features/mastering-markdown/. For example, I think feature list here could be better
+
+•	  Just to clarify your comment about needing many-to-manys. You do need more than one one-to-many relationship. Many-to-many relationships are not required.
+•	  Representing resources types in the DB. What do you think about a simple table with the type on it? In the fat bike trail reports example, see the trail type, difficulty, or grooming type for examples. (Disclaimer: I am not a DB design pro, so if I'm guiding you differently from what you learned in class, let me know!)
+Journal responses:
+1.	I'm very sorry to hear about your kitty :(
+2.	SPA versus JSPs/Servlets. SPA is a-ok, that may mean, though, that you will need create services for the various aspects of your application. Example: the current search we did with jsps/servlets went something like jsp form => servlet => user data class, which created and returned a list of Users => servlet => JSP. With a SPA, a service would likely replace the servlet/userdata/user/servlet piece. This is actually the exercise for Week 9, so you will definitely be learning this, however that might be a bit late to implement it fully? Consider learning this sooner than the scheduled? Know that many of the pieces that we are building in the next few weeks will still be the same if you "servicify" - still need DAO, entities. What would go away are the servlets, which are replaced with services.
+3.	https://www.zipcodeapi.com can be a good one for locating "things" in a radius. If handling location data is not in the MVP, another api that might add value to your project is java mail - which is a java library that allows emailing. Perhaps there's a need for functionality to email the admin if there is bad info somewhere?
+What else? Does this help??
+
+
+
+
+From the community:
+/**
+Eric Salzwedel
+Salzwedel Community Little Free Pantry - Marshall 53559
+
+Makalah Wagner
+Start here for ones already mapped - https://m.facebook.com/groups/daneconeighbors/permalink/2305374192940507/
+Karen Andro
+https://www.cacscw.org/.../dane-county-food-pantry-network/
+
+    Marlene Hardick
+badge icon
+Please. Include nearby bus stops and actually address, phone #, actual days, hours open. Can clients shop for what they want or is it picking up a box at the curb.
+    Delivery? Where? Area served?
+    Registration needed? Proof of income needed?
+    Schools with curbside pickup? Who qualifies?
+
+    Sara J. Ariss: watertown comm pantry,
+    Ruby's Pantry
+    Genos Pantry
+Immanual UMC jefferson
+
+Community fridges:
+https://www.facebook.com/MadisonCommunityFridges/?__cft__[0]=AZV0tt5nCgAEy9gwA-7ouvm4IHLIqZgNbD5ah1UnIg9SVYGGLO7j9f5_J6fVC0T3rSammvDpwirmVaBKa2in8GosPwmuUkp7eh6b2kVxUortLAgdEWjKr8NPf6ZVDZCAHiU_akTrj5h_E0Lin0trirxo2HJPXu4JFzkCdTwMnyKevR0TxftPeKuxIA479dFFBFw&__tn__=R]-R
+Prairie rod pantry
+
+Sandburg Community Food pantry (although we are temporarily not active due to the cold weather) https://www.facebook.com/sandburgfoodpantry
+    https://publichealthmdc.com/.../2020-04-06_COVID-19_Food...
+        http://bit.ly/MadisonCOVID-Edit the food section might be a good start
+
+
+            May i recommend a place for folks to comment, give advice, rate the pantry?
+
+            *//
+
+
+
+
+
+Sat 2/13 2 hrs
+	-going through the weeks readings, videos
+
+
+
+Additional Resources I Need To Research!
+Using google maps in my app
+Accessibility!  What is the newest tech/best practice specific to Java?
+
+
