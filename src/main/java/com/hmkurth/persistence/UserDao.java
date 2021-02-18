@@ -70,7 +70,11 @@ public class UserDao {
      */
     public void saveOrUpdate(User user) {
         Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        //id = (int)session.save(user);
+       // transaction.commit();
         session.saveOrUpdate(user);
+        transaction.commit();
         session.close();
     }
     /**

@@ -1,5 +1,5 @@
-delete from user;
-INSERT INTO user VALUES (1,'Joe','Coyne','jcoyne','supersecret1','beast@mail'),
+delete from users;
+INSERT INTO users VALUES (1,'Joe','Coyne','jcoyne','supersecret1','beast@mail'),
                         (2,'Fred','Hensen','fhensen','supersecret2','yeast@mail'),
                         (3,'Barney','Curry','bcurry','supersecret3','seast@mail'),
                         (4,'Karen','Mack','kmack','supersecret4','least@mail'),

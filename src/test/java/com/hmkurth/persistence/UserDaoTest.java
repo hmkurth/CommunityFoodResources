@@ -51,10 +51,11 @@ class UserDaoTest {
      * Verifies Gets users by last name.
      */
     @Test
-    void getUsersByLastNameSuccess() {
-        List<User> users = dao.getUsersByLastName("k");
-        assertEquals(1, users.size());
-
+    void getUsersByLastNameLikeSuccess() {
+        List<User> users = dao.getUsersByLastName("K");
+        assertEquals(2, users.size());
+        List<User> usersz = dao.getUsersByLastName("Z");
+        assertEquals(0, usersz.size());
     }
 
     /**
@@ -70,6 +71,7 @@ class UserDaoTest {
     dao.saveOrUpdate(userToUpdate);
     User retrievedUser = dao.getById(3);
     assertEquals(newLastName, retrievedUser.getLastName());
+    logger.info("");
 
     }
 
@@ -89,7 +91,7 @@ class UserDaoTest {
      */
     @Test
     void getByIdSuccess() {
-        User retrievedUser = dao.getById(7);
+        User retrievedUser = dao.getById(1);
         assertEquals("Joe", retrievedUser.getFirstName());
         assertNotNull(retrievedUser);
         //TODO compare remaining values
@@ -107,9 +109,13 @@ class UserDaoTest {
         assertNotEquals(0,id);
         User insertedUser = dao.getById(id);
         assertEquals("Fred", insertedUser.getFirstName());
+        assertEquals("Flintstone", insertedUser.getLastName());
+        assertEquals("fflintstone", insertedUser.getUserName());
+        assertEquals("meaty", insertedUser.getPassword());
+        assertEquals("meaty@sharks", insertedUser.getEmail());
         // Could continue comparing all values, but
         // it may make sense to use .equals()
-        // TODO review .equals recommendations http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#mapping-model-pojo-equalshashcode
+        //  review .equals recommendations http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#mapping-model-pojo-equalshashcode
     }
 
 
