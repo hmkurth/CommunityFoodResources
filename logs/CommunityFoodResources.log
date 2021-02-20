@@ -18,3 +18,101 @@
 [DEBUG] 2021-02-17 16:36:51.125 [main] UserDao - The list of users by last name [com.hmkurth.entity.User@2c9fdb64]
 [INFO ] 2021-02-17 16:36:51.125 [main] UserDaoTest - running setup
 [DEBUG] 2021-02-17 16:36:51.141 [main] UserDao - The list of users [com.hmkurth.entity.User@56fda064, com.hmkurth.entity.User@6cdee57]
+[INFO ] 2021-02-18 12:03:13.896 [main] UserDaoTest - 
+[DEBUG] 2021-02-18 12:03:13.958 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2021-02-18 12:03:14.243 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2021-02-18 12:03:14.332 [main] UserDao - The list of users by last name [com.hmkurth.entity.User@bfe47a8, com.hmkurth.entity.User@2f1f9515]
+[DEBUG] 2021-02-18 12:03:14.336 [main] UserDao - The list of users by last name []
+[DEBUG] 2021-02-18 12:03:14.471 [main] UserDao - The list of users [com.hmkurth.entity.User@3e8b8f0, com.hmkurth.entity.User@5ad57e90, com.hmkurth.entity.User@1a345298, com.hmkurth.entity.User@4ad896f7, com.hmkurth.entity.User@45796b2a, com.hmkurth.entity.User@4b98225c]
+[DEBUG] 2021-02-18 12:03:14.480 [main] UserDao - The list of users [com.hmkurth.entity.User@5408d4b3, com.hmkurth.entity.User@eded048, com.hmkurth.entity.User@65a48cab, com.hmkurth.entity.User@655621fd, com.hmkurth.entity.User@77e9dca8, com.hmkurth.entity.User@fcd0e8d]
+[INFO ] 2021-02-18 12:03:14.481 [main] UserDaoTest - get all users test: all users;[com.hmkurth.entity.User@5408d4b3, com.hmkurth.entity.User@eded048, com.hmkurth.entity.User@65a48cab, com.hmkurth.entity.User@655621fd, com.hmkurth.entity.User@77e9dca8, com.hmkurth.entity.User@fcd0e8d]
+[INFO ] 2021-02-18 12:06:22.804 [main] UserDaoTest - 
+[DEBUG] 2021-02-18 12:06:22.839 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2021-02-18 12:06:23.074 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2021-02-18 12:06:23.149 [main] UserDao - The list of users by last name [com.hmkurth.entity.User@bd273b2, com.hmkurth.entity.User@78128dd0]
+[DEBUG] 2021-02-18 12:06:23.153 [main] UserDao - The list of users by last name []
+[DEBUG] 2021-02-18 12:06:23.287 [main] UserDao - The list of users [com.hmkurth.entity.User@66715ca9, com.hmkurth.entity.User@577f9dfd, com.hmkurth.entity.User@520a95ff, com.hmkurth.entity.User@30afb481, com.hmkurth.entity.User@714f1a44, com.hmkurth.entity.User@3c09a350]
+[DEBUG] 2021-02-18 12:06:23.297 [main] UserDao - The list of users [com.hmkurth.entity.User@25fd6d1e, com.hmkurth.entity.User@23396fc0, com.hmkurth.entity.User@c11332b, com.hmkurth.entity.User@7e5e6573, com.hmkurth.entity.User@3005623b, com.hmkurth.entity.User@58aa5c94]
+[INFO ] 2021-02-18 12:06:23.298 [main] UserDaoTest - get all users test: all users;[com.hmkurth.entity.User@25fd6d1e, com.hmkurth.entity.User@23396fc0, com.hmkurth.entity.User@c11332b, com.hmkurth.entity.User@7e5e6573, com.hmkurth.entity.User@3005623b, com.hmkurth.entity.User@58aa5c94]
+[DEBUG] 2021-02-18 12:06:23.376 [main] UserDao - inserting user com.hmkurth.entity.User@46702c26
+[INFO ] 2021-02-18 12:17:50.220 [main] UserDaoTest - 
+[DEBUG] 2021-02-18 12:17:50.256 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2021-02-18 12:17:50.507 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2021-02-18 12:17:50.578 [main] UserDao - The list of users by last name [com.hmkurth.entity.User@7de3206d, com.hmkurth.entity.User@6dece1f9]
+[DEBUG] 2021-02-18 12:17:50.582 [main] UserDao - The list of users by last name []
+[DEBUG] 2021-02-18 12:17:50.726 [main] UserDao - The list of users [com.hmkurth.entity.User@7e5e6573, com.hmkurth.entity.User@3005623b, com.hmkurth.entity.User@58aa5c94, com.hmkurth.entity.User@5d27b4c1, com.hmkurth.entity.User@41143873, com.hmkurth.entity.User@21f50d2c]
+[DEBUG] 2021-02-18 12:17:50.737 [main] UserDao - The list of users [com.hmkurth.entity.User@65e620b0, com.hmkurth.entity.User@74b97416, com.hmkurth.entity.User@74707df8, com.hmkurth.entity.User@12c76d6e, com.hmkurth.entity.User@46702c26, com.hmkurth.entity.User@7956f93a]
+[INFO ] 2021-02-18 12:17:50.738 [main] UserDaoTest - get all users test: all users;[com.hmkurth.entity.User@65e620b0, com.hmkurth.entity.User@74b97416, com.hmkurth.entity.User@74707df8, com.hmkurth.entity.User@12c76d6e, com.hmkurth.entity.User@46702c26, com.hmkurth.entity.User@7956f93a]
+[DEBUG] 2021-02-18 12:17:50.813 [main] UserDao - inserting user com.hmkurth.entity.User@144ee8a7
+[INFO ] 2021-02-18 12:19:26.332 [main] UserDaoTest - 
+[DEBUG] 2021-02-18 12:19:26.363 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2021-02-18 12:19:26.597 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2021-02-18 12:19:26.676 [main] UserDao - The list of users by last name [com.hmkurth.entity.User@2bc16fe2, com.hmkurth.entity.User@d66502]
+[DEBUG] 2021-02-18 12:19:26.676 [main] UserDao - The list of users by last name []
+[DEBUG] 2021-02-18 12:19:26.824 [main] UserDao - The list of users [com.hmkurth.entity.User@41a23470, com.hmkurth.entity.User@30c01c37, com.hmkurth.entity.User@39a7eca5, com.hmkurth.entity.User@45bd4753, com.hmkurth.entity.User@23396fc0, com.hmkurth.entity.User@c11332b]
+[DEBUG] 2021-02-18 12:19:26.834 [main] UserDao - The list of users [com.hmkurth.entity.User@21f50d2c, com.hmkurth.entity.User@8bc0696, com.hmkurth.entity.User@473847fb, com.hmkurth.entity.User@270f28cf, com.hmkurth.entity.User@2e1add6f, com.hmkurth.entity.User@467af68c]
+[INFO ] 2021-02-18 12:19:26.835 [main] UserDaoTest - get all users test: all users;[com.hmkurth.entity.User@21f50d2c, com.hmkurth.entity.User@8bc0696, com.hmkurth.entity.User@473847fb, com.hmkurth.entity.User@270f28cf, com.hmkurth.entity.User@2e1add6f, com.hmkurth.entity.User@467af68c]
+[DEBUG] 2021-02-18 12:19:26.903 [main] UserDao - inserting user com.hmkurth.entity.User@d3cce46
+[INFO ] 2021-02-18 12:19:58.619 [main] UserDaoTest - 
+[DEBUG] 2021-02-18 12:19:58.736 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2021-02-18 12:19:59.346 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2021-02-18 12:19:59.670 [main] UserDao - The list of users by last name [com.hmkurth.entity.User@5635bcd2, com.hmkurth.entity.User@5c5c7cc4]
+[DEBUG] 2021-02-18 12:19:59.686 [main] UserDao - The list of users by last name []
+[DEBUG] 2021-02-18 12:19:59.788 [main] UserDao - The list of users [com.hmkurth.entity.User@50df37eb, com.hmkurth.entity.User@4b508371, com.hmkurth.entity.User@41143873, com.hmkurth.entity.User@21f50d2c, com.hmkurth.entity.User@270f28cf, com.hmkurth.entity.User@2e1add6f]
+[DEBUG] 2021-02-18 12:19:59.804 [main] UserDao - The list of users [com.hmkurth.entity.User@46702c26, com.hmkurth.entity.User@7956f93a, com.hmkurth.entity.User@e3ed455, com.hmkurth.entity.User@27bb74e1, com.hmkurth.entity.User@606d6d2c, com.hmkurth.entity.User@2e3cd732]
+[INFO ] 2021-02-18 12:19:59.804 [main] UserDaoTest - get all users test: all users;[com.hmkurth.entity.User@46702c26, com.hmkurth.entity.User@7956f93a, com.hmkurth.entity.User@e3ed455, com.hmkurth.entity.User@27bb74e1, com.hmkurth.entity.User@606d6d2c, com.hmkurth.entity.User@2e3cd732]
+[DEBUG] 2021-02-18 12:19:59.866 [main] UserDao - inserting user com.hmkurth.entity.User@4c65d8e3
+[INFO ] 2021-02-18 12:27:06.682 [main] UserDaoTest - 
+[DEBUG] 2021-02-18 12:27:06.718 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2021-02-18 12:27:06.941 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2021-02-18 12:27:07.008 [main] UserDao - The list of users by last name [com.hmkurth.entity.User@c318864, com.hmkurth.entity.User@7d61468c]
+[DEBUG] 2021-02-18 12:27:07.013 [main] UserDao - The list of users by last name []
+[DEBUG] 2021-02-18 12:27:07.137 [main] UserDao - The list of users [com.hmkurth.entity.User@657b3b, com.hmkurth.entity.User@2cea921a, com.hmkurth.entity.User@65753724, com.hmkurth.entity.User@2bc16fe2, com.hmkurth.entity.User@34549979, com.hmkurth.entity.User@144a5e6e]
+[DEBUG] 2021-02-18 12:27:07.150 [main] UserDao - The list of users [com.hmkurth.entity.User@6c27e700, com.hmkurth.entity.User@56b9d43f, com.hmkurth.entity.User@2d913116, com.hmkurth.entity.User@1214d23c, com.hmkurth.entity.User@41582899, com.hmkurth.entity.User@595814a1]
+[INFO ] 2021-02-18 12:27:07.150 [main] UserDaoTest - get all users test: all users;[com.hmkurth.entity.User@6c27e700, com.hmkurth.entity.User@56b9d43f, com.hmkurth.entity.User@2d913116, com.hmkurth.entity.User@1214d23c, com.hmkurth.entity.User@41582899, com.hmkurth.entity.User@595814a1]
+[DEBUG] 2021-02-18 12:27:07.231 [main] UserDao - inserting user com.hmkurth.entity.User@39a7eca5
+[INFO ] 2021-02-18 12:30:57.713 [main] UserDaoTest - 
+[DEBUG] 2021-02-18 12:30:57.811 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2021-02-18 12:30:58.304 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2021-02-18 12:30:58.387 [main] UserDao - The list of users by last name [com.hmkurth.entity.User@28dd81ad, com.hmkurth.entity.User@300a38e7]
+[DEBUG] 2021-02-18 12:30:58.391 [main] UserDao - The list of users by last name []
+[DEBUG] 2021-02-18 12:30:58.562 [main] UserDao - The list of users [com.hmkurth.entity.User@30afb481, com.hmkurth.entity.User@5c573229, com.hmkurth.entity.User@77ecdc2b, com.hmkurth.entity.User@714f1a44, com.hmkurth.entity.User@48368a08, com.hmkurth.entity.User@41a23470]
+[DEBUG] 2021-02-18 12:30:58.570 [main] UserDao - The list of users [com.hmkurth.entity.User@7e5e6573, com.hmkurth.entity.User@3005623b, com.hmkurth.entity.User@58aa5c94, com.hmkurth.entity.User@5d27b4c1, com.hmkurth.entity.User@50df37eb, com.hmkurth.entity.User@4b508371]
+[INFO ] 2021-02-18 12:30:58.570 [main] UserDaoTest - get all users test: all users;[com.hmkurth.entity.User@7e5e6573, com.hmkurth.entity.User@3005623b, com.hmkurth.entity.User@58aa5c94, com.hmkurth.entity.User@5d27b4c1, com.hmkurth.entity.User@50df37eb, com.hmkurth.entity.User@4b508371]
+[DEBUG] 2021-02-18 12:30:58.673 [main] UserDao - inserting user com.hmkurth.entity.User@27bb74e1
+[INFO ] 2021-02-18 12:31:59.753 [main] UserDaoTest - 
+[DEBUG] 2021-02-18 12:31:59.788 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2021-02-18 12:32:00.025 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2021-02-18 12:32:00.087 [main] UserDao - The list of users by last name [com.hmkurth.entity.User@7cd1ec54, com.hmkurth.entity.User@77ab5214]
+[DEBUG] 2021-02-18 12:32:00.092 [main] UserDao - The list of users by last name []
+[DEBUG] 2021-02-18 12:32:00.213 [main] UserDao - The list of users [com.hmkurth.entity.User@49d42faf, com.hmkurth.entity.User@4948daec, com.hmkurth.entity.User@502c2278, com.hmkurth.entity.User@1209a0f, com.hmkurth.entity.User@577f9dfd, com.hmkurth.entity.User@520a95ff]
+[DEBUG] 2021-02-18 12:32:00.222 [main] UserDao - The list of users [com.hmkurth.entity.User@41a23470, com.hmkurth.entity.User@30c01c37, com.hmkurth.entity.User@39a7eca5, com.hmkurth.entity.User@45bd4753, com.hmkurth.entity.User@156cfa20, com.hmkurth.entity.User@25fd6d1e]
+[INFO ] 2021-02-18 12:32:00.223 [main] UserDaoTest - get all users test: all users;[com.hmkurth.entity.User@41a23470, com.hmkurth.entity.User@30c01c37, com.hmkurth.entity.User@39a7eca5, com.hmkurth.entity.User@45bd4753, com.hmkurth.entity.User@156cfa20, com.hmkurth.entity.User@25fd6d1e]
+[DEBUG] 2021-02-18 12:32:00.290 [main] UserDao - inserting user com.hmkurth.entity.User@74b97416
+[INFO ] 2021-02-18 12:35:35.311 [main] UserDaoTest - 
+[DEBUG] 2021-02-18 12:35:35.345 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2021-02-18 12:35:35.580 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2021-02-18 12:35:35.653 [main] UserDao - The list of users by last name [com.hmkurth.entity.User@5f45bc8e, com.hmkurth.entity.User@33e50ff2]
+[DEBUG] 2021-02-18 12:35:35.658 [main] UserDao - The list of users by last name []
+[DEBUG] 2021-02-18 12:35:35.784 [main] UserDao - The list of users [com.hmkurth.entity.User@655621fd, com.hmkurth.entity.User@77e9dca8, com.hmkurth.entity.User@fcd0e8d, com.hmkurth.entity.User@4e4d0a0b, com.hmkurth.entity.User@44abdb1f, com.hmkurth.entity.User@62108cd3]
+[DEBUG] 2021-02-18 12:35:35.794 [main] UserDao - The list of users [com.hmkurth.entity.User@300a38e7, com.hmkurth.entity.User@5c9a4f3b, com.hmkurth.entity.User@2bb0e277, com.hmkurth.entity.User@6f24ce45, com.hmkurth.entity.User@e881e46, com.hmkurth.entity.User@657b3b]
+[INFO ] 2021-02-18 12:35:35.794 [main] UserDaoTest - get all users test: all users;[com.hmkurth.entity.User@300a38e7, com.hmkurth.entity.User@5c9a4f3b, com.hmkurth.entity.User@2bb0e277, com.hmkurth.entity.User@6f24ce45, com.hmkurth.entity.User@e881e46, com.hmkurth.entity.User@657b3b]
+[DEBUG] 2021-02-18 12:35:35.868 [main] UserDao - inserting user com.hmkurth.entity.User@41582899
+[INFO ] 2021-02-18 12:37:06.024 [main] UserDaoTest - 
+[DEBUG] 2021-02-18 12:37:06.060 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2021-02-18 12:37:06.282 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2021-02-18 12:37:06.350 [main] UserDao - The list of users by last name [com.hmkurth.entity.User@c318864, com.hmkurth.entity.User@7d61468c]
+[DEBUG] 2021-02-18 12:37:06.355 [main] UserDao - The list of users by last name []
+[DEBUG] 2021-02-18 12:37:06.482 [main] UserDao - The list of users [com.hmkurth.entity.User@657b3b, com.hmkurth.entity.User@2cea921a, com.hmkurth.entity.User@65753724, com.hmkurth.entity.User@2bc16fe2, com.hmkurth.entity.User@34549979, com.hmkurth.entity.User@144a5e6e]
+[DEBUG] 2021-02-18 12:37:06.493 [main] UserDao - The list of users [com.hmkurth.entity.User@6c27e700, com.hmkurth.entity.User@56b9d43f, com.hmkurth.entity.User@2d913116, com.hmkurth.entity.User@1214d23c, com.hmkurth.entity.User@41582899, com.hmkurth.entity.User@595814a1]
+[INFO ] 2021-02-18 12:37:06.494 [main] UserDaoTest - get all users test: all users;[com.hmkurth.entity.User@6c27e700, com.hmkurth.entity.User@56b9d43f, com.hmkurth.entity.User@2d913116, com.hmkurth.entity.User@1214d23c, com.hmkurth.entity.User@41582899, com.hmkurth.entity.User@595814a1]
+[DEBUG] 2021-02-18 12:37:06.570 [main] UserDao - inserting user com.hmkurth.entity.User@39a7eca5
+[INFO ] 2021-02-20 12:30:16.955 [main] UserDaoTest - 
+[DEBUG] 2021-02-20 12:30:17.011 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2021-02-20 12:30:17.343 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2021-02-20 12:30:17.459 [main] UserDao - The list of users by last name [com.hmkurth.entity.User@5341e71a, com.hmkurth.entity.User@405d8a80]
+[DEBUG] 2021-02-20 12:30:17.463 [main] UserDao - The list of users by last name []
+[DEBUG] 2021-02-20 12:30:17.668 [main] UserDao - The list of users [com.hmkurth.entity.User@3f6f9cef, com.hmkurth.entity.User@61dd1c3d, com.hmkurth.entity.User@7858d31d, com.hmkurth.entity.User@782e6b40, com.hmkurth.entity.User@cae2a97, com.hmkurth.entity.User@7d12429]
+[DEBUG] 2021-02-20 12:30:17.676 [main] UserDao - The list of users [com.hmkurth.entity.User@dae5e0, com.hmkurth.entity.User@59a94d0f, com.hmkurth.entity.User@7ff09659, com.hmkurth.entity.User@517fbf62, com.hmkurth.entity.User@65db548, com.hmkurth.entity.User@150f41b9]
+[INFO ] 2021-02-20 12:30:17.677 [main] UserDaoTest - get all users test: all users;[com.hmkurth.entity.User@dae5e0, com.hmkurth.entity.User@59a94d0f, com.hmkurth.entity.User@7ff09659, com.hmkurth.entity.User@517fbf62, com.hmkurth.entity.User@65db548, com.hmkurth.entity.User@150f41b9]
+[DEBUG] 2021-02-20 12:30:17.787 [main] UserDao - inserting user com.hmkurth.entity.User@71e7830a

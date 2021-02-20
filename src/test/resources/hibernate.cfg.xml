@@ -13,5 +13,6 @@
         <property name="hibernate.c3p0.idle_test_period">3000</property>
 
         <mapping class="com.hmkurth.entity.User"/>
+        <mapping class="com.hmkurth.entity.UserRoles"/>
     </session-factory>
 </hibernate-configuration>

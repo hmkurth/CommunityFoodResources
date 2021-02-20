@@ -1,4 +1,5 @@
 package com.hmkurth.persistence;
+import com.hmkurth.entity.UserRoles;
 import com.hmkurth.test.util.Database;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -105,6 +106,28 @@ class UserDaoTest {
     void insertSuccess() {
 
         User newUser = new User("Fred", "Flintstone", "fflintstone", "meaty", "meaty@sharks");
+        int id = dao.insert(newUser);
+        assertNotEquals(0,id);
+        User insertedUser = dao.getById(id);
+        assertEquals("Fred", insertedUser.getFirstName());
+        assertEquals("Flintstone", insertedUser.getLastName());
+        assertEquals("fflintstone", insertedUser.getUserName());
+        assertEquals("meaty", insertedUser.getPassword());
+        assertEquals("meaty@sharks", insertedUser.getEmail());
+        // Could continue comparing all values, but
+        // it may make sense to use .equals()
+        //  review .equals recommendations http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#mapping-model-pojo-equalshashcode
+    }
+    /**
+     * Verify successful insert of a user with user role
+     */
+    @Test
+    void insertWithRolesSuccess() {
+
+        User newUser = new User("Fred", "Flintstone", "fflintstone", "meaty", "meaty@sharks");
+        String roleDescription = "admin";
+        //need to access both objects, bidirectionality
+        UserRoles role = new UserRoles(roleDescription, newUser);
         int id = dao.insert(newUser);
         assertNotEquals(0,id);
         User insertedUser = dao.getById(id);

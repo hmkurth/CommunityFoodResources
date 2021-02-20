@@ -5,6 +5,8 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * A class to represent a user.
@@ -28,6 +30,29 @@ public class User {
     private String password;
   //  @Column(name=email)
     private String email;
+    //references the foreign key
+    @OneToMany(mappedBy = "user", cascade=CascadeType.ALL, orphanRemoval = true, fetch =FetchType.LAZY )
+    private Set<UserRoles> roles = new HashSet<>();
+
+    /**
+     * Gets roles.
+     *
+     * @return the roles
+     */
+    public Set<UserRoles> getRoles() {
+        return roles;
+    }
+
+    /**
+     * Sets roles.
+     *
+     * @param roles the roles
+     */
+    public void setRoles(Set<UserRoles> roles) {
+        this.roles = roles;
+    }
+
+
 
 
     /**

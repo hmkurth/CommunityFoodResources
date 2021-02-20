@@ -87,6 +87,7 @@ public class UserDao {
         Transaction transaction = session.beginTransaction();
         id = (int)session.save(user);
         transaction.commit();
+        logger.debug("inserting user {}", user);
         session.close();
         return id;
     }
