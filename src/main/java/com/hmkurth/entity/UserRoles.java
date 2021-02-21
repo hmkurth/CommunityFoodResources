@@ -3,9 +3,11 @@ package com.hmkurth.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 /**
  * class to represent user roles
+ *
  * @author hmkurth
  */
 @Entity(name = "UserRoles")
@@ -21,18 +23,26 @@ public class UserRoles {
     /**
      * The User name.
      */
-    @Column(name="user_name")
-    private String userName;
+    @Column(name="users_name")
+    private String usersName;
     /**
      * The Role name.
      */
     @Column(name="role_name")
     private String roleName;
+
+
+
     /**
      * The User id.
      */
     @ManyToOne
+    @JoinColumn(name = "users_id",
+            foreignKey = @ForeignKey(name = "users_id")
+    )
+//@Column(name="users_id")  this is not allowed on many to one property
     private  User user;//hibernate maps this
+
 
     /**
      * Instantiates a new User roles.
@@ -44,15 +54,27 @@ public class UserRoles {
     /**
      * Instantiates a new User roles.
      *
-     * @param userName the user name
      * @param roleName the role name
      * @param user     the user
      */
-    public UserRoles(String userName, String roleName, User user) {
-        this.userName = userName;
+    public UserRoles(String roleName, User user) {
         this.roleName = roleName;
         this.user = user;
     }
+
+    /**
+     * Instantiates a new User roles.
+     *
+     * @param usersName the user name
+     * @param roleName the role name
+     * @param user     the user
+     */
+    public UserRoles(String usersName, String roleName, User user) {
+        this.usersName = usersName;
+        this.roleName = roleName;
+        this.user = user;
+    }
+
 
     /**
      * Gets id.
@@ -77,8 +99,8 @@ public class UserRoles {
      *
      * @return the user name
      */
-    public String getUserName() {
-        return userName;
+    public String getUsersName() {
+        return usersName;
     }
 
     /**
@@ -86,8 +108,8 @@ public class UserRoles {
      *
      * @param userName the user name
      */
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUsersName(String userName) {
+        this.usersName = userName;
     }
 
     /**
@@ -107,15 +129,33 @@ public class UserRoles {
     public void setRoleName(String roleName) {
         this.roleName = roleName;
     }
+    /**
+     * Gets user.
+     *
+     * @return the user
+     */
+    public User getUser() {
+        return user;
+    }
 
+    /**
+     * Sets user.
+     *
+     * @param user the user
+     */
+    public void setUser(User user) {
+        this.user = user;
+    }
 
     @Override
     public String toString() {
         return "UserRoles{" +
                 "id=" + id +
-                ", userName='" + userName + '\'' +
+                ", userName='" + usersName + '\'' +
                 ", roleName='" + roleName + '\'' +
                 ", user=" + user +
                 '}';
     }
+
+
 }

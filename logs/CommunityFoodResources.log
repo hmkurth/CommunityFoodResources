@@ -116,3 +116,170 @@
 [DEBUG] 2021-02-20 12:30:17.676 [main] UserDao - The list of users [com.hmkurth.entity.User@dae5e0, com.hmkurth.entity.User@59a94d0f, com.hmkurth.entity.User@7ff09659, com.hmkurth.entity.User@517fbf62, com.hmkurth.entity.User@65db548, com.hmkurth.entity.User@150f41b9]
 [INFO ] 2021-02-20 12:30:17.677 [main] UserDaoTest - get all users test: all users;[com.hmkurth.entity.User@dae5e0, com.hmkurth.entity.User@59a94d0f, com.hmkurth.entity.User@7ff09659, com.hmkurth.entity.User@517fbf62, com.hmkurth.entity.User@65db548, com.hmkurth.entity.User@150f41b9]
 [DEBUG] 2021-02-20 12:30:17.787 [main] UserDao - inserting user com.hmkurth.entity.User@71e7830a
+[DEBUG] 2021-02-20 12:52:20.638 [main] UserDao - inserting user com.hmkurth.entity.User@46d1b59
+[DEBUG] 2021-02-20 12:53:25.530 [main] UserDao - inserting user com.hmkurth.entity.User@14874a5d
+[INFO ] 2021-02-20 14:01:50.993 [main] UserDaoTest - 
+[INFO ] 2021-02-20 14:16:01.962 [main] UserDaoTest - 
+[INFO ] 2021-02-20 14:16:33.436 [main] UserDaoTest - 
+[ERROR] 2021-02-20 14:17:24.585 [main] Database - com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Lock wait timeout exceeded; try restarting transaction
+[DEBUG] 2021-02-20 14:17:24.590 [main] UserDao - Searching for user with lastName = Curry
+[ERROR] 2021-02-20 14:18:15.994 [main] Database - com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Lock wait timeout exceeded; try restarting transaction
+[DEBUG] 2021-02-20 14:18:15.995 [main] UserDao - Searching for user with lastName = c
+[ERROR] 2021-02-20 14:19:07.090 [main] Database - com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Lock wait timeout exceeded; try restarting transaction
+[DEBUG] 2021-02-20 14:19:07.128 [main] UserDao - The list of users by last name [User{id=4, firstName='Karen', lastName='Mack', userName='kmack', password='supersecret4', email='least@mail', roles=[]}, User{id=5, firstName='Dianne', lastName='Klein', userName='dklein', password='supersecret5', email='zeast@mail', roles=[]}]
+[DEBUG] 2021-02-20 14:19:07.132 [main] UserDao - The list of users by last name []
+[DEBUG] 2021-02-20 14:57:15.097 [main] UserDao - inserting user [!!!com.hmkurth.entity.User@782ac148=>java.lang.StackOverflowError:null!!!]
+[INFO ] 2021-02-20 16:24:19.411 [main] UserDaoTest - 
+[DEBUG] 2021-02-20 16:24:19.470 [main] UserDao - inserting user [!!!com.hmkurth.entity.User@5835e24a=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-02-20 16:24:19.544 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2021-02-20 16:24:19.857 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2021-02-20 16:24:19.950 [main] UserDao - The list of users by last name [User{id=4, firstName='Karen', lastName='Mack', userName='kmack', password='supersecret4', email='least@mail', roles=[]}, User{id=5, firstName='Dianne', lastName='Klein', userName='dklein', password='supersecret5', email='zeast@mail', roles=[]}]
+[DEBUG] 2021-02-20 16:24:19.950 [main] UserDao - The list of users by last name []
+[DEBUG] 2021-02-20 16:24:20.122 [main] UserDao - The list of users [User{id=1, firstName='Joe', lastName='Coyne', userName='jcoyne', password='supersecret1', email='beast@mail', roles=[]}, User{id=2, firstName='Fred', lastName='Hensen', userName='fhensen', password='supersecret2', email='yeast@mail', roles=[]}, User{id=3, firstName='Barney', lastName='Curry', userName='bcurry', password='supersecret3', email='seast@mail', roles=[]}, User{id=4, firstName='Karen', lastName='Mack', userName='kmack', password='supersecret4', email='least@mail', roles=[]}, User{id=5, firstName='Dianne', lastName='Klein', userName='dklein', password='supersecret5', email='zeast@mail', roles=[]}, User{id=6, firstName='Dawn', lastName='Tillman', userName='dtillman', password='supersecret6', email='QUeast@mail', roles=[]}]
+[DEBUG] 2021-02-20 16:24:20.138 [main] UserDao - The list of users [User{id=1, firstName='Joe', lastName='Coyne', userName='jcoyne', password='supersecret1', email='beast@mail', roles=[]}, User{id=2, firstName='Fred', lastName='Hensen', userName='fhensen', password='supersecret2', email='yeast@mail', roles=[]}, User{id=3, firstName='Barney', lastName='Curry', userName='bcurry', password='supersecret3', email='seast@mail', roles=[]}, User{id=4, firstName='Karen', lastName='Mack', userName='kmack', password='supersecret4', email='least@mail', roles=[]}, User{id=5, firstName='Dianne', lastName='Klein', userName='dklein', password='supersecret5', email='zeast@mail', roles=[]}, User{id=6, firstName='Dawn', lastName='Tillman', userName='dtillman', password='supersecret6', email='QUeast@mail', roles=[]}]
+[INFO ] 2021-02-20 16:24:20.138 [main] UserDaoTest - get all users test: all users;[User{id=1, firstName='Joe', lastName='Coyne', userName='jcoyne', password='supersecret1', email='beast@mail', roles=[]}, User{id=2, firstName='Fred', lastName='Hensen', userName='fhensen', password='supersecret2', email='yeast@mail', roles=[]}, User{id=3, firstName='Barney', lastName='Curry', userName='bcurry', password='supersecret3', email='seast@mail', roles=[]}, User{id=4, firstName='Karen', lastName='Mack', userName='kmack', password='supersecret4', email='least@mail', roles=[]}, User{id=5, firstName='Dianne', lastName='Klein', userName='dklein', password='supersecret5', email='zeast@mail', roles=[]}, User{id=6, firstName='Dawn', lastName='Tillman', userName='dtillman', password='supersecret6', email='QUeast@mail', roles=[]}]
+[DEBUG] 2021-02-20 16:24:20.201 [main] UserDao - inserting user User{id=42, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='meaty', email='meaty@sharks', roles=[]}
+[DEBUG] 2021-02-20 23:14:16.384 [main] UserRolesDao - Searching for UserRoles with roleName = reg
+[DEBUG] 2021-02-20 23:16:18.425 [main] UserRolesDao - Searching for UserRoles with roleName = regular
+[DEBUG] 2021-02-20 23:16:47.628 [main] UserRolesDao - Searching for UserRoles with roleName = admin
+[DEBUG] 2021-02-20 23:16:47.923 [main] UserRolesDao - Searching for UserRoles with roleName = regular
+[DEBUG] 2021-02-20 23:16:48.010 [main] UserRolesDao - The list of UserRoles []
+[DEBUG] 2021-02-20 23:16:48.078 [main] UserRolesDao - The list of UserRoles by rolename []
+[DEBUG] 2021-02-20 23:32:59.605 [main] UserRolesDao - Searching for UserRoles with roleName = admin
+[DEBUG] 2021-02-20 23:32:59.916 [main] UserRolesDao - Searching for UserRoles with roleName = regular
+[DEBUG] 2021-02-20 23:32:59.977 [main] UserRolesDao - The list of UserRoles []
+[DEBUG] 2021-02-20 23:33:00.033 [main] UserRolesDao - The list of UserRoles by rolename []
+[ERROR] 2021-02-20 23:33:46.518 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:33:49.018 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:33:49.064 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:33:49.074 [main] UserRolesDao - Searching for UserRoles with roleName = admin
+[ERROR] 2021-02-20 23:33:49.347 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:33:49.351 [main] UserRolesDao - Searching for UserRoles with roleName = regular
+[ERROR] 2021-02-20 23:33:49.415 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:33:49.424 [main] UserRolesDao - The list of UserRoles []
+[ERROR] 2021-02-20 23:33:49.483 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:33:49.489 [main] UserRolesDao - The list of UserRoles by rolename []
+[ERROR] 2021-02-20 23:33:49.545 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:33:49.631 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:33:49.690 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:35:54.621 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:35:57.379 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:35:57.426 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:35:57.426 [main] UserRolesDao - Searching for UserRoles with roleName = admin
+[ERROR] 2021-02-20 23:35:57.696 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:35:57.700 [main] UserRolesDao - Searching for UserRoles with roleName = regular
+[ERROR] 2021-02-20 23:35:57.762 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:35:57.772 [main] UserRolesDao - The list of UserRoles []
+[ERROR] 2021-02-20 23:35:57.820 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:35:57.820 [main] UserRolesDao - The list of UserRoles by rolename []
+[ERROR] 2021-02-20 23:35:57.882 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:35:57.960 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:35:58.007 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:36:48.374 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:36:50.745 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[INFO ] 2021-02-20 23:36:50.792 [main] UserDaoTest - 
+[ERROR] 2021-02-20 23:36:50.823 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:36:50.854 [main] UserDao - inserting user [!!!com.hmkurth.entity.User@349312d5=>java.lang.StackOverflowError:null!!!]
+[ERROR] 2021-02-20 23:36:50.933 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:36:50.933 [main] UserDao - Searching for user with lastName = Curry
+[ERROR] 2021-02-20 23:36:51.214 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:36:51.214 [main] UserDao - Searching for user with lastName = c
+[ERROR] 2021-02-20 23:36:51.323 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:36:51.339 [main] UserDao - The list of users by last name [User{id=4, firstName='Karen', lastName='Mack', userName='kmack', password='supersecret4', email='least@mail', roles=[]}, User{id=5, firstName='Dianne', lastName='Klein', userName='dklein', password='supersecret5', email='zeast@mail', roles=[]}]
+[DEBUG] 2021-02-20 23:36:51.339 [main] UserDao - The list of users by last name []
+[ERROR] 2021-02-20 23:36:51.370 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:36:51.417 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:36:51.448 [main] UserDao - The list of users [User{id=1, firstName='Joe', lastName='Coyne', userName='jcoyne', password='supersecret1', email='beast@mail', roles=[]}, User{id=2, firstName='Fred', lastName='Hensen', userName='fhensen', password='supersecret2', email='yeast@mail', roles=[]}, User{id=3, firstName='Barney', lastName='Curry', userName='bcurry', password='supersecret3', email='seast@mail', roles=[]}, User{id=4, firstName='Karen', lastName='Mack', userName='kmack', password='supersecret4', email='least@mail', roles=[]}, User{id=5, firstName='Dianne', lastName='Klein', userName='dklein', password='supersecret5', email='zeast@mail', roles=[]}, User{id=6, firstName='Dawn', lastName='Tillman', userName='dtillman', password='supersecret6', email='QUeast@mail', roles=[]}]
+[DEBUG] 2021-02-20 23:36:51.488 [main] UserDao - The list of users [User{id=1, firstName='Joe', lastName='Coyne', userName='jcoyne', password='supersecret1', email='beast@mail', roles=[]}, User{id=2, firstName='Fred', lastName='Hensen', userName='fhensen', password='supersecret2', email='yeast@mail', roles=[]}, User{id=3, firstName='Barney', lastName='Curry', userName='bcurry', password='supersecret3', email='seast@mail', roles=[]}, User{id=4, firstName='Karen', lastName='Mack', userName='kmack', password='supersecret4', email='least@mail', roles=[]}, User{id=5, firstName='Dianne', lastName='Klein', userName='dklein', password='supersecret5', email='zeast@mail', roles=[]}, User{id=6, firstName='Dawn', lastName='Tillman', userName='dtillman', password='supersecret6', email='QUeast@mail', roles=[]}]
+[INFO ] 2021-02-20 23:36:51.489 [main] UserDaoTest - get all users test: all users;[User{id=1, firstName='Joe', lastName='Coyne', userName='jcoyne', password='supersecret1', email='beast@mail', roles=[]}, User{id=2, firstName='Fred', lastName='Hensen', userName='fhensen', password='supersecret2', email='yeast@mail', roles=[]}, User{id=3, firstName='Barney', lastName='Curry', userName='bcurry', password='supersecret3', email='seast@mail', roles=[]}, User{id=4, firstName='Karen', lastName='Mack', userName='kmack', password='supersecret4', email='least@mail', roles=[]}, User{id=5, firstName='Dianne', lastName='Klein', userName='dklein', password='supersecret5', email='zeast@mail', roles=[]}, User{id=6, firstName='Dawn', lastName='Tillman', userName='dtillman', password='supersecret6', email='QUeast@mail', roles=[]}]
+[ERROR] 2021-02-20 23:36:51.525 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:36:51.536 [main] UserDao - inserting user User{id=44, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='meaty', email='meaty@sharks', roles=[]}
+[ERROR] 2021-02-20 23:37:19.076 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:37:23.161 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[INFO ] 2021-02-20 23:37:49.711 [main] UserDaoTest - 
+[ERROR] 2021-02-20 23:37:49.760 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:37:49.788 [main] UserDao - inserting user [!!!com.hmkurth.entity.User@30afb481=>java.lang.StackOverflowError:null!!!]
+[ERROR] 2021-02-20 23:37:49.882 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:37:49.882 [main] UserDao - Searching for user with lastName = Curry
+[ERROR] 2021-02-20 23:37:50.148 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:37:50.148 [main] UserDao - Searching for user with lastName = c
+[ERROR] 2021-02-20 23:37:50.210 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:37:50.210 [main] UserDao - The list of users by last name [User{id=4, firstName='Karen', lastName='Mack', userName='kmack', password='supersecret4', email='least@mail', roles=[]}, User{id=5, firstName='Dianne', lastName='Klein', userName='dklein', password='supersecret5', email='zeast@mail', roles=[]}]
+[DEBUG] 2021-02-20 23:37:50.226 [main] UserDao - The list of users by last name []
+[ERROR] 2021-02-20 23:37:50.257 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:38:10.395 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:38:12.850 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:38:12.882 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:38:12.897 [main] UserRolesDao - Searching for UserRoles with roleName = admin
+[ERROR] 2021-02-20 23:38:13.163 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:38:13.163 [main] UserRolesDao - Searching for UserRoles with roleName = regular
+[ERROR] 2021-02-20 23:38:13.226 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:38:13.226 [main] UserRolesDao - The list of UserRoles []
+[ERROR] 2021-02-20 23:38:13.288 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:38:13.288 [main] UserRolesDao - The list of UserRoles by rolename []
+[ERROR] 2021-02-20 23:38:13.319 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:38:13.366 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:38:13.413 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:38:26.960 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:38:29.689 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:38:29.751 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:38:29.751 [main] UserRolesDao - Searching for UserRoles with roleName = admin
+[ERROR] 2021-02-20 23:38:30.001 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:38:30.001 [main] UserRolesDao - Searching for UserRoles with roleName = regular
+[ERROR] 2021-02-20 23:38:30.064 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:38:30.064 [main] UserRolesDao - The list of UserRoles []
+[ERROR] 2021-02-20 23:38:30.126 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:38:30.126 [main] UserRolesDao - The list of UserRoles by rolename []
+[ERROR] 2021-02-20 23:38:30.173 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:38:30.220 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:38:30.267 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:39:59.354 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:40:01.895 [main] UserRolesDao - The list of UserRoles []
+[ERROR] 2021-02-20 23:42:30.943 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:42:33.809 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:42:33.856 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:42:33.856 [main] UserRolesDao - Searching for UserRoles with roleName = admin
+[ERROR] 2021-02-20 23:42:34.153 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:42:34.153 [main] UserRolesDao - Searching for UserRoles with roleName = regular
+[ERROR] 2021-02-20 23:42:34.216 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:42:34.231 [main] UserRolesDao - The list of UserRoles []
+[ERROR] 2021-02-20 23:42:34.263 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:42:34.278 [main] UserRolesDao - The list of UserRoles by rolename []
+[ERROR] 2021-02-20 23:42:34.325 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:42:34.388 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:42:34.435 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:42:50.098 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:42:52.944 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:42:52.991 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:42:53.007 [main] UserRolesDao - Searching for UserRoles with roleName = admin
+[ERROR] 2021-02-20 23:42:54.197 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:42:54.197 [main] UserRolesDao - Searching for UserRoles with roleName = regular
+[ERROR] 2021-02-20 23:42:54.260 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:42:54.276 [main] UserRolesDao - The list of UserRoles []
+[ERROR] 2021-02-20 23:42:54.307 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-02-20 23:42:54.322 [main] UserRolesDao - The list of UserRoles by rolename []
+[ERROR] 2021-02-20 23:42:54.354 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:42:54.401 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:42:54.448 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:44:42.497 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:45:52.207 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-02-20 23:46:20.944 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[INFO ] 2021-02-20 23:48:55.707 [main] UserRolesDaoTest - update role success test
+[DEBUG] 2021-02-20 23:48:55.754 [main] UserRolesDao - Searching for UserRoles with roleName = admin
+[DEBUG] 2021-02-20 23:48:56.036 [main] UserRolesDao - Searching for UserRoles with roleName = regular
+[INFO ] 2021-02-20 23:52:57.890 [main] UserRolesDaoTest - update role success test
+[DEBUG] 2021-02-20 23:52:58.639 [main] UserRolesDao - Searching for UserRoles with roleName = admin
+[DEBUG] 2021-02-20 23:52:59.901 [main] UserRolesDao - Searching for UserRoles with roleName = regular
+[INFO ] 2021-02-21 00:32:31.405 [main] UserDaoTest - 
+[DEBUG] 2021-02-21 00:38:21.611 [main] UserDao - inserting user [!!!com.hmkurth.entity.User@5cdf221a=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-02-21 00:39:37.088 [main] UserDao - inserting user [!!!com.hmkurth.entity.User@4228f269=>java.lang.StackOverflowError:null!!!]
+[INFO ] 2021-02-21 00:44:28.649 [main] UserDaoTest - 
+[DEBUG] 2021-02-21 00:44:28.708 [main] UserDao - inserting user [!!!com.hmkurth.entity.User@34ab26a=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-02-21 00:44:28.780 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2021-02-21 00:44:29.109 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2021-02-21 00:44:29.461 [main] UserDao - inserting user User{id=49, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='meaty', email='meaty@sharks', roles=[]}
+[INFO ] 2021-02-21 00:47:06.685 [main] UserDaoTest - 
+[DEBUG] 2021-02-21 00:47:06.754 [main] UserDao - inserting user [!!!com.hmkurth.entity.User@6d8b7ea9=>java.lang.StackOverflowError:null!!!]
+[DEBUG] 2021-02-21 00:47:06.848 [main] UserDao - Searching for user with lastName = Curry
+[DEBUG] 2021-02-21 00:47:07.114 [main] UserDao - Searching for user with lastName = c
+[DEBUG] 2021-02-21 00:47:07.442 [main] UserDao - inserting user User{id=51, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='meaty', email='meaty@sharks', roles=[]}

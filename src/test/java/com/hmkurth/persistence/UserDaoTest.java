@@ -55,8 +55,8 @@ class UserDaoTest {
     void getUsersByLastNameLikeSuccess() {
         List<User> users = dao.getUsersByLastName("K");
         assertEquals(2, users.size());
-        List<User> usersz = dao.getUsersByLastName("Z");
-        assertEquals(0, usersz.size());
+        List<User> users2 = dao.getUsersByLastName("Z");
+        assertEquals(0, users2.size());
     }
 
     /**
@@ -71,7 +71,7 @@ class UserDaoTest {
     userToUpdate.setLastName(newLastName);
     dao.saveOrUpdate(userToUpdate);
     User retrievedUser = dao.getById(3);
-    assertEquals(newLastName, retrievedUser.getLastName());
+    assertEquals(userToUpdate, retrievedUser);
     logger.info("");
 
     }
@@ -94,9 +94,10 @@ class UserDaoTest {
     void getByIdSuccess() {
         User retrievedUser = dao.getById(1);
         assertEquals("Joe", retrievedUser.getFirstName());
+        assertEquals("Coyne", retrievedUser.getLastName());
+        assertEquals("jcoyne'", retrievedUser.getUserName());
+        assertEquals("beast@mail", retrievedUser.getEmail());
         assertNotNull(retrievedUser);
-        //TODO compare remaining values
-
     }
 
     /**
@@ -109,14 +110,7 @@ class UserDaoTest {
         int id = dao.insert(newUser);
         assertNotEquals(0,id);
         User insertedUser = dao.getById(id);
-        assertEquals("Fred", insertedUser.getFirstName());
-        assertEquals("Flintstone", insertedUser.getLastName());
-        assertEquals("fflintstone", insertedUser.getUserName());
-        assertEquals("meaty", insertedUser.getPassword());
-        assertEquals("meaty@sharks", insertedUser.getEmail());
-        // Could continue comparing all values, but
-        // it may make sense to use .equals()
-        //  review .equals recommendations http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#mapping-model-pojo-equalshashcode
+        assertEquals(newUser, insertedUser);
     }
     /**
      * Verify successful insert of a user with user role
@@ -125,20 +119,19 @@ class UserDaoTest {
     void insertWithRolesSuccess() {
 
         User newUser = new User("Fred", "Flintstone", "fflintstone", "meaty", "meaty@sharks");
-        String roleDescription = "admin";
+        String roleName = "admin";
+        String usersName= "Sally";
         //need to access both objects, bidirectionality
-        UserRoles role = new UserRoles(roleDescription, newUser);
+        UserRoles role = new UserRoles(usersName, roleName, newUser);
+        newUser.addRole(role);
         int id = dao.insert(newUser);
+
         assertNotEquals(0,id);
         User insertedUser = dao.getById(id);
-        assertEquals("Fred", insertedUser.getFirstName());
-        assertEquals("Flintstone", insertedUser.getLastName());
-        assertEquals("fflintstone", insertedUser.getUserName());
-        assertEquals("meaty", insertedUser.getPassword());
-        assertEquals("meaty@sharks", insertedUser.getEmail());
-        // Could continue comparing all values, but
-        // it may make sense to use .equals()
-        //  review .equals recommendations http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#mapping-model-pojo-equalshashcode
+        //verify the role was added
+        assertEquals(1,insertedUser.getRoles().size());
+        assertEquals(newUser, insertedUser);
+
     }
 
 
@@ -147,7 +140,7 @@ class UserDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<User> users = dao.getByPropertyLike("lastName", "Curry");
+        List<User> users = dao.getByPropertyEqual("lastName", "Curry");
         assertEquals(1, users.size());
         assertEquals(3, users.get(0).getId());
     }

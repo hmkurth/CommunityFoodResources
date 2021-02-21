@@ -6,6 +6,7 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import java.sql.Date;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 /**
@@ -31,28 +32,9 @@ public class User {
   //  @Column(name=email)
     private String email;
     //references the foreign key
-    @OneToMany(mappedBy = "user", cascade=CascadeType.ALL, orphanRemoval = true, fetch =FetchType.LAZY )
+    @OneToMany(mappedBy = "user", cascade=CascadeType.ALL, orphanRemoval = true, fetch =FetchType.EAGER )
+    //@JoinColumn(name = "id")//changing this...NOPE
     private Set<UserRoles> roles = new HashSet<>();
-
-    /**
-     * Gets roles.
-     *
-     * @return the roles
-     */
-    public Set<UserRoles> getRoles() {
-        return roles;
-    }
-
-    /**
-     * Sets roles.
-     *
-     * @param roles the roles
-     */
-    public void setRoles(Set<UserRoles> roles) {
-        this.roles = roles;
-    }
-
-
 
 
     /**
@@ -184,5 +166,72 @@ public class User {
      */
     public void setId(int id) {
         this.id = id;
+    }
+
+    /**
+     * Gets roles.
+     *
+     * @return the roles
+     */
+    public Set<UserRoles> getRoles() {
+        return roles;
+    }
+
+    /**
+     * Sets roles.
+     *
+     * @param roles the roles
+     */
+    public void setRoles(Set<UserRoles> roles) {
+        this.roles = roles;
+    }
+
+
+    /**
+     * Add role.
+     *
+     * @param role the role name
+     */
+    public void addRole(UserRoles role) {
+        roles.add(role);
+        role.setUser(this);
+
+    }
+
+    /**
+     * Delete role.
+     *
+     * @param role the role
+     */
+    public void deleteRole(UserRoles role) {
+        roles.remove(role);
+        role.setUser(null);
+
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", roles=" + roles +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return id == user.id && firstName.equals(user.firstName) && lastName.equals(user.lastName) && userName.equals(user.userName) && password.equals(user.password) && email.equals(user.email);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, firstName, lastName, userName, password, email);
     }
 }
