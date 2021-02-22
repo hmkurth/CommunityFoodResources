@@ -410,3 +410,17 @@
 [DEBUG] 2021-02-21 18:56:47.809 [main] UserRolesDao - The list of UserRoles by rolename [com.hmkurth.entity.UserRoles@62360a68]
 [DEBUG] 2021-02-21 18:56:47.823 [main] UserRolesDao - The list of UserRoles by rolename [com.hmkurth.entity.UserRoles@5a2f401a, com.hmkurth.entity.UserRoles@6bdedbbd]
 [DEBUG] 2021-02-21 18:56:47.952 [main] UserRolesDao - inserting UserRoles com.hmkurth.entity.UserRoles@f44d033
+[INFO ] 2021-02-21 20:27:26.782 [main] UserRolesDaoTest - update role success test
+[DEBUG] 2021-02-21 20:28:19.015 [main] UserRolesDao - The list of UserRoles [com.hmkurth.entity.UserRoles@6335f04a, com.hmkurth.entity.UserRoles@74ce7fdf, com.hmkurth.entity.UserRoles@1f26b992, com.hmkurth.entity.UserRoles@2f60cbf2, com.hmkurth.entity.UserRoles@631bc9f4, com.hmkurth.entity.UserRoles@642c72cf]
+[INFO ] 2021-02-21 20:28:19.015 [main] UserRolesDaoTest - get all userRoles test: all userRoles;[com.hmkurth.entity.UserRoles@6335f04a, com.hmkurth.entity.UserRoles@74ce7fdf, com.hmkurth.entity.UserRoles@1f26b992, com.hmkurth.entity.UserRoles@2f60cbf2, com.hmkurth.entity.UserRoles@631bc9f4, com.hmkurth.entity.UserRoles@642c72cf]
+[DEBUG] 2021-02-21 20:32:57.237 [main] GenericDao - Searching for order with roleName = admin
+[DEBUG] 2021-02-21 20:43:51.168 [main] GenericDao - The list of Entities by propertyNAme roleName
+[DEBUG] 2021-02-21 20:45:29.262 [main] GenericDao - The list of Entities by propertyNAme roleName
+[DEBUG] 2021-02-21 20:46:19.531 [main] GenericDao - Searching for order with roleName = admin
+[INFO ] 2021-02-21 20:47:28.336 [main] UserRolesDaoTest - update role success test
+[INFO ] 2021-02-21 20:59:45.160 [main] UserRolesDaoTest - update role success test
+[DEBUG] 2021-02-21 20:59:45.331 [main] GenericDao - Searching for order with roleName = admin
+[DEBUG] 2021-02-21 20:59:45.880 [main] GenericDao - The list of Entities by propertyName roleName
+[INFO ] 2021-02-21 20:59:46.005 [main] UserRolesDaoTest - get all userRoles test: all userRoles;[com.hmkurth.entity.UserRoles@386e9fd8, com.hmkurth.entity.UserRoles@3e2d8623, com.hmkurth.entity.UserRoles@72715e61, com.hmkurth.entity.UserRoles@68f776ee, com.hmkurth.entity.UserRoles@5a6195b8, com.hmkurth.entity.UserRoles@8af1c49]
+[DEBUG] 2021-02-21 21:06:24.547 [main] GenericDao - The list of Entities by entity name [com.hmkurth.entity.UserRoles@78eafad, com.hmkurth.entity.UserRoles@6f2d3391]
+[DEBUG] 2021-02-21 21:06:24.578 [main] GenericDao - The list of Entities by entity name [com.hmkurth.entity.UserRoles@601f264d]

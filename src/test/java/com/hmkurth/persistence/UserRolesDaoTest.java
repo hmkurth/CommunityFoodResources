@@ -20,6 +20,7 @@ class UserRolesDaoTest {
      * The Dao.
      */
     UserRolesDao dao;
+    GenericDao genericDao;
     private final Logger logger = LogManager.getLogger(this.getClass());
 
 
@@ -35,6 +36,7 @@ class UserRolesDaoTest {
         database.runSQL("cleanDb.sql");
 
         dao = new UserRolesDao();
+        genericDao = new GenericDao(UserRoles.class);
     }
 
     /**
@@ -42,10 +44,10 @@ class UserRolesDaoTest {
      */
     @Test
     void getAllUserRolesSuccess() {
-        List<UserRoles> userRoles = dao.getAllUserRoles();
+        List<UserRoles> userRoles = genericDao.getAll();
         //assert that you get back the right number of results assuming nothing alters the table
         assertEquals(6, userRoles.size());//
-        logger.info("get all userRoles test: all userRoles;" + dao.getAllUserRoles());
+        logger.info("get all userRoles test: all userRoles;" + genericDao.getAll());
     }
 
     /**
@@ -53,10 +55,10 @@ class UserRolesDaoTest {
      */
     @Test
     void getUserRolesByNameLikeSuccess() {
-        List<UserRoles> userRoles = dao.getUserRolesByName("admin");
-        assertEquals(1, userRoles.size());
-        List<UserRoles> users2 = dao.getUserRolesByName("all");
-        assertEquals(2, users2.size());
+        List<UserRoles> userRoles = genericDao.getEntityByName("roleName", "all");
+        assertEquals(2, userRoles.size());
+        List<UserRoles> users2 = genericDao.getEntityByName("roleName", "admin");
+        assertEquals(1, users2.size());
     }
 
     /**
@@ -65,10 +67,10 @@ class UserRolesDaoTest {
     @Test
     void saveOrUpdateSuccess() {
     String newRoleName = "readOnly";
-    UserRoles toUpdate = dao.getById(3);
+    UserRoles toUpdate = (UserRoles) genericDao.getById(3);
     toUpdate.setRoleName(newRoleName);
-    dao.saveOrUpdate(toUpdate);
-    UserRoles retrievedRole = dao.getById(3);
+    genericDao.saveOrUpdate(toUpdate);
+    UserRoles retrievedRole = (UserRoles) genericDao.getById(3);
     assertEquals(newRoleName, retrievedRole.getRoleName());
     logger.info("update role success test");
 
@@ -79,8 +81,8 @@ class UserRolesDaoTest {
      */
     @Test
     void deleteSuccess() {
-        dao.delete(dao.getById(3));
-        assertNull(dao.getById(3));
+        genericDao.delete(genericDao.getById(3));
+        assertNull(genericDao.getById(3));
 
     }
 
@@ -90,44 +92,14 @@ class UserRolesDaoTest {
      */
     @Test
     void getByIdSuccess() {
-        UserRoles retrievedUserRoles = dao.getById(1);
-        assertEquals("regular", retrievedUserRoles.getRoleName());
-        assertNotNull(retrievedUserRoles);
-        //TODO compare remaining values
+        UserRoles retrievedUserRole = (UserRoles) genericDao.getById(6);
+        assertEquals("regular", retrievedUserRole.getRoleName());
+        assertEquals("dtillman", retrievedUserRole.getUsersName());
 
-    }
-    /**
-     * Verifies a role is returned correctly based on id search
-     */
-    @Test
-    void getByIdVerifyUserSuccess() {
-        UserRoles retrievedRoles = dao.getById(1);
-        assertNotNull(retrievedRoles);
-        assertEquals("regular", retrievedRoles.getRoleName());
-        assertEquals("jcoyne", retrievedRoles.getUser().getUserName());//not sure about this one
+        assertNotNull(retrievedUserRole);
     }
 
-    /**
-     * Verify successful insert of a user role
-     */
-    @Test
-    void insertSuccess() {
 
-        UserDao userDao = new UserDao();
-        User user = userDao.getById(1);
-       // String roleName = "write";
-        UserRoles newUserRoles= new UserRoles("write", user);
-        user.addRole(newUserRoles);
-        int id = dao.insert(newUserRoles);
-        assertNotEquals(0, id);
-        assertEquals("write", newUserRoles.getRoleName());
-        UserRoles insertedUserRoles= dao.getById(id);
-        assertNotNull(insertedUserRoles);
-        assertEquals("write", insertedUserRoles.getRoleName());
-        assertNotNull(insertedUserRoles.getUser());
-
-
-    }
 
 
     /**
@@ -135,7 +107,7 @@ class UserRolesDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<UserRoles> usersRoles = dao.getByPropertyEqual("roleName", "admin");
+        List<UserRoles> usersRoles = genericDao.getByPropertyEqual("roleName", "admin");
         assertEquals(1, usersRoles.size());
         assertEquals(3, usersRoles.get(0).getId());//not sure about this one
     }
@@ -145,7 +117,7 @@ class UserRolesDaoTest {
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<UserRoles> usersRoles = dao.getByPropertyLike("roleName", "regular");
+        List<UserRoles> usersRoles = genericDao.getPropertyByName("roleName", "regular");
         assertEquals(3, usersRoles.size());
     }
 }
