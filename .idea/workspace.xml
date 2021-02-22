@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="adding userRoleDaoTest">
-      <change afterPath="$PROJECT_DIR$/${filepath}/hibernate_20210221 1817.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/${filepath}/hibernate_20210221 1832.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/${filepath}/hibernate_20210221 1843.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/${filepath}/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/${filepath}/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/${filepath}/hibernate_20210221 0032.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/${filepath}/hibernate_20210221 0038.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/${filepath}/hibernate_20210221 0039.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/${filepath}/hibernate_20210221 0044.log" beforeDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="unit tests passing after implementing equals">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/UserRoles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/UserRoles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/UserRolesDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/UserRolesDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/journal.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/journal.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/timeLog.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/timeLog.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,17 +91,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.All in CommunityFoodResources">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="All in CommunityFoodResources" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <option name="PACKAGE_NAME" value="" />
@@ -294,7 +273,8 @@
       <workItem from="1613110057495" duration="691000" />
       <workItem from="1613111045670" duration="4397000" />
       <workItem from="1613502438798" duration="64669000" />
-      <workItem from="1613953789443" duration="1540000" />
+      <workItem from="1613953789443" duration="2194000" />
+      <workItem from="1613956058271" duration="51000" />
     </task>
     <task id="LOCAL-00001" summary="adding readMe and timeLog.md">
       <created>1612156785894</created>
@@ -506,7 +486,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613890127246</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="unit tests passing after implementing equals">
+      <created>1613955516337</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1613955516337</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -526,7 +513,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adding Tuesday work to timelog/oneNote.  I did some mockups of the home and search page" />
     <MESSAGE value="continuing adding Tuesday work to timelog/oneNote.  I did some mockups of the home and search page" />
     <MESSAGE value="updating onenote, research on similar services" />
     <MESSAGE value="adding log4j2.properties" />
@@ -551,7 +537,8 @@
     <MESSAGE value="finally got dao and tests working!adding coverage img" />
     <MESSAGE value="adding userRole class and dao" />
     <MESSAGE value="adding userRoleDaoTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding userRoleDaoTest" />
+    <MESSAGE value="unit tests passing after implementing equals" />
+    <option name="LAST_COMMIT_MESSAGE" value="unit tests passing after implementing equals" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -614,6 +601,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CommunityFoodResources$All_in_CommunityFoodResources.ic" NAME="All in CommunityFoodResources Coverage Results" MODIFIED="1613955397508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/CommunityFoodResources$UserDaoTest.ic" NAME="UserDaoTest Coverage Results" MODIFIED="1613845809477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.hmkurth.persistence.*</FILTER>
     </SUITE>

@@ -266,3 +266,26 @@ Using google maps in my app
 Accessibility!  What is the newest tech/best practice specific to Java?
 
 
+
+WEEK 5;  17 hrs
+Mon 2/15 1 hour-
+	Prepping for TV interview!!  Channel 3 did a segment about my project, which was really heartening and exciting.  I have alot more pressure to do this well, now.
+Wed 2/16 8 hours
+	Working on adding hibernate to my project, having a few troubles after moving to a test db, now I keep getting a table not found error, I did some googling, but I haven’t figured it out yet..
+
+Thurs: 2 hrs
+Working on getting the logging just right with hibernate filepaths, I’ve been getting errors that the files can’t be renamed, so I tried renaming and moving, I fixed the error for now, but my hibernate logs aren’t I the right place with the right name…so…
+*I think I fixed it by removing a colon in the filename, but I very well may have screwed it up…will have to monitor logs
+
+Sat 2/20 : 4 hrs
+Working on the userRole dao and testing, after implementing the .equals method I have a lot of failing tests
+Sunday 2 hrs:
+I went too far in implementing the .equals method, and did it for the userRole dao, too, which was what was leading to all the problems I was having.  I am still having a problem with inserting a role without a username, so for now I have made that column not null, so I will have to monitor that as well.
+I don’t think I ever got that student liscense from IntelliJ, so now my sessions are limited to 30 minutes..have to check on that…
+I haven’t gotten as far as I wanted to on my project ☹.  There are a lot of little details to get right with the hibernate Db setup, I’m dreading it a little.
+
+
+
+
+
+
