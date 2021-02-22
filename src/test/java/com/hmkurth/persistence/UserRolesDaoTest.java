@@ -44,7 +44,7 @@ class UserRolesDaoTest {
     void getAllUserRolesSuccess() {
         List<UserRoles> userRoles = dao.getAllUserRoles();
         //assert that you get back the right number of results assuming nothing alters the table
-        assertEquals(6, userRoles.size());
+        assertEquals(6, userRoles.size());//
         logger.info("get all userRoles test: all userRoles;" + dao.getAllUserRoles());
     }
 
@@ -115,20 +115,18 @@ class UserRolesDaoTest {
 
         UserDao userDao = new UserDao();
         User user = userDao.getById(1);
-        String roleName = "write";
-        UserRoles newUserRoles= new UserRoles(roleName, user);
+       // String roleName = "write";
+        UserRoles newUserRoles= new UserRoles("write", user);
         user.addRole(newUserRoles);
         int id = dao.insert(newUserRoles);
         assertNotEquals(0, id);
+        assertEquals("write", newUserRoles.getRoleName());
         UserRoles insertedUserRoles= dao.getById(id);
         assertNotNull(insertedUserRoles);
-        assertEquals(roleName, insertedUserRoles.getRoleName());
+        assertEquals("write", insertedUserRoles.getRoleName());
         assertNotNull(insertedUserRoles.getUser());
-        assertEquals("Joe",insertedUserRoles.getUser().getFirstName());
 
-        // Could continue comparing all values, but
-        // it may make sense to use .equals()
-        // TODO review .equals recommendations http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#mapping-model-pojo-equalshashcode
+
     }
 
 

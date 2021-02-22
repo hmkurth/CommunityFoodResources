@@ -71,8 +71,6 @@ public class UserRolesDao {
     public void saveOrUpdate(UserRoles UserRoles) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        //id = (int)session.save(UserRoles);
-       // transaction.commit();
         session.saveOrUpdate(UserRoles);
         transaction.commit();
         session.close();
@@ -80,6 +78,7 @@ public class UserRolesDao {
     /**
      * update UserRoles
      * @param userRoles  UserRoles to be inserted or updated
+     * @return id of the inserted role
      */
     public int insert(UserRoles userRoles) {
         int id = 0;
@@ -90,6 +89,7 @@ public class UserRolesDao {
         logger.debug("inserting UserRoles {}", userRoles);
         session.close();
         return id;
+
     }
 
     /**
@@ -101,7 +101,6 @@ public class UserRolesDao {
         Transaction transaction = session.beginTransaction();
         session.delete(userRoles);
         transaction.commit();
-
         session.close();
     }
     /** Return a list of all UserRoless

@@ -95,7 +95,7 @@ class UserDaoTest {
         User retrievedUser = dao.getById(1);
         assertEquals("Joe", retrievedUser.getFirstName());
         assertEquals("Coyne", retrievedUser.getLastName());
-        assertEquals("jcoyne'", retrievedUser.getUserName());
+        assertEquals("jcoyne", retrievedUser.getUserName());
         assertEquals("beast@mail", retrievedUser.getEmail());
         assertNotNull(retrievedUser);
     }
@@ -122,7 +122,7 @@ class UserDaoTest {
         String roleName = "admin";
         String usersName= "Sally";
         //need to access both objects, bidirectionality
-        UserRoles role = new UserRoles(usersName, roleName, newUser);
+        UserRoles role = new UserRoles(roleName, newUser);
         newUser.addRole(role);
         int id = dao.insert(newUser);
 

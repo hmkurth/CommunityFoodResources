@@ -4,20 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="adding userRole class and dao">
-      <change afterPath="$PROJECT_DIR$/${filepath}/hibernate_20210221 0013.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/${filepath}/hibernate_20210221 0032.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/${filepath}/hibernate_20210221 0038.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/${filepath}/hibernate_20210221 0039.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="adding userRoleDaoTest">
+      <change afterPath="$PROJECT_DIR$/${filepath}/hibernate_20210221 1817.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${filepath}/hibernate_20210221 1832.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/${filepath}/hibernate_20210221 1843.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/${filepath}/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/${filepath}/hibernate.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/${filepath}/hibernate_20210221 0032.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/${filepath}/hibernate_20210221 0038.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/${filepath}/hibernate_20210221 0039.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/${filepath}/hibernate_20210221 0044.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/UserRoles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/UserRoles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/UserRolesDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/UserRolesDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,16 +100,22 @@
       <recent name="com.hmkurth.persistence" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserDaoTest">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.All in CommunityFoodResources">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in CommunityFoodResources" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CommunityFoodResources" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -139,22 +146,6 @@
       <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
       <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.UserDaoTest" />
       <option name="METHOD_NAME" value="insertWithRolesSuccess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDaoTest.saveOrUpdateSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CommunityFoodResources" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hmkurth.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.UserDaoTest" />
-      <option name="METHOD_NAME" value="saveOrUpdateSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -272,11 +263,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserDaoTest" />
-        <item itemvalue="JUnit.UserDaoTest.insertWithRolesSuccess" />
-        <item itemvalue="JUnit.UserDaoTest.saveOrUpdateSuccess" />
+        <item itemvalue="JUnit.All in CommunityFoodResources" />
         <item itemvalue="JUnit.UserRolesDaoTest.insertSuccess" />
         <item itemvalue="JUnit.UserRolesDaoTest" />
+        <item itemvalue="JUnit.UserDaoTest" />
+        <item itemvalue="JUnit.UserDaoTest.insertWithRolesSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -302,7 +293,8 @@
       <workItem from="1613089910431" duration="7070000" />
       <workItem from="1613110057495" duration="691000" />
       <workItem from="1613111045670" duration="4397000" />
-      <workItem from="1613502438798" duration="59498000" />
+      <workItem from="1613502438798" duration="64669000" />
+      <workItem from="1613953789443" duration="1540000" />
     </task>
     <task id="LOCAL-00001" summary="adding readMe and timeLog.md">
       <created>1612156785894</created>
@@ -507,7 +499,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613846968811</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="adding userRoleDaoTest">
+      <created>1613890127246</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1613890127246</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,7 +526,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adding OneNote link" />
     <MESSAGE value="adding Tuesday work to timelog/oneNote.  I did some mockups of the home and search page" />
     <MESSAGE value="continuing adding Tuesday work to timelog/oneNote.  I did some mockups of the home and search page" />
     <MESSAGE value="updating onenote, research on similar services" />
@@ -552,7 +550,8 @@
     <MESSAGE value="finally got dao and tests working!" />
     <MESSAGE value="finally got dao and tests working!adding coverage img" />
     <MESSAGE value="adding userRole class and dao" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding userRole class and dao" />
+    <MESSAGE value="adding userRoleDaoTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding userRoleDaoTest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -595,13 +594,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java</url>
-          <line>124</line>
+          <line>125</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java</url>
-          <line>126</line>
-          <option name="timeStamp" value="18" />
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.sql.SQLSyntaxErrorException" package="java.sql" />
@@ -613,11 +612,6 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="JUnit">
-        <watch expression="user" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CommunityFoodResources$UserDaoTest.ic" NAME="UserDaoTest Coverage Results" MODIFIED="1613845809477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

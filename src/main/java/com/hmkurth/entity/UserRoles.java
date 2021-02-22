@@ -62,18 +62,7 @@ public class UserRoles {
         this.user = user;
     }
 
-    /**
-     * Instantiates a new User roles.
-     *
-     * @param usersName the user name
-     * @param roleName the role name
-     * @param user     the user
-     */
-    public UserRoles(String usersName, String roleName, User user) {
-        this.usersName = usersName;
-        this.roleName = roleName;
-        this.user = user;
-    }
+
 
 
     /**
@@ -146,7 +135,7 @@ public class UserRoles {
     public void setUser(User user) {
         this.user = user;
     }
-
+/**  getting rid of this to see if it's messing with my tests in getAll
     @Override
     public String toString() {
         return "UserRoles{" +
@@ -155,7 +144,18 @@ public class UserRoles {
                 ", roleName='" + roleName + '\'' +
                 ", user=" + user +
                 '}';
+    }*/
+/*
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        UserRoles userRoles = (UserRoles) o;
+        return id == userRoles.id && usersName.equals(userRoles.usersName) && roleName.equals(userRoles.roleName);
     }
 
-
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, usersName, roleName);
+    }*/
 }
