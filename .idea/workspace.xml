@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="completed generic dao and userRoleDao tests with it.">
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="working on database configuration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,7 +286,7 @@
       <workItem from="1613962490713" duration="857000" />
       <workItem from="1613963477713" duration="601000" />
       <workItem from="1614107456140" duration="608000" />
-      <workItem from="1614130215962" duration="3380000" />
+      <workItem from="1614130215962" duration="5620000" />
     </task>
     <task id="LOCAL-00001" summary="adding readMe and timeLog.md">
       <created>1612156785894</created>
@@ -520,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613963222256</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="working on database configuration">
+      <created>1614133624442</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1614133624442</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,7 +546,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adding log4j2.properties" />
     <MESSAGE value="adding junit dependencies" />
     <MESSAGE value="updating timelog" />
     <MESSAGE value="adding rough draft or ERD" />
@@ -565,7 +570,8 @@
     <MESSAGE value="unit tests passing after implementing equals" />
     <MESSAGE value="adding journal and timelog" />
     <MESSAGE value="completed generic dao and userRoleDao tests with it." />
-    <option name="LAST_COMMIT_MESSAGE" value="completed generic dao and userRoleDao tests with it." />
+    <MESSAGE value="working on database configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on database configuration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
