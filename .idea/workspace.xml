@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="working on database configuration">
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="editing database configuration">
+      <change afterPath="$PROJECT_DIR$/DesignDocs/foodresourcesdbUML.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/foodresourcesdb_contact_details.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/foodresourcesdb_delivery_detail.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/foodresourcesdb_food_resources.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/foodresourcesdb_location.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/foodresourcesdb_resource_owners.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/foodresourcesdb_resource_types.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/testschema_user_roles.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/testschema_users.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignDocs/~WRL1595.tmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,9 +61,9 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
+    <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../IdeaProjects" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/DesignDocs/rawResourceInfo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -286,7 +297,7 @@
       <workItem from="1613962490713" duration="857000" />
       <workItem from="1613963477713" duration="601000" />
       <workItem from="1614107456140" duration="608000" />
-      <workItem from="1614130215962" duration="5620000" />
+      <workItem from="1614130215962" duration="8797000" />
     </task>
     <task id="LOCAL-00001" summary="adding readMe and timeLog.md">
       <created>1612156785894</created>
@@ -526,7 +537,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614133624442</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="editing database configuration">
+      <created>1614137236101</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1614137236101</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -546,7 +564,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adding junit dependencies" />
     <MESSAGE value="updating timelog" />
     <MESSAGE value="adding rough draft or ERD" />
     <MESSAGE value="adding application flow" />
@@ -571,7 +588,8 @@
     <MESSAGE value="adding journal and timelog" />
     <MESSAGE value="completed generic dao and userRoleDao tests with it." />
     <MESSAGE value="working on database configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on database configuration" />
+    <MESSAGE value="editing database configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="editing database configuration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
