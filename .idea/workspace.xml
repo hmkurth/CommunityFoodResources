@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="editing database configuration">
-      <change afterPath="$PROJECT_DIR$/DesignDocs/foodresourcesdbUML.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/foodresourcesdb_contact_details.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/foodresourcesdb_delivery_detail.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/foodresourcesdb_food_resources.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/foodresourcesdb_location.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/foodresourcesdb_resource_owners.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/foodresourcesdb_resource_types.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/testschema_user_roles.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/testschema_users.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignDocs/~WRL1595.tmp" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="adding tables to test database, starting to seed data">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Location.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/ResourceOwner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" afterDir="false" />
     </list>
@@ -99,6 +93,17 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.UserRolesDaoTest.getUserRolesByNameLikeSuccess">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserRolesDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
@@ -297,7 +302,7 @@
       <workItem from="1613962490713" duration="857000" />
       <workItem from="1613963477713" duration="601000" />
       <workItem from="1614107456140" duration="608000" />
-      <workItem from="1614130215962" duration="8797000" />
+      <workItem from="1614130215962" duration="12463000" />
     </task>
     <task id="LOCAL-00001" summary="adding readMe and timeLog.md">
       <created>1612156785894</created>
@@ -544,7 +549,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614137236101</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="adding tables to test database, starting to seed data">
+      <created>1614140451361</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1614140451361</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -564,7 +576,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="updating timelog" />
     <MESSAGE value="adding rough draft or ERD" />
     <MESSAGE value="adding application flow" />
     <MESSAGE value="updated user stories, project plan, added journal" />
@@ -589,7 +600,8 @@
     <MESSAGE value="completed generic dao and userRoleDao tests with it." />
     <MESSAGE value="working on database configuration" />
     <MESSAGE value="editing database configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="editing database configuration" />
+    <MESSAGE value="adding tables to test database, starting to seed data" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding tables to test database, starting to seed data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
