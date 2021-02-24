@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="adding tables to test database, starting to seed data">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/ResourceOwner.java" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="starting to write and annotate classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/journal.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/~WRL1595.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -302,7 +301,7 @@
       <workItem from="1613962490713" duration="857000" />
       <workItem from="1613963477713" duration="601000" />
       <workItem from="1614107456140" duration="608000" />
-      <workItem from="1614130215962" duration="12463000" />
+      <workItem from="1614130215962" duration="14219000" />
     </task>
     <task id="LOCAL-00001" summary="adding readMe and timeLog.md">
       <created>1612156785894</created>
@@ -556,7 +555,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614140451361</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="starting to write and annotate classes">
+      <created>1614144143810</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1614144143810</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -576,7 +582,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adding rough draft or ERD" />
     <MESSAGE value="adding application flow" />
     <MESSAGE value="updated user stories, project plan, added journal" />
     <MESSAGE value="updated timeLog.md" />
@@ -601,7 +606,8 @@
     <MESSAGE value="working on database configuration" />
     <MESSAGE value="editing database configuration" />
     <MESSAGE value="adding tables to test database, starting to seed data" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding tables to test database, starting to seed data" />
+    <MESSAGE value="starting to write and annotate classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="starting to write and annotate classes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
