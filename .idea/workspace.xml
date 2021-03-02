@@ -4,37 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="updating generic dao, switching userdaoTest to use generic dao">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210302 1312.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210302 1351.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210302 1412.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210302 1432.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/checkpoint2UnitTestCoverage.png" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="updating files for checkpoint 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/applicationFlow.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/applicationFlow.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/img_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/img_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/img_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/img_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/img_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/img_8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/projectPlan.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/projectPlan.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/timeLog.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/timeLog.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/userStoriesParedDownToMVP.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/wireframe images/userStoriesParedDownToMVP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/wireFrames.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210302 1234.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210302 1239.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/readMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/readMe.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/screenshots/daoUnitTestPassing.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/daoUnitTestPassing.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/screenshots/week5UnitTestsWithCoverage.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/week5UnitTestsWithCoverage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/screenshots/withCoverage.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/withCoverage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/UserRoles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/UserRoles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/test/util/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/test/util/Database.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,19 +92,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.All in CommunityFoodResources">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="All in CommunityFoodResources" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <option name="PACKAGE_NAME" value="" />
@@ -324,7 +283,8 @@
       <workItem from="1613963477713" duration="601000" />
       <workItem from="1614107456140" duration="608000" />
       <workItem from="1614130215962" duration="21621000" />
-      <workItem from="1614705173468" duration="12588000" />
+      <workItem from="1614705173468" duration="12658000" />
+      <workItem from="1614728725214" duration="355000" />
     </task>
     <task id="LOCAL-00001" summary="adding readMe and timeLog.md">
       <created>1612156785894</created>
@@ -599,7 +559,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614710807479</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="updating files for checkpoint 2">
+      <created>1614728569305</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1614728569305</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -619,7 +586,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="updated user stories, project plan, added journal" />
     <MESSAGE value="updated timeLog.md" />
     <MESSAGE value="Ready for checkpoint 1, technologies used file is updated, but will need further updating" />
     <MESSAGE value="editing erd to include address and delivery bool" />
@@ -644,7 +610,8 @@
     <MESSAGE value="adding tables to test database, starting to seed data" />
     <MESSAGE value="starting to write and annotate classes" />
     <MESSAGE value="updating generic dao, switching userdaoTest to use generic dao" />
-    <option name="LAST_COMMIT_MESSAGE" value="updating generic dao, switching userdaoTest to use generic dao" />
+    <MESSAGE value="updating files for checkpoint 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating files for checkpoint 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
