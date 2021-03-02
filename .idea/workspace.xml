@@ -4,24 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="starting to write and annotate classes">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210302 1234.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210302 1239.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/${filepath}/hibernate.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/${filepath}/hibernate_20210221 2045.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/${filepath}/hibernate_20210221 2046.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/${filepath}/hibernate_20210221 2047.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/${filepath}/hibernate_20210221 2059.log" beforeDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="updating generic dao, switching userdaoTest to use generic dao">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210302 1312.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210302 1351.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210302 1412.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210302 1432.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/checkpoint2UnitTestCoverage.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/applicationFlow.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/applicationFlow.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/img_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/img_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/img_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/img_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/img_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/img_8.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DesignDocs/projectPlan.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/projectPlan.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/timeLog.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/timeLog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/userStoriesParedDownToMVP.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/wireframe images/userStoriesParedDownToMVP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/wireFrames.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernateLogs/hibernate.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/ResourceOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/ResourceOwner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210302 1234.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210302 1239.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/readMe.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/screenshots/daoUnitTestPassing.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/daoUnitTestPassing.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/screenshots/week5UnitTestsWithCoverage.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/week5UnitTestsWithCoverage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/screenshots/withCoverage.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/withCoverage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/UserRoles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/UserRoles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/GenericDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,8 +100,11 @@
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\test\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\test\resources" />
+      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources" />
+      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\governmentGuidelinesForAccessibility" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\DesignDocs" />
+      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\DesignDocs\wireframe images" />
+      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\test\resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -104,7 +119,7 @@
       <recent name="com.hmkurth.persistence" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserDaoTest">
+  <component name="RunManager" selected="JUnit.All in CommunityFoodResources">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -141,6 +156,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserDaoTest.deleteSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CommunityFoodResources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmkurth.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.UserDaoTest" />
+      <option name="METHOD_NAME" value="deleteSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoTest.deleteWithRolesSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CommunityFoodResources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmkurth.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.UserDaoTest" />
+      <option name="METHOD_NAME" value="deleteWithRolesSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserDaoTest.saveOrUpdateSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
@@ -152,37 +199,6 @@
       <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
       <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.UserDaoTest" />
       <option name="METHOD_NAME" value="saveOrUpdateSuccess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserRolesDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CommunityFoodResources" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hmkurth.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.UserRolesDaoTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserRolesDaoTest.getUserRolesByNameLikeSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CommunityFoodResources" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hmkurth.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.UserRolesDaoTest" />
-      <option name="METHOD_NAME" value="getUserRolesByNameLikeSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -269,11 +285,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in CommunityFoodResources" />
+        <item itemvalue="JUnit.UserDaoTest.deleteWithRolesSuccess" />
+        <item itemvalue="JUnit.UserDaoTest.deleteSuccess" />
         <item itemvalue="JUnit.UserDaoTest" />
         <item itemvalue="JUnit.UserDaoTest.saveOrUpdateSuccess" />
-        <item itemvalue="JUnit.All in CommunityFoodResources" />
-        <item itemvalue="JUnit.UserRolesDaoTest.getUserRolesByNameLikeSuccess" />
-        <item itemvalue="JUnit.UserRolesDaoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -308,7 +324,7 @@
       <workItem from="1613963477713" duration="601000" />
       <workItem from="1614107456140" duration="608000" />
       <workItem from="1614130215962" duration="21621000" />
-      <workItem from="1614705173468" duration="5468000" />
+      <workItem from="1614705173468" duration="12588000" />
     </task>
     <task id="LOCAL-00001" summary="adding readMe and timeLog.md">
       <created>1612156785894</created>
@@ -576,7 +592,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614147199052</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="updating generic dao, switching userdaoTest to use generic dao">
+      <created>1614710807479</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1614710807479</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -596,7 +619,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adding application flow" />
     <MESSAGE value="updated user stories, project plan, added journal" />
     <MESSAGE value="updated timeLog.md" />
     <MESSAGE value="Ready for checkpoint 1, technologies used file is updated, but will need further updating" />
@@ -621,7 +643,8 @@
     <MESSAGE value="editing database configuration" />
     <MESSAGE value="adding tables to test database, starting to seed data" />
     <MESSAGE value="starting to write and annotate classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="starting to write and annotate classes" />
+    <MESSAGE value="updating generic dao, switching userdaoTest to use generic dao" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating generic dao, switching userdaoTest to use generic dao" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -650,6 +673,14 @@
           </properties>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
+          <line>87</line>
+          <properties class="com.hmkurth.persistence.UserDaoTest" method="deleteWithRolesSuccess">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
           <line>44</line>
@@ -675,6 +706,16 @@
           <line>17</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.sql.SQLSyntaxErrorException" package="java.sql" />
           <option name="timeStamp" value="11" />
@@ -687,7 +728,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CommunityFoodResources$All_in_CommunityFoodResources.ic" NAME="All in CommunityFoodResources Coverage Results" MODIFIED="1614709121599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/CommunityFoodResources$All_in_CommunityFoodResources.ic" NAME="All in CommunityFoodResources Coverage Results" MODIFIED="1614726724648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/CommunityFoodResources$UserDaoTest.ic" NAME="UserDaoTest Coverage Results" MODIFIED="1614710690280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.hmkurth.persistence.*</FILTER>
     </SUITE>

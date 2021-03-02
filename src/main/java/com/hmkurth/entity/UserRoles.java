@@ -38,7 +38,7 @@ public class UserRoles {
      */
     @ManyToOne
     @JoinColumn(name = "users_id",
-            foreignKey = @ForeignKey(name = "users_id")
+            foreignKey = @ForeignKey(name = "id")
     )
 //@Column(name="users_id")  this is not allowed on many to one property
     private  User user;//hibernate maps this

@@ -78,14 +78,29 @@ class UserDaoTest {
 
     }
 
-    /**
-     * Verifies Delete. Think about testing the delete scenarios in one-to-many relationships more fully. For example, if a user is deleted, what should happen to that user's roles? What if a role is deleted?
+    /** TODO
+     * Verifies Delete.
+     * Think about testing the delete scenarios in one-to-many relationships more fully.
+     * For example, if a user is deleted, what should happen to that user's roles? What if a role is deleted?
      * Write tests to make sure whatever should happen, does happen.
      */
     @Test
-    void deleteSuccess() {
+    void deleteWithRolesSuccess() {
+      /* for UserRoles roles : genericDao.getById(3)){
+           // genericDao.getById(3).removeUserRoles(roles);
+        }
+        genericDao.getById(3).clear();
+/*
+
+       */
+        User toDelete = (User) genericDao.getById(3);
+        UserRoles roleToDelete = (UserRoles) toDelete.getRoles();
+
         genericDao.delete(genericDao.getById(3));
+        genericDao.delete(roleToDelete);
         assertNull(genericDao.getById(3));
+        //user's roles should be null
+        assertNull(toDelete.getRoles());
 
     }
 

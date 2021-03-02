@@ -168,7 +168,7 @@ public class User {
         this.id = id;
     }
 
-    /**
+    /** TODO
      * Gets roles.
      *
      * @return the roles

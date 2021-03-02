@@ -64,7 +64,7 @@ I'm not sure at all how much work each thing takes...
 
 ###
 
-### Add Trail Report
+### Add Resource Report
 1. Option only available to logged in users with proper role
 1. com.hmkurth.entity.User selects trail to report on
 1. com.hmkurth.entity.User enters trail report details
@@ -74,7 +74,7 @@ I'm not sure at all how much work each thing takes...
 1. Dao adds report to the database
 1. Servlet sends confirmation to report page that report has been added.
 
-### Add Trail
+### Add Resource
 1. Option only available to logged in users with proper role
 1. com.hmkurth.entity.User enters trail  details
 1. Details are sent to Add Trail  servlet

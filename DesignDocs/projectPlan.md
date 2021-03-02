@@ -27,9 +27,6 @@
 
 
 
-### Honestly, I don't know all the things I need to do.....
-
-
 ### Week 5
 - [ x] Finalize ERD
 - [ x] add remaining tables to ?hibernate?
@@ -40,9 +37,9 @@
 
 
 ### Week 6
-- [ ] start creating unit tests for class and jsp files
-- [ ] start creating the class and jsp files..this will probably flow into upcoming weeks as well
-- [ ] Weekly reflection
+- [ x] start creating unit tests for class and jsp files
+- [ x] start creating the class and jsp files..this will probably flow into upcoming weeks as well
+- [ x] Weekly reflection
 
 ### Week 7
 - [ ] Select Template | Design CSS
