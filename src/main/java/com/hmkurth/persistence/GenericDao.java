@@ -1,5 +1,6 @@
 package com.hmkurth.persistence;
 
+import com.hmkurth.entity.User;
 import com.hmkurth.entity.UserRoles;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -153,6 +154,21 @@ public class GenericDao<T> {//T is placeholder, variable for type
         return SessionFactoryProvider.getSessionFactory().openSession();
 
     }
+    /**
+     * update entity
+     * @param entity  entity to be inserted or updated
+     */
+    public int insert(T entity) {
+        int id = 0;
+        Session session = getSession();
+        Transaction transaction = session.beginTransaction();
+        id = (int)session.save(entity);
+        transaction.commit();
+        logger.debug("inserting entity {}", entity);
+        session.close();
+        return id;
+    }
+
 
 
 

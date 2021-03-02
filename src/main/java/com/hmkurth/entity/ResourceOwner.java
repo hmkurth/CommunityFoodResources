@@ -26,11 +26,11 @@ public class ResourceOwner {
     private Location locationId;
     private String website;
     @Column(name="types_offered")
-    private Set<FoodResourceTypes> types;//set of types of resources offered, goes to types
+    //private Set<FoodResourceType> types;//set of types of resources offered, goes to types
 
 
     private String email;
     private String phone;
 
-    public ResourceOwner() {
+
     }

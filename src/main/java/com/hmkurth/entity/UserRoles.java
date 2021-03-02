@@ -135,16 +135,18 @@ public class UserRoles {
     public void setUser(User user) {
         this.user = user;
     }
-/**  getting rid of this to see if it's messing with my tests in getAll
+/**
+ * to string method
+ * */
     @Override
     public String toString() {
         return "UserRoles{" +
                 "id=" + id +
                 ", userName='" + usersName + '\'' +
                 ", roleName='" + roleName + '\'' +
-                ", user=" + user +
+
                 '}';
-    }*/
+    }
 /*
     @Override
     public boolean equals(Object o) {

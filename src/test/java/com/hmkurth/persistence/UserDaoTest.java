@@ -20,6 +20,7 @@ class UserDaoTest {
      * The Dao.
      */
     UserDao dao;
+    GenericDao genericDao;
     private final Logger logger = LogManager.getLogger(this.getClass());
 
 
@@ -35,6 +36,7 @@ class UserDaoTest {
         database.runSQL("cleanDb.sql");
 
         dao = new UserDao();
+        genericDao = new GenericDao(User.class);
     }
 
     /**
@@ -42,10 +44,10 @@ class UserDaoTest {
      */
     @Test
     void getAllUsersSuccess() {
-        List<User> users = dao.getAllUsers();
+        List<User> users = genericDao.getAll();
         //assert that you get back the right number of results assuming nothing alters the table
         assertEquals(6, users.size());
-        logger.info("get all users test: all users;" + dao.getAllUsers());
+        logger.info("get all users test: all users;" + genericDao.getAll());
     }
 
     /**
@@ -53,9 +55,9 @@ class UserDaoTest {
      */
     @Test
     void getUsersByLastNameLikeSuccess() {
-        List<User> users = dao.getUsersByLastName("K");
+        List<User> users = genericDao.getEntityByName("lastName","K");
         assertEquals(2, users.size());
-        List<User> users2 = dao.getUsersByLastName("Z");
+        List<User> users2 = genericDao.getEntityByName("lastName", "Z");
         assertEquals(0, users2.size());
     }
 
@@ -67,22 +69,23 @@ class UserDaoTest {
         //assertions; what will be changed? number of users? nametest?
        // User updatedUser = dao.saveOrUpdate(dao);
     String newLastName = "Smurf";
-    User userToUpdate = dao.getById(3);
+    User userToUpdate = (User) genericDao.getById(3);
     userToUpdate.setLastName(newLastName);
-    dao.saveOrUpdate(userToUpdate);
-    User retrievedUser = dao.getById(3);
+    genericDao.saveOrUpdate(userToUpdate);
+    User retrievedUser = (User) genericDao.getById(3);
     assertEquals(userToUpdate, retrievedUser);
-    logger.info("");
+    logger.info("in save or update test");
 
     }
 
     /**
-     * Verifies Delete.
+     * Verifies Delete. Think about testing the delete scenarios in one-to-many relationships more fully. For example, if a user is deleted, what should happen to that user's roles? What if a role is deleted?
+     * Write tests to make sure whatever should happen, does happen.
      */
     @Test
     void deleteSuccess() {
-        dao.delete(dao.getById(3));
-        assertNull(dao.getById(3));
+        genericDao.delete(genericDao.getById(3));
+        assertNull(genericDao.getById(3));
 
     }
 
@@ -92,7 +95,7 @@ class UserDaoTest {
      */
     @Test
     void getByIdSuccess() {
-        User retrievedUser = dao.getById(1);
+        User retrievedUser = (User) genericDao.getById(1);
         assertEquals("Joe", retrievedUser.getFirstName());
         assertEquals("Coyne", retrievedUser.getLastName());
         assertEquals("jcoyne", retrievedUser.getUserName());
@@ -107,9 +110,9 @@ class UserDaoTest {
     void insertSuccess() {
 
         User newUser = new User("Fred", "Flintstone", "fflintstone", "meaty", "meaty@sharks");
-        int id = dao.insert(newUser);
+        int id = genericDao.insert(newUser);
         assertNotEquals(0,id);
-        User insertedUser = dao.getById(id);
+        User insertedUser = (User) genericDao.getById(id);
         assertEquals(newUser, insertedUser);
     }
     /**
@@ -124,10 +127,10 @@ class UserDaoTest {
         //need to access both objects, bidirectionality
         UserRoles role = new UserRoles(roleName, newUser);
         newUser.addRole(role);
-        int id = dao.insert(newUser);
+        int id = genericDao.insert(newUser);
 
         assertNotEquals(0,id);
-        User insertedUser = dao.getById(id);
+        User insertedUser = (User) genericDao.getById(id);
         //verify the role was added
         assertEquals(1,insertedUser.getRoles().size());
         assertEquals(newUser, insertedUser);
@@ -140,7 +143,7 @@ class UserDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<User> users = dao.getByPropertyEqual("lastName", "Curry");
+        List<User> users = genericDao.getByPropertyEqual("lastName", "Curry");
         assertEquals(1, users.size());
         assertEquals(3, users.get(0).getId());
     }
@@ -150,7 +153,7 @@ class UserDaoTest {
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<User> users = dao.getByPropertyLike("lastName", "c");
+        List<User> users = genericDao.getPropertyByName("lastName", "c");
         assertEquals(3, users.size());
     }
 }

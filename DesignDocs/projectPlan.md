@@ -9,21 +9,21 @@
 - [ x] List technologies, versions and how they will be used
 - [ x] Weekly reflection
 - [ x] Write project plan
-- [x ] Document application flow in text and pictures - I'll use wireframes that have clickable links for the screen design. Use Balsamiq?
+- [x ] Document application flow in text and pictures - 
 - [ x] Triple-check for Checkpoint 1
 
 ### Week 4
 #### This week's focus is the com.hmkurth.entity.User Sign Up Story
-- [ ] Create the database
+- [x ] Create the database
 - [ ] Select Template | Design CSS
 - [ ] new user jsp
 - [ ] add user controller (java class)
-- [ ] user entity (java class)
-- [ ] user table
-- [ ] user dao to add user to db (java class)
-- [ ] unit test dao add user functionality
+- [ x] user entity (java class)
+- [ x] user table
+- [x ] user dao to add user to db (java class)
+- [ x] unit test dao add user functionality
 - [ ] test round trip (front end to back end)
-- [ ] Weekly reflection
+- [x ] Weekly reflection
 
 
 
@@ -31,12 +31,12 @@
 
 
 ### Week 5
-- [ ] Finalize ERD
-- [ ] add remaining tables to ?hibernate?
+- [ x] Finalize ERD
+- [ x] add remaining tables to ?hibernate?
 - [ ] start collating resources gained from social networks
 - [ ] "" photos ""
 - [] create a diagram about app flow with all the jsps and servlets 
-- [ ] Weekly reflection
+- [ x] Weekly reflection
 
 
 ### Week 6
@@ -45,12 +45,19 @@
 - [ ] Weekly reflection
 
 ### Week 7
+- [ ] Select Template | Design CSS
+- [ ] new user jsp
+- [ ] add user controller (java class)
+    - [ ] test round trip (front end to back end)
 - [ ] database input
 - [ ] research accessibility in java...make it a goal to adhere to gov access standards??
 - [ ] research APIS
 - [ ] Weekly reflection
 
 ### Week 8
+- [ ] start collating resources gained from social networks
+- [ ] "" photos ""
+- [] create a diagram about app flow with all the jsps and servlets
 - [ ] bootstrap implement, consider usability concerns\
 - [ ] research how to make buttons for espanol and hmong language redirects,
     make it easy for them to find info, does that happen through browser tools???
