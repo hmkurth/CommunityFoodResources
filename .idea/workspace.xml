@@ -9,38 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="cleaning up log, stacktraces">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_servlet_jstl_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_servlet_jstl_1_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210307 1805.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210307 1819.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210307 1831.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/META-INF/context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/head.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/loginError.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/results.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/search.jsp" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="attempting authentication, have updated all settings, xmls...">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210307 1917.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210307 1923.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210307 1927.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CommunityFoodResources.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CommunityFoodResources.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210302 1312.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210302 1351.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210302 1412.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210302 1432.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/UserRoles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/UserRoles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/GenericDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/test/util/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/test/util/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210307 1805.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210307 1819.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210307 1831.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,11 +99,11 @@
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\test\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\governmentGuidelinesForAccessibility" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\DesignDocs" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\DesignDocs\wireframe images" />
-      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\test\resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -140,19 +120,6 @@
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.Tomcat">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
@@ -374,7 +341,8 @@
       <workItem from="1614870886824" duration="5000" />
       <workItem from="1614880948567" duration="4788000" />
       <workItem from="1614885812545" duration="2677000" />
-      <workItem from="1614956487352" duration="32615000" />
+      <workItem from="1614956487352" duration="34220000" />
+      <workItem from="1615167075807" duration="1471000" />
     </task>
     <task id="LOCAL-00001" summary="adding readMe and timeLog.md">
       <created>1612156785894</created>
@@ -663,7 +631,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614729107858</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="attempting authentication, have updated all settings, xmls...">
+      <created>1615165461899</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1615165461899</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -683,7 +658,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Ready for checkpoint 1, technologies used file is updated, but will need further updating" />
     <MESSAGE value="editing erd to include address and delivery bool" />
     <MESSAGE value="editing erd to change date offered to a varchar, since there may be a range of dates or days of the week resource is offered" />
     <MESSAGE value="adding my first resource contacts in a typescript file, adding an image folder with my first community image !!! YAY!" />
@@ -708,7 +682,8 @@
     <MESSAGE value="updating generic dao, switching userdaoTest to use generic dao" />
     <MESSAGE value="updating files for checkpoint 2" />
     <MESSAGE value="cleaning up log, stacktraces" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleaning up log, stacktraces" />
+    <MESSAGE value="attempting authentication, have updated all settings, xmls..." />
+    <option name="LAST_COMMIT_MESSAGE" value="attempting authentication, have updated all settings, xmls..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
