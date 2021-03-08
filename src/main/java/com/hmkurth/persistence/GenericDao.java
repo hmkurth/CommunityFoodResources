@@ -6,12 +6,14 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import javax.persistence.Entity;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
 import java.util.List;
+import java.util.Set;
 
 /**
  * generic dao to take in any type of object, any entity managed by hibernate
@@ -82,9 +84,29 @@ public class GenericDao<T> {//T is placeholder, variable for type
         Session session = getSession();
         Transaction transaction = session.beginTransaction();
         session.delete(entity);
+
+       // session.clear();
         transaction.commit();
         session.close();
     }
+    /**
+     * Deletes a collection of enties??????????????????????????????????????????????
+     *
+     * @param type entity to be deleted
+     *
+     */
+
+    public void deleteMultiple(Set<T> type) {
+        Session session = getSession();
+        Transaction transaction = session.beginTransaction();
+       // session.delete(type);
+        //use remove or remove all????
+        //product.getRecommendations().clear();
+        session.remove(type);
+        transaction.commit();
+        session.close();
+    }
+
 
 
     /**

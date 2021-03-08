@@ -3,7 +3,6 @@ package com.hmkurth.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.util.Objects;
 
 /**
  * class to represent user roles
@@ -23,8 +22,8 @@ public class UserRoles {
     /**
      * The User name.
      */
-    @Column(name="users_name")
-    private String usersName;
+    @Column(name= "user_name")
+    private String userName;
     /**
      * The Role name.
      */
@@ -38,9 +37,9 @@ public class UserRoles {
      */
     @ManyToOne
     @JoinColumn(name = "users_id",
-            foreignKey = @ForeignKey(name = "id")
+            foreignKey = @ForeignKey(name = "user_roles_users_id_fk")
     )
-//@Column(name="users_id")  this is not allowed on many to one property
+
     private  User user;//hibernate maps this
 
 
@@ -56,10 +55,13 @@ public class UserRoles {
      *
      * @param roleName the role name
      * @param user     the user
+     * @param roleName the name of the role
+     * @param  userName the userName of the user
      */
-    public UserRoles(String roleName, User user) {
+    public UserRoles(String roleName, User user, String userName) {
         this.roleName = roleName;
         this.user = user;
+        this.userName = userName;
     }
 
 
@@ -88,8 +90,8 @@ public class UserRoles {
      *
      * @return the user name
      */
-    public String getUsersName() {
-        return usersName;
+    public String getUserName() {
+        return userName;
     }
 
     /**
@@ -97,8 +99,8 @@ public class UserRoles {
      *
      * @param userName the user name
      */
-    public void setUsersName(String userName) {
-        this.usersName = userName;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     /**
@@ -142,7 +144,7 @@ public class UserRoles {
     public String toString() {
         return "UserRoles{" +
                 "id=" + id +
-                ", userName='" + usersName + '\'' +
+                ", userName='" + userName + '\'' +
                 ", roleName='" + roleName + '\'' +
 
                 '}';
@@ -153,11 +155,11 @@ public class UserRoles {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         UserRoles userRoles = (UserRoles) o;
-        return id == userRoles.id && usersName.equals(userRoles.usersName) && roleName.equals(userRoles.roleName);
+        return id == userRoles.id && userName.equals(userRoles.userName) && roleName.equals(userRoles.roleName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, usersName, roleName);
+        return Objects.hash(id, userName, roleName);
     }*/
 }

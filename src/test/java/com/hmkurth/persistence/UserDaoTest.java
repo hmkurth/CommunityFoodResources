@@ -6,9 +6,11 @@ import org.apache.logging.log4j.Logger;
 import com.hmkurth.entity.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import javax.persistence.Entity;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -49,6 +51,16 @@ class UserDaoTest {
         assertEquals(6, users.size());
         logger.info("get all users test: all users;" + genericDao.getAll());
     }
+    /**
+     * Verify successful get by property (equal match)
+     */
+    @Test
+    void getByPropertyEqualSuccess() {
+        List<User> users = genericDao.getByPropertyEqual("lastName", "Curry");
+        assertEquals(1, users.size());
+        assertEquals(3, users.get(0).getId());
+    }
+
 
     /**
      * Verifies Gets users by last name.
@@ -78,12 +90,27 @@ class UserDaoTest {
 
     }
 
+    @Test
+    void deleteSuccess() {
+        //how many do we have to start
+        List allUsers = genericDao.getAll();
+        assertEquals(6, allUsers.size());
+        //the one to delete
+        User toDelete = (User) genericDao.getById(3);
+        genericDao.delete(toDelete);
+        assertNull(genericDao.getById(3));
+
+
+        List users = genericDao.getAll();
+        assertEquals(5, users.size());
+    }
+
     /** TODO
      * Verifies Delete.
      * Think about testing the delete scenarios in one-to-many relationships more fully.
      * For example, if a user is deleted, what should happen to that user's roles? What if a role is deleted?
      * Write tests to make sure whatever should happen, does happen.
-     */
+
     @Test
     void deleteWithRolesSuccess() {
       /* for UserRoles roles : genericDao.getById(3)){
@@ -92,18 +119,19 @@ class UserDaoTest {
         genericDao.getById(3).clear();
 /*
 
-       */
-        User toDelete = (User) genericDao.getById(3);
-        UserRoles roleToDelete = (UserRoles) toDelete.getRoles();
 
-        genericDao.delete(genericDao.getById(3));
-        genericDao.delete(roleToDelete);
-        assertNull(genericDao.getById(3));
+        User toDelete = (User) genericDao.getById(3);
+        //what if I only want to delete one role if a user has multiple roles??
+        Set<UserRoles> rolesToDelete = toDelete.getRoles();
+        logger.debug("roles to delete: "+ rolesToDelete);
+
+
+        genericDao.deleteMultiple(rolesToDelete);
         //user's roles should be null
         assertNull(toDelete.getRoles());
 
     }
-
+*/
     /**
      * Verifies a user is returned correctly based on id
      * compare different fields
@@ -140,7 +168,7 @@ class UserDaoTest {
         String roleName = "admin";
         String usersName= "Sally";
         //need to access both objects, bidirectionality
-        UserRoles role = new UserRoles(roleName, newUser);
+        UserRoles role = new UserRoles(roleName, newUser, usersName);
         newUser.addRole(role);
         int id = genericDao.insert(newUser);
 
@@ -153,22 +181,13 @@ class UserDaoTest {
     }
 
 
-    /**
-     * Verify successful get by property (equal match)
-     */
-    @Test
-    void getByPropertyEqualSuccess() {
-        List<User> users = genericDao.getByPropertyEqual("lastName", "Curry");
-        assertEquals(1, users.size());
-        assertEquals(3, users.get(0).getId());
-    }
 
     /**
      * Verify successful get by property (like match)
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<User> users = genericDao.getPropertyByName("lastName", "c");
-        assertEquals(3, users.size());
+        List<User> users = genericDao.getPropertyByName("lastName", "cur");
+        assertEquals(1, users.size());
     }
 }

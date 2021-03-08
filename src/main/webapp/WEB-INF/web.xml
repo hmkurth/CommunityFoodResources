@@ -3,5 +3,65 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
-  <display-name>Archetype Created Web Application</display-name>
+  <display-name>Community Food Resource Locator</display-name>
+
+
+<login-config>
+<auth-method>FORM</auth-method>
+<form-login-config>
+  <form-login-page>/login.jsp</form-login-page>
+  <form-error-page>/loginError.jsp</form-error-page>
+</form-login-config>
+</login-config>
+
+  <!-- Protect the user search page. -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>search</web-resource-name>
+      <url-pattern>/search.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+
+      <role-name>admin</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+
+
+  <security-role>
+    <role-name>admin</role-name>
+  </security-role>
 </web-app>
+
+        <!--
+           <display-name>Welcome to My Shiny App</display-name>
+        <description>
+        Welcome to My Shiny App.
+        </description>
+
+                <!- Servlet and JSP Declarations -->
+
+        <!-- A JSP page
+<servlet>
+<servlet-name>Declarations</servlet-name>
+<jsp-file>/declarations.jsp</jsp-file>
+</servlet>
+
+        <!- A Servlet
+<servlet>
+<servlet-name>TrivialServlet</servlet-name>
+<servlet-class>java112.project2.TrivialServlet</servlet-class>
+</servlet>
+
+        <!- A Mapping for a JSP page
+<servlet-mapping>
+<servlet-name>Declarations</servlet-name>
+<url-pattern>/declarations</url-pattern>
+</servlet-mapping>
+
+        <!- A Mapping for a Servlet
+<servlet-mapping>
+<servlet-name>TrivialServlet</servlet-name>
+<url-pattern>/trivial</url-pattern>
+</servlet-mapping>
+-->
