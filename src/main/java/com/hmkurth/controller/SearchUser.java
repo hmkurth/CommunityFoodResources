@@ -34,7 +34,7 @@ public class SearchUser extends HttpServlet {
         //setting attribute for last name search
         String  searchTerm = req.getParameter("searchTerm");
         String  searchProperty = req.getParameter("searchProperty");
-        req.setAttribute("usersLast", userDao.getPropertyByName(searchProperty,searchTerm));
+        req.setAttribute("searchResult", userDao.getPropertyByName(searchProperty,searchTerm));
         RequestDispatcher dispatcher = req.getRequestDispatcher("/results.jsp");
         dispatcher.forward(req, resp);
     }

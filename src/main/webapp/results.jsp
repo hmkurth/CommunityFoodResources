@@ -12,10 +12,10 @@
         <th></th>
         </thead>
         </tr>
-        <c:forEach var="employee" items="${usersLast}">
+        <c:forEach var="user" items="${searchResult}">
             <tr>
-                <td>${employee.firstName} ${employee.lastName}</td>
-                <td>${employee.userName}</td>
+                <td>${user.firstName} ${user.lastName}</td>
+                <td>${user.userName}</td>
                 <td></td>
 
             </tr>
@@ -27,7 +27,7 @@
     <h3>All Users</h3>
 
     <table class="table">
-        <thead>
+        <thead>s
         <th>Full Name</th>
         <th>User Name</th>
         <th>Age</th>

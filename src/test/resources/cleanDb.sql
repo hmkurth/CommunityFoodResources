@@ -14,7 +14,5 @@ INSERT INTO user_roles VALUES (1,'jcoyne','regular','1'),
                               (5,'dklein','all','5'),
                               (6,'tomcat','administration','6');
 
-Drop USER 'tomcat'@'localhost';
 
-CREATE USER 'tomcat'@'localhost' IDENTIFIED BY 'tomcat';
-GRANT SELECT ON testschema.* TO 'tomcat'@'localhost';
+

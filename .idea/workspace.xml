@@ -9,18 +9,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="attempting authentication, have updated all settings, xmls...">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210307 1917.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210307 1923.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210307 1927.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="attempting authentication, have edited name of db in front of @localhost">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210308 1814.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210308 1815.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210308 1816.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210307 1805.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210307 1819.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210307 1831.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210307 1923.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210307 1927.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210307 2024.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/results.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/results.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +122,17 @@
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.Tomcat">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
@@ -342,7 +355,7 @@
       <workItem from="1614880948567" duration="4788000" />
       <workItem from="1614885812545" duration="2677000" />
       <workItem from="1614956487352" duration="34220000" />
-      <workItem from="1615167075807" duration="1471000" />
+      <workItem from="1615167075807" duration="9964000" />
     </task>
     <task id="LOCAL-00001" summary="adding readMe and timeLog.md">
       <created>1612156785894</created>
@@ -638,7 +651,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615165461899</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="attempting authentication, have edited name of db in front of @localhost">
+      <created>1615171350641</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1615171350641</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -658,7 +678,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="editing erd to include address and delivery bool" />
     <MESSAGE value="editing erd to change date offered to a varchar, since there may be a range of dates or days of the week resource is offered" />
     <MESSAGE value="adding my first resource contacts in a typescript file, adding an image folder with my first community image !!! YAY!" />
     <MESSAGE value="updating project plan,timeLog" />
@@ -683,7 +702,8 @@
     <MESSAGE value="updating files for checkpoint 2" />
     <MESSAGE value="cleaning up log, stacktraces" />
     <MESSAGE value="attempting authentication, have updated all settings, xmls..." />
-    <option name="LAST_COMMIT_MESSAGE" value="attempting authentication, have updated all settings, xmls..." />
+    <MESSAGE value="attempting authentication, have edited name of db in front of @localhost" />
+    <option name="LAST_COMMIT_MESSAGE" value="attempting authentication, have edited name of db in front of @localhost" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -766,6 +786,16 @@
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
           <line>129</line>
           <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.sql.SQLSyntaxErrorException" package="java.sql" />
