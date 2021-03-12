@@ -21,7 +21,7 @@ class UserDaoTest {
     /**
      * The Dao.
      */
-    UserDao dao;
+
     GenericDao genericDao;
     private final Logger logger = LogManager.getLogger(this.getClass());
 
@@ -37,7 +37,7 @@ class UserDaoTest {
         Database database = Database.getInstance();
         database.runSQL("cleanDb.sql");
 
-        dao = new UserDao();
+
         genericDao = new GenericDao(User.class);
     }
 

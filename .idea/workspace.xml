@@ -9,20 +9,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="attempting authentication, have edited name of db in front of @localhost">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210308 1814.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210308 1815.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210308 1816.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="still working on authorization,">
+      <change afterPath="$PROJECT_DIR$/DesignDocs/~$urnal.md.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignDocs/~WRL2191.tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210311 1847.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210311 1853.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210311 1909.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/authorizationComplete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/taglib.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/timeLog.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/timeLog.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210307 1923.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210307 1927.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210307 2024.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210308 1814.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210308 1815.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210308 1816.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/GenericDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/UserRolesDao.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/results.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/results.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/search.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +64,8 @@
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="false" />
-    <option name="FILTER_DEBUG" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1nnjGA9FFTHEHO2fpDlcHnaxCaX" />
@@ -355,7 +366,7 @@
       <workItem from="1614880948567" duration="4788000" />
       <workItem from="1614885812545" duration="2677000" />
       <workItem from="1614956487352" duration="34220000" />
-      <workItem from="1615167075807" duration="9964000" />
+      <workItem from="1615167075807" duration="22667000" />
     </task>
     <task id="LOCAL-00001" summary="adding readMe and timeLog.md">
       <created>1612156785894</created>
@@ -658,11 +669,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615171350641</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="still working on authorization,">
+      <created>1615249522102</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1615249522102</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -678,7 +699,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="editing erd to change date offered to a varchar, since there may be a range of dates or days of the week resource is offered" />
     <MESSAGE value="adding my first resource contacts in a typescript file, adding an image folder with my first community image !!! YAY!" />
     <MESSAGE value="updating project plan,timeLog" />
     <MESSAGE value="Adding the first superclass, resource" />
@@ -703,7 +723,8 @@
     <MESSAGE value="cleaning up log, stacktraces" />
     <MESSAGE value="attempting authentication, have updated all settings, xmls..." />
     <MESSAGE value="attempting authentication, have edited name of db in front of @localhost" />
-    <option name="LAST_COMMIT_MESSAGE" value="attempting authentication, have edited name of db in front of @localhost" />
+    <MESSAGE value="still working on authorization," />
+    <option name="LAST_COMMIT_MESSAGE" value="still working on authorization," />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -789,13 +810,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java</url>
-          <line>39</line>
+          <line>45</line>
           <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" log-message="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.sql.SQLSyntaxErrorException" package="java.sql" />
@@ -813,5 +834,6 @@
     <SUITE FILE_PATH="coverage/CommunityFoodResources$UserDaoTest.ic" NAME="UserDaoTest Coverage Results" MODIFIED="1614710690280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.hmkurth.persistence.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/CommunityFoodResources$Tomcat.ic" NAME="Tomcat Coverage Results" MODIFIED="1615509403575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

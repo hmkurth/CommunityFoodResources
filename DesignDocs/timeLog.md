@@ -6,6 +6,7 @@
 *Week 4: 14 hrs
 *Week 5:  17 hrs
 *Week 6: 13 hrs
+week 7 : 21 hrs
 
 
 

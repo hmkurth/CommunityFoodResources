@@ -32,37 +32,32 @@
     <role-name>admin</role-name>
 
   </security-role>
+
+
+
+
+    <!-- A Mapping for a JSP page
+          <servlet>
+          <servlet-name>SearchUser</servlet-name>
+          <jsp-file>/results.jsp</jsp-file>
+          </servlet>
+
+
+          <servlet>
+          <servlet-name>SearchUser</servlet-name>
+          <servlet-class>SearchUser</servlet-class>
+          </servlet>
+
+                    <!- A Mapping for a JSP page
+            <servlet-mapping>
+            <servlet-name>Declarations</servlet-name>
+            <url-pattern>/declarations</url-pattern>
+            </servlet-mapping>
+
+                    <!- A Mapping for a Servlet
+            <servlet-mapping>
+            <servlet-name>TrivialServlet</servlet-name>
+            <url-pattern>/trivial</url-pattern>
+            </servlet-mapping>
+            -->
 </web-app>
-
-        <!--
-           <display-name>Welcome to My Shiny App</display-name>
-        <description>
-        Welcome to My Shiny App.
-        </description>
-
-                <!- Servlet and JSP Declarations -->
-
-        <!-- A JSP page
-<servlet>
-<servlet-name>Declarations</servlet-name>
-<jsp-file>/declarations.jsp</jsp-file>
-</servlet>
-
-        <!- A Servlet
-<servlet>
-<servlet-name>TrivialServlet</servlet-name>
-<servlet-class>java112.project2.TrivialServlet</servlet-class>
-</servlet>
-
-        <!- A Mapping for a JSP page
-<servlet-mapping>
-<servlet-name>Declarations</servlet-name>
-<url-pattern>/declarations</url-pattern>
-</servlet-mapping>
-
-        <!- A Mapping for a Servlet
-<servlet-mapping>
-<servlet-name>TrivialServlet</servlet-name>
-<url-pattern>/trivial</url-pattern>
-</servlet-mapping>
--->

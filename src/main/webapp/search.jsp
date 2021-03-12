@@ -14,9 +14,8 @@
 <body>
 <h2>User Display Exercise</h2>
 
-<a href = "searchUser">Go to the User Search</a>
 <h1>Search By Last Name</h1>
-<form action="/searchUser" method="get">
+<form action="searchUser" method="get">
     <label for="searchTerm">Please Enter A last name
         <input type="text" name="searchTerm" id="searchTerm"/>
     </label>

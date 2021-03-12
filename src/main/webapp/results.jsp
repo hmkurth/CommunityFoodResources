@@ -1,5 +1,7 @@
-<%@include file="head.jsp"%>
 
+<%@include file="taglib.jsp"%>
+<c:set var="title" value="Search Results" />
+<%@include file="head.jsp"%>
 <html><body>
 
 <%--Pretty up the results!--%>
@@ -23,7 +25,7 @@
         </c:forEach>
     </table>
 
-
+<!--
     <h3>All Users</h3>
 
     <table class="table">
@@ -43,7 +45,7 @@
 
         </c:forEach>
     </table>
-
+-->
 </div>
 
 </body>

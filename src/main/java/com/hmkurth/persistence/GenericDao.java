@@ -123,6 +123,7 @@ public class GenericDao<T> {//T is placeholder, variable for type
         Root<T> root = query.from(type);
         List<T> list = session.createQuery(query).getResultList();
         session.close();
+        logger.debug("in get ALL " + list);
         return list;
 
     }
@@ -137,7 +138,7 @@ public class GenericDao<T> {//T is placeholder, variable for type
     public List<T> getByPropertyEqual(String propertyName, String value) {
         Session session = getSession();
 
-        logger.debug("Searching for order with " + propertyName + " = " + value);
+        logger.debug("Searching for person with " + propertyName + " = " + value);
 
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<T> query = builder.createQuery( type );
