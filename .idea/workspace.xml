@@ -9,31 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="still working on authorization,">
-      <change afterPath="$PROJECT_DIR$/DesignDocs/~$urnal.md.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignDocs/~WRL2191.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210311 1847.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210311 1853.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210311 1909.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/authorizationComplete.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/taglib.jsp" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="updating weekly stuff, auth is finally working">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/GeoMapApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/GeoMapApiTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/timeLog.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/timeLog.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210308 1814.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210308 1815.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210308 1816.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/GenericDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/UserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/UserRolesDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/results.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/results.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/search.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CommunityFoodResources.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CommunityFoodResources.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/~$urnal.md.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/~WRL2191.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +28,8 @@
       <list>
         <option value="package-info" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -103,7 +86,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.15503876" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -366,7 +349,9 @@
       <workItem from="1614880948567" duration="4788000" />
       <workItem from="1614885812545" duration="2677000" />
       <workItem from="1614956487352" duration="34220000" />
-      <workItem from="1615167075807" duration="22667000" />
+      <workItem from="1615167075807" duration="23307000" />
+      <workItem from="1615656613500" duration="162000" />
+      <workItem from="1615678482473" duration="1413000" />
     </task>
     <task id="LOCAL-00001" summary="adding readMe and timeLog.md">
       <created>1612156785894</created>
@@ -676,7 +661,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615249522102</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="updating weekly stuff, auth is finally working">
+      <created>1615513067483</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1615513067483</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -699,7 +691,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adding my first resource contacts in a typescript file, adding an image folder with my first community image !!! YAY!" />
     <MESSAGE value="updating project plan,timeLog" />
     <MESSAGE value="Adding the first superclass, resource" />
     <MESSAGE value="adding hibernate dependencies to project" />
@@ -724,7 +715,8 @@
     <MESSAGE value="attempting authentication, have updated all settings, xmls..." />
     <MESSAGE value="attempting authentication, have edited name of db in front of @localhost" />
     <MESSAGE value="still working on authorization," />
-    <option name="LAST_COMMIT_MESSAGE" value="still working on authorization," />
+    <MESSAGE value="updating weekly stuff, auth is finally working" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating weekly stuff, auth is finally working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
