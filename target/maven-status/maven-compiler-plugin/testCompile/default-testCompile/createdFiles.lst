@@ -1,0 +1,3 @@
+com\hmkurth\test\util\Database.class
+com\hmkurth\persistence\UserDaoTest.class
+com\hmkurth\persistence\UserRolesDaoTest.class

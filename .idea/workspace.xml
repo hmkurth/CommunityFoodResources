@@ -9,120 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="stuck on getting api key into the uri, can't find demos referenced by videos, I looked at some other solutions, but they use different tools than we are currently using, (invokation builder)">
-      <change afterPath="$PROJECT_DIR$/DesignDocs/~$urnal.md.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210316 1854.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210316 1904.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/bootstrap/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/bootstrap/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/css/banners.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/fonts/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/500placeholder.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/bg1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/bg2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/bg3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/blog1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/blog2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/blog3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/blog4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/blog5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/grav1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/grav2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/grav3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/home-call1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/home-call2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/home-sm-banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/home1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/home2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/home3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/home4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/port1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/port10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/port11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/port12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/port2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/port3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/port4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/port5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/port6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/port7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/port8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/port9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/sm_page1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/sm_page2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/sm_page3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/global/logo-dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/global/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/video/demo.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/video/demo.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/video/demo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/video/demo.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/video/demo.ogv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/video/demo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/video/demo.webm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/bootstrap-hover-dropdown.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/html5shiv.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/jquery.bgswitcher.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/jquery.countdown.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/jquery.mixitup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/jquery.smooth-scroll.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/jquery.vide.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/respond.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/unminify/bootstrap-hover-dropdown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/unminify/html5shiv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/unminify/jquery.countdown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/unminify/jquery.vide.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/unminify/respond.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/components.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/home2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/home3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/home4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/page1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/page10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/page11.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/page12.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/page2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/page3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/page4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/page5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/page6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/page7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/page8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/page9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/FLP_marshal.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/FLP_milwaukee_lansing.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/FLP_milwaukee_lansing2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/FLP_milwaukee_lansing3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/indexMain.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="added the accessible template and started parsing jsps into templates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210311 1847.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210311 1853.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210311 1909.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/FLP_milwaukee_lansing.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/FLP_milwaukee_lansing2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/FLP_milwaukee_lansing3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/head.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/results.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/results.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/LocationApiTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -459,7 +347,7 @@
       <workItem from="1615167075807" duration="23307000" />
       <workItem from="1615656613500" duration="162000" />
       <workItem from="1615678482473" duration="1413000" />
-      <workItem from="1615924529108" duration="14226000" />
+      <workItem from="1615924529108" duration="14516000" />
     </task>
     <task id="LOCAL-00001" summary="adding readMe and timeLog.md">
       <created>1612156785894</created>
@@ -783,7 +671,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615735011173</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="added the accessible template and started parsing jsps into templates">
+      <created>1615948065122</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1615948065122</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -806,7 +701,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Adding the first superclass, resource" />
     <MESSAGE value="adding hibernate dependencies to project" />
     <MESSAGE value="adding user dao" />
     <MESSAGE value="adding user dao unit tests" />
@@ -831,7 +725,8 @@
     <MESSAGE value="still working on authorization," />
     <MESSAGE value="updating weekly stuff, auth is finally working" />
     <MESSAGE value="stuck on getting api key into the uri, can't find demos referenced by videos, I looked at some other solutions, but they use different tools than we are currently using, (invokation builder)" />
-    <option name="LAST_COMMIT_MESSAGE" value="stuck on getting api key into the uri, can't find demos referenced by videos, I looked at some other solutions, but they use different tools than we are currently using, (invokation builder)" />
+    <MESSAGE value="added the accessible template and started parsing jsps into templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the accessible template and started parsing jsps into templates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
