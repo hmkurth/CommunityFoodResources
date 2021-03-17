@@ -3,20 +3,37 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=0.80">
 
+    <!-- Descriptive meta should this go here in the head, or in individual page heads?
+   // <title>Accessible - Home</title>
+    <meta name="title" content="max 65 character title">-->
+    <meta name="description" content="this is the home page of the community food resource locator app">
+    <meta name="keywords" content="comma, separated, list">
+    <meta name="author" content="heather kurth">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>${title}</title>
 
     <!-- Latest compiled and minified CSS -->
-    <!-- adding jquery  --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <!-- CSS assets -->
+    <link href="accessibilityTemplates/accessible/assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="accessibilityTemplates/accessible/assets/css/font-awesome.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- JS assets -->
+    <script src="accessibilityTemplates/accessible/assets/js/jquery.min.js"></script>
+    <script src="accessibilityTemplates/accessible/assets/bootstrap/bootstrap.min.js"></script>
+    <script src="accessibilityTemplates/accessible/assets/js/bootstrap-hover-dropdown.min.js"></script>
+    <script src="accessibilityTemplates/accessible/assets/js/jquery.smooth-scroll.min.js"></script>
+    <script src="accessibilityTemplates/accessible/assets/js/jquery.vide.min.js"></script>
+    <script src="accessibilityTemplates/accessible/assets/js/jquery.bgswitcher.js"></script>
+    <!--[if lt IE 9]>
+    <script src="accessibilityTemplates/accessible/assets/js/html5shiv.min.js"></script>
+    <script src="accessibilityTemplates/accessible/assets/js/respond.min.js"></script>
+    <![endif]-->
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Theme specific assets -->
+    <link href="accessibilityTemplates/accessible/assets/css/app.css" rel="stylesheet"><!-- Global portal stying -->
+    <link href="accessibilityTemplates/accessible/assets/css/banners.css" rel="stylesheet"><!-- Page banners -->
+    <script src="accessibilityTemplates/accessible/assets/js/app.js"></script>
 
 </head>

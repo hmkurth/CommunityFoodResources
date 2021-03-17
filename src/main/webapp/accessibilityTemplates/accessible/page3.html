@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		
+		<!-- Base meta -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=0.80">
+
+		<!-- Descriptive meta -->
+		<title>Accessible - Blog Article</title>
+		<meta name="title" content="max 65 character title">
+		<meta name="description" content="max 165 character description">
+		<meta name="keywords" content="comma, separated, list">
+		<meta name="author" content="author name">
+
+		<!-- CSS assets -->
+		<link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/css/font-awesome.css" rel="stylesheet">
+
+		<!-- JS assets -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/bootstrap/bootstrap.min.js"></script>
+		<script src="assets/js/bootstrap-hover-dropdown.min.js"></script>
+		<script src="assets/js/jquery.smooth-scroll.min.js"></script>
+		<script src="assets/js/jquery.vide.min.js"></script>
+		<script src="assets/js/jquery.bgswitcher.js"></script>
+		<!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.min.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+		<!-- Theme specific assets -->
+		<link href="assets/css/app.css" rel="stylesheet"><!-- Global portal stying -->
+		<link href="assets/css/banners.css" rel="stylesheet"><!-- Page banners -->
+		<script src="assets/js/app.js"></script>				
+
+	</head>
+
+	<body>
+
+		<!-- Main navigation element for site, html5 elements used to improve rendering on assistive devices -->
+		<nav class="navbar navbar-default navbar-fixed-top navbar-white">
+			<div class="top-header">
+				<div class="container">
+					
+					<!-- Skip to content link allows users rendering the site on a screen reader to skip past navigational elements -->
+					<div class="menu-block pull-left no-pad hidden-xs">
+						<a href="#main_content" class="btn btn-link scroller"><em class="fa fa-level-down" aria-hidden="true"></em> Skip to Content &nbsp;</a>
+					</div>
+
+					<!-- This is optional, comment out if you do not need this set of dropdowns at the top -->
+					<div class="dropdown pull-left">
+						<button class="btn btn-link dropdown-toggle" type="button" id="lang_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						<em class="fa fa-globe" aria-hidden="true"></em> English
+						<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="lang_menu">
+							<li><a href="#">English</a></li>
+							<li><a href="#">French</a></li>
+							<li><a href="#">Spanish</a></li>
+							<li><a href="#">Russian</a></li>
+						</ul>
+					</div>
+
+					<!-- Enable the user to adjust the font size of the web page -->
+					<div class="menu-block pull-left hidden-xs">Text Size:</div>
+					<button type="button" class="btn btn-link pull-left hidden-xs increase-font" aria-label="Increase"><em class="fa fa-plus" aria-hidden="true"></em></button>
+					<button type="button" class="btn btn-link pull-left hidden-xs decrease-font" aria-label="Decrease"><em class="fa fa-minus" aria-hidden="true"></em></button>
+
+					
+					<!-- Secondary navigation and login dropdown -->
+					<div class="menu-block pull-right no-pad">
+						<ul>
+							<!-- Example secondary links -->
+							<li><a href="#" class="btn btn-link">Link One</a></li>
+							<li><a href="#" class="btn btn-link">Link Two</a></li>
+							<li><a href="#" class="btn btn-link">Link Three</a></li>
+							
+							<!-- Login dropdown -->
+							<li class="dropdown">
+					          <a href="#" class="dropdown-toggle btn-login" data-toggle="dropdown"><em class="fa fa-lock" aria-hidden="true"></em>  Sign In</a>
+								<ul id="login-dp" class="dropdown-menu">
+									<li>
+										 <div class="row">
+												<div class="col-md-12">
+													 <form class="form" role="form" method="post" action="login" id="login-nav">
+															<div class="form-group">
+																 <label for="loginUser">Username</label>
+																 <input type="text" class="form-control" id="loginUser" placeholder="Username" required>
+															</div>
+															<div class="form-group">
+																 <label for="loginPassword">Password</label>
+																 <input type="password" class="form-control" id="loginPassword" placeholder="Password" required>
+					                                             <div class="help-block text-right"><a href="#">Forget password?</a></div>
+															</div>
+															<div class="form-group">
+																 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+															</div>
+													 </form>
+												</div>
+												<div class="bottom text-center col-sm-12">
+													<a href="#">Register new account</a>
+												</div>
+										 </div>
+									</li>
+								</ul>
+					        </li>
+				        </ul>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="container">
+				
+				<!-- Mobile hamburger style menu -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top_main_navigation" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">
+						<img src="assets/img/global/logo-dark.png" alt="Back to home" />
+					</a>
+				</div>
+
+				<!-- Main site header -->
+				<div class="collapse navbar-collapse" id="top_main_navigation">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="index.html">Static Photo</a></li>
+								<li><a href="home2.html">Rotating Photo</a></li>
+								<li><a href="home3.html">Video Background</a></li>
+								<li><a href="home4.html">Coming Soon</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="page1.html">General Content</a></li>
+								<li><a href="page2.html">Blog Main</a></li>
+								<li><a href="page3.html">Blog Article</a></li>
+								<li><a href="page4.html">Portfolio</a></li>
+								<li><a href="page5.html">Job Listing</a></li>
+								<li><a href="page6.html">Job Detail</a></li>
+								<li><a href="page7.html">Search Results</a></li>
+								<li><a href="page8.html">User Profile</a></li>
+								<li><a href="page9.html">Login</a></li>
+								<li><a href="page10.html">Sign-Up</a></li>
+								<li><a href="page11.html">404 Not Found</a></li>
+								<li><a href="page12.html">Legal</a></li>
+							</ul>
+						</li>
+						<li><a href="components.html">Components</a></li>
+					</ul>
+
+					<form class="navbar-form navbar-right hidden-sm hidden-md" action="page7.html">
+						<div class="input-group">
+							<label for="search_main" class="hidden">Site Search</label>
+							<input type="text" class="form-control" id="search_main" placeholder="Search this site">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="submit" aria-label="Search"><em class="fa fa-search" aria-hidden="true"></em></button>
+							</span>
+						</div>
+					</form>
+				</div>
+			</div>
+		</nav>
+
+
+		<div class="banner demo-2"  data-type="background" data-speed="4">
+			<div class="banner-interior">
+				<div class="bread-wrap dark">
+					<div class="container no-height">
+						<div class="row">
+							<div class="col-sm-12">
+								<ol class="breadcrumb">
+									<li>You are here</li>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="page3.html">Blog Main</a></li>
+									<li>Blog Article</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1 text-center">
+							<h1>Title of Blog Article</h1>
+							<hr />
+							<p><em class="fa fa-calendar"  aria-hidden="true"></em> July 31, 2017  &nbsp; &nbsp; |  &nbsp; &nbsp;  <em class="fa fa-user"  aria-hidden="true"></em> Jonathon Doe</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Begin main page content -->
+		<div class="content" id="main_content">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						
+						<div class="row pad-bottom">
+							<div class="col-sm-12">
+
+								<h2>Suspendisse sollicitudin nisi.</h2>
+
+								<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sollicitudin nisi et sapien interdum placerat. Integer tempus faucibus enim, eu hendrerit massa auctor id. Pellentesque pellentesque non neque eu convallis. Ut bibendum venenatis tincidunt. Proin eget sapien in nibh ultricies posuere non non dui. Phasellus imperdiet velit augue, et condimentum elit viverra nec. Donec id auctor lorem.</p>
+
+								<hr />
+
+								<h3>Nulla accumsan feugiat tellus, nec efficitur lorem.</h3>
+
+								<p>Sed convallis metus sed tortor sagittis, eu faucibus risus tempus. Vestibulum dapibus sodales convallis. Maecenas fringilla ut tellus in pellentesque. Suspendisse fringilla auctor ante, finibus consectetur orci dignissim at. Vivamus erat elit, faucibus eleifend dolor eget, eleifend bibendum massa. </p>
+
+								<h3>Maecenas fringilla ut tellus</h3>
+
+								<p>Quisque interdum nulla nunc. Etiam aliquet, orci a fringilla mollis, erat leo auctor nisl, vel molestie sem eros at ante. Mauris ultricies enim non odio interdum, ac varius felis malesuada.</p>
+
+								<blockquote>Duis ut tortor eget sem pellentesque consectetur ut a tortor. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in felis non dui congue euismod et nec erat. Suspendisse felis leo, efficitur et finibus in, tempus id leo. Nam pellentesque vitae ipsum et facilisis. Duis rutrum accumsan enim ac blandit. Nulla hendrerit posuere convallis. Praesent fermentum fermentum ipsum, non scelerisque elit tincidunt nec. Quisque cursus id nunc eu gravida. Sed a ultrices sapien.</blockquote>
+
+								<p>Donec hendrerit augue augue, at rhoncus ipsum ultricies eget. In hendrerit lorem lectus, vitae vestibulum lectus dapibus sit amet. Nam sed felis sit amet ante varius feugiat. Nam sollicitudin placerat eleifend. Aenean et mi nisl. Vivamus sollicitudin consequat libero sit amet euismod. Maecenas sit amet dui a nibh consectetur dignissim. Integer maximus lacinia euismod. Nullam non urna tincidunt, molestie velit in, volutpat mi.</p>
+
+								<h3>Mauris eget purus</h3>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie commodo pellentesque. Mauris eget purus eu risus viverra ultricies quis id turpis. Nam tincidunt ornare posuere. Sed ac libero ac justo dapibus elementum at eget massa. Aliquam blandit cursus dapibus. Curabitur pulvinar dignissim tellus quis eleifend. Quisque eget leo a dui porta ultricies et sit amet erat. Mauris sodales justo at odio accumsan, quis egestas metus pellentesque.</p>
+
+							</div>
+						</div>
+
+						<div class="row pad-bottom ">
+							<div class="col-sm-12">
+								<h4>Comments (18)</h4>
+
+								<hr />
+								
+								<!-- Example comment -->
+								<div class="row pad-bottom-sm">
+									<div class="col-xs-12">
+										<div class="row">
+											<div class="col-xs-1">
+												<img src="assets/img/demo/grav1.jpg" alt="placeholder image" class="img-responsive img-rounded" />
+											</div>
+											<div class="col-xs-11">
+												<p><strong>David Smith</strong></p>
+												<p class="small">August 13, 2017</p>
+												<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie commodo pellentesque. Mauris eget purus eu risus viverra ultricies quis id turpis. Nam tincidunt ornare posuere. Sed ac libero ac justo dapibus elementum at eget massa. Aliquam blandit cursus dapibus. </p>
+												<hr />
+												<p><a href="#"><em class="fa fa-thumbs-up"  aria-hidden="true"></em> 5</a>  &nbsp; &nbsp; <a href="#"><em class="fa fa-comment"  aria-hidden="true"></em> Reply</a> </p>
+												<hr />
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Example comment -->
+								<div class="row pad-bottom-sm">
+									<div class="col-xs-11 col-xs-offset-1">
+										<div class="row">
+											<div class="col-xs-1">
+												<img src="assets/img/demo/grav2.jpg" alt="placeholder image" class="img-responsive img-rounded" />
+											</div>
+											<div class="col-xs-11">
+												<p><strong>Richard Johnson</strong></p>
+												<p class="small">August 13, 2017</p>
+												<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie commodo pellentesque. Mauris eget purus eu risus viverra ultricies quis id turpis. Nam tincidunt ornare posuere. Sed ac libero ac justo dapibus elementum at eget massa. Aliquam blandit cursus dapibus. </p>
+												<hr />
+												<p><a href="#"><em class="fa fa-thumbs-up"  aria-hidden="true"></em> 5</a>  &nbsp; &nbsp; <a href="#"><em class="fa fa-comment"  aria-hidden="true"></em> Reply</a> </p>
+												<hr />
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Example comment -->
+								<div class="row pad-bottom-sm">
+									<div class="col-xs-12">
+										<div class="row">
+											<div class="col-xs-1">
+												<img src="assets/img/demo/grav3.jpg" alt="placeholder image" class="img-responsive img-rounded" />
+											</div>
+											<div class="col-xs-11">
+												<p><strong>Jane Smith</strong></p>
+												<p class="small">August 13, 2017</p>
+												<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie commodo pellentesque. Mauris eget purus eu risus viverra ultricies quis id turpis. Nam tincidunt ornare posuere. Sed ac libero ac justo dapibus elementum at eget massa. Aliquam blandit cursus dapibus. </p>
+												<hr />
+												<p><a href="#"><em class="fa fa-thumbs-up"  aria-hidden="true"></em> 5</a>  &nbsp; &nbsp; <a href="#"><em class="fa fa-comment"  aria-hidden="true"></em> Reply</a> </p>
+												<hr />
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<h4>Leave  a Comment</h4>
+								<form>
+									<div class="row">
+										<div class="col-xs-6">
+											<div class="form-group">
+												<label for="full_name">Full Name: *</label>
+												<input type="text" class="form-control" id="full_name">
+											</div>
+										</div>
+										<div class="col-xs-6">
+											<div class="form-group">
+												<label for="email">Email: *</label>
+												<input type="email" class="form-control" id="email">
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label for="comment">Comment:  </label>
+										<textarea class="form-control" id="comment"></textarea>
+									</div>
+
+									<button type="submit" class="btn btn-primary">Add Comment</button>
+								</form>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				
+
+				
+
+				
+
+			</div>
+		</div>
+
+
+		<!-- Footer element -->
+		<footer>
+			<div class="container">
+				<div class="row footer-one">
+					<div class="col-md-7 hidden-sm hidden-xs">
+
+						<div class="row sub-links">
+							<div class="col-xs-3">
+								<ul class="list-unstyled">
+									<li><strong>Home Concepts</strong></li>
+									<li><a href="index.html">Static Photo</a></li>
+									<li><a href="home2.html">Rotating Photo</a></li>
+									<li><a href="home3.html">Video Background</a></li>
+									<li><a href="home4.html">Coming Soon</a></li>
+								</ul>
+							</div>
+							<div class="col-xs-3">
+								<ul class="list-unstyled">
+									<li><strong>Page Concepts</strong></li>
+									<li><a href="page1.html">General Content</a></li>
+									<li><a href="page2.html">Blog Main</a></li>
+									<li><a href="page3.html">Blog Article</a></li>
+									<li><a href="page4.html">Portfolio</a></li>
+									<li><a href="page5.html">Job Listing</a></li>
+									<li><a href="page6.html">Job Detail</a></li>
+									<li><a href="page7.html">Search Results</a></li>
+								</ul>
+							</div>
+							<div class="col-xs-3">
+								<ul class="list-unstyled">
+									<li><strong>Page Concepts (cont.)</strong></li>
+									<li><a href="page8.html">User Profile</a></li>
+									<li><a href="page9.html">Login</a></li>
+									<li><a href="page10.html">Sign-Up</a></li>
+									<li><a href="page11.html">404 Not Found</a></li>
+									<li><a href="page12.html">Legal</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5 text-right social mobile-left">
+						Connect:
+						<a href="#" target="blank" aria-label="Navigate to Facebook"><em class="fa fa-facebook" aria-hidden="true"></em></a>
+						<a href="#" target="blank" aria-label="Navigate to Twitter"><em class="fa fa-twitter" aria-hidden="true"></em></a>
+						<a href="#" target="blank" aria-label="Navigate to YouTube"><em class="fa fa-youtube" aria-hidden="true"></em></a>
+						<a href="#" target="blank" aria-label="Navigate to Pinterest"><em class="fa fa-pinterest" aria-hidden="true"></em></a>
+						<a href="#" target="blank" aria-label="Navigate to LinkedIn"><em class="fa fa-linkedin" aria-hidden="true"></em></a>
+						<a href="#" target="blank" aria-label="Navigate to Instagram"><em class="fa fa-intagram" aria-hidden="true"></em></a>
+						<span class="spacer" aria-hidden="true"> | </span>
+						<a href="#" target="blank" aria-label="Navigate to iPhone App"><em class="fa fa-apple" aria-hidden="true"></em></a>
+						<a href="#" target="blank" aria-label="Navigate to Android App"><em class="fa fa-android" aria-hidden="true"></em></a>
+
+						<hr />
+
+						<address>
+							<strong>ABC Organization</strong><br />
+							1234 Main Street<br />
+							Suite 12345<br />
+							Treasure Island, FL 33706<br />
+						</address>
+					</div>
+				</div>
+				<div class="row footer-links">
+					<div class="col-sm-12">
+						<a href="#">Page One</a>
+						<a href="#">Page Two</a>
+						<a href="#">Page Three</a>
+						<a href="#">Page Four</a>
+						<a href="#">Page Five</a>
+						<a href="#">Page Six</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit velit sit amet sodales porttitor. Praesent vitae dolor ornare, varius dolor ut, vehicula urna. Suspendisse egestas arcu ut pretium rutrum. Nullam mattis magna nec mauris aliquet, suscipit lobortis sem finibus. Sed sollicitudin erat mollis scelerisque rutrum. Duis dapibus id leo scelerisque pretium. Nulla facilisi.</p>
+						<p>&copy; 2017 <strong>Your Organization</strong>. All Rights Reserved.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+		
+	</body>
+
+</html>

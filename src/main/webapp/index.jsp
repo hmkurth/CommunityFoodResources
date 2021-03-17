@@ -1,7 +1,15 @@
-<%@include file="head.jsp"%>
+<%@include file="taglib.jsp"%>
+<c:import url="/head.jsp" />
+<title>Home</title>
 <html>
 <body>
+<c:import url="/header.jsp" />
+<div id="indexMain">
+    <c:import url="/indexMain.jsp" />
+</div>
 
-<a href="search.jsp">Click here to search for users(admin only)</a>
 </body>
+<!-- footer -->
+<c:import url="/footer.jsp" />
 </html>
+
