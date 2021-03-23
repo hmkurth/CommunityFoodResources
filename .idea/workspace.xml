@@ -9,27 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="updating journal and timelog">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210318 0105.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210323 1132.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210323 1134.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210323 1146.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210323 1154.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210323 1208.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210323 1213.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/awsDeployWithAuthAndTable.png" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="updating project plan for checkpoint 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesignDocs/projectPlan.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/projectPlan.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/~$urnal.md.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/~WRL0003.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210317 1705.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210317 1708.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210317 1714.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210317 1716.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -358,14 +340,7 @@
       <workItem from="1615924529108" duration="20403000" />
       <workItem from="1616012953337" duration="5958000" />
       <workItem from="1616045852316" duration="1269000" />
-      <workItem from="1616514262895" duration="8468000" />
-    </task>
-    <task id="LOCAL-00001" summary="adding readMe and timeLog.md">
-      <created>1612156785894</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1612156785894</updated>
+      <workItem from="1616514262895" duration="9281000" />
     </task>
     <task id="LOCAL-00002" summary="adding OneNote">
       <created>1612248266500</created>
@@ -703,7 +678,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616516155693</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="updating project plan for checkpoint 3">
+      <created>1616535509543</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1616535509590</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -726,7 +708,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adding user dao" />
     <MESSAGE value="adding user dao unit tests" />
     <MESSAGE value="adding test db" />
     <MESSAGE value="updating weekly journal, changing to journal.txt" />
@@ -751,7 +732,8 @@
     <MESSAGE value="stuck on getting api key into the uri, can't find demos referenced by videos, I looked at some other solutions, but they use different tools than we are currently using, (invokation builder)" />
     <MESSAGE value="added the accessible template and started parsing jsps into templates" />
     <MESSAGE value="updating journal and timelog" />
-    <option name="LAST_COMMIT_MESSAGE" value="updating journal and timelog" />
+    <MESSAGE value="updating project plan for checkpoint 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating project plan for checkpoint 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

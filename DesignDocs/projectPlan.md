@@ -15,9 +15,8 @@
 ### Week 4
 #### This week's focus is the com.hmkurth.entity.User Sign Up Story
 - [x ] Create the database
-- [ ] Select Template | Design CSS
-- [ ] new user jsp
-- [ ] add user controller (java class)
+- [ x] Select Template | Design CSS
+
 - [ x] user entity (java class)
 - [ x] user table
 - [x ] user dao to add user to db (java class)
@@ -69,6 +68,13 @@
 
 ### Week 10
 - [ ] Work on code et al
+- [ ] new user jsp
+- [ ] add user controller (java class)
+- [ ] test round trip (front end to back end)
+- [ ] database input
+- [ ] start collating resources gained from social networks
+- [ ] "" photos ""
+- [] create a diagram about app flow with all the jsps and servlets
 - [ ] Weekly reflection
 
 ### Week 11
