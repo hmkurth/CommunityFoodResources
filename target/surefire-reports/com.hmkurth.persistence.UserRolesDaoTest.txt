@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.hmkurth.persistence.UserRolesDaoTest
--------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.736 sec - in com.hmkurth.persistence.UserRolesDaoTest

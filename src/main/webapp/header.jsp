@@ -85,7 +85,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="index.html">
-                <img src="img/FLP_marshal.jpg" alt="Back to home" />
+                <img src="" alt="Back to home" />
             </a>
         </div>
 

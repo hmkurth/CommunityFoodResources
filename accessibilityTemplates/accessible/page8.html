@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		
+		<!-- Base meta -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=0.80">
+
+		<!-- Descriptive meta -->
+		<title>Accessible - User Profile</title>
+		<meta name="title" content="max 65 character title">
+		<meta name="description" content="max 165 character description">
+		<meta name="keywords" content="comma, separated, list">
+		<meta name="author" content="author name">
+
+		<!-- CSS assets -->
+		<link href="../../src/main/webapp/assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+		<link href="../../src/main/webapp/assets/css/font-awesome.css" rel="stylesheet">
+
+		<!-- JS assets -->
+		<script src="../../src/main/webapp/assets/js/jquery.min.js"></script>
+		<script src="../../src/main/webapp/assets/bootstrap/bootstrap.min.js"></script>
+		<script src="../../src/main/webapp/assets/js/bootstrap-hover-dropdown.min.js"></script>
+		<script src="../../src/main/webapp/assets/js/jquery.smooth-scroll.min.js"></script>
+		<script src="../../src/main/webapp/assets/js/jquery.vide.min.js"></script>
+		<script src="../../src/main/webapp/assets/js/jquery.bgswitcher.js"></script>
+		<!--[if lt IE 9]>
+	<script src="../../src/main/webapp/assets/js/html5shiv.min.js"></script>
+	<script src="../../src/main/webapp/assets/js/respond.min.js"></script>
+	<![endif]-->
+
+		<!-- Theme specific assets -->
+		<link href="../../src/main/webapp/assets/css/app.css" rel="stylesheet"><!-- Global portal stying -->
+		<link href="../../src/main/webapp/assets/css/banners.css" rel="stylesheet"><!-- Page banners -->
+		<script src="../../src/main/webapp/assets/js/app.js"></script>
+
+	</head>
+
+	<body>
+
+		<!-- Main navigation element for site, html5 elements used to improve rendering on assistive devices -->
+		<nav class="navbar navbar-default navbar-fixed-top navbar-white">
+			<div class="top-header">
+				<div class="container">
+					
+					<!-- Skip to content link allows users rendering the site on a screen reader to skip past navigational elements -->
+					<div class="menu-block pull-left no-pad hidden-xs">
+						<a href="#main_content" class="btn btn-link scroller"><em class="fa fa-level-down" aria-hidden="true"></em> Skip to Content &nbsp;</a>
+					</div>
+
+					<!-- This is optional, comment out if you do not need this set of dropdowns at the top -->
+					<div class="dropdown pull-left">
+						<button class="btn btn-link dropdown-toggle" type="button" id="lang_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						<em class="fa fa-globe" aria-hidden="true"></em> English
+						<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="lang_menu">
+							<li><a href="#">English</a></li>
+							<li><a href="#">French</a></li>
+							<li><a href="#">Spanish</a></li>
+							<li><a href="#">Russian</a></li>
+						</ul>
+					</div>
+
+					<!-- Enable the user to adjust the font size of the web page -->
+					<div class="menu-block pull-left hidden-xs">Text Size:</div>
+					<button type="button" class="btn btn-link pull-left hidden-xs increase-font" aria-label="Increase"><em class="fa fa-plus" aria-hidden="true"></em></button>
+					<button type="button" class="btn btn-link pull-left hidden-xs decrease-font" aria-label="Decrease"><em class="fa fa-minus" aria-hidden="true"></em></button>
+
+					
+					<!-- Secondary navigation and login dropdown -->
+					<div class="menu-block pull-right no-pad">
+						<ul>
+							<!-- Example secondary links -->
+							<li><a href="#" class="btn btn-link">Link One</a></li>
+							<li><a href="#" class="btn btn-link">Link Two</a></li>
+							<li><a href="#" class="btn btn-link">Link Three</a></li>
+							
+							<!-- Login dropdown -->
+							<li class="dropdown">
+					          <a href="#" class="dropdown-toggle btn-login" data-toggle="dropdown"><em class="fa fa-lock" aria-hidden="true"></em>  Sign In</a>
+								<ul id="login-dp" class="dropdown-menu">
+									<li>
+										 <div class="row">
+												<div class="col-md-12">
+													 <form class="form" role="form" method="post" action="login" id="login-nav">
+															<div class="form-group">
+																 <label for="loginUser">Username</label>
+																 <input type="text" class="form-control" id="loginUser" placeholder="Username" required>
+															</div>
+															<div class="form-group">
+																 <label for="loginPassword">Password</label>
+																 <input type="password" class="form-control" id="loginPassword" placeholder="Password" required>
+					                                             <div class="help-block text-right"><a href="#">Forget password?</a></div>
+															</div>
+															<div class="form-group">
+																 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+															</div>
+													 </form>
+												</div>
+												<div class="bottom text-center col-sm-12">
+													<a href="#">Register new account</a>
+												</div>
+										 </div>
+									</li>
+								</ul>
+					        </li>
+				        </ul>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="container">
+				
+				<!-- Mobile hamburger style menu -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top_main_navigation" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">
+						<img src="../../src/main/webapp/assets/img/global/logo-dark.png" alt="Back to home" />
+					</a>
+				</div>
+
+				<!-- Main site header -->
+				<div class="collapse navbar-collapse" id="top_main_navigation">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="index.html">Static Photo</a></li>
+								<li><a href="home2.html">Rotating Photo</a></li>
+								<li><a href="home3.html">Video Background</a></li>
+								<li><a href="home4.html">Coming Soon</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="page1.html">General Content</a></li>
+								<li><a href="page2.html">Blog Main</a></li>
+								<li><a href="page3.html">Blog Article</a></li>
+								<li><a href="page4.html">Portfolio</a></li>
+								<li><a href="page5.html">Job Listing</a></li>
+								<li><a href="page6.html">Job Detail</a></li>
+								<li><a href="page7.html">Search Results</a></li>
+								<li><a href="page8.html">User Profile</a></li>
+								<li><a href="page9.html">Login</a></li>
+								<li><a href="page10.html">Sign-Up</a></li>
+								<li><a href="page11.html">404 Not Found</a></li>
+								<li><a href="page12.html">Legal</a></li>
+							</ul>
+						</li>
+						<li><a href="components.html">Components</a></li>
+					</ul>
+
+					<form class="navbar-form navbar-right hidden-sm hidden-md" action="page7.html">
+						<div class="input-group">
+							<label for="search_main" class="hidden">Site Search</label>
+							<input type="text" class="form-control" id="search_main" placeholder="Search this site">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="submit" aria-label="Search"><em class="fa fa-search" aria-hidden="true"></em></button>
+							</span>
+						</div>
+					</form>
+				</div>
+			</div>
+		</nav>
+
+
+		<div class="banner">
+			<div class="bread-wrap">
+				<div class="container no-height">
+					<div class="row">
+						<div class="col-sm-12">
+							<ol class="breadcrumb">
+								<li>You are here:</li>
+								<li><a href="index.html">Home</a></li>
+								<li>User Profile</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Begin main page content -->
+		<div class="content" id="main_content">
+			<div class="container">
+
+				<div class="row text-center line-bottom pad-bottom pad-top">
+					<div class="col-md-12">
+						<h1>Welcome, Jonathon Doe</h1>
+						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis massa ac neque gravida aliquam.</p>
+						
+					</div>
+				</div>
+
+				<div class="row line-bottom pad-bottom-sm">
+					<div class="col-md-4">
+						<div class="line-right">
+							<h2> Your Profile</h2>
+
+							<div class="progress">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+									60%
+								</div>
+							</div>
+
+							<table class="table small">
+								<tbody>
+									<tr>
+										<td><strong><a href="#">Lorem Ipsum</a></strong></td>
+										<td>Solor dolor elit</td>
+									</tr>
+									<tr>
+										<td><strong><a href="#">Lorem Ipsum</a></strong></td>
+										<td>Solor dolor elit</td>
+									</tr>
+									<tr>
+										<td><strong><a href="#">Lorem Ipsum</a></strong></td>
+										<td>Solor dolor elit</td>
+									</tr>
+									<tr>
+										<td><strong><a href="#">Lorem Ipsum</a></strong></td>
+										<td>Solor dolor elit</td>
+									</tr>
+									<tr>
+										<td><strong><a href="#">Lorem Ipsum</a></strong></td>
+										<td>Solor dolor elit</td>
+									</tr>
+								</tbody>
+
+							</table>
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean auctor, leo vel dapibus gravida, elit lorem fringilla ex, at venenatis dolor nibh non leo. </p>
+
+						</div>
+					</div>
+					<div class="col-md-7 col-md-offset-1">
+						<h3 class="align-image text-center">Example Visualization Using Google Charts</h3>
+						<div id="piechart" style="width: 100%; height: 400px;"></div>
+					</div>
+					
+				</div>
+
+				<div class="row pad-bottom">
+					<div class="col-md-3">
+						<em class="fa fa-rounded fa-coffee" aria-hidden="true"></em>
+						<h3>Third Headline</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam ligula sit amet ex consectetur, eu ornare metus posuere.</p>
+						<a href="#" class="btn btn-primary">Link</a>
+					</div>
+					<div class="col-md-3  col-md-offset-1">
+						<em class="fa fa-rounded fa-gear" aria-hidden="true"></em>
+						<h3>Third Headline</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam ligula sit amet ex consectetur, eu ornare metus posuere.</p>
+						<a href="#" class="btn btn-primary">Link</a>
+					</div>
+					<div class="col-md-3  col-md-offset-1">
+						<em class="fa fa-rounded fa-user" aria-hidden="true"></em>
+						<h3>Third Headline</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam ligula sit amet ex consectetur, eu ornare metus posuere.</p>
+						<a href="#" class="btn btn-primary">Link</a>
+					</div>
+
+				</div>
+
+
+			</div>
+		</div>
+
+
+		<!-- Footer element -->
+		<footer>
+			<div class="container">
+				<div class="row footer-one">
+					<div class="col-md-7 hidden-sm hidden-xs">
+
+						<div class="row sub-links">
+							<div class="col-xs-3">
+								<ul class="list-unstyled">
+									<li><strong>Home Concepts</strong></li>
+									<li><a href="index.html">Static Photo</a></li>
+									<li><a href="home2.html">Rotating Photo</a></li>
+									<li><a href="home3.html">Video Background</a></li>
+									<li><a href="home4.html">Coming Soon</a></li>
+								</ul>
+							</div>
+							<div class="col-xs-3">
+								<ul class="list-unstyled">
+									<li><strong>Page Concepts</strong></li>
+									<li><a href="page1.html">General Content</a></li>
+									<li><a href="page2.html">Blog Main</a></li>
+									<li><a href="page3.html">Blog Article</a></li>
+									<li><a href="page4.html">Portfolio</a></li>
+									<li><a href="page5.html">Job Listing</a></li>
+									<li><a href="page6.html">Job Detail</a></li>
+									<li><a href="page7.html">Search Results</a></li>
+								</ul>
+							</div>
+							<div class="col-xs-3">
+								<ul class="list-unstyled">
+									<li><strong>Page Concepts (cont.)</strong></li>
+									<li><a href="page8.html">User Profile</a></li>
+									<li><a href="page9.html">Login</a></li>
+									<li><a href="page10.html">Sign-Up</a></li>
+									<li><a href="page11.html">404 Not Found</a></li>
+									<li><a href="page12.html">Legal</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5 text-right social mobile-left">
+						Connect:
+						<a href="#" target="blank" aria-label="Navigate to Facebook"><em class="fa fa-facebook" aria-hidden="true"></em></a>
+						<a href="#" target="blank" aria-label="Navigate to Twitter"><em class="fa fa-twitter" aria-hidden="true"></em></a>
+						<a href="#" target="blank" aria-label="Navigate to YouTube"><em class="fa fa-youtube" aria-hidden="true"></em></a>
+						<a href="#" target="blank" aria-label="Navigate to Pinterest"><em class="fa fa-pinterest" aria-hidden="true"></em></a>
+						<a href="#" target="blank" aria-label="Navigate to LinkedIn"><em class="fa fa-linkedin" aria-hidden="true"></em></a>
+						<a href="#" target="blank" aria-label="Navigate to Instagram"><em class="fa fa-intagram" aria-hidden="true"></em></a>
+						<span class="spacer" aria-hidden="true"> | </span>
+						<a href="#" target="blank" aria-label="Navigate to iPhone App"><em class="fa fa-apple" aria-hidden="true"></em></a>
+						<a href="#" target="blank" aria-label="Navigate to Android App"><em class="fa fa-android" aria-hidden="true"></em></a>
+
+						<hr />
+
+						<address>
+							<strong>ABC Organization</strong><br />
+							1234 Main Street<br />
+							Suite 12345<br />
+							Treasure Island, FL 33706<br />
+						</address>
+					</div>
+				</div>
+				<div class="row footer-links">
+					<div class="col-sm-12">
+						<a href="#">Page One</a>
+						<a href="#">Page Two</a>
+						<a href="#">Page Three</a>
+						<a href="#">Page Four</a>
+						<a href="#">Page Five</a>
+						<a href="#">Page Six</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit velit sit amet sodales porttitor. Praesent vitae dolor ornare, varius dolor ut, vehicula urna. Suspendisse egestas arcu ut pretium rutrum. Nullam mattis magna nec mauris aliquet, suscipit lobortis sem finibus. Sed sollicitudin erat mollis scelerisque rutrum. Duis dapibus id leo scelerisque pretium. Nulla facilisi.</p>
+						<p>&copy; 2017 <strong>Your Organization</strong>. All Rights Reserved.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+		
+	</body>
+
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript">
+		google.charts.load('current', {'packages':['corechart']});
+		google.charts.setOnLoadCallback(drawChart);
+
+		function drawChart() {
+
+			var data = google.visualization.arrayToDataTable([
+				['Payment', 'Amount'],
+				['Data One',     100.00],
+				['Data Two',      80.00],
+				['Data Three',  60.00]
+			]);
+
+			var options = {
+				 width: '100%',
+        				height: '400',
+        				colors: ['#06434e', '#0098d9', '#006188'],
+        				chartArea: {'width': '100%', 'height': '80%'},
+        				legend:{position: 'labeled'},
+        				pieSliceText: 'value'
+			};
+
+			var formatter = new google.visualization.NumberFormat({
+				prefix: '$'
+			});
+			formatter.format(data, 1);
+
+			var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+			chart.draw(data, options);
+		}
+	</script>
+
+</html>

@@ -16,24 +16,24 @@
 
     <!-- Latest compiled and minified CSS -->
     <!-- CSS assets -->
-    <link href="accessibilityTemplates/accessible/assets/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <link href="accessibilityTemplates/accessible/assets/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
 
     <!-- JS assets -->
-    <script src="accessibilityTemplates/accessible/assets/js/jquery.min.js"></script>
-    <script src="accessibilityTemplates/accessible/assets/bootstrap/bootstrap.min.js"></script>
-    <script src="accessibilityTemplates/accessible/assets/js/bootstrap-hover-dropdown.min.js"></script>
-    <script src="accessibilityTemplates/accessible/assets/js/jquery.smooth-scroll.min.js"></script>
-    <script src="accessibilityTemplates/accessible/assets/js/jquery.vide.min.js"></script>
-    <script src="accessibilityTemplates/accessible/assets/js/jquery.bgswitcher.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-hover-dropdown.min.js"></script>
+    <script src="assets/js/jquery.smooth-scroll.min.js"></script>
+    <script src="assets/js/jquery.vide.min.js"></script>
+    <script src="assets/js/jquery.bgswitcher.js"></script>
     <!--[if lt IE 9]>
-    <script src="accessibilityTemplates/accessible/assets/js/html5shiv.min.js"></script>
-    <script src="accessibilityTemplates/accessible/assets/js/respond.min.js"></script>
+    <script src="assets/js/html5shiv.min.js"></script>
+    <script src="assets/js/respond.min.js"></script>
     <![endif]-->
 
     <!-- Theme specific assets -->
-    <link href="accessibilityTemplates/accessible/assets/css/app.css" rel="stylesheet"><!-- Global portal stying -->
-    <link href="accessibilityTemplates/accessible/assets/css/banners.css" rel="stylesheet"><!-- Page banners -->
-    <script src="accessibilityTemplates/accessible/assets/js/app.js"></script>
+    <link href="assets/css/app.css" rel="stylesheet"><!-- Global portal stying -->
+    <link href="assets/css/banners.css" rel="stylesheet"><!-- Page banners -->
+    <script src="assets/js/app.js"></script>
 
 </head>

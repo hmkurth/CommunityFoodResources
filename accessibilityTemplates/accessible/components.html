@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		
+		<!-- Base meta -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=0.80">
+
+		<!-- Descriptive meta -->
+		<title>Accessible - Components</title>
+		<meta name="title" content="max 65 character title">
+		<meta name="description" content="max 165 character description">
+		<meta name="keywords" content="comma, separated, list">
+		<meta name="author" content="author name">
+
+		<!-- CSS assets -->
+		<link href="../../src/main/webapp/assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+		<link href="../../src/main/webapp/assets/css/font-awesome.css" rel="stylesheet">
+
+		<!-- JS assets -->
+		<script src="../../src/main/webapp/assets/js/jquery.min.js"></script>
+		<script src="../../src/main/webapp/assets/bootstrap/bootstrap.min.js"></script>
+		<script src="../../src/main/webapp/assets/js/bootstrap-hover-dropdown.min.js"></script>
+		<script src="../../src/main/webapp/assets/js/jquery.smooth-scroll.min.js"></script>
+		<script src="../../src/main/webapp/assets/js/jquery.vide.min.js"></script>
+		<script src="../../src/main/webapp/assets/js/jquery.bgswitcher.js"></script>
+		<!--[if lt IE 9]>
+	<script src="../../src/main/webapp/assets/js/html5shiv.min.js"></script>
+	<script src="../../src/main/webapp/assets/js/respond.min.js"></script>
+	<![endif]-->
+
+		<!-- Theme specific assets -->
+		<link href="../../src/main/webapp/assets/css/app.css" rel="stylesheet"><!-- Global portal stying -->
+		<link href="../../src/main/webapp/assets/css/banners.css" rel="stylesheet"><!-- Page banners -->
+		<script src="../../src/main/webapp/assets/js/app.js"></script>
+
+	</head>
+
+	<body>
+
+		<!-- Main navigation element for site, html5 elements used to improve rendering on assistive devices -->
+		<nav class="navbar navbar-default navbar-fixed-top navbar-white">
+			<div class="top-header">
+				<div class="container">
+					
+					<!-- Skip to content link allows users rendering the site on a screen reader to skip past navigational elements -->
+					<div class="menu-block pull-left no-pad hidden-xs">
+						<a href="#main_content" class="btn btn-link scroller"><em class="fa fa-level-down" aria-hidden="true"></em> Skip to Content &nbsp;</a>
+					</div>
+
+					<!-- This is optional, comment out if you do not need this set of dropdowns at the top -->
+					<div class="dropdown pull-left">
+						<button class="btn btn-link dropdown-toggle" type="button" id="lang_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						<em class="fa fa-globe" aria-hidden="true"></em> English
+						<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="lang_menu">
+							<li><a href="#">English</a></li>
+							<li><a href="#">French</a></li>
+							<li><a href="#">Spanish</a></li>
+							<li><a href="#">Russian</a></li>
+						</ul>
+					</div>
+
+					<!-- Enable the user to adjust the font size of the web page -->
+					<div class="menu-block pull-left hidden-xs">Text Size:</div>
+					<button type="button" class="btn btn-link pull-left hidden-xs increase-font" aria-label="Increase"><em class="fa fa-plus" aria-hidden="true"></em></button>
+					<button type="button" class="btn btn-link pull-left hidden-xs decrease-font" aria-label="Decrease"><em class="fa fa-minus" aria-hidden="true"></em></button>
+
+					
+					<!-- Secondary navigation and login dropdown -->
+					<div class="menu-block pull-right no-pad">
+						<ul>
+							<!-- Example secondary links -->
+							<li><a href="#" class="btn btn-link">Link One</a></li>
+							<li><a href="#" class="btn btn-link">Link Two</a></li>
+							<li><a href="#" class="btn btn-link">Link Three</a></li>
+							
+							<!-- Login dropdown -->
+							<li class="dropdown">
+					          <a href="#" class="dropdown-toggle btn-login" data-toggle="dropdown"><em class="fa fa-lock" aria-hidden="true"></em>  Sign In</a>
+								<ul id="login-dp" class="dropdown-menu">
+									<li>
+										 <div class="row">
+												<div class="col-md-12">
+													 <form class="form" role="form" method="post" action="login" id="login-nav">
+															<div class="form-group">
+																 <label for="loginUser">Username</label>
+																 <input type="text" class="form-control" id="loginUser" placeholder="Username" required>
+															</div>
+															<div class="form-group">
+																 <label for="loginPassword">Password</label>
+																 <input type="password" class="form-control" id="loginPassword" placeholder="Password" required>
+					                                             <div class="help-block text-right"><a href="#">Forget password?</a></div>
+															</div>
+															<div class="form-group">
+																 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+															</div>
+													 </form>
+												</div>
+												<div class="bottom text-center col-sm-12">
+													<a href="#">Register new account</a>
+												</div>
+										 </div>
+									</li>
+								</ul>
+					        </li>
+				        </ul>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="container">
+				
+				<!-- Mobile hamburger style menu -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top_main_navigation" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">
+						<img src="../../src/main/webapp/assets/img/global/logo-dark.png" alt="Back to home" />
+					</a>
+				</div>
+
+				<!-- Main site header -->
+				<div class="collapse navbar-collapse" id="top_main_navigation">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="index.html">Static Photo</a></li>
+								<li><a href="home2.html">Rotating Photo</a></li>
+								<li><a href="home3.html">Video Background</a></li>
+								<li><a href="home4.html">Coming Soon</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="page1.html">General Content</a></li>
+								<li><a href="page2.html">Blog Main</a></li>
+								<li><a href="page3.html">Blog Article</a></li>
+								<li><a href="page4.html">Portfolio</a></li>
+								<li><a href="page5.html">Job Listing</a></li>
+								<li><a href="page6.html">Job Detail</a></li>
+								<li><a href="page7.html">Search Results</a></li>
+								<li><a href="page8.html">User Profile</a></li>
+								<li><a href="page9.html">Login</a></li>
+								<li><a href="page10.html">Sign-Up</a></li>
+								<li><a href="page11.html">404 Not Found</a></li>
+								<li><a href="page12.html">Legal</a></li>
+							</ul>
+						</li>
+						<li><a href="components.html">Components</a></li>
+					</ul>
+
+					<form class="navbar-form navbar-right hidden-sm hidden-md" action="page7.html">
+						<div class="input-group">
+							<label for="search_main" class="hidden">Site Search</label>
+							<input type="text" class="form-control" id="search_main" placeholder="Search this site">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="submit" aria-label="Search"><em class="fa fa-search" aria-hidden="true"></em></button>
+							</span>
+						</div>
+					</form>
+				</div>
+			</div>
+		</nav>
+
+
+
+		
+
+
+		<!-- Begin main page content -->
+		<div class="content">
+			<div class="container">
+
+				<div class="row pad-top pad-bottom line-bottom">
+					<div class="col-md-12 text-center">
+						<h1>Components</h1>
+						<p class="lead">This page serves as a gallery to showcase the many components which are available in Accessible.</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Navbar Options</h2>
+						<p>The theme includes two contrast checked navigation options. The default (dark teal) and the white variant shown below.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Main navigation element for site, html5 elements used to improve rendering on assistive devices -->
+		<nav class="navbar navbar-default navbar-white">
+			<div class="top-header">
+				<div class="container">
+					
+					<!-- Skip to content link allows users rendering the site on a screen reader to skip past navigational elements -->
+					<div class="menu-block pull-left no-pad hidden-xs">
+						<a href="#main_content" class="btn btn-link scroller"><em class="fa fa-level-down" aria-hidden="true"></em> Skip to Content &nbsp;</a>
+					</div>
+
+					<!-- This is optional, comment out if you do not need this set of dropdowns at the top -->
+					<div class="dropdown pull-left">
+						<button class="btn btn-link dropdown-toggle" type="button" id="lang_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						<em class="fa fa-globe" aria-hidden="true"></em> English
+						<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="lang_menu">
+							<li><a href="#">English</a></li>
+							<li><a href="#">French</a></li>
+							<li><a href="#">Spanish</a></li>
+							<li><a href="#">Russian</a></li>
+						</ul>
+					</div>
+
+					<!-- Enable the user to adjust the font size of the web page -->
+					<div class="menu-block pull-left hidden-xs">Text Size:</div>
+					<button type="button" class="btn btn-link pull-left hidden-xs increase-font" aria-label="Increase"><em class="fa fa-plus" aria-hidden="true"></em></button>
+					<button type="button" class="btn btn-link pull-left hidden-xs decrease-font" aria-label="Decrease"><em class="fa fa-minus" aria-hidden="true"></em></button>
+
+					
+					<!-- Secondary navigation and login dropdown -->
+					<div class="menu-block pull-right no-pad">
+						<ul>
+							<!-- Example secondary links -->
+							<li><a href="#" class="btn btn-link">Link One</a></li>
+							<li><a href="#" class="btn btn-link">Link Two</a></li>
+							<li><a href="#" class="btn btn-link">Link Three</a></li>
+							
+							<!-- Login dropdown -->
+							<li class="dropdown">
+					          <a href="#" class="dropdown-toggle btn-login" data-toggle="dropdown"><em class="fa fa-lock" aria-hidden="true"></em>  Sign In</a>
+								<ul id="login-dp" class="dropdown-menu">
+									<li>
+										 <div class="row">
+												<div class="col-md-12">
+													 <form class="form" role="form" method="post" action="login" id="login-nav">
+															<div class="form-group">
+																 <label for="loginUser">Username</label>
+																 <input type="text" class="form-control" id="loginUser" placeholder="Username" required>
+															</div>
+															<div class="form-group">
+																 <label for="loginPassword">Password</label>
+																 <input type="password" class="form-control" id="loginPassword" placeholder="Password" required>
+					                                             <div class="help-block text-right"><a href="#">Forget password?</a></div>
+															</div>
+															<div class="form-group">
+																 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+															</div>
+													 </form>
+												</div>
+												<div class="bottom text-center col-sm-12">
+													<a href="#">Register new account</a>
+												</div>
+										 </div>
+									</li>
+								</ul>
+					        </li>
+				        </ul>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="container">
+				
+				<!-- Mobile hamburger style menu -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top_main_navigation2" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="home.html">
+						<img src="../../src/main/webapp/assets/img/global/logo-dark.png" alt="Back to home" />
+					</a>
+				</div>
+
+				<!-- Main site header -->
+				<div class="collapse navbar-collapse" id="top_main_navigation2">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="index.html">Static Photo</a></li>
+								<li><a href="home2.html">Rotating Photo</a></li>
+								<li><a href="home3.html">Video Background</a></li>
+								<li><a href="home4.html">Coming Soon</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="page1.html">General Content</a></li>
+								<li><a href="page2.html">Blog Main</a></li>
+								<li><a href="page3.html">Blog Article</a></li>
+								<li><a href="page4.html">Portfolio</a></li>
+								<li><a href="page5.html">Job Listing</a></li>
+								<li><a href="page6.html">Job Detail</a></li>
+								<li><a href="page7.html">Search Results</a></li>
+								<li><a href="page8.html">User Profile</a></li>
+								<li><a href="page9.html">Login</a></li>
+								<li><a href="page10.html">Sign-Up</a></li>
+								<li><a href="page11.html">404 Not Found</a></li>
+								<li><a href="page12.html">Legal</a></li>
+							</ul>
+						</li>
+						<li><a href="components.html">Components</a></li>
+					</ul>
+
+					<form class="navbar-form navbar-right hidden-sm hidden-md" action="page7.html">
+						<div class="input-group">
+							<label for="search_main" class="hidden">Site Search</label>
+							<input type="text" class="form-control" id="search_main" placeholder="Search this site">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="submit" aria-label="Search"><em class="fa fa-search" aria-hidden="true"></em></button>
+							</span>
+						</div>
+					</form>
+				</div>
+			</div>
+		</nav>
+
+		<nav class="navbar navbar-default">
+			<div class="top-header">
+				<div class="container">
+					
+					<!-- Skip to content link allows users rendering the site on a screen reader to skip past navigational elements -->
+					<div class="menu-block pull-left no-pad hidden-xs">
+						<a href="#main_content" class="btn btn-link scroller"><em class="fa fa-level-down" aria-hidden="true"></em> Skip to Content &nbsp;</a>
+					</div>
+
+					<!-- This is optional, comment out if you do not need this set of dropdowns at the top -->
+					<div class="dropdown pull-left">
+						<button class="btn btn-link dropdown-toggle" type="button" id="lang_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						<em class="fa fa-globe" aria-hidden="true"></em> English
+						<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="lang_menu">
+							<li><a href="#">English</a></li>
+							<li><a href="#">French</a></li>
+							<li><a href="#">Spanish</a></li>
+							<li><a href="#">Russian</a></li>
+						</ul>
+					</div>
+
+					<!-- Enable the user to adjust the font size of the web page -->
+					<div class="menu-block pull-left hidden-xs">Text Size:</div>
+					<button type="button" class="btn btn-link pull-left hidden-xs increase-font" aria-label="Increase"><em class="fa fa-plus" aria-hidden="true"></em></button>
+					<button type="button" class="btn btn-link pull-left hidden-xs decrease-font" aria-label="Decrease"><em class="fa fa-minus" aria-hidden="true"></em></button>
+
+					
+					<!-- Secondary navigation and login dropdown -->
+					<div class="menu-block pull-right no-pad">
+						<ul>
+							<!-- Example secondary links -->
+							<li><a href="#" class="btn btn-link">Link One</a></li>
+							<li><a href="#" class="btn btn-link">Link Two</a></li>
+							<li><a href="#" class="btn btn-link">Link Three</a></li>
+							
+							<!-- Login dropdown -->
+							<li class="dropdown">
+					          <a href="#" class="dropdown-toggle btn-login" data-toggle="dropdown"><em class="fa fa-lock" aria-hidden="true"></em>  Sign In</a>
+								<ul id="login-dp" class="dropdown-menu">
+									<li>
+										 <div class="row">
+												<div class="col-md-12">
+													 <form class="form" role="form" method="post" action="login" id="login-nav">
+															<div class="form-group">
+																 <label for="loginUser">Username</label>
+																 <input type="text" class="form-control" id="loginUser" placeholder="Username" required>
+															</div>
+															<div class="form-group">
+																 <label for="loginPassword">Password</label>
+																 <input type="password" class="form-control" id="loginPassword" placeholder="Password" required>
+					                                             <div class="help-block text-right"><a href="#">Forget password?</a></div>
+															</div>
+															<div class="form-group">
+																 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+															</div>
+													 </form>
+												</div>
+												<div class="bottom text-center col-sm-12">
+													<a href="#">Register new account</a>
+												</div>
+										 </div>
+									</li>
+								</ul>
+					        </li>
+				        </ul>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="container">
+				
+				<!-- Mobile hamburger style menu -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top_main_navigation" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="home.html">
+						<img src="../../src/main/webapp/assets/img/global/logo.png" alt="Back to home" />
+					</a>
+				</div>
+
+				<!-- Main site header -->
+				<div class="collapse navbar-collapse" id="top_main_navigation">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="index.html">Static Photo</a></li>
+								<li><a href="home2.html">Rotating Photo</a></li>
+								<li><a href="home3.html">Video Background</a></li>
+								<li><a href="home4.html">Coming Soon</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="page1.html">General Content</a></li>
+								<li><a href="page2.html">Blog Main</a></li>
+								<li><a href="page3.html">Blog Article</a></li>
+								<li><a href="page4.html">Portfolio</a></li>
+								<li><a href="page5.html">Job Listing</a></li>
+								<li><a href="page6.html">Job Detail</a></li>
+								<li><a href="page7.html">Search Results</a></li>
+								<li><a href="page8.html">User Profile</a></li>
+								<li><a href="page9.html">Login</a></li>
+								<li><a href="page10.html">Sign-Up</a></li>
+								<li><a href="page11.html">404 Not Found</a></li>
+								<li><a href="page12.html">Legal</a></li>
+							</ul>
+						</li>
+						<li><a href="components.html">Components</a></li>
+					</ul>
+
+					<form class="navbar-form navbar-right hidden-sm hidden-md" action="page7.html">
+						<div class="input-group">
+							<label for="search_main" class="hidden">Site Search</label>
+							<input type="text" class="form-control" id="search_main" placeholder="Search this site">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="submit" aria-label="Search"><em class="fa fa-search" aria-hidden="true"></em></button>
+							</span>
+						</div>
+					</form>
+				</div>
+			</div>
+		</nav>
+
+
+		<!-- Continue main page content -->
+		<div class="content">
+			<div class="container">
+
+				<div class="row pad-top pad-bottom line-bottom">
+					<div class="col-md-12">
+						<h2>Typography</h2>
+						<p>The following headline styles should always be used in order from the top to the bottom of the page.</p>
+
+						<div class="well">
+							<h1>Header 1</h1>
+							<cite>h1 should only be used in rendered page title, never in page content</cite>
+							<h2>Header 2</h2>
+							<h3>Header 3</h3>
+							<h4>Header 4</h4>
+							<h5>Header 5</h5>
+							<p>Regular Paragraph</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row pad-top pad-bottom line-bottom">
+					<div class="col-md-12">
+						<h2>Lists and Paragraph Styling</h2>
+
+						<div class="row">
+							<div class="col-md-6">
+								<h3>Ordered Lists</h3>
+								<ol>
+									<li>Example 1</li>
+									<li>Example 2</li>
+									<li>Example 3</li>
+								</ol>
+							</div>
+							<div class="col-md-6">
+								<h3>Unordered Lists</h3>
+								<ul>
+									<li>Example 1</li>
+									<li>Example 2</li>
+									<li>Example 3</li>
+								</ul>
+							</div>
+						</div>
+						<hr />
+						<div class="row">
+							<div class="col-md-6">
+								<h3>Description</h3>
+								<dl>
+									<dt>Example Header</dt>
+									<dd>Suspendisse maximus, ante vitae bibendum porta, risus diam</dd>
+									<dt>Example Header 2</dt>
+									<dd>Suspendisse maximus, ante vitae bibendum porta, risus diam</dd>
+								</dl>
+							</div>
+							<div class="col-md-6">
+								<h3>Description (Inline)</h3>
+								<dl class="dl-horizontal">
+									<dt>Example Header</dt>
+									<dd>Suspendisse maximus, ante vitae bibendum porta, risus diam</dd>
+									<dt>Example Header 2</dt>
+									<dd>Suspendisse maximus, ante vitae bibendum porta, risus diam</dd>
+								</dl>
+							</div>
+						</div>
+
+						<!-- *************** Text styles *************** -->
+
+						<hr />
+
+						<h3>Marked Text</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur <mark>adipiscing elit</mark>. Suspendisse maximus, ante vitae bibendum porta, risus diam condimentum orci.</p>
+
+						<hr />
+
+						<h3>Bold Text</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur <strong>adipiscing elit</strong>. Suspendisse maximus, ante vitae bibendum porta, risus diam condimentum orci.</p>
+
+						<hr />
+
+						<h3>Italic</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur <em>adipiscing elit</em>. Suspendisse maximus, ante vitae bibendum porta, risus diam condimentum orci.</p>
+
+						<hr />
+
+						<h3>Citation or Legal Footnote</h3>
+						<cite>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus, ante vitae bibendum porta, risus diam condimentum orci.</cite>
+
+						<hr />
+
+						<h3>Blockquote</h3>
+						<blockquote>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus, ante vitae bibendum porta, risus diam condimentum orci.</p>
+						</blockquote>
+
+						<hr />
+
+						<h3>Addresses</h3>
+						<address>
+							<strong>ACME Corporation</strong><br />
+							123 Main Street<br />
+							Tampa, FL 33706<br>
+							<abbr title="Phone">P:</abbr> (123) 456-7890
+						</address>
+					</div>
+				</div>
+
+				<div class="row pad-top pad-bottom line-bottom">
+					<div class="col-md-12">
+						<h2>Button Styling</h2>
+						<a href="#" class="btn btn-primary">Primary Button</a>
+						<a href="#" class="btn btn-info">Informative</a>
+						<a href="#" class="btn btn-default">Default Button</a>
+						<a href="#" class="btn btn-success">Next Action</a>
+						<a href="#" class="btn btn-danger">End Action</a>
+					</div>
+				</div>
+
+
+				<div class="row pad-top">
+					<div class="col-md-12">
+						<h2>Table Styling</h2>
+						<h3>Basic Table</h3>
+
+						<table class="table"> 
+							<thead> 
+								<tr> 
+									<th>#</th> 
+									<th>First Name</th> 
+									<th>Last Name</th> 
+									<th>Username</th> 
+								</tr> 
+							</thead> 
+							<tbody> 
+								<tr> 
+									<th scope="row">1</th> 
+									<td>Mark</td> 
+									<td>Otto</td> 
+									<td>@tacodele</td> 
+								</tr> 
+								<tr> 
+									<th scope="row">2</th> 
+									<td>Jacob</td> 
+									<td>Thornton</td> 
+									<td>@salamipie</td> 
+								</tr> 
+								<tr> 
+									<th scope="row">3</th> 
+									<td>Larry</td> 
+									<td>the Bird</td> 
+									<td>@nortbirt</td> 
+								</tr> 
+							</tbody> 
+						</table>
+
+						<h3>With Striping</h3>
+
+						<table class="table table-striped"> 
+							<thead> 
+								<tr> 
+									<th>#</th> 
+									<th>First Name</th> 
+									<th>Last Name</th> 
+									<th>Username</th> 
+								</tr> 
+							</thead> 
+							<tbody> 
+								<tr> 
+									<th scope="row">1</th> 
+									<td>Mark</td> 
+									<td>Otto</td> 
+									<td>@cbc_one</td> 
+								</tr> 
+								<tr> 
+									<th scope="row">2</th> 
+									<td>Jacob</td> 
+									<td>Thornton</td> 
+									<td>@cbc_two</td> 
+								</tr> 
+								<tr> 
+									<th scope="row">3</th> 
+									<td>Larry</td> 
+									<td>the Bird</td> 
+									<td>@cbc_three</td> 
+								</tr> 
+							</tbody> 
+						</table>
+
+						<h3>With Borders</h3>
+
+						<table class="table table-striped table-bordered"> 
+							<thead> 
+								<tr> 
+									<th>#</th> 
+									<th>First Name</th> 
+									<th>Last Name</th> 
+									<th>Username</th> 
+								</tr> 
+							</thead> 
+							<tbody> 
+								<tr> 
+									<th scope="row">1</th> 
+									<td>Mark</td> 
+									<td>Otto</td> 
+									<td>@cbc_one</td> 
+								</tr> 
+								<tr> 
+									<th scope="row">2</th> 
+									<td>Jacob</td> 
+									<td>Thornton</td> 
+									<td>@cbc_two</td> 
+								</tr> 
+								<tr> 
+									<th scope="row">3</th> 
+									<td>Larry</td> 
+									<td>the Bird</td> 
+									<td>@cbc_three</td> 
+								</tr> 
+							</tbody> 
+						</table>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+		<!-- Footer element -->
+		<footer>
+			<div class="container">
+				<div class="row footer-one">
+					<div class="col-md-7 hidden-sm hidden-xs">
+
+						<div class="row sub-links">
+							<div class="col-xs-3">
+								<ul class="list-unstyled">
+									<li><strong>Home Concepts</strong></li>
+									<li><a href="index.html">Static Photo</a></li>
+									<li><a href="home2.html">Rotating Photo</a></li>
+									<li><a href="home3.html">Video Background</a></li>
+									<li><a href="home4.html">Coming Soon</a></li>
+								</ul>
+							</div>
+							<div class="col-xs-3">
+								<ul class="list-unstyled">
+									<li><strong>Page Concepts</strong></li>
+									<li><a href="page1.html">General Content</a></li>
+									<li><a href="page2.html">Blog Main</a></li>
+									<li><a href="page3.html">Blog Article</a></li>
+									<li><a href="page4.html">Portfolio</a></li>
+									<li><a href="page5.html">Job Listing</a></li>
+									<li><a href="page6.html">Job Detail</a></li>
+									<li><a href="page7.html">Search Results</a></li>
+								</ul>
+							</div>
+							<div class="col-xs-3">
+								<ul class="list-unstyled">
+									<li><strong>Page Concepts (cont.)</strong></li>
+									<li><a href="page8.html">User Profile</a></li>
+									<li><a href="page9.html">Login</a></li>
+									<li><a href="page10.html">Sign-Up</a></li>
+									<li><a href="page11.html">404 Not Found</a></li>
+									<li><a href="page12.html">Legal</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5 text-right social mobile-left">
+						Connect:
+						<a href="#" target="blank" aria-label="Navigate to Facebook"><em class="fa fa-facebook" aria-hidden="true"></em></a>
+						<a href="#" target="blank" aria-label="Navigate to Twitter"><em class="fa fa-twitter" aria-hidden="true"></em></a>
+						<a href="#" target="blank" aria-label="Navigate to YouTube"><em class="fa fa-youtube" aria-hidden="true"></em></a>
+						<a href="#" target="blank" aria-label="Navigate to Pinterest"><em class="fa fa-pinterest" aria-hidden="true"></em></a>
+						<a href="#" target="blank" aria-label="Navigate to LinkedIn"><em class="fa fa-linkedin" aria-hidden="true"></em></a>
+						<a href="#" target="blank" aria-label="Navigate to Instagram"><em class="fa fa-intagram" aria-hidden="true"></em></a>
+						<span class="spacer" aria-hidden="true"> | </span>
+						<a href="#" target="blank" aria-label="Navigate to iPhone App"><em class="fa fa-apple" aria-hidden="true"></em></a>
+						<a href="#" target="blank" aria-label="Navigate to Android App"><em class="fa fa-android" aria-hidden="true"></em></a>
+
+						<hr />
+
+						<address>
+							<strong>ABC Organization</strong><br />
+							1234 Main Street<br />
+							Suite 12345<br />
+							Treasure Island, FL 33706<br />
+						</address>
+					</div>
+				</div>
+				<div class="row footer-links">
+					<div class="col-sm-12">
+						<a href="#">Page One</a>
+						<a href="#">Page Two</a>
+						<a href="#">Page Three</a>
+						<a href="#">Page Four</a>
+						<a href="#">Page Five</a>
+						<a href="#">Page Six</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit velit sit amet sodales porttitor. Praesent vitae dolor ornare, varius dolor ut, vehicula urna. Suspendisse egestas arcu ut pretium rutrum. Nullam mattis magna nec mauris aliquet, suscipit lobortis sem finibus. Sed sollicitudin erat mollis scelerisque rutrum. Duis dapibus id leo scelerisque pretium. Nulla facilisi.</p>
+						<p>&copy; 2017 <strong>Your Organization</strong>. All Rights Reserved.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+		
+	</body>
+
+</html>

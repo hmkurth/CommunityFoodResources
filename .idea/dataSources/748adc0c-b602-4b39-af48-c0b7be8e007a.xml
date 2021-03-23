@@ -919,7 +919,7 @@ SELECT|sys.sys_config
     </user>
     <user id="286" parent="1" name="tomcat">
       <Host>localhost</Host>
-      <ObjectGrants>SELECT|testschema
+      <ObjectGrants>SELECT|foodresourcesdb
 </ObjectGrants>
     </user>
     <user id="287" parent="1" name="vera">
