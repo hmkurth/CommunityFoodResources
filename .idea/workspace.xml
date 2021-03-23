@@ -9,316 +9,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="added the accessible template and started parsing jsps into templates">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210317 1705.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210317 1708.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210317 1714.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210317 1716.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210318 0053.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/748adc0c-b602-4b39-af48-c0b7be8e007a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/748adc0c-b602-4b39-af48-c0b7be8e007a.xml" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="updating journal and timelog">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210318 0105.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210323 1132.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210323 1134.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210323 1146.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210323 1154.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210323 1208.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210323 1213.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/awsDeployWithAuthAndTable.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/timeLog.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/timeLog.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/~$urnal.md.docx" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/~$urnal.md.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/projectPlan.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/projectPlan.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/~$urnal.md.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/~WRL0003.tmp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210316 1854.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210316 1904.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210316 1915.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210317 1705.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210317 1708.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210317 1714.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210317 1716.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/bootstrap/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/bootstrap/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/bootstrap/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/bootstrap/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/css/banners.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/banners.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/font-awesome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/fonts/FontAwesome.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/fonts/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/fonts/font-awesome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/fonts/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/500placeholder.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/500placeholder.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/bg1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/bg1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/bg2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/bg2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/bg3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/bg3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/blog1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/blog1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/blog2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/blog2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/blog3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/blog3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/blog4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/blog4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/blog5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/blog5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/grav1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/grav1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/grav2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/grav2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/grav3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/grav3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/home-call1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/home-call1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/home-call2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/home-call2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/home-sm-banner.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/home-sm-banner.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/home1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/home1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/home2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/home2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/home3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/home3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/home4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/home4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/port1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/port10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port10.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/port11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port11.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/port12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port12.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/port2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/port3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/port4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/port5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/port6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/port7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/port8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/port9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/sm_page1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/sm_page1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/sm_page2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/sm_page2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/demo/sm_page3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/sm_page3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/global/logo-dark.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/global/logo-dark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/global/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/global/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/video/demo.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/video/demo.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/video/demo.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/video/demo.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/video/demo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/video/demo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/video/demo.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/video/demo.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/video/demo.ogv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/video/demo.ogv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/video/demo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/video/demo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/img/video/demo.webm" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/video/demo.webm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/bootstrap-hover-dropdown.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/bootstrap-hover-dropdown.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/html5shiv.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/html5shiv.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/jquery.bgswitcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery.bgswitcher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/jquery.countdown.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery.countdown.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/jquery.mixitup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery.mixitup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/jquery.smooth-scroll.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery.smooth-scroll.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/jquery.vide.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery.vide.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/respond.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/respond.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/unminify/bootstrap-hover-dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/unminify/bootstrap-hover-dropdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/unminify/html5shiv.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/unminify/html5shiv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/unminify/jquery.countdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/unminify/jquery.countdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/unminify/jquery.vide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/unminify/jquery.vide.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/assets/js/unminify/respond.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/unminify/respond.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/components.html" beforeDir="false" afterPath="$PROJECT_DIR$/accessibilityTemplates/accessible/components.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/home2.html" beforeDir="false" afterPath="$PROJECT_DIR$/accessibilityTemplates/accessible/home2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/home3.html" beforeDir="false" afterPath="$PROJECT_DIR$/accessibilityTemplates/accessible/home3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/home4.html" beforeDir="false" afterPath="$PROJECT_DIR$/accessibilityTemplates/accessible/home4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/accessibilityTemplates/accessible/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/page1.html" beforeDir="false" afterPath="$PROJECT_DIR$/accessibilityTemplates/accessible/page1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/page10.html" beforeDir="false" afterPath="$PROJECT_DIR$/accessibilityTemplates/accessible/page10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/page11.html" beforeDir="false" afterPath="$PROJECT_DIR$/accessibilityTemplates/accessible/page11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/page12.html" beforeDir="false" afterPath="$PROJECT_DIR$/accessibilityTemplates/accessible/page12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/page2.html" beforeDir="false" afterPath="$PROJECT_DIR$/accessibilityTemplates/accessible/page2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/page3.html" beforeDir="false" afterPath="$PROJECT_DIR$/accessibilityTemplates/accessible/page3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/page4.html" beforeDir="false" afterPath="$PROJECT_DIR$/accessibilityTemplates/accessible/page4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/page5.html" beforeDir="false" afterPath="$PROJECT_DIR$/accessibilityTemplates/accessible/page5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/page6.html" beforeDir="false" afterPath="$PROJECT_DIR$/accessibilityTemplates/accessible/page6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/page7.html" beforeDir="false" afterPath="$PROJECT_DIR$/accessibilityTemplates/accessible/page7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/page8.html" beforeDir="false" afterPath="$PROJECT_DIR$/accessibilityTemplates/accessible/page8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/accessibilityTemplates/accessible/page9.html" beforeDir="false" afterPath="$PROJECT_DIR$/accessibilityTemplates/accessible/page9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/head.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/indexMain.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/indexMain.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/META-INF/context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/classes/com/hmkurth/Api/AddressComponentsItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/classes/com/hmkurth/Api/Bounds.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/classes/com/hmkurth/Api/Geometry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/classes/com/hmkurth/Api/Location.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/classes/com/hmkurth/Api/LocationApi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/classes/com/hmkurth/Api/Northeast.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/classes/com/hmkurth/Api/Southwest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/classes/com/hmkurth/Api/Viewport.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/classes/com/hmkurth/controller/SearchUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/classes/com/hmkurth/entity/Contact.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/classes/com/hmkurth/entity/FoodResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/classes/com/hmkurth/entity/Location.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/classes/com/hmkurth/entity/Resource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/classes/com/hmkurth/entity/ResourceOwner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/classes/com/hmkurth/entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/classes/com/hmkurth/entity/UserRoles.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/classes/com/hmkurth/persistence/GenericDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/classes/com/hmkurth/persistence/LocationApiDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/classes/com/hmkurth/persistence/SessionFactoryProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/classes/log4j2.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/FastInfoset-1.2.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/aopalliance-repackaged-2.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/byte-buddy-1.9.11.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/c3p0-0.9.5.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/classmate-1.3.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/dom4j-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/hibernate-c3p0-5.4.4.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/hibernate-core-5.4.4.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/hk2-api-2.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/hk2-locator-2.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/hk2-utils-2.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/jackson-annotations-2.10.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/jackson-core-2.10.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/jackson-databind-2.10.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/jakarta.activation-1.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/jakarta.annotation-api-1.3.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/jakarta.inject-2.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/jakarta.ws.rs-api-2.1.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/jandex-2.0.5.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/javaee-web-api-7.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/javassist-3.24.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/jaxb-api-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/jaxb-runtime-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/jersey-client-2.29.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/jersey-common-2.29.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/jersey-hk2-2.29.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/log4j-api-2.10.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/log4j-core-2.10.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/mchange-commons-java-0.2.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/mysql-connector-java-8.0.23.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/osgi-resource-locator-1.0.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/protobuf-java-3.11.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/stax-ex-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/lib/txw2-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/bootstrap/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/bootstrap/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/css/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/css/banners.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/css/font-awesome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/fonts/font-awesome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/fonts/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/500placeholder.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/bg1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/bg2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/bg3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/blog1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/blog2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/blog3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/blog4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/blog5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/grav1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/grav2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/grav3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/home-call1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/home-call2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/home-sm-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/home1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/home2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/home3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/home4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/port1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/port10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/port11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/port12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/port2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/port3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/port4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/port5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/port6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/port7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/port8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/port9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/sm_page1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/sm_page2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/demo/sm_page3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/global/logo-dark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/global/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/video/demo.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/video/demo.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/video/demo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/video/demo.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/video/demo.ogv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/video/demo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/img/video/demo.webm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/js/bootstrap-hover-dropdown.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/js/html5shiv.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/js/jquery.bgswitcher.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/js/jquery.countdown.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/js/jquery.mixitup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/js/jquery.smooth-scroll.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/js/jquery.vide.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/js/respond.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/js/unminify/bootstrap-hover-dropdown.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/js/unminify/html5shiv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/js/unminify/jquery.countdown.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/js/unminify/jquery.vide.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/assets/js/unminify/respond.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/components.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/home2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/home3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/home4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/page1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/page10.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/page11.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/page12.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/page2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/page3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/page4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/page5.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/page6.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/page7.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/page8.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/accessibilityTemplates/accessible/page9.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/footer.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/head.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/header.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/img/FLP_marshal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/img/FLP_milwaukee_lansing.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/img/FLP_milwaukee_lansing2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/img/FLP_milwaukee_lansing3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/indexMain.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/loginError.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/results.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/search.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Community Food Resources/taglib.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hmkurth/Api/AddressComponentsItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hmkurth/Api/Bounds.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hmkurth/Api/Geometry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hmkurth/Api/Location.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hmkurth/Api/LocationApi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hmkurth/Api/Northeast.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hmkurth/Api/Southwest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hmkurth/Api/Viewport.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hmkurth/controller/SearchUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hmkurth/entity/Contact.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hmkurth/entity/FoodResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hmkurth/entity/Location.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hmkurth/entity/Resource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hmkurth/entity/ResourceOwner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hmkurth/entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hmkurth/entity/UserRoles.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hmkurth/persistence/GenericDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hmkurth/persistence/LocationApiDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hmkurth/persistence/SessionFactoryProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.hmkurth.persistence.UserDaoTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.hmkurth.persistence.UserRolesDaoTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.hmkurth.persistence.UserDaoTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.hmkurth.persistence.UserRolesDaoTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cleanDb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/hmkurth/persistence/UserDaoTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/hmkurth/persistence/UserRolesDaoTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/hmkurth/test/util/Database.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/database.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -647,7 +358,7 @@
       <workItem from="1615924529108" duration="20403000" />
       <workItem from="1616012953337" duration="5958000" />
       <workItem from="1616045852316" duration="1269000" />
-      <workItem from="1616514262895" duration="1236000" />
+      <workItem from="1616514262895" duration="8468000" />
     </task>
     <task id="LOCAL-00001" summary="adding readMe and timeLog.md">
       <created>1612156785894</created>
@@ -985,7 +696,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615993920428</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="updating journal and timelog">
+      <created>1616516155693</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1616516155693</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1008,7 +726,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adding hibernate dependencies to project" />
     <MESSAGE value="adding user dao" />
     <MESSAGE value="adding user dao unit tests" />
     <MESSAGE value="adding test db" />
@@ -1033,7 +750,8 @@
     <MESSAGE value="updating weekly stuff, auth is finally working" />
     <MESSAGE value="stuck on getting api key into the uri, can't find demos referenced by videos, I looked at some other solutions, but they use different tools than we are currently using, (invokation builder)" />
     <MESSAGE value="added the accessible template and started parsing jsps into templates" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the accessible template and started parsing jsps into templates" />
+    <MESSAGE value="updating journal and timelog" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating journal and timelog" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

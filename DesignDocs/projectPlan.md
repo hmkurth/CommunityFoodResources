@@ -42,24 +42,24 @@
 - [ x] Weekly reflection
 
 ### Week 7
-- [ ] Select Template | Design CSS
+- [ x] Select Template | Design CSS
 - [ ] new user jsp
 - [ ] add user controller (java class)
     - [ ] test round trip (front end to back end)
 - [ ] database input
-- [ ] research accessibility in java...make it a goal to adhere to gov access standards??
-- [ ] research APIS
-- [ ] Weekly reflection
+- [x] research accessibility in java...make it a goal to adhere to gov access standards??
+- [x] research APIS
+- [ x] Weekly reflection
 
 ### Week 8
 - [ ] start collating resources gained from social networks
 - [ ] "" photos ""
 - [] create a diagram about app flow with all the jsps and servlets
-- [ ] bootstrap implement, consider usability concerns\
-- [ ] research how to make buttons for espanol and hmong language redirects,
+- [ x] bootstrap implement, consider usability concerns\
+- [ x] research how to make buttons for espanol and hmong language redirects,
     make it easy for them to find info, does that happen through browser tools???
 
-- [ ] Weekly reflection- [ ] 
+- [ x] Weekly reflection
 ### Week 9
 - [ ] implement java accessibility api
 - [ ] implement other apis... freelittlepantry.org?? is that an api?? can it be one?
