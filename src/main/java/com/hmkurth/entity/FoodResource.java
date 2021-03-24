@@ -4,10 +4,6 @@ package com.hmkurth.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.sql.Date;
-import java.util.HashSet;
-import java.util.Objects;
-import java.util.Set;
 
 /**
  * A class to represent a food resource, such as a pantry or a meal.
@@ -23,7 +19,7 @@ public class FoodResource {
     private int id;
     @Column(name = "resource_name")
     private String name;
-    @Column(name = "resource_type")
+    @Column(name = "resource_type_id")
     //private Type resourceType;//fk to type table
     //@Column(name = "resource_owner")//fk to owners
     private ResourceOwner owner;

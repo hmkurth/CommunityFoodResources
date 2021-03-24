@@ -10,8 +10,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="updating project plan for checkpoint 3">
+      <change afterPath="$PROJECT_DIR$/DesignDocs/~$urnal.md.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignDocs/~WRL3092.tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbdiagram.uml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210323 1217.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/748adc0c-b602-4b39-af48-c0b7be8e007a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/748adc0c-b602-4b39-af48-c0b7be8e007a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/projectPlan.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/projectPlan.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/cfrlRoughERD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/foodresourcesdbUML.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210318 0053.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210318 0105.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210323 1132.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210323 1134.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210323 1146.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210323 1154.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +88,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dbdiagram.uml" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -112,6 +130,17 @@
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.Tomcat">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LocationApiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
@@ -340,14 +369,8 @@
       <workItem from="1615924529108" duration="20403000" />
       <workItem from="1616012953337" duration="5958000" />
       <workItem from="1616045852316" duration="1269000" />
-      <workItem from="1616514262895" duration="9281000" />
-    </task>
-    <task id="LOCAL-00002" summary="adding OneNote">
-      <created>1612248266500</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1612248266500</updated>
+      <workItem from="1616514262895" duration="10408000" />
+      <workItem from="1616550575169" duration="6513000" />
     </task>
     <task id="LOCAL-00003" summary="adding OneNote link">
       <created>1612249368337</created>
@@ -685,7 +708,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616535509590</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="updating project plan for checkpoint 3">
+      <created>1616541696596</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1616541696628</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

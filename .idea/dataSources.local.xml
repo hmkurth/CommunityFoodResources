@@ -13,7 +13,6 @@
         <introspection-scope>
           <node kind="schema">
             <name qname="@" />
-            <name qname="foodresourcesdb" />
             <name qname="cfrl" />
           </node>
         </introspection-scope>
