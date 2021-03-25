@@ -31,9 +31,9 @@ public class Location {
     @Column(name="bus_info")
     private String busInfo;
     private String comments;
-    @ManyToOne
-    @JoinColumn(name = "resource_id",
-            foreignKey = @ForeignKey(name = "id"))
+    @OneToOne
+    @PrimaryKeyJoinColumn
+    @Column(name="resource_id")
     private FoodResource resourceId;
 
 

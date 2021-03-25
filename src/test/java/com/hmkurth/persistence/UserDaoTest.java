@@ -103,6 +103,7 @@ class UserDaoTest {
 
         List users = genericDao.getAll();
         assertEquals(5, users.size());
+        //if you
     }
 
     /** TODO
@@ -113,25 +114,20 @@ class UserDaoTest {
 
     @Test
     void deleteWithRolesSuccess() {
-      /* for UserRoles roles : genericDao.getById(3)){
-           // genericDao.getById(3).removeUserRoles(roles);
-        }
-        genericDao.getById(3).clear();
-/*
-
-
+        //delete a user who has multiple roles
         User toDelete = (User) genericDao.getById(3);
         //what if I only want to delete one role if a user has multiple roles??
         Set<UserRoles> rolesToDelete = toDelete.getRoles();
         logger.debug("roles to delete: "+ rolesToDelete);
 
-
-        genericDao.deleteMultiple(rolesToDelete);
+        toDelete.deleteRole(rolesToDelete);
+        genericDao.deleteMultiple(UserRoles);
+        genericDao.delete(toDelete);
         //user's roles should be null
         assertNull(toDelete.getRoles());
 
     }
-*/
+     */
     /**
      * Verifies a user is returned correctly based on id
      * compare different fields

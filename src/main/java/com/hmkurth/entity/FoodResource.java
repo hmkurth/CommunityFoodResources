@@ -19,15 +19,23 @@ public class FoodResource {
     private int id;
     @Column(name = "resource_name")
     private String name;
-    @Column(name = "resource_type_id")
-    //private Type resourceType;//fk to type table
-    //@Column(name = "resource_owner")//fk to owners
+    @Column(name = "type_id")
+    @OneToOne
+    @PrimaryKeyJoinColumn
+    private Type type_id;
+
+    @OneToOne
+    @PrimaryKeyJoinColumn
     private ResourceOwner owner;
     private String description;
+    @OneToOne
+    @PrimaryKeyJoinColumn
     @Column(name = "location_id")
     private Location location;//fk to location
-    @Column(name = "contact_id")
-    private Contact contact;//fk to contact
+    @OneToOne
+    @PrimaryKeyJoinColumn
+    @Column(name="contact_id")//fk to contact
+    private Contact contactId;
     @Column(name = "comments")
     private String comments;
     @Column(name = "service_area")
@@ -41,9 +49,9 @@ public class FoodResource {
     private String daysOfWeek;  //should I make this an array list??how does that work with the DB???
     @Column(name = "delivery_offered")
     private boolean deliveryOffered;
-    @Column(name = "delivery_id")//if boolean set to true
-    //private Delivery deliveryId;
-    //@Column(name = "dietary_considerations")
+    @Column(name = "delivery_desc")//if delivery is offered, description of services
+    private boolean deliveryDescription;
+@Column(name="dietary_considerations")
     private String dietaryConsiderations;
 }
 

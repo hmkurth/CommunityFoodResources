@@ -18,19 +18,17 @@ public class ResourceOwner {
     private int id;
     @Column(name="org_name")  //don't need if names are the same
     private String name;
+
+    private String website;
+
+    @OneToOne
+    @PrimaryKeyJoinColumn
     @Column(name="contact_id")//fk to contact
     private Contact contactId;
-    @Column(name="resource_id")//fk to resource
-    private Set<FoodResource> resourceId;//the services/resources offered
-    @Column(name="location_id")//fk to location
-    private Location locationId;
-    private String website;
-    @Column(name="types_offered")
-    //private Set<FoodResourceType> types;//set of types of resources offered, goes to types
-
-
-    private String email;
-    private String phone;
-
-
+/** example from docs
+    public void setPerson(Person person) {
+        this.person = person;
+        this.id = person.getId();
+    }
+*/
     }
