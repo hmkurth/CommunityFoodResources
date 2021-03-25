@@ -30,7 +30,7 @@ public class Contact {
     @GenericGenerator(name="native",strategy="native")
     private int id;
     @NonNull
-    @Column(name="first_name")  //don't need if names are the same
+    @Column(name="first_name")
     private String firstName;
     @NonNull
     @Column(name="last_name")
@@ -38,5 +38,10 @@ public class Contact {
     private String email;
     private String phone;
 
-
+    public Contact(@NonNull String firstName, @NonNull String lastName, String email, String phone) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.phone = phone;
+    }
 }

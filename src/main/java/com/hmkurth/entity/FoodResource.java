@@ -29,9 +29,9 @@ public class FoodResource {
     @Column(name = "resource_name")
     private String name;
     @NonNull
-    @Column(name = "type_id")
-   //not sure if i need the additional info with the fetch, found in tutorial
-    @OneToOne(fetch = FetchType.LAZY, mappedBy = "food_resources", cascade = CascadeType.ALL)
+    //@Column(name = "type_id")
+   //not sure if i need the additional info with the fetch, found in tutorial!!Unknown mappedBy in: com.hmkurth.entity.FoodResource.type_id, referenced property unknown: com.hmkurth.entity.Type.food_resources
+    @OneToOne//(fetch = FetchType.LAZY, mappedBy = "food_resources", cascade = CascadeType.ALL)
     @PrimaryKeyJoinColumn
     private Type type_id;
 
@@ -42,11 +42,11 @@ public class FoodResource {
     private String description;
     @OneToOne
     @PrimaryKeyJoinColumn
-    @Column(name = "location_id")
+   // @Column(name = "location_id")
     private Location location;//fk to location
     @OneToOne
     @PrimaryKeyJoinColumn
-    @Column(name="contact_id")//fk to contact
+   // @Column(name="contact_id")//fk to contact, org.hibernate.AnnotationException: @Column(s) not allowed on a @OneToOne property: com.hmkurth.entity.FoodResource.contactId
     private Contact contactId;
     @Column(name = "comments")
     private String comments;

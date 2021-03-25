@@ -32,7 +32,7 @@ public class ResourceOwner {
 
     @OneToOne
     @PrimaryKeyJoinColumn
-    @Column(name="contact_id")//fk to contact
+   // @Column(name="contact_id")//fk to contact
     private Contact contactId;
 /** example from docs
     public void setPerson(Person person) {

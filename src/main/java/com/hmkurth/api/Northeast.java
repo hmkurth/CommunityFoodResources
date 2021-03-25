@@ -1,8 +1,8 @@
-package com.hmkurth.Api;
+package com.hmkurth.api;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Location{
+public class Northeast{
 
 	@JsonProperty("lng")
 	private double lng;

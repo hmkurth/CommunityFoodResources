@@ -42,7 +42,7 @@ public class Location {
     private String comments;
     @OneToOne
     @PrimaryKeyJoinColumn
-    @Column(name="resource_id")
+    //@Column(name="resource_id")
     private FoodResource resourceId;
 
 

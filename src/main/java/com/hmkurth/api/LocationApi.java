@@ -1,4 +1,4 @@
-package com.hmkurth.Api;
+package com.hmkurth.api;
 
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonProperty;

@@ -2,16 +2,13 @@ package com.hmkurth.persistence;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.hmkurth.Api.LocationApi;
+import com.hmkurth.api.LocationApi;
 
 
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
-import javax.ws.rs.client.Invocation;
 import javax.ws.rs.client.WebTarget;
-import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
 
 //TODO make properties file, read in uri, address in params
 public class LocationApiDao {
