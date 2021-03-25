@@ -14,5 +14,11 @@
 
         <mapping class="com.hmkurth.entity.User"/>
         <mapping class="com.hmkurth.entity.UserRoles"/>
+        <mapping class="com.hmkurth.entity.Contact"/>
+        <mapping class="com.hmkurth.entity.FoodResource"/>
+        <mapping class="com.hmkurth.entity.ResourceOwner"/>
+        <mapping class="com.hmkurth.entity.Location"/>
+        <mapping class="com.hmkurth.entity.Type"/>
+
     </session-factory>
 </hibernate-configuration>

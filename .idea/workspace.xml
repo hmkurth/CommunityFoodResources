@@ -9,24 +9,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="updated database based on feedback">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210324 1735.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210324 1751.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210324 1822.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Type.java" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="creating entities with hibernate">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210325 1107.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210325 1110.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210325 1111.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/~WRL3092.tmp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210323 1208.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210323 1213.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210323 1217.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210324 1735.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210324 1751.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210324 1822.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Contact.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Resource.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/ResourceOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/ResourceOwner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Type.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/GenericDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +103,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.15503876" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -126,14 +133,16 @@
       <recent name="com.hmkurth.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserDaoTest.deleteWithRolesSuccess">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.UserDaoTest.deleteSuccess">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,22 +158,6 @@
       <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
       <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.LocationApiTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LocationApiTest.testLocationApiJSON" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CommunityFoodResources" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hmkurth.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.LocationApiTest" />
-      <option name="METHOD_NAME" value="testLocationApiJSON" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -212,6 +205,21 @@
       <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.UserDaoTest" />
       <option name="METHOD_NAME" value="deleteWithRolesSuccess" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRolesDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CommunityFoodResources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmkurth.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.UserRolesDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -308,17 +316,17 @@
       <item itemvalue="JUnit.UserDaoTest" />
       <item itemvalue="JUnit.UserDaoTest.deleteWithRolesSuccess" />
       <item itemvalue="JUnit.UserDaoTest.deleteSuccess" />
-      <item itemvalue="JUnit.LocationApiTest.testLocationApiJSON" />
       <item itemvalue="JUnit.LocationApiTest" />
       <item itemvalue="TomEE Server.Tomcat" />
+      <item itemvalue="JUnit.UserRolesDaoTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserDaoTest.deleteWithRolesSuccess" />
-        <item itemvalue="JUnit.UserDaoTest" />
-        <item itemvalue="JUnit.LocationApiTest" />
-        <item itemvalue="JUnit.LocationApiTest.testLocationApiJSON" />
         <item itemvalue="JUnit.UserDaoTest.deleteSuccess" />
+        <item itemvalue="JUnit.UserRolesDaoTest" />
+        <item itemvalue="JUnit.UserDaoTest" />
+        <item itemvalue="JUnit.UserDaoTest.deleteWithRolesSuccess" />
+        <item itemvalue="JUnit.LocationApiTest" />
       </list>
     </recent_temporary>
   </component>
@@ -367,14 +375,8 @@
       <workItem from="1616012953337" duration="5958000" />
       <workItem from="1616045852316" duration="1269000" />
       <workItem from="1616514262895" duration="10408000" />
-      <workItem from="1616550575169" duration="14023000" />
-    </task>
-    <task id="LOCAL-00004" summary="adding Tuesday work to timelog/oneNote.  I did some mockups of the home and search page">
-      <created>1612338798432</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1612338798432</updated>
+      <workItem from="1616550575169" duration="15280000" />
+      <workItem from="1616682472118" duration="7774000" />
     </task>
     <task id="LOCAL-00005" summary="continuing adding Tuesday work to timelog/oneNote.  I did some mockups of the home and search page">
       <created>1612340725361</created>
@@ -712,7 +714,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616626087987</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="creating entities with hibernate">
+      <created>1616634411983</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1616634411983</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -735,7 +744,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adding test db" />
     <MESSAGE value="updating weekly journal, changing to journal.txt" />
     <MESSAGE value="finally got dao and tests working!" />
     <MESSAGE value="finally got dao and tests working!adding coverage img" />
@@ -760,14 +768,15 @@
     <MESSAGE value="updating journal and timelog" />
     <MESSAGE value="updating project plan for checkpoint 3" />
     <MESSAGE value="updated database based on feedback" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated database based on feedback" />
+    <MESSAGE value="creating entities with hibernate" />
+    <option name="LAST_COMMIT_MESSAGE" value="creating entities with hibernate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
-          <line>68</line>
+          <line>70</line>
           <properties class="com.hmkurth.persistence.UserDaoTest" method="getUsersByLastNameLikeSuccess">
             <option name="EMULATED" value="true" />
           </properties>
@@ -775,7 +784,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
-          <line>47</line>
+          <line>49</line>
           <properties class="com.hmkurth.persistence.UserDaoTest" method="getAllUsersSuccess">
             <option name="EMULATED" value="true" />
           </properties>
@@ -783,7 +792,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java</url>
-          <line>117</line>
+          <line>119</line>
           <properties class="com.hmkurth.persistence.UserRolesDaoTest" method="getByPropertyLikeSuccess">
             <option name="EMULATED" value="true" />
           </properties>
@@ -791,57 +800,57 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
-          <line>46</line>
+          <line>48</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java</url>
-          <line>46</line>
+          <line>48</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java</url>
-          <line>48</line>
+          <line>50</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
-          <line>70</line>
+          <line>72</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java</url>
-          <line>16</line>
+          <line>18</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
-          <line>123</line>
+          <line>130</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
-          <line>37</line>
+          <line>39</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
-          <line>40</line>
+          <line>42</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
-          <line>48</line>
+          <line>50</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
-          <line>119</line>
+          <line>127</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
-          <line>125</line>
+          <line>132</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -858,6 +867,11 @@
           <url>file://$PROJECT_DIR$/src/main/webapp/head.jsp</url>
           <line>5</line>
           <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.sql.SQLSyntaxErrorException" package="java.sql" />

@@ -1,6 +1,10 @@
 package com.hmkurth.entity;
 
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -12,6 +16,9 @@ import javax.persistence.*;
  *
  * @author hmkurth
  */
+@Data
+@RequiredArgsConstructor
+@NoArgsConstructor
 @Entity(name = "Type")
 @Table(name = "resource_type")//case sensitive
 public class Type {
@@ -19,6 +26,7 @@ public class Type {
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
+    @NonNull
     @Column(name = "type_name")
     private String name;
 

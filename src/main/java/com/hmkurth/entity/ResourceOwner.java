@@ -1,4 +1,8 @@
 package com.hmkurth.entity;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -9,6 +13,10 @@ import java.util.Set;
  *
  * @author hmkurth
  */
+@Data
+
+@NoArgsConstructor
+@RequiredArgsConstructor
 @Entity(name = "ResourceOwner")
 @Table(name = "resource_owners")//case sensitive
 public class ResourceOwner {
@@ -16,6 +24,7 @@ public class ResourceOwner {
     @GeneratedValue(strategy= GenerationType.AUTO, generator = "native")
     @GenericGenerator(name="native",strategy="native")
     private int id;
+    @NonNull
     @Column(name="org_name")  //don't need if names are the same
     private String name;
 

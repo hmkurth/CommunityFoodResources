@@ -99,8 +99,9 @@ public class GenericDao<T> {//T is placeholder, variable for type
     public void deleteMultiple(Set<T> type) {
         Session session = getSession();
         Transaction transaction = session.beginTransaction();
+        //DO I NEED TO LOOP THROUGH?
        // session.delete(type);
-        //use remove or remove all????
+        //use remove or remove all or clear????
         //product.getRecommendations().clear();
         session.remove(type);
         transaction.commit();

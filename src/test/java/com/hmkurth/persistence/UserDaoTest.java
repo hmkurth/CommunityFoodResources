@@ -1,6 +1,8 @@
 package com.hmkurth.persistence;
 import com.hmkurth.entity.UserRoles;
 import com.hmkurth.test.util.Database;
+import lombok.extern.log4j.Log4j2;
+import lombok.val;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import com.hmkurth.entity.User;
@@ -13,7 +15,7 @@ import java.util.List;
 import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+@Log4j2
 /**
  * The type User dao test.
  */
@@ -23,7 +25,7 @@ class UserDaoTest {
      */
 
     GenericDao genericDao;
-    private final Logger logger = LogManager.getLogger(this.getClass());
+
 
 
     /**
@@ -49,7 +51,7 @@ class UserDaoTest {
         List<User> users = genericDao.getAll();
         //assert that you get back the right number of results assuming nothing alters the table
         assertEquals(6, users.size());
-        logger.info("get all users test: all users;" + genericDao.getAll());
+        log.info("get all users test: all users;" + genericDao.getAll());
     }
     /**
      * Verify successful get by property (equal match)
@@ -86,7 +88,7 @@ class UserDaoTest {
     genericDao.saveOrUpdate(userToUpdate);
     User retrievedUser = (User) genericDao.getById(3);
     assertEquals(userToUpdate, retrievedUser);
-    logger.info("in save or update test");
+    log.info("in save or update test");
 
     }
 
@@ -97,8 +99,14 @@ class UserDaoTest {
         assertEquals(6, allUsers.size());
         //the one to delete
         User toDelete = (User) genericDao.getById(3);
+        //get the roles to delete
+
+        genericDao.deleteMultiple(toDelete.getRoles());//doesn't work,
         genericDao.delete(toDelete);
+
         assertNull(genericDao.getById(3));
+        //assert that the user's roles are gone, THIS DOES NOT WORK
+        assertEquals(null, toDelete.getRoles());
 
 
         List users = genericDao.getAll();
@@ -111,7 +119,7 @@ class UserDaoTest {
      * Think about testing the delete scenarios in one-to-many relationships more fully.
      * For example, if a user is deleted, what should happen to that user's roles? What if a role is deleted?
      * Write tests to make sure whatever should happen, does happen.
-
+   NOt sure i need this test.....???
     @Test
     void deleteWithRolesSuccess() {
         //delete a user who has multiple roles
@@ -120,7 +128,6 @@ class UserDaoTest {
         Set<UserRoles> rolesToDelete = toDelete.getRoles();
         logger.debug("roles to delete: "+ rolesToDelete);
 
-        toDelete.deleteRole(rolesToDelete);
         genericDao.deleteMultiple(UserRoles);
         genericDao.delete(toDelete);
         //user's roles should be null

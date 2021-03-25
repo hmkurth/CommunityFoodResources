@@ -2,6 +2,7 @@ package com.hmkurth.persistence;
 
 import com.hmkurth.entity.UserRoles;
 import com.hmkurth.test.util.Database;
+import lombok.extern.log4j.Log4j2;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.BeforeEach;
@@ -14,13 +15,14 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * The type User dao test.
  */
+@Log4j2
 class UserRolesDaoTest {
     /**
      * The Dao.
      */
 
     GenericDao genericDao;
-    private final Logger logger = LogManager.getLogger(this.getClass());
+
 
 
     /**
@@ -46,7 +48,7 @@ class UserRolesDaoTest {
         List<UserRoles> userRoles = genericDao.getAll();
         //assert that you get back the right number of results assuming nothing alters the table
         assertEquals(6, userRoles.size());//
-        logger.info("get all userRoles test: all userRoles;" + genericDao.getAll());
+        log.info("get all userRoles test: all userRoles;" + genericDao.getAll());
     }
 
     /**
@@ -71,7 +73,7 @@ class UserRolesDaoTest {
     genericDao.saveOrUpdate(toUpdate);
     UserRoles retrievedRole = (UserRoles) genericDao.getById(3);
     assertEquals(newRoleName, retrievedRole.getRoleName());
-    logger.info("update role success test");
+    log.info("update role success test");
 
     }
 
