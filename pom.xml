@@ -62,8 +62,8 @@
     </dependency>
     <!--Jersey dependencies for api -->
     <dependency>
-      <groupId>org.glassfish.jersey.core</groupId>
-      <artifactId>jersey-client</artifactId>
+      <groupId>org.glassfish.jersey.containers</groupId>
+      <artifactId>jersey-container-servlet</artifactId>
       <version>${jersey-version}</version>
     </dependency>
 
@@ -72,6 +72,12 @@
       <artifactId>jersey-hk2</artifactId>
       <version>${jersey-version}</version>
     </dependency>
+    <dependency>
+      <groupId>org.glassfish.jersey.core</groupId>
+      <artifactId>jersey-client</artifactId>
+      <version>${jersey-version}</version>
+    </dependency>
+
     <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
     <dependency>
       <groupId>org.hibernate</groupId>
@@ -126,6 +132,11 @@
     <version>${jupiter-version}</version>
     <scope>test</scope>
   </dependency>
+    <dependency>
+    <groupId>org.junit.platform</groupId>
+    <artifactId>junit-platform-surefire-provider</artifactId>
+    <version>${junit-platform-runner-version}</version>
+  </dependency>
   <dependency>
     <groupId>junit</groupId>
     <artifactId>junit</artifactId>
@@ -145,13 +156,7 @@
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>${maven-surefire-plugin-version}</version>
-          <dependencies>
-            <dependency>
-              <groupId>org.junit.platform</groupId>
-              <artifactId>junit-platform-surefire-provider</artifactId>
-              <version>${junit-platform-runner-version}</version>
-            </dependency>
-          </dependencies>
+
         </plugin>
       </plugins>
     </pluginManagement>

@@ -9,34 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="adding Lombok to entities">
-      <change afterPath="$PROJECT_DIR$/DesignDocs/~WRL3699.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210325 1254.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210325 1256.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210325 1300.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ContactDaoTest.java" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="ContactDaoTest complete">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/rest/ContactApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/rest/ContactService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210325 1107.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210325 1110.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210325 1111.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/Api/AddressComponentsItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/api/AddressComponentsItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/Api/Bounds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/api/Bounds.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/Api/Geometry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/api/Geometry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/Api/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/api/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/Api/LocationApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/api/LocationApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/Api/Northeast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/api/Northeast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/Api/Southwest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/api/Southwest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/Api/Viewport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/api/Viewport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Contact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/ResourceOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/ResourceOwner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +115,7 @@
       <recent name="com.hmkurth.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ContactDaoTest">
+  <component name="RunManager" selected="TomEE Server.Tomcat">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -382,14 +360,7 @@
       <workItem from="1616045852316" duration="1269000" />
       <workItem from="1616514262895" duration="10408000" />
       <workItem from="1616550575169" duration="15280000" />
-      <workItem from="1616682472118" duration="12398000" />
-    </task>
-    <task id="LOCAL-00006" summary="updating onenote, research on similar services">
-      <created>1612346304768</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1612346304768</updated>
+      <workItem from="1616682472118" duration="21821000" />
     </task>
     <task id="LOCAL-00007" summary="adding log4j2.properties">
       <created>1612640628172</created>
@@ -727,7 +698,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616690433432</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="ContactDaoTest complete">
+      <created>1616695346256</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1616695346256</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -750,7 +728,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="finally got dao and tests working!" />
     <MESSAGE value="finally got dao and tests working!adding coverage img" />
     <MESSAGE value="adding userRole class and dao" />
     <MESSAGE value="adding userRoleDaoTest" />
@@ -775,7 +752,8 @@
     <MESSAGE value="updated database based on feedback" />
     <MESSAGE value="creating entities with hibernate" />
     <MESSAGE value="adding Lombok to entities" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding Lombok to entities" />
+    <MESSAGE value="ContactDaoTest complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="ContactDaoTest complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
