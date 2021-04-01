@@ -38,7 +38,7 @@ public class FoodResource {
     @OneToOne
     @PrimaryKeyJoinColumn
     private ResourceOwner owner;
-    @NonNull
+
     private String description;
     @OneToOne
     @PrimaryKeyJoinColumn

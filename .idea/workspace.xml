@@ -9,10 +9,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="added rest service for contacts">
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="updating journal and timelog">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210330 1829.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210330 1830.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210330 1831.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/LocationDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/748adc0c-b602-4b39-af48-c0b7be8e007a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/748adc0c-b602-4b39-af48-c0b7be8e007a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/timeLog.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/timeLog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210325 1256.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210325 1300.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210325 1301.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,36 +127,19 @@
       <recent name="com.hmkurth.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="TomEE Server.Tomcat">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FoodResourceTest.getAllFoodResourcesSuccess">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContactDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CommunityFoodResources" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hmkurth.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ContactDaoTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactDaoTest.getByIdSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FoodResourceTest.getAllFoodResourcesSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
         <pattern>
@@ -151,14 +148,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ContactDaoTest" />
-      <option name="METHOD_NAME" value="getByIdSuccess" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.FoodResourceTest" />
+      <option name="METHOD_NAME" value="getAllFoodResourcesSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactDaoTest.getByPropertyLikeSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LocationDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
         <pattern>
@@ -167,14 +164,45 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ContactDaoTest" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.LocationDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocationDaoTest.getByPropertyEqualSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CommunityFoodResources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmkurth.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.LocationDaoTest" />
+      <option name="METHOD_NAME" value="getByPropertyEqualSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocationDaoTest.getByPropertyLikeSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CommunityFoodResources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmkurth.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.LocationDaoTest" />
       <option name="METHOD_NAME" value="getByPropertyLikeSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactDaoTest.insertSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LocationDaoTest.getLocationsByLastNameLikeSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
         <pattern>
@@ -183,24 +211,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ContactDaoTest" />
-      <option name="METHOD_NAME" value="insertSuccess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContactDaoTest.saveOrUpdateSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CommunityFoodResources" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hmkurth.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ContactDaoTest" />
-      <option name="METHOD_NAME" value="saveOrUpdateSuccess" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.LocationDaoTest" />
+      <option name="METHOD_NAME" value="getLocationsByLastNameLikeSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -296,19 +308,19 @@
     </configuration>
     <list>
       <item itemvalue="TomEE Server.Tomcat" />
-      <item itemvalue="JUnit.ContactDaoTest.getByIdSuccess" />
-      <item itemvalue="JUnit.ContactDaoTest.insertSuccess" />
-      <item itemvalue="JUnit.ContactDaoTest.getByPropertyLikeSuccess" />
-      <item itemvalue="JUnit.ContactDaoTest" />
-      <item itemvalue="JUnit.ContactDaoTest.saveOrUpdateSuccess" />
+      <item itemvalue="JUnit.LocationDaoTest.getByPropertyLikeSuccess" />
+      <item itemvalue="JUnit.LocationDaoTest" />
+      <item itemvalue="JUnit.LocationDaoTest.getLocationsByLastNameLikeSuccess" />
+      <item itemvalue="JUnit.LocationDaoTest.getByPropertyEqualSuccess" />
+      <item itemvalue="JUnit.FoodResourceTest.getAllFoodResourcesSuccess" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ContactDaoTest" />
-        <item itemvalue="JUnit.ContactDaoTest.saveOrUpdateSuccess" />
-        <item itemvalue="JUnit.ContactDaoTest.getByPropertyLikeSuccess" />
-        <item itemvalue="JUnit.ContactDaoTest.insertSuccess" />
-        <item itemvalue="JUnit.ContactDaoTest.getByIdSuccess" />
+        <item itemvalue="JUnit.FoodResourceTest.getAllFoodResourcesSuccess" />
+        <item itemvalue="JUnit.LocationDaoTest" />
+        <item itemvalue="JUnit.LocationDaoTest.getByPropertyEqualSuccess" />
+        <item itemvalue="JUnit.LocationDaoTest.getLocationsByLastNameLikeSuccess" />
+        <item itemvalue="JUnit.LocationDaoTest.getByPropertyLikeSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -358,14 +370,11 @@
       <workItem from="1616045852316" duration="1269000" />
       <workItem from="1616514262895" duration="10408000" />
       <workItem from="1616550575169" duration="15280000" />
-      <workItem from="1616682472118" duration="22685000" />
-    </task>
-    <task id="LOCAL-00008" summary="adding junit dependencies">
-      <created>1612642536807</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1612642536807</updated>
+      <workItem from="1616682472118" duration="23691000" />
+      <workItem from="1617114632768" duration="3317000" />
+      <workItem from="1617122029474" duration="3186000" />
+      <workItem from="1617142732301" duration="157000" />
+      <workItem from="1617142948203" duration="7138000" />
     </task>
     <task id="LOCAL-00009" summary="updating timelog">
       <created>1612746485445</created>
@@ -703,7 +712,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616976463016</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="updating journal and timelog">
+      <created>1616977442386</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1616977442386</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -744,14 +760,14 @@
     <MESSAGE value="updating weekly stuff, auth is finally working" />
     <MESSAGE value="stuck on getting api key into the uri, can't find demos referenced by videos, I looked at some other solutions, but they use different tools than we are currently using, (invokation builder)" />
     <MESSAGE value="added the accessible template and started parsing jsps into templates" />
-    <MESSAGE value="updating journal and timelog" />
     <MESSAGE value="updating project plan for checkpoint 3" />
     <MESSAGE value="updated database based on feedback" />
     <MESSAGE value="creating entities with hibernate" />
     <MESSAGE value="adding Lombok to entities" />
     <MESSAGE value="ContactDaoTest complete" />
     <MESSAGE value="added rest service for contacts" />
-    <option name="LAST_COMMIT_MESSAGE" value="added rest service for contacts" />
+    <MESSAGE value="updating journal and timelog" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating journal and timelog" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -864,6 +880,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ContactDaoTest.java</url>
           <line>45</line>
           <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/LocationDaoTest.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.sql.SQLSyntaxErrorException" package="java.sql" />
