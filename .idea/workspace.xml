@@ -9,20 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="foodresource dao tests">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210401 1419.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210401 1502.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210401 1506.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="working on daos, somewhere my getSession method stopped working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210330 1829.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210330 1830.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210330 1831.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/GenericDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -372,14 +361,7 @@
       <workItem from="1617122029474" duration="3186000" />
       <workItem from="1617142732301" duration="157000" />
       <workItem from="1617142948203" duration="13468000" />
-      <workItem from="1617508863458" duration="1438000" />
-    </task>
-    <task id="LOCAL-00010" summary="adding rough draft or ERD">
-      <created>1612844548444</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1612844548444</updated>
+      <workItem from="1617508863458" duration="2560000" />
     </task>
     <task id="LOCAL-00011" summary="adding application flow">
       <created>1612846394350</created>
@@ -717,7 +699,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617303112969</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="working on daos, somewhere my getSession method stopped working">
+      <created>1617510594966</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1617510594966</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -740,7 +729,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adding userRoleDaoTest" />
     <MESSAGE value="unit tests passing after implementing equals" />
     <MESSAGE value="adding journal and timelog" />
     <MESSAGE value="completed generic dao and userRoleDao tests with it." />
@@ -765,7 +753,8 @@
     <MESSAGE value="added rest service for contacts" />
     <MESSAGE value="updating journal and timelog" />
     <MESSAGE value="foodresource dao tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="foodresource dao tests" />
+    <MESSAGE value="working on daos, somewhere my getSession method stopped working" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on daos, somewhere my getSession method stopped working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

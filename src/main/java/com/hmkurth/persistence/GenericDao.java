@@ -5,6 +5,7 @@ import com.hmkurth.entity.UserRoles;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import javax.persistence.Entity;
 
@@ -42,14 +43,14 @@ public class GenericDao<T> {//T is placeholder, variable for type
     public GenericDao(Class<T> type) {
         this.type = type;
     }
-
+    SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
     /**
      * Gets a entity by id
      * @param id entity id to search by
      * @return a entity
      */
     public <T>T getById(int id) {
-        Session session = session.getSession();
+        Session session = getSession();
         T entity = (T)session.get(type, id);
         session.close();
         return entity;
@@ -103,7 +104,7 @@ public class GenericDao<T> {//T is placeholder, variable for type
      *
      * @param entity entity to be deleted
      *
-     */
+
 
     public void removeChildren(T entity) {
         Session session = getSession();
@@ -116,7 +117,7 @@ public class GenericDao<T> {//T is placeholder, variable for type
         session.close();
     }
 
-
+     */
 
     /**
      * Gets all entities
