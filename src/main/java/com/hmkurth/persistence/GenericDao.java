@@ -24,6 +24,15 @@ public class GenericDao<T> {//T is placeholder, variable for type
 //create instance variable of class you are using
     private Class<T>  type;
     private final Logger logger = LogManager.getLogger(this.getClass());
+    //WHAT ABOUT SETS OF CHILDREN/one to many??? when i want to delete a role from a set
+  /*  GenericDao dao;
+    GenericDao userDao;
+    GenericDao trailDao;
+
+    TrailReport trailReport;
+    User user;
+    Trail trail;
+    */
 
     /**
      * Instantiates a new Generic dao.
@@ -40,7 +49,7 @@ public class GenericDao<T> {//T is placeholder, variable for type
      * @return a entity
      */
     public <T>T getById(int id) {
-        Session session = getSession();
+        Session session = session.getSession();
         T entity = (T)session.get(type, id);
         session.close();
         return entity;
@@ -90,19 +99,18 @@ public class GenericDao<T> {//T is placeholder, variable for type
         session.close();
     }
     /**
-     * Deletes a collection of enties??????????????????????????????????????????????
+     * Deletes a collection of enties from the parent, deriving from Kaitlyn's method in team project
      *
-     * @param type entity to be deleted
+     * @param entity entity to be deleted
      *
      */
 
-    public void deleteMultiple(Set<T> type) {
+    public void removeChildren(T entity) {
         Session session = getSession();
         Transaction transaction = session.beginTransaction();
         //DO I NEED TO LOOP THROUGH?
-       // session.delete(type);
-        //use remove or remove all or clear????
-        //product.getRecommendations().clear();
+        for(Set<T> nextEntity : this.entities){//do I need to pass in set here?
+       if(nextEntity.getId() == entity.getId())
         session.remove(type);
         transaction.commit();
         session.close();

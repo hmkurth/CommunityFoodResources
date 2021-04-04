@@ -73,9 +73,9 @@ public class FoodResourceTest {
     @Test
     void saveOrUpdateSuccess() {
 
-        String newLastName = "Church Pantry";
+        String newName = "Church Pantry";
         FoodResource foodResourcesToUpdate = (FoodResource) genericDao.getById(3);//mike Voit
-        foodResourcesToUpdate.setNameDesc(newLastName);
+        foodResourcesToUpdate.setName(newName);
         genericDao.saveOrUpdate(foodResourcesToUpdate);
         FoodResource retrievedUser = (FoodResource) genericDao.getById(3);
         assertEquals(foodResourcesToUpdate, retrievedUser);
@@ -98,26 +98,26 @@ public class FoodResourceTest {
 
     @Test
     void getByIdSuccess() {
-        FoodResource retrievedUser = (FoodResource) genericDao.getById(1);
-        assertEquals("eastside near lansing", retrievedUser.getNameDesc());
-        assertEquals("422 Lansing", retrievedUser.getStreetAddressOrIntersection());
-        assertEquals("near front of property", retrievedUser.getComments());
-        assertNotNull(retrievedUser);
+        FoodResource retrievedResource = (FoodResource) genericDao.getById(1);
+        assertEquals("free pantry on johnson ", retrievedResource.getName());
+        assertEquals("free pantry", retrievedResource.getDescription());
+        assertEquals("social security number and id", retrievedResource.getDocumentation());
+        assertNotNull(retrievedResource);
     }
 
     /**
      * Verify successful insert of a FoodResource
-     * */
+     *
     @Test
     void insertSuccess() {
 
-        FoodResource newFoodResource = new FoodResource("Beacon", "322 Jones st", "Madison", "WI", "56987");
+        FoodResource newFoodResource = new FoodResource("Bpnn Meal", "2", 4, 6, "west side", "ssn", 0, "gluten free");
         int id = genericDao.insert(newFoodResource);
         assertNotEquals(0,id);
-        FoodResource insertedUser = (FoodResource) genericDao.getById(id);
-        assertEquals(newFoodResource, insertedUser);
+        FoodResource insertedResource = (FoodResource) genericDao.getById(id);
+        assertEquals(newFoodResource, insertedResource);
     }
-
+     */
 
     /**
      * Verify successful get by property (like match)

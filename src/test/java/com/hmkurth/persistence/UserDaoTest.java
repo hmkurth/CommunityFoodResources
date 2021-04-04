@@ -8,6 +8,8 @@ import org.apache.logging.log4j.Logger;
 import com.hmkurth.entity.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import javax.management.relation.Role;
 import javax.persistence.Entity;
 
 import java.time.LocalDate;
@@ -41,6 +43,28 @@ class UserDaoTest {
 
 
         genericDao = new GenericDao(User.class);
+        /*
+        databaseUtility = new DatabaseUtility();
+        databaseUtility.runSQL("cleandb.sql");
+        databaseUtility.runSQL("createTestData.sql");
+
+        dao = new GenericDao(TrailReport.class);
+        userDao = new GenericDao(User.class);
+        trailDao = new GenericDao(Trail.class);
+
+        Trail trail = (Trail)trailDao.getAll().get(0);
+        Set<TrailReport> reports = trail.getReports();
+
+
+        trailReport = new TrailReport();
+        trailReport.setComments("test comments");
+        trailReport.setTrail(trail);
+
+        trailReport.setUser(((User)userDao.getAll().get(0)));
+
+        int id = dao.insert(trailReport);
+        trailReport = (TrailReport)dao.getById(id);
+*/
     }
 
     /**
@@ -91,7 +115,20 @@ class UserDaoTest {
     log.info("in save or update test");
 
     }
-
+   /** To test that deleting a user results in deleted roles:
+    Create a user that has at least one role (this might already be part of your cleandb.sql).
+    Get the role id/s for that user's roles (hang on to these as you'll need them below).
+    Delete the user.
+    Assert the user was deleted (getting the user results in null - this part is like your typical delete test)
+    Attempt to get the role/s by id.
+    Assert that the role/s is/are null.
+            2. To test that deleting a role does not delete the user:
+    Create a user that has at least one role (this might already be part of your cleandb.sql).
+    Get the role/s for that user.
+    Delete the role/s.
+            Verify (assert) the role/s was/were deleted.
+    Get the user.
+            Verify (assert) the the user still exists. (edited)*/
     @Test
     void deleteSuccess() {
         //how many do we have to start
@@ -99,19 +136,15 @@ class UserDaoTest {
         assertEquals(6, allUsers.size());
         //the one to delete
         User toDelete = (User) genericDao.getById(3);
-        //get the roles to delete
-
-        genericDao.deleteMultiple(toDelete.getRoles());//doesn't work,
+        //delete the user
         genericDao.delete(toDelete);
-
+        //Assert the user was deleted (getting the user results in null
         assertNull(genericDao.getById(3));
+        // Attempt to get the role/s by id.
         //assert that the user's roles are gone, THIS DOES NOT WORK
         assertEquals(null, toDelete.getRoles());
 
 
-        List users = genericDao.getAll();
-        assertEquals(5, users.size());
-        //if you
     }
 
     /** TODO
