@@ -9,9 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="working on daos, somewhere my getSession method stopped working">
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="for my reference, when i tried adding the removeChildren method, for some reason it made all the getSession() in the generic dao red....wth???">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/GenericDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/timeLog.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/timeLog.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,19 +113,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.UserRolesDaoTest">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FoodResourceTest.getAllFoodResourcesSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
@@ -361,14 +348,8 @@
       <workItem from="1617122029474" duration="3186000" />
       <workItem from="1617142732301" duration="157000" />
       <workItem from="1617142948203" duration="13468000" />
-      <workItem from="1617508863458" duration="2560000" />
-    </task>
-    <task id="LOCAL-00011" summary="adding application flow">
-      <created>1612846394350</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1612846394350</updated>
+      <workItem from="1617508863458" duration="3152000" />
+      <workItem from="1617588435157" duration="638000" />
     </task>
     <task id="LOCAL-00012" summary="updated user stories, project plan, added journal">
       <created>1612919521946</created>
@@ -706,7 +687,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617510594966</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="for my reference, when i tried adding the removeChildren method, for some reason it made all the getSession() in the generic dao red....wth???">
+      <created>1617511785692</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1617511785692</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -729,7 +717,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="unit tests passing after implementing equals" />
     <MESSAGE value="adding journal and timelog" />
     <MESSAGE value="completed generic dao and userRoleDao tests with it." />
     <MESSAGE value="working on database configuration" />
@@ -754,7 +741,8 @@
     <MESSAGE value="updating journal and timelog" />
     <MESSAGE value="foodresource dao tests" />
     <MESSAGE value="working on daos, somewhere my getSession method stopped working" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on daos, somewhere my getSession method stopped working" />
+    <MESSAGE value="for my reference, when i tried adding the removeChildren method, for some reason it made all the getSession() in the generic dao red....wth???" />
+    <option name="LAST_COMMIT_MESSAGE" value="for my reference, when i tried adding the removeChildren method, for some reason it made all the getSession() in the generic dao red....wth???" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

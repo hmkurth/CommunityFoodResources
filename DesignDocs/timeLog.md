@@ -9,6 +9,7 @@
 *Week 7 : 21 hrs
 *Week 8 and 8.5: 21.5 hrs
 *Week 9: 25 hrs
+*Week 10: 22 hrs
 
 
 
