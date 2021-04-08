@@ -1,8 +1,7 @@
 
 <body>
-
 		<!-- Main navigation element for site, html5 elements used to improve rendering on assistive devices -->
-		<nav class="navbar navbar-default navbar-fixed-top navbar-white">
+		<nav class="navbar navbar-default navbar-fixed-top navbar-dark">
 			<div class="top-header">
 				<div class="container">
 
@@ -33,11 +32,6 @@
 
 					<!-- Secondary navigation and login dropdown -->
 					<div class="menu-block pull-right no-pad">
-						<ul>
-							<!-- Example secondary links -->
-							<li><a href="#" class="btn btn-link">Link One</a></li>
-							<li><a href="#" class="btn btn-link">Link Two</a></li>
-							<li><a href="#" class="btn btn-link">Link Three</a></li>
 
 							<!-- Login dropdown -->
 							<li class="dropdown">
@@ -80,56 +74,33 @@
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top_main_navigation" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
+						<span class="icon-bar">Not sure where this is</span>
+						<span class="icon-bar">what about line 2</span>
+						<span class="icon-bar">line 3</span>
 					</button>
-					<a class="navbar-brand" href="index.html">
-						<img src="../../src/main/webapp/assets/img/global/logo-dark.png" alt="Back to home" />
+					<a class="navbar-brand" href="index.html"><h4>Madison Community Food Resources</h4>
+						<img src="../../src/main/webapp/assets/img/global/logo-dark.png" alt="Madison Community Food Resources" />
 					</a>
 				</div>
 
 				<!-- Main site header -->
-				<div class="collapse navbar-collapse" id="top_main_navigation">
+				<div class="collapse navbar-collapse menu-block pull-right no-pad" id="top_main_navigation">
 					<ul class="nav navbar-nav">
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Food Resources<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="index.html">Static Photo</a></li>
-								<li><a href="home2.html">Rotating Photo</a></li>
-								<li><a href="home3.html">Video Background</a></li>
-								<li><a href="home4.html">Coming Soon</a></li>
+								<li><a href="index.html">Food Pantries</a></li>
+								<li><a href="home2.html">Free Little Pantries</a></li>
+								<li><a href="home3.html">Community Meals</a></li>
+								<li><a href="home3.html">Government Resources</a></li>
+								<li><a href="home4.html">Community Aid and Support Groups</a></li>
 							</ul>
 						</li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="page1.html">General Content</a></li>
-								<li><a href="page2.html">Blog Main</a></li>
-								<li><a href="page3.html">Blog Article</a></li>
-								<li><a href="page4.html">Portfolio</a></li>
-								<li><a href="page5.html">Job Listing</a></li>
-								<li><a href="page6.html">Job Detail</a></li>
-								<li><a href="page7.html">Search Results</a></li>
-								<li><a href="page8.html">User Profile</a></li>
-								<li><a href="page9.html">Login</a></li>
-								<li><a href="page10.html">Sign-Up</a></li>
-								<li><a href="page11.html">404 Not Found</a></li>
-								<li><a href="page12.html">Legal</a></li>
-							</ul>
-						</li>
-						<li><a href="components.html">Components</a></li>
+
+						<li><a href="components.html">About This Project</a></li>
+						<li><a href="components.html">Contact</a></li>
 					</ul>
 
-					<form class="navbar-form navbar-right hidden-sm hidden-md" action="page7.html">
-						<div class="input-group">
-							<label for="search_main" class="hidden">Site Search</label>
-							<input type="text" class="form-control" id="search_main" placeholder="Search this site">
-							<span class="input-group-btn">
-								<button class="btn btn-default" type="submit" aria-label="Search"><em class="fa fa-search" aria-hidden="true"></em></button>
-							</span>
-						</div>
-					</form>
 				</div>
 			</div>
 		</nav>

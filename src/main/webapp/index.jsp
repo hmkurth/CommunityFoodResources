@@ -4,12 +4,8 @@
 
 <c:import url="/header2.jsp" />
 
-<div id="indexMain">
-    <c:import url="/indexMain.jsp" />
-</div>
+<c:import url="/indexMain.jsp" />
 
-</body>
-<!-- footer -->
 <c:import url="/footer.jsp" />
-</html>
+
 

@@ -84,7 +84,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="index.html">
-                <h3>Madison Community Food Resources</h3>
+                <h1>Madison Community Food Resources</h1>
                 <img src="i" alt="Madison Food Resources" />
             </a>
         </div>
