@@ -1,4 +1,4 @@
-
+<body>
 <!-- Main navigation element for site, html5 elements used to improve rendering on assistive devices -->
 <nav class="navbar navbar-default navbar-fixed-top navbar-white">
     <div class="top-header">
@@ -23,7 +23,6 @@
                 </ul>
             </div>
 
-            <!-- TODO Enable the user to adjust the font size of the web page -->
 
 
             <div class="menu-block pull-left hidden-xs">Text Size:</div>
@@ -85,42 +84,40 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="index.html">
-                <img src="" alt="Back to home" />
+                <h3>Madison Community Food Resources</h3>
+                <img src="i" alt="Madison Food Resources" />
             </a>
         </div>
+        <div class="col-md-10 col-md-offset-1 text-center">
+            <h5>WHat size will this be</h5>
 
         <!-- Main site header -->
+
+
         <div class="collapse navbar-collapse" id="top_main_navigation">
             <ul class="nav navbar-nav">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="index.html">Static Photo</a></li>
-                        <li><a href="home2.html">Rotating Photo</a></li>
-                        <li><a href="home3.html">Video Background</a></li>
-                        <li><a href="home4.html">Coming Soon</a></li>
+
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="page1.html">General Content</a></li>
-                        <li><a href="page2.html">Blog Main</a></li>
-                        <li><a href="page3.html">Blog Article</a></li>
-                        <li><a href="page4.html">Portfolio</a></li>
-                        <li><a href="page5.html">Job Listing</a></li>
-                        <li><a href="page6.html">Job Detail</a></li>
-                        <li><a href="page7.html">Search Results</a></li>
-                        <li><a href="page8.html">User Profile</a></li>
-                        <li><a href="page9.html">Login</a></li>
-                        <li><a href="page10.html">Sign-Up</a></li>
-                        <li><a href="page11.html">404 Not Found</a></li>
-                        <li><a href="page12.html">Legal</a></li>
+                        <li><a href="page1.html">All Resources</a></li>
+                        <li><a href="page2.html">Food Pantry List</a></li>
+                        <li><a href="page3.html">Community Meals</a></li>
+                        <li><a href="page4.html">Government Resources</a></li>
+                        <li><a href="page5.html">Free Little Pantries</a></li>
+                        <li><a href="page6.html">Community Support Groups and Websites</a></li>
+
                     </ul>
                 </li>
-                <li><a href="components.html">Components</a></li>
+                <li><a href="components.html">About The Project</a></li>
             </ul>
-
+<!-- TODO make sure this search works before showing it -->
             <form class="navbar-form navbar-right hidden-sm hidden-md" action="page7.html">
                 <div class="input-group">
                     <label for="search_main" class="hidden">Site Search</label>
@@ -133,18 +130,3 @@
         </div>
     </div>
 </nav>
-<!--
-<div class="banner" id="rotate-banner">
-    <div class="banner-interior">
-        <div class="container tall">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1 text-center">
-                    <h1>Accessible Framework</h1>
-                    <p class="lead">A simple theme for building WCAG compliant web experiences</p>
-                    <p><a href="page1.html" class="btn btn-primary btn-lg">Page Templates</a> <a href="components.html" class="btn btn-default btn-lg">Components</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
--->

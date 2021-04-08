@@ -1,13 +1,11 @@
 package com.hmkurth.entity;
 
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 /**
  * A class to represent a location.
@@ -42,8 +40,21 @@ public class Location {
     private String comments;
     @OneToOne
     @PrimaryKeyJoinColumn
+    @ToString.Exclude
     //@Column(name="resource_id")
     private FoodResource resourceId;
 
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Location)) return false;
+        Location location = (Location) o;
+        return getId() == location.getId() && getNameDesc().equals(location.getNameDesc()) && getStreetAddressOrIntersection().equals(location.getStreetAddressOrIntersection()) && getCity().equals(location.getCity()) && getState().equals(location.getState()) && getZip().equals(location.getZip()) && Objects.equals(getBusInfo(), location.getBusInfo()) && Objects.equals(getComments(), location.getComments());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getNameDesc(), getStreetAddressOrIntersection(), getCity(), getState(), getZip(), getBusInfo(), getComments());
+    }
 }

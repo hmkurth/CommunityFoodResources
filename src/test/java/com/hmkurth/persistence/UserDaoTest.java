@@ -133,16 +133,22 @@ class UserDaoTest {
     void deleteSuccess() {
         //how many do we have to start
         List allUsers = genericDao.getAll();
+        GenericDao<UserRoles> roleDao = new GenericDao(UserRoles.class);
         assertEquals(6, allUsers.size());
         //the one to delete
         User toDelete = (User) genericDao.getById(3);
+        Set<UserRoles> rolesToDelete = toDelete.getRoles();
+        int idOfRole = 0;
+        for (UserRoles roles: rolesToDelete) {
+            idOfRole = roles.getId();
+        }
         //delete the user
         genericDao.delete(toDelete);
         //Assert the user was deleted (getting the user results in null
         assertNull(genericDao.getById(3));
         // Attempt to get the role/s by id.
         //assert that the user's roles are gone, THIS DOES NOT WORK
-        assertEquals(null, toDelete.getRoles());
+        assertEquals(null, roleDao.getById(idOfRole));
 
 
     }

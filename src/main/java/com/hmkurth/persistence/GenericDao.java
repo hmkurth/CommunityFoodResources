@@ -99,25 +99,6 @@ public class GenericDao<T> {//T is placeholder, variable for type
         transaction.commit();
         session.close();
     }
-    /**
-     * Deletes a collection of enties from the parent, deriving from Kaitlyn's method in team project
-     *
-     * @param entity entity to be deleted
-     *
-
-
-    public void removeChildren(T entity) {
-        Session session = getSession();
-        Transaction transaction = session.beginTransaction();
-        //DO I NEED TO LOOP THROUGH?
-        for(Set<T> nextEntity : this.entities){//do I need to pass in set here?
-       if(nextEntity.getId() == entity.getId())
-        session.remove(type);
-        transaction.commit();
-        session.close();
-    }
-
-     */
 
     /**
      * Gets all entities

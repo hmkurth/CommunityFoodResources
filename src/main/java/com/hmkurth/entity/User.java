@@ -40,6 +40,8 @@ public class User {
     @NonNull
     private String email;
     //references the foreign key
+    @EqualsAndHashCode.Exclude
+    @ToString.Exclude
     @OneToMany(mappedBy = "user", cascade=CascadeType.ALL, orphanRemoval = true, fetch =FetchType.EAGER )
     //@JoinColumn(name = "id")//changing this...NOPE
 

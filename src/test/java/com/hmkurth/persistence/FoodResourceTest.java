@@ -1,6 +1,7 @@
 package com.hmkurth.persistence;
 
 import com.hmkurth.entity.FoodResource;
+import com.hmkurth.entity.Location;
 import com.hmkurth.test.util.Database;
 import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.BeforeEach;
@@ -77,8 +78,8 @@ public class FoodResourceTest {
         FoodResource foodResourcesToUpdate = (FoodResource) genericDao.getById(3);//mike Voit
         foodResourcesToUpdate.setName(newName);
         genericDao.saveOrUpdate(foodResourcesToUpdate);
-        FoodResource retrievedUser = (FoodResource) genericDao.getById(3);
-        assertEquals(foodResourcesToUpdate, retrievedUser);
+        FoodResource retrievedResource = (FoodResource) genericDao.getById(3);
+        assertEquals(foodResourcesToUpdate, retrievedResource);
         log.info("in save or update test");
 
     }
@@ -107,9 +108,16 @@ public class FoodResourceTest {
 
     /**
      * Verify successful insert of a FoodResource
+     *TEST ALL FIELDS TO BE THOROUGH
+     * going to need to bring in all the other entities to insert with their daos
      *
     @Test
     void insertSuccess() {
+
+    //new location dao to get the location
+    GenericDao locationDao = new GenericDao(Location.class);
+    //get a location to test
+    Location location = (Location) locationDao.getById(2);
 
         FoodResource newFoodResource = new FoodResource("Bpnn Meal", "2", 4, 6, "west side", "ssn", 0, "gluten free");
         int id = genericDao.insert(newFoodResource);
@@ -117,14 +125,15 @@ public class FoodResourceTest {
         FoodResource insertedResource = (FoodResource) genericDao.getById(id);
         assertEquals(newFoodResource, insertedResource);
     }
-     */
 
+     */
     /**
      * Verify successful get by property (like match)
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<FoodResource> FoodResources = genericDao.getPropertyByName("streetAddressOrIntersection", "bert");
-        assertEquals(1, FoodResources.size());
+
+        List<FoodResource> FoodResources = genericDao.getPropertyByName("desc", "free pantry");
+        assertEquals(3, FoodResources.size());
     }
 }
