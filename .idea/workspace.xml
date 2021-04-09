@@ -9,13 +9,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="editing header">
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="got header and main somewhat how I want it, still need to have an icon">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210406 1825.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/api/LocationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/banners.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/banners.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/home1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/banner.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/banner.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/header2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header2.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header2.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/indexMain.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/indexMain.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +34,9 @@
       <list>
         <option value="package-info" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -120,20 +127,35 @@
       <recent name="com.hmkurth.persistence" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hmkurth.api" />
       <recent name="com.hmkurth.controller" />
       <recent name="com.hmkurth.persistence" />
     </key>
   </component>
-  <component name="RunManager" selected="TomEE Server.Tomcat">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ApiTestServiceClient.testgeoJSON">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTestServiceClient.testgeoJSON" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CommunityFoodResources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmkurth.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ApiTestServiceClient" />
+      <option name="METHOD_NAME" value="testgeoJSON" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -165,22 +187,6 @@
       <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
       <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.FoodResourceTest" />
       <option name="METHOD_NAME" value="saveOrUpdateSuccess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDaoTest.deleteSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CommunityFoodResources" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hmkurth.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.UserDaoTest" />
-      <option name="METHOD_NAME" value="deleteSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -304,20 +310,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.UserDaoTest.deleteSuccess" />
       <item itemvalue="JUnit.UserRolesDaoTest" />
       <item itemvalue="JUnit.com.hmkurth.persistence in CommunityFoodResources" />
       <item itemvalue="JUnit.FoodResourceTest.saveOrUpdateSuccess" />
       <item itemvalue="JUnit.FoodResourceTest.getByPropertyLikeSuccess" />
       <item itemvalue="TomEE Server.Tomcat" />
+      <item itemvalue="JUnit.ApiTestServiceClient.testgeoJSON" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApiTestServiceClient.testgeoJSON" />
         <item itemvalue="JUnit.FoodResourceTest.getByPropertyLikeSuccess" />
         <item itemvalue="JUnit.com.hmkurth.persistence in CommunityFoodResources" />
         <item itemvalue="JUnit.FoodResourceTest.saveOrUpdateSuccess" />
         <item itemvalue="JUnit.UserRolesDaoTest" />
-        <item itemvalue="JUnit.UserDaoTest.deleteSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -377,14 +383,8 @@
       <workItem from="1617592103233" duration="10781000" />
       <workItem from="1617723835211" duration="17000" />
       <workItem from="1617725941513" duration="15742000" />
-      <workItem from="1617845676768" duration="9282000" />
-    </task>
-    <task id="LOCAL-00014" summary="Ready for checkpoint 1, technologies used file is updated, but will need further updating">
-      <created>1612921844469</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1612921844469</updated>
+      <workItem from="1617845676768" duration="10031000" />
+      <workItem from="1617993364993" duration="4790000" />
     </task>
     <task id="LOCAL-00015" summary="editing erd to include address and delivery bool">
       <created>1612923370913</created>
@@ -722,7 +722,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617904289646</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="got header and main somewhat how I want it, still need to have an icon">
+      <created>1617906893906</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1617906893906</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -745,7 +752,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="editing database configuration" />
     <MESSAGE value="adding tables to test database, starting to seed data" />
     <MESSAGE value="starting to write and annotate classes" />
     <MESSAGE value="updating generic dao, switching userdaoTest to use generic dao" />
@@ -770,7 +776,8 @@
     <MESSAGE value="updating timelog, journal for week" />
     <MESSAGE value="fixed delete testing in userdao" />
     <MESSAGE value="editing header" />
-    <option name="LAST_COMMIT_MESSAGE" value="editing header" />
+    <MESSAGE value="got header and main somewhat how I want it, still need to have an icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="got header and main somewhat how I want it, still need to have an icon" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -806,6 +813,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
+          <line>20</line>
+          <properties class="com.hmkurth.persistence.ApiTestServiceClient" method="testgeoJSON">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>

@@ -2,8 +2,8 @@
 <c:import url="/head.jsp" />
 <title>Home</title>
 
-<c:import url="/header2.jsp" />
-
+<c:import url="/header.jsp" />
+<c:import url="/banner.jsp" />
 <c:import url="/indexMain.jsp" />
 
 <c:import url="/footer.jsp" />

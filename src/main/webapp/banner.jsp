@@ -2,7 +2,7 @@
 <a href="search.jsp">Click here to search for users(admin only)</a>
 
 <!--Banner-->
-<div class="banner home-1" data-type="background" data-speed="4">
+<div class="banner home-1"  data-type="background" data-speed="4">
     <div class="banner-interior">
         <div class="container tall">
             <div class="row">
