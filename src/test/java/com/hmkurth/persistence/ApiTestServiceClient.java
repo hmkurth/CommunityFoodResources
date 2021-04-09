@@ -28,12 +28,11 @@ public class ApiTestServiceClient {
                         .get();
         String apiResponse = response.readEntity(String.class);
         ObjectMapper mapper = new ObjectMapper();
-        //ignore entities not declared
-       //apper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+        //ignore entities not declared//// /mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         Location location = mapper.readValue(apiResponse, Location.class);
         log.debug(location.toString());
         Double expectedLocationLatitude =40.71;
-        assertEquals(?,location.getLat());
+        assertEquals("???", location.getLat());
     }
 }
    /** var unirest = require("unirest");

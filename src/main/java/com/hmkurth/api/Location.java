@@ -2,8 +2,11 @@ package com.hmkurth.api;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.lang.reflect.Array;
+
 public class Location{
 
+	//private Array[] results;
 	@JsonProperty("lng")
 	private double lng;
 
