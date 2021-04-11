@@ -870,3 +870,576 @@
 
 [DEBUG] 2021-04-09 15:25:39.792 [main] ApiTestServiceClient - com.hmkurth.api.Location@6fc29daa
 [DEBUG] 2021-04-09 15:27:32.392 [main] ApiTestServiceClient - com.hmkurth.api.Location@6629ad09
+[DEBUG] 2021-04-09 21:35:33.335 [main] ApiTestServiceClient - com.hmkurth.api.LocationApi@7569ea63
+[DEBUG] 2021-04-09 22:07:18.017 [main] ApiTestServiceClient - {
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "3426",
+               "short_name" : "3426",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "Hargrove Street",
+               "short_name" : "Hargrove St",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Madison",
+               "short_name" : "Madison",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Dane County",
+               "short_name" : "Dane County",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Wisconsin",
+               "short_name" : "WI",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "53714",
+               "short_name" : "53714",
+               "types" : [ "postal_code" ]
+            },
+            {
+               "long_name" : "2225",
+               "short_name" : "2225",
+               "types" : [ "postal_code_suffix" ]
+            }
+         ],
+         "formatted_address" : "3426 Hargrove St, Madison, WI 53714, USA",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 43.0933397,
+                  "lng" : -89.3305984
+               },
+               "southwest" : {
+                  "lat" : 43.0932127,
+                  "lng" : -89.33076389999999
+               }
+            },
+            "location" : {
+               "lat" : 43.0932603,
+               "lng" : -89.33068160000001
+            },
+            "location_type" : "ROOFTOP",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 43.0946251802915,
+                  "lng" : -89.32933216970851
+               },
+               "southwest" : {
+                  "lat" : 43.0919272197085,
+                  "lng" : -89.33203013029151
+               }
+            }
+         },
+         "place_id" : "ChIJpQkuT_hTBogRFObE2INuA24",
+         "types" : [ "premise" ]
+      }
+   ],
+   "status" : "OK"
+}
+
+[DEBUG] 2021-04-09 22:07:18.578 [main] ApiTestServiceClient - com.hmkurth.api.LocationApi@20576557
+[DEBUG] 2021-04-09 22:12:57.256 [main] ApiTestServiceClient - {
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "3426",
+               "short_name" : "3426",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "Hargrove Street",
+               "short_name" : "Hargrove St",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Madison",
+               "short_name" : "Madison",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Dane County",
+               "short_name" : "Dane County",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Wisconsin",
+               "short_name" : "WI",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "53714",
+               "short_name" : "53714",
+               "types" : [ "postal_code" ]
+            },
+            {
+               "long_name" : "2225",
+               "short_name" : "2225",
+               "types" : [ "postal_code_suffix" ]
+            }
+         ],
+         "formatted_address" : "3426 Hargrove St, Madison, WI 53714, USA",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 43.0933397,
+                  "lng" : -89.3305984
+               },
+               "southwest" : {
+                  "lat" : 43.0932127,
+                  "lng" : -89.33076389999999
+               }
+            },
+            "location" : {
+               "lat" : 43.0932603,
+               "lng" : -89.33068160000001
+            },
+            "location_type" : "ROOFTOP",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 43.0946251802915,
+                  "lng" : -89.32933216970851
+               },
+               "southwest" : {
+                  "lat" : 43.0919272197085,
+                  "lng" : -89.33203013029151
+               }
+            }
+         },
+         "place_id" : "ChIJpQkuT_hTBogRFObE2INuA24",
+         "types" : [ "premise" ]
+      }
+   ],
+   "status" : "OK"
+}
+
+[DEBUG] 2021-04-09 22:22:32.338 [main] ApiTestServiceClient - com.hmkurth.api.LocationApi@3c3a0032
+[DEBUG] 2021-04-09 22:24:24.481 [main] ApiTestServiceClient - {
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "3426",
+               "short_name" : "3426",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "Hargrove Street",
+               "short_name" : "Hargrove St",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Madison",
+               "short_name" : "Madison",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Dane County",
+               "short_name" : "Dane County",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Wisconsin",
+               "short_name" : "WI",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "53714",
+               "short_name" : "53714",
+               "types" : [ "postal_code" ]
+            },
+            {
+               "long_name" : "2225",
+               "short_name" : "2225",
+               "types" : [ "postal_code_suffix" ]
+            }
+         ],
+         "formatted_address" : "3426 Hargrove St, Madison, WI 53714, USA",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 43.0933397,
+                  "lng" : -89.3305984
+               },
+               "southwest" : {
+                  "lat" : 43.0932127,
+                  "lng" : -89.33076389999999
+               }
+            },
+            "location" : {
+               "lat" : 43.0932603,
+               "lng" : -89.33068160000001
+            },
+            "location_type" : "ROOFTOP",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 43.0946251802915,
+                  "lng" : -89.32933216970851
+               },
+               "southwest" : {
+                  "lat" : 43.0919272197085,
+                  "lng" : -89.33203013029151
+               }
+            }
+         },
+         "place_id" : "ChIJpQkuT_hTBogRFObE2INuA24",
+         "types" : [ "premise" ]
+      }
+   ],
+   "status" : "OK"
+}
+
+[DEBUG] 2021-04-09 22:24:25.492 [main] ApiTestServiceClient - com.hmkurth.api.LocationApi@574cd322
+[DEBUG] 2021-04-09 22:27:05.084 [main] ApiTestServiceClient - {
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "3426",
+               "short_name" : "3426",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "Hargrove Street",
+               "short_name" : "Hargrove St",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Madison",
+               "short_name" : "Madison",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Dane County",
+               "short_name" : "Dane County",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Wisconsin",
+               "short_name" : "WI",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "53714",
+               "short_name" : "53714",
+               "types" : [ "postal_code" ]
+            },
+            {
+               "long_name" : "2225",
+               "short_name" : "2225",
+               "types" : [ "postal_code_suffix" ]
+            }
+         ],
+         "formatted_address" : "3426 Hargrove St, Madison, WI 53714, USA",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 43.0933397,
+                  "lng" : -89.3305984
+               },
+               "southwest" : {
+                  "lat" : 43.0932127,
+                  "lng" : -89.33076389999999
+               }
+            },
+            "location" : {
+               "lat" : 43.0932603,
+               "lng" : -89.33068160000001
+            },
+            "location_type" : "ROOFTOP",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 43.0946251802915,
+                  "lng" : -89.32933216970851
+               },
+               "southwest" : {
+                  "lat" : 43.0919272197085,
+                  "lng" : -89.33203013029151
+               }
+            }
+         },
+         "place_id" : "ChIJpQkuT_hTBogRFObE2INuA24",
+         "types" : [ "premise" ]
+      }
+   ],
+   "status" : "OK"
+}
+
+[DEBUG] 2021-04-09 22:32:25.740 [main] ApiTestServiceClient - com.hmkurth.api.LocationApi@3c3a0032
+[DEBUG] 2021-04-10 19:29:54.478 [main] ApiTestServiceClient - {
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "3426",
+               "short_name" : "3426",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "Hargrove Street",
+               "short_name" : "Hargrove St",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Madison",
+               "short_name" : "Madison",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Dane County",
+               "short_name" : "Dane County",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Wisconsin",
+               "short_name" : "WI",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "53714",
+               "short_name" : "53714",
+               "types" : [ "postal_code" ]
+            },
+            {
+               "long_name" : "2225",
+               "short_name" : "2225",
+               "types" : [ "postal_code_suffix" ]
+            }
+         ],
+         "formatted_address" : "3426 Hargrove St, Madison, WI 53714, USA",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 43.0933397,
+                  "lng" : -89.3305984
+               },
+               "southwest" : {
+                  "lat" : 43.0932127,
+                  "lng" : -89.33076389999999
+               }
+            },
+            "location" : {
+               "lat" : 43.0932603,
+               "lng" : -89.33068160000001
+            },
+            "location_type" : "ROOFTOP",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 43.0946251802915,
+                  "lng" : -89.32933216970851
+               },
+               "southwest" : {
+                  "lat" : 43.0919272197085,
+                  "lng" : -89.33203013029151
+               }
+            }
+         },
+         "place_id" : "ChIJpQkuT_hTBogRFObE2INuA24",
+         "types" : [ "premise" ]
+      }
+   ],
+   "status" : "OK"
+}
+
+[DEBUG] 2021-04-10 19:35:28.578 [main] ApiTestServiceClient - {
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "3426",
+               "short_name" : "3426",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "Hargrove Street",
+               "short_name" : "Hargrove St",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Madison",
+               "short_name" : "Madison",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Dane County",
+               "short_name" : "Dane County",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Wisconsin",
+               "short_name" : "WI",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "53714",
+               "short_name" : "53714",
+               "types" : [ "postal_code" ]
+            },
+            {
+               "long_name" : "2225",
+               "short_name" : "2225",
+               "types" : [ "postal_code_suffix" ]
+            }
+         ],
+         "formatted_address" : "3426 Hargrove St, Madison, WI 53714, USA",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 43.0933397,
+                  "lng" : -89.3305984
+               },
+               "southwest" : {
+                  "lat" : 43.0932127,
+                  "lng" : -89.33076389999999
+               }
+            },
+            "location" : {
+               "lat" : 43.0932603,
+               "lng" : -89.33068160000001
+            },
+            "location_type" : "ROOFTOP",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 43.0946251802915,
+                  "lng" : -89.32933216970851
+               },
+               "southwest" : {
+                  "lat" : 43.0919272197085,
+                  "lng" : -89.33203013029151
+               }
+            }
+         },
+         "place_id" : "ChIJpQkuT_hTBogRFObE2INuA24",
+         "types" : [ "premise" ]
+      }
+   ],
+   "status" : "OK"
+}
+
+[DEBUG] 2021-04-10 19:39:03.666 [main] ApiTestServiceClient - {
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "3426",
+               "short_name" : "3426",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "Hargrove Street",
+               "short_name" : "Hargrove St",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Madison",
+               "short_name" : "Madison",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Dane County",
+               "short_name" : "Dane County",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Wisconsin",
+               "short_name" : "WI",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "53714",
+               "short_name" : "53714",
+               "types" : [ "postal_code" ]
+            },
+            {
+               "long_name" : "2225",
+               "short_name" : "2225",
+               "types" : [ "postal_code_suffix" ]
+            }
+         ],
+         "formatted_address" : "3426 Hargrove St, Madison, WI 53714, USA",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 43.0933397,
+                  "lng" : -89.3305984
+               },
+               "southwest" : {
+                  "lat" : 43.0932127,
+                  "lng" : -89.33076389999999
+               }
+            },
+            "location" : {
+               "lat" : 43.0932603,
+               "lng" : -89.33068160000001
+            },
+            "location_type" : "ROOFTOP",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 43.0946251802915,
+                  "lng" : -89.32933216970851
+               },
+               "southwest" : {
+                  "lat" : 43.0919272197085,
+                  "lng" : -89.33203013029151
+               }
+            }
+         },
+         "place_id" : "ChIJpQkuT_hTBogRFObE2INuA24",
+         "types" : [ "premise" ]
+      }
+   ],
+   "status" : "OK"
+}
+
+[DEBUG] 2021-04-10 19:52:59.500 [main] ApiTestServiceClient - com.hmkurth.ApiLocation.Result@4cdb8504
+[DEBUG] 2021-04-10 19:53:20.124 [main] ApiTestServiceClient - com.hmkurth.ApiLocation.Result@76db540e
+[DEBUG] 2021-04-10 19:56:45.186 [main] ApiTestServiceClient - com.hmkurth.ApiLocation.Result@3a175162
+[DEBUG] 2021-04-10 19:57:23.532 [main] ApiTestServiceClient - com.hmkurth.ApiLocation.Result@76db540e
+[DEBUG] 2021-04-10 19:58:14.956 [main] ApiTestServiceClient - com.hmkurth.ApiLocation.Result@76db540e
+[DEBUG] 2021-04-10 20:04:42.687 [main] ApiTestServiceClient - com.hmkurth.ApiLocation.Result@4cdb8504
+[DEBUG] 2021-04-10 20:08:59.433 [main] ApiTestServiceClient - com.hmkurth.ApiLocation.Result@3a175162
+[DEBUG] 2021-04-10 20:09:19.138 [main] ApiTestServiceClient - com.hmkurth.ApiLocation.Result@4cdb8504

@@ -1,16 +1,12 @@
 package com.hmkurth.persistence;
 
-import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.hmkurth.api.Location;
-import com.hmkurth.api.LocationApi;
+import com.hmkurth.ApiLocation.Result;
 import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.Test;
-
+import java.text.DecimalFormat;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
-import javax.ws.rs.client.WebTarget;
-import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -29,10 +25,16 @@ public class ApiTestServiceClient {
         String apiResponse = response.readEntity(String.class);
         ObjectMapper mapper = new ObjectMapper();
         //ignore entities not declared//// /mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-        Location location = mapper.readValue(apiResponse, Location.class);
+        Result location = mapper.readValue(apiResponse, Result.class);
         log.debug(location.toString());
-        Double expectedLocationLatitude =40.71;
-        assertEquals("???", location.getLat());
+        Double expectedLocationLatitude =43.0932603;
+        //need to change results to decimal format to
+        Double locationToTest = location.getResults().get(0).getGeometry().getLocation().getLat();
+        DecimalFormat df= new DecimalFormat("00.00");
+        String format = df.format(locationToTest);
+        double finalValue = (Double)df.parse(format) ;
+
+        assertEquals(43.09, finalValue);
     }
 }
    /** var unirest = require("unirest");

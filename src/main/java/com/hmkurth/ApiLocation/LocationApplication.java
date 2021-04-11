@@ -1,4 +1,6 @@
-package com.hmkurth.api;
+package com.hmkurth.ApiLocation;
+
+import com.hmkurth.ApiLocation.Result;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
@@ -15,7 +17,7 @@ public class LocationApplication extends Application {
     @Override
     public Set<Class<?>> getClasses() {
         HashSet h = new HashSet<Class<?>>();
-        h.add(LocationApi.class );
+        h.add(Result.class );
         return h;
     }
 }

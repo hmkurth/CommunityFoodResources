@@ -2,7 +2,8 @@ package com.hmkurth.persistence;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.hmkurth.api.LocationApi;
+import com.hmkurth.ApiLocation.Result;
+
 
 
 import javax.ws.rs.client.Client;
@@ -25,7 +26,7 @@ public class LocationApiDao {
     ObjectMapper mapper = new ObjectMapper();
 
 
-    LocationApi locationResponse = mapper.readValue(apiResponse, LocationApi.class);
+    Result locationResponse = mapper.readValue(apiResponse, Result.class);
 
     public LocationApiDao() throws JsonProcessingException {
     }

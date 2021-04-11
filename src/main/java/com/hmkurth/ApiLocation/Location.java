@@ -1,11 +1,8 @@
-package com.hmkurth.api;
+package com.hmkurth.ApiLocation;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import java.lang.reflect.Array;
-
 public class Location{
-
 
 	@JsonProperty("lng")
 	private double lng;
@@ -13,8 +10,16 @@ public class Location{
 	@JsonProperty("lat")
 	private double lat;
 
+	public void setLng(double lng){
+		this.lng = lng;
+	}
+
 	public double getLng(){
 		return lng;
+	}
+
+	public void setLat(double lat){
+		this.lat = lat;
 	}
 
 	public double getLat(){
