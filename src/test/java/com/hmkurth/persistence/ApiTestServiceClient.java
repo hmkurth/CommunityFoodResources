@@ -2,6 +2,7 @@ package com.hmkurth.persistence;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hmkurth.ApiLocation.Result;
+import com.hmkurth.entity.Location;
 import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.Test;
 import java.text.DecimalFormat;
@@ -36,6 +37,19 @@ public class ApiTestServiceClient {
 
         assertEquals(43.09, finalValue);
     }
+
+    @Test
+    public void testLocationApiDao () throws Exception {
+        LocationApiDao dao = new LocationApiDao();
+        GenericDao<Location> ldao = new GenericDao<>(Location.class);
+        //get a location to test
+        Location locationToMap = ldao.getById(2);
+        MapLocation returnedLocation = dao.convertAddressToLatAndLong(locationToMap);
+        assertEquals("???", returnedLocation);
+    }
+
+
+
 }
    /** var unirest = require("unirest");
 
