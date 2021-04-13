@@ -34,7 +34,7 @@
 					<div class="menu-block pull-right no-pad">
 
 							<!-- Login dropdown Insert userLogin.jsp -->
-						<c:import url="userLogin.jsp" />
+						<c:import url="login.jsp" />
 
 			<div class="container">
 

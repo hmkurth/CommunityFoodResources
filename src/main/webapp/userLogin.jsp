@@ -6,14 +6,14 @@
         <li>
             <div class="row">
                 <div class="col-md-12">
-                    <form class="form" role="form" method="post" action="/userLogin" id="login-nav">
+                    <form class="form" role="form" method="post" action="j_security_check" id="login-nav">
                         <div class="form-group">
-                            <label for="loginUser">Username</label>
-                            <input type="text" class="form-control" id="loginUser" placeholder="Username" required>
+                            <label for="j_username">Username</label>
+                            <input type="text" class="form-control" id="j_username" name = "j_username" placeholder="Username" required>
                         </div>
                         <div class="form-group">
-                            <label for="loginPassword">Password</label>
-                            <input type="password" class="form-control" id="loginPassword" placeholder="Password" required>
+                            <label for="j_password">Password</label>
+                            <input type="password" class="form-control" name="j_password" id="j_password" placeholder="Password" required>
                             <div class="help-block text-right"><a href="#">Forget password?</a></div>
                         </div>
                         <div class="form-group">

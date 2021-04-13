@@ -9,26 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="working on the locationapidao and testing">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210412 2329.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210412 2330.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210412 2336.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210412 2340.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/UserLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/MapLocation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/userLogin.jsp" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="adding user sign up jsps and servlet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210406 1825.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210410 2334.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210410 2349.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/ApiLocation/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/ApiLocation/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/MapLocation.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/userLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/userLogin.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +26,8 @@
         <option value="package-info" />
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -141,7 +126,7 @@
       <recent name="com.hmkurth.persistence" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApiTestServiceClient.testLocationApiDao">
+  <component name="RunManager" selected="TomEE Server.Tomcat">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -400,14 +385,7 @@
       <workItem from="1618020929770" duration="5377000" />
       <workItem from="1618027802830" duration="408000" />
       <workItem from="1618100738042" duration="20507000" />
-      <workItem from="1618259698952" duration="9675000" />
-    </task>
-    <task id="LOCAL-00019" summary="updating project plan,timeLog">
-      <created>1612933837619</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1612933837619</updated>
+      <workItem from="1618259698952" duration="11509000" />
     </task>
     <task id="LOCAL-00020" summary="Adding the first superclass, resource">
       <created>1613112858285</created>
@@ -745,7 +723,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618117094365</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="adding user sign up jsps and servlet">
+      <created>1618291123438</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1618291123454</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -768,7 +753,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="updating files for checkpoint 2" />
     <MESSAGE value="cleaning up log, stacktraces" />
     <MESSAGE value="attempting authentication, have updated all settings, xmls..." />
     <MESSAGE value="attempting authentication, have edited name of db in front of @localhost" />
@@ -793,7 +777,8 @@
     <MESSAGE value="working on the location api and trying to get the results i want" />
     <MESSAGE value="got the location api test working!" />
     <MESSAGE value="working on the locationapidao and testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on the locationapidao and testing" />
+    <MESSAGE value="adding user sign up jsps and servlet" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding user sign up jsps and servlet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
