@@ -4,7 +4,7 @@
     <title>Login</title>
 
 
-<body>
+<c:import url="/head.jsp" />
 <c:import url="/header.jsp" />
 
 
@@ -19,3 +19,4 @@
 <!-- footer -->
 <c:import url="/footer.jsp" />
 </html>
+

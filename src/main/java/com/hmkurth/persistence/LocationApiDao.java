@@ -4,33 +4,30 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hmkurth.ApiLocation.Result;
 import com.hmkurth.entity.Location;
+import com.hmkurth.entity.MapLocation;
 import com.hmkurth.utilities.PropertiesLoader;
-import lombok.SneakyThrows;
 import lombok.extern.log4j.Log4j2;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 
-import javax.annotation.PostConstruct;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
-import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.io.IOException;
-import java.text.DecimalFormat;
+import java.lang.annotation.Target;
 import java.util.Properties;
 
 @Log4j2
 //TODO make properties file, read in uri, address in params
 public class LocationApiDao implements PropertiesLoader {
-    private final Logger logger = LogManager.getLogger(this.getClass());
     String apiKey = null;
     String apiHost = null;
     LocationApiDao dao;
     Client client;
+    String targetAddress = "https://google-maps-geocoding.p.rapidapi.com/geocode/json";
     /**
-     * constructor that loads properties
+     * constructor that loads properties and assigns them to the meta info needed to access the api
      * @throws Exception
      */
     public LocationApiDao() throws Exception {
@@ -39,52 +36,57 @@ public class LocationApiDao implements PropertiesLoader {
             apiProperties = loadProperties("/api.properties");
             apiKey = apiProperties.getProperty("x-rapidapi-key");
             apiHost = apiProperties.getProperty("x-rapidapi-host");
-            //create the web target
-             createWebTarget();
     }
-    /**
-     * create a reusable web target template for the client builder and
-     * instantiates the client builder because there should only be one instance of it per class
-     */
-    public void createWebTarget(){
-        WebTarget target;
-        target = client.target("https://google-maps-geocoding.p.rapidapi.com/geocode/json")
-                .queryParam("streetAddress", "10")
-                .queryParam("city", "json")
-                .queryParam("state", "json")
-                .queryParam("zip", "metric")
-                .queryParam("x-rapidapi-key", apiKey);
 
-    }
     /**
-     * a method that takes in a Location object and returns a mappable object/location
+     * a method that takes in a Location object and returns a mappable object/location, MapLocation
+     * TODO break this up more(tried and failed)
+     * @return
      */
-    public MapLocation convertAddressToLatAndLong( Location locationToMap) throws JsonProcessingException {
-        MapLocation mapLocation = new MapLocation();
+    MapLocation convertAddressToLatAndLong(Location locationToMap) throws JsonProcessingException {
         //take the input location and make parameters
         String street = locationToMap.getStreetAddressOrIntersection();
         String city = locationToMap.getCity();
         String state = locationToMap.getState();
         String zip = locationToMap.getZip();
+        String name = locationToMap.getNameDesc();//not needed as param, but should add to data
+        MapLocation mapLocation = new MapLocation();
+        //build web target adding in the query parameters needed by the api
+        WebTarget target;
+        target = client.target(targetAddress)
+                .queryParam("x-rapidapi-key", apiKey)
+                .queryParam("streetAddress", street)
+                .queryParam("city", city)
+                .queryParam("state", state)
+                .queryParam("zip", zip)
+                .queryParam("language", "en");
+                mapLocation.setName(name);
 
-        //build the request
-            Response response = client.target("https://google-maps-geocoding.p.rapidapi.com/geocode/json?address=" + street + "%20" + city + "%20" + state + "%20" + zip)
-                    .request()
-                    .header("x-rapidapi-key", "07034781e1msh71ad0a0dad0cfc1p14c692jsn985c94dcb586")//an error using the apikey from properties
-                    .header("x-rapidapi-host", "google-maps-geocoding.p.rapidapi.com")
-                    .get();
+        Response response = client.target(targetAddress)
+                .request()
+                .header("x-rapidapi-key", apiKey)
+                .header("x-rapidapi-host", apiHost)
+                .get();
 
-            String apiResponse = response.readEntity(String.class);
-            ObjectMapper mapper = new ObjectMapper();
-            Result location = mapper.readValue(apiResponse, Result.class);
-            log.debug(location.toString());
+        try {
+            if (response.getStatus() == 200) {
+                String apiResponse = response.readEntity(String.class);
+                ObjectMapper mapper = new ObjectMapper();
+                //creates an object from the returned json
+                Result result = mapper.readValue(apiResponse, Result.class);
+                log.info(result);
 
-            mapLocation.setLat(location.getResults().get(0).getGeometry().getLocation().getLat());
-            mapLocation.setLat(location.getResults().get(0).getGeometry().getLocation().getLat());
-            logger.info("lng, lat");
+                mapLocation.setLat(result.getResults().get(0).getGeometry().getLocation().getLat());
+                mapLocation.setLat(result.getResults().get(0).getGeometry().getLocation().getLat());
+                log.info("lng, lat");
+            }
+        } finally {
+            response.close();
             return mapLocation;
-
         }
+        //insert into a database table TODO
+
+    }
 
 
     /** sample method
@@ -111,7 +113,17 @@ public class LocationApiDao implements PropertiesLoader {
                 .queryParam("mode", "json")
                 .queryParam("units", "metric");
     }
+    Client client = ClientBuilder.newClient();
 
+    WebTarget target = client.target("http://commerce.com/customers");
+
+    Response response = target.post(Entity.xml(new Customer("Bill", "Burke)));
+    response.close();
+
+    Customer customer = target.queryParam("name", "Bill Burke")
+    .request()
+    .get(Customer.class);
+    client.close();
 
 
     OkHttpClient client = new OkHttpClient();

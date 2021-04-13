@@ -10,6 +10,17 @@ public class Location{
 	@JsonProperty("lat")
 	private double lat;
 
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	@JsonProperty("name")
+	private String name;
+
 	public void setLng(double lng){
 		this.lng = lng;
 	}
