@@ -6,7 +6,7 @@
 
         <div class="row pad-bottom">
             <div class="col-md-7">
-                <img src="img/capitolFlowersHeart.jpg" alt="Madison capitol building with heart flower bed" class="img-responsive img-rounded" />
+                <img src="/webapp/img/assets/img/demo/capitolFlowersHeart.jpg" alt="Madison capitol building with heart flower bed" class="img-responsive img-rounded" />
             </div>
 
             <div class="col-md-4 col-md-offset-1">

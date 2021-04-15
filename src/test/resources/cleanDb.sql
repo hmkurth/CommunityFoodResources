@@ -27,7 +27,7 @@ INSERT INTO contact_details VALUES (1,'tim','shmidt','tsm@gone.com', '1233333333
 INSERT INTO location (id, name_description, streetaddr_or_intersection, city, state, zip,  comments, resource_id)
 VALUES
 (1,'eastside near lansing','422 Lansing','Madison', 'WI', 53714,  'near front of property', 55);
-INSERT INTO location (id, name_description, streetaddr_or_intersection, city, state, zip,  comments, resource_id) VALUES (2,'main building','522 Albert','Madison','WI', 53746,  'n/a', 65);
+INSERT INTO location (id, name_description, streetaddr_or_intersection, city, state, zip,  comments, resource_id) VALUES (2,'main building','3426 hargrove','Madison','WI', 53714,  'n/a', 65);
 INSERT INTO location (id, name_description, streetaddr_or_intersection, city, state, zip,  comments, resource_id) VALUES (3, 'drop off','655 Main','Madison','WI', 53722,  'n/a', 75);
 INSERT INTO location (id, name_description, streetaddr_or_intersection, city, state, zip,  comments, resource_id) VALUES (4,'River Food Pantry','1002 W. Wash','Madison', 'WI', 537478,  'pickup near front door', 85);
 INSERT INTO location (id, name_description, streetaddr_or_intersection, city, state, zip,  comments, resource_id) VALUES (5,'Easter Seals','corner of Main and Fordem','Madison','WI', 53254,  'near back', 95);

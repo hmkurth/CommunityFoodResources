@@ -45,7 +45,7 @@ public class MapLocation {
         return "MapLocation{" +
                 "id=" + id +
                 ", lat=" + lat +
-                ", Long=" + lng +
+                ", lng=" + lng +
                 ", name='" + name + '\'' +
                 '}';
     }

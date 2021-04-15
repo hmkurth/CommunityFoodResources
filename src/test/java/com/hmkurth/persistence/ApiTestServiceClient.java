@@ -30,7 +30,7 @@ public class ApiTestServiceClient {
         Result location = mapper.readValue(apiResponse, Result.class);
         log.debug(location.toString());
         Double expectedLocationLatitude =43.0932603;
-        //need to change results to decimal format to
+        //need to change results to decimal format to get tests to run withouth the optional wrapper
         Double locationToTest = location.getResults().get(0).getGeometry().getLocation().getLat();
         DecimalFormat df= new DecimalFormat("00.00");
         String format = df.format(locationToTest);
@@ -46,7 +46,11 @@ public class ApiTestServiceClient {
         //get a location to test
         Location locationToMap = ldao.getById(2);
         MapLocation returnedLocation = dao.convertAddressToLatAndLong(locationToMap);
-        assertEquals("???", returnedLocation);
+        Double returnedLng = returnedLocation.getLng();
+        DecimalFormat df= new DecimalFormat("00.00");
+        String format = df.format(returnedLng);
+        double finalValue = (Double)df.parse(format) ;
+        assertEquals(-89.33, finalValue);//lng for my house, hargrove
     }
 
 

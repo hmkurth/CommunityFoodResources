@@ -52,17 +52,14 @@ public class LocationApiDao implements PropertiesLoader {
         String name = locationToMap.getNameDesc();//not needed as param, but should add to data
         MapLocation mapLocation = new MapLocation();
         //build web target adding in the query parameters needed by the api
-        WebTarget target;
-        target = client.target(targetAddress)
-                .queryParam("x-rapidapi-key", apiKey)
-                .queryParam("streetAddress", street)
-                .queryParam("city", city)
-                .queryParam("state", state)
-                .queryParam("zip", zip)
-                .queryParam("language", "en");
-                mapLocation.setName(name);
+        //convert address to 1 parameter
+        String address = street + " " + city + " " + state + " " + zip;
+       // WebTarget target = client.target(targetAddress);
+        mapLocation.setName(name);
 
         Response response = client.target(targetAddress)
+                .queryParam("address", address)
+                .queryParam("language", "en")
                 .request()
                 .header("x-rapidapi-key", apiKey)
                 .header("x-rapidapi-host", apiHost)
@@ -77,7 +74,7 @@ public class LocationApiDao implements PropertiesLoader {
                 log.info(result);
 
                 mapLocation.setLat(result.getResults().get(0).getGeometry().getLocation().getLat());
-                mapLocation.setLat(result.getResults().get(0).getGeometry().getLocation().getLat());
+                mapLocation.setLng(result.getResults().get(0).getGeometry().getLocation().getLng());
                 log.info("lng, lat");
             }
         } finally {
@@ -113,6 +110,18 @@ public class LocationApiDao implements PropertiesLoader {
                 .queryParam("mode", "json")
                 .queryParam("units", "metric");
     }
+
+
+
+    Code SnippetsResults
+    HttpResponse<String> response = Unirest.get("https://google-maps-geocoding.p.rapidapi.com/geocode/json?address=164%20Townsend%20St.%2C%20San%20Francisco%2C%20CA&language=en")
+    .header("x-rapidapi-key", "07034781e1msh71ad0a0dad0cfc1p14c692jsn985c94dcb586")
+    .header("x-rapidapi-host", "google-maps-geocoding.p.rapidapi.com")
+    .asString();
+
+
+
+
     Client client = ClientBuilder.newClient();
 
     WebTarget target = client.target("http://commerce.com/customers");
