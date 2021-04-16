@@ -3,6 +3,16 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i');
 
 /* Basic element styling */
+/* palette from logo: dark green=#0583a
+           medgreen=1d7151
+                     light=3b8b69
+     darkbrown=7b3911
+medbrown = 975128
+terracotta=dc661f
+mustard=eba327
+cream=f6f6e9
+lighter terracotta= fb8139*/
+
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
@@ -275,7 +285,7 @@ a {
 	padding-top: 22px;
 }
 .navbar-default .navbar-brand img {
-	max-width: 250px;
+	max-width: 150px;
 }
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
 	max-height: 500px;

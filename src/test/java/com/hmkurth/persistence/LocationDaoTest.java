@@ -123,7 +123,7 @@ public class LocationDaoTest {
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<Location> locations = genericDao.getPropertyByName("streetAddressOrIntersection", "bert");
+        List<Location> locations = genericDao.getPropertyByName("streetAddressOrIntersection", "grove");
         assertEquals(1, locations.size());
     }
 }

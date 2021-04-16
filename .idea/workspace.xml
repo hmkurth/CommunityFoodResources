@@ -9,41 +9,50 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="changed login, ITS WORKING!!!">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210415 1751.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210415 1753.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210415 1755.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/cuttingBoard.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/mediterranean-cuisine-2378758__340.webp" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="working on reconfiguring the map/location and tests">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210415 1957.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210415 2019.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210415 2022.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/Madison Food Resources Logo (5).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/Madison Food Resources Logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/mfrLogoRound.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/indexSearchShowcase.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/map.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/userProfile.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/foodresourcesdb_contact_details.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/foodresourcesdb_delivery_detail.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/foodresourcesdb_food_resources.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/foodresourcesdb_location.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/foodresourcesdb_resource_owners.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/foodresourcesdb_resource_types.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/resourcesFromSocialMedia.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/testschema_user_roles.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/rawResourceInfo/testschema_users.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/governmentGuidelinesForAccessibility/guidelines.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210412 2329.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210412 2330.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210412 2336.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210412 2340.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/MapLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/MapLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210415 1751.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210415 1753.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210415 1755.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Location.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/banners.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/banners.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/FLP_marshal.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/FLP_marshal.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/FLP_milwaukee_lansing.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/FLP_milwaukee_lansing.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/FLP_milwaukee_lansing2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/FLP_milwaukee_lansing2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/FLP_milwaukee_lansing3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/FLP_milwaukee_lansing3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/capitolFlowersHeart.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/capitolFlowersHeart.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/madisonCapitol.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/madisonCapitol.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/indexMain.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/indexMain.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/bg1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/bg2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/bg3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/blog1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/blog2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/blog3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/blog4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/blog5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/userSignup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/userSignup.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/LocationDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/LocationDaoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,8 +143,8 @@
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\test\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\assets\img\demo" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\assets\img" />
+      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\assets\img\demo" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\img" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\java\com\hmkurth\controller" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp" />
@@ -156,7 +165,7 @@
       <recent name="com.hmkurth.persistence" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.com.hmkurth.persistence in CommunityFoodResources">
+  <component name="RunManager" selected="TomEE Server.Tomcat">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -179,6 +188,22 @@
       <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
       <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ApiTestServiceClient" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTestServiceClient.testInsertOfNewInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CommunityFoodResources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmkurth.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ApiTestServiceClient" />
+      <option name="METHOD_NAME" value="testInsertOfNewInfo" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -210,22 +235,6 @@
       <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
       <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ApiTestServiceClient" />
       <option name="METHOD_NAME" value="testgeoJSON" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FoodResourceTest.getByPropertyLikeSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CommunityFoodResources" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hmkurth.utilities.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.FoodResourceTest" />
-      <option name="METHOD_NAME" value="getByPropertyLikeSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -335,19 +344,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.com.hmkurth.persistence in CommunityFoodResources" />
-      <item itemvalue="JUnit.FoodResourceTest.getByPropertyLikeSuccess" />
       <item itemvalue="JUnit.ApiTestServiceClient.testgeoJSON" />
       <item itemvalue="JUnit.ApiTestServiceClient.testLocationApiDao" />
       <item itemvalue="JUnit.ApiTestServiceClient" />
       <item itemvalue="TomEE Server.Tomcat" />
+      <item itemvalue="JUnit.ApiTestServiceClient.testInsertOfNewInfo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApiTestServiceClient.testInsertOfNewInfo" />
         <item itemvalue="JUnit.com.hmkurth.persistence in CommunityFoodResources" />
         <item itemvalue="JUnit.ApiTestServiceClient.testLocationApiDao" />
         <item itemvalue="JUnit.ApiTestServiceClient" />
         <item itemvalue="JUnit.ApiTestServiceClient.testgeoJSON" />
-        <item itemvalue="JUnit.FoodResourceTest.getByPropertyLikeSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -413,14 +422,7 @@
       <workItem from="1618027802830" duration="408000" />
       <workItem from="1618100738042" duration="20507000" />
       <workItem from="1618259698952" duration="11509000" />
-      <workItem from="1618371204982" duration="4359000" />
-    </task>
-    <task id="LOCAL-00022" summary="adding user dao">
-      <created>1613506866682</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1613506866682</updated>
+      <workItem from="1618371204982" duration="14573000" />
     </task>
     <task id="LOCAL-00023" summary="adding user dao unit tests">
       <created>1613601683373</created>
@@ -758,7 +760,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618295142995</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="complete api test">
+      <created>1618527574697</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1618527574697</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -781,8 +790,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="attempting authentication, have edited name of db in front of @localhost" />
-    <MESSAGE value="still working on authorization," />
     <MESSAGE value="updating weekly stuff, auth is finally working" />
     <MESSAGE value="stuck on getting api key into the uri, can't find demos referenced by videos, I looked at some other solutions, but they use different tools than we are currently using, (invokation builder)" />
     <MESSAGE value="added the accessible template and started parsing jsps into templates" />
@@ -806,7 +813,9 @@
     <MESSAGE value="adding user sign up jsps and servlet" />
     <MESSAGE value="location application class was causing errors, deleted" />
     <MESSAGE value="changed login, ITS WORKING!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed login, ITS WORKING!!!" />
+    <MESSAGE value="complete api test" />
+    <MESSAGE value="working on reconfiguring the map/location and tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on reconfiguring the map/location and tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -961,22 +970,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java</url>
-          <line>74</line>
+          <line>68</line>
           <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java</url>
-          <line>75</line>
+          <line>69</line>
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java</url>
-          <line>69</line>
+          <line>63</line>
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">

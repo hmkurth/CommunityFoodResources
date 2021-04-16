@@ -19,7 +19,7 @@ import java.lang.annotation.Target;
 import java.util.Properties;
 
 @Log4j2
-//TODO make properties file, read in uri, address in params
+
 public class LocationApiDao implements PropertiesLoader {
     String apiKey = null;
     String apiHost = null;
@@ -43,19 +43,13 @@ public class LocationApiDao implements PropertiesLoader {
      * TODO break this up more(tried and failed)
      * @return
      */
-    MapLocation convertAddressToLatAndLong(Location locationToMap) throws JsonProcessingException {
+    Location convertAddressToLatAndLong(Location locationToMap) throws JsonProcessingException {
         //take the input location and make parameters
         String street = locationToMap.getStreetAddressOrIntersection();
         String city = locationToMap.getCity();
         String state = locationToMap.getState();
         String zip = locationToMap.getZip();
-        String name = locationToMap.getNameDesc();//not needed as param, but should add to data
-        MapLocation mapLocation = new MapLocation();
-        //build web target adding in the query parameters needed by the api
-        //convert address to 1 parameter
         String address = street + " " + city + " " + state + " " + zip;
-       // WebTarget target = client.target(targetAddress);
-        mapLocation.setName(name);
 
         Response response = client.target(targetAddress)
                 .queryParam("address", address)
@@ -73,15 +67,14 @@ public class LocationApiDao implements PropertiesLoader {
                 Result result = mapper.readValue(apiResponse, Result.class);
                 log.info(result);
 
-                mapLocation.setLat(result.getResults().get(0).getGeometry().getLocation().getLat());
-                mapLocation.setLng(result.getResults().get(0).getGeometry().getLocation().getLng());
+                locationToMap.setLat(result.getResults().get(0).getGeometry().getLocation().getLat());
+                locationToMap.setLng(result.getResults().get(0).getGeometry().getLocation().getLng());
                 log.info("lng, lat");
             }
         } finally {
             response.close();
-            return mapLocation;
+            return locationToMap;
         }
-        //insert into a database table TODO
 
     }
 

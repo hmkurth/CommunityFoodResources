@@ -45,7 +45,7 @@ public class ApiTestServiceClient {
         GenericDao<Location> ldao = new GenericDao<>(Location.class);
         //get a location to test
         Location locationToMap = ldao.getById(2);
-        MapLocation returnedLocation = dao.convertAddressToLatAndLong(locationToMap);
+        Location returnedLocation = dao.convertAddressToLatAndLong(locationToMap);
         Double returnedLng = returnedLocation.getLng();
         DecimalFormat df= new DecimalFormat("00.00");
         String format = df.format(returnedLng);
@@ -53,28 +53,20 @@ public class ApiTestServiceClient {
         assertEquals(-89.33, finalValue);//lng for my house, hargrove
     }
 
+    @Test
+    public void testInsertOfNewInfo () throws Exception {
+        LocationApiDao dao = new LocationApiDao();
+        GenericDao<Location> ldao = new GenericDao<>(Location.class);
+        Location locationToMap = ldao.getById(2);
+        dao.convertAddressToLatAndLong(locationToMap);
+        ldao.saveOrUpdate(locationToMap);
+        Double returnedLng = locationToMap.getLng();
+        DecimalFormat df= new DecimalFormat("00.00");
+        String format = df.format(returnedLng);
+        double finalValue = (Double)df.parse(format) ;
+        assertEquals(-89.33,finalValue);
+        //todo probably some more tests
+    }
 
 
 }
-   /** var unirest = require("unirest");
-
-    var req = unirest("GET", "https://google-maps-geocoding.p.rapidapi.com/geocode/json");
-
-req.query({
-        "address": "164 Townsend St., San Francisco, CA",
-        "language": "en"
-        });
-
-        req.headers({
-        "x-rapidapi-key": "07034781e1msh71ad0a0dad0cfc1p14c692jsn985c94dcb586",
-        "x-rapidapi-host": "google-maps-geocoding.p.rapidapi.com",
-        "useQueryString": true
-        });
-
-
-        req.end(function (res) {
-        if (res.error) throw new Error(res.error);
-
-        console.log(res.body);
-        });
-    **/

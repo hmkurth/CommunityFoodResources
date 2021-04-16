@@ -47,7 +47,7 @@
 						<span class="icon-bar">line 3</span>
 					</button>
 					<a class="navbar-brand" href="index.jsp">
-						<img src="../../src/main/webapp/assets/img/global/logo-dark.png" alt="Madison Community Food Resources" />
+						<img src="${pageContext.request.contextPath}/assets/img/mfrLogoRound.png" alt="Madison Community Food Resources" />
 					</a>
 				</div>
 
