@@ -170,3 +170,31 @@
 [INFO ] 2021-04-15 20:22:01.588 [main] LocationApiDao - lng, lat
 [INFO ] 2021-04-16 03:20:25.668 [main] LocationApiDao - com.hmkurth.ApiLocation.Result@396f2724
 [INFO ] 2021-04-16 03:20:25.668 [main] LocationApiDao - lng, lat
+[ERROR] 2021-04-16 07:25:30.081 [main] Database - java.sql.SQLSyntaxErrorException: Table 'testschema.resource_types' doesn't exist
+[DEBUG] 2021-04-16 07:25:36.015 [main] GenericDao - in get ALL []
+[ERROR] 2021-04-16 07:25:36.359 [main] Database - java.sql.SQLSyntaxErrorException: Table 'testschema.resource_types' doesn't exist
+[DEBUG] 2021-04-16 07:25:36.359 [main] GenericDao - in get ALL []
+[ERROR] 2021-04-16 07:25:36.515 [main] Database - java.sql.SQLSyntaxErrorException: Table 'testschema.resource_types' doesn't exist
+[ERROR] 2021-04-16 07:25:36.671 [main] Database - java.sql.SQLSyntaxErrorException: Table 'testschema.resource_types' doesn't exist
+[DEBUG] 2021-04-16 07:25:36.687 [main] GenericDao - Searching for person with name = other
+[ERROR] 2021-04-16 07:25:36.906 [main] Database - java.sql.SQLSyntaxErrorException: Table 'testschema.resource_types' doesn't exist
+[DEBUG] 2021-04-16 07:25:36.921 [main] GenericDao - The list of Entities by propertyName name
+[ERROR] 2021-04-16 07:25:37.087 [main] Database - java.sql.SQLSyntaxErrorException: Table 'testschema.resource_types' doesn't exist
+[ERROR] 2021-04-16 07:25:37.203 [main] Database - java.sql.SQLSyntaxErrorException: Table 'testschema.resource_types' doesn't exist
+[DEBUG] 2021-04-16 07:25:37.281 [main] GenericDao - inserting entity Type(id=1, name=school meal drop off)
+[DEBUG] 2021-04-16 07:34:28.276 [main] GenericDao - in get ALL [Type(id=1, name=food pantry), Type(id=2, name=free little pantry), Type(id=3, name=meal), Type(id=4, name=government resource), Type(id=5, name=community aid and support groups), Type(id=6, name=other)]
+[DEBUG] 2021-04-16 07:34:28.758 [main] GenericDao - in get ALL [Type(id=1, name=food pantry), Type(id=2, name=free little pantry), Type(id=3, name=meal), Type(id=4, name=government resource), Type(id=5, name=community aid and support groups), Type(id=6, name=other)]
+[DEBUG] 2021-04-16 07:34:28.773 [main] GenericDao - in get ALL [Type(id=1, name=food pantry), Type(id=2, name=free little pantry), Type(id=3, name=meal), Type(id=4, name=government resource), Type(id=5, name=community aid and support groups), Type(id=6, name=other)]
+[INFO ] 2021-04-16 07:34:28.773 [main] TypeDaoTest - get all Types test: all Types;[Type(id=1, name=food pantry), Type(id=2, name=free little pantry), Type(id=3, name=meal), Type(id=4, name=government resource), Type(id=5, name=community aid and support groups), Type(id=6, name=other)]
+[INFO ] 2021-04-16 07:34:29.148 [main] TypeDaoTest - in save or update test
+[DEBUG] 2021-04-16 07:34:29.508 [main] GenericDao - Searching for person with name = other
+[DEBUG] 2021-04-16 07:34:29.742 [main] GenericDao - The list of Entities by propertyName name
+[DEBUG] 2021-04-16 07:34:30.336 [main] GenericDao - inserting entity Type(id=7, name=school meal drop off)
+[DEBUG] 2021-04-16 07:39:15.039 [main] GenericDao - in get ALL [Type(id=1, name=food pantry), Type(id=2, name=free little pantry), Type(id=3, name=meal), Type(id=4, name=government resource), Type(id=5, name=community aid and support groups), Type(id=6, name=other)]
+[DEBUG] 2021-04-16 07:39:15.429 [main] GenericDao - in get ALL [Type(id=1, name=food pantry), Type(id=2, name=free little pantry), Type(id=3, name=meal), Type(id=4, name=government resource), Type(id=5, name=community aid and support groups), Type(id=6, name=other)]
+[DEBUG] 2021-04-16 07:39:15.429 [main] GenericDao - in get ALL [Type(id=1, name=food pantry), Type(id=2, name=free little pantry), Type(id=3, name=meal), Type(id=4, name=government resource), Type(id=5, name=community aid and support groups), Type(id=6, name=other)]
+[INFO ] 2021-04-16 07:39:15.429 [main] TypeDaoTest - get all Types test: all Types;[Type(id=1, name=food pantry), Type(id=2, name=free little pantry), Type(id=3, name=meal), Type(id=4, name=government resource), Type(id=5, name=community aid and support groups), Type(id=6, name=other)]
+[INFO ] 2021-04-16 07:39:15.695 [main] TypeDaoTest - in save or update test
+[DEBUG] 2021-04-16 07:39:15.929 [main] GenericDao - Searching for person with name = other
+[DEBUG] 2021-04-16 07:39:16.164 [main] GenericDao - The list of Entities by propertyName name
+[DEBUG] 2021-04-16 07:39:16.586 [main] GenericDao - inserting entity Type(id=8, name=school meal drop off)

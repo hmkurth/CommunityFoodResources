@@ -34,10 +34,11 @@ public class ResourceOwner {
     @PrimaryKeyJoinColumn
    // @Column(name="contact_id")//fk to contact
     private Contact contactId;
-/** example from docs
-    public void setPerson(Person person) {
-        this.person = person;
-        this.id = person.getId();
+
+    public ResourceOwner(String name,Contact contact, String website) {
     }
-*/
+
+    public ResourceOwner(String name, String s) {
+    }
+
     }

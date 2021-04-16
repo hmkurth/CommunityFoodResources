@@ -4,6 +4,9 @@ delete from users;
 delete from contact_details;
 delete from location;
 delete from food_resources;
+delete from resource_type;
+delete from resource_owners;
+
 INSERT INTO users VALUES (1,'Joe','Coyne','jcoyne','supersecret1','beast@mail'),
                          (2,'Fred','Hensen','fhensen','supersecret2','yeast@mail'),
                          (3,'Barney','Curry','bcurry','supersecret3','seast@mail'),
@@ -56,3 +59,17 @@ VALUES
 (6,'Dane County Neighbors Helping neighbors ', 'facebook page', '6', 'n/a', '0');
 
 
+INSERT INTO resource_type VALUES (1, 'food pantry');
+INSERT INTO resource_type VALUES (2, 'free little pantry');
+INSERT INTO resource_type VALUES (3, 'meal');
+INSERT INTO resource_type VALUES (4, 'government resource');
+INSERT INTO resource_type VALUES (5, 'community aid and support groups');
+INSERT INTO resource_type VALUES (6, 'other');
+
+
+INSERT INTO resource_owners VALUES (1, 'The Beacon', 2, 'www.beacon.com' );
+INSERT INTO resource_owners VALUES (2, 'Salvation Army', 1, 'www.salvationArmy.com' );
+INSERT INTO resource_owners VALUES (3, 'Paul Schmidt', 3, 'www.paully.com' );
+INSERT INTO resource_owners VALUES (4, 'Bethel Lutheran Church', 6, 'www.christalmighty!.com' );
+INSERT INTO resource_owners VALUES (5, 'State Of Wisconsin', 1, 'www.SNAP.com' );
+INSERT INTO resource_owners VALUES (6, 'Liza Beans', 5, '@facebookSomething' );

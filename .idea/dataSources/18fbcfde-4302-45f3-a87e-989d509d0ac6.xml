@@ -1175,6 +1175,8 @@ SELECT|sys.sys_config
       <ColNames>contact_id</ColNames>
       <RefTableName>contact_details</RefTableName>
       <RefColNames>id</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
     </foreign-key>
     <column id="346" parent="293" name="id">
       <Position>1</Position>

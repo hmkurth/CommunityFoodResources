@@ -9,50 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="working on reconfiguring the map/location and tests">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210415 1957.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210415 2019.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210415 2022.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/Madison Food Resources Logo (5).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/Madison Food Resources Logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/mfrLogoRound.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/indexSearchShowcase.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/map.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/userProfile.jsp" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="added google map with many local food resources already marked!!!">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210416 0320.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210416 0725.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/OwnerDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/TypeDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210415 1751.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210415 1753.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210415 1755.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/banners.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/banners.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/bg1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/bg2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/bg3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/blog1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/blog2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/blog3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/blog4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/blog5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/demo/port9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/userSignup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/userSignup.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/LocationDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/LocationDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210415 1957.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210415 2019.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/ResourceOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/ResourceOwner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,8 +34,8 @@
         <option value="package-info" />
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -117,6 +86,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
     <property name="database.data.extractors.current.id" value="SQL Inserts" />
+    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/img" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -129,7 +99,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.15503876" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -165,28 +135,13 @@
       <recent name="com.hmkurth.persistence" />
     </key>
   </component>
-  <component name="RunManager" selected="TomEE Server.Tomcat">
+  <component name="RunManager" selected="JUnit.TypeDaoTest">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiTestServiceClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CommunityFoodResources" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hmkurth.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ApiTestServiceClient" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -224,17 +179,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiTestServiceClient.testgeoJSON" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TypeDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hmkurth.utilities.*" />
+          <option name="PATTERN" value="com.hmkurth.persistence.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ApiTestServiceClient" />
-      <option name="METHOD_NAME" value="testgeoJSON" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.TypeDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TypeDaoTest.getByPropertyEqualSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CommunityFoodResources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmkurth.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.TypeDaoTest" />
+      <option name="METHOD_NAME" value="getByPropertyEqualSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -344,19 +314,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.com.hmkurth.persistence in CommunityFoodResources" />
-      <item itemvalue="JUnit.ApiTestServiceClient.testgeoJSON" />
       <item itemvalue="JUnit.ApiTestServiceClient.testLocationApiDao" />
-      <item itemvalue="JUnit.ApiTestServiceClient" />
       <item itemvalue="TomEE Server.Tomcat" />
       <item itemvalue="JUnit.ApiTestServiceClient.testInsertOfNewInfo" />
+      <item itemvalue="JUnit.TypeDaoTest.getByPropertyEqualSuccess" />
+      <item itemvalue="JUnit.TypeDaoTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TypeDaoTest" />
+        <item itemvalue="JUnit.TypeDaoTest.getByPropertyEqualSuccess" />
         <item itemvalue="JUnit.ApiTestServiceClient.testInsertOfNewInfo" />
         <item itemvalue="JUnit.com.hmkurth.persistence in CommunityFoodResources" />
         <item itemvalue="JUnit.ApiTestServiceClient.testLocationApiDao" />
-        <item itemvalue="JUnit.ApiTestServiceClient" />
-        <item itemvalue="JUnit.ApiTestServiceClient.testgeoJSON" />
       </list>
     </recent_temporary>
   </component>
@@ -422,14 +392,7 @@
       <workItem from="1618027802830" duration="408000" />
       <workItem from="1618100738042" duration="20507000" />
       <workItem from="1618259698952" duration="11509000" />
-      <workItem from="1618371204982" duration="14573000" />
-    </task>
-    <task id="LOCAL-00023" summary="adding user dao unit tests">
-      <created>1613601683373</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1613601683373</updated>
+      <workItem from="1618371204982" duration="22127000" />
     </task>
     <task id="LOCAL-00024" summary="adding test db">
       <created>1613614251418</created>
@@ -767,7 +730,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618527574697</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="added google map with many local food resources already marked!!!">
+      <created>1618569085542</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1618569085543</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -790,7 +760,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="updating weekly stuff, auth is finally working" />
     <MESSAGE value="stuck on getting api key into the uri, can't find demos referenced by videos, I looked at some other solutions, but they use different tools than we are currently using, (invokation builder)" />
     <MESSAGE value="added the accessible template and started parsing jsps into templates" />
     <MESSAGE value="updating project plan for checkpoint 3" />
@@ -815,7 +784,8 @@
     <MESSAGE value="changed login, ITS WORKING!!!" />
     <MESSAGE value="complete api test" />
     <MESSAGE value="working on reconfiguring the map/location and tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on reconfiguring the map/location and tests" />
+    <MESSAGE value="added google map with many local food resources already marked!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="added google map with many local food resources already marked!!!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
