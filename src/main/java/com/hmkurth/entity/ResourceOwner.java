@@ -1,11 +1,9 @@
 package com.hmkurth.entity;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -27,13 +25,11 @@ public class ResourceOwner {
     @NonNull
     @Column(name="org_name")  //don't need if names are the same
     private String name;
-
     private String website;
-
-    @OneToOne
-    @PrimaryKeyJoinColumn
-   // @Column(name="contact_id")//fk to contact
-    private Contact contactId;
+    @EqualsAndHashCode.Exclude
+    @ToString.Exclude
+    @OneToMany(mappedBy = "resource_owners", cascade=CascadeType.ALL, orphanRemoval = true, fetch =FetchType.EAGER )
+    private Set<Contact> contacts = new HashSet<>();
 
     public ResourceOwner(String name,Contact contact, String website) {
     }
@@ -41,4 +37,19 @@ public class ResourceOwner {
     public ResourceOwner(String name, String s) {
     }
 
+    /**
+     * Add contact.
+     *
+     * @param contact, the contact name
+     */
+    public void addContact(Contact contact) {
+        contacts.add(contact);
+
+
     }
+
+
+    public Set<Contact> getContacts(int i) {
+        return contacts;
+    }
+}

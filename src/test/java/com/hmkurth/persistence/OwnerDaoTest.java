@@ -64,7 +64,7 @@ class ResourceOwnerDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<ResourceOwner> ResourceOwners = resourceOwnerDao.getByPropertyEqual("website", "Snap");
+        List<ResourceOwner> ResourceOwners = resourceOwnerDao.getByPropertyEqual("website", "www.SNAP.com");
         assertEquals(1, ResourceOwners.size());
         assertEquals(5, ResourceOwners.get(0).getId());
     }
@@ -115,7 +115,7 @@ class ResourceOwnerDaoTest {
     void getByIdSuccess() {
         ResourceOwner retrievedResourceOwner = (ResourceOwner) resourceOwnerDao.getById(4);
         assertEquals("Bethel Lutheran Church", retrievedResourceOwner.getName());
-        assertEquals(6, retrievedResourceOwner.getContactId());
+        assertEquals(6, retrievedResourceOwner.getContacts(0).get());
         assertEquals("www.christalmighty!.com", retrievedResourceOwner.getWebsite());
         assertNotNull(retrievedResourceOwner);
     }
@@ -127,30 +127,32 @@ class ResourceOwnerDaoTest {
     void insertSuccess() {
 
         ResourceOwner newResourceOwner = new ResourceOwner("Schmidts","schmiddy.coms");
+        newResourceOwner.setName("Schmidts");
+        newResourceOwner.setWebsite("Schmidts@food.com");
+
         int id = resourceOwnerDao.insert(newResourceOwner);
         assertNotEquals(0,id);
         ResourceOwner insertedResourceOwner = (ResourceOwner) resourceOwnerDao.getById(id);
         assertEquals(newResourceOwner, insertedResourceOwner);
     }
     /**
-     * Verify successful insert of a ResourceOwner with ResourceOwner role
+     * Verify successful insert of a ResourceOwner with contact
      */
     @Test
     void insertWithContactSuccess() {
-        GenericDao<Contact>cdao=new GenericDao<>(Contact.class);
-        Contact contactToInsert = new Contact("Charles", "pike","Chuck@ysdfg",  "2253369");
+        GenericDao cdao=new GenericDao<>(Contact.class);
+        Contact contactToAdd = new Contact("Bill", "Larson", "bill@pantries.com", "6085134568");
 
-        ResourceOwner newResourceOwner = new ResourceOwner("WIC", contactToInsert, "wic@gov" );
-        String roleName = "admin";
-        String ResourceOwnersName= "Sally";
+        ResourceOwner newResourceOwner = new ResourceOwner("WIC", contactToAdd, "wic@gov" );
+
         //need to access both objects, bidirectionality
-        newResourceOwner.setContactId(contactToInsert);
-        int id = resourceOwnerDao.insert(newResourceOwner);
 
+        int id = resourceOwnerDao.insert(newResourceOwner);
+        newResourceOwner.addContact(contactToAdd);
         assertNotEquals(0,id);
         ResourceOwner insertedResourceOwner = (ResourceOwner) resourceOwnerDao.getById(id);
-        //verify the role was added
-        assertEquals(contactToInsert,insertedResourceOwner.getContactId());
+        //verify the contact was added
+        assertEquals(cdao.getById(2), insertedResourceOwner.getContacts(0));
         assertEquals(newResourceOwner, insertedResourceOwner);
 
     }

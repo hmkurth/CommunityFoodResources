@@ -1,5 +1,5 @@
 
-### UPDATED 2/9/21
+### UPDATED 4/9/21
 
 
 Project Technologies/Techniques
@@ -11,10 +11,9 @@ ORM Framework
 Hibernate 5
 Dependency Management
 Maven
-Web Services consumed using Java
-######
+RESTful services
 CSS
-Bootstrap or Materialize (tbd)
+Bootstrap 
 Data Validation
 Bootstrap Validator for front end
 Explore Hibernate's validation
@@ -24,8 +23,8 @@ Hosting
 AWS
 Independent Research Topic/s: Java Accessibility API
 CI tools in AWS
-Materialize
-Google Maps API
+
+Google Maps Geocoding API
 Hibernate Validation
 Hibernate Search
 Project Lombok

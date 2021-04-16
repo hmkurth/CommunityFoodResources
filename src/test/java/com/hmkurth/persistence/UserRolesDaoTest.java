@@ -1,5 +1,6 @@
 package com.hmkurth.persistence;
 
+import com.hmkurth.entity.User;
 import com.hmkurth.entity.UserRoles;
 import com.hmkurth.test.util.Database;
 import lombok.extern.log4j.Log4j2;
@@ -100,9 +101,22 @@ class UserRolesDaoTest {
         assertNotNull(retrievedUserRole);
     }
 
+    /**
+     * test the successful insertion of a user role
 
+    @Test
+    void insertSuccess() {
+       GenericDao userDao = new GenericDao(User.class);
+        //get a user to insert a new role
+        User toInsert = (User) userDao.getEntityByName("lastName", "Curry").get(0);
 
-
+        UserRoles roles = new UserRoles("admin", toInsert, toInsert.getUserName() );
+        int id = genericDao.insert(roles);
+        assertNotEquals(0, id);
+       int insertedRoles = roles.getId(id);
+        assertEquals(toInsert.getId(), insertedRoles);
+    }
+     */
     /**
      * Verify successful get by property (equal match)
      */

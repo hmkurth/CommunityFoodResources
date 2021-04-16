@@ -1,15 +1,28 @@
  Time Log(for all course work, individual progress more closely detailed in journal)
 
 *Week 1: 9 hours
+
 *Week 2: 13 hours
+
 *Week 3: 19 hrs
+
 *Week 4: 14 hrs
+
 *Week 5:  17 hrs
+
 *Week 6: 13 hrs
+
 *Week 7 : 21 hrs
+
 *Week 8 and 8.5: 21.5 hrs
+
 *Week 9: 25 hrs
+
 *Week 10: 22 hrs
+
+*Week 11: 42 hrs(with team project included)
+
+*Week 12: 
 
 
 
