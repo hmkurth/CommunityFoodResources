@@ -18,8 +18,8 @@ import java.io.IOException;
 /**
  * adapted from FBTR, pawaite
  */
-
-@WebServlet(name = "UserLogin", urlPatterns = { "/userLogin" } )
+//TODO error handling!  check and redirect!!!
+@WebServlet(name = "UserSignup", urlPatterns = { "/userSignup" } )
 
 
 public class UserSignup extends HttpServlet {
@@ -28,11 +28,12 @@ public class UserSignup extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         User user = new User();
-        user.setUserName(req.getParameter("userName"));
-        user.setEmail(req.getParameter("emailAddress"));
-        user.setFirstName(req.getParameter("firstName"));
-        user.setLastName(req.getParameter("lastName"));
+        user.setUserName(req.getParameter("j_username"));
+        user.setEmail(req.getParameter("email"));
+        user.setFirstName(req.getParameter("first_name"));
+        user.setLastName(req.getParameter("last_name"));
         user.setPassword(req.getParameter("password"));
         logger.debug("Adding User: " + user);
         UserRoles role = new UserRoles();
@@ -44,8 +45,21 @@ public class UserSignup extends HttpServlet {
             GenericDao dao = new GenericDao(User.class);
             dao.insert(user);
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/signUpConfirmation" +
-                ".jsp");
-        dispatcher.forward(req, resp);
+            //set the user in a ?session variable
+
+        if (req.getParameter("first_name").isEmpty() ||(req.getParameter("last_name").isEmpty() || (req.getParameter("user_name").isEmpty() ||
+                (req.getParameter("password").isEmpty() || (req.getParameter("email").isEmpty() )))))
+        {
+            req.setAttribute("errorMessage", "Please try again");
+            logger.info("User Error");
+            RequestDispatcher dispatcher= req.getRequestDispatcher("userSignup.jsp");
+            dispatcher.include(req, resp);
+        }
+        else
+        {
+            RequestDispatcher dispatcher = req.getRequestDispatcher("signUpSuccess.jsp");
+            dispatcher.forward(req, resp);
+        }
+
     }
 }

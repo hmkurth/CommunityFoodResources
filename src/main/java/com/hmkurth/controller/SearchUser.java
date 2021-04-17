@@ -22,7 +22,7 @@ import java.io.IOException;
 @WebServlet(
         urlPatterns = {"/searchUser"}
 )
-
+//TODO error handling!  check and redirect!!!
 public class SearchUser extends HttpServlet {
     GenericDao userDao;
     private final Logger logger = LogManager.getLogger(this.getClass());

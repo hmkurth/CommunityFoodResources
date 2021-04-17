@@ -10,7 +10,7 @@
 						<a href="#main_content" class="btn btn-link scroller"><em class="fa fa-level-down" aria-hidden="true"></em> Skip to Content &nbsp;</a>
 					</div>
 
-					<!-- This is optional, comment out if you do not need this set of dropdowns at the top -->
+					<!-- This is optional, comment out if you do not need this set of dropdowns at the top   TODO try to get these langs to work!-->
 					<div class="dropdown pull-left">
 						<button class="btn btn-link dropdown-toggle" type="button" id="lang_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 						<em class="fa fa-globe" aria-hidden="true"></em> English
@@ -33,12 +33,12 @@
 					<!-- Secondary navigation and login dropdown -->
 					<div class="menu-block pull-right no-pad">
 
-							<!-- Login dropdown Insert userLogin.jsp -->
+							<!-- Login dropdown Insert login.jsp -->
 						<c:import url="login.jsp" />
 
 			<div class="container">
 
-				<!-- Mobile hamburger style menu -->
+				<!-- Mobile hamburger style menu TODO check this-->
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top_main_navigation" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
@@ -47,7 +47,7 @@
 						<span class="icon-bar">line 3</span>
 					</button>
 					<a class="navbar-brand" href="index.jsp">
-						<img src="${pageContext.request.contextPath}/assets/img/mfrLogoRound.png" alt="Madison Community Food Resources" />
+						<img class="img-circle"    src="${pageContext.request.contextPath}/assets/img/mfrLogoRound.png" alt="Madison Community Food Resources" />
 					</a>
 				</div>
 
