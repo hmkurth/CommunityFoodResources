@@ -7,11 +7,7 @@
 <div class="login-container">
     <h1 class="text-center pad-bottom-sm">Register</h1>
 
-    <div class="progress">
-        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%">
-            Step 1 of 7
-        </div>
-    </div>
+
 <!--TODO form verification!  -->
 
     <form action="/userSignup"  method="post">
@@ -40,7 +36,7 @@
         </div>
 
         <hr />
-        <button type="submit" class="btn btn-primary btn-lg">Next Step</button>
+        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
     </form>
 
 

@@ -9,17 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="gitting untangled">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/searchResults.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/signUpSuccess.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_13_2021_12_53_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_13_2021_12_53_AM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_16_2021_6_54_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_16_2021_6_54_PM__Default_Changelist_.xml" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="working on user signup servlet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/UserSignup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/UserSignup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/searchResults.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/searchResults.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/userSignup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/userSignup.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -394,14 +386,7 @@
       <workItem from="1618027802830" duration="408000" />
       <workItem from="1618100738042" duration="20507000" />
       <workItem from="1618259698952" duration="11509000" />
-      <workItem from="1618618302661" duration="5229000" />
-    </task>
-    <task id="LOCAL-00024" summary="adding test db">
-      <created>1613614251418</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1613614251418</updated>
+      <workItem from="1618618302661" duration="6181000" />
     </task>
     <task id="LOCAL-00025" summary="updating weekly journal, changing to journal.txt">
       <created>1613620036147</created>
@@ -739,7 +724,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618627812187</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="working on user signup servlet">
+      <created>1618632515783</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1618632515783</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -762,7 +754,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="still working on authorization," />
     <MESSAGE value="updating weekly stuff, auth is finally working" />
     <MESSAGE value="stuck on getting api key into the uri, can't find demos referenced by videos, I looked at some other solutions, but they use different tools than we are currently using, (invokation builder)" />
     <MESSAGE value="added the accessible template and started parsing jsps into templates" />
@@ -787,7 +778,8 @@
     <MESSAGE value="location application class was causing errors, deleted" />
     <MESSAGE value="updating timelog and uploading latest journal version" />
     <MESSAGE value="gitting untangled" />
-    <option name="LAST_COMMIT_MESSAGE" value="gitting untangled" />
+    <MESSAGE value="working on user signup servlet" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on user signup servlet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

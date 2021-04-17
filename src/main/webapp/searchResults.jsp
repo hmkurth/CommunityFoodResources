@@ -1,3 +1,8 @@
+<%@include file="taglib.jsp"%>
+<c:set var="title" value="Search Results" />
+<%@include file="head.jsp"%>
+<%@include file="header.jsp"%>
+
 <div class="banner">
     <div class="bread-wrap">
         <div class="container no-height">
