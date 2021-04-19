@@ -198,7 +198,7 @@ class UserDaoTest {
         int id = genericDao.insert(newUser);
         assertNotEquals(0,id);
         User insertedUser = (User) genericDao.getById(id);
-        assertEquals(newUser, insertedUser);`   
+        assertEquals(newUser, insertedUser);
     }
     /**
      * Verify successful insert of a user with user role

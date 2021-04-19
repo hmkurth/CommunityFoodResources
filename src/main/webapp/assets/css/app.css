@@ -1,7 +1,7 @@
 /* These are fonts which are loaded in from the Google Web Fonts library. Customize this as needed to utilize different fonts */
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i');
-
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&display=swap');
 /* Basic element styling */
 /* palette from logo: dark green=#0583a
            medgreen=1d7151
@@ -14,7 +14,8 @@ cream=f6f6e9
 lighter terracotta= fb8139*/
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Domine', serif;
+	/*font-family: 'Roboto', sans-serif; */
 	font-size: 16px;
 	color: #666;
 	padding-top: 123px;

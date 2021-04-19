@@ -1,7 +1,6 @@
-<%@include file="taglib.jsp"%>
+<%@include file="utilPages/taglib.jsp"%>
 <c:set var="title" value="Search Results" />
-<%@include file="head.jsp"%>
-<%@include file="header.jsp"%>
+
 
 <div class="banner">
     <div class="bread-wrap">
@@ -10,7 +9,7 @@
                 <div class="col-sm-12">
                     <ol class="breadcrumb">
                         <li>You are here:</li>
-                        <li><a href="index.jsp.jsp">Home</a></li>
+                        <li><a href="index.jsp">Home</a></li>
                         <li>Search Results</li>
                     </ol>
                 </div>
@@ -27,18 +26,19 @@
         <div class="row text-center pad-top pad-bottom line-bottom">
             <div class="col-md-12">
                 <h1>Search Our Site</h1>
-                <form class="form-inline pad-top-sm">
+                <form class="form-inline pad-top-sm" action="/searchUser"method="get">
                     <div class="form-group">
                         <label for="type">Search For:</label>
-                        <input type="text" id="query" class="form-control input-lg" value="User search query" />
+                        <input type="text" id="type" class="form-control input-lg" value="Food Resource search query" />
                     </div>
                     <div class="form-group">
                         <label for="location"> &nbsp; Search In:</label>
                         <select class="form-control input-lg" id="location">
                             <option>All</option>
-                            <option>Category 1</option>
-                            <option>Category 2</option>
-                            <option>Category 3</option>
+                            <option>Food Pantries</option>
+                            <option>Free Little Pantries</option>
+                            <option>Government Resources</option>
+                            <option>Community Aid and Support </option>
                         </select>
                     </div>
                     <button type="submit" class="btn btn-primary btn-lg">Search Site</button>
@@ -48,26 +48,47 @@
 
         <div class="row pad-bottom">
             <div class="col-md-10 col-md-offset-1">
-                <h2>Search Results</h2>
-                <h3><a href="#">Search result lorem ipsum dolor sit amet,</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <mark>Duis ac felis ornare</mark>, tempor diam et, fermentum diam. Integer bibendum purus nec nunc ornare pulvinar id eu sapien. Duis ac feugiat ipsum. Sed nec sem a nulla condimentum <mark>lobortis</mark>.</p>
-                <p class="small"><a href="#">http://thisisyourawesomesite.com/your-page</a></p>
-                <hr />
-                <h3><a href="#">Search result lorem ipsum dolor sit amet,</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <mark>Duis ac felis ornare</mark>, tempor diam et, fermentum diam. Integer bibendum purus nec nunc ornare pulvinar id eu sapien. Duis ac feugiat ipsum. Sed nec sem a nulla condimentum <mark>lobortis</mark>.</p>
-                <p class="small"><a href="#">http://thisisyourawesomesite.com/your-page</a></p>
-                <hr />
-                <h3><a href="#">Search result lorem ipsum dolor sit amet,</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <mark>Duis ac felis ornare</mark>, tempor diam et, fermentum diam. Integer bibendum purus nec nunc ornare pulvinar id eu sapien. Duis ac feugiat ipsum. Sed nec sem a nulla condimentum <mark>lobortis</mark>.</p>
-                <p class="small"><a href="#">http://thisisyourawesomesite.com/your-page</a></p>
-                <hr />
-                <h3><a href="#">Search result lorem ipsum dolor sit amet,</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <mark>Duis ac felis ornare</mark>, tempor diam et, fermentum diam. Integer bibendum purus nec nunc ornare pulvinar id eu sapien. Duis ac feugiat ipsum. Sed nec sem a nulla condimentum <mark>lobortis</mark>.</p>
-                <p class="small"><a href="#">http://thisisyourawesomesite.com/your-page</a></p>
-                <hr />
-                <h3><a href="#">Search result lorem ipsum dolor sit amet,</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <mark>Duis ac felis ornare</mark>, tempor diam et, fermentum diam. Integer bibendum purus nec nunc ornare pulvinar id eu sapien. Duis ac feugiat ipsum. Sed nec sem a nulla condimentum <mark>lobortis</mark>.</p>
-                <p class="small"><a href="#">http://thisisyourawesomesite.com/your-page</a></p>
+                <h2>All Food Resources</h2>
+                <table class="table table-striped table-bordered">
+                <thead>
+                <tr>
+                    <th>Type of Resource</th>
+                    <th>Resource Name</th>
+                    <th>Description</th>
+                    <th>Comments</th>
+                    <th>Location</th>
+                    <th>Service Area</th>
+                    <th>Documentation Needed?</th>
+                    <th>Days Of Week Offered</th>
+                    <th>Delivery Offered?</th>
+                    <th>Dietary Considerations?</th>
+                    <th>Contact</th>
+                    <th>Website</th>
+                </tr>
+                </thead>
+                <tbody>
+        <c:forEach var="resource" items="${searchResult}">
+                <tr>
+
+                    <td>${resource.type}</td>
+                    <td>${resource.name}</td>
+                    <td>${resource.desc}</td>
+                    <td>${resource.comments}</td>
+                    <td>${resource.location}</td>
+                    <td>${resource.serviceArea}</td>
+                    <td>${resource.documention}</td>
+                    <td>${resource.daysOfWeek}</td>
+                    <td>${resource.deliveryOffered}</td>
+                    <td>${resource.dietaryConsiderations}</td>
+                    <td>${resource.contact}</td>
+                    <td>${resource.website}</td>
+                    </tr>
+        </c:forEach>
+                </tbody>
+                </table>
+
+
+
                 <nav aria-label="Page navigation">
                     <ul class="pagination">
                         <li>

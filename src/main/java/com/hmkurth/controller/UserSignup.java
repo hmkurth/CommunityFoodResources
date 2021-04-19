@@ -41,9 +41,7 @@ public class UserSignup extends HttpServlet {
         role.setRoleName("user");
         user.addRole(role);
 
-            // TODO check if user is already in the database
-            GenericDao dao = new GenericDao(User.class);
-            dao.insert(user);
+
 
             //set the user in a ?session variable
 
@@ -57,9 +55,19 @@ public class UserSignup extends HttpServlet {
         }
         else
         {
+            //add the uses to the database
+            // TODO check if user is already in the database
+            GenericDao dao = new GenericDao(User.class);
+
+            dao.insert(user);
+
+            //TOdo set the user in the session??
             RequestDispatcher dispatcher = req.getRequestDispatcher("signUpSuccess.jsp");
             dispatcher.forward(req, resp);
         }
 
     }
+
+
+
 }

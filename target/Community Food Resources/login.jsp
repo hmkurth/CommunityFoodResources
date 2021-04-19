@@ -5,7 +5,7 @@
     <ul id="login-dp" class="dropdown-menu">
         <li>
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" id="login">
                     <form class="form" role="form" method="post" action="j_security_check" id="login-nav">
                         <div class="form-group">
                             <label for="j_username">Username</label>
@@ -22,7 +22,7 @@
                     </form>
                 </div>
                 <div class="bottom text-center col-sm-12">
-                    <a href="#">Register new account</a>
+                    <a href="userSignup.jsp">Register new account</a>
                 </div>
             </div>
         </li>

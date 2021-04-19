@@ -1,5 +1,6 @@
 package com.hmkurth.controller;
 
+import com.hmkurth.entity.FoodResource;
 import com.hmkurth.entity.User;
 import com.hmkurth.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
@@ -29,19 +30,19 @@ public class SearchUser extends HttpServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        GenericDao userDao = new GenericDao(User.class);
+        GenericDao resourceDao = new GenericDao(FoodResource.class);
        /* if (req.getParameter("submit").equals("search")) {
             req.setAttribute("users", userDao.getByPropertyLike("lastName", req.getParameter("searchTerm")));
         } else {
             req.setAttribute("users", userDao.getAll());
         }*/
-        //req.setAttribute("users", userDao.getAll());
+        req.setAttribute("resources", resourceDao.getAll());
         //setting attribute for last name search
         String  searchTerm = req.getParameter("searchTerm");
         String  searchProperty = req.getParameter("searchProperty");
-        req.setAttribute("searchResult", userDao.getPropertyByName(searchProperty,searchTerm));
+        //req.setAttribute("searchResult", resourceDao.getPropertyByName(searchProperty,searchTerm));
         logger.debug("In search user servlet, " + searchTerm + " " + searchTerm);
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/results.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/searchResults.jsp");
         dispatcher.forward(req, resp);
     }
 }

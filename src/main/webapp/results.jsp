@@ -1,5 +1,5 @@
 
-<%@include file="taglib.jsp"%>
+<%@include file="utilPages/taglib.jsp"%>
 <c:set var="title" value="Search Results" />
 <%@include file="head.jsp"%>
 <html><body>
