@@ -13,11 +13,11 @@
     <form action="${pageContext.request.contextPath}/userSignup"  method="post" autocomplete="on">
         <div class="form-group">
             <label for="first_name">First Name</label>
-            <input type="text" class="form-control" id="first_name" placeholder="First Name" autocomplete="name" aria-required="true" required>
+            <input type="text" class="form-control" id="first_name" placeholder="First Name" autocomplete="given-name" aria-required="true" required>
         </div>
         <div class="form-group">
             <label for="last_name">Last Name</label>
-            <input type="text" class="form-control" id="last_name" placeholder="Last Name"autocomplete="name" aria-required="true"  required>
+            <input type="text" class="form-control" id="last_name" placeholder="Last Name"autocomplete="family-name" aria-required="true"  required>
         </div>
         <!--TODO make sure username is not in use  -->
         <div class="form-group">

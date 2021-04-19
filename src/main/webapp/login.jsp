@@ -13,7 +13,7 @@
                         </div>
                         <div class="form-group">
                             <label for="j_password">Password</label>
-                            <input type="password" class="form-control" name="j_password" id="j_password" placeholder="Password" required>
+                            <input type="password" class="form-control" name="j_password" id="j_password" placeholder="Password" aria-required="true" autocomplete="current-password" required>
                             <div class="help-block text-right"><a href="#">Forget password?</a></div>
                         </div>
                         <div class="form-group">
