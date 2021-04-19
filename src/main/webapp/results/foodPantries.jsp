@@ -1,8 +1,8 @@
-<%@include file="../utilPages/taglib.jsp"%>
+<%@include file="../taglib.jsp"%>
 <c:import url="/utilPages/head.jsp" />
 <title>Food Pantries</title>
 
-<c:import url="/utilPages/header.jsp" />
+<c:import url="/header.jsp" />
 
 <c:import url="/searchResults.jsp" />
 
@@ -11,6 +11,6 @@
 
 
 
-<c:import url="/utilPages/footer.jsp" />
+<c:import url="/footer.jsp" />
 
 

@@ -3,8 +3,8 @@ C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\te
 C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\test\java\com\hmkurth\persistence\MapLocation.java
 C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\test\java\com\hmkurth\test\util\Database.java
 C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\test\java\com\hmkurth\persistence\UserRolesDaoTest.java
-C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\test\java\com\hmkurth\persistence\OwnerDaoTest.java
 C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\test\java\com\hmkurth\persistence\FoodResourceTest.java
+C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\test\java\com\hmkurth\persistence\ResourceOwnerDaoTest.java
 C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\test\java\com\hmkurth\persistence\ContactDaoTest.java
 C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\test\java\com\hmkurth\persistence\TypeDaoTest.java
 C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\test\java\com\hmkurth\persistence\UserDaoTest.java

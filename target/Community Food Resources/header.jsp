@@ -1,4 +1,4 @@
-<%@include file="taglib.jsp"%>
+<%@include file="/taglib.jsp"%>
 <body>
 		<!-- Main navigation element for site, html5 elements used to improve rendering on assistive devices -->
 		<nav class="navbar navbar-default navbar-fixed-top navbar-dark">
@@ -34,7 +34,7 @@
 					<div class="menu-block pull-right no-pad">
 
 							<!-- Login dropdown Insert login.jsp -->
-						<c:import url="login.jsp" />
+						<c:import url="/login.jsp" />
 
 			<div class="container">
 
@@ -47,7 +47,7 @@
 						<span class="icon-bar">line 3</span>
 					</button>
 					<a class="navbar-brand" href="index.jsp">
-						<img class="img-circle"    src="${pageContext.request.contextPath}/assets/img/mfrLogoRound.png" alt="Madison Community Food Resources" />
+						<img class="img-circle" src="${pageContext.request.contextPath}/assets/img/mfrLogoRound.png" alt="Madison Community Food Resources" />
 					</a>
 				</div>
 
@@ -57,7 +57,7 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Food Resources<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="foodPantries.jsp">Food Pantries</a></li>
+								<li><a href="../foodPantries.jsp">Food Pantries</a></li>
 								<li><a href="freeLittlePantries.jsp">Free Little Pantries</a></li>
 								<li><a href="communityMeals.jsp">Community Meals</a></li>
 								<li><a href="governmentResources.jsp">Government Resources</a></li>

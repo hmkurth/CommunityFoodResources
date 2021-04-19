@@ -54,10 +54,8 @@
                 <hr />
 
                 <address>
-                    <strong>ABC Organization</strong><br />
-                    1234 Main Street<br />
-                    Suite 12345<br />
-                    Treasure Island, FL 33706<br />
+                    <strong>Heather Kurth</strong><br />
+
                 </address>
             </div>
         </div>
@@ -73,8 +71,8 @@
         </div>
         <div class="row">
             <div class="col-sm-12">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit velit sit amet sodales porttitor. Praesent vitae dolor ornare, varius dolor ut, vehicula urna. Suspendisse egestas arcu ut pretium rutrum. Nullam mattis magna nec mauris aliquet, suscipit lobortis sem finibus. Sed sollicitudin erat mollis scelerisque rutrum. Duis dapibus id leo scelerisque pretium. Nulla facilisi.</p>
-                <p>&copy; 2017 <strong>Your Organization</strong>. All Rights Reserved.</p>
+                <p>Thanks for visiting.</p>
+                <p>&copy; 2021 <strong>Madison Food Resources</strong>. All Rights Reserved.</p>
             </div>
         </div>
     </div>

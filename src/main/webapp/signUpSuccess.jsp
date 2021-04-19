@@ -1,9 +1,9 @@
-<%@include file="utilPages/taglib.jsp"%>
-<c:import url="/head.jsp" />
+<%@include file="taglib.jsp"%>
+<c:import url="utilPages/head.jsp" />
 <title>Sign Up Success</title>
 
-<c:import url="/utilPages/header.jsp" />
-<c:import url="/utilPages/banner.jsp" />
+<c:import url="/header.jsp" />
+<c:import url="/banner.jsp" />
 
 <div class="content" id="signupSuccess">
     <div class="container">
@@ -25,4 +25,4 @@
 
 
 
-<c:import url="/utilPages/footer.jsp" />
+<c:import url="/footer.jsp" />

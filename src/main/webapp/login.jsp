@@ -22,7 +22,7 @@
                     </form>
                 </div>
                 <div class="bottom text-center col-sm-12">
-                    <a href="utilPages/userSignup.jsp">Register new account</a>
+                    <a href="/userSignup.jsp">Register new account</a>
                 </div>
             </div>
         </li>
