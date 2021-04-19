@@ -7,7 +7,7 @@
 
 					<!-- Skip to content link allows users rendering the site on a screen reader to skip past navigational elements -->
 					<div class="menu-block pull-left no-pad hidden-xs">
-						<a href="#main_content" class="btn btn-link scroller"><em class="fa fa-level-down" aria-hidden="true"></em> Skip to Content &nbsp;</a>
+						<a href="indexMain.jsp" class="btn btn-link scroller"><em class="fa fa-level-down" aria-hidden="true"></em> Skip to Content &nbsp;</a>
 					</div>
 
 					<!-- This is optional, comment out if you do not need this set of dropdowns at the top   TODO try to get these langs to work!-->
@@ -57,11 +57,11 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Food Resources<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="../foodPantries.jsp">Food Pantries</a></li>
-								<li><a href="freeLittlePantries.jsp">Free Little Pantries</a></li>
-								<li><a href="communityMeals.jsp">Community Meals</a></li>
-								<li><a href="governmentResources.jsp">Government Resources</a></li>
-								<li><a href="communityAid.jsp">Community Aid and Support Groups</a></li>
+								<li><a href="${pageContext.request.contextPath}/resources/foodPantries.jsp">Food Pantries</a></li>
+								<li><a href="${pageContext.request.contextPath}/resources/freeLittlePantries.jsp">Free Little Pantries</a></li>
+								<li><a href="${pageContext.request.contextPath}/resources/communityMeals.jsp">Community Meals</a></li>
+								<li><a href="${pageContext.request.contextPath}/resources/governmentResources.jsp">Government Resources</a></li>
+								<li><a href="${pageContext.request.contextPath}/resources/communityAid.jsp">Community Aid and Support Groups</a></li>
 							</ul>
 						</li>
 

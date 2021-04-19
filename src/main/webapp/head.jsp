@@ -1,4 +1,4 @@
-<%@include file="taglib.jsp"%> html>
+<%@include file="taglib.jsp"%>
 
 <head>
     <meta charset="utf-8">
