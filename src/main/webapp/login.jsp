@@ -6,10 +6,10 @@
         <li>
             <div class="row">
                 <div class="col-md-12" id="login">
-                    <form class="form" role="form" method="post" action="j_security_check" id="login-nav">
+                    <form class="form" role="form" method="post" action="j_security_check" id="login-nav" autocomplete="on">
                         <div class="form-group">
                             <label for="j_username">Username</label>
-                            <input type="text" class="form-control" id="j_username" name = "j_username" placeholder="Username" required>
+                            <input type="text" class="form-control" id="j_username" name = "j_username" placeholder="Username" aria-autocomplete="" aria-required="true" autocomplete="username" required>
                         </div>
                         <div class="form-group">
                             <label for="j_password">Password</label>
