@@ -9,27 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="sweet auto complete, and aria attributes added to login and sign up">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210416 2148.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LoginAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_13_2021_12_53_AM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_13_2021_12_53_AM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_16_2021_6_54_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_16_2021_6_54_PM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_16_2021_9_48_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_16_2021_9_48_PM__Default_Changelist_.xml" beforeDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="reconfiguring login to add a loginAction servlet and a button that points to it, but am still getting timeout error">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/UserSignup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/UserSignup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/banner.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/banner.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/loginError.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/loginError.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/foodPantries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foodPantries.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/signUpSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/signUpSuccess.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -403,14 +387,7 @@
       <workItem from="1618100738042" duration="20507000" />
       <workItem from="1618259698952" duration="11509000" />
       <workItem from="1618618302661" duration="32672000" />
-      <workItem from="1619622016619" duration="3892000" />
-    </task>
-    <task id="LOCAL-00031" summary="unit tests passing after implementing equals">
-      <created>1613955516337</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1613955516337</updated>
+      <workItem from="1619622016619" duration="6875000" />
     </task>
     <task id="LOCAL-00032" summary="adding journal and timelog">
       <created>1613956267743</created>
@@ -748,7 +725,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618812482587</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="reconfiguring login to add a loginAction servlet and a button that points to it, but am still getting timeout error">
+      <created>1619626286598</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1619626286599</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -771,7 +755,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adding Lombok to entities" />
     <MESSAGE value="ContactDaoTest complete" />
     <MESSAGE value="added rest service for contacts" />
     <MESSAGE value="updating journal and timelog" />
@@ -796,7 +779,8 @@
     <MESSAGE value="added form attributes auto complete and aria ...still need to complete this will all user input" />
     <MESSAGE value="added autocomplete-on to login and signup form attributes" />
     <MESSAGE value="sweet auto complete, and aria attributes added to login and sign up" />
-    <option name="LAST_COMMIT_MESSAGE" value="sweet auto complete, and aria attributes added to login and sign up" />
+    <MESSAGE value="reconfiguring login to add a loginAction servlet and a button that points to it, but am still getting timeout error" />
+    <option name="LAST_COMMIT_MESSAGE" value="reconfiguring login to add a loginAction servlet and a button that points to it, but am still getting timeout error" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

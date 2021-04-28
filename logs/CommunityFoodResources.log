@@ -318,3 +318,5 @@
 [DEBUG] 2021-04-16 09:35:22.890 [main] GenericDao - The list of Entities by entity name [UserRoles{id=2, userName='fhensen', roleName='all'}, UserRoles{id=5, userName='dklein', roleName='all'}]
 [DEBUG] 2021-04-16 09:35:22.890 [main] GenericDao - The list of Entities by entity name [UserRoles{id=1, userName='jcoyne', roleName='regular'}, UserRoles{id=4, userName='kmack', roleName='regular'}]
 [DEBUG] 2021-04-16 09:52:24.334 [main] GenericDao - inserting entity ResourceOwner(id=7, name=Schmidts, website=Schmidts@food.com, contactId=null)
+[INFO ] 2021-04-28 11:32:38.196 [http-nio-8080-exec-8] LoginAction - The logged in user; jcoynehas a role of  'user' : true
+[INFO ] 2021-04-28 13:18:57.180 [http-nio-8080-exec-8] LoginAction - The logged in user; jcoynehas a role of  'user' : true

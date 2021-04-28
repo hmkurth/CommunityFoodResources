@@ -1,7 +1,9 @@
+<%@include file="/taglib.jsp"%>
+
 
 <div class="menu-block pull-right no-pad">
 <li class="dropdown">
-    <a href="/loginAction" class="dropdown-toggle btn-login" data-toggle="dropdown"><em class="fa fa-lock" aria-hidden="true"></em>  Sign In</a>
+    <a href="loginAction" class="dropdown-toggle btn-login" data-toggle="dropdown"><em class="fa fa-lock" aria-hidden="true"></em>  Sign In</a>
     <ul id="login-dp" class="dropdown-menu">
         <li>
             <div class="row">
@@ -14,7 +16,7 @@
                         <div class="form-group">
                             <label for="j_password">Password</label>
                             <input type="password" class="form-control" name="j_password" id="j_password" placeholder="Password" aria-required="true" autocomplete="current-password" required>
-                            <div class="help-block text-right"><a href="#">Forget password?</a></div>
+                         <!--   <div class="help-block text-right"><a href="#">Forget password?</a></div> TODO-->
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary btn-block">Sign in</button>
