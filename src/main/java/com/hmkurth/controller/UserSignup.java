@@ -30,7 +30,7 @@ public class UserSignup extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         User user = new User();
-        user.setUserName(req.getParameter("j_username"));
+        user.setUserName(req.getParameter("user_name"));
         user.setEmail(req.getParameter("email"));
         user.setFirstName(req.getParameter("first_name"));
         user.setLastName(req.getParameter("last_name"));
@@ -48,7 +48,7 @@ public class UserSignup extends HttpServlet {
         if (req.getParameter("first_name").isEmpty() ||(req.getParameter("last_name").isEmpty() || (req.getParameter("user_name").isEmpty() ||
                 (req.getParameter("password").isEmpty() || (req.getParameter("email").isEmpty() )))))
         {
-            req.setAttribute("errorMessage", "Please try again");
+            req.setAttribute("errorMessage", "Please try again, all fields are required to sign up");
             logger.info("User Error");
             RequestDispatcher dispatcher= req.getRequestDispatcher("userSignup.jsp");
             dispatcher.include(req, resp);

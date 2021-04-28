@@ -9,10 +9,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="added autocomplete-on to login and signup form attributes">
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="sweet auto complete, and aria attributes added to login and sign up">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210416 2148.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LoginAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_13_2021_12_53_AM_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_13_2021_12_53_AM__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_16_2021_6_54_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_16_2021_6_54_PM__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_16_2021_9_48_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_16_2021_9_48_PM__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/UserSignup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/UserSignup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/banner.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/banner.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/userSignup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/userSignup.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/loginError.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/loginError.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/foodPantries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/foodPantries.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/signUpSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/signUpSuccess.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +43,7 @@
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -128,15 +146,13 @@
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.Tomcat">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -386,14 +402,8 @@
       <workItem from="1618027802830" duration="408000" />
       <workItem from="1618100738042" duration="20507000" />
       <workItem from="1618259698952" duration="11509000" />
-      <workItem from="1618618302661" duration="27829000" />
-    </task>
-    <task id="LOCAL-00030" summary="adding userRoleDaoTest">
-      <created>1613890127246</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1613890127246</updated>
+      <workItem from="1618618302661" duration="32672000" />
+      <workItem from="1619622016619" duration="3892000" />
     </task>
     <task id="LOCAL-00031" summary="unit tests passing after implementing equals">
       <created>1613955516337</created>
@@ -731,7 +741,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618812211431</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="sweet auto complete, and aria attributes added to login and sign up">
+      <created>1618812482587</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1618812482587</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -754,7 +771,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="creating entities with hibernate" />
     <MESSAGE value="adding Lombok to entities" />
     <MESSAGE value="ContactDaoTest complete" />
     <MESSAGE value="added rest service for contacts" />
@@ -779,7 +795,8 @@
     <MESSAGE value="undid directory page util, now getting the login error instead of timeout" />
     <MESSAGE value="added form attributes auto complete and aria ...still need to complete this will all user input" />
     <MESSAGE value="added autocomplete-on to login and signup form attributes" />
-    <option name="LAST_COMMIT_MESSAGE" value="added autocomplete-on to login and signup form attributes" />
+    <MESSAGE value="sweet auto complete, and aria attributes added to login and sign up" />
+    <option name="LAST_COMMIT_MESSAGE" value="sweet auto complete, and aria attributes added to login and sign up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

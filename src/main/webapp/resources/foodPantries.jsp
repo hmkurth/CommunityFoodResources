@@ -1,4 +1,4 @@
-<%@include file="../taglib.jsp"%>
+<%@include file="/taglib.jsp"%>
 <c:import url="../head.jsp" />
 <title>Food Pantries</title>
 

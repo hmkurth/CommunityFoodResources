@@ -31,9 +31,10 @@
 
 
 					<!-- Secondary navigation and login dropdown -->
-					<div class="menu-block pull-right no-pad">
 
-							<!-- Login dropdown Insert login.jsp -->
+
+							<!-- Login dropdown Insert login.jsp  but need a button that points to it for auth   <a href="loginAction"><button type="button">Log In </button></a>-->
+
 						<c:import url="/login.jsp" />
 
 			<div class="container">

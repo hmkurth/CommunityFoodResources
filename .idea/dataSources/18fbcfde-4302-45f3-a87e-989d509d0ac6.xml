@@ -923,6 +923,7 @@ SELECT|sys.sys_config
     <user id="287" parent="1" name="tomcat">
       <Host>localhost</Host>
       <ObjectGrants>SELECT|cfrl
+SELECT|testschema
 </ObjectGrants>
     </user>
     <user id="288" parent="1" name="vera">

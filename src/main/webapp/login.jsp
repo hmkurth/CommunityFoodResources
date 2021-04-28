@@ -1,7 +1,7 @@
 
-
+<div class="menu-block pull-right no-pad">
 <li class="dropdown">
-    <a href="#" class="dropdown-toggle btn-login" data-toggle="dropdown"><em class="fa fa-lock" aria-hidden="true"></em>  Sign In</a>
+    <a href="/loginAction" class="dropdown-toggle btn-login" data-toggle="dropdown"><em class="fa fa-lock" aria-hidden="true"></em>  Sign In</a>
     <ul id="login-dp" class="dropdown-menu">
         <li>
             <div class="row">
@@ -9,7 +9,7 @@
                     <form class="form" role="form" method="post" action="j_security_check" id="login-nav" autocomplete="on">
                         <div class="form-group">
                             <label for="j_username">Username</label>
-                            <input type="text" class="form-control" id="j_username" name = "j_username" placeholder="Username" aria-autocomplete="" aria-required="true" autocomplete="username" required>
+                            <input type="text" class="form-control" id="j_username" name = "j_username" placeholder="Username"  aria-required="true" autocomplete="username" required>
                         </div>
                         <div class="form-group">
                             <label for="j_password">Password</label>
@@ -22,14 +22,10 @@
                     </form>
                 </div>
                 <div class="bottom text-center col-sm-12">
-                    <a href="/userSignup.jsp">Register new account</a>
+                    <a href="${pageContext.request.contextPath}/userSignup.jsp">Register new account</a>
                 </div>
             </div>
         </li>
     </ul>
 </li>
-</ul>
-</div>
-
-</div>
 </div>

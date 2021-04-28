@@ -1,17 +1,15 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: heath
-  Date: 3/7/2021
-  Time: 9:39 AM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Login Error</title>
-</head>
-<body>
-<h1>There was an error logging you in</h1>
+<<%@include file="taglib.jsp"%>
+<c:import url="/head.jsp" />
+<title>Login Error</title>
 
-</body>
-</html>
+<c:import url="/header.jsp" />
+<c:import url="/banner.jsp" />
+<div class="col-md-4 col-md-offset-1">
+    <h3>>There was an error logging you in</h3>
+
+
+    <a href="index.jsp" class="btn btn-primary btn-lg">Back Home To Login</a>
+</div>
+
+
+<c:import url="/footer.jsp" />
