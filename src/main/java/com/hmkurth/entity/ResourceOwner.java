@@ -28,8 +28,8 @@ public class ResourceOwner {
     private String website;
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
-    @OneToMany(mappedBy = "resource_owners", cascade=CascadeType.ALL, orphanRemoval = true, fetch =FetchType.EAGER )
-    private Set<Contact> contacts = new HashSet<>();
+    @OneToMany(mappedBy = "owner", cascade=CascadeType.ALL, orphanRemoval = true, fetch =FetchType.EAGER )
+    private Set<Contact> contacts = new HashSet<Contact>();
 
     public ResourceOwner(String name,Contact contact, String website) {
     }

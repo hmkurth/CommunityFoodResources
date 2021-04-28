@@ -37,6 +37,9 @@ public class Contact {
     private String lastName;
     private String email;
     private String phone;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "owner_id")
+    private ResourceOwner owner;
 
     public Contact(@NonNull String firstName, @NonNull String lastName, String email, String phone) {
         this.firstName = firstName;

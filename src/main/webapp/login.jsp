@@ -1,4 +1,4 @@
-<%@include file="/taglib.jsp"%>
+<%@include file="taglib.jsp"%>
 
 
 <div class="menu-block pull-right no-pad">

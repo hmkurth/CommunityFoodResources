@@ -35,9 +35,9 @@
 
 							<!-- Login dropdown Insert login.jsp  but need a button that points to it for auth  -->
 					<div class="menu-block pull-right no-pad">
-					<a href="loginAction"><button type="button" class="btn">Log In </button></a>
+					<a href="loginAction"><button type="button" class="btn btn-default btn-lg dark">Log In </button></a>
 
-
+<div>
 			<div class="container">
 
 				<!-- Mobile hamburger style menu TODO check this-->

@@ -103,7 +103,7 @@ class UserRolesDaoTest {
 
     /**
      * test the successful insertion of a user role
-
+     */
     @Test
     void insertSuccess() {
        GenericDao userDao = new GenericDao(User.class);
@@ -113,10 +113,10 @@ class UserRolesDaoTest {
         UserRoles roles = new UserRoles("admin", toInsert, toInsert.getUserName() );
         int id = genericDao.insert(roles);
         assertNotEquals(0, id);
-       int insertedRoles = roles.getId(id);
+       int insertedRoles = roles.getId();
         assertEquals(toInsert.getId(), insertedRoles);
     }
-     */
+
     /**
      * Verify successful get by property (equal match)
      */

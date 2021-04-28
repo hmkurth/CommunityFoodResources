@@ -9,11 +9,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="reconfiguring login to add a loginAction servlet and a button that points to it, but am still getting timeout error">
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="got login working, but it's not pretty...">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210428 1341.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210428 1345.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210428 1352.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210416 0948.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210416 0950.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210416 0952.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210416 2148.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/ResourceOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/ResourceOwner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/banner.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/banner.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +63,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="JspContextManager">
+    <jsp-to-context jsp-file="file://$PROJECT_DIR$/src/main/webapp/header.jsp" context-file="file://$PROJECT_DIR$/src/main/webapp/userSignup.jsp" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -129,18 +146,7 @@
       <recent name="com.hmkurth.persistence" />
     </key>
   </component>
-  <component name="RunManager" selected="TomEE Server.Tomcat">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserDaoTest.deleteSuccess">
     <configuration name="ResourceOwnerDaoTest.insertSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
@@ -173,7 +179,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserRolesDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserDaoTest.deleteSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
         <pattern>
@@ -182,8 +188,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.UserRolesDaoTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.UserDaoTest" />
+      <option name="METHOD_NAME" value="deleteSuccess" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -308,19 +315,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.UserRolesDaoTest.insertSuccess" />
-      <item itemvalue="JUnit.UserRolesDaoTest" />
       <item itemvalue="JUnit.com.hmkurth.persistence in CommunityFoodResources" />
       <item itemvalue="JUnit.ResourceOwnerDaoTest.insertSuccess" />
       <item itemvalue="JUnit.ResourceOwnerDaoTest.insertWithContactSuccess" />
+      <item itemvalue="JUnit.UserDaoTest.deleteSuccess" />
       <item itemvalue="TomEE Server.Tomcat" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserDaoTest.deleteSuccess" />
+        <item itemvalue="JUnit.UserRolesDaoTest.insertSuccess" />
         <item itemvalue="JUnit.ResourceOwnerDaoTest.insertWithContactSuccess" />
         <item itemvalue="JUnit.ResourceOwnerDaoTest.insertSuccess" />
         <item itemvalue="JUnit.com.hmkurth.persistence in CommunityFoodResources" />
-        <item itemvalue="JUnit.UserRolesDaoTest" />
-        <item itemvalue="JUnit.UserRolesDaoTest.insertSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -387,14 +394,8 @@
       <workItem from="1618100738042" duration="20507000" />
       <workItem from="1618259698952" duration="11509000" />
       <workItem from="1618618302661" duration="32672000" />
-      <workItem from="1619622016619" duration="6875000" />
-    </task>
-    <task id="LOCAL-00032" summary="adding journal and timelog">
-      <created>1613956267743</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1613956267743</updated>
+      <workItem from="1619622016619" duration="9714000" />
+      <workItem from="1619637108703" duration="1242000" />
     </task>
     <task id="LOCAL-00033" summary="completed generic dao and userRoleDao tests with it.">
       <created>1613963222256</created>
@@ -732,7 +733,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619626286599</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="got login working, but it's not pretty...">
+      <created>1619633996410</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1619633996411</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -755,7 +763,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ContactDaoTest complete" />
     <MESSAGE value="added rest service for contacts" />
     <MESSAGE value="updating journal and timelog" />
     <MESSAGE value="foodresource dao tests" />
@@ -780,7 +787,8 @@
     <MESSAGE value="added autocomplete-on to login and signup form attributes" />
     <MESSAGE value="sweet auto complete, and aria attributes added to login and sign up" />
     <MESSAGE value="reconfiguring login to add a loginAction servlet and a button that points to it, but am still getting timeout error" />
-    <option name="LAST_COMMIT_MESSAGE" value="reconfiguring login to add a loginAction servlet and a button that points to it, but am still getting timeout error" />
+    <MESSAGE value="got login working, but it's not pretty..." />
+    <option name="LAST_COMMIT_MESSAGE" value="got login working, but it's not pretty..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
