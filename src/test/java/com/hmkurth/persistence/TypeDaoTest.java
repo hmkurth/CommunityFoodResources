@@ -42,6 +42,7 @@ class TypeDaoTest {
         database.runSQL("cleanDb.sql");
 
 
+
         genericDao = new GenericDao(Type.class);
 
     }

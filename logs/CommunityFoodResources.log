@@ -324,3 +324,148 @@
 [ERROR] 2021-04-28 17:28:12.888 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
 [ERROR] 2021-04-28 17:29:13.294 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
 [DEBUG] 2021-04-28 17:29:16.806 [main] GenericDao - in get ALL [User{id=1, firstName='Joe', lastName='Coyne', userName='jcoyne', password='supersecret1', email='beast@mail', roles=[UserRoles{id=1, userName='jcoyne', roleName='user'}]}, User{id=2, firstName='Fred', lastName='Hensen', userName='fhensen', password='supersecret2', email='yeast@mail', roles=[UserRoles{id=2, userName='fhensen', roleName='all'}]}, User{id=3, firstName='Barney', lastName='Curry', userName='bcurry', password='supersecret3', email='seast@mail', roles=[UserRoles{id=3, userName='bcurry', roleName='admin'}]}, User{id=4, firstName='Karen', lastName='Mack', userName='kmack', password='supersecret4', email='least@mail', roles=[UserRoles{id=4, userName='kmack', roleName='user'}]}, User{id=5, firstName='Dianne', lastName='Klein', userName='dklein', password='supersecret5', email='zeast@mail', roles=[UserRoles{id=5, userName='dklein', roleName='all'}]}, User{id=6, firstName='tom', lastName='cat', userName='tomcat', password='tomcat', email='QUeast@mail', roles=[UserRoles{id=6, userName='tomcat', roleName='administration'}]}]
+[ERROR] 2021-04-28 17:31:28.397 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-04-28 17:31:32.235 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[INFO ] 2021-04-28 17:31:32.283 [main] UserRolesDaoTest - update role success test
+[ERROR] 2021-04-28 17:31:32.365 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:31:32.373 [main] GenericDao - Searching for person with roleName = admin
+[ERROR] 2021-04-28 17:31:32.823 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:31:32.835 [main] GenericDao - The list of Entities by propertyName roleName
+[ERROR] 2021-04-28 17:31:32.985 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:31:33.046 [main] GenericDao - in get ALL [UserRoles{id=1, userName='jcoyne', roleName='user'}, UserRoles{id=2, userName='fhensen', roleName='all'}, UserRoles{id=3, userName='bcurry', roleName='admin'}, UserRoles{id=4, userName='kmack', roleName='user'}, UserRoles{id=5, userName='dklein', roleName='all'}, UserRoles{id=6, userName='tomcat', roleName='administration'}]
+[DEBUG] 2021-04-28 17:31:33.082 [main] GenericDao - in get ALL [UserRoles{id=1, userName='jcoyne', roleName='user'}, UserRoles{id=2, userName='fhensen', roleName='all'}, UserRoles{id=3, userName='bcurry', roleName='admin'}, UserRoles{id=4, userName='kmack', roleName='user'}, UserRoles{id=5, userName='dklein', roleName='all'}, UserRoles{id=6, userName='tomcat', roleName='administration'}]
+[INFO ] 2021-04-28 17:31:33.083 [main] UserRolesDaoTest - get all userRoles test: all userRoles;[UserRoles{id=1, userName='jcoyne', roleName='user'}, UserRoles{id=2, userName='fhensen', roleName='all'}, UserRoles{id=3, userName='bcurry', roleName='admin'}, UserRoles{id=4, userName='kmack', roleName='user'}, UserRoles{id=5, userName='dklein', roleName='all'}, UserRoles{id=6, userName='tomcat', roleName='administration'}]
+[ERROR] 2021-04-28 17:31:33.183 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:31:33.199 [main] GenericDao - The list of Entities by entity name [UserRoles{id=2, userName='fhensen', roleName='all'}, UserRoles{id=5, userName='dklein', roleName='all'}]
+[DEBUG] 2021-04-28 17:31:33.204 [main] GenericDao - The list of Entities by entity name []
+[ERROR] 2021-04-28 17:31:33.416 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-04-28 17:31:33.500 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:31:33.530 [main] GenericDao - The list of Entities by entity name [User{id=3, firstName='Barney', lastName='Curry', userName='bcurry', password='supersecret3', email='seast@mail', roles=[UserRoles{id=3, userName='bcurry', roleName='admin'}]}]
+[DEBUG] 2021-04-28 17:31:33.545 [main] GenericDao - inserting entity UserRoles{id=176, userName='bcurry', roleName='admin'}
+[ERROR] 2021-04-28 17:40:23.934 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-04-28 17:40:27.387 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[INFO ] 2021-04-28 17:40:27.423 [main] UserRolesDaoTest - update role success test
+[ERROR] 2021-04-28 17:40:27.492 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:40:27.501 [main] GenericDao - Searching for person with roleName = admin
+[ERROR] 2021-04-28 17:40:27.939 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:40:27.970 [main] GenericDao - The list of Entities by propertyName roleName
+[ERROR] 2021-04-28 17:40:28.033 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:40:28.080 [main] GenericDao - in get ALL [UserRoles{id=1, userName='jcoyne', roleName='user'}, UserRoles{id=2, userName='fhensen', roleName='all'}, UserRoles{id=3, userName='bcurry', roleName='admin'}, UserRoles{id=4, userName='kmack', roleName='user'}, UserRoles{id=5, userName='dklein', roleName='all'}, UserRoles{id=6, userName='tomcat', roleName='administration'}]
+[DEBUG] 2021-04-28 17:40:28.095 [main] GenericDao - in get ALL [UserRoles{id=1, userName='jcoyne', roleName='user'}, UserRoles{id=2, userName='fhensen', roleName='all'}, UserRoles{id=3, userName='bcurry', roleName='admin'}, UserRoles{id=4, userName='kmack', roleName='user'}, UserRoles{id=5, userName='dklein', roleName='all'}, UserRoles{id=6, userName='tomcat', roleName='administration'}]
+[INFO ] 2021-04-28 17:40:28.095 [main] UserRolesDaoTest - get all userRoles test: all userRoles;[UserRoles{id=1, userName='jcoyne', roleName='user'}, UserRoles{id=2, userName='fhensen', roleName='all'}, UserRoles{id=3, userName='bcurry', roleName='admin'}, UserRoles{id=4, userName='kmack', roleName='user'}, UserRoles{id=5, userName='dklein', roleName='all'}, UserRoles{id=6, userName='tomcat', roleName='administration'}]
+[ERROR] 2021-04-28 17:40:28.220 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:40:28.236 [main] GenericDao - The list of Entities by entity name [UserRoles{id=2, userName='fhensen', roleName='all'}, UserRoles{id=5, userName='dklein', roleName='all'}]
+[DEBUG] 2021-04-28 17:40:28.236 [main] GenericDao - The list of Entities by entity name [UserRoles{id=1, userName='jcoyne', roleName='user'}, UserRoles{id=4, userName='kmack', roleName='user'}]
+[ERROR] 2021-04-28 17:40:28.298 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-04-28 17:40:28.361 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:40:28.392 [main] GenericDao - The list of Entities by entity name [User{id=3, firstName='Barney', lastName='Curry', userName='bcurry', password='supersecret3', email='seast@mail', roles=[UserRoles{id=3, userName='bcurry', roleName='admin'}]}]
+[DEBUG] 2021-04-28 17:40:28.423 [main] GenericDao - inserting entity UserRoles{id=177, userName='bcurry', roleName='admin'}
+[ERROR] 2021-04-28 17:44:16.367 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:44:19.461 [main] GenericDao - in get ALL []
+[ERROR] 2021-04-28 17:44:19.601 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:44:19.601 [main] GenericDao - in get ALL []
+[ERROR] 2021-04-28 17:44:19.726 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-04-28 17:44:19.945 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:44:19.961 [main] GenericDao - Searching for person with name = other
+[ERROR] 2021-04-28 17:44:20.039 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:44:20.054 [main] GenericDao - The list of Entities by propertyName name
+[ERROR] 2021-04-28 17:44:20.117 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-04-28 17:44:20.164 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:44:20.211 [main] GenericDao - inserting entity Type(id=10, name=school meal drop off)
+[ERROR] 2021-04-28 17:47:10.195 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:47:13.742 [main] GenericDao - in get ALL []
+[ERROR] 2021-04-28 17:48:07.119 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:48:10.174 [main] GenericDao - in get ALL []
+[ERROR] 2021-04-28 17:50:02.195 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:50:05.617 [main] GenericDao - in get ALL []
+[ERROR] 2021-04-28 17:50:06.101 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:50:06.101 [main] GenericDao - in get ALL []
+[ERROR] 2021-04-28 17:50:06.414 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-04-28 17:50:06.539 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:50:06.555 [main] GenericDao - Searching for person with name = other
+[ERROR] 2021-04-28 17:50:06.976 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:50:06.992 [main] GenericDao - The list of Entities by propertyName name
+[ERROR] 2021-04-28 17:50:07.242 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-04-28 17:50:08.351 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:50:08.398 [main] GenericDao - inserting entity Type(id=11, name=school meal drop off)
+[ERROR] 2021-04-28 17:50:44.008 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:50:47.577 [main] GenericDao - in get ALL []
+[ERROR] 2021-04-28 17:50:47.702 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:50:47.718 [main] GenericDao - in get ALL []
+[ERROR] 2021-04-28 17:51:58.763 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-04-28 17:51:59.013 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:51:59.013 [main] GenericDao - Searching for person with name = other
+[ERROR] 2021-04-28 17:51:59.107 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:51:59.123 [main] GenericDao - The list of Entities by propertyName name
+[ERROR] 2021-04-28 17:51:59.279 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-04-28 17:51:59.373 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:51:59.419 [main] GenericDao - inserting entity Type(id=12, name=school meal drop off)
+[ERROR] 2021-04-28 17:53:03.798 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:53:06.767 [main] GenericDao - in get ALL []
+[ERROR] 2021-04-28 17:53:06.955 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:53:06.955 [main] GenericDao - in get ALL []
+[ERROR] 2021-04-28 17:53:07.017 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-04-28 17:53:07.142 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:53:07.158 [main] GenericDao - Searching for person with name = other
+[ERROR] 2021-04-28 17:53:07.267 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:53:07.267 [main] GenericDao - The list of Entities by propertyName name
+[ERROR] 2021-04-28 17:53:07.345 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-04-28 17:53:07.423 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:53:07.455 [main] GenericDao - inserting entity Type(id=13, name=school meal drop off)
+[ERROR] 2021-04-28 17:54:22.200 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:54:25.137 [main] GenericDao - in get ALL [User{id=1, firstName='Joe', lastName='Coyne', userName='jcoyne', password='supersecret1', email='beast@mail', roles=[UserRoles{id=1, userName='jcoyne', roleName='user'}]}, User{id=2, firstName='Fred', lastName='Hensen', userName='fhensen', password='supersecret2', email='yeast@mail', roles=[UserRoles{id=2, userName='fhensen', roleName='all'}]}, User{id=3, firstName='Barney', lastName='Curry', userName='bcurry', password='supersecret3', email='seast@mail', roles=[UserRoles{id=3, userName='bcurry', roleName='admin'}]}, User{id=4, firstName='Karen', lastName='Mack', userName='kmack', password='supersecret4', email='least@mail', roles=[UserRoles{id=4, userName='kmack', roleName='user'}]}, User{id=5, firstName='Dianne', lastName='Klein', userName='dklein', password='supersecret5', email='zeast@mail', roles=[UserRoles{id=5, userName='dklein', roleName='all'}]}, User{id=6, firstName='tom', lastName='cat', userName='tomcat', password='tomcat', email='QUeast@mail', roles=[UserRoles{id=6, userName='tomcat', roleName='administration'}]}]
+[ERROR] 2021-04-28 17:54:25.356 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[INFO ] 2021-04-28 17:54:25.403 [main] UserDaoTest - in save or update test
+[ERROR] 2021-04-28 17:54:25.481 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:54:25.497 [main] GenericDao - inserting entity User{id=337, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='meaty', email='meaty@sharks', roles=[UserRoles{id=178, userName='Sally', roleName='admin'}]}
+[ERROR] 2021-04-28 17:54:25.590 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:54:25.590 [main] GenericDao - Searching for person with lastName = Curry
+[ERROR] 2021-04-28 17:54:25.727 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:54:25.741 [main] GenericDao - The list of Entities by propertyName lastName
+[ERROR] 2021-04-28 17:54:25.821 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:54:25.836 [main] GenericDao - The list of Entities by entity name [User{id=4, firstName='Karen', lastName='Mack', userName='kmack', password='supersecret4', email='least@mail', roles=[UserRoles{id=4, userName='kmack', roleName='user'}]}, User{id=5, firstName='Dianne', lastName='Klein', userName='dklein', password='supersecret5', email='zeast@mail', roles=[UserRoles{id=5, userName='dklein', roleName='all'}]}]
+[DEBUG] 2021-04-28 17:54:25.840 [main] GenericDao - The list of Entities by entity name []
+[ERROR] 2021-04-28 17:54:25.939 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-04-28 17:54:26.040 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:54:26.073 [main] GenericDao - in get ALL [User{id=1, firstName='Joe', lastName='Coyne', userName='jcoyne', password='supersecret1', email='beast@mail', roles=[UserRoles{id=1, userName='jcoyne', roleName='user'}]}, User{id=2, firstName='Fred', lastName='Hensen', userName='fhensen', password='supersecret2', email='yeast@mail', roles=[UserRoles{id=2, userName='fhensen', roleName='all'}]}, User{id=3, firstName='Barney', lastName='Curry', userName='bcurry', password='supersecret3', email='seast@mail', roles=[UserRoles{id=3, userName='bcurry', roleName='admin'}]}, User{id=4, firstName='Karen', lastName='Mack', userName='kmack', password='supersecret4', email='least@mail', roles=[UserRoles{id=4, userName='kmack', roleName='user'}]}, User{id=5, firstName='Dianne', lastName='Klein', userName='dklein', password='supersecret5', email='zeast@mail', roles=[UserRoles{id=5, userName='dklein', roleName='all'}]}, User{id=6, firstName='tom', lastName='cat', userName='tomcat', password='tomcat', email='QUeast@mail', roles=[UserRoles{id=6, userName='tomcat', roleName='administration'}]}]
+[DEBUG] 2021-04-28 17:54:26.102 [main] GenericDao - in get ALL [User{id=1, firstName='Joe', lastName='Coyne', userName='jcoyne', password='supersecret1', email='beast@mail', roles=[UserRoles{id=1, userName='jcoyne', roleName='user'}]}, User{id=2, firstName='Fred', lastName='Hensen', userName='fhensen', password='supersecret2', email='yeast@mail', roles=[UserRoles{id=2, userName='fhensen', roleName='all'}]}, User{id=3, firstName='Barney', lastName='Curry', userName='bcurry', password='supersecret3', email='seast@mail', roles=[UserRoles{id=3, userName='bcurry', roleName='admin'}]}, User{id=4, firstName='Karen', lastName='Mack', userName='kmack', password='supersecret4', email='least@mail', roles=[UserRoles{id=4, userName='kmack', roleName='user'}]}, User{id=5, firstName='Dianne', lastName='Klein', userName='dklein', password='supersecret5', email='zeast@mail', roles=[UserRoles{id=5, userName='dklein', roleName='all'}]}, User{id=6, firstName='tom', lastName='cat', userName='tomcat', password='tomcat', email='QUeast@mail', roles=[UserRoles{id=6, userName='tomcat', roleName='administration'}]}]
+[INFO ] 2021-04-28 17:54:26.102 [main] UserDaoTest - get all users test: all users;[User{id=1, firstName='Joe', lastName='Coyne', userName='jcoyne', password='supersecret1', email='beast@mail', roles=[UserRoles{id=1, userName='jcoyne', roleName='user'}]}, User{id=2, firstName='Fred', lastName='Hensen', userName='fhensen', password='supersecret2', email='yeast@mail', roles=[UserRoles{id=2, userName='fhensen', roleName='all'}]}, User{id=3, firstName='Barney', lastName='Curry', userName='bcurry', password='supersecret3', email='seast@mail', roles=[UserRoles{id=3, userName='bcurry', roleName='admin'}]}, User{id=4, firstName='Karen', lastName='Mack', userName='kmack', password='supersecret4', email='least@mail', roles=[UserRoles{id=4, userName='kmack', roleName='user'}]}, User{id=5, firstName='Dianne', lastName='Klein', userName='dklein', password='supersecret5', email='zeast@mail', roles=[UserRoles{id=5, userName='dklein', roleName='all'}]}, User{id=6, firstName='tom', lastName='cat', userName='tomcat', password='tomcat', email='QUeast@mail', roles=[UserRoles{id=6, userName='tomcat', roleName='administration'}]}]
+[ERROR] 2021-04-28 17:54:26.153 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:54:26.163 [main] GenericDao - inserting entity User{id=338, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='meaty', email='meaty@sharks', roles=[]}
+[ERROR] 2021-04-28 17:55:24.621 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:55:27.553 [main] GenericDao - in get ALL []
+[ERROR] 2021-04-28 17:55:27.715 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:55:27.722 [main] GenericDao - in get ALL []
+[ERROR] 2021-04-28 17:55:27.814 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-04-28 17:55:27.895 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:55:27.909 [main] GenericDao - Searching for person with name = other
+[ERROR] 2021-04-28 17:55:27.991 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:55:28.003 [main] GenericDao - The list of Entities by propertyName name
+[ERROR] 2021-04-28 17:55:28.054 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-04-28 17:55:28.109 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:55:28.166 [main] GenericDao - inserting entity Type(id=14, name=school meal drop off)
+[ERROR] 2021-04-28 17:56:51.220 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[ERROR] 2021-04-28 17:56:55.126 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:56:56.032 [main] GenericDao - in get ALL [User{id=1, firstName='Joe', lastName='Coyne', userName='jcoyne', password='supersecret1', email='beast@mail', roles=[UserRoles{id=1, userName='jcoyne', roleName='user'}]}, User{id=2, firstName='Fred', lastName='Hensen', userName='fhensen', password='supersecret2', email='yeast@mail', roles=[UserRoles{id=2, userName='fhensen', roleName='all'}]}, User{id=3, firstName='Barney', lastName='Curry', userName='bcurry', password='supersecret3', email='seast@mail', roles=[UserRoles{id=3, userName='bcurry', roleName='admin'}]}, User{id=4, firstName='Karen', lastName='Mack', userName='kmack', password='supersecret4', email='least@mail', roles=[UserRoles{id=4, userName='kmack', roleName='user'}]}, User{id=5, firstName='Dianne', lastName='Klein', userName='dklein', password='supersecret5', email='zeast@mail', roles=[UserRoles{id=5, userName='dklein', roleName='all'}]}, User{id=6, firstName='tom', lastName='cat', userName='tomcat', password='tomcat', email='QUeast@mail', roles=[UserRoles{id=6, userName='tomcat', roleName='administration'}]}]
+[DEBUG] 2021-04-28 17:56:56.079 [main] GenericDao - in get ALL [User{id=1, firstName='Joe', lastName='Coyne', userName='jcoyne', password='supersecret1', email='beast@mail', roles=[UserRoles{id=1, userName='jcoyne', roleName='user'}]}, User{id=2, firstName='Fred', lastName='Hensen', userName='fhensen', password='supersecret2', email='yeast@mail', roles=[UserRoles{id=2, userName='fhensen', roleName='all'}]}, User{id=3, firstName='Barney', lastName='Curry', userName='bcurry', password='supersecret3', email='seast@mail', roles=[UserRoles{id=3, userName='bcurry', roleName='admin'}]}, User{id=4, firstName='Karen', lastName='Mack', userName='kmack', password='supersecret4', email='least@mail', roles=[UserRoles{id=4, userName='kmack', roleName='user'}]}, User{id=5, firstName='Dianne', lastName='Klein', userName='dklein', password='supersecret5', email='zeast@mail', roles=[UserRoles{id=5, userName='dklein', roleName='all'}]}, User{id=6, firstName='tom', lastName='cat', userName='tomcat', password='tomcat', email='QUeast@mail', roles=[UserRoles{id=6, userName='tomcat', roleName='administration'}]}]
+[INFO ] 2021-04-28 17:56:56.079 [main] UserDaoTest - get all users test: all users;[User{id=1, firstName='Joe', lastName='Coyne', userName='jcoyne', password='supersecret1', email='beast@mail', roles=[UserRoles{id=1, userName='jcoyne', roleName='user'}]}, User{id=2, firstName='Fred', lastName='Hensen', userName='fhensen', password='supersecret2', email='yeast@mail', roles=[UserRoles{id=2, userName='fhensen', roleName='all'}]}, User{id=3, firstName='Barney', lastName='Curry', userName='bcurry', password='supersecret3', email='seast@mail', roles=[UserRoles{id=3, userName='bcurry', roleName='admin'}]}, User{id=4, firstName='Karen', lastName='Mack', userName='kmack', password='supersecret4', email='least@mail', roles=[UserRoles{id=4, userName='kmack', roleName='user'}]}, User{id=5, firstName='Dianne', lastName='Klein', userName='dklein', password='supersecret5', email='zeast@mail', roles=[UserRoles{id=5, userName='dklein', roleName='all'}]}, User{id=6, firstName='tom', lastName='cat', userName='tomcat', password='tomcat', email='QUeast@mail', roles=[UserRoles{id=6, userName='tomcat', roleName='administration'}]}]
+[DEBUG] 2021-04-28 17:56:59.126 [main] GenericDao - in get ALL []
+[ERROR] 2021-04-28 17:57:38.854 [main] Database - java.sql.SQLException: Column count doesn't match value count at row 1
+[DEBUG] 2021-04-28 17:58:22.974 [main] GenericDao - in get ALL []
+[DEBUG] 2021-04-28 18:39:05.713 [main] GenericDao - in get ALL [Type(id=1, name=food pantry), Type(id=2, name=free little pantry), Type(id=3, name=meal), Type(id=4, name=government resource), Type(id=5, name=community aid and support groups), Type(id=6, name=other)]
+[DEBUG] 2021-04-28 18:39:45.480 [main] GenericDao - in get ALL [Type(id=1, name=food pantry), Type(id=2, name=free little pantry), Type(id=3, name=meal), Type(id=4, name=government resource), Type(id=5, name=community aid and support groups), Type(id=6, name=other)]
+[DEBUG] 2021-04-28 18:39:46.512 [main] GenericDao - in get ALL [Type(id=1, name=food pantry), Type(id=2, name=free little pantry), Type(id=3, name=meal), Type(id=4, name=government resource), Type(id=5, name=community aid and support groups), Type(id=6, name=other)]
+[DEBUG] 2021-04-28 18:39:46.527 [main] GenericDao - in get ALL [Type(id=1, name=food pantry), Type(id=2, name=free little pantry), Type(id=3, name=meal), Type(id=4, name=government resource), Type(id=5, name=community aid and support groups), Type(id=6, name=other)]
+[INFO ] 2021-04-28 18:39:46.527 [main] TypeDaoTest - get all Types test: all Types;[Type(id=1, name=food pantry), Type(id=2, name=free little pantry), Type(id=3, name=meal), Type(id=4, name=government resource), Type(id=5, name=community aid and support groups), Type(id=6, name=other)]
+[INFO ] 2021-04-28 18:39:47.855 [main] TypeDaoTest - in save or update test
+[DEBUG] 2021-04-28 18:39:48.777 [main] GenericDao - Searching for person with name = other
+[DEBUG] 2021-04-28 18:39:49.668 [main] GenericDao - The list of Entities by propertyName name
+[DEBUG] 2021-04-28 18:39:50.230 [main] GenericDao - inserting entity Type(id=15, name=school meal drop off)
+[DEBUG] 2021-04-28 18:41:00.568 [main] GenericDao - in get ALL [Type(id=1, name=food pantry), Type(id=2, name=free little pantry), Type(id=3, name=meal), Type(id=4, name=government resource), Type(id=5, name=community aid and support groups), Type(id=6, name=other)]
+[DEBUG] 2021-04-28 18:41:00.943 [main] GenericDao - in get ALL [Type(id=1, name=food pantry), Type(id=2, name=free little pantry), Type(id=3, name=meal), Type(id=4, name=government resource), Type(id=5, name=community aid and support groups), Type(id=6, name=other)]
+[DEBUG] 2021-04-28 18:41:00.958 [main] GenericDao - in get ALL [Type(id=1, name=food pantry), Type(id=2, name=free little pantry), Type(id=3, name=meal), Type(id=4, name=government resource), Type(id=5, name=community aid and support groups), Type(id=6, name=other)]
+[INFO ] 2021-04-28 18:41:00.958 [main] TypeDaoTest - get all Types test: all Types;[Type(id=1, name=food pantry), Type(id=2, name=free little pantry), Type(id=3, name=meal), Type(id=4, name=government resource), Type(id=5, name=community aid and support groups), Type(id=6, name=other)]
+[INFO ] 2021-04-28 18:41:01.208 [main] TypeDaoTest - in save or update test
+[DEBUG] 2021-04-28 18:41:01.489 [main] GenericDao - Searching for person with name = other
+[DEBUG] 2021-04-28 18:41:01.708 [main] GenericDao - The list of Entities by propertyName name
+[DEBUG] 2021-04-28 18:41:02.052 [main] GenericDao - inserting entity Type(id=16, name=school meal drop off)
