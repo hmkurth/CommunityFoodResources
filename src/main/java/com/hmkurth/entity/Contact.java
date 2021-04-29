@@ -37,9 +37,22 @@ public class Contact {
     private String lastName;
     private String email;
     private String phone;
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "owner_id")
     private ResourceOwner owner;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Contact)) return false;
+        Contact contact = (Contact) o;
+        return getId() == contact.getId() && getFirstName().equals(contact.getFirstName()) && getLastName().equals(contact.getLastName()) && Objects.equals(getEmail(), contact.getEmail()) && Objects.equals(getPhone(), contact.getPhone());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getFirstName(), getLastName(), getEmail(), getPhone());
+    }
 
     public Contact(@NonNull String firstName, @NonNull String lastName, String email, String phone) {
         this.firstName = firstName;
@@ -47,4 +60,5 @@ public class Contact {
         this.email = email;
         this.phone = phone;
     }
+
 }

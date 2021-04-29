@@ -31,10 +31,15 @@ public class ResourceOwner {
     @OneToMany(mappedBy = "owner", cascade=CascadeType.ALL, orphanRemoval = true, fetch =FetchType.EAGER )
     private Set<Contact> contacts = new HashSet<Contact>();
 
-    public ResourceOwner(String name,Contact contact, String website) {
+    public ResourceOwner(@NonNull String name, String website, Set<Contact> contacts) {
+        this.name = name;
+        this.website = website;
+        this.contacts = contacts;
     }
 
-    public ResourceOwner(String name, String website) {
+    public ResourceOwner(@NonNull String name, String website) {
+        this.name = name;
+        this.website = website;
     }
 
     /**

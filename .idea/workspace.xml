@@ -9,19 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="inserted null values for contact ids in sql inserts to avoid fk problems, type dao now working">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210428 1952.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210428 1955.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210428 1956.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/typesOfResources.jsp.xhtml" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="insert with contact on resource owner dao still broken">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210429 1005.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210429 1010.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210429 1011.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210428 1756.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210428 1758.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210428 1839.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210428 1952.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210428 1955.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210428 1956.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Contact.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/ResourceOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/ResourceOwner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/resourceLanding.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/resourceLanding.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,16 +141,14 @@
       <recent name="com.hmkurth.persistence" />
     </key>
   </component>
-  <component name="RunManager" selected="TomEE Server.Tomcat">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ResourceOwnerDaoTest.insertWithContactSuccess">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -323,12 +320,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TomEE Server.Tomcat" />
       <item itemvalue="JUnit.TypeDaoTest" />
       <item itemvalue="JUnit.TypeDaoTest.getAllTypesSuccess" />
       <item itemvalue="JUnit.ResourceOwnerDaoTest" />
       <item itemvalue="JUnit.ResourceOwnerDaoTest.getByIdSuccess" />
       <item itemvalue="JUnit.ResourceOwnerDaoTest.insertWithContactSuccess" />
+      <item itemvalue="TomEE Server.Tomcat" />
     </list>
     <recent_temporary>
       <list>
@@ -404,14 +401,8 @@
       <workItem from="1618259698952" duration="11509000" />
       <workItem from="1618618302661" duration="32672000" />
       <workItem from="1619622016619" duration="9714000" />
-      <workItem from="1619637108703" duration="9856000" />
-    </task>
-    <task id="LOCAL-00035" summary="editing database configuration">
-      <created>1614137236101</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1614137236101</updated>
+      <workItem from="1619637108703" duration="10136000" />
+      <workItem from="1619706958099" duration="2283000" />
     </task>
     <task id="LOCAL-00036" summary="adding tables to test database, starting to seed data">
       <created>1614140451361</created>
@@ -749,7 +740,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619653330819</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="insert with contact on resource owner dao still broken">
+      <created>1619658965983</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1619658965991</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -772,7 +770,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="foodresource dao tests" />
     <MESSAGE value="working on daos, somewhere my getSession method stopped working" />
     <MESSAGE value="for my reference, when i tried adding the removeChildren method, for some reason it made all the getSession() in the generic dao red....wth???" />
     <MESSAGE value="updating timelog, journal for week" />
@@ -797,7 +794,8 @@
     <MESSAGE value="got login working, but it's not pretty..." />
     <MESSAGE value="fixed mapped by error, added new column on contacts to reference the resource owners id" />
     <MESSAGE value="inserted null values for contact ids in sql inserts to avoid fk problems, type dao now working" />
-    <option name="LAST_COMMIT_MESSAGE" value="inserted null values for contact ids in sql inserts to avoid fk problems, type dao now working" />
+    <MESSAGE value="insert with contact on resource owner dao still broken" />
+    <option name="LAST_COMMIT_MESSAGE" value="insert with contact on resource owner dao still broken" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -975,17 +973,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java</url>
-          <line>146</line>
+          <line>149</line>
           <option name="timeStamp" value="65" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java</url>
-          <line>150</line>
+          <line>154</line>
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java</url>
-          <line>153</line>
+          <line>157</line>
           <option name="timeStamp" value="67" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">

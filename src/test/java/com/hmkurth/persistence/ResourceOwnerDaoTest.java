@@ -141,17 +141,21 @@ class ResourceOwnerDaoTest {
     void insertWithContactSuccess() {
         //need to access both objects, bidirectionality
         GenericDao cdao=new GenericDao<>(Contact.class);
-        Contact contactToAdd = new Contact("Bill", "Larson", "bill@pantries.com", "6085134568");
+       //Set<Contact>  contactSet = null;
+       Contact contactToAdd = new Contact("Bill", "Larson", "bill@pantries.com", "6085134568");
+
+        //contactSet.add(contactToAdd);
         String name = "WIC";
         String website = "Wic.com";
-        ResourceOwner newResourceOwner = new ResourceOwner("WIC",   "Wic.com" );
+        ResourceOwner newResourceOwner = new ResourceOwner(name, website);
 
         int id = resourceOwnerDao.insert(newResourceOwner);
+       // resourceOwnerDao.getById(id);
         newResourceOwner.addContact(contactToAdd);
         assertNotEquals(0,id);
         ResourceOwner insertedResourceOwner = (ResourceOwner) resourceOwnerDao.getById(id);
         //verify the contact was added
-        assertEquals(cdao.getById(2), insertedResourceOwner.getContacts(0));
+        assertEquals(1, newResourceOwner.getContacts(0).size());
         assertEquals(newResourceOwner, insertedResourceOwner);
 
     }

@@ -496,3 +496,13 @@
 [DEBUG] 2021-04-28 19:55:10.585 [main] GenericDao - in get ALL [ResourceOwner(id=1, name=The Beacon, website=www.beacon.com), ResourceOwner(id=2, name=Salvation Army, website=www.salvationArmy.com), ResourceOwner(id=3, name=Paul Schmidt, website=www.paully.com), ResourceOwner(id=4, name=Bethel Lutheran Church, website=www.christalmighty!.com), ResourceOwner(id=5, name=State Of Wisconsin, website=www.SNAP.com), ResourceOwner(id=6, name=Liza Beans, website=@facebookSomething)]
 [INFO ] 2021-04-28 19:55:10.585 [main] ResourceOwnerDaoTest - get all ResourceOwners test: all ResourceOwners;[ResourceOwner(id=1, name=The Beacon, website=www.beacon.com), ResourceOwner(id=2, name=Salvation Army, website=www.salvationArmy.com), ResourceOwner(id=3, name=Paul Schmidt, website=www.paully.com), ResourceOwner(id=4, name=Bethel Lutheran Church, website=www.christalmighty!.com), ResourceOwner(id=5, name=State Of Wisconsin, website=www.SNAP.com), ResourceOwner(id=6, name=Liza Beans, website=@facebookSomething)]
 [DEBUG] 2021-04-28 19:55:10.945 [main] GenericDao - inserting entity ResourceOwner(id=10, name=Schmidts, website=Schmidts@food.com)
+[DEBUG] 2021-04-29 09:40:34.406 [main] GenericDao - inserting entity ResourceOwner(id=11, name=WIC, website=Wic.com)
+[DEBUG] 2021-04-29 09:42:10.665 [main] GenericDao - inserting entity ResourceOwner(id=12, name=WIC, website=Wic.com)
+[DEBUG] 2021-04-29 09:44:33.358 [main] GenericDao - inserting entity ResourceOwner(id=13, name=WIC, website=Wic.com)
+[DEBUG] 2021-04-29 10:03:03.631 [main] GenericDao - inserting entity ResourceOwner(id=14, name=WIC, website=Wic.com)
+[DEBUG] 2021-04-29 10:04:06.252 [main] GenericDao - inserting entity ResourceOwner(id=15, name=WIC, website=Wic.com)
+[DEBUG] 2021-04-29 10:05:03.566 [main] GenericDao - inserting entity ResourceOwner(id=16, name=WIC, website=Wic.com)
+[DEBUG] 2021-04-29 10:07:39.442 [main] GenericDao - inserting entity ResourceOwner(id=17, name=WIC, website=Wic.com)
+[DEBUG] 2021-04-29 10:10:40.285 [main] GenericDao - inserting entity ResourceOwner(id=18, name=WIC, website=Wic.com)
+[DEBUG] 2021-04-29 10:11:35.461 [main] GenericDao - inserting entity ResourceOwner(id=19, name=WIC, website=Wic.com)
+[DEBUG] 2021-04-29 10:14:16.038 [main] GenericDao - inserting entity ResourceOwner(id=20, name=WIC, website=Wic.com)
