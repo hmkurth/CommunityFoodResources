@@ -34,7 +34,7 @@ public class ResourceOwner {
     public ResourceOwner(String name,Contact contact, String website) {
     }
 
-    public ResourceOwner(String name, String s) {
+    public ResourceOwner(String name, String website) {
     }
 
     /**

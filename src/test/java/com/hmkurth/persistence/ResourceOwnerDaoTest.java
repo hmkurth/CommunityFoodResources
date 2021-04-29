@@ -110,16 +110,15 @@ class ResourceOwnerDaoTest {
     /**
      * Verifies a ResourceOwner is returned correctly based on id
      * compare different fields
-
+     */
     @Test
     void getByIdSuccess() {
         ResourceOwner retrievedResourceOwner = (ResourceOwner) resourceOwnerDao.getById(4);
         assertEquals("Bethel Lutheran Church", retrievedResourceOwner.getName());
-        assertEquals(6, retrievedResourceOwner.getContacts(0).get());
-        assertEquals("www.christalmighty!.com", retrievedResourceOwner.getWebsite());
+
         assertNotNull(retrievedResourceOwner);
     }
-     */
+
     /**
      * Verify successful insert of a ResourceOwner
      */
@@ -140,12 +139,12 @@ class ResourceOwnerDaoTest {
      */
     @Test
     void insertWithContactSuccess() {
+        //need to access both objects, bidirectionality
         GenericDao cdao=new GenericDao<>(Contact.class);
         Contact contactToAdd = new Contact("Bill", "Larson", "bill@pantries.com", "6085134568");
-
-        ResourceOwner newResourceOwner = new ResourceOwner("WIC", contactToAdd, "wic@gov" );
-
-        //need to access both objects, bidirectionality
+        String name = "WIC";
+        String website = "Wic.com";
+        ResourceOwner newResourceOwner = new ResourceOwner("WIC",   "Wic.com" );
 
         int id = resourceOwnerDao.insert(newResourceOwner);
         newResourceOwner.addContact(contactToAdd);

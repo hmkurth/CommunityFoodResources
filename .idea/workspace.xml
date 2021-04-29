@@ -9,22 +9,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="fixed mapped by error, added new column on contacts to reference the resource owners id">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210428 1755.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210428 1756.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210428 1758.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="inserted null values for contact ids in sql inserts to avoid fk problems, type dao now working">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210428 1952.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210428 1955.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210428 1956.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/typesOfResources.jsp.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210428 1345.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210428 1352.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210428 1728.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/MapLocation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/TypeDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/TypeDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210428 1756.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210428 1758.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210428 1839.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/ResourceOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/ResourceOwner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/resourceLanding.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/resourceLanding.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +37,7 @@
         <option value="Interface" />
         <option value="Jsp File" />
         <option value="Class" />
+        <option value="jsf" />
       </list>
     </option>
   </component>
@@ -143,7 +142,7 @@
       <recent name="com.hmkurth.persistence" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TypeDaoTest">
+  <component name="RunManager" selected="TomEE Server.Tomcat">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -153,6 +152,53 @@
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResourceOwnerDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CommunityFoodResources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmkurth.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ResourceOwnerDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResourceOwnerDaoTest.getByIdSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CommunityFoodResources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmkurth.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ResourceOwnerDaoTest" />
+      <option name="METHOD_NAME" value="getByIdSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResourceOwnerDaoTest.insertWithContactSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CommunityFoodResources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmkurth.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ResourceOwnerDaoTest" />
+      <option name="METHOD_NAME" value="insertWithContactSuccess" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -184,52 +230,6 @@
       <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.TypeDaoTest" />
       <option name="METHOD_NAME" value="getAllTypesSuccess" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CommunityFoodResources" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hmkurth.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.UserDaoTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDaoTest.getAllUsersSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CommunityFoodResources" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hmkurth.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.UserDaoTest" />
-      <option name="METHOD_NAME" value="getAllUsersSuccess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserRolesDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CommunityFoodResources" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hmkurth.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.UserRolesDaoTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -324,19 +324,19 @@
     </configuration>
     <list>
       <item itemvalue="TomEE Server.Tomcat" />
-      <item itemvalue="JUnit.UserRolesDaoTest" />
       <item itemvalue="JUnit.TypeDaoTest" />
       <item itemvalue="JUnit.TypeDaoTest.getAllTypesSuccess" />
-      <item itemvalue="JUnit.UserDaoTest" />
-      <item itemvalue="JUnit.UserDaoTest.getAllUsersSuccess" />
+      <item itemvalue="JUnit.ResourceOwnerDaoTest" />
+      <item itemvalue="JUnit.ResourceOwnerDaoTest.getByIdSuccess" />
+      <item itemvalue="JUnit.ResourceOwnerDaoTest.insertWithContactSuccess" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ResourceOwnerDaoTest.insertWithContactSuccess" />
+        <item itemvalue="JUnit.ResourceOwnerDaoTest" />
+        <item itemvalue="JUnit.ResourceOwnerDaoTest.getByIdSuccess" />
         <item itemvalue="JUnit.TypeDaoTest" />
         <item itemvalue="JUnit.TypeDaoTest.getAllTypesSuccess" />
-        <item itemvalue="JUnit.UserDaoTest.getAllUsersSuccess" />
-        <item itemvalue="JUnit.UserDaoTest" />
-        <item itemvalue="JUnit.UserRolesDaoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -404,14 +404,7 @@
       <workItem from="1618259698952" duration="11509000" />
       <workItem from="1618618302661" duration="32672000" />
       <workItem from="1619622016619" duration="9714000" />
-      <workItem from="1619637108703" duration="5398000" />
-    </task>
-    <task id="LOCAL-00034" summary="working on database configuration">
-      <created>1614133624442</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1614133624442</updated>
+      <workItem from="1619637108703" duration="9856000" />
     </task>
     <task id="LOCAL-00035" summary="editing database configuration">
       <created>1614137236101</created>
@@ -749,7 +742,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619649065263</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="inserted null values for contact ids in sql inserts to avoid fk problems, type dao now working">
+      <created>1619653330819</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1619653330819</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -772,7 +772,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="updating journal and timelog" />
     <MESSAGE value="foodresource dao tests" />
     <MESSAGE value="working on daos, somewhere my getSession method stopped working" />
     <MESSAGE value="for my reference, when i tried adding the removeChildren method, for some reason it made all the getSession() in the generic dao red....wth???" />
@@ -797,7 +796,8 @@
     <MESSAGE value="reconfiguring login to add a loginAction servlet and a button that points to it, but am still getting timeout error" />
     <MESSAGE value="got login working, but it's not pretty..." />
     <MESSAGE value="fixed mapped by error, added new column on contacts to reference the resource owners id" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed mapped by error, added new column on contacts to reference the resource owners id" />
+    <MESSAGE value="inserted null values for contact ids in sql inserts to avoid fk problems, type dao now working" />
+    <option name="LAST_COMMIT_MESSAGE" value="inserted null values for contact ids in sql inserts to avoid fk problems, type dao now working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -849,6 +849,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java</url>
+          <line>140</line>
+          <properties class="com.hmkurth.persistence.ResourceOwnerDaoTest" method="insertWithContactSuccess">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java</url>
@@ -947,12 +955,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java</url>
-          <line>132</line>
+          <line>131</line>
           <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java</url>
-          <line>134</line>
+          <line>133</line>
           <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -965,6 +973,21 @@
           <line>41</line>
           <option name="timeStamp" value="64" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java</url>
+          <line>150</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java</url>
+          <line>153</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.sql.SQLSyntaxErrorException" package="java.sql" />
           <option name="timeStamp" value="11" />
@@ -972,6 +995,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.StackOverflowError" package="java.lang" />
           <option name="timeStamp" value="15" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.sql.SQLIntegrityConstraintViolationException" package="java.sql" />
+          <option name="timeStamp" value="68" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

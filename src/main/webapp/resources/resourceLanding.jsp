@@ -1,5 +1,5 @@
 
-<c:import url="/utilPages/head.jsp" />
+<c:import url="/head.jsp" />
 <%@include file="/taglib.jsp"%>
 <title>Home</title>
 
