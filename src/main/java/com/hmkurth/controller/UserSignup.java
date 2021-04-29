@@ -30,11 +30,12 @@ public class UserSignup extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         User user = new User();
-        user.setUserName(req.getParameter("user_name"));
-        user.setEmail(req.getParameter("email"));
         user.setFirstName(req.getParameter("first_name"));
         user.setLastName(req.getParameter("last_name"));
+        user.setUserName(req.getParameter("user_name"));
+        logger.debug("Adding Username: " + user.getUserName());
         user.setPassword(req.getParameter("password"));
+        user.setEmail(req.getParameter("email"));
         logger.debug("Adding User: " + user);
         UserRoles role = new UserRoles();
         role.setUser(user);

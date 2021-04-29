@@ -4,18 +4,13 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hmkurth.ApiLocation.Result;
 import com.hmkurth.entity.Location;
-import com.hmkurth.entity.MapLocation;
 import com.hmkurth.utilities.PropertiesLoader;
 import lombok.extern.log4j.Log4j2;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
-import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.Response;
-import java.lang.annotation.Target;
 import java.util.Properties;
 
 @Log4j2

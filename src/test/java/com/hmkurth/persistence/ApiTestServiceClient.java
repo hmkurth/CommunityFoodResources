@@ -3,7 +3,6 @@ package com.hmkurth.persistence;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hmkurth.ApiLocation.Result;
 import com.hmkurth.entity.Location;
-import com.hmkurth.entity.MapLocation;
 import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.Test;
 import java.text.DecimalFormat;
