@@ -43,28 +43,7 @@ class UserDaoTest {
 
 
         genericDao = new GenericDao(User.class);
-        /*
-        databaseUtility = new DatabaseUtility();
-        databaseUtility.runSQL("cleandb.sql");
-        databaseUtility.runSQL("createTestData.sql");
 
-        dao = new GenericDao(TrailReport.class);
-        userDao = new GenericDao(User.class);
-        trailDao = new GenericDao(Trail.class);
-
-        Trail trail = (Trail)trailDao.getAll().get(0);
-        Set<TrailReport> reports = trail.getReports();
-
-
-        trailReport = new TrailReport();
-        trailReport.setComments("test comments");
-        trailReport.setTrail(trail);
-
-        trailReport.setUser(((User)userDao.getAll().get(0)));
-
-        int id = dao.insert(trailReport);
-        trailReport = (TrailReport)dao.getById(id);
-*/
     }
 
     /**

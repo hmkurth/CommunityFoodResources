@@ -35,22 +35,22 @@ INSERT INTO location (id, name_description, streetaddr_or_intersection, city, st
 
 INSERT INTO food_resources (id, resource_name,  description,location_id, contact_id, documentation_needed, delivery_offered )
 VALUES
-(1,'free pantry on johnson ', 'free pantry','1', null, 'social security number and id', 0);
+(1,'free pantry on johnson ', 'free pantry','1', null, 'social security number and id', false);
 INSERT INTO food_resources (id, resource_name,  description,location_id, contact_id, documentation_needed, delivery_offered )
 VALUES
-(2,'community meal ', 'saturday meal','2', null, 'social security number and id', '1');
+(2,'community meal ', 'saturday meal','2', null, 'social security number and id', true);
 INSERT INTO food_resources (id, resource_name,  description,location_id, contact_id, documentation_needed, delivery_offered )
 VALUES
-(3,'free pantry on Gorham ', 'free pantry','2', null, 'ssn', '1');
+(3,'free pantry on Gorham ', 'free pantry','2', null, 'ssn', true);
 INSERT INTO food_resources (id, resource_name,  description,location_id, contact_id, documentation_needed, delivery_offered )
 VALUES
-(4,'SNAP Program', 'gov program','1', null, 'social security number and id', '0');
+(4,'SNAP Program', 'gov program','1', null, 'social security number and id', false);
 INSERT INTO food_resources (id, resource_name,  description,location_id, contact_id, documentation_needed, delivery_offered )
 VALUES
-(5,'Christ Lutheran Church Pantry', 'food pantry','6', null, 'social security number and id', '0');
+(5,'Christ Lutheran Church Pantry', 'food pantry','6', null, 'social security number and id', false);
 INSERT INTO food_resources (id, resource_name,  description, contact_id, documentation_needed, delivery_offered )
 VALUES
-(6,'Dane County Neighbors Helping neighbors ', 'facebook page', null, 'n/a', '0');
+(6,'Dane County Neighbors Helping neighbors ', 'facebook page', null, 'n/a', false);
 
 
 INSERT INTO resource_type VALUES (1, 'food pantry');

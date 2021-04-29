@@ -25,6 +25,18 @@ public class FoodResource {
     @NonNull
     @Column(name = "resource_name")
     private String name;
+
+    public FoodResource(int id, @NonNull String name, @NonNull Type type_id, ResourceOwner owner, @NonNull String description, Location location,String documentation, boolean deliveryOffered) {
+        this.id = id;
+        this.name = name;
+        this.type_id = type_id;
+        this.owner = owner;
+        this.description = description;
+        this.location = location;
+        this.documentation = documentation;
+        this.deliveryOffered = deliveryOffered;
+    }
+
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
     @NonNull
@@ -67,17 +79,18 @@ public class FoodResource {
     private String dietaryConsiderations;
 
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof FoodResource)) return false;
         FoodResource that = (FoodResource) o;
-        return getId() == that.getId() && isDeliveryOffered() == that.isDeliveryOffered() && getName().equals(that.getName()) && Objects.equals(getType_id(), that.getType_id()) && getDescription().equals(that.getDescription()) && Objects.equals(getComments(), that.getComments()) && getServiceArea().equals(that.getServiceArea()) && Objects.equals(getWebsite(), that.getWebsite()) && getDocumentation().equals(that.getDocumentation()) && getDaysOfWeek().equals(that.getDaysOfWeek()) && Objects.equals(getDeliveryDescription(), that.getDeliveryDescription()) && getDietaryConsiderations().equals(that.getDietaryConsiderations());
+        return getId() == that.getId() && isDeliveryOffered() == that.isDeliveryOffered() && getName().equals(that.getName()) && getDescription().equals(that.getDescription()) && Objects.equals(getComments(), that.getComments()) && Objects.equals(getServiceArea(), that.getServiceArea()) && Objects.equals(getWebsite(), that.getWebsite()) && Objects.equals(getDocumentation(), that.getDocumentation()) && Objects.equals(getDaysOfWeek(), that.getDaysOfWeek()) && Objects.equals(getDeliveryDescription(), that.getDeliveryDescription()) && Objects.equals(getDietaryConsiderations(), that.getDietaryConsiderations());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getName(), getType_id(), getDescription(), getComments(), getServiceArea(), getWebsite(), getDocumentation(), getDaysOfWeek(), isDeliveryOffered(), getDeliveryDescription(), getDietaryConsiderations());
+        return Objects.hash(getId(), getName(), getDescription(), getComments(), getServiceArea(), getWebsite(), getDocumentation(), getDaysOfWeek(), isDeliveryOffered(), getDeliveryDescription(), getDietaryConsiderations());
     }
 }
 
