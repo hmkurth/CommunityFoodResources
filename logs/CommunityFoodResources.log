@@ -616,3 +616,18 @@
 [DEBUG] 2021-04-29 10:48:55.302 [main] GenericDao - The list of Entities by entity name [FoodResource(id=5, name=Christ Lutheran Church Pantry, description=food pantry, comments=null, serviceArea=null, website=null, documentation=social security number and id, daysOfWeek=null, deliveryOffered=false, deliveryDescription=null, dietaryConsiderations=null)]
 [DEBUG] 2021-04-29 10:49:32.209 [main] GenericDao - The list of Entities by propertyName description
 [DEBUG] 2021-04-29 11:10:51.490 [main] GenericDao - inserting entity FoodResource(id=7, name=MUNCH , description=kids food truck, comments=null, serviceArea=null, website=null, documentation=id, daysOfWeek=null, deliveryOffered=true, deliveryDescription=null, dietaryConsiderations=null)
+[DEBUG] 2021-04-29 15:25:30.717 [http-nio-8080-exec-4] UserSignup - Adding Username: Heathermariek@hotmail.com
+[DEBUG] 2021-04-29 15:26:54.602 [http-nio-8080-exec-4] UserSignup - Adding Username: Heathermariek@hotmail.com
+[DEBUG] 2021-04-29 15:29:36.298 [http-nio-8080-exec-7] UserSignup - Adding Username: Heathermariek@hotmail.com
+[DEBUG] 2021-04-29 15:29:36.330 [http-nio-8080-exec-7] UserSignup - Adding User: User{id=0, firstName='Heather', lastName='Kurth', userName='Heathermariek@hotmail.com', password='xdvxdv', email='Heathermariek@hotmail.com', roles=[]}
+[DEBUG] 2021-04-29 15:34:47.523 [http-nio-8080-exec-7] UserSignup - Adding Username: Heathermariek
+[DEBUG] 2021-04-29 15:34:47.556 [http-nio-8080-exec-7] UserSignup - Adding User: User{id=0, firstName='Heather', lastName='Kurth', userName='Heathermariek', password='fdfgdfgd', email='hmkurth@madisoncollege.edu', roles=[]}
+[DEBUG] 2021-04-29 18:42:53.268 [http-nio-8080-exec-9] UserSignup - Adding Username: Heathermariek
+[DEBUG] 2021-04-29 18:42:53.332 [http-nio-8080-exec-9] UserSignup - Adding User: User{id=0, firstName='Heather', lastName='Kurth', userName='Heathermariek', password='fdfgdfgd', email='hmkurth@madisoncollege.edu', roles=[]}
+[DEBUG] 2021-04-29 20:13:53.394 [http-nio-8080-exec-5] UserSignup - Adding Username: Heathermariek
+[DEBUG] 2021-04-29 20:13:53.395 [http-nio-8080-exec-5] UserSignup - Adding User: User{id=0, firstName='Heather', lastName='Kurth', userName='Heathermariek', password='fghfghfg', email='heathermariek7@gmail.com', roles=[]}
+[DEBUG] 2021-04-29 20:15:51.598 [http-nio-8080-exec-3] UserSignup - Adding Username: Heathermariek
+[DEBUG] 2021-04-29 20:15:51.598 [http-nio-8080-exec-3] UserSignup - Adding User: User{id=0, firstName='Heather', lastName='Kurth', userName='Heathermariek', password='fghfghfg', email='heathermariek7@gmail.com', roles=[]}
+[DEBUG] 2021-04-29 20:23:33.101 [http-nio-8080-exec-8] UserSignup - Adding Username: Heathermariek@hotmail.com
+[DEBUG] 2021-04-29 20:23:33.134 [http-nio-8080-exec-8] UserSignup - Adding User: User{id=0, firstName='Heather', lastName='Kurth', userName='Heathermariek@hotmail.com', password='fgdfgd', email='hmkurth@madisoncollege.edu', roles=[]}
+[DEBUG] 2021-04-29 20:23:40.464 [http-nio-8080-exec-8] GenericDao - inserting entity User{id=346, firstName='Heather', lastName='Kurth', userName='Heathermariek@hotmail.com', password='fgdfgd', email='hmkurth@madisoncollege.edu', roles=[UserRoles{id=181, userName='Heathermariek@hotmail.com', roleName='user'}]}

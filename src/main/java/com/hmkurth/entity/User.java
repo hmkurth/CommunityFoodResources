@@ -1,7 +1,9 @@
 package com.hmkurth.entity;
 
 
-import lombok.*;
+import lombok.EqualsAndHashCode;
+import lombok.NonNull;
+import lombok.ToString;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -14,10 +16,7 @@ import java.util.Set;
  *
  * @author hmkurth
  */
-@Data
 
-@NoArgsConstructor
-@RequiredArgsConstructor
 @Entity(name = "User")
 @Table(name = "users")//case sensitive
 public class User {
@@ -46,6 +45,17 @@ public class User {
     //@JoinColumn(name = "id")//changing this...NOPE
 
     private Set<UserRoles> roles = new HashSet<>();
+
+    public User() {
+    }
+
+    public User(@NonNull String firstName, @NonNull String lastName, @NonNull String userName, @NonNull String password, @NonNull String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.userName = userName;
+        this.password = password;
+        this.email = email;
+    }
 
 
     /**
@@ -93,5 +103,61 @@ public class User {
     @Override
     public int hashCode() {
         return Objects.hash(id, firstName, lastName, userName, password, email);
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public @NonNull String getFirstName() {
+        return this.firstName;
+    }
+
+    public @NonNull String getLastName() {
+        return this.lastName;
+    }
+
+    public @NonNull String getUserName() {
+        return this.userName;
+    }
+
+    public @NonNull String getPassword() {
+        return this.password;
+    }
+
+    public @NonNull String getEmail() {
+        return this.email;
+    }
+
+    public Set<UserRoles> getRoles() {
+        return this.roles;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setFirstName(@NonNull String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(@NonNull String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setUserName(@NonNull String userName) {
+        this.userName = userName;
+    }
+
+    public void setPassword(@NonNull String password) {
+        this.password = password;
+    }
+
+    public void setEmail(@NonNull String email) {
+        this.email = email;
+    }
+
+    public void setRoles(Set<UserRoles> roles) {
+        this.roles = roles;
     }
 }

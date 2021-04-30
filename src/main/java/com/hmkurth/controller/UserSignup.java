@@ -39,6 +39,7 @@ public class UserSignup extends HttpServlet {
         logger.debug("Adding User: " + user);
         UserRoles role = new UserRoles();
         role.setUser(user);
+        role.setUserName(user.getUserName());
         role.setRoleName("user");
         user.addRole(role);
 
@@ -46,7 +47,7 @@ public class UserSignup extends HttpServlet {
 
             //set the user in a ?session variable
 
-        if (req.getParameter("first_name").isEmpty() ||(req.getParameter("last_name").isEmpty() || (req.getParameter("user_name").isEmpty() ||
+        if (req.getParameter("first_name").isEmpty() || (req.getParameter("last_name").isEmpty() || (req.getParameter("user_name").isEmpty() ||
                 (req.getParameter("password").isEmpty() || (req.getParameter("email").isEmpty() )))))
         {
             req.setAttribute("errorMessage", "Please try again, all fields are required to sign up");
