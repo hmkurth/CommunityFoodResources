@@ -3,7 +3,6 @@
 
 <div class="menu-block pull-right no-pad">
 <li class="dropdown">
-    <a href="loginAction" class="dropdown-toggle btn-login" data-toggle="dropdown"><em class="fa fa-lock" aria-hidden="true"></em>  Sign In</a>
     <ul id="login-dp" class="dropdown-menu">
         <li>
             <div class="row">

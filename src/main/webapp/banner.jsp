@@ -3,7 +3,7 @@
 <!--Banner-->
 <div class="banner home-1"  data-type="background" data-speed="4">
     <div class="banner-interior">
-        <div class="container tall">
+        <div class="container short">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 text-center">
                     <h1>Welcome to the Community Food Resource Locator</h1>

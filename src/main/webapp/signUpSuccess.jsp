@@ -19,7 +19,7 @@
                    Please contact me with any problems you have accessing these resources.<a href="mailto:hmkurth@madisoncollege.com">Contact Administrator</a><br/>
                     You can now login to begin exploring</p>
 
-                <a href="index.jsp" class="btn btn-primary btn-lg">Back Home To Login </a>
+                <a href="login.jsp" class="btn btn-primary btn-lg">Login </a>
             </div>
         </div>
     </div>

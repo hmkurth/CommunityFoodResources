@@ -638,3 +638,7 @@
 [DEBUG] 2021-04-29 20:29:12.411 [http-nio-8080-exec-4] GenericDao - inserting entity User{id=347, firstName='Bob', lastName='kurth', userName='bkurth', password='bkurth', email='bkurth@bob', roles=[UserRoles{id=182, userName='bkurth', roleName='user'}]}
 [DEBUG] 2021-04-29 20:29:12.548 [http-nio-8080-exec-7] GenericDao - inserting entity User{id=348, firstName='Bob', lastName='kurth', userName='bkurth', password='bkurth', email='bkurth@bob', roles=[UserRoles{id=183, userName='bkurth', roleName='user'}]}
 [INFO ] 2021-04-29 20:29:54.714 [http-nio-8080-exec-6] LoginAction - The logged in user; bkurthhas a role of  'user' : true
+[INFO ] 2021-04-29 21:47:51.001 [http-nio-8080-exec-6] LoginAction - The logged in user; bkurthhas a role of  'user' : true
+[DEBUG] 2021-04-29 21:48:44.610 [http-nio-8080-exec-4] UserSignup - Adding Username: ckurth
+[DEBUG] 2021-04-29 21:48:44.623 [http-nio-8080-exec-4] UserSignup - Adding User: User{id=0, firstName='chuck', lastName='kurth', userName='ckurth', password='ckurth', email='sdfsd@dfg.com', roles=[]}
+[DEBUG] 2021-04-29 21:48:52.519 [http-nio-8080-exec-4] GenericDao - inserting entity User{id=349, firstName='chuck', lastName='kurth', userName='ckurth', password='ckurth', email='sdfsd@dfg.com', roles=[UserRoles{id=184, userName='ckurth', roleName='user'}]}

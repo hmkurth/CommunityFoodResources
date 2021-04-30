@@ -1,5 +1,6 @@
-<%@include file="taglib.jsp"%>
-<c:set var="title" value="Search Results" />
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+
 
 
 <div class="banner">
@@ -25,15 +26,15 @@
 
         <div class="row text-center pad-top pad-bottom line-bottom">
             <div class="col-md-12">
-                <h1>Search Our Site</h1>
-                <form class="form-inline pad-top-sm" action="/searchUser"method="get">
+                <h1>Search Our Site  ${resourcesAll}, ${resources}</h1>
+                <form class="form-inline pad-top-sm" action="searchUser"method="get">
                     <div class="form-group">
                         <label for="type">Search For:</label>
-                        <input type="text" id="type" class="form-control input-lg" value="Food Resource search query" />
+                        <input type="text"name="type" id="type" class="form-control input-lg" value="Food Resource search query" />
                     </div>
                     <div class="form-group">
                         <label for="location"> &nbsp; Search In:</label>
-                        <select class="form-control input-lg" id="location">
+                        <select class="form-control input-lg" id="location" name="location">
                             <option>All</option>
                             <option>Food Pantries</option>
                             <option>Free Little Pantries</option>
@@ -41,7 +42,7 @@
                             <option>Community Aid and Support </option>
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-lg">Search Site</button>
+                    <button type="submit"name=submit"  class="btn btn-primary btn-lg">Search Site</button>
                 </form>
             </div>
         </div>
@@ -67,7 +68,7 @@
                 </tr>
                 </thead>
                 <tbody>
-        <c:forEach var="resource" items="${searchResult}">
+        <c:forEach var="resource" items="${resourcesAll}">
                 <tr>
 
                     <td>${resource.type}</td>
