@@ -3,14 +3,14 @@
 <title>Sign Up Success</title>
 
 <c:import url="/header.jsp" />
-<c:import url="/banner.jsp" />
+
 
 <div class="content" id="signupSuccess">
     <div class="container">
 
         <div class="row pad-bottom">
             <div class="col-md-7">
-                <img src="${pageContext.request.contextPath}webapp/img/assets/img/demo/capitolFlowersHeart.jpg" alt="Madison capitol building with heart flower bed" class="img-responsive img-rounded" />
+                <img src="${pageContext.request.contextPath}/assets/img/demo/capitolFlowersHeart.jpg" alt="Madison capitol building with heart flower bed" class="img-responsive img-rounded" />
             </div>
 
             <div class="col-md-4 col-md-offset-1">

@@ -63,7 +63,7 @@ public class UserSignup extends HttpServlet {
 
             dao.insert(user);
 
-            //TOdo set the user in the session??
+            //TOdo set the user in the session?? check if this is duplicating entries
             RequestDispatcher dispatcher = req.getRequestDispatcher("signUpSuccess.jsp");
             dispatcher.forward(req, resp);
         }

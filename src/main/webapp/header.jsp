@@ -31,13 +31,13 @@
 
 
 					<!-- Secondary navigation and login dropdown -->
-
+					<div class="menu-block pull-right no-pad">
 
 							<!-- Login dropdown Insert login.jsp  but need a button that points to it for auth  -->
-					<div class="menu-block pull-right no-pad">
-					<a href="loginAction"><button type="button" class="btn btn-default btn-lg dark">Log In </button></a>
+						<a href="loginAction" class=" btn-login" ><em class="fa fa-lock" aria-hidden="true"></em>  Sign In</a>
+					</div>
+				</div>
 
-<div>
 			<div class="container">
 
 				<!-- Mobile hamburger style menu TODO check this-->
@@ -59,7 +59,7 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Food Resources<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="${pageContext.request.contextPath}/resources/foodPantries.jsp">Food Pantries</a></li>
+								<li><a href="${pageContext.request.contextPath}/foodPantries.jsp">Food Pantries</a></li>
 								<li><a href="${pageContext.request.contextPath}/resources/freeLittlePantries.jsp">Free Little Pantries</a></li>
 								<li><a href="${pageContext.request.contextPath}/resources/communityMeals.jsp">Community Meals</a></li>
 								<li><a href="${pageContext.request.contextPath}/resources/governmentResources.jsp">Government Resources</a></li>

@@ -9,16 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="working on user signup, null values">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210429 1529.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210429 1534.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="signup null error gone">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210429 2023.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210429 1049.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210429 1105.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210429 1529.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/UserSignup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/UserSignup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/userSignup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/userSignup.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/foodPantries.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/resourceLanding.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resourceLanding.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/typesOfResources.jsp.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/signUpSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/signUpSuccess.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -400,14 +403,7 @@
       <workItem from="1618618302661" duration="32672000" />
       <workItem from="1619622016619" duration="9714000" />
       <workItem from="1619637108703" duration="10136000" />
-      <workItem from="1619706958099" duration="14240000" />
-    </task>
-    <task id="LOCAL-00039" summary="updating generic dao, switching userdaoTest to use generic dao">
-      <created>1614710807479</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1614710807479</updated>
+      <workItem from="1619706958099" duration="18184000" />
     </task>
     <task id="LOCAL-00040" summary="updating files for checkpoint 2">
       <created>1614728569305</created>
@@ -745,7 +741,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619716473461</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="signup null error gone">
+      <created>1619745931862</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1619745931862</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -768,7 +771,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fixed delete testing in userdao" />
     <MESSAGE value="editing header" />
     <MESSAGE value="got header and main somewhat how I want it, still need to have an icon" />
     <MESSAGE value="working on the location api and trying to get the results i want" />
@@ -793,7 +795,8 @@
     <MESSAGE value="insert with contact on resource owner dao now working" />
     <MESSAGE value="food resource tests working !!!!!!!!!!!!!!!!!!!!!" />
     <MESSAGE value="working on user signup, null values" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on user signup, null values" />
+    <MESSAGE value="signup null error gone" />
+    <option name="LAST_COMMIT_MESSAGE" value="signup null error gone" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
