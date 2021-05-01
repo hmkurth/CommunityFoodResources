@@ -42,14 +42,15 @@
 
 				<!-- Mobile hamburger style menu TODO check this-->
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top_main_navigation" aria-expanded="false">
+					<!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top_main_navigation" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar">Not sure where this is</span>
 						<span class="icon-bar">what about line 2</span>
 						<span class="icon-bar">line 3</span>
 					</button>
+					-->
 					<a class="navbar-brand" href="index.jsp">
-						<img class="img-circle" src="${pageContext.request.contextPath}/assets/img/mfrLogoRound.png" alt="Madison Community Food Resources" />
+						<img class="img-rounded" src="${pageContext.request.contextPath}/assets/img/mfrLogoRound.png" alt="Madison Community Food Resources" />
 					</a>
 				</div>
 
@@ -59,11 +60,11 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Food Resources<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="${pageContext.request.contextPath}/foodPantries.jsp">Food Pantries</a></li>
-								<li><a href="${pageContext.request.contextPath}/resources/freeLittlePantries.jsp">Free Little Pantries</a></li>
-								<li><a href="${pageContext.request.contextPath}/resources/communityMeals.jsp">Community Meals</a></li>
-								<li><a href="${pageContext.request.contextPath}/resources/governmentResources.jsp">Government Resources</a></li>
-								<li><a href="${pageContext.request.contextPath}/resources/communityAid.jsp">Community Aid and Support Groups</a></li>
+								<li><a href="${pageContext.request.contextPath}/forwardPantries">Food Pantries</a></li>
+								<li><a href="${pageContext.request.contextPath}/freeLittlePantries.jsp">Free Little Pantries</a></li>
+								<li><a href="${pageContext.request.contextPath}/communityMeals.jsp">Community Meals</a></li>
+								<li><a href="${pageContext.request.contextPath}/governmentResources.jsp">Government Resources</a></li>
+								<li><a href="${pageContext.request.contextPath}/communityAid.jsp">Community Aid and Support Groups</a></li>
 							</ul>
 						</li>
 
@@ -72,5 +73,6 @@
 					</ul>
 
 				</div>
+			</div>
 			</div>
 		</nav>

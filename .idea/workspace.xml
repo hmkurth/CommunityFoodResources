@@ -9,23 +9,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="login button position fixed">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210429 2258.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210429 2329.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210429 2335.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="Now I can’t get data from the db in the foodPantryjsp…  I feel like I’ve tried everything, it’s just not picking up the search results set in the request param…  I tried putting it in a session variable…am I directing traffic wrong?? It seemed to work in the past exercises, I’m looking at all my past projects and last semesters stuff to find clues…  But it should work like the user display exercise….?????">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210501 1545.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210501 1548.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210501 1551.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ForwardPantries.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210429 1534.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210429 2016.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210429 2023.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210429 2258.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210429 2329.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210429 2335.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/banners.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/banners.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/banner.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/banner.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/Madison Food Resources Logo (5).png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/MFR5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/results.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/results.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/searchResults.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/searchResults.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/signUpSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/signUpSuccess.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +40,8 @@
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Jsp File" />
-        <option value="Class" />
         <option value="jsf" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -146,13 +147,15 @@
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.Tomcat">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -325,12 +328,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TomEE Server.Tomcat" />
       <item itemvalue="JUnit.FoodResourceTest" />
       <item itemvalue="JUnit.FoodResourceTest.getFoodResourcesByNameLikeSuccess" />
       <item itemvalue="JUnit.FoodResourceTest.saveOrUpdateSuccess" />
       <item itemvalue="JUnit.FoodResourceTest.getByPropertyLikeSuccess" />
       <item itemvalue="JUnit.FoodResourceTest.insertSuccess" />
+      <item itemvalue="TomEE Server.Tomcat" />
     </list>
     <recent_temporary>
       <list>
@@ -407,14 +410,8 @@
       <workItem from="1618618302661" duration="32672000" />
       <workItem from="1619622016619" duration="9714000" />
       <workItem from="1619637108703" duration="10136000" />
-      <workItem from="1619706958099" duration="27084000" />
-    </task>
-    <task id="LOCAL-00041" summary="cleaning up log, stacktraces">
-      <created>1614729107858</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1614729107858</updated>
+      <workItem from="1619706958099" duration="27437000" />
+      <workItem from="1619762580730" duration="11125000" />
     </task>
     <task id="LOCAL-00042" summary="attempting authentication, have updated all settings, xmls...">
       <created>1615165461899</created>
@@ -752,7 +749,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619749776013</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="Now I can’t get data from the db in the foodPantryjsp…  I feel like I’ve tried everything, it’s just not picking up the search results set in the request param…  I tried putting it in a session variable…am I directing traffic wrong?? It seemed to work in the past exercises, I’m looking at all my past projects and last semesters stuff to find clues…  But it should work like the user display exercise….?????">
+      <created>1619759187398</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1619759187398</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -775,7 +779,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="got header and main somewhat how I want it, still need to have an icon" />
     <MESSAGE value="working on the location api and trying to get the results i want" />
     <MESSAGE value="got the location api test working!" />
     <MESSAGE value="working on the locationapidao and testing" />
@@ -800,7 +803,8 @@
     <MESSAGE value="working on user signup, null values" />
     <MESSAGE value="signup null error gone" />
     <MESSAGE value="login button position fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="login button position fixed" />
+    <MESSAGE value="Now I can’t get data from the db in the foodPantryjsp…  I feel like I’ve tried everything, it’s just not picking up the search results set in the request param…  I tried putting it in a session variable…am I directing traffic wrong?? It seemed to work in the past exercises, I’m looking at all my past projects and last semesters stuff to find clues…  But it should work like the user display exercise….?????" />
+    <option name="LAST_COMMIT_MESSAGE" value="Now I can’t get data from the db in the foodPantryjsp…  I feel like I’ve tried everything, it’s just not picking up the search results set in the request param…  I tried putting it in a session variable…am I directing traffic wrong?? It seemed to work in the past exercises, I’m looking at all my past projects and last semesters stuff to find clues…  But it should work like the user display exercise….?????" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -901,12 +905,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java</url>
-          <line>51</line>
+          <line>50</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" log-message="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java</url>
-          <line>49</line>
+          <line>48</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1041,18 +1045,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java</url>
-          <line>47</line>
+          <line>45</line>
           <option name="timeStamp" value="80" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/webapp/searchResults.jsp</url>
-          <line>71</line>
+          <line>72</line>
           <option name="timeStamp" value="81" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/webapp/searchResults.jsp</url>
-          <line>76</line>
+          <line>77</line>
           <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="83" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.sql.SQLSyntaxErrorException" package="java.sql" />

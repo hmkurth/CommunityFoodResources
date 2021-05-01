@@ -29,25 +29,24 @@ import java.io.IOException;
 public class SearchUser extends HttpServlet {
     GenericDao resourceDao;
     private final Logger logger = LogManager.getLogger(this.getClass());
-
+@Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        ServletContext context = req.getServletContext();
         HttpSession session = req.getSession();
          resourceDao = new GenericDao(FoodResource.class);
-        //setting attribute for last name search
         String  searchTerm = req.getParameter("type");
         String  searchProperty = req.getParameter("location");
         session.setAttribute("resources", resourceDao.getPropertyByName(searchProperty,searchTerm));
         logger.debug("In search user servlet, " + searchTerm + " " + searchTerm);
-
+/**
         if (req.getParameter("submit").equals("search")) {
             session.setAttribute("resources", resourceDao.getPropertyByName(searchTerm, searchProperty));
         } else {
             session.setAttribute("resourcesAll", resourceDao.getAll());
-        }
+        }**/
         session.setAttribute("resourcesAll", resourceDao.getAll());
+        req.setAttribute("resourcesAll", resourceDao.getAll());
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/searchResults.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("searchResults.jsp");
         dispatcher.forward(req, resp);
     }
 }

@@ -1,3 +1,4 @@
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 
@@ -26,11 +27,11 @@
 
         <div class="row text-center pad-top pad-bottom line-bottom">
             <div class="col-md-12">
-                <h1>Search Our Site  ${resourcesAll}, ${resources}</h1>
-                <form class="form-inline pad-top-sm" action="searchUser"method="get">
+                <h1>Search Our Site </h1>
+                <form class="form-inline pad-top-sm" action="${pageContext.request.contextPath}/searchUser"method="get">
                     <div class="form-group">
                         <label for="type">Search For:</label>
-                        <input type="text"name="type" id="type" class="form-control input-lg" value="Food Resource search query" />
+                        <input type="text"name="type" id="type" class="form-control input-lg" placeholder="type" />
                     </div>
                     <div class="form-group">
                         <label for="location"> &nbsp; Search In:</label>
