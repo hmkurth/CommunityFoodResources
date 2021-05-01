@@ -4,11 +4,6 @@
 
 <c:import url="/header.jsp" />
 
-
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
-
-
         <div class="row pad-bottom">
             <div class="col-md-10 col-md-offset-1">
                 <h2>All Food Resources</h2>

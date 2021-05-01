@@ -9,24 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="Now I can’t get data from the db in the foodPantryjsp…  I feel like I’ve tried everything, it’s just not picking up the search results set in the request param…  I tried putting it in a session variable…am I directing traffic wrong?? It seemed to work in the past exercises, I’m looking at all my past projects and last semesters stuff to find clues…  But it should work like the user display exercise….?????">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210501 1545.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210501 1548.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210501 1551.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ForwardPantries.java" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="foodPANTRY is WORKING!!!!">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210501 1650.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/DeleteUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/DeleteUserAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/addResource.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/deleteUser.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210429 2258.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210429 2329.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210429 2335.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/Madison Food Resources Logo (5).png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/MFR5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210501 1548.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/searchResults.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/searchResults.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +32,9 @@
         <option value="package-info" />
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="jsf" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -345,6 +338,13 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SQLScriptSettings">
+    <option name="matrix">
+      <map>
+        <entry key="MYSQL.CreateComplete" value="CreateIfNotExists=1" />
+      </map>
+    </option>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -411,14 +411,7 @@
       <workItem from="1619622016619" duration="9714000" />
       <workItem from="1619637108703" duration="10136000" />
       <workItem from="1619706958099" duration="27437000" />
-      <workItem from="1619762580730" duration="11125000" />
-    </task>
-    <task id="LOCAL-00042" summary="attempting authentication, have updated all settings, xmls...">
-      <created>1615165461899</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1615165461899</updated>
+      <workItem from="1619762580730" duration="15309000" />
     </task>
     <task id="LOCAL-00043" summary="attempting authentication, have edited name of db in front of @localhost">
       <created>1615171350641</created>
@@ -756,7 +749,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619759187398</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="foodPANTRY is WORKING!!!!">
+      <created>1619905905218</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1619905905234</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -779,7 +779,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="working on the location api and trying to get the results i want" />
     <MESSAGE value="got the location api test working!" />
     <MESSAGE value="working on the locationapidao and testing" />
     <MESSAGE value="adding user sign up jsps and servlet" />
@@ -804,7 +803,8 @@
     <MESSAGE value="signup null error gone" />
     <MESSAGE value="login button position fixed" />
     <MESSAGE value="Now I can’t get data from the db in the foodPantryjsp…  I feel like I’ve tried everything, it’s just not picking up the search results set in the request param…  I tried putting it in a session variable…am I directing traffic wrong?? It seemed to work in the past exercises, I’m looking at all my past projects and last semesters stuff to find clues…  But it should work like the user display exercise….?????" />
-    <option name="LAST_COMMIT_MESSAGE" value="Now I can’t get data from the db in the foodPantryjsp…  I feel like I’ve tried everything, it’s just not picking up the search results set in the request param…  I tried putting it in a session variable…am I directing traffic wrong?? It seemed to work in the past exercises, I’m looking at all my past projects and last semesters stuff to find clues…  But it should work like the user display exercise….?????" />
+    <MESSAGE value="foodPANTRY is WORKING!!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="foodPANTRY is WORKING!!!!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
