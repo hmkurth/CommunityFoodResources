@@ -41,7 +41,7 @@
 
         <!--TODO form verification! auto complete attribute -->
 
-    <form action="${pageContext.request.contextPath}/deleteUserAction"  method="post" autocomplete="on">
+    <form action="${pageContext.request.contextPath}/deleteUser"  method="post" autocomplete="on">
         <div class="form-group">
             <label for="delete">Enter a User Id to Delete</label>
             <input type="text" class="form-control" id="delete" name ="delete" placeholder="id to delete"  required>

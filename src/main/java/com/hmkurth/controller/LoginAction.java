@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * this servlet will redirect to the homepage after logging in
@@ -33,6 +34,9 @@ public class LoginAction extends HttpServlet {
     //if the user is an admin, redirect to admin home page, otherwise go to index
      if(req.isUserInRole("admin")) {
           url = "/admin/adminHome.jsp";
+         GenericDao dao= new GenericDao(User.class);
+         List all = dao.getAll();
+         req.setAttribute("AllUsers", all);
         } else {
           url = "/index.jsp";
      }

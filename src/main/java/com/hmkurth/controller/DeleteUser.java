@@ -36,8 +36,25 @@ public class DeleteUser extends HttpServlet {
             RequestDispatcher dispatcher = req.getRequestDispatcher("/deleteUser.jsp");
             dispatcher.forward(req, resp);
         }
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+        GenericDao dao= new GenericDao(User.class);
+        //get user by id
+        String idToDelete = req.getParameter("delete") ;
+        int id =Integer.parseInt(idToDelete);
+        User userToDelete;
+        userToDelete = (User) dao.getById(id);
+        dao.delete(userToDelete);
+
+        //TODO confirm delete make a message/popup? Redirect to ???
+
+        RequestDispatcher dispatcher = req.getRequestDispatcher("deleteUser.jsp");
+        dispatcher.forward(req, resp);
     }
+
+
+}
 
 
 
