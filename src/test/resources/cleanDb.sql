@@ -42,21 +42,21 @@ INSERT INTO resource_type VALUES (6, 'other', null);
 INSERT INTO food_resources (id, type_id, resource_name,  description,location_id, contact_id, documentation_needed, delivery_offered )
 VALUES
 (1, 2, 'free pantry on johnson ', 'free pantry','1', null, 'social security number and id', false);
-INSERT INTO food_resources (id, resource_name,  description,location_id, contact_id, documentation_needed, delivery_offered )
+INSERT INTO food_resources (id,  type_id,  resource_name,  description,location_id, contact_id, documentation_needed, delivery_offered )
 VALUES
-(2,'community meal ', 'saturday meal','2', null, 'social security number and id', true);
-INSERT INTO food_resources (id, resource_name,  description,location_id, contact_id, documentation_needed, delivery_offered )
+(2,5, 'community meal ', 'saturday meal','2', null, 'social security number and id', true);
+INSERT INTO food_resources (id,  type_id,  resource_name,  description,location_id, contact_id, documentation_needed, delivery_offered )
 VALUES
-(3,'free pantry on Gorham ', 'free pantry','2', null, 'ssn', true);
-INSERT INTO food_resources (id, resource_name,  description,location_id, contact_id, documentation_needed, delivery_offered )
+(3, 2, 'free pantry on Gorham ', 'free pantry','2', null, 'ssn', true);
+INSERT INTO food_resources (id,  type_id, resource_name,  description,location_id, contact_id, documentation_needed, delivery_offered )
 VALUES
-(4,'SNAP Program', 'gov program','1', null, 'social security number and id', false);
+(4,6,'SNAP Program', 'gov program','1', null, 'social security number and id', false);
 INSERT INTO food_resources (id, resource_name,  description,location_id, contact_id, documentation_needed, delivery_offered )
 VALUES
 (5,'Christ Lutheran Church Pantry', 'food pantry','6', null, 'social security number and id', false);
-INSERT INTO food_resources (id, resource_name,  description, contact_id, documentation_needed, delivery_offered )
+INSERT INTO food_resources (id,  type_id, resource_name,  description, contact_id, documentation_needed, delivery_offered )
 VALUES
-(6,'Dane County Neighbors Helping neighbors ', 'facebook page', null, 'n/a', false);
+(6,4, 'Dane County Neighbors Helping neighbors ', 'facebook page', null, 'n/a', false);
 
 
 

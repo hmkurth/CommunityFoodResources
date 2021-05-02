@@ -9,18 +9,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="changed the type entity to have a set of resources.">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210502 0056.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210502 0113.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="type is now displaying">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210502 0132.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210502 0133.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210502 0158.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/adminMain.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Journal.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Journal.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210502 0006.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210502 0008.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210502 0022.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210502 0029.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210502 0056.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210502 0113.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210502 0116.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LoginAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/addResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/adminHome.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/deleteUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/deleteUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/~$ournal.docx" beforeDir="false" afterPath="$PROJECT_DIR$/~$ournal.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,11 +126,11 @@
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\test\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\admin" />
+      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\resources" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\utilPages" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\results" />
-      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\assets\img\demo" />
-      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\img" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -411,14 +419,7 @@
       <workItem from="1619622016619" duration="9714000" />
       <workItem from="1619637108703" duration="10136000" />
       <workItem from="1619706958099" duration="27437000" />
-      <workItem from="1619762580730" duration="24836000" />
-    </task>
-    <task id="LOCAL-00047" summary="added the accessible template and started parsing jsps into templates">
-      <created>1615948065122</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1615948065122</updated>
+      <workItem from="1619762580730" duration="28720000" />
     </task>
     <task id="LOCAL-00048" summary="added the accessible template and started parsing jsps into templates">
       <created>1615993920428</created>
@@ -756,7 +757,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619935124380</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="type is now displaying">
+      <created>1619936469254</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1619936469254</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -779,7 +787,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="updating timelog and uploading latest journal version" />
     <MESSAGE value="gitting untangled" />
     <MESSAGE value="working on user signup servlet" />
     <MESSAGE value="working on user search and results" />
@@ -804,7 +811,8 @@
     <MESSAGE value="Got delete working, needs some finesse, but it works." />
     <MESSAGE value="updating journal, etc" />
     <MESSAGE value="changed the type entity to have a set of resources." />
-    <option name="LAST_COMMIT_MESSAGE" value="changed the type entity to have a set of resources." />
+    <MESSAGE value="type is now displaying" />
+    <option name="LAST_COMMIT_MESSAGE" value="type is now displaying" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

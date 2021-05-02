@@ -14,7 +14,7 @@
 </form-login-config>
 </login-config>
 
-  <!-- Protect the user results pages  TODO figure out pathing/url pattern -->
+  <!-- Protect the user results pages/really doesn't do anything right now  TODO figure out pathing/url pattern -->
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>login</web-resource-name>
@@ -26,7 +26,16 @@
     </auth-constraint>
   </security-constraint>
 
-
+  <!-- Protect the admin pages -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>admin</web-resource-name>
+      <url-pattern>/admin</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>admin</role-name>
+    </auth-constraint>
+  </security-constraint>
 
   <security-role>
     <role-name>user</role-name>
@@ -35,6 +44,10 @@
   <role-name>admin</role-name>
   </security-role>
 
+  <error-page>
+    <error-code>404</error-code>
+    <location>/404PageNotFound.jsp</location>
+  </error-page>
     <!-- A Mapping for a JSP page
           <servlet>
           <servlet-name>SearchUser</servlet-name>
