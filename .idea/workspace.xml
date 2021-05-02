@@ -9,17 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="creating delete user servlets and jsps">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adminHome.jsp" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="Got delete working, needs some finesse, but it works.">
+      <change afterPath="$PROJECT_DIR$/DesignDocs/Journal.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Journal.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/~$ournal.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/Journal.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/JournalUpdated4-16.doc.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/projectPlan.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/projectPlan.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/~$ournal.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/~$urnal.md.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/~WRL3699.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/DeleteUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/DeleteUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/applicationFlow.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/applicationFlow.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -411,14 +406,7 @@
       <workItem from="1619622016619" duration="9714000" />
       <workItem from="1619637108703" duration="10136000" />
       <workItem from="1619706958099" duration="27437000" />
-      <workItem from="1619762580730" duration="18061000" />
-    </task>
-    <task id="LOCAL-00044" summary="still working on authorization,">
-      <created>1615249522102</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1615249522102</updated>
+      <workItem from="1619762580730" duration="19190000" />
     </task>
     <task id="LOCAL-00045" summary="updating weekly stuff, auth is finally working">
       <created>1615513067483</created>
@@ -756,7 +744,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619911767143</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="Got delete working, needs some finesse, but it works.">
+      <created>1619929632302</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1619929632303</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -779,7 +774,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="working on the locationapidao and testing" />
     <MESSAGE value="adding user sign up jsps and servlet" />
     <MESSAGE value="location application class was causing errors, deleted" />
     <MESSAGE value="updating timelog and uploading latest journal version" />
@@ -804,7 +798,8 @@
     <MESSAGE value="Now I can’t get data from the db in the foodPantryjsp…  I feel like I’ve tried everything, it’s just not picking up the search results set in the request param…  I tried putting it in a session variable…am I directing traffic wrong?? It seemed to work in the past exercises, I’m looking at all my past projects and last semesters stuff to find clues…  But it should work like the user display exercise….?????" />
     <MESSAGE value="foodPANTRY is WORKING!!!!" />
     <MESSAGE value="creating delete user servlets and jsps" />
-    <option name="LAST_COMMIT_MESSAGE" value="creating delete user servlets and jsps" />
+    <MESSAGE value="Got delete working, needs some finesse, but it works." />
+    <option name="LAST_COMMIT_MESSAGE" value="Got delete working, needs some finesse, but it works." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

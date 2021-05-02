@@ -43,13 +43,13 @@ I'm not sure at all how much work each thing takes...
 1. Dao performs select and creates individual Resources objects from results.
 1. Dao returns  individual Resources matching criteria/button id??? to servlet.
 1. Servlet sends list back to individual Resources  jsp.
-1. individual Resources reports jsp displays the trails.
+1. individual Resources reports jsp displays the resources.
 
 
 ### About
 
 1. Static page - html only?
-1. Consider making contact info configurable.
+
 
 
 
@@ -65,23 +65,23 @@ I'm not sure at all how much work each thing takes...
 ###
 
 ### Add Resource Report
-1. Option only available to logged in users with proper role
-1. com.hmkurth.entity.User selects trail to report on
-1. com.hmkurth.entity.User enters trail report details
-1. Details are sent to Add Trail Report servlet
-1. Servlet creates trail report object
+1. Option only available to logged in users with proper role- admin
+1. admin user selects type of resource to add on
+1.  enters resource details
+1. Details are sent to Add Resource servlet
+1. Servlet creates food resource object
 1. Servlet sends object to dao
 1. Dao adds report to the database
 1. Servlet sends confirmation to report page that report has been added.
 
 ### Add Resource
 1. Option only available to logged in users with proper role
-1. com.hmkurth.entity.User enters trail  details
-1. Details are sent to Add Trail  servlet
-1. Servlet creates trail  object
+1. com.hmkurth.entity.User enters resource details
+1. Details are sent to Add Resource  servlet
+1. Servlet creates resource  object
 1. Servlet sends object to dao
-1. Dao adds trail to the database
-1. Servlet sends confirmation to trail page that trail has been added.
+1. Dao adds resource to the database
+1. Servlet sends confirmation to the resource page that the resource has been added.
 
 
 
