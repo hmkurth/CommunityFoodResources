@@ -10,7 +10,7 @@
 						<a href="indexMain.jsp" class="btn btn-link scroller"><em class="fa fa-level-down" aria-hidden="true"></em> Skip to Content &nbsp;</a>
 					</div>
 
-					<!-- This is optional, comment out if you do not need this set of dropdowns at the top   TODO try to get these langs to work!-->
+					<!-- This is optional, comment out if you do not need this set of dropdowns at the top   TODO try to get these langs to work!
 					<div class="dropdown pull-left">
 						<button class="btn btn-link dropdown-toggle" type="button" id="lang_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 						<em class="fa fa-globe" aria-hidden="true"></em> English
@@ -23,7 +23,7 @@
 							<li><a href="#">Russian</a></li>
 						</ul>
 					</div>
-
+					-->
 					<!-- Enable the user to adjust the font size of the web page -->
 					<div class="menu-block pull-left hidden-xs">Text Size:</div>
 					<button type="button" class="btn btn-link pull-left hidden-xs increase-font" aria-label="Increase"><em class="fa fa-plus" aria-hidden="true"></em></button>
@@ -50,7 +50,7 @@
 					</button>
 					-->
 					<a class="navbar-brand" href="index.jsp">
-						<img class="img-rounded" src="${pageContext.request.contextPath}/assets/img/mfrLogoRound.png" alt="Madison Community Food Resources" />
+						<img class="img-rounded "style="max-height:100px" src="${pageContext.request.contextPath}/assets/img/mfrLogoRound.png" alt="Back to home" />
 					</a>
 				</div>
 

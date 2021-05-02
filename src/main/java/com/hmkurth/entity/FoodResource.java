@@ -25,22 +25,14 @@ public class FoodResource {
     @Column(name = "resource_name")
     private String name;
 
-    public FoodResource(int id, @NonNull String name, @NonNull Type type_id, ResourceOwner owner, @NonNull String description, Location location,String documentation, boolean deliveryOffered) {
-        this.id = id;
-        this.name = name;
-        this.type_id = type_id;
-        this.owner = owner;
-        this.description = description;
-        this.location = location;
-        this.documentation = documentation;
-        this.deliveryOffered = deliveryOffered;
-    }
 
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
     @NonNull
-    @OneToOne//(fetch = FetchType.LAZY, mappedBy = "food_resources", cascade = CascadeType.ALL)
-    @PrimaryKeyJoinColumn
+    @ManyToOne//(fetch = FetchType.LAZY, mappedBy = "food_resources", cascade = CascadeType.ALL)
+    @JoinColumn(name = "type_id",
+            foreignKey = @ForeignKey(name = "resource_type_food_resources_id_fk")
+    )
     private Type type_id;//fk to resource_type
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
@@ -78,6 +70,16 @@ public class FoodResource {
     private String dietaryConsiderations;
 
 
+    public FoodResource(int id, @NonNull String name, @NonNull Type type_id, ResourceOwner owner, @NonNull String description, Location location,String documentation, boolean deliveryOffered) {
+        this.id = id;
+        this.name = name;
+        this.type_id = type_id;
+        this.owner = owner;
+        this.description = description;
+        this.location = location;
+        this.documentation = documentation;
+        this.deliveryOffered = deliveryOffered;
+    }
 
     @Override
     public boolean equals(Object o) {

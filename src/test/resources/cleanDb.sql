@@ -53,12 +53,12 @@ VALUES
 (6,'Dane County Neighbors Helping neighbors ', 'facebook page', null, 'n/a', false);
 
 
-INSERT INTO resource_type VALUES (1, 'food pantry');
-INSERT INTO resource_type VALUES (2, 'free little pantry');
-INSERT INTO resource_type VALUES (3, 'meal');
-INSERT INTO resource_type VALUES (4, 'government resource');
-INSERT INTO resource_type VALUES (5, 'community aid and support groups');
-INSERT INTO resource_type VALUES (6, 'other');
+INSERT INTO resource_type VALUES (1, 'food pantry', null);
+INSERT INTO resource_type VALUES (2, 'free little pantry', null);
+INSERT INTO resource_type VALUES (3, 'meal', null);
+INSERT INTO resource_type VALUES (4, 'government resource', null);
+INSERT INTO resource_type VALUES (5, 'community aid and support groups', null);
+INSERT INTO resource_type VALUES (6, 'other', null);
 
 
 INSERT INTO resource_owners VALUES (1, 'The Beacon', null, 'www.beacon.com' );
