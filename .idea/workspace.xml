@@ -9,17 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="foodPANTRY is WORKING!!!!">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210501 1650.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/DeleteUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/DeleteUserAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/addResource.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/deleteUser.jsp" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="creating delete user servlets and jsps">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/adminHome.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210501 1548.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/Journal.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/Journal.md.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/JournalUpdated4-16.doc.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/projectPlan.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/projectPlan.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/~$ournal.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/~$urnal.md.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/~WRL3699.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/DeleteUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/DeleteUser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -411,14 +411,7 @@
       <workItem from="1619622016619" duration="9714000" />
       <workItem from="1619637108703" duration="10136000" />
       <workItem from="1619706958099" duration="27437000" />
-      <workItem from="1619762580730" duration="15309000" />
-    </task>
-    <task id="LOCAL-00043" summary="attempting authentication, have edited name of db in front of @localhost">
-      <created>1615171350641</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1615171350641</updated>
+      <workItem from="1619762580730" duration="18061000" />
     </task>
     <task id="LOCAL-00044" summary="still working on authorization,">
       <created>1615249522102</created>
@@ -756,7 +749,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619905905234</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="creating delete user servlets and jsps">
+      <created>1619911767143</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1619911767143</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -779,7 +779,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="got the location api test working!" />
     <MESSAGE value="working on the locationapidao and testing" />
     <MESSAGE value="adding user sign up jsps and servlet" />
     <MESSAGE value="location application class was causing errors, deleted" />
@@ -804,7 +803,8 @@
     <MESSAGE value="login button position fixed" />
     <MESSAGE value="Now I can’t get data from the db in the foodPantryjsp…  I feel like I’ve tried everything, it’s just not picking up the search results set in the request param…  I tried putting it in a session variable…am I directing traffic wrong?? It seemed to work in the past exercises, I’m looking at all my past projects and last semesters stuff to find clues…  But it should work like the user display exercise….?????" />
     <MESSAGE value="foodPANTRY is WORKING!!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="foodPANTRY is WORKING!!!!" />
+    <MESSAGE value="creating delete user servlets and jsps" />
+    <option name="LAST_COMMIT_MESSAGE" value="creating delete user servlets and jsps" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -33,7 +33,7 @@ public class DeleteUserAction extends HttpServlet {
         userToDelete = (User) dao.getById(id);
         dao.delete(userToDelete);
 
-        //TODO confirm delete make a message/popup?
+        //TODO confirm delete make a message/popup? Redirect to ???
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("deleteUser.jsp");
         dispatcher.forward(req, resp);

@@ -27,14 +27,13 @@ public class DeleteUser extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //first you have to display the users with a checkbox indicating to delete
         GenericDao dao= new GenericDao(User.class);
         List all = dao.getAll();
         req.setAttribute("AllUsers", all);
 
-            RequestDispatcher dispatcher = req.getRequestDispatcher("deleteUser.jsp");
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/deleteUser.jsp");
             dispatcher.forward(req, resp);
         }
 
