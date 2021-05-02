@@ -9,23 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="updating journal, etc">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210502 0006.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210502 0008.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210502 0022.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210502 0029.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="changed the type entity to have a set of resources.">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210502 0056.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210502 0113.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Journal.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Journal.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210501 1551.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210501 1645.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210501 1650.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ForwardPantries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ForwardPantries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Type.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210502 0006.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210502 0008.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210502 0022.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210502 0029.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -146,7 +140,7 @@
       <recent name="com.hmkurth.persistence" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TypeDaoTest">
+  <component name="RunManager" selected="TomEE Server.Tomcat">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -417,14 +411,7 @@
       <workItem from="1619622016619" duration="9714000" />
       <workItem from="1619637108703" duration="10136000" />
       <workItem from="1619706958099" duration="27437000" />
-      <workItem from="1619762580730" duration="23574000" />
-    </task>
-    <task id="LOCAL-00046" summary="stuck on getting api key into the uri, can't find demos referenced by videos, I looked at some other solutions, but they use different tools than we are currently using, (invokation builder)">
-      <created>1615735011173</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1615735011173</updated>
+      <workItem from="1619762580730" duration="24836000" />
     </task>
     <task id="LOCAL-00047" summary="added the accessible template and started parsing jsps into templates">
       <created>1615948065122</created>
@@ -762,7 +749,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619930552090</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="changed the type entity to have a set of resources.">
+      <created>1619935124349</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1619935124380</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -785,7 +779,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="location application class was causing errors, deleted" />
     <MESSAGE value="updating timelog and uploading latest journal version" />
     <MESSAGE value="gitting untangled" />
     <MESSAGE value="working on user signup servlet" />
@@ -810,7 +803,8 @@
     <MESSAGE value="creating delete user servlets and jsps" />
     <MESSAGE value="Got delete working, needs some finesse, but it works." />
     <MESSAGE value="updating journal, etc" />
-    <option name="LAST_COMMIT_MESSAGE" value="updating journal, etc" />
+    <MESSAGE value="changed the type entity to have a set of resources." />
+    <option name="LAST_COMMIT_MESSAGE" value="changed the type entity to have a set of resources." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

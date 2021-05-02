@@ -32,10 +32,16 @@ INSERT INTO location (id, name_description, streetaddr_or_intersection, city, st
 
 
 
+INSERT INTO resource_type VALUES (1, 'food pantry', null);
+INSERT INTO resource_type VALUES (2, 'free little pantry', null);
+INSERT INTO resource_type VALUES (3, 'meal', null);
+INSERT INTO resource_type VALUES (4, 'government resource', null);
+INSERT INTO resource_type VALUES (5, 'community aid and support groups', null);
+INSERT INTO resource_type VALUES (6, 'other', null);
 
-INSERT INTO food_resources (id, resource_name,  description,location_id, contact_id, documentation_needed, delivery_offered )
+INSERT INTO food_resources (id, type_id, resource_name,  description,location_id, contact_id, documentation_needed, delivery_offered )
 VALUES
-(1,'free pantry on johnson ', 'free pantry','1', null, 'social security number and id', false);
+(1, 2, 'free pantry on johnson ', 'free pantry','1', null, 'social security number and id', false);
 INSERT INTO food_resources (id, resource_name,  description,location_id, contact_id, documentation_needed, delivery_offered )
 VALUES
 (2,'community meal ', 'saturday meal','2', null, 'social security number and id', true);
@@ -53,12 +59,6 @@ VALUES
 (6,'Dane County Neighbors Helping neighbors ', 'facebook page', null, 'n/a', false);
 
 
-INSERT INTO resource_type VALUES (1, 'food pantry', null);
-INSERT INTO resource_type VALUES (2, 'free little pantry', null);
-INSERT INTO resource_type VALUES (3, 'meal', null);
-INSERT INTO resource_type VALUES (4, 'government resource', null);
-INSERT INTO resource_type VALUES (5, 'community aid and support groups', null);
-INSERT INTO resource_type VALUES (6, 'other', null);
 
 
 INSERT INTO resource_owners VALUES (1, 'The Beacon', null, 'www.beacon.com' );
