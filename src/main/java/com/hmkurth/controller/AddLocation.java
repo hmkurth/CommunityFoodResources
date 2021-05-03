@@ -6,6 +6,7 @@ import com.hmkurth.entity.Location;
 import com.hmkurth.entity.User;
 import com.hmkurth.entity.UserRoles;
 import com.hmkurth.persistence.GenericDao;
+import com.hmkurth.persistence.LocationApiDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -35,6 +36,7 @@ public class AddLocation extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         GenericDao dao = new GenericDao(Location.class);
         GenericDao fdao = new GenericDao(FoodResource.class);
+        Location returnedLocation = null;
 
         Location location = new Location();
         location.setNameDesc(req.getParameter("nameDesc"));
@@ -51,18 +53,27 @@ public class AddLocation extends HttpServlet {
         String resourceId = req.getParameter("resourceId");
         int id =Integer.parseInt(resourceId);
         FoodResource resource = (FoodResource) fdao.getById(id);
-        resource.setLocation(location);
-        logger.debug("Adding resource to location, resource= : " + resource);
-        location.setResourceId(resource);
+
+        logger.debug("Adding resource to location, resource= : " + resource.toString());
 
         //Use the api to get the lat and long TODO
+        try {
+            LocationApiDao locationApiDao = new LocationApiDao();
+            location = locationApiDao.convertAddressToLatAndLong(location);
+            logger.debug("getting long and lat" +  location.toString());
+        } catch (Exception e) {
+            logger.error(e);
+        }
+        resource.setLocation(location);
+        assert location != null;
+        location.setResourceId(resource);
 
-            //add the location to the database
+        //add the location to the database
 
             dao.insert(location);
 
             //TOdo set the user in the session?? check if this is duplicating entries
-            RequestDispatcher dispatcher = req.getRequestDispatcher("/addLocationSuccess.jsp");
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/addLocationSuccess.jsp");
             dispatcher.forward(req, resp);
         }
 

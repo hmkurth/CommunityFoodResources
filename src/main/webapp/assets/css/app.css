@@ -356,7 +356,7 @@ a {
 		padding-bottom: 5px;
 	}
 	.navbar-default .navbar-brand img {
-		max-width: 220px;
+		max-width: 150px;
 	}
 	.navbar-default .navbar-nav > li > a {
 		padding-top: 20px;
@@ -456,6 +456,7 @@ a {
 	.banner h1, .banner h2, .banner h3 {
 		text-align: center;
 		margin-top: 100px;
+		width: 100%;
 	}
 	.tall h1 {
 		font-size: 65px;

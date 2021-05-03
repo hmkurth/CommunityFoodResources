@@ -9,16 +9,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="adding an addLocation jsp and servlet, still need to incorporate api to extract long and lat">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210502 2329.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="Started an add location, need to fix resource, it’s coming up null in the db, but in my logs I’m getting a circular mess with the relationships…I have toString.exclude annotations on the related entities, but….????">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210503 0040.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210503 1239.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210502 2312.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210502 2317.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/indexMain.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/indexMain.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addLocationSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addLocationSuccess.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/~$ournal.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/~WRL0848.tmp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +47,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="queryBuilding" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -152,6 +156,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ApiTestServiceClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CommunityFoodResources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmkurth.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ApiTestServiceClient" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FoodResourceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
@@ -194,22 +213,6 @@
       <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
       <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.FoodResourceTest" />
       <option name="METHOD_NAME" value="insertSuccess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FoodResourceTest.saveOrUpdateSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CommunityFoodResources" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hmkurth.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.FoodResourceTest" />
-      <option name="METHOD_NAME" value="saveOrUpdateSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -320,19 +323,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.FoodResourceTest" />
-      <item itemvalue="JUnit.FoodResourceTest.saveOrUpdateSuccess" />
       <item itemvalue="JUnit.FoodResourceTest.getByPropertyLikeSuccess" />
       <item itemvalue="JUnit.FoodResourceTest.insertSuccess" />
       <item itemvalue="TomEE Server.Tomcat" />
       <item itemvalue="JUnit.TypeDaoTest" />
+      <item itemvalue="JUnit.ApiTestServiceClient" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApiTestServiceClient" />
         <item itemvalue="JUnit.TypeDaoTest" />
         <item itemvalue="JUnit.FoodResourceTest.insertSuccess" />
         <item itemvalue="JUnit.FoodResourceTest.getByPropertyLikeSuccess" />
         <item itemvalue="JUnit.FoodResourceTest" />
-        <item itemvalue="JUnit.FoodResourceTest.saveOrUpdateSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -409,14 +412,7 @@
       <workItem from="1619622016619" duration="9714000" />
       <workItem from="1619637108703" duration="10136000" />
       <workItem from="1619706958099" duration="27437000" />
-      <workItem from="1619762580730" duration="45800000" />
-    </task>
-    <task id="LOCAL-00052" summary="updated database based on feedback">
-      <created>1616626087971</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1616626087987</updated>
+      <workItem from="1619762580730" duration="51072000" />
     </task>
     <task id="LOCAL-00053" summary="creating entities with hibernate">
       <created>1616634411983</created>
@@ -754,7 +750,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620019968621</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="Started an add location, need to fix resource, it’s coming up null in the db, but in my logs I’m getting a circular mess with the relationships…I have toString.exclude annotations on the related entities, but….????">
+      <created>1620020981285</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1620020981285</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -777,7 +780,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="undid directory page util, now getting the login error instead of timeout" />
     <MESSAGE value="added form attributes auto complete and aria ...still need to complete this will all user input" />
     <MESSAGE value="added autocomplete-on to login and signup form attributes" />
     <MESSAGE value="sweet auto complete, and aria attributes added to login and sign up" />
@@ -802,7 +804,8 @@
     <MESSAGE value="I moved the deleteUser to the admin folder, and had some problems, I couldn’t access the DeleteUser servlet, so I moved some functionality to the LoginAction servlet, and the rest to the DeleteUser, so no more DeleteUserAction.  When I hit submit, I get a 404, but the user is deleted from the db…" />
     <MESSAGE value="still working on delete, trying to add some confirmation, not working yet" />
     <MESSAGE value="adding an addLocation jsp and servlet, still need to incorporate api to extract long and lat" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding an addLocation jsp and servlet, still need to incorporate api to extract long and lat" />
+    <MESSAGE value="Started an add location, need to fix resource, it’s coming up null in the db, but in my logs I’m getting a circular mess with the relationships…I have toString.exclude annotations on the related entities, but….????" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started an add location, need to fix resource, it’s coming up null in the db, but in my logs I’m getting a circular mess with the relationships…I have toString.exclude annotations on the related entities, but….????" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -950,21 +953,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
           <line>51</line>
           <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java</url>
