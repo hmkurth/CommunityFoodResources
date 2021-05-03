@@ -61,7 +61,7 @@
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Food Resources<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="${pageContext.request.contextPath}/forwardPantries">Food Pantries</a></li>
-								<li><a href="${pageContext.request.contextPath}/freeLittlePantries.jsp">Free Little Pantries</a></li>
+								<li><a href="${pageContext.request.contextPath}searchByLocation.jsp.">Search By Location</a></li>
 								<li><a href="${pageContext.request.contextPath}/communityMeals.jsp">Community Meals</a></li>
 								<li><a href="${pageContext.request.contextPath}/governmentResources.jsp">Government Resources</a></li>
 								<li><a href="${pageContext.request.contextPath}/communityAid.jsp">Community Aid and Support Groups</a></li>
