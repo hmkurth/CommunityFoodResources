@@ -45,9 +45,28 @@ public class DeleteUser extends HttpServlet {
         int id =Integer.parseInt(idToDelete);
         User userToDelete;
         userToDelete = (User) dao.getById(id);
-        dao.delete(userToDelete);
 
-        //TODO confirm delete make a message/popup? Redirect to ???
+
+        // confirm delete make a message/popup? Redirect to ???
+        if (req.getParameter("submit") != null) {
+            // Delete button is pressed, send confirmation message to be displayed through EL in jsp
+            String message = "Are you sure you want to delete user: " + userToDelete.getFirstName() + " " + userToDelete.getLastName() + " ?";
+            req.setAttribute("message", message);
+            RequestDispatcher dispatcher = req.getRequestDispatcher("deleteUser.jsp");
+            dispatcher.forward(req, resp);
+        }
+        //if confirmDelete is pressed, delete from database
+        if (req.getParameter("confirmDelete") != null) {
+            // Delete button is pressed.
+            dao.delete(userToDelete);
+            String message = "You have deleted user: " + userToDelete.getFirstName() + " " + userToDelete.getLastName() + " .";
+            req.setAttribute("message", message);
+            //TODO redirect to ??
+            RequestDispatcher dispatcher = req.getRequestDispatcher("deleteUser.jsp");
+            dispatcher.forward(req, resp);
+        }
+
+
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("deleteUser.jsp");
         dispatcher.forward(req, resp);

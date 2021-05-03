@@ -1,8 +1,8 @@
-<%@include file="/taglib.jsp"%>
-<c:import url="/head.jsp" />
+<%@include file="../taglib.jsp"%>
+<c:import url="../head.jsp" />
 <title>Admin Home</title>
 
-<c:import url="/header.jsp" />
+<c:import url="../header.jsp" />
 
     <h3>User Controls</h3>
     <p></p>
@@ -45,7 +45,7 @@
 
         <!--TODO form verification! auto complete attribute -->
 
-        <form action="${pageContext.request.contextPath}/deleteUserAction"  method="post" autocomplete="on">
+        <form action="${pageContext.request.contextPath}/deleteUser"  method="post" autocomplete="on">
             <div class="form-group">
                 <label for="delete">Enter a User Id to Delete</label>
                 <input type="text" class="form-control" id="delete" name ="delete" placeholder="id to delete"  required>
@@ -53,13 +53,22 @@
 
 
             <hr />
-            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            <input type="button" name=submit" class="btn btn-primary btn-lg" value="Submit">Submit</input>
         </form>
 
+<!-- if submit was pushed, display message only show confirm delete if submit is not null -->
+        <c:if test="${req.getParameter(submit) != null}" >
+            <h1>${message}</h1>
+            <form action="${pageContext.request.contextPath}/deleteUser"  method="post" autocomplete="on">
+
+                <input type="button" name=confirmDelete" class="btn btn-primary btn-lg">Confirm Delete</input>
+            </form>
+
+            </div>
+            </div>
+        </c:if>
 
 
 
-    </div>
-</div>
 <c:import url="/footer.jsp" />
 

@@ -9,20 +9,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="adding admin directory and security">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210502 0241.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210502 0249.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210502 0252.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="I moved the deleteUser to the admin folder, and had some problems, I couldn’t access the DeleteUser servlet, so I moved some functionality to the LoginAction servlet, and the rest to the DeleteUser, so no more DeleteUserAction.  When I hit submit, I get a 404, but the user is deleted from the db…">
+      <change afterPath="$PROJECT_DIR$/DesignDocs/~$ournal.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210502 1936.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210502 2219.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Journal.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Journal.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210502 0132.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210502 0133.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210502 0158.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210502 0241.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210502 0249.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/DeleteUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/DeleteUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LoginAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/DeleteUserAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/DeleteUserAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/adminHome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/adminHome.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/deleteUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/deleteUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/head.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -413,14 +414,7 @@
       <workItem from="1619622016619" duration="9714000" />
       <workItem from="1619637108703" duration="10136000" />
       <workItem from="1619706958099" duration="27437000" />
-      <workItem from="1619762580730" duration="30876000" />
-    </task>
-    <task id="LOCAL-00049" summary="updating journal and timelog">
-      <created>1616516155693</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1616516155693</updated>
+      <workItem from="1619762580730" duration="37790000" />
     </task>
     <task id="LOCAL-00050" summary="updating project plan for checkpoint 3">
       <created>1616535509543</created>
@@ -758,7 +752,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619940380457</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="I moved the deleteUser to the admin folder, and had some problems, I couldn’t access the DeleteUser servlet, so I moved some functionality to the LoginAction servlet, and the rest to the DeleteUser, so no more DeleteUserAction.  When I hit submit, I get a 404, but the user is deleted from the db…">
+      <created>1619942622018</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1619942622081</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -781,7 +782,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="working on user signup servlet" />
     <MESSAGE value="working on user search and results" />
     <MESSAGE value="working on user search and results, still, getting a 408 for authentication.  created pageUtil directory for head, foot, etc" />
     <MESSAGE value="undid directory page util, now getting the login error instead of timeout" />
@@ -806,7 +806,8 @@
     <MESSAGE value="changed the type entity to have a set of resources." />
     <MESSAGE value="type is now displaying" />
     <MESSAGE value="adding admin directory and security" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding admin directory and security" />
+    <MESSAGE value="I moved the deleteUser to the admin folder, and had some problems, I couldn’t access the DeleteUser servlet, so I moved some functionality to the LoginAction servlet, and the rest to the DeleteUser, so no more DeleteUserAction.  When I hit submit, I get a 404, but the user is deleted from the db…" />
+    <option name="LAST_COMMIT_MESSAGE" value="I moved the deleteUser to the admin folder, and had some problems, I couldn’t access the DeleteUser servlet, so I moved some functionality to the LoginAction servlet, and the rest to the DeleteUser, so no more DeleteUserAction.  When I hit submit, I get a 404, but the user is deleted from the db…" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -68,8 +68,8 @@
 							</ul>
 						</li>
 
-						<li><a href="aboutProject.jsp">About This Project</a></li>
-						<li><a href="contactMe.jsp">Contact</a></li>
+						<li><a href="${pageContext.request.contextPath}aboutProject.jsp">About This Project</a></li>
+						<li><a href="${pageContext.request.contextPath}contactMe.jsp">Contact</a></li>
 					</ul>
 
 				</div>
