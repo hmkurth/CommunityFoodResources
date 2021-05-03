@@ -3,12 +3,15 @@
 <title>Admin Home</title>
 
 <c:import url="../header.jsp" />
+<li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Food Resources<span class="caret"></span></a>
+    <ul class="dropdown-menu">
+        <li><a href="${pageContext.request.contextPath}/admin/addLocation.jsp">Add Location</a></li>
+        <li><a href="${pageContext.request.contextPath}/admin/addResource.jsp">Add Food Resource(not hooked up</a></li>
+        <li><a href="${pageContext.request.contextPath}/admin/deleteUser.jsp">Delete User(Not hooked up</a></li>
 
-    <h3>User Controls</h3>
-    <p></p>
-    <hr />
-    <h3></h3>
-
+    </ul>
+</li>
 
 <div class="login-container">
     <h1 class="text-center pad-bottom-sm">Delete a User</h1>
@@ -40,7 +43,7 @@
 
 
         </div>
-
+<c:out value="${message}"/>
 
 
         <!--TODO form verification! auto complete attribute -->
@@ -53,11 +56,12 @@
 
 
             <hr />
-            <input type="button" name=submit" class="btn btn-primary btn-lg" value="Submit">Submit</input>
+
+            <button type="submit" name="submit" class="btn btn-primary btn-lg" value="Submit">Submit</button>
         </form>
 
 <!-- if submit was pushed, display message only show confirm delete if submit is not null -->
-        <c:if test="${req.getParameter(submit) != null}" >
+        <c:if test="${req.getParameter('submit') != null}" >
             <h1>${message}</h1>
             <form action="${pageContext.request.contextPath}/deleteUser"  method="post" autocomplete="on">
 
@@ -69,6 +73,6 @@
         </c:if>
 
 
-
+</div>
 <c:import url="/footer.jsp" />
 
