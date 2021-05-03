@@ -8,7 +8,6 @@
 <c:if test="${pageContext.request.isUserInRole('admin')}">
     <c:import url="/admin/adminHome.jsp" />
 </c:if>
-
 <c:import url="/indexMain.jsp" />
 <c:import url="/footer.jsp" />
 

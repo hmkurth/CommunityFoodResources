@@ -14,7 +14,7 @@
     <form action="${pageContext.request.contextPath}/addLocation"  method="post" autocomplete="on">
         <!--get the food resource to add location to -->
         <div class="form-group">
-            <label for="resourceId">Location Name</label>
+            <label for="resourceId">Food Resource Name</label>
             <input type="text" class="form-control" id="resourceId" name ="resourceId" placeholder="Food Resource"  aria-required="true" required>
         </div>
 
@@ -34,7 +34,7 @@
         </div>
 
         <div class="form-group">
-            <label for="state">Password</label>
+            <label for="state">State</label>
             <input type="text" class="form-control" id="state" name ="state" placeholder="Wisconsin" autocomplete="state" aria-required="true" required>
         </div>
 

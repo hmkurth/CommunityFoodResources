@@ -62,7 +62,7 @@ public class AddLocation extends HttpServlet {
             dao.insert(location);
 
             //TOdo set the user in the session?? check if this is duplicating entries
-            RequestDispatcher dispatcher = req.getRequestDispatcher("addLocationSuccess.jsp");
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/addLocationSuccess.jsp");
             dispatcher.forward(req, resp);
         }
 

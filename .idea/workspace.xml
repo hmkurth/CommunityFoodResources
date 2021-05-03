@@ -9,24 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="still working on delete, trying to add some confirmation, not working yet">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210502 2312.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210502 2317.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210502 2326.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/addLocationSuccess.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/~WRL0848.tmp" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="adding an addLocation jsp and servlet, still need to incorporate api to extract long and lat">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210502 2329.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Journal.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Journal.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210502 0252.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210502 1936.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210502 2219.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/DeleteUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/DeleteUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/adminHome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/adminHome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210502 2312.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/indexMain.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/indexMain.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -417,14 +409,7 @@
       <workItem from="1619622016619" duration="9714000" />
       <workItem from="1619637108703" duration="10136000" />
       <workItem from="1619706958099" duration="27437000" />
-      <workItem from="1619762580730" duration="44924000" />
-    </task>
-    <task id="LOCAL-00051" summary="updating project plan for checkpoint 3">
-      <created>1616541696596</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1616541696628</updated>
+      <workItem from="1619762580730" duration="45800000" />
     </task>
     <task id="LOCAL-00052" summary="updated database based on feedback">
       <created>1616626087971</created>
@@ -762,7 +747,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620012708755</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="adding an addLocation jsp and servlet, still need to incorporate api to extract long and lat">
+      <created>1620019968590</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1620019968621</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -785,7 +777,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="working on user search and results, still, getting a 408 for authentication.  created pageUtil directory for head, foot, etc" />
     <MESSAGE value="undid directory page util, now getting the login error instead of timeout" />
     <MESSAGE value="added form attributes auto complete and aria ...still need to complete this will all user input" />
     <MESSAGE value="added autocomplete-on to login and signup form attributes" />
@@ -810,7 +801,8 @@
     <MESSAGE value="adding admin directory and security" />
     <MESSAGE value="I moved the deleteUser to the admin folder, and had some problems, I couldn’t access the DeleteUser servlet, so I moved some functionality to the LoginAction servlet, and the rest to the DeleteUser, so no more DeleteUserAction.  When I hit submit, I get a 404, but the user is deleted from the db…" />
     <MESSAGE value="still working on delete, trying to add some confirmation, not working yet" />
-    <option name="LAST_COMMIT_MESSAGE" value="still working on delete, trying to add some confirmation, not working yet" />
+    <MESSAGE value="adding an addLocation jsp and servlet, still need to incorporate api to extract long and lat" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding an addLocation jsp and servlet, still need to incorporate api to extract long and lat" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
