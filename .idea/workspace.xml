@@ -9,8 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="updating timelog and uploading latest journal version">
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="adding an addLocation jsp and servlet, still need to incorporate api to extract long and lat">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210502 2329.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210502 2312.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/indexMain.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/indexMain.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,18 +31,19 @@
         <option value="package-info" />
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
+        <option value="jsf" />
         <option value="Class" />
         <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="queryBuilding" />
+    <option name="BRANCH" value="master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="queryBuilding" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,6 +55,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="JspContextManager">
+    <jsp-to-context jsp-file="file://$PROJECT_DIR$/src/main/webapp/header.jsp" context-file="file://$PROJECT_DIR$/src/main/webapp/userSignup.jsp" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -104,11 +116,11 @@
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\test\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\assets\img\demo" />
-      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\img" />
-      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\java\com\hmkurth\controller" />
+      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\admin" />
+      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\resources" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp" />
-      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\accessibilityTemplates" />
+      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\utilPages" />
+      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\results" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -126,46 +138,31 @@
       <recent name="com.hmkurth.persistence" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApiTestServiceClient.testLocationApiDao">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="TomEE Server.Tomcat">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FoodResourceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CommunityFoodResources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmkurth.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.FoodResourceTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiTestServiceClient.testLocationApiDao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CommunityFoodResources" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hmkurth.entity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ApiTestServiceClient" />
-      <option name="METHOD_NAME" value="testLocationApiDao" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiTestServiceClient.testgeoJSON" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CommunityFoodResources" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hmkurth.utilities.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ApiTestServiceClient" />
-      <option name="METHOD_NAME" value="testgeoJSON" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -174,7 +171,7 @@
       <module name="CommunityFoodResources" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hmkurth.utilities.*" />
+          <option name="PATTERN" value="com.hmkurth.persistence.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -186,11 +183,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FoodResourceTest.insertSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CommunityFoodResources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmkurth.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.FoodResourceTest" />
+      <option name="METHOD_NAME" value="insertSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FoodResourceTest.saveOrUpdateSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hmkurth.utilities.*" />
+          <option name="PATTERN" value="com.hmkurth.persistence.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -202,16 +215,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.hmkurth.persistence in CommunityFoodResources" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TypeDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hmkurth.utilities.*" />
+          <option name="PATTERN" value="com.hmkurth.persistence.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.TypeDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -305,22 +319,29 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.com.hmkurth.persistence in CommunityFoodResources" />
+      <item itemvalue="JUnit.FoodResourceTest" />
       <item itemvalue="JUnit.FoodResourceTest.saveOrUpdateSuccess" />
       <item itemvalue="JUnit.FoodResourceTest.getByPropertyLikeSuccess" />
-      <item itemvalue="JUnit.ApiTestServiceClient.testgeoJSON" />
-      <item itemvalue="JUnit.ApiTestServiceClient.testLocationApiDao" />
+      <item itemvalue="JUnit.FoodResourceTest.insertSuccess" />
       <item itemvalue="TomEE Server.Tomcat" />
+      <item itemvalue="JUnit.TypeDaoTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ApiTestServiceClient.testLocationApiDao" />
-        <item itemvalue="JUnit.ApiTestServiceClient.testgeoJSON" />
+        <item itemvalue="JUnit.TypeDaoTest" />
+        <item itemvalue="JUnit.FoodResourceTest.insertSuccess" />
         <item itemvalue="JUnit.FoodResourceTest.getByPropertyLikeSuccess" />
+        <item itemvalue="JUnit.FoodResourceTest" />
         <item itemvalue="JUnit.FoodResourceTest.saveOrUpdateSuccess" />
-        <item itemvalue="JUnit.com.hmkurth.persistence in CommunityFoodResources" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SQLScriptSettings">
+    <option name="matrix">
+      <map>
+        <entry key="MYSQL.CreateComplete" value="CreateIfNotExists=1" />
+      </map>
+    </option>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -384,216 +405,11 @@
       <workItem from="1618027802830" duration="408000" />
       <workItem from="1618100738042" duration="20507000" />
       <workItem from="1618259698952" duration="11509000" />
-    </task>
-    <task id="LOCAL-00022" summary="adding user dao">
-      <created>1613506866682</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1613506866682</updated>
-    </task>
-    <task id="LOCAL-00023" summary="adding user dao unit tests">
-      <created>1613601683373</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1613601683373</updated>
-    </task>
-    <task id="LOCAL-00024" summary="adding test db">
-      <created>1613614251418</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1613614251418</updated>
-    </task>
-    <task id="LOCAL-00025" summary="updating weekly journal, changing to journal.txt">
-      <created>1613620036147</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1613620036147</updated>
-    </task>
-    <task id="LOCAL-00026" summary="finally got dao and tests working!">
-      <created>1613625542111</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1613625542111</updated>
-    </task>
-    <task id="LOCAL-00027" summary="finally got dao and tests working!adding coverage img">
-      <created>1613625736643</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1613625736643</updated>
-    </task>
-    <task id="LOCAL-00028" summary="finally got dao and tests working!adding coverage img">
-      <created>1613625831459</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1613625831459</updated>
-    </task>
-    <task id="LOCAL-00029" summary="adding userRole class and dao">
-      <created>1613846968810</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1613846968811</updated>
-    </task>
-    <task id="LOCAL-00030" summary="adding userRoleDaoTest">
-      <created>1613890127246</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1613890127246</updated>
-    </task>
-    <task id="LOCAL-00031" summary="unit tests passing after implementing equals">
-      <created>1613955516337</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1613955516337</updated>
-    </task>
-    <task id="LOCAL-00032" summary="adding journal and timelog">
-      <created>1613956267743</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1613956267743</updated>
-    </task>
-    <task id="LOCAL-00033" summary="completed generic dao and userRoleDao tests with it.">
-      <created>1613963222256</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1613963222256</updated>
-    </task>
-    <task id="LOCAL-00034" summary="working on database configuration">
-      <created>1614133624442</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1614133624442</updated>
-    </task>
-    <task id="LOCAL-00035" summary="editing database configuration">
-      <created>1614137236101</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1614137236101</updated>
-    </task>
-    <task id="LOCAL-00036" summary="adding tables to test database, starting to seed data">
-      <created>1614140451361</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1614140451361</updated>
-    </task>
-    <task id="LOCAL-00037" summary="starting to write and annotate classes">
-      <created>1614144143810</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1614144143810</updated>
-    </task>
-    <task id="LOCAL-00038" summary="starting to write and annotate classes">
-      <created>1614147199052</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1614147199052</updated>
-    </task>
-    <task id="LOCAL-00039" summary="updating generic dao, switching userdaoTest to use generic dao">
-      <created>1614710807479</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1614710807479</updated>
-    </task>
-    <task id="LOCAL-00040" summary="updating files for checkpoint 2">
-      <created>1614728569305</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1614728569305</updated>
-    </task>
-    <task id="LOCAL-00041" summary="cleaning up log, stacktraces">
-      <created>1614729107858</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1614729107858</updated>
-    </task>
-    <task id="LOCAL-00042" summary="attempting authentication, have updated all settings, xmls...">
-      <created>1615165461899</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1615165461899</updated>
-    </task>
-    <task id="LOCAL-00043" summary="attempting authentication, have edited name of db in front of @localhost">
-      <created>1615171350641</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1615171350641</updated>
-    </task>
-    <task id="LOCAL-00044" summary="still working on authorization,">
-      <created>1615249522102</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1615249522102</updated>
-    </task>
-    <task id="LOCAL-00045" summary="updating weekly stuff, auth is finally working">
-      <created>1615513067483</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1615513067483</updated>
-    </task>
-    <task id="LOCAL-00046" summary="stuck on getting api key into the uri, can't find demos referenced by videos, I looked at some other solutions, but they use different tools than we are currently using, (invokation builder)">
-      <created>1615735011173</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1615735011173</updated>
-    </task>
-    <task id="LOCAL-00047" summary="added the accessible template and started parsing jsps into templates">
-      <created>1615948065122</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1615948065122</updated>
-    </task>
-    <task id="LOCAL-00048" summary="added the accessible template and started parsing jsps into templates">
-      <created>1615993920428</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1615993920428</updated>
-    </task>
-    <task id="LOCAL-00049" summary="updating journal and timelog">
-      <created>1616516155693</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1616516155693</updated>
-    </task>
-    <task id="LOCAL-00050" summary="updating project plan for checkpoint 3">
-      <created>1616535509543</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1616535509590</updated>
-    </task>
-    <task id="LOCAL-00051" summary="updating project plan for checkpoint 3">
-      <created>1616541696596</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1616541696628</updated>
+      <workItem from="1618618302661" duration="32672000" />
+      <workItem from="1619622016619" duration="9714000" />
+      <workItem from="1619637108703" duration="10136000" />
+      <workItem from="1619706958099" duration="27437000" />
+      <workItem from="1619762580730" duration="45800000" />
     </task>
     <task id="LOCAL-00052" summary="updated database based on feedback">
       <created>1616626087971</created>
@@ -728,7 +544,217 @@
       <option name="project" value="LOCAL" />
       <updated>1618616995139</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="gitting untangled">
+      <created>1618627786950</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1618627786950</updated>
+    </task>
+    <task id="LOCAL-00072" summary="gitting untangled">
+      <created>1618627812187</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1618627812187</updated>
+    </task>
+    <task id="LOCAL-00073" summary="working on user signup servlet">
+      <created>1618632515783</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1618632515783</updated>
+    </task>
+    <task id="LOCAL-00074" summary="working on user search and results">
+      <created>1618633475545</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1618633475545</updated>
+    </task>
+    <task id="LOCAL-00075" summary="working on user search and results, still, getting a 408 for authentication.  created pageUtil directory for head, foot, etc">
+      <created>1618799343272</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1618799343273</updated>
+    </task>
+    <task id="LOCAL-00076" summary="undid directory page util, now getting the login error instead of timeout">
+      <created>1618803227594</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1618803227662</updated>
+    </task>
+    <task id="LOCAL-00077" summary="added form attributes auto complete and aria ...still need to complete this will all user input">
+      <created>1618811667853</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1618811667853</updated>
+    </task>
+    <task id="LOCAL-00078" summary="added autocomplete-on to login and signup form attributes">
+      <created>1618812211431</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1618812211431</updated>
+    </task>
+    <task id="LOCAL-00079" summary="sweet auto complete, and aria attributes added to login and sign up">
+      <created>1618812482587</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1618812482587</updated>
+    </task>
+    <task id="LOCAL-00080" summary="reconfiguring login to add a loginAction servlet and a button that points to it, but am still getting timeout error">
+      <created>1619626286598</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1619626286599</updated>
+    </task>
+    <task id="LOCAL-00081" summary="got login working, but it's not pretty...">
+      <created>1619633996410</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1619633996411</updated>
+    </task>
+    <task id="LOCAL-00082" summary="fixed mapped by error, added new column on contacts to reference the resource owners id">
+      <created>1619649065262</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1619649065263</updated>
+    </task>
+    <task id="LOCAL-00083" summary="inserted null values for contact ids in sql inserts to avoid fk problems, type dao now working">
+      <created>1619653330819</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1619653330819</updated>
+    </task>
+    <task id="LOCAL-00084" summary="insert with contact on resource owner dao still broken">
+      <created>1619658965983</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1619658965991</updated>
+    </task>
+    <task id="LOCAL-00085" summary="insert with contact on resource owner dao now working">
+      <created>1619709292372</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1619709292372</updated>
+    </task>
+    <task id="LOCAL-00086" summary="food resource tests working !!!!!!!!!!!!!!!!!!!!!">
+      <created>1619712684710</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1619712684710</updated>
+    </task>
+    <task id="LOCAL-00087" summary="working on user signup, null values">
+      <created>1619716473461</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1619716473461</updated>
+    </task>
+    <task id="LOCAL-00088" summary="signup null error gone">
+      <created>1619745931862</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1619745931862</updated>
+    </task>
+    <task id="LOCAL-00089" summary="login button position fixed">
+      <created>1619749776013</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1619749776013</updated>
+    </task>
+    <task id="LOCAL-00090" summary="Now I can’t get data from the db in the foodPantryjsp…  I feel like I’ve tried everything, it’s just not picking up the search results set in the request param…  I tried putting it in a session variable…am I directing traffic wrong?? It seemed to work in the past exercises, I’m looking at all my past projects and last semesters stuff to find clues…  But it should work like the user display exercise….?????">
+      <created>1619759187398</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1619759187398</updated>
+    </task>
+    <task id="LOCAL-00091" summary="foodPANTRY is WORKING!!!!">
+      <created>1619905905218</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1619905905234</updated>
+    </task>
+    <task id="LOCAL-00092" summary="creating delete user servlets and jsps">
+      <created>1619911767143</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1619911767143</updated>
+    </task>
+    <task id="LOCAL-00093" summary="Got delete working, needs some finesse, but it works.">
+      <created>1619929632302</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1619929632303</updated>
+    </task>
+    <task id="LOCAL-00094" summary="updating journal, etc">
+      <created>1619930552090</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1619930552090</updated>
+    </task>
+    <task id="LOCAL-00095" summary="changed the type entity to have a set of resources.">
+      <created>1619935124349</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1619935124380</updated>
+    </task>
+    <task id="LOCAL-00096" summary="type is now displaying">
+      <created>1619936469254</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1619936469254</updated>
+    </task>
+    <task id="LOCAL-00097" summary="adding admin directory and security">
+      <created>1619940380442</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1619940380457</updated>
+    </task>
+    <task id="LOCAL-00098" summary="I moved the deleteUser to the admin folder, and had some problems, I couldn’t access the DeleteUser servlet, so I moved some functionality to the LoginAction servlet, and the rest to the DeleteUser, so no more DeleteUserAction.  When I hit submit, I get a 404, but the user is deleted from the db…">
+      <created>1619942622018</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1619942622081</updated>
+    </task>
+    <task id="LOCAL-00099" summary="still working on delete, trying to add some confirmation, not working yet">
+      <created>1620012708740</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1620012708755</updated>
+    </task>
+    <task id="LOCAL-00100" summary="adding an addLocation jsp and servlet, still need to incorporate api to extract long and lat">
+      <created>1620019968590</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1620019968621</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -751,39 +777,39 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="attempting authentication, have edited name of db in front of @localhost" />
-    <MESSAGE value="still working on authorization," />
-    <MESSAGE value="updating weekly stuff, auth is finally working" />
-    <MESSAGE value="stuck on getting api key into the uri, can't find demos referenced by videos, I looked at some other solutions, but they use different tools than we are currently using, (invokation builder)" />
-    <MESSAGE value="added the accessible template and started parsing jsps into templates" />
-    <MESSAGE value="updating project plan for checkpoint 3" />
-    <MESSAGE value="updated database based on feedback" />
-    <MESSAGE value="creating entities with hibernate" />
-    <MESSAGE value="adding Lombok to entities" />
-    <MESSAGE value="ContactDaoTest complete" />
-    <MESSAGE value="added rest service for contacts" />
-    <MESSAGE value="updating journal and timelog" />
-    <MESSAGE value="foodresource dao tests" />
-    <MESSAGE value="working on daos, somewhere my getSession method stopped working" />
-    <MESSAGE value="for my reference, when i tried adding the removeChildren method, for some reason it made all the getSession() in the generic dao red....wth???" />
-    <MESSAGE value="updating timelog, journal for week" />
-    <MESSAGE value="fixed delete testing in userdao" />
-    <MESSAGE value="editing header" />
-    <MESSAGE value="got header and main somewhat how I want it, still need to have an icon" />
-    <MESSAGE value="working on the location api and trying to get the results i want" />
-    <MESSAGE value="got the location api test working!" />
-    <MESSAGE value="working on the locationapidao and testing" />
-    <MESSAGE value="adding user sign up jsps and servlet" />
-    <MESSAGE value="location application class was causing errors, deleted" />
-    <MESSAGE value="updating timelog and uploading latest journal version" />
-    <option name="LAST_COMMIT_MESSAGE" value="updating timelog and uploading latest journal version" />
+    <MESSAGE value="undid directory page util, now getting the login error instead of timeout" />
+    <MESSAGE value="added form attributes auto complete and aria ...still need to complete this will all user input" />
+    <MESSAGE value="added autocomplete-on to login and signup form attributes" />
+    <MESSAGE value="sweet auto complete, and aria attributes added to login and sign up" />
+    <MESSAGE value="reconfiguring login to add a loginAction servlet and a button that points to it, but am still getting timeout error" />
+    <MESSAGE value="got login working, but it's not pretty..." />
+    <MESSAGE value="fixed mapped by error, added new column on contacts to reference the resource owners id" />
+    <MESSAGE value="inserted null values for contact ids in sql inserts to avoid fk problems, type dao now working" />
+    <MESSAGE value="insert with contact on resource owner dao still broken" />
+    <MESSAGE value="insert with contact on resource owner dao now working" />
+    <MESSAGE value="food resource tests working !!!!!!!!!!!!!!!!!!!!!" />
+    <MESSAGE value="working on user signup, null values" />
+    <MESSAGE value="signup null error gone" />
+    <MESSAGE value="login button position fixed" />
+    <MESSAGE value="Now I can’t get data from the db in the foodPantryjsp…  I feel like I’ve tried everything, it’s just not picking up the search results set in the request param…  I tried putting it in a session variable…am I directing traffic wrong?? It seemed to work in the past exercises, I’m looking at all my past projects and last semesters stuff to find clues…  But it should work like the user display exercise….?????" />
+    <MESSAGE value="foodPANTRY is WORKING!!!!" />
+    <MESSAGE value="creating delete user servlets and jsps" />
+    <MESSAGE value="Got delete working, needs some finesse, but it works." />
+    <MESSAGE value="updating journal, etc" />
+    <MESSAGE value="changed the type entity to have a set of resources." />
+    <MESSAGE value="type is now displaying" />
+    <MESSAGE value="adding admin directory and security" />
+    <MESSAGE value="I moved the deleteUser to the admin folder, and had some problems, I couldn’t access the DeleteUser servlet, so I moved some functionality to the LoginAction servlet, and the rest to the DeleteUser, so no more DeleteUserAction.  When I hit submit, I get a 404, but the user is deleted from the db…" />
+    <MESSAGE value="still working on delete, trying to add some confirmation, not working yet" />
+    <MESSAGE value="adding an addLocation jsp and servlet, still need to incorporate api to extract long and lat" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding an addLocation jsp and servlet, still need to incorporate api to extract long and lat" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
-          <line>94</line>
+          <line>73</line>
           <properties class="com.hmkurth.persistence.UserDaoTest" method="getUsersByLastNameLikeSuccess">
             <option name="EMULATED" value="true" />
           </properties>
@@ -791,7 +817,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
-          <line>73</line>
+          <line>52</line>
           <properties class="com.hmkurth.persistence.UserDaoTest" method="getAllUsersSuccess">
             <option name="EMULATED" value="true" />
           </properties>
@@ -799,15 +825,15 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java</url>
-          <line>119</line>
-          <properties class="com.hmkurth.persistence.UserRolesDaoTest">
+          <line>134</line>
+          <properties class="com.hmkurth.persistence.UserRolesDaoTest" method="getByPropertyLikeSuccess">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
-          <line>74</line>
+          <line>99</line>
           <properties class="com.hmkurth.persistence.FoodResourceTest" method="saveOrUpdateSuccess">
             <option name="EMULATED" value="true" />
           </properties>
@@ -815,7 +841,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
-          <line>18</line>
+          <line>17</line>
           <properties class="com.hmkurth.persistence.ApiTestServiceClient" method="testgeoJSON">
             <option name="EMULATED" value="true" />
           </properties>
@@ -823,36 +849,42 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
-          <line>42</line>
-          <properties class="com.hmkurth.persistence.ApiTestServiceClient">
+          <line>41</line>
+          <properties class="com.hmkurth.persistence.ApiTestServiceClient" method="testLocationApiDao">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="48" />
+          <option name="timeStamp" value="56" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
-          <line>72</line>
-          <option name="timeStamp" value="9" />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java</url>
+          <line>140</line>
+          <properties class="com.hmkurth.persistence.ResourceOwnerDaoTest" method="insertWithContactSuccess">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
+          <line>170</line>
+          <properties class="com.hmkurth.persistence.FoodResourceTest" method="getByPropertyLikeSuccess">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java</url>
-          <line>48</line>
+          <line>49</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java</url>
-          <line>50</line>
+          <line>51</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
-          <line>96</line>
+          <line>75</line>
           <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
-          <line>163</line>
-          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
@@ -866,27 +898,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
-          <line>74</line>
+          <line>53</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
-          <line>160</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
-          <line>165</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java</url>
-          <line>45</line>
+          <line>50</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" log-message="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java</url>
-          <line>43</line>
+          <line>48</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -896,7 +918,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
-          <line>131</line>
+          <line>110</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -916,38 +938,128 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
-          <line>122</line>
+          <line>159</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
-          <line>30</line>
+          <line>29</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
-          <line>48</line>
+          <line>51</line>
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java</url>
-          <line>78</line>
+          <line>63</line>
           <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java</url>
-          <line>79</line>
+          <line>64</line>
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="55" />
+          <line>58</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java</url>
+          <line>131</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java</url>
+          <line>133</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/TypeDaoTest.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/TypeDaoTest.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java</url>
+          <line>149</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java</url>
+          <line>154</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java</url>
+          <line>157</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
+          <line>161</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
+          <line>162</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/UserSignup.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/UserSignup.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/UserSignup.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/searchResults.jsp</url>
+          <line>72</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/searchResults.jsp</url>
+          <line>77</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="83" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.sql.SQLSyntaxErrorException" package="java.sql" />
@@ -956,6 +1068,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.StackOverflowError" package="java.lang" />
           <option name="timeStamp" value="15" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.sql.SQLIntegrityConstraintViolationException" package="java.sql" />
+          <option name="timeStamp" value="68" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

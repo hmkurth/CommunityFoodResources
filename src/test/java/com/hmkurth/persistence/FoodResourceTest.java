@@ -2,6 +2,8 @@ package com.hmkurth.persistence;
 
 import com.hmkurth.entity.FoodResource;
 import com.hmkurth.entity.Location;
+import com.hmkurth.entity.ResourceOwner;
+import com.hmkurth.entity.Type;
 import com.hmkurth.test.util.Database;
 import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.BeforeEach;
@@ -13,13 +15,14 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @Log4j2
+/**
+ * The type food resource  dao test.
+ */
 public class FoodResourceTest {
-
-
-
+    /**
+     * The Dao.
+     */
     GenericDao genericDao;
-
-
 
     /**
      * Run set up tasks before each test:
@@ -34,6 +37,28 @@ public class FoodResourceTest {
 
 
         genericDao = new GenericDao(FoodResource.class);
+           /*
+        databaseUtility = new DatabaseUtility();
+        databaseUtility.runSQL("cleandb.sql");
+        databaseUtility.runSQL("createTestData.sql");
+
+        dao = new GenericDao(TrailReport.class);
+        userDao = new GenericDao(User.class);
+        trailDao = new GenericDao(Trail.class);
+
+        Trail trail = (Trail)trailDao.getAll().get(0);
+        Set<TrailReport> reports = trail.getReports();
+
+
+        trailReport = new TrailReport();
+        trailReport.setComments("test comments");
+        trailReport.setTrail(trail);
+
+        trailReport.setUser(((User)userDao.getAll().get(0)));
+
+        int id = dao.insert(trailReport);
+        trailReport = (TrailReport)dao.getById(id);
+*/
     }
 
     /**
@@ -51,9 +76,9 @@ public class FoodResourceTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<FoodResource> foodResources = genericDao.getByPropertyEqual("deliveryOffered", "1");
+        List<FoodResource> foodResources = genericDao.getByPropertyEqual("name","SNAP Program");
         assertEquals(1, foodResources.size());
-        assertEquals(5, foodResources.get(0).getId());
+        assertEquals(4, foodResources.get(0).getId());
     }
 
 
@@ -61,10 +86,10 @@ public class FoodResourceTest {
      * Verifies Gets FoodResources by an attribute
      */
     @Test
-    void getFoodResourcesByLastNameLikeSuccess() {
-        List<FoodResource> foodResources = genericDao.getEntityByName("city","M");
-        assertEquals(6, foodResources.size());
-        List<FoodResource> foodResources2 = genericDao.getEntityByName("zip", "58");
+    void getFoodResourcesByNameLikeSuccess() {
+        List<FoodResource> foodResources = genericDao.getEntityByName("documentation","ssn");
+        assertEquals(1, foodResources.size());
+        List<FoodResource> foodResources2 = genericDao.getEntityByName("name", "church");
         assertEquals(1, foodResources2.size());
     }
 
@@ -111,29 +136,41 @@ public class FoodResourceTest {
      *TEST ALL FIELDS TO BE THOROUGH
      * going to need to bring in all the other entities to insert with their daos
      *
+     * */
     @Test
     void insertSuccess() {
 
     //new location dao to get the location
     GenericDao locationDao = new GenericDao(Location.class);
+    GenericDao tDao = new GenericDao(Type.class);
+    GenericDao oDao = new GenericDao(ResourceOwner.class);
     //get a location to test
     Location location = (Location) locationDao.getById(2);
+    Type type = (Type) tDao.getById(3);
+    ResourceOwner owner = (ResourceOwner) oDao.getById(3);
 
-        FoodResource newFoodResource = new FoodResource("Bpnn Meal", "2", 4, 6, "west side", "ssn", 0, "gluten free");
+        FoodResource newFoodResource = new FoodResource(8,
+                "MUNCH ",
+                type,
+                owner,
+                "kids food truck",
+                location,
+                "id",
+                true);
         int id = genericDao.insert(newFoodResource);
         assertNotEquals(0,id);
         FoodResource insertedResource = (FoodResource) genericDao.getById(id);
         assertEquals(newFoodResource, insertedResource);
     }
 
-     */
+
     /**
      * Verify successful get by property (like match)
      */
     @Test
     void getByPropertyLikeSuccess() {
 
-        List<FoodResource> FoodResources = genericDao.getPropertyByName("desc", "free pantry");
-        assertEquals(3, FoodResources.size());
+        List<FoodResource> FoodResources = genericDao.getPropertyByName("description", "free pantry");
+        assertEquals(2, FoodResources.size());
     }
 }

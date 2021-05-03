@@ -1,5 +1,5 @@
 
-<%@include file="taglib.jsp"%>
+<%@include file="/taglib.jsp"%>
 <c:set var="title" value="Search Results" />
 <%@include file="head.jsp"%>
 <html><body>
@@ -14,10 +14,10 @@
         <th></th>
         </thead>
         </tr>
-        <c:forEach var="user" items="${searchResult}">
+        <c:forEach var="user" items="${resources}">
             <tr>
-                <td>${user.firstName} ${user.lastName}</td>
-                <td>${user.userName}</td>
+                <td>${user.name} ${user.description}</td>
+                <td>${user.user.name}</td>
                 <td></td>
 
             </tr>

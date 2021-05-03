@@ -38,6 +38,8 @@ public class Location {
     @Column(name="bus_info")
     private String busInfo;
     private String comments;
+    private Double lng;
+    private Double lat;
     @OneToOne
     @PrimaryKeyJoinColumn
     @ToString.Exclude

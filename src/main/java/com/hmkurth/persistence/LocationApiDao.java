@@ -4,22 +4,17 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hmkurth.ApiLocation.Result;
 import com.hmkurth.entity.Location;
-import com.hmkurth.entity.MapLocation;
 import com.hmkurth.utilities.PropertiesLoader;
 import lombok.extern.log4j.Log4j2;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
-import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.Response;
-import java.lang.annotation.Target;
 import java.util.Properties;
 
 @Log4j2
-//TODO make properties file, read in uri, address in params
+
 public class LocationApiDao implements PropertiesLoader {
     String apiKey = null;
     String apiHost = null;
@@ -43,26 +38,17 @@ public class LocationApiDao implements PropertiesLoader {
      * TODO break this up more(tried and failed)
      * @return
      */
-    MapLocation convertAddressToLatAndLong(Location locationToMap) throws JsonProcessingException {
+    Location convertAddressToLatAndLong(Location locationToMap) throws JsonProcessingException {
         //take the input location and make parameters
         String street = locationToMap.getStreetAddressOrIntersection();
         String city = locationToMap.getCity();
         String state = locationToMap.getState();
         String zip = locationToMap.getZip();
-        String name = locationToMap.getNameDesc();//not needed as param, but should add to data
-        MapLocation mapLocation = new MapLocation();
-        //build web target adding in the query parameters needed by the api
-        WebTarget target;
-        target = client.target(targetAddress)
-                .queryParam("x-rapidapi-key", apiKey)
-                .queryParam("streetAddress", street)
-                .queryParam("city", city)
-                .queryParam("state", state)
-                .queryParam("zip", zip)
-                .queryParam("language", "en");
-                mapLocation.setName(name);
+        String address = street + " " + city + " " + state + " " + zip;
 
         Response response = client.target(targetAddress)
+                .queryParam("address", address)
+                .queryParam("language", "en")
                 .request()
                 .header("x-rapidapi-key", apiKey)
                 .header("x-rapidapi-host", apiHost)
@@ -76,15 +62,14 @@ public class LocationApiDao implements PropertiesLoader {
                 Result result = mapper.readValue(apiResponse, Result.class);
                 log.info(result);
 
-                mapLocation.setLat(result.getResults().get(0).getGeometry().getLocation().getLat());
-                mapLocation.setLat(result.getResults().get(0).getGeometry().getLocation().getLat());
+                locationToMap.setLat(result.getResults().get(0).getGeometry().getLocation().getLat());
+                locationToMap.setLng(result.getResults().get(0).getGeometry().getLocation().getLng());
                 log.info("lng, lat");
             }
         } finally {
             response.close();
-            return mapLocation;
+            return locationToMap;
         }
-        //insert into a database table TODO
 
     }
 
@@ -113,6 +98,18 @@ public class LocationApiDao implements PropertiesLoader {
                 .queryParam("mode", "json")
                 .queryParam("units", "metric");
     }
+
+
+
+    Code SnippetsResults
+    HttpResponse<String> response = Unirest.get("https://google-maps-geocoding.p.rapidapi.com/geocode/json?address=164%20Townsend%20St.%2C%20San%20Francisco%2C%20CA&language=en")
+    .header("x-rapidapi-key", "07034781e1msh71ad0a0dad0cfc1p14c692jsn985c94dcb586")
+    .header("x-rapidapi-host", "google-maps-geocoding.p.rapidapi.com")
+    .asString();
+
+
+
+
     Client client = ClientBuilder.newClient();
 
     WebTarget target = client.target("http://commerce.com/customers");

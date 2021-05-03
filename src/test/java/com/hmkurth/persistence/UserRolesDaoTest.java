@@ -1,5 +1,6 @@
 package com.hmkurth.persistence;
 
+import com.hmkurth.entity.User;
 import com.hmkurth.entity.UserRoles;
 import com.hmkurth.test.util.Database;
 import lombok.extern.log4j.Log4j2;
@@ -58,7 +59,7 @@ class UserRolesDaoTest {
     void getUserRolesByNameLikeSuccess() {
         List<UserRoles> userRoles = genericDao.getEntityByName("roleName", "all");
         assertEquals(2, userRoles.size());
-        List<UserRoles> users2 = genericDao.getEntityByName("roleName", "regular");
+        List<UserRoles> users2 = genericDao.getEntityByName("roleName", "user");
         assertEquals(2, users2.size());
     }
 
@@ -100,7 +101,21 @@ class UserRolesDaoTest {
         assertNotNull(retrievedUserRole);
     }
 
+    /**
+     * test the successful insertion of a user role
+     */
+    @Test
+    void insertSuccess() {
+       GenericDao userDao = new GenericDao(User.class);
+        //get a user to insert a new role
+        User toInsert = (User) userDao.getEntityByName("lastName", "Curry").get(0);
 
+        UserRoles roles = new UserRoles("admin", toInsert, toInsert.getUserName() );
+        int id = genericDao.insert(roles);
+        assertNotEquals(0, id);
+       int insertedRoles = roles.getId();
+        //assertEquals(toInsert.getId(), insertedRoles);
+    }
 
 
     /**
@@ -118,7 +133,7 @@ class UserRolesDaoTest {
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<UserRoles> usersRoles = genericDao.getPropertyByName("roleName", "regular");
+        List<UserRoles> usersRoles = genericDao.getPropertyByName("roleName", "user");
         assertEquals(2, usersRoles.size());
     }
 }

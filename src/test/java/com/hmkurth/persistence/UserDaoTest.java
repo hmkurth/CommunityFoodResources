@@ -43,28 +43,7 @@ class UserDaoTest {
 
 
         genericDao = new GenericDao(User.class);
-        /*
-        databaseUtility = new DatabaseUtility();
-        databaseUtility.runSQL("cleandb.sql");
-        databaseUtility.runSQL("createTestData.sql");
 
-        dao = new GenericDao(TrailReport.class);
-        userDao = new GenericDao(User.class);
-        trailDao = new GenericDao(Trail.class);
-
-        Trail trail = (Trail)trailDao.getAll().get(0);
-        Set<TrailReport> reports = trail.getReports();
-
-
-        trailReport = new TrailReport();
-        trailReport.setComments("test comments");
-        trailReport.setTrail(trail);
-
-        trailReport.setUser(((User)userDao.getAll().get(0)));
-
-        int id = dao.insert(trailReport);
-        trailReport = (TrailReport)dao.getById(id);
-*/
     }
 
     /**
@@ -153,27 +132,7 @@ class UserDaoTest {
 
     }
 
-    /** TODO
-     * Verifies Delete.
-     * Think about testing the delete scenarios in one-to-many relationships more fully.
-     * For example, if a user is deleted, what should happen to that user's roles? What if a role is deleted?
-     * Write tests to make sure whatever should happen, does happen.
-   NOt sure i need this test.....???
-    @Test
-    void deleteWithRolesSuccess() {
-        //delete a user who has multiple roles
-        User toDelete = (User) genericDao.getById(3);
-        //what if I only want to delete one role if a user has multiple roles??
-        Set<UserRoles> rolesToDelete = toDelete.getRoles();
-        logger.debug("roles to delete: "+ rolesToDelete);
-
-        genericDao.deleteMultiple(UserRoles);
-        genericDao.delete(toDelete);
-        //user's roles should be null
-        assertNull(toDelete.getRoles());
-
-    }
-     */
+    
     /**
      * Verifies a user is returned correctly based on id
      * compare different fields

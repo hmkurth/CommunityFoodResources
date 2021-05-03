@@ -1,14 +1,12 @@
 package com.hmkurth.entity;
 
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-
+import java.util.HashSet;
+import java.util.Set;
 
 
 /**
@@ -29,5 +27,10 @@ public class Type {
     @NonNull
     @Column(name = "type_name")
     private String name;
-
+    //TODO should have a set of resources for each type
+    //references the foreign key
+    @EqualsAndHashCode.Exclude
+    @ToString.Exclude
+    @OneToMany(mappedBy = "type_id", cascade=CascadeType.ALL, orphanRemoval = true, fetch =FetchType.EAGER )
+    private Set<FoodResource> resources = new HashSet<>();
 }

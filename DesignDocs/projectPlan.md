@@ -29,8 +29,8 @@
 ### Week 5
 - [ x] Finalize ERD
 - [ x] add remaining tables to ?hibernate?
-- [ ] start collating resources gained from social networks
-- [ ] "" photos ""
+- [ x] start collating resources gained from social networks
+- [ x] "" photos ""
 - [] create a diagram about app flow with all the jsps and servlets 
 - [ x] Weekly reflection
 
@@ -42,8 +42,8 @@
 
 ### Week 7
 - [ x] Select Template | Design CSS
-- [ ] new user jsp
-- [ ] add user controller (java class)
+- [x] new user jsp
+- [ x] add user controller (java class)
     - [ ] test round trip (front end to back end)
 - [ ] database input
 - [x] research accessibility in java...make it a goal to adhere to gov access standards??
@@ -51,8 +51,8 @@
 - [ x] Weekly reflection
 
 ### Week 8
-- [ ] start collating resources gained from social networks
-- [ ] "" photos ""
+- [ x] start collating resources gained from social networks
+- [ x] "" photos ""
 - [] create a diagram about app flow with all the jsps and servlets
 - [ x] bootstrap implement, consider usability concerns\
 - [ x] research how to make buttons for espanol and hmong language redirects,
@@ -60,38 +60,38 @@
 
 - [ x] Weekly reflection
 ### Week 9
-- [ ] implement java accessibility api
-- [ ] implement other apis... freelittlepantry.org?? is that an api?? can it be one?
+- [0 ] implement java accessibility api
+- [ 0] implement other apis... freelittlepantry.org?? is that an api?? can it be one?
 
 - [ ] identify and utilize other accessibility tools, AXE extension,  html checker, contrast checker, goverment checker
-- [ ] Weekly reflection
+- [ x] Weekly reflection
 
 ### Week 10
-- [ ] Work on code et al
-- [ ] new user jsp
-- [ ] add user controller (java class)
+- [x ] Work on code et al
+- [ x] new user jsp
+- [ x] add user controller (java class)
 - [ ] test round trip (front end to back end)
 - [ ] database input
-- [ ] start collating resources gained from social networks
-- [ ] "" photos ""
+- [ x] start collating resources gained from social networks
+- [ x] "" photos ""
 - [] create a diagram about app flow with all the jsps and servlets
-- [ ] Weekly reflection
+- [x] Weekly reflection
 
 ### Week 11
-- [ ] work on code et al
-- [ ] Weekly reflection
+- [x ] work on code et al
+- [x ] Weekly reflection
 
 ### Week 12
-- [ ] work on code et al, it better be complete!!
+- [ x] work on code et al, it better be complete!!
   
-- [ ] review project specs, documentation to be sure you have everything
-- [ ] Weekly reflection
+- [ x] review project specs, documentation to be sure you have everything
+- [x ] Weekly reflection
 
 ### Week 13
 
-- [ ] debugging, refactoring
-- [ ] QA, test it!  have other people use it!
-- [ ] Weekly reflection
+- [0 ] debugging, refactoring
+- [0 ] QA, test it!  have other people use it!
+- [ x] Weekly reflection
 
 ### Week 14
 - [ ] debugging, refactoring
