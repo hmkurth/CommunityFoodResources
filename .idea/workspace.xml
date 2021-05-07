@@ -9,16 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="still editing admin...">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210507 0133.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="fixed adminHome formatting, looking good, working decently..">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210507 0143.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210507 0206.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Journal.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Journal.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/accessibilityTemplates/accessible/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210507 0058.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/adminHome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/adminHome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210507 0125.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210507 0133.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ForwardPantries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ForwardPantries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchFoodResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/searchResults.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/searchFoodResources.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -415,14 +418,7 @@
       <workItem from="1620173067006" duration="335000" />
       <workItem from="1620173440107" duration="594000" />
       <workItem from="1620347926133" duration="1742000" />
-      <workItem from="1620349837454" duration="19338000" />
-    </task>
-    <task id="LOCAL-00059" summary="working on daos, somewhere my getSession method stopped working">
-      <created>1617510594966</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1617510594966</updated>
+      <workItem from="1620349837454" duration="22598000" />
     </task>
     <task id="LOCAL-00060" summary="for my reference, when i tried adding the removeChildren method, for some reason it made all the getSession() in the generic dao red....wth???">
       <created>1617511785692</created>
@@ -760,7 +756,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620369326595</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="fixed adminHome formatting, looking good, working decently..">
+      <created>1620369922575</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1620369922575</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -783,7 +786,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="inserted null values for contact ids in sql inserts to avoid fk problems, type dao now working" />
     <MESSAGE value="insert with contact on resource owner dao still broken" />
     <MESSAGE value="insert with contact on resource owner dao now working" />
     <MESSAGE value="food resource tests working !!!!!!!!!!!!!!!!!!!!!" />
@@ -808,7 +810,8 @@
     <MESSAGE value="editing admin controls" />
     <MESSAGE value="FINALLY got delete working again with confirmation, can't believe it took so long, needs cleaning up" />
     <MESSAGE value="still editing admin..." />
-    <option name="LAST_COMMIT_MESSAGE" value="still editing admin..." />
+    <MESSAGE value="fixed adminHome formatting, looking good, working decently.." />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed adminHome formatting, looking good, working decently.." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -908,12 +911,12 @@
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchFoodResources.java</url>
           <line>50</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" log-message="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchFoodResources.java</url>
           <line>48</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
@@ -1033,22 +1036,22 @@
           <option name="timeStamp" value="79" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchFoodResources.java</url>
           <line>45</line>
           <option name="timeStamp" value="80" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/webapp/searchResults.jsp</url>
+          <url>file://$PROJECT_DIR$/src/main/webapp/searchFoodResources.jsp</url>
           <line>72</line>
           <option name="timeStamp" value="81" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/webapp/searchResults.jsp</url>
+          <url>file://$PROJECT_DIR$/src/main/webapp/searchFoodResources.jsp</url>
           <line>77</line>
           <option name="timeStamp" value="82" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchFoodResources.java</url>
           <line>37</line>
           <option name="timeStamp" value="83" />
         </line-breakpoint>

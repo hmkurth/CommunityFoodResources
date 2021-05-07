@@ -50,7 +50,7 @@
 					</button>
 					-->
 					<a class="navbar-brand" href="${pageContext.request.contextPath}/index.jsp">
-						<img src="${pageContext.request.contextPath}/assets/img/mfrLogoRound.png" class="img-rounded"alt="Back to home" />
+						<img src="${pageContext.request.contextPath}/assets/img/mfrLogoRound.png" class="img-circle" alt="Back to home" />
 					</a>
 				</div>
 
@@ -61,12 +61,13 @@
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Food Resources<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="${pageContext.request.contextPath}/forwardPantries">Food Pantries</a></li>
+								<li><a href="${pageContext.request.contextPath}/searchFoodResources">Search Food Resources</a></li>
 								<li><a href="${pageContext.request.contextPath}/searchByLocation.jsp">Search By Location</a></li>
 							</ul>
 						</li>
 
 						<li><a href="${pageContext.request.contextPath}/aboutProject.jsp">About This Project</a></li>
-						<li><a href="${pageContext.request.contextPath}/contactMe.jsp">Contact</a></li>
+						<li><a href="${pageContext.request.contextPath}/contactMe.jsp">Contact(Not Done)</a></li>
 					</ul>
 
 				</div>

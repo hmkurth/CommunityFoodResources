@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- *  This is the servlet for employee search, the only purpose is to load the resources from the dao into an attribute and
+ *  This is the servlet for food pantry search, the only purpose is to load the resources from the dao into an attribute and
  *  forward to the jsp
  *@author    hmkurth
  */
