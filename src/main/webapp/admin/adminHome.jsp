@@ -22,7 +22,7 @@
             </div>
         </a>
     </div>
-</div>
+
 <hr class="visible-xs col-xs-12" />
 
     <div class="col-sm-4">
@@ -45,7 +45,7 @@
         <div class="row mobile-left">
             <div class="col-xs-5 col-sm-12">
                 <img src="${pageContext.request.contextPath}/assets/img/demo/madisonCapitol.jpg" alt="placeholder image" class="img-responsive img-circle img-pad"
-                     width="1536" height="2048"/>
+                    />
             </div>
             <div class="col-xs-7 col-sm-12">
                 <h4>Add a Location</h4>
@@ -54,4 +54,5 @@
         </div>
     </a>
 </div>
-<hr class="visible-xs col-xs-12" />
+</div>
+

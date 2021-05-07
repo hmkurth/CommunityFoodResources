@@ -50,7 +50,7 @@
 					</button>
 					-->
 					<a class="navbar-brand" href="${pageContext.request.contextPath}/index.jsp">
-						<img src="${pageContext.request.contextPath}/assets/img/mfrLogoRound.png" alt="Back to home" />
+						<img src="${pageContext.request.contextPath}/assets/img/mfrLogoRound.png" class="img-rounded"alt="Back to home" />
 					</a>
 				</div>
 

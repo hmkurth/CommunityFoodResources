@@ -1007,3 +1007,12 @@
 [DEBUG] 2021-05-07 01:31:24.312 [http-nio-8080-exec-3] DeleteUser - delete submit button pushed: 
 [DEBUG] 2021-05-07 01:31:24.312 [http-nio-8080-exec-3] DeleteUser - Are you sure you want to delete user: Ryder & Kurth ?
 [DEBUG] 2021-05-07 01:33:54.573 [http-nio-8080-exec-6] DeleteUserAction - parameter confirmDelete :confirmDelete
+[INFO ] 2021-05-07 01:37:59.669 [http-nio-8080-exec-7] LoginAction - The logged in user; bcurryhas a role of  'user' : false
+[DEBUG] 2021-05-07 01:38:13.831 [http-nio-8080-exec-7] GenericDao - in get ALL [User{id=1, firstName='Joe', lastName='Coyne', userName='jcoyne', password='supersecret1', email='beast@mail', roles=[UserRoles{id=1, userName='jcoyne', roleName='user'}]}, User{id=3, firstName='Barney', lastName='Curry', userName='bcurry', password='supersecret3', email='seast@mail', roles=[UserRoles{id=3, userName='bcurry', roleName='admin'}]}]
+[INFO ] 2021-05-07 01:43:08.637 [http-nio-8080-exec-5] LoginAction - The logged in user; bcurryhas a role of  'user' : false
+[DEBUG] 2021-05-07 01:43:22.152 [http-nio-8080-exec-5] GenericDao - in get ALL [User{id=1, firstName='Joe', lastName='Coyne', userName='jcoyne', password='supersecret1', email='beast@mail', roles=[UserRoles{id=1, userName='jcoyne', roleName='user'}]}, User{id=3, firstName='Barney', lastName='Curry', userName='bcurry', password='supersecret3', email='seast@mail', roles=[UserRoles{id=3, userName='bcurry', roleName='admin'}]}]
+[DEBUG] 2021-05-07 01:43:42.039 [http-nio-8080-exec-9] GenericDao - in get ALL [User{id=1, firstName='Joe', lastName='Coyne', userName='jcoyne', password='supersecret1', email='beast@mail', roles=[UserRoles{id=1, userName='jcoyne', roleName='user'}]}, User{id=3, firstName='Barney', lastName='Curry', userName='bcurry', password='supersecret3', email='seast@mail', roles=[UserRoles{id=3, userName='bcurry', roleName='admin'}]}]
+[DEBUG] 2021-05-07 01:43:48.326 [http-nio-8080-exec-3] DeleteUser - user id to delete: 1
+[DEBUG] 2021-05-07 01:43:48.326 [http-nio-8080-exec-3] DeleteUser - delete submit button pushed: 
+[DEBUG] 2021-05-07 01:43:48.334 [http-nio-8080-exec-3] DeleteUser - Are you sure you want to delete user: Joe Coyne ?
+[DEBUG] 2021-05-07 01:43:52.052 [http-nio-8080-exec-7] DeleteUserAction - parameter confirmDelete :confirmDelete
