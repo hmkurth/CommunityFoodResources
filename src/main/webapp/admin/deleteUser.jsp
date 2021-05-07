@@ -35,30 +35,29 @@
 
 </div>
 
-<!--TODO form verification! auto complete attribute -->
-
+<!-- if submit was  NOT pushed, display form -->
+<c:if test="${req.getAttribute('submitted') != true}" >
 <form action="${pageContext.request.contextPath}/deleteUser"  method="post" autocomplete="on">
     <div class="form-group">
         <label for="delete">Enter a User Id to Delete</label>
         <input type="text" class="form-control" id="delete" name ="delete" placeholder="id to delete"  required>
     </div>
-
-
     <hr />
-
-    <input type="submit" name="submit" class="btn btn-primary btn-lg" value="Submit">Submit</input>
+    <input type="submit" name="submit" class="btn btn-primary btn-lg" value="Submit">
 </form>
+</c:if>
 
-<!-- if submit was pushed, display message only show confirm delete if submit is not null -->
-<c:if test="${req.getParameter('submitted') == true}" >
+
+<!-- if submit was pushed, display message only show confirm delete if submit is not null
+<c:if test="${req.getAttribute('submitted') == true}" >
     <h1>${message}</h1>
     <form action="${pageContext.request.contextPath}/deleteUser"  method="post" autocomplete="on">
 
-        <input type="submit" name=confirmDelete" value = "Confirm Delete" class="btn btn-primary btn-lg">
+        <input type="submit" name="confirmDelete" value = "Confirm Delete" class="btn btn-primary btn-lg">
     </form>
 
 </c:if>
 
-
+-->
 </div>
 <jsp:include page="../footer.jsp"/>

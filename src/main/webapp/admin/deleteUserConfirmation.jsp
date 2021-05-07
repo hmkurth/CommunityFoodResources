@@ -13,11 +13,11 @@
 
 <!-- if submit was pushed, display message only show confirm delete if submit is not null -->
 
-    <h1>Message:${message} In confirm delete</h1>
+    <h3>${message}</h3>
 
     <form action="${pageContext.request.contextPath}/deleteUserAction"  method="post" autocomplete="on">
 
-        <input type="submit" name=confirmDelete" value = "confirmDelete" class="btn btn-primary btn-lg">
+        <input type="submit" name="confirmDelete" value = "confirmDelete" class="btn btn-primary btn-lg">
     </form>
 
 

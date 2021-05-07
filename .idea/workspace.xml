@@ -9,25 +9,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="editing admin controls">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210506 2344.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210506 2349.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210506 2359.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/deleteUserConfirmation.jsp" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="FINALLY got delete working again with confirmation, can't believe it took so long, needs cleaning up">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210507 0058.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210507 0121.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210507 0125.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Journal.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Journal.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210506 2023.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210506 2036.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210506 2056.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210506 2349.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210506 2359.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210507 0005.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/DeleteUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/DeleteUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/DeleteUserAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/DeleteUserAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LoginAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/adminHome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/adminHome.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/deleteUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/deleteUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/banner.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/banner.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/deleteUserConfirmation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/deleteUserConfirmation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/signUpSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/signUpSuccess.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +79,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -423,14 +422,7 @@
       <workItem from="1620173067006" duration="335000" />
       <workItem from="1620173440107" duration="594000" />
       <workItem from="1620347926133" duration="1742000" />
-      <workItem from="1620349837454" duration="14488000" />
-    </task>
-    <task id="LOCAL-00057" summary="updating journal and timelog">
-      <created>1616977442386</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1616977442386</updated>
+      <workItem from="1620349837454" duration="18849000" />
     </task>
     <task id="LOCAL-00058" summary="foodresource dao tests">
       <created>1617303112969</created>
@@ -768,7 +760,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620354571563</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="FINALLY got delete working again with confirmation, can't believe it took so long, needs cleaning up">
+      <created>1620365033149</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1620365033149</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -791,7 +790,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="got login working, but it's not pretty..." />
     <MESSAGE value="fixed mapped by error, added new column on contacts to reference the resource owners id" />
     <MESSAGE value="inserted null values for contact ids in sql inserts to avoid fk problems, type dao now working" />
     <MESSAGE value="insert with contact on resource owner dao still broken" />
@@ -816,7 +814,8 @@
     <MESSAGE value="adding search by location servlet and jsp, not hooked up yet" />
     <MESSAGE value="changed include to jsp include" />
     <MESSAGE value="editing admin controls" />
-    <option name="LAST_COMMIT_MESSAGE" value="editing admin controls" />
+    <MESSAGE value="FINALLY got delete working again with confirmation, can't believe it took so long, needs cleaning up" />
+    <option name="LAST_COMMIT_MESSAGE" value="FINALLY got delete working again with confirmation, can't believe it took so long, needs cleaning up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

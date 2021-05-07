@@ -33,6 +33,7 @@ public class DeleteUser extends HttpServlet {
         GenericDao dao= new GenericDao(User.class);
         List all = dao.getAll();
         req.setAttribute("AllUsers", all);
+       // req.setAttribute("submitted", false);
 
             RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/deleteUser.jsp");
             dispatcher.forward(req, resp);
@@ -41,7 +42,7 @@ public class DeleteUser extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
         GenericDao dao= new GenericDao(User.class);
-       req.setAttribute("submitted", false);
+
         //get user by id
         String idToDelete = req.getParameter("delete") ;
         int id =Integer.parseInt(idToDelete);
@@ -49,13 +50,13 @@ public class DeleteUser extends HttpServlet {
         userToDelete = (User) dao.getById(id);
         //set the user to delete in a session or req variable to forward to the Delete Action Servlet, since it seems like I can't do it all here
         session.setAttribute("userToDelete", userToDelete);
-        //req.setAttribute("userToDelete", userToDelete);
+        req.setAttribute("userToDelete", userToDelete);
         logger.debug("user id to delete: " + id);
 
         // confirm delete make a message/popup? Redirect to ???  make sure the id is a valid user id
         if (req.getParameter("submit") != null) {
             logger.debug("delete submit button pushed: " );
-            req.setAttribute("submitted", true);
+           // req.setAttribute("submitted", true);
             // Delete button is pressed, send confirmation message to be displayed through EL in jsp
             String message = "Are you sure you want to delete user: " + userToDelete.getFirstName() + " " + userToDelete.getLastName() + " ?";
             logger.debug(message);
@@ -63,7 +64,7 @@ public class DeleteUser extends HttpServlet {
             RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/deleteUserConfirmation.jsp");
             dispatcher.forward(req, resp);
         }
-    /**
+/**
         //CAN YOU EVEN DO BOTH OF THESE AT ONCE??
         //if confirmDelete is pressed, delete from database
         if (req.getParameter("confirmDelete") != null) {
@@ -76,12 +77,8 @@ public class DeleteUser extends HttpServlet {
             RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/deleteUserConfirmation.jsp");
             dispatcher.forward(req, resp);
         }
-
-**/
-
+ **/
     }
-
-
 }
 
 

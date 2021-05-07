@@ -39,11 +39,11 @@ public class DeleteUserAction extends HttpServlet {
         User userToDelete = (User) session.getAttribute("userToDelete");
         logger.debug("parameter confirmDelete :" + req.getParameter("confirmDelete") );
 
-       // if (req.getParameter("confirmDelete") != null) {
+        if (req.getParameter("confirmDelete") != null) {
             dao.delete(userToDelete);
             String message = "You have deleted user: " + userToDelete.getFirstName() + " " + userToDelete.getLastName() + " .";
             req.setAttribute("message", message);
-       // }
+        }
         RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/adminHome.jsp");
         dispatcher.forward(req, resp);
     }
