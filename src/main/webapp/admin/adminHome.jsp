@@ -53,7 +53,7 @@
     <hr class="visible-xs col-xs-12" />
 
     <div class="col-sm-4">
-        <a href="${pageContext.request.contextPath}/admin/deleteUser.jsp" class="no-hover fancy-hover">
+        <a href="${pageContext.request.contextPath}/deleteUser" class="no-hover fancy-hover">
             <div class="row mobile-left">
                 <div class="col-xs-5 col-sm-12">
                     <img src="${pageContext.request.contextPath}/assets/img/demo/FLP_marshal.jpg" alt="placeholder image" class="img-responsive img-circle img-pad" />

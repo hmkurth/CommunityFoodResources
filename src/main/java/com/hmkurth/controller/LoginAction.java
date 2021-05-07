@@ -32,7 +32,7 @@ public class LoginAction extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     String url;
     logger.info("The logged in user; " + req.getRemoteUser() + "has a role of  'user' : "  + req.isUserInRole("user") );
-    //if the user is an admin, redirect to admin home page, otherwise go to index TODO delete extra code depending on how you want to direct this
+    //if the user is an admin, a special section is shown on the index,, otherwise go to index TODO delete extra code depending on how you want to direct this
      if(req.isUserInRole("admin")) {
           url = "/index.jsp";//changing to index with EL lang for admin control link
          GenericDao dao= new GenericDao(User.class);
@@ -41,7 +41,7 @@ public class LoginAction extends HttpServlet {
         } else {
           url = "/index.jsp";
      }
-     //try to set session attribute so you can determine if a user is logged in , can I do it here?
+     //set the user in the session attribute so it's available for other pages to access
     if(req.getRemoteUser() != null) {
         req.getSession().setAttribute("loggedInUser", req.getRemoteUser());
     }

@@ -33,11 +33,7 @@
         </tbody>
     </table>
 
-
-
 </div>
-
-
 
 <!--TODO form verification! auto complete attribute -->
 
@@ -50,19 +46,17 @@
 
     <hr />
 
-    <button type="submit" name="submit" class="btn btn-primary btn-lg" value="Submit">Submit</button>
+    <input type="submit" name="submit" class="btn btn-primary btn-lg" value="Submit">Submit</input>
 </form>
 
 <!-- if submit was pushed, display message only show confirm delete if submit is not null -->
-<c:if test="${req.getParameter('submit') != null}" >
+<c:if test="${req.getParameter('submitted') == true}" >
     <h1>${message}</h1>
     <form action="${pageContext.request.contextPath}/deleteUser"  method="post" autocomplete="on">
 
-        <input type="button" name=confirmDelete" class="btn btn-primary btn-lg">Confirm Delete</input>
+        <input type="submit" name=confirmDelete" value = "Confirm Delete" class="btn btn-primary btn-lg">
     </form>
 
-    </div>
-    </div>
 </c:if>
 
 

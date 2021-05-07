@@ -11,9 +11,7 @@
 <c:if test="${ empty loggedInUser}">
                     <p><a href="userSignup.jsp" class="btn btn-primary btn-lg">Sign Up</a> <a href="loginAction" class="btn btn-default btn-lg">Sign In</a></p>
 </c:if>
-<c:if test="${  req.isUserInRole('admin')}">
-                    <a style="color: white" href="${pageContext.request.contextPath}/admin/adminHome.jsp">Admin Functions(remove)</a>
-</c:if>
+
     </div>
             </div>
         </div>
