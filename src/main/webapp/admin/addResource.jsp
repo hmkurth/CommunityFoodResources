@@ -1,9 +1,9 @@
 
 <%@include file="/taglib.jsp"%>
-<c:import url="/head.jsp" />
+<jsp:include page="../head.jsp"/>
 <title>Add Resource</title>
 
-<c:import url="/header.jsp" />
+<jsp:include page="../header.jsp"/>
 
 <div class="login-container">
     <h1 class="text-center pad-bottom-sm">Add A New Resource</h1>
@@ -44,4 +44,4 @@
 
 
 </div>
-<%@include file="/footer.jsp"%>
+<jsp:include page="../footer.jsp"/>

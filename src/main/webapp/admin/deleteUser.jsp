@@ -1,9 +1,9 @@
 
 <%@include file="/taglib.jsp"%>
-<c:import url="/head.jsp" />
+<jsp:include page="../head.jsp"/>
 <title>Delete User</title>
 
-<c:import url="/header.jsp" />
+<jsp:include page="../header.jsp"/>
 
 
 <div class="login-container">
@@ -56,4 +56,4 @@
 
 
 </div>
-<%@include file="/footer.jsp"%>
+<jsp:include page="../footer.jsp"/>

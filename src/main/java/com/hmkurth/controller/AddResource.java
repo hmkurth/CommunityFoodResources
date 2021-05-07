@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * adapted from FBTR, pawaite
+ *a servlet to add a food resource to the database
  */
 //TODO error handling!  check and redirect!!!
 @WebServlet(name = "AddResource", urlPatterns = { "/addResource" } )
@@ -64,7 +64,7 @@ public class AddResource extends HttpServlet {
             dao.insert(user);
 
             //TOdo set the user in the session?? check if this is duplicating entries
-            RequestDispatcher dispatcher = req.getRequestDispatcher("signUpSuccess.jsp");
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/addResourceSuccess.jsp");
             dispatcher.forward(req, resp);
         }
 

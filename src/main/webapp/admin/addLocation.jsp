@@ -1,6 +1,6 @@
-<%@include file="../taglib.jsp"%>
-<%@include file="../head.jsp"%>
-<%@include file="../header.jsp"%>
+<jsp:include page="../taglib.jsp" />
+<jsp:include page="../head.jsp" />
+<jsp:include page="../header.jsp"/>
 
 <body class="login-bg">
 
@@ -60,4 +60,4 @@
 
 
 </div>
-<%@include file="../footer.jsp"%>
+<jsp:include page="../footer.jsp"/>

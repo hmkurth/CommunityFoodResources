@@ -33,7 +33,7 @@ public class DeleteUser extends HttpServlet {
         List all = dao.getAll();
         req.setAttribute("AllUsers", all);
 
-            RequestDispatcher dispatcher = req.getRequestDispatcher("/adminHome.jsp");
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/adminHome.jsp");
             dispatcher.forward(req, resp);
         }
     @Override
@@ -52,7 +52,7 @@ public class DeleteUser extends HttpServlet {
             // Delete button is pressed, send confirmation message to be displayed through EL in jsp
             String message = "Are you sure you want to delete user: " + userToDelete.getFirstName() + " " + userToDelete.getLastName() + " ?";
             req.setAttribute("message", message);
-            RequestDispatcher dispatcher = req.getRequestDispatcher("/adminHome.jsp");
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/adminHome.jsp");
             dispatcher.forward(req, resp);
         }
         //if confirmDelete is pressed, delete from database
@@ -62,7 +62,7 @@ public class DeleteUser extends HttpServlet {
             String message = "You have deleted user: " + userToDelete.getFirstName() + " " + userToDelete.getLastName() + " .";
             req.setAttribute("message", message);
             //TODO redirect to ??
-            RequestDispatcher dispatcher = req.getRequestDispatcher("/adminHome.jsp");
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/adminHome.jsp");
             dispatcher.forward(req, resp);
         }
 

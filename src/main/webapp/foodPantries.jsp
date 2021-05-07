@@ -1,8 +1,8 @@
 <%@include file="taglib.jsp"%>
-<c:import url="/head.jsp" />
+<jsp:include page="/head.jsp"/>
 <title>Food Pantries</title>
 
-<c:import url="/header.jsp" />
+<jsp:include page="/header.jsp"/>
 
         <div class="row pad-bottom">
             <div class="col-md-10 col-md-offset-1">
@@ -48,13 +48,6 @@
 
 
         </div>
-
-
-
-
-
-
-
-<c:import url="/footer.jsp" />
+            <jsp:include page="/footer.jsp"/>
 
 

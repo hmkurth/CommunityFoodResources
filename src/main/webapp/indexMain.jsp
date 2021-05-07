@@ -14,7 +14,7 @@
                 <p class="lead">From government programs to free little pantries down the street, community meals to local aid and support, we have you covered if you need help with food.</p>
                 <p>
                 <hr />
-                <a href="${pageContext.request.contextPath}/admin/adminHome.jsp">Admin Functions(remove)</a>
+
 
                 <h3>Find Community Support and Resources!</h3>
                 <p>I have tried to bring together all of the food resources available in the Madison Area.  Although all functionality may not be implemented on the first release...</p>

@@ -1,7 +1,7 @@
 <%@include file="taglib.jsp"%>
-<c:import url="head.jsp" />
+<jsp:include page="/head.jsp"/>
 <title>Search By Location</title>
-<c:import url="header.jsp" />
+<jsp:include page="/header.jsp"/>
 
 <div class="banner">
     <div class="bread-wrap">
@@ -54,11 +54,10 @@
             </div>
         </div>
 
+        <jsp:include page="/map.jsp"/>
+
         <div class="row pad-bottom">
             <div class="col-md-10 col-md-offset-1">
-
-
-                <c:import url="map.jsp" />
 
                 <nav aria-label="Page navigation">
                     <ul class="pagination">
@@ -88,4 +87,4 @@
 </div>
 
 
-<c:import url="footer.jsp" />
+<jsp:include page="/footer.jsp"/>

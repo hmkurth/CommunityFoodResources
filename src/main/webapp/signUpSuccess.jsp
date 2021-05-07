@@ -1,8 +1,8 @@
 <%@include file="taglib.jsp"%>
-<c:import url="head.jsp" />
+<jsp:include page="/head.jsp"/>
 <title>Sign Up Success</title>
 
-<c:import url="/header.jsp" />
+<jsp:include page="/header.jsp"/>
 
 
 <div class="content" id="signupSuccess">
@@ -27,4 +27,4 @@
 
 
 
-<c:import url="/footer.jsp" />
+<jsp:include page="/footer.jsp"/>

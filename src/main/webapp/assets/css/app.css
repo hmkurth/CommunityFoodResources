@@ -286,7 +286,7 @@ a {
 	padding-top: 22px;
 }
 .navbar-default .navbar-brand img {
-	max-width: 150px;
+	max-width: 100px;
 }
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
 	max-height: 500px;

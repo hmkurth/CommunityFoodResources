@@ -1,8 +1,8 @@
 <%@include file="../taglib.jsp"%>
-<c:import url="../head.jsp" />
+<jsp:include page="../head.jsp" />
 <title>Admin Home</title>
 
-<c:import url="../header.jsp" />
+<jsp:include page="../header.jsp" />
 <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Food Resources<span class="caret"></span></a>
     <ul class="dropdown-menu">
@@ -43,7 +43,7 @@
 
 
         </div>
-<c:out value="${message}"/>
+
 
 
         <!--TODO form verification! auto complete attribute -->
@@ -74,5 +74,5 @@
 
 
 </div>
-<c:import url="/footer.jsp" />
+<jsp:include page="../footer.jsp" />
 

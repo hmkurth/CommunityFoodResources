@@ -1,5 +1,5 @@
 <%@include file="taglib.jsp"%>
-
+<jsp:include page="/head.jsp"/>
 
 <div class="menu-block pull-right no-pad">
 <li class="dropdown">

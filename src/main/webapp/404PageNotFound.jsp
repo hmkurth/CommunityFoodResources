@@ -1,8 +1,8 @@
 <%@include file="taglib.jsp"%>
-<c:import url="/head.jsp" />
+<jsp:include page="/head.jsp"/>
 <title>404 Page Not Found</title>
 
-<c:import url="/header.jsp" />
+<jsp:include page="/header.jsp"/>
 
 
 <!-- Begin main page content -->
@@ -13,11 +13,11 @@
             <div class="col-md-12">
                 <h1>Not Found</h1>
                 <p class="lead">Unfortunately, we can not locate the page you selected.</p>
-                <a href="index.jsp" class="btn btn-primary btn-lg">Return Home</a>
+                <a href="${pageContext.request.contextPath}/index.jsp" class="btn btn-primary btn-lg">Return Home</a>
             </div>
         </div>
 
 
     </div>
 </div>
-<c:import url="/footer.jsp" />
+<jsp:include page="/footer.jsp"/>

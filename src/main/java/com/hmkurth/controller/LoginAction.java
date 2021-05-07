@@ -40,6 +40,10 @@ public class LoginAction extends HttpServlet {
         } else {
           url = "/index.jsp";
      }
+     //try to set session attribute so you can determine if a user is logged in , can I do it here?
+    if(req.getRemoteUser() != null) {
+        req.getSession().setAttribute("loggedInUser", req.getRemoteUser());
+    }
     RequestDispatcher dispatcher = req.getRequestDispatcher(url);
     dispatcher.forward(req, resp);
 
