@@ -13,66 +13,61 @@
     </ul>
 </li>
 
-<div class="login-container">
-    <h1 class="text-center pad-bottom-sm">Delete a User</h1>
-    <div class="row pad-bottom">
-        <div class="col-md-10 col-md-offset-1">
-            <h2>All Users</h2>
-            <table class="table table-striped table-bordered">
-                <thead>
-                <tr>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Username</th>
-                    <th>ID</th>
-                </tr>
-                </thead>
-                <tbody>
-                <c:forEach var="user" items="${AllUsers}" varStatus="iter">
-                    <tr>
 
-                        <td>${user.firstName}</td>
-                        <td>${user.lastName}</td>
-                        <td>${user.userName}</td>
-                        <td>${user.id}</td>
-                    </tr>
-                </c:forEach>
-                </tbody>
-            </table>
+<!-- Image row NEW MARKUP -->
+<div class="row text-center">
 
+    <hr class="visible-xs col-xs-12" />
 
-
-        </div>
-
-
-
-        <!--TODO form verification! auto complete attribute -->
-
-        <form action="${pageContext.request.contextPath}/deleteUser"  method="post" autocomplete="on">
-            <div class="form-group">
-                <label for="delete">Enter a User Id to Delete</label>
-                <input type="text" class="form-control" id="delete" name ="delete" placeholder="id to delete"  required>
+    <div class="col-sm-4">
+        <a href="${pageContext.request.contextPath}/admin/addLocation.jsp" class="no-hover fancy-hover">
+            <div class="row mobile-left">
+                <div class="col-xs-5 col-sm-12">
+                    <img src="${pageContext.request.contextPath}/assets/img/demo/madisonCapitol.jpg" alt="placeholder image" class="img-responsive img-circle img-pad"
+                         width="1536" height="2048"/>
+                </div>
+                <div class="col-xs-7 col-sm-12">
+                    <h4>Add a Location</h4>
+                    <p></p>
+                </div>
             </div>
+        </a>
+    </div>
 
+    <hr class="visible-xs col-xs-12" />
 
-            <hr />
-
-            <button type="submit" name="submit" class="btn btn-primary btn-lg" value="Submit">Submit</button>
-        </form>
-
-<!-- if submit was pushed, display message only show confirm delete if submit is not null -->
-        <c:if test="${req.getParameter('submit') != null}" >
-            <h1>${message}</h1>
-            <form action="${pageContext.request.contextPath}/deleteUser"  method="post" autocomplete="on">
-
-                <input type="button" name=confirmDelete" class="btn btn-primary btn-lg">Confirm Delete</input>
-            </form>
-
+    <div class="col-sm-4">
+        <a href="${pageContext.request.contextPath}/admin/addResource.jsp" class="no-hover fancy-hover">
+            <div class="row mobile-left">
+                <div class="col-xs-5 col-sm-12">
+                    <img src="${pageContext.request.contextPath}/assets/img/demo/FLP_milwaukee_lansing.jpg" alt="placeholder image" class="img-responsive img-circle img-pad" />
+                </div>
+                <div class="col-xs-7 col-sm-12">
+                    <h4>Add a new food resource</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
             </div>
+        </a>
+    </div>
+
+    <hr class="visible-xs col-xs-12" />
+
+    <div class="col-sm-4">
+        <a href="${pageContext.request.contextPath}/admin/deleteUser.jsp" class="no-hover fancy-hover">
+            <div class="row mobile-left">
+                <div class="col-xs-5 col-sm-12">
+                    <img src="${pageContext.request.contextPath}/assets/img/demo/FLP_marshal.jpg" alt="placeholder image" class="img-responsive img-circle img-pad" />
+                </div>
+                <div class="col-xs-7 col-sm-12">
+                    <h4>Delete User</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
             </div>
-        </c:if>
-
-
+        </a>
+    </div>
 </div>
+
+
+
 <jsp:include page="../footer.jsp" />
 

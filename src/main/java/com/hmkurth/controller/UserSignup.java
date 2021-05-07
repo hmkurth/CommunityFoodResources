@@ -33,13 +33,17 @@ public class UserSignup extends HttpServlet {
         user.setFirstName(req.getParameter("first_name"));
         user.setLastName(req.getParameter("last_name"));
         user.setUserName(req.getParameter("user_name"));
+        //TODO check if user name exists
         logger.debug("Adding Username: " + user.getUserName());
+        //TODO have them reenter pw to verify
         user.setPassword(req.getParameter("password"));
+        //TODO validate email address
         user.setEmail(req.getParameter("email"));
         logger.debug("Adding User: " + user);
         UserRoles role = new UserRoles();
         role.setUser(user);
         role.setUserName(user.getUserName());
+        //all users get assigned role user first
         role.setRoleName("user");
         user.addRole(role);
 

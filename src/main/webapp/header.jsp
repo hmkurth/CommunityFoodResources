@@ -62,7 +62,6 @@
 							<ul class="dropdown-menu">
 								<li><a href="${pageContext.request.contextPath}/forwardPantries">Food Pantries</a></li>
 								<li><a href="${pageContext.request.contextPath}/searchByLocation.jsp">Search By Location</a></li>
-								<li><a href="${pageContext.request.contextPath}/communityAid.jsp">Community Aid and Support Groups</a></li>
 							</ul>
 						</li>
 

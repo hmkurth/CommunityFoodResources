@@ -5,12 +5,11 @@
   Time: 6:40 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+<%@include file="taglib.jsp"%>
+<jsp:include page="head.jsp" />
+    <title>About This Project</title>
+<!-- import files should have "are relative references to a file in the same directory as the JSP." -->
+<jsp:include page="header.jsp" />
+<jsp:include page="banner.jsp" />
+<h1>Coming Soon</h1>
+<jsp:include page="footer.jsp" />
