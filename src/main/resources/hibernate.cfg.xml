@@ -11,7 +11,7 @@
         <property name="hibernate.c3p0.timeout">300</property>
         <property name="hibernate.c3p0.max_statements">50</property>
         <property name="hibernate.c3p0.idle_test_period">3000</property>
-
+        <property name="hibernate.search.backend.directory.root"/>
         <mapping class="com.hmkurth.entity.User"/>
         <mapping class="com.hmkurth.entity.UserRoles"/>
         <mapping class="com.hmkurth.entity.Contact"/>

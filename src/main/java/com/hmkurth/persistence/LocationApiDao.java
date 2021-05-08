@@ -6,11 +6,18 @@ import com.hmkurth.ApiLocation.Result;
 import com.hmkurth.entity.Location;
 import com.hmkurth.utilities.PropertiesLoader;
 import lombok.extern.log4j.Log4j2;
+import lombok.val;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.hibernate.Session;
+import org.hibernate.query.Query;
 
 
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.core.Response;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
 
 @Log4j2
@@ -21,6 +28,9 @@ import java.util.Properties;
  */
 
 public class LocationApiDao implements PropertiesLoader {
+
+    private final Logger logger = LogManager.getLogger(this.getClass());
+
     String apiKey = null;
     String apiHost = null;
     LocationApiDao dao;
@@ -72,8 +82,48 @@ public class LocationApiDao implements PropertiesLoader {
         } finally {
             return locationToMap;
         }
-
     }
+
+        /**
+         * Returns an open session from the SessionFactory
+         * @return session
+         */
+        private Session getSession() {
+            return SessionFactoryProvider.getSessionFactory().openSession();
+
+        }
+
+    /**
+     * https://stackoverflow.com/questions/28847954/what-is-the-best-approach-to-find-all-addresses-that-are-in-a-specific-distance
+     * @param longitude
+     * @param latitude
+     * @param distance
+     *
+     * @return list of ids of locations that are in range
+        */
+            public List<Long> getNearByLocations(float latitude, float longitude, float distance) {
+            Session sess = getSession();
+                val queryString = "SELECT id, (6371 * acos (cos(radians("
+                        + latitude
+                        + ")) * cos(radians(latitude)) * cos(radians(lng) - radians("
+                        + longitude
+                        + "))  + sin(radians("
+                        + latitude
+                        + ")) * sin(radians(lat)))) AS distance FROM Location HAVING distance < "
+                        + distance + " ORDER BY distance";
+            Query qry = sess.createSQLQuery(queryString);
+
+            List<Object[]> list = null;
+            list = qry.list();
+            List<Long> idList = new ArrayList<>();
+            for (Object[] obj : list) {
+            Long id = (Long) obj[0];
+            idList.add(id);
+            }
+            return idList;
+            }
+
+
 
 
 }

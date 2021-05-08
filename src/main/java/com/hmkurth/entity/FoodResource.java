@@ -3,6 +3,7 @@ package com.hmkurth.entity;
 
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.search.mapper.pojo.bridge.builtin.annotation.GeoPointBinding;
 
 import javax.persistence.*;
 import java.util.Objects;
@@ -16,7 +17,7 @@ import java.util.Objects;
 @RequiredArgsConstructor
 @Entity(name = "FoodResource")
 @Table(name = "food_resources")//case sensitive
-public class FoodResource implements GeoClassBinding {
+public class FoodResource {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
@@ -45,7 +46,7 @@ public class FoodResource implements GeoClassBinding {
     @PrimaryKeyJoinColumn
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
-    @Embedded
+
     @GeoPointBinding
    // @Column(name = "location_id")
     private Location location;//fk to location
