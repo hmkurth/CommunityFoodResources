@@ -4,10 +4,13 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.query.Query;
+
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
+import javax.transaction.Transactional;
 import java.util.List;
 
 /**
@@ -165,6 +168,37 @@ public class GenericDao<T> {//T is placeholder, variable for type
         logger.debug("inserting entity {}", entity);
         session.close();
         return id;
+    }
+
+    /**
+     * This method will find the closest resources to an entered address,
+     * https://stackoverflow.com/questions/28847954/what-is-the-best-approach-to-find-all-addresses-that-are-in-a-specific-distance
+     * @param longitude
+     * @param latitude
+     *
+     * @return list of ids of locations that are in range
+     */
+    public List<Long> getNearByLocations(float latitude, float longitude,
+                                         float distance) {
+        Session sess = getSession();
+        String queryString = "SELECT id, (6371 * acos (cos(radians("
+                + latitude
+                + ")) * cos(radians(latitude)) * cos(radians(longitude) - radians("
+                + longitude
+                + "))  + sin(radians("
+                + latitude
+                + ")) * sin(radians(lat)))) AS distance FROM Location HAVING distance < "
+                + distance + " ORDER BY distance";
+        Query qry = sess.createSQLQuery(queryString);
+
+        List<Object[]> list = null;
+        list = qry.list();
+        List<Long> idList = new ArrayList<>();
+        for (Object[] obj : list) {
+            Long id = (Long) obj[0];
+            idList.add(id);
+        }
+        return idList;
     }
 
 

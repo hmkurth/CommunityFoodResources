@@ -13,7 +13,8 @@ import java.util.Objects;
  * @author hmkurth
  */
 @Data
-
+@Indexed
+@GeoPointBinding(fieldName = "placeOfBirth")
 @NoArgsConstructor
 @RequiredArgsConstructor
 @Entity(name = "Location")
@@ -38,7 +39,9 @@ public class Location {
     @Column(name="bus_info")
     private String busInfo;
     private String comments;
+    @Longitude
     private Double lng;
+    @Latitude
     private Double lat;
     @OneToOne
     @PrimaryKeyJoinColumn

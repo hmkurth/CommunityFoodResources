@@ -16,7 +16,7 @@ import java.util.Objects;
 @RequiredArgsConstructor
 @Entity(name = "FoodResource")
 @Table(name = "food_resources")//case sensitive
-public class FoodResource {
+public class FoodResource implements GeoClassBinding {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
@@ -45,6 +45,8 @@ public class FoodResource {
     @PrimaryKeyJoinColumn
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
+    @Embedded
+    @GeoPointBinding
    // @Column(name = "location_id")
     private Location location;//fk to location
     @ToString.Exclude
