@@ -21,7 +21,6 @@ import java.io.IOException;
 /**
  * This servlet will allow a user to enter a location to search for nearby resources,
  * It will also use the geolocation Api to get the lat and lng of that location,
- *
  */
 //TODO error handling!  check and redirect!!!
 @WebServlet(name = "SearchByLocation", urlPatterns = { "/searchByLocation" } )
@@ -35,15 +34,15 @@ public class SearchByLocation extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         GenericDao dao = new GenericDao(Location.class);
         GenericDao fdao = new GenericDao(FoodResource.class);
-
+        //do you really want a full adress, or just zip?????
         Location location = new Location();
         location.setStreetAddressOrIntersection(req.getParameter("streetAddressOrIntersection"));
         location.setCity(req.getParameter("city"));
         location.setState(req.getParameter("state"));
         location.setZip(req.getParameter("zip"));
         logger.debug("searchBy Location: " + location);
-
-        //Use the api to get the lat and long TODO
+        //TODO check if it is a valid location
+        //Use the api to get the lat and long
         try {
             LocationApiDao locationApiDao = new LocationApiDao();
             location = locationApiDao.convertAddressToLatAndLong(location);
@@ -53,6 +52,14 @@ public class SearchByLocation extends HttpServlet {
         }
 
         //find the nearest resources TODO, param of what type of resource user wants, or all
+        //need to find a way use both lat and long coords
+
+
+
+
+
+
+
         RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/addLocationSuccess.jsp");
         dispatcher.forward(req, resp);
     }

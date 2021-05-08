@@ -31,11 +31,15 @@ public class SearchFoodResources extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
 
-
-@Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/searchFoodResources.jsp");
+        dispatcher.forward(req, resp);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
-         resourceDao = new GenericDao(FoodResource.class);
+        resourceDao = new GenericDao(FoodResource.class);
         String  searchTerm = req.getParameter("term");
         String  searchProperty = req.getParameter("categories");
         session.setAttribute("resources", resourceDao.getPropertyByName(searchProperty,searchTerm));
@@ -52,4 +56,5 @@ public class SearchFoodResources extends HttpServlet {
         RequestDispatcher dispatcher = req.getRequestDispatcher("/searchFoodResources.jsp");
         dispatcher.forward(req, resp);
     }
+
 }
