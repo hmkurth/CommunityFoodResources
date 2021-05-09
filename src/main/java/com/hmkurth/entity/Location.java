@@ -6,6 +6,7 @@ import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.search.mapper.pojo.bridge.builtin.annotation.GeoPointBinding;
 import org.hibernate.search.mapper.pojo.bridge.builtin.annotation.Latitude;
 import org.hibernate.search.mapper.pojo.bridge.builtin.annotation.Longitude;
+import org.hibernate.search.mapper.pojo.mapping.definition.annotation.GenericField;
 import org.hibernate.search.mapper.pojo.mapping.definition.annotation.Indexed;
 
 import javax.persistence.*;
@@ -18,7 +19,7 @@ import java.util.Objects;
  */
 @Data
 @Indexed
-@GeoPointBinding(fieldName = "placeOfBirth")
+@GeoPointBinding(fieldName = "location")
 @NoArgsConstructor
 @RequiredArgsConstructor
 @Entity(name = "Location")
@@ -27,6 +28,7 @@ public class Location {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO, generator = "native")
     @GenericGenerator(name="native",strategy="native")
+    @GenericField
     private int id;
     @NonNull
     @Column(name="name_description")  //don't need if names are the same

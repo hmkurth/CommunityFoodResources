@@ -4,6 +4,10 @@ package com.hmkurth.entity;
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.search.mapper.pojo.bridge.builtin.annotation.GeoPointBinding;
+import org.hibernate.search.mapper.pojo.mapping.definition.annotation.FullTextField;
+import org.hibernate.search.mapper.pojo.mapping.definition.annotation.GenericField;
+import org.hibernate.search.mapper.pojo.mapping.definition.annotation.Indexed;
+import org.hibernate.search.mapper.pojo.mapping.definition.annotation.IndexedEmbedded;
 
 import javax.persistence.*;
 import java.util.Objects;
@@ -13,20 +17,23 @@ import java.util.Objects;
  *
  * @author hmkurth
  */
+@Indexed
 @NoArgsConstructor
 @RequiredArgsConstructor
 @Entity(name = "FoodResource")
 @Table(name = "food_resources")//case sensitive
 public class FoodResource {
+    @GenericField
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
     @NonNull
     @Column(name = "resource_name")
+    @FullTextField
     private String name;
 
-
+    @GenericField
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
     @NonNull
@@ -39,8 +46,10 @@ public class FoodResource {
     @ToString.Exclude
     @OneToOne
     @PrimaryKeyJoinColumn
+    @FullTextField
     private ResourceOwner owner;
     @NonNull
+    @FullTextField
     private String description;
     @OneToOne
     @PrimaryKeyJoinColumn
@@ -48,6 +57,7 @@ public class FoodResource {
     @EqualsAndHashCode.Exclude
 
     @GeoPointBinding
+    @IndexedEmbedded
    // @Column(name = "location_id")
     private Location location;//fk to location
     @ToString.Exclude
@@ -56,19 +66,26 @@ public class FoodResource {
     @JoinColumn(name = "contact_id")
     private Contact contactId;//fk to contact
     @Column(name = "comments")
+    @FullTextField
     private String comments;
     @Column(name = "service_area")
+    @FullTextField
     private String serviceArea;//the city/county/area served
+    @FullTextField
     private String website;
     @Column(name = "documentation_needed")
     @NonNull
+    @FullTextField
     private String documentation;
     @Column(name = "day_of_week_offered")
+    @FullTextField
     private String daysOfWeek;  //should I make this an array list??how does that work with the DB???
     @Column(name = "delivery_offered")
     private boolean deliveryOffered;
+    @FullTextField
     @Column(name = "delivery_desc")//if delivery is offered, description of services
     private String deliveryDescription;
+    @FullTextField
     @Column(name="dietary_considerations")
     private String dietaryConsiderations;
 
