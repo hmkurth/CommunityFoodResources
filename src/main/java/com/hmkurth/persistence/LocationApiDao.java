@@ -13,6 +13,7 @@ import org.hibernate.Session;
 import org.hibernate.query.Query;
 
 
+import javax.transaction.Transactional;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.core.Response;
@@ -101,15 +102,16 @@ public class LocationApiDao implements PropertiesLoader {
      *
      * @return list of ids of locations that are in range
         */
+    @Transactional
             public List<Long> getNearByLocations(float latitude, float longitude, float distance) {
             Session sess = getSession();
                 val queryString = "SELECT id, (6371 * acos (cos(radians("
                         + latitude
-                        + ")) * cos(radians(latitude)) * cos(radians(lng) - radians("
+                        + ")) * cos(radians(lat)) * cos(radians(lng) - radians("
                         + longitude
                         + "))  + sin(radians("
                         + latitude
-                        + ")) * sin(radians(lat)))) AS distance FROM Location HAVING distance < "
+                        + ")) * sin(radians(lat)))) AS distance FROM location HAVING distance < "
                         + distance + " ORDER BY distance";
             Query qry = sess.createSQLQuery(queryString);
 
@@ -127,3 +129,27 @@ public class LocationApiDao implements PropertiesLoader {
 
 
 }
+/**
+    SELECT z.zip,
+        z.primary_city,
+        z.latitude, z.longitude,
+        p.distance_unit
+        * DEGREES(ACOS(LEAST(1.0, COS(RADIANS(p.latpoint))
+        * COS(RADIANS(z.latitude))
+        * COS(RADIANS(p.longpoint) - RADIANS(z.longitude))
+        + SIN(RADIANS(p.latpoint))
+        * SIN(RADIANS(z.latitude))))) AS distance_in_km
+        FROM zip AS z
+        JOIN (   /* these are the query parameters
+        SELECT  42.81  AS latpoint,  -70.81 AS longpoint,
+        50.0 AS radius,      111.045 AS distance_unit
+        ) AS p ON 1=1
+        WHERE z.latitude
+        BETWEEN p.latpoint  - (p.radius / p.distance_unit)
+        AND p.latpoint  + (p.radius / p.distance_unit)
+        AND z.longitude
+        BETWEEN p.longpoint - (p.radius / (p.distance_unit * COS(RADIANS(p.latpoint))))
+        AND p.longpoint + (p.radius / (p.distance_unit * COS(RADIANS(p.latpoint))))
+        ORDER BY distance_in_km
+        LIMIT 1
+ */
