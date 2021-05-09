@@ -61,7 +61,7 @@ public class SearchByLocation extends HttpServlet {
         //need to find a way use both lat and long coords
         //take the lat and lng out of the newly transformed address, pass to ldao with distance
         int page= 1;
-        List<Double> results = lApiDao.getNearByLocations(location.getLat(), location.getLng(),page);
+        List<Object> results = lApiDao.getNearByLocations(location.getLat(), location.getLng(),page);
         req.setAttribute("nearLocations", results);
         logger.debug(results.toString());
 

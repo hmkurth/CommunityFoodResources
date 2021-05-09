@@ -1039,3 +1039,12 @@
 [INFO ] 2021-05-09 01:03:45.463 [http-nio-8080-exec-6] LocationApiDao - lng, lat
 [DEBUG] 2021-05-09 01:03:45.463 [http-nio-8080-exec-6] SearchByLocation - getting long and latLocation(id=0, nameDesc=null, streetAddressOrIntersection=3426 hargrove st, city=madison, state=wi, zip=53714, busInfo=null, comments=null, lng=-89.33068, lat=43.09326)
 [DEBUG] 2021-05-09 01:03:53.597 [http-nio-8080-exec-6] SearchByLocation - [0.20311922031732096, 0.20311922031732096, 7.938737862646874, 424.4754825416607]
+[DEBUG] 2021-05-09 01:27:09.433 [main] ApiTestServiceClient - [0.20311922031732096, 0.20311922031732096, 7.938737862646874]
+[DEBUG] 2021-05-09 01:35:02.212 [main] ApiTestServiceClient - [[Ljava.lang.Object;@3dd2b9c1, [Ljava.lang.Object;@6a1d1467, [Ljava.lang.Object;@536da29c]
+[DEBUG] 2021-05-09 01:36:34.138 [main] ApiTestServiceClient - results[[Ljava.lang.Object;@3dd2b9c1, [Ljava.lang.Object;@6a1d1467, [Ljava.lang.Object;@536da29c]
+[DEBUG] 2021-05-09 01:43:07.577 [main] ApiTestServiceClient - results[[Ljava.lang.Object;@3dd2b9c1, [Ljava.lang.Object;@6a1d1467, [Ljava.lang.Object;@536da29c]
+[DEBUG] 2021-05-09 02:08:53.040 [main] ApiTestServiceClient - results in array[1][[[Ljava.lang.Object;@3dd2b9c1, [Ljava.lang.Object;@6a1d1467, [Ljava.lang.Object;@536da29c]]
+[DEBUG] 2021-05-09 02:10:39.990 [main] ApiTestServiceClient - results in array[1][Ljava.lang.Object;@6a1d1467
+[DEBUG] 2021-05-09 02:11:16.240 [main] ApiTestServiceClient - results in array[1][Ljava.lang.Object;@536da29c
+[DEBUG] 2021-05-09 02:12:34.201 [main] ApiTestServiceClient - results in array[1]class [Ljava.lang.Object;
+[DEBUG] 2021-05-09 02:12:54.912 [main] ApiTestServiceClient - results in array[1]class [Ljava.lang.Object;

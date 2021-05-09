@@ -6,6 +6,7 @@ import com.hmkurth.entity.Location;
 import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.Test;
 import java.text.DecimalFormat;
+import java.util.Arrays;
 import java.util.List;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
@@ -97,10 +98,12 @@ public class ApiTestServiceClient {
         LocationApiDao dao = new LocationApiDao();
         GenericDao<Location> ldao = new GenericDao<>(Location.class);
         Location centerPoint = ldao.getById(2);
-        List<Double> results = dao.getNearByLocations(centerPoint.getLat(), centerPoint.getLng(), 1);
+        List<Object> results = dao.getNearByLocations(centerPoint.getLat(), centerPoint.getLng(), 1);
         //how are you going to tst this????? todo more tests
-        log.debug(results);
-        assertEquals(10, results.size());
+      //  log.debug("results in array[1], get resource id and name " + results.get(1).getResourceId().getName());
+        int idToTest = 1;
+        assertEquals("???", results.get(1));
+        assertEquals("?", Arrays.deepToString(new List[]{results}));
 
     }
 }

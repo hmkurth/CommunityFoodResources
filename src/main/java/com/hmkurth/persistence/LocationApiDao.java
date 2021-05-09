@@ -6,18 +6,15 @@ import com.hmkurth.ApiLocation.Result;
 import com.hmkurth.entity.Location;
 import com.hmkurth.utilities.PropertiesLoader;
 import lombok.extern.log4j.Log4j2;
-import lombok.val;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 
-
 import javax.transaction.Transactional;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.core.Response;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
@@ -26,14 +23,14 @@ import java.util.Properties;
  * This is the data access model for the location api.  it will take in an address and convert to
  * an address with lat and long
  * TODO ERROR handling, check if address exists before trying to map it
- */
+ **/
 
 public class LocationApiDao implements PropertiesLoader {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
-    String apiKey = null;
-    String apiHost = null;
+    String apiKey;
+    String apiHost;
     LocationApiDao dao;
     Client client;
     String targetAddress = "https://google-maps-geocoding.p.rapidapi.com/geocode/json";
@@ -101,14 +98,14 @@ public class LocationApiDao implements PropertiesLoader {
     /**
      * https://stackoverflow.com/questions/28847954/what-is-the-best-approach-to-find-all-addresses-that-are-in-a-specific-distance
      *TODO make this take in a location, not lat and lng
-     * @param longitude
      * @param latitude
+     * @param longitude
      * @return list of ilocations that are in range
      */
     @Transactional
-    public List<Double> getNearByLocations(float latitude, float longitude, int page) {
+    public List<Object> getNearByLocations(float latitude, float longitude, int page) {
         Session sess = getSession();
-        Query query = sess.createSQLQuery("SELECT (6371 * 2 * ASIN(SQRT(POWER(SIN((:latitude - abs(lat)) * pi()/180 / 2),2) +" +
+        Query query = sess.createSQLQuery("SELECT id,(6371 * 2 * ASIN(SQRT(POWER(SIN((:latitude - abs(lat)) * pi()/180 / 2),2) +" +
                 "COS(:latitude * pi()/180 ) * COS(abs(lat) * pi()/180) *" +
                 "POWER(SIN((:longitude - lng) * pi()/180 / 2), 2))))*1000 as distance " +
                 "FROM location HAVING distance < 50 ORDER BY distance");
@@ -117,8 +114,9 @@ public class LocationApiDao implements PropertiesLoader {
         query.setParameter("latitude", latitude);
         query.setFirstResult((page - 1) * 10);
         query.setMaxResults(10);
-
-        return (List<Double>) query.list();
+        //i think this returns a list of actual distances(in miles?) from location, how do you get the id???
+        List list = query.list();
+        return list;
 
 
     }
