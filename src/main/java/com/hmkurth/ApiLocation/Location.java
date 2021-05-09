@@ -26,7 +26,7 @@ public class Location{
 	}
 
 	public float getLng(){
-		return lng;
+		return (float) lng;
 	}
 
 	public void setLat(double lat){

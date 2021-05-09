@@ -100,25 +100,25 @@ public class LocationApiDao implements PropertiesLoader {
 
     /**
      * https://stackoverflow.com/questions/28847954/what-is-the-best-approach-to-find-all-addresses-that-are-in-a-specific-distance
-     *
+     *TODO make this take in a location, not lat and lng
      * @param longitude
      * @param latitude
-     * @return list of ids of locations that are in range
+     * @return list of ilocations that are in range
      */
     @Transactional
-    public List<Long> getNearByLocations(float latitude, float longitude, int page) {
+    public List<Double> getNearByLocations(float latitude, float longitude, int page) {
         Session sess = getSession();
         Query query = sess.createSQLQuery("SELECT (6371 * 2 * ASIN(SQRT(POWER(SIN((:latitude - abs(lat)) * pi()/180 / 2),2) +" +
-                "COS(:ulatitude * pi()/180 ) * COS(abs(lat) * pi()/180) *" +
+                "COS(:latitude * pi()/180 ) * COS(abs(lat) * pi()/180) *" +
                 "POWER(SIN((:longitude - lng) * pi()/180 / 2), 2))))*1000 as distance " +
-                "FROM location HAVING distance < 5000 ORDER BY distance");
+                "FROM location HAVING distance < 50 ORDER BY distance");
 
         query.setParameter("longitude", longitude);
         query.setParameter("latitude", latitude);
         query.setFirstResult((page - 1) * 10);
         query.setMaxResults(10);
 
-        return (List<Long>) query.list();
+        return (List<Double>) query.list();
 
 
     }

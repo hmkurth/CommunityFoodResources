@@ -1021,3 +1021,21 @@
 [DEBUG] 2021-05-07 21:48:30.224 [http-nio-8080-exec-10] UserSignup - Adding Username: r
 [DEBUG] 2021-05-07 21:48:30.256 [http-nio-8080-exec-10] UserSignup - Adding User: User{id=0, firstName='r', lastName='r', userName='r', password='r', email='r@f.com', roles=[]}
 [DEBUG] 2021-05-07 21:48:40.844 [http-nio-8080-exec-10] GenericDao - inserting entity User{id=353, firstName='r', lastName='r', userName='r', password='r', email='r@f.com', roles=[UserRoles{id=188, userName='r', roleName='user'}]}
+[INFO ] 2021-05-09 00:37:18.709 [http-nio-8080-exec-3] LoginAction - The logged in user; bcurryhas a role of  'user' : false
+[INFO ] 2021-05-09 00:42:25.861 [http-nio-8080-exec-7] LoginAction - The logged in user; bcurryhas a role of  'user' : false
+[DEBUG] 2021-05-09 00:42:34.389 [http-nio-8080-exec-7] GenericDao - in get ALL [User{id=3, firstName='Barney', lastName='Curry', userName='bcurry', password='supersecret3', email='seast@mail', roles=[UserRoles{id=3, userName='bcurry', roleName='admin'}]}, User{id=353, firstName='r', lastName='r', userName='r', password='r', email='r@f.com', roles=[UserRoles{id=188, userName='r', roleName='user'}]}]
+[DEBUG] 2021-05-09 00:44:46.876 [http-nio-8080-exec-9] GenericDao - in get ALL [User{id=3, firstName='Barney', lastName='Curry', userName='bcurry', password='supersecret3', email='seast@mail', roles=[UserRoles{id=3, userName='bcurry', roleName='admin'}]}, User{id=353, firstName='r', lastName='r', userName='r', password='r', email='r@f.com', roles=[UserRoles{id=188, userName='r', roleName='user'}]}]
+[DEBUG] 2021-05-09 00:47:12.349 [http-nio-8080-exec-6] SearchByLocation - searchBy Location: Location(id=0, nameDesc=null, streetAddressOrIntersection=3426 hargrove st, city=madison, state=wi, zip=53714, busInfo=null, comments=null, lng=null, lat=null)
+[INFO ] 2021-05-09 00:47:14.374 [http-nio-8080-exec-6] LocationApiDao - com.hmkurth.ApiLocation.Result@1487e6e5
+[INFO ] 2021-05-09 00:47:14.374 [http-nio-8080-exec-6] LocationApiDao - lng, lat
+[DEBUG] 2021-05-09 00:47:14.374 [http-nio-8080-exec-6] SearchByLocation - getting long and latLocation(id=0, nameDesc=null, streetAddressOrIntersection=3426 hargrove st, city=madison, state=wi, zip=53714, busInfo=null, comments=null, lng=-89.33068, lat=43.09326)
+[DEBUG] 2021-05-09 00:54:52.831 [http-nio-8080-exec-6] SearchByLocation - searchBy Location: Location(id=0, nameDesc=null, streetAddressOrIntersection=3426 hargrove st, city=madison, state=wi, zip=53714, busInfo=null, comments=null, lng=null, lat=null)
+[INFO ] 2021-05-09 00:54:54.416 [http-nio-8080-exec-6] LocationApiDao - com.hmkurth.ApiLocation.Result@70bc419b
+[INFO ] 2021-05-09 00:54:54.417 [http-nio-8080-exec-6] LocationApiDao - lng, lat
+[DEBUG] 2021-05-09 00:54:54.417 [http-nio-8080-exec-6] SearchByLocation - getting long and latLocation(id=0, nameDesc=null, streetAddressOrIntersection=3426 hargrove st, city=madison, state=wi, zip=53714, busInfo=null, comments=null, lng=-89.33068, lat=43.09326)
+[DEBUG] 2021-05-09 00:55:02.584 [http-nio-8080-exec-6] SearchByLocation - [0.20311922031732096, 0.20311922031732096, 7.938737862646874, 424.4754825416607]
+[DEBUG] 2021-05-09 01:03:43.303 [http-nio-8080-exec-6] SearchByLocation - searchBy Location: Location(id=0, nameDesc=null, streetAddressOrIntersection=3426 hargrove st, city=madison, state=wi, zip=53714, busInfo=null, comments=null, lng=null, lat=null)
+[INFO ] 2021-05-09 01:03:45.461 [http-nio-8080-exec-6] LocationApiDao - com.hmkurth.ApiLocation.Result@e6d4960
+[INFO ] 2021-05-09 01:03:45.463 [http-nio-8080-exec-6] LocationApiDao - lng, lat
+[DEBUG] 2021-05-09 01:03:45.463 [http-nio-8080-exec-6] SearchByLocation - getting long and latLocation(id=0, nameDesc=null, streetAddressOrIntersection=3426 hargrove st, city=madison, state=wi, zip=53714, busInfo=null, comments=null, lng=-89.33068, lat=43.09326)
+[DEBUG] 2021-05-09 01:03:53.597 [http-nio-8080-exec-6] SearchByLocation - [0.20311922031732096, 0.20311922031732096, 7.938737862646874, 424.4754825416607]

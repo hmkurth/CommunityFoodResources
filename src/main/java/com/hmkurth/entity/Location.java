@@ -18,8 +18,8 @@ import java.util.Objects;
  * @author hmkurth
  */
 @Data
-@Indexed
-@GeoPointBinding(fieldName = "location")
+
+
 @NoArgsConstructor
 @RequiredArgsConstructor
 @Entity(name = "Location")

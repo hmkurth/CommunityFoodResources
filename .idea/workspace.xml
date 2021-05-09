@@ -9,13 +9,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="updated CFRL database">
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="location search params in place, ready to test">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210509 0044.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210509 0047.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210509 0055.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Journal.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Journal.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210507 0143.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210507 0206.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210507 0232.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/ApiLocation/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/ApiLocation/Location.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchByLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchByLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Location.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/searchByLocation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/searchByLocation.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -413,14 +422,7 @@
       <workItem from="1620173067006" duration="335000" />
       <workItem from="1620173440107" duration="594000" />
       <workItem from="1620347926133" duration="1742000" />
-      <workItem from="1620349837454" duration="39405000" />
-    </task>
-    <task id="LOCAL-00067" summary="working on the locationapidao and testing">
-      <created>1618117094364</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1618117094365</updated>
+      <workItem from="1620349837454" duration="42692000" />
     </task>
     <task id="LOCAL-00068" summary="adding user sign up jsps and servlet">
       <created>1618291123438</created>
@@ -758,7 +760,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620534832625</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="location search params in place, ready to test">
+      <created>1620536974772</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1620536974772</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -781,7 +790,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="foodPANTRY is WORKING!!!!" />
     <MESSAGE value="creating delete user servlets and jsps" />
     <MESSAGE value="Got delete working, needs some finesse, but it works." />
     <MESSAGE value="updating journal, etc" />
@@ -806,7 +814,8 @@
     <MESSAGE value="&lt;property name=&quot;hibernate.search.backend.directory.root&quot;/&gt; in hibernate config" />
     <MESSAGE value="annotated location and food resources for hibernate search" />
     <MESSAGE value="updated CFRL database" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated CFRL database" />
+    <MESSAGE value="location search params in place, ready to test" />
+    <option name="LAST_COMMIT_MESSAGE" value="location search params in place, ready to test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -845,7 +854,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
-          <line>26</line>
+          <line>27</line>
           <properties class="com.hmkurth.persistence.ApiTestServiceClient" method="testgeoJSON">
             <option name="EMULATED" value="true" />
           </properties>
@@ -853,7 +862,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
-          <line>55</line>
+          <line>56</line>
           <properties class="com.hmkurth.persistence.ApiTestServiceClient" method="testLocationApiDao">
             <option name="EMULATED" value="true" />
           </properties>
@@ -947,12 +956,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
-          <line>38</line>
+          <line>39</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
-          <line>65</line>
+          <line>66</line>
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

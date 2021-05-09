@@ -6,6 +6,7 @@ import com.hmkurth.entity.Location;
 import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.Test;
 import java.text.DecimalFormat;
+import java.util.List;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.core.Response;
@@ -59,7 +60,7 @@ public class ApiTestServiceClient {
         //get a location to test
         Location locationToMap = ldao.getById(2);
         Location returnedLocation = dao.convertAddressToLatAndLong(locationToMap);
-        Double returnedLng = returnedLocation.getLng();
+        Float returnedLng = returnedLocation.getLng();
         DecimalFormat df= new DecimalFormat("00.00");
         String format = df.format(returnedLng);
         double finalValue = (Double)df.parse(format) ;
@@ -78,7 +79,7 @@ public class ApiTestServiceClient {
         Location locationToMap = ldao.getById(2);
         dao.convertAddressToLatAndLong(locationToMap);
         ldao.saveOrUpdate(locationToMap);
-        Double returnedLng = locationToMap.getLng();
+        Float returnedLng = locationToMap.getLng();
         DecimalFormat df= new DecimalFormat("00.00");
         String format = df.format(returnedLng);
         double finalValue = (Double)df.parse(format) ;
@@ -89,15 +90,17 @@ public class ApiTestServiceClient {
     /**
      * Test get near by locations.
      *
-     * @param latitude  the latitude
-     * @param longitude the longitude
-     * @param distance  the distance
      */
+
     @Test
-    public void testGetNearByLocations(float latitude, float longitude, float distance) throws Exception {
+    public  void testGetNearByLocations() throws Exception {
         LocationApiDao dao = new LocationApiDao();
         GenericDao<Location> ldao = new GenericDao<>(Location.class);
         Location centerPoint = ldao.getById(2);
+        List<Double> results = dao.getNearByLocations(centerPoint.getLat(), centerPoint.getLng(), 1);
+        //how are you going to tst this????? todo more tests
+        log.debug(results);
+        assertEquals(10, results.size());
 
     }
 }

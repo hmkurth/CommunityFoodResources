@@ -17,7 +17,7 @@ import java.util.Objects;
  *
  * @author hmkurth
  */
-@Indexed
+
 @NoArgsConstructor
 @RequiredArgsConstructor
 @Entity(name = "FoodResource")
@@ -56,8 +56,6 @@ public class FoodResource {
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
 
-    @GeoPointBinding
-    @IndexedEmbedded
    // @Column(name = "location_id")
     private Location location;//fk to location
     @ToString.Exclude

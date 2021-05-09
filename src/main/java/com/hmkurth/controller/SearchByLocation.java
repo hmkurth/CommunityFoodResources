@@ -18,6 +18,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * This servlet will allow a user to enter a location to search for nearby resources,
@@ -33,7 +34,7 @@ public class SearchByLocation extends HttpServlet {
 
     @SneakyThrows
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         GenericDao dao = new GenericDao(Location.class);
        LocationApiDao lApiDao = new LocationApiDao();
         GenericDao fdao = new GenericDao(FoodResource.class);
@@ -60,7 +61,9 @@ public class SearchByLocation extends HttpServlet {
         //need to find a way use both lat and long coords
         //take the lat and lng out of the newly transformed address, pass to ldao with distance
         int page= 1;
-        lApiDao.getNearByLocations(location.getLat(), location.getLng(),page);
+        List<Double> results = lApiDao.getNearByLocations(location.getLat(), location.getLng(),page);
+        req.setAttribute("nearLocations", results);
+        logger.debug(results.toString());
 
 
 
@@ -68,7 +71,7 @@ public class SearchByLocation extends HttpServlet {
 
 
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/addLocationSuccess.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/searchByLocation.jsp");
         dispatcher.forward(req, resp);
     }
 
