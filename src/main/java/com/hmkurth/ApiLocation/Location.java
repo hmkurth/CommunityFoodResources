@@ -25,7 +25,7 @@ public class Location{
 		this.lng = lng;
 	}
 
-	public double getLng(){
+	public float getLng(){
 		return lng;
 	}
 

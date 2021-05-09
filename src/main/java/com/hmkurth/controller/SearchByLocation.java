@@ -7,6 +7,7 @@ import com.hmkurth.entity.User;
 import com.hmkurth.entity.UserRoles;
 import com.hmkurth.persistence.GenericDao;
 import com.hmkurth.persistence.LocationApiDao;
+import lombok.SneakyThrows;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -30,9 +31,11 @@ public class SearchByLocation extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
+    @SneakyThrows
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         GenericDao dao = new GenericDao(Location.class);
+       LocationApiDao lApiDao = new LocationApiDao();
         GenericDao fdao = new GenericDao(FoodResource.class);
         //do you really want a full adress, or just zip?????
         Location location = new Location();
@@ -41,6 +44,8 @@ public class SearchByLocation extends HttpServlet {
         location.setState(req.getParameter("state"));
         location.setZip(req.getParameter("zip"));
         logger.debug("searchBy Location: " + location);
+        //get
+
         //TODO check if it is a valid location
         //Use the api to get the lat and long
         try {
@@ -53,6 +58,9 @@ public class SearchByLocation extends HttpServlet {
 
         //find the nearest resources TODO, param of what type of resource user wants, or all
         //need to find a way use both lat and long coords
+        //take the lat and lng out of the newly transformed address, pass to ldao with distance
+        int page= 1;
+        lApiDao.getNearByLocations(location.getLat(), location.getLng(),page);
 
 
 

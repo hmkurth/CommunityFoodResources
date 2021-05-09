@@ -37,21 +37,24 @@ public class LocationApiDao implements PropertiesLoader {
     LocationApiDao dao;
     Client client;
     String targetAddress = "https://google-maps-geocoding.p.rapidapi.com/geocode/json";
+
     /**
      * constructor that loads properties and assigns them to the meta info needed to access the api
+     *
      * @throws Exception
      */
     public LocationApiDao() throws Exception {
         client = ClientBuilder.newClient();
         Properties apiProperties = new Properties();
-            apiProperties = loadProperties("/api.properties");
-            apiKey = apiProperties.getProperty("x-rapidapi-key");
-            apiHost = apiProperties.getProperty("x-rapidapi-host");
+        apiProperties = loadProperties("/api.properties");
+        apiKey = apiProperties.getProperty("x-rapidapi-key");
+        apiHost = apiProperties.getProperty("x-rapidapi-host");
     }
 
     /**
      * a method that takes in a Location object and returns a mappable object/location, MapLocation
      * TODO break this up more(tried and failed)
+     *
      * @return
      */
     public Location convertAddressToLatAndLong(Location locationToMap) throws JsonProcessingException {
@@ -76,7 +79,7 @@ public class LocationApiDao implements PropertiesLoader {
                 Result result = mapper.readValue(apiResponse, Result.class);
                 log.info(result);
 
-                locationToMap.setLat(result.getResults().get(0).getGeometry().getLocation().getLat());
+                locationToMap.setLat((float) result.getResults().get(0).getGeometry().getLocation().getLat());
                 locationToMap.setLng(result.getResults().get(0).getGeometry().getLocation().getLng());
                 log.info("lng, lat");
             }
@@ -85,49 +88,40 @@ public class LocationApiDao implements PropertiesLoader {
         }
     }
 
-        /**
-         * Returns an open session from the SessionFactory
-         * @return session
-         */
-        private Session getSession() {
-            return SessionFactoryProvider.getSessionFactory().openSession();
+    /**
+     * Returns an open session from the SessionFactory
+     *
+     * @return session
+     */
+    private Session getSession() {
+        return SessionFactoryProvider.getSessionFactory().openSession();
 
-        }
+    }
 
     /**
      * https://stackoverflow.com/questions/28847954/what-is-the-best-approach-to-find-all-addresses-that-are-in-a-specific-distance
+     *
      * @param longitude
      * @param latitude
-     * @param distance
-     *
      * @return list of ids of locations that are in range
-        */
+     */
     @Transactional
-            public List<Long> getNearByLocations(float latitude, float longitude, float distance) {
-            Session sess = getSession();
-                val queryString = "SELECT id, (6371 * acos (cos(radians("
-                        + latitude
-                        + ")) * cos(radians(lat)) * cos(radians(lng) - radians("
-                        + longitude
-                        + "))  + sin(radians("
-                        + latitude
-                        + ")) * sin(radians(lat)))) AS distance FROM location HAVING distance < "
-                        + distance + " ORDER BY distance";
-            Query qry = sess.createSQLQuery(queryString);
+    public List<Long> getNearByLocations(float latitude, float longitude, int page) {
+        Session sess = getSession();
+        Query query = sess.createSQLQuery("SELECT (6371 * 2 * ASIN(SQRT(POWER(SIN((:latitude - abs(lat)) * pi()/180 / 2),2) +" +
+                "COS(:ulatitude * pi()/180 ) * COS(abs(lat) * pi()/180) *" +
+                "POWER(SIN((:longitude - lng) * pi()/180 / 2), 2))))*1000 as distance " +
+                "FROM location HAVING distance < 5000 ORDER BY distance");
 
-            List<Object[]> list = null;
-            list = qry.list();
-            List<Long> idList = new ArrayList<>();
-            for (Object[] obj : list) {
-            Long id = (Long) obj[0];
-            idList.add(id);
-            }
-            return idList;
-            }
+        query.setParameter("longitude", longitude);
+        query.setParameter("latitude", latitude);
+        query.setFirstResult((page - 1) * 10);
+        query.setMaxResults(10);
+
+        return (List<Long>) query.list();
 
 
-
-
+    }
 }
 /**
     SELECT z.zip,

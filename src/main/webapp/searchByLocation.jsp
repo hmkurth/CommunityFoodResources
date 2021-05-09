@@ -26,7 +26,7 @@
 
         <div class="row text-center pad-top pad-bottom line-bottom">
             <div class="col-md-12">
-                <h1>Search For Resources By Location </h1>
+                <h1>Enter a location to search nearby resources </h1>
                 <form class="form-inline pad-top-sm" action="${pageContext.request.contextPath}/searchByLocation" method="get">
 
                     <div class="form-group">

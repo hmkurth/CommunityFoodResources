@@ -46,9 +46,9 @@ public class Location {
     private String busInfo;
     private String comments;
     @Longitude
-    private Double lng;
+    private Float lng;
     @Latitude
-    private Double lat;
+    private Float lat;
     @OneToOne
     @PrimaryKeyJoinColumn
     @ToString.Exclude
