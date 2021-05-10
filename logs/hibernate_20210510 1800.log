@@ -1,0 +1,6 @@
+[DEBUG] 2021-05-10 18:00:38.027 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2021-05-10 18:00:38.027 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2021-05-10 18:00:38.027 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[DEBUG] 2021-05-10 18:00:38.074 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.search.mapper.orm.bootstrap.impl.HibernateSearchIntegrator].
+[INFO ] 2021-05-10 18:00:38.184 [main] Version - HHH000412: Hibernate Core {5.4.4.Final}
+[DEBUG] 2021-05-10 18:00:38.184 [main] Environment - HHH000206: hibernate.properties not found

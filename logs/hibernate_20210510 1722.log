@@ -1,0 +1,504 @@
+[DEBUG] 2021-05-10 17:22:14.690 [http-nio-8080-exec-6] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2021-05-10 17:22:14.699 [http-nio-8080-exec-6] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2021-05-10 17:22:14.723 [http-nio-8080-exec-6] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[DEBUG] 2021-05-10 17:22:14.831 [http-nio-8080-exec-6] IntegratorServiceImpl - Adding Integrator [org.hibernate.search.mapper.orm.bootstrap.impl.HibernateSearchIntegrator].
+[INFO ] 2021-05-10 17:22:15.191 [http-nio-8080-exec-6] Version - HHH000412: Hibernate Core {5.4.4.Final}
+[DEBUG] 2021-05-10 17:22:15.195 [http-nio-8080-exec-6] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2021-05-10 17:22:15.812 [http-nio-8080-exec-6] LocalXmlResourceResolver - Interpreting public/system identifier : [null] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+[DEBUG] 2021-05-10 17:22:15.814 [http-nio-8080-exec-6] LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+[DEBUG] 2021-05-10 17:22:15.892 [http-nio-8080-exec-6] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2021-05-10 17:22:16.698 [http-nio-8080-exec-6] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2021-05-10 17:22:16.698 [http-nio-8080-exec-6] ServiceBinding - Overriding existing service binding [org.hibernate.search.mapper.orm.mapping.impl.HibernateSearchContextProviderService]
+[DEBUG] 2021-05-10 17:22:16.769 [http-nio-8080-exec-6] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[DEBUG] 2021-05-10 17:22:16.775 [http-nio-8080-exec-6] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2021-05-10 17:22:16.875 [http-nio-8080-exec-6] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[DEBUG] 2021-05-10 17:22:17.056 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@66dfe53c
+[DEBUG] 2021-05-10 17:22:17.056 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@66dfe53c
+[DEBUG] 2021-05-10 17:22:17.056 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@66dfe53c
+[DEBUG] 2021-05-10 17:22:17.058 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@3b5987e0
+[DEBUG] 2021-05-10 17:22:17.060 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@72e8ebbf
+[DEBUG] 2021-05-10 17:22:17.062 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@4f28e418
+[DEBUG] 2021-05-10 17:22:17.066 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@5c69cd42
+[DEBUG] 2021-05-10 17:22:17.066 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@5c69cd42
+[DEBUG] 2021-05-10 17:22:17.066 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@5c69cd42
+[DEBUG] 2021-05-10 17:22:17.070 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@2e510433
+[DEBUG] 2021-05-10 17:22:17.070 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@2e510433
+[DEBUG] 2021-05-10 17:22:17.070 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@2e510433
+[DEBUG] 2021-05-10 17:22:17.073 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@600ede5b
+[DEBUG] 2021-05-10 17:22:17.074 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@600ede5b
+[DEBUG] 2021-05-10 17:22:17.074 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@600ede5b
+[DEBUG] 2021-05-10 17:22:17.078 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@ceed487
+[DEBUG] 2021-05-10 17:22:17.079 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@ceed487
+[DEBUG] 2021-05-10 17:22:17.079 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@ceed487
+[DEBUG] 2021-05-10 17:22:17.084 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@6255df7d
+[DEBUG] 2021-05-10 17:22:17.084 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@6255df7d
+[DEBUG] 2021-05-10 17:22:17.084 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@6255df7d
+[DEBUG] 2021-05-10 17:22:17.089 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@55058455
+[DEBUG] 2021-05-10 17:22:17.089 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@55058455
+[DEBUG] 2021-05-10 17:22:17.089 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@55058455
+[DEBUG] 2021-05-10 17:22:17.092 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@77138ef0
+[DEBUG] 2021-05-10 17:22:17.093 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@77138ef0
+[DEBUG] 2021-05-10 17:22:17.093 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@77138ef0
+[DEBUG] 2021-05-10 17:22:17.096 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@767dfff9
+[DEBUG] 2021-05-10 17:22:17.096 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@767dfff9
+[DEBUG] 2021-05-10 17:22:17.100 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@5f523d55
+[DEBUG] 2021-05-10 17:22:17.100 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@5f523d55
+[DEBUG] 2021-05-10 17:22:17.103 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@6597a895
+[DEBUG] 2021-05-10 17:22:17.103 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@6597a895
+[DEBUG] 2021-05-10 17:22:17.105 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@70adc37e
+[DEBUG] 2021-05-10 17:22:17.107 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@e5ff1c5
+[DEBUG] 2021-05-10 17:22:17.111 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@b6a3a3a
+[DEBUG] 2021-05-10 17:22:17.111 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@b6a3a3a
+[DEBUG] 2021-05-10 17:22:17.115 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@4ed710bb
+[DEBUG] 2021-05-10 17:22:17.115 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@4ed710bb
+[DEBUG] 2021-05-10 17:22:17.131 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@b8b97b9
+[DEBUG] 2021-05-10 17:22:17.131 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@b8b97b9
+[DEBUG] 2021-05-10 17:22:17.134 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@4a11d921
+[DEBUG] 2021-05-10 17:22:17.135 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@4a11d921
+[DEBUG] 2021-05-10 17:22:17.138 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@67cf263a
+[DEBUG] 2021-05-10 17:22:17.139 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@67cf263a
+[DEBUG] 2021-05-10 17:22:17.142 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@2a83acdd
+[DEBUG] 2021-05-10 17:22:17.143 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@2a83acdd
+[DEBUG] 2021-05-10 17:22:17.147 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@63502003
+[DEBUG] 2021-05-10 17:22:17.148 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@63502003
+[DEBUG] 2021-05-10 17:22:17.152 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@31ca1199
+[DEBUG] 2021-05-10 17:22:17.152 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@31ca1199
+[DEBUG] 2021-05-10 17:22:17.158 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@5096e1dd
+[DEBUG] 2021-05-10 17:22:17.159 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@5096e1dd
+[DEBUG] 2021-05-10 17:22:17.164 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@7748017c
+[DEBUG] 2021-05-10 17:22:17.164 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@7748017c
+[DEBUG] 2021-05-10 17:22:17.168 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@1e4ce766
+[DEBUG] 2021-05-10 17:22:17.168 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@1e4ce766
+[DEBUG] 2021-05-10 17:22:17.173 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@4ce3052b
+[DEBUG] 2021-05-10 17:22:17.173 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@4ce3052b
+[DEBUG] 2021-05-10 17:22:17.174 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@4ce3052b
+[DEBUG] 2021-05-10 17:22:17.178 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@53b92ca6
+[DEBUG] 2021-05-10 17:22:17.183 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@68511131
+[DEBUG] 2021-05-10 17:22:17.183 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@68511131
+[DEBUG] 2021-05-10 17:22:17.183 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@68511131
+[DEBUG] 2021-05-10 17:22:17.185 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@25482797
+[DEBUG] 2021-05-10 17:22:17.189 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@787ea916
+[DEBUG] 2021-05-10 17:22:17.189 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@787ea916
+[DEBUG] 2021-05-10 17:22:17.193 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@44a6b9a0
+[DEBUG] 2021-05-10 17:22:17.193 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@44a6b9a0
+[DEBUG] 2021-05-10 17:22:17.196 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@41ba6afe
+[DEBUG] 2021-05-10 17:22:17.196 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@41ba6afe
+[DEBUG] 2021-05-10 17:22:17.199 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@7fc31959
+[DEBUG] 2021-05-10 17:22:17.199 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@7fc31959
+[DEBUG] 2021-05-10 17:22:17.202 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@5cfe7995
+[DEBUG] 2021-05-10 17:22:17.202 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@5cfe7995
+[DEBUG] 2021-05-10 17:22:17.204 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@76649d39
+[DEBUG] 2021-05-10 17:22:17.210 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@628c32b
+[DEBUG] 2021-05-10 17:22:17.210 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@628c32b
+[DEBUG] 2021-05-10 17:22:17.210 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@628c32b
+[DEBUG] 2021-05-10 17:22:17.214 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@301237ac
+[DEBUG] 2021-05-10 17:22:17.215 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@301237ac
+[DEBUG] 2021-05-10 17:22:17.215 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@301237ac
+[DEBUG] 2021-05-10 17:22:17.218 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@ede8b99
+[DEBUG] 2021-05-10 17:22:17.220 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@58aea1be
+[DEBUG] 2021-05-10 17:22:17.224 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@7b43a945
+[DEBUG] 2021-05-10 17:22:17.224 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@7b43a945
+[DEBUG] 2021-05-10 17:22:17.224 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@7b43a945
+[DEBUG] 2021-05-10 17:22:17.227 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@247e3108
+[DEBUG] 2021-05-10 17:22:17.228 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@247e3108
+[DEBUG] 2021-05-10 17:22:17.228 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@247e3108
+[DEBUG] 2021-05-10 17:22:17.229 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@2bdbdfda
+[DEBUG] 2021-05-10 17:22:17.231 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@7ea2f2c2
+[DEBUG] 2021-05-10 17:22:17.236 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@6a863065
+[DEBUG] 2021-05-10 17:22:17.236 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@6a863065
+[DEBUG] 2021-05-10 17:22:17.238 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@7a3afc11
+[DEBUG] 2021-05-10 17:22:17.243 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@37a3b022
+[DEBUG] 2021-05-10 17:22:17.243 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@37a3b022
+[DEBUG] 2021-05-10 17:22:17.248 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@66627297
+[DEBUG] 2021-05-10 17:22:17.248 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@66627297
+[DEBUG] 2021-05-10 17:22:17.249 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@6fc54b5e
+[DEBUG] 2021-05-10 17:22:17.251 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@79594eb8
+[DEBUG] 2021-05-10 17:22:17.256 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@7ab5c35b
+[DEBUG] 2021-05-10 17:22:17.268 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@6e25d41a
+[DEBUG] 2021-05-10 17:22:17.268 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@6e25d41a
+[DEBUG] 2021-05-10 17:22:17.270 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@1dd06546
+[DEBUG] 2021-05-10 17:22:17.270 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@7e9bb3fd
+[DEBUG] 2021-05-10 17:22:17.270 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@47ae884a
+[DEBUG] 2021-05-10 17:22:17.270 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@35b655fa
+[DEBUG] 2021-05-10 17:22:17.270 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@2bd2ec5f
+[DEBUG] 2021-05-10 17:22:17.270 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@8f5b683
+[DEBUG] 2021-05-10 17:22:17.270 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@3baa830f
+[DEBUG] 2021-05-10 17:22:17.270 [http-nio-8080-exec-6] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@3cb40805
+[DEBUG] 2021-05-10 17:22:17.381 [http-nio-8080-exec-6] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2021-05-10 17:22:17.383 [http-nio-8080-exec-6] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2021-05-10 17:22:17.386 [http-nio-8080-exec-6] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2021-05-10 17:22:17.386 [http-nio-8080-exec-6] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2021-05-10 17:22:17.388 [http-nio-8080-exec-6] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2021-05-10 17:22:17.393 [http-nio-8080-exec-6] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2021-05-10 17:22:17.395 [http-nio-8080-exec-6] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2021-05-10 17:22:17.400 [http-nio-8080-exec-6] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2021-05-10 17:22:17.403 [http-nio-8080-exec-6] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2021-05-10 17:22:17.405 [http-nio-8080-exec-6] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2021-05-10 17:22:17.407 [http-nio-8080-exec-6] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2021-05-10 17:22:17.409 [http-nio-8080-exec-6] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2021-05-10 17:22:17.409 [http-nio-8080-exec-6] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2021-05-10 17:22:17.412 [http-nio-8080-exec-6] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[INFO ] 2021-05-10 17:22:17.436 [http-nio-8080-exec-6] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/testschema
+[INFO ] 2021-05-10 17:22:17.436 [http-nio-8080-exec-6] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=root}
+[INFO ] 2021-05-10 17:22:17.437 [http-nio-8080-exec-6] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2021-05-10 17:22:17.907 [http-nio-8080-exec-6] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2021-05-10 17:22:18.798 [http-nio-8080-exec-6] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 8.0.23
+      major : 8
+      minor : 0
+[DEBUG] 2021-05-10 17:22:18.798 [http-nio-8080-exec-6] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.23 (Revision: 18bbd5e68195d0da083cbd5bd0d05d76320df7cd)
+      major : 8
+      minor : 0
+[DEBUG] 2021-05-10 17:22:18.798 [http-nio-8080-exec-6] JdbcEnvironmentInitiator - JDBC version : 4.2
+[INFO ] 2021-05-10 17:22:18.927 [http-nio-8080-exec-6] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[DEBUG] 2021-05-10 17:22:19.039 [http-nio-8080-exec-6] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2021-05-10 17:22:19.309 [http-nio-8080-exec-6] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2021-05-10 17:22:19.424 [http-nio-8080-exec-6] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2021-05-10 17:22:19.437 [http-nio-8080-exec-6] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@567ed628] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@65792f68]
+[DEBUG] 2021-05-10 17:22:19.712 [http-nio-8080-exec-6] AnnotationBinder - Binding entity from annotated class: com.hmkurth.entity.User
+[DEBUG] 2021-05-10 17:22:19.825 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2021-05-10 17:22:19.864 [http-nio-8080-exec-6] EntityBinder - Import with entity name User
+[DEBUG] 2021-05-10 17:22:19.877 [http-nio-8080-exec-6] EntityBinder - Bind entity com.hmkurth.entity.User on table users
+[DEBUG] 2021-05-10 17:22:19.983 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:19.994 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2021-05-10 17:22:20.001 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.User:id]
+[DEBUG] 2021-05-10 17:22:20.013 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2021-05-10 17:22:20.021 [http-nio-8080-exec-6] PropertyBinder - Building property id
+[DEBUG] 2021-05-10 17:22:20.039 [http-nio-8080-exec-6] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2021-05-10 17:22:20.043 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=email, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.044 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property email with lazy=false
+[DEBUG] 2021-05-10 17:22:20.044 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.User:email]
+[DEBUG] 2021-05-10 17:22:20.044 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for email
+[DEBUG] 2021-05-10 17:22:20.044 [http-nio-8080-exec-6] PropertyBinder - Building property email
+[DEBUG] 2021-05-10 17:22:20.044 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.044 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property firstName with lazy=false
+[DEBUG] 2021-05-10 17:22:20.045 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.User:firstName]
+[DEBUG] 2021-05-10 17:22:20.045 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for firstName
+[DEBUG] 2021-05-10 17:22:20.045 [http-nio-8080-exec-6] PropertyBinder - Building property firstName
+[DEBUG] 2021-05-10 17:22:20.045 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.046 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property lastName with lazy=false
+[DEBUG] 2021-05-10 17:22:20.046 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.User:lastName]
+[DEBUG] 2021-05-10 17:22:20.046 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for lastName
+[DEBUG] 2021-05-10 17:22:20.046 [http-nio-8080-exec-6] PropertyBinder - Building property lastName
+[DEBUG] 2021-05-10 17:22:20.046 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=user_password, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.046 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property password with lazy=false
+[DEBUG] 2021-05-10 17:22:20.046 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.User:password]
+[DEBUG] 2021-05-10 17:22:20.046 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for password
+[DEBUG] 2021-05-10 17:22:20.047 [http-nio-8080-exec-6] PropertyBinder - Building property password
+[DEBUG] 2021-05-10 17:22:20.050 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2021-05-10 17:22:20.051 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=roles, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.056 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.105 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.106 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=roles_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.108 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='roles_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2021-05-10 17:22:20.114 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2021-05-10 17:22:20.114 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2021-05-10 17:22:20.115 [http-nio-8080-exec-6] CollectionBinder - Collection role: com.hmkurth.entity.User.roles
+[DEBUG] 2021-05-10 17:22:20.126 [http-nio-8080-exec-6] PropertyBinder - Building property roles
+[DEBUG] 2021-05-10 17:22:20.127 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=user_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.127 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property userName with lazy=false
+[DEBUG] 2021-05-10 17:22:20.127 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.User:userName]
+[DEBUG] 2021-05-10 17:22:20.127 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for userName
+[DEBUG] 2021-05-10 17:22:20.127 [http-nio-8080-exec-6] PropertyBinder - Building property userName
+[DEBUG] 2021-05-10 17:22:20.130 [http-nio-8080-exec-6] AnnotationBinder - Binding entity from annotated class: com.hmkurth.entity.UserRoles
+[DEBUG] 2021-05-10 17:22:20.131 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2021-05-10 17:22:20.131 [http-nio-8080-exec-6] EntityBinder - Import with entity name UserRoles
+[DEBUG] 2021-05-10 17:22:20.131 [http-nio-8080-exec-6] EntityBinder - Bind entity com.hmkurth.entity.UserRoles on table user_roles
+[DEBUG] 2021-05-10 17:22:20.137 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_roles), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.137 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2021-05-10 17:22:20.137 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.UserRoles:id]
+[DEBUG] 2021-05-10 17:22:20.138 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2021-05-10 17:22:20.138 [http-nio-8080-exec-6] PropertyBinder - Building property id
+[DEBUG] 2021-05-10 17:22:20.138 [http-nio-8080-exec-6] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2021-05-10 17:22:20.138 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_roles), mappingColumn=role_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.138 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property roleName with lazy=false
+[DEBUG] 2021-05-10 17:22:20.139 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.UserRoles:roleName]
+[DEBUG] 2021-05-10 17:22:20.139 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for roleName
+[DEBUG] 2021-05-10 17:22:20.139 [http-nio-8080-exec-6] PropertyBinder - Building property roleName
+[DEBUG] 2021-05-10 17:22:20.139 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='users_id', referencedColumn='', mappedBy=''}
+[DEBUG] 2021-05-10 17:22:20.139 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_roles), mappingColumn=user, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.145 [http-nio-8080-exec-6] PropertyBinder - Building property user
+[DEBUG] 2021-05-10 17:22:20.145 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_roles), mappingColumn=user_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.146 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property userName with lazy=false
+[DEBUG] 2021-05-10 17:22:20.146 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.UserRoles:userName]
+[DEBUG] 2021-05-10 17:22:20.146 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for userName
+[DEBUG] 2021-05-10 17:22:20.146 [http-nio-8080-exec-6] PropertyBinder - Building property userName
+[DEBUG] 2021-05-10 17:22:20.146 [http-nio-8080-exec-6] AnnotationBinder - Binding entity from annotated class: com.hmkurth.entity.Contact
+[DEBUG] 2021-05-10 17:22:20.146 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2021-05-10 17:22:20.147 [http-nio-8080-exec-6] EntityBinder - Import with entity name Contact
+[DEBUG] 2021-05-10 17:22:20.147 [http-nio-8080-exec-6] EntityBinder - Bind entity com.hmkurth.entity.Contact on table contact_details
+[DEBUG] 2021-05-10 17:22:20.148 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(contact_details), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.148 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2021-05-10 17:22:20.148 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.Contact:id]
+[DEBUG] 2021-05-10 17:22:20.148 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2021-05-10 17:22:20.149 [http-nio-8080-exec-6] PropertyBinder - Building property id
+[DEBUG] 2021-05-10 17:22:20.149 [http-nio-8080-exec-6] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2021-05-10 17:22:20.149 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(contact_details), mappingColumn=email, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.149 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property email with lazy=false
+[DEBUG] 2021-05-10 17:22:20.149 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.Contact:email]
+[DEBUG] 2021-05-10 17:22:20.149 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for email
+[DEBUG] 2021-05-10 17:22:20.150 [http-nio-8080-exec-6] PropertyBinder - Building property email
+[DEBUG] 2021-05-10 17:22:20.150 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(contact_details), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.150 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property firstName with lazy=false
+[DEBUG] 2021-05-10 17:22:20.150 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.Contact:firstName]
+[DEBUG] 2021-05-10 17:22:20.150 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for firstName
+[DEBUG] 2021-05-10 17:22:20.150 [http-nio-8080-exec-6] PropertyBinder - Building property firstName
+[DEBUG] 2021-05-10 17:22:20.151 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(contact_details), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.151 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property lastName with lazy=false
+[DEBUG] 2021-05-10 17:22:20.151 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.Contact:lastName]
+[DEBUG] 2021-05-10 17:22:20.151 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for lastName
+[DEBUG] 2021-05-10 17:22:20.151 [http-nio-8080-exec-6] PropertyBinder - Building property lastName
+[DEBUG] 2021-05-10 17:22:20.151 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='owner_id', referencedColumn='', mappedBy=''}
+[DEBUG] 2021-05-10 17:22:20.151 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(contact_details), mappingColumn=owner, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.152 [http-nio-8080-exec-6] PropertyBinder - Building property owner
+[DEBUG] 2021-05-10 17:22:20.152 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(contact_details), mappingColumn=phone, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.152 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property phone with lazy=false
+[DEBUG] 2021-05-10 17:22:20.152 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.Contact:phone]
+[DEBUG] 2021-05-10 17:22:20.152 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for phone
+[DEBUG] 2021-05-10 17:22:20.152 [http-nio-8080-exec-6] PropertyBinder - Building property phone
+[DEBUG] 2021-05-10 17:22:20.152 [http-nio-8080-exec-6] AnnotationBinder - Binding entity from annotated class: com.hmkurth.entity.FoodResource
+[DEBUG] 2021-05-10 17:22:20.153 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2021-05-10 17:22:20.153 [http-nio-8080-exec-6] EntityBinder - Import with entity name FoodResource
+[DEBUG] 2021-05-10 17:22:20.153 [http-nio-8080-exec-6] EntityBinder - Bind entity com.hmkurth.entity.FoodResource on table food_resources
+[DEBUG] 2021-05-10 17:22:20.200 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(food_resources), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.200 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2021-05-10 17:22:20.200 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.FoodResource:id]
+[DEBUG] 2021-05-10 17:22:20.200 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2021-05-10 17:22:20.201 [http-nio-8080-exec-6] PropertyBinder - Building property id
+[DEBUG] 2021-05-10 17:22:20.216 [http-nio-8080-exec-6] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2021-05-10 17:22:20.216 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(food_resources), mappingColumn=comments, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.216 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property comments with lazy=false
+[DEBUG] 2021-05-10 17:22:20.217 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.FoodResource:comments]
+[DEBUG] 2021-05-10 17:22:20.217 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for comments
+[DEBUG] 2021-05-10 17:22:20.217 [http-nio-8080-exec-6] PropertyBinder - Building property comments
+[DEBUG] 2021-05-10 17:22:20.221 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='contact_id', referencedColumn='', mappedBy=''}
+[DEBUG] 2021-05-10 17:22:20.221 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(food_resources), mappingColumn=contactId, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.221 [http-nio-8080-exec-6] PropertyBinder - Building property contactId
+[DEBUG] 2021-05-10 17:22:20.222 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(food_resources), mappingColumn=day_of_week_offered, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.222 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property daysOfWeek with lazy=false
+[DEBUG] 2021-05-10 17:22:20.222 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.FoodResource:daysOfWeek]
+[DEBUG] 2021-05-10 17:22:20.222 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for daysOfWeek
+[DEBUG] 2021-05-10 17:22:20.222 [http-nio-8080-exec-6] PropertyBinder - Building property daysOfWeek
+[DEBUG] 2021-05-10 17:22:20.223 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(food_resources), mappingColumn=delivery_desc, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.223 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property deliveryDescription with lazy=false
+[DEBUG] 2021-05-10 17:22:20.223 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.FoodResource:deliveryDescription]
+[DEBUG] 2021-05-10 17:22:20.223 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for deliveryDescription
+[DEBUG] 2021-05-10 17:22:20.223 [http-nio-8080-exec-6] PropertyBinder - Building property deliveryDescription
+[DEBUG] 2021-05-10 17:22:20.224 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(food_resources), mappingColumn=delivery_offered, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.224 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property deliveryOffered with lazy=false
+[DEBUG] 2021-05-10 17:22:20.224 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.FoodResource:deliveryOffered]
+[DEBUG] 2021-05-10 17:22:20.224 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for deliveryOffered
+[DEBUG] 2021-05-10 17:22:20.224 [http-nio-8080-exec-6] PropertyBinder - Building property deliveryOffered
+[DEBUG] 2021-05-10 17:22:20.224 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(food_resources), mappingColumn=description, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.225 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property description with lazy=false
+[DEBUG] 2021-05-10 17:22:20.225 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.FoodResource:description]
+[DEBUG] 2021-05-10 17:22:20.225 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for description
+[DEBUG] 2021-05-10 17:22:20.225 [http-nio-8080-exec-6] PropertyBinder - Building property description
+[DEBUG] 2021-05-10 17:22:20.225 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(food_resources), mappingColumn=dietary_considerations, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.225 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property dietaryConsiderations with lazy=false
+[DEBUG] 2021-05-10 17:22:20.225 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.FoodResource:dietaryConsiderations]
+[DEBUG] 2021-05-10 17:22:20.225 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for dietaryConsiderations
+[DEBUG] 2021-05-10 17:22:20.225 [http-nio-8080-exec-6] PropertyBinder - Building property dietaryConsiderations
+[DEBUG] 2021-05-10 17:22:20.226 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(food_resources), mappingColumn=documentation_needed, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.226 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property documentation with lazy=false
+[DEBUG] 2021-05-10 17:22:20.226 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.FoodResource:documentation]
+[DEBUG] 2021-05-10 17:22:20.226 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for documentation
+[DEBUG] 2021-05-10 17:22:20.226 [http-nio-8080-exec-6] PropertyBinder - Building property documentation
+[DEBUG] 2021-05-10 17:22:20.226 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy=''}
+[DEBUG] 2021-05-10 17:22:20.226 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(food_resources), mappingColumn=location, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.231 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(food_resources), mappingColumn=resource_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.232 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property name with lazy=false
+[DEBUG] 2021-05-10 17:22:20.232 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.FoodResource:name]
+[DEBUG] 2021-05-10 17:22:20.232 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for name
+[DEBUG] 2021-05-10 17:22:20.232 [http-nio-8080-exec-6] PropertyBinder - Building property name
+[DEBUG] 2021-05-10 17:22:20.232 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy=''}
+[DEBUG] 2021-05-10 17:22:20.232 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(food_resources), mappingColumn=owner, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.232 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(food_resources), mappingColumn=service_area, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.233 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property serviceArea with lazy=false
+[DEBUG] 2021-05-10 17:22:20.233 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.FoodResource:serviceArea]
+[DEBUG] 2021-05-10 17:22:20.233 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for serviceArea
+[DEBUG] 2021-05-10 17:22:20.233 [http-nio-8080-exec-6] PropertyBinder - Building property serviceArea
+[DEBUG] 2021-05-10 17:22:20.233 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='type_Id', referencedColumn='', mappedBy=''}
+[DEBUG] 2021-05-10 17:22:20.233 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(food_resources), mappingColumn=typeId, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.233 [http-nio-8080-exec-6] PropertyBinder - Building property typeId
+[DEBUG] 2021-05-10 17:22:20.234 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(food_resources), mappingColumn=website, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.234 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property website with lazy=false
+[DEBUG] 2021-05-10 17:22:20.234 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.FoodResource:website]
+[DEBUG] 2021-05-10 17:22:20.234 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for website
+[DEBUG] 2021-05-10 17:22:20.234 [http-nio-8080-exec-6] PropertyBinder - Building property website
+[DEBUG] 2021-05-10 17:22:20.234 [http-nio-8080-exec-6] AnnotationBinder - Binding entity from annotated class: com.hmkurth.entity.ResourceOwner
+[DEBUG] 2021-05-10 17:22:20.234 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2021-05-10 17:22:20.234 [http-nio-8080-exec-6] EntityBinder - Import with entity name ResourceOwner
+[DEBUG] 2021-05-10 17:22:20.235 [http-nio-8080-exec-6] EntityBinder - Bind entity com.hmkurth.entity.ResourceOwner on table resource_owners
+[DEBUG] 2021-05-10 17:22:20.236 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(resource_owners), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.236 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2021-05-10 17:22:20.236 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.ResourceOwner:id]
+[DEBUG] 2021-05-10 17:22:20.236 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2021-05-10 17:22:20.237 [http-nio-8080-exec-6] PropertyBinder - Building property id
+[DEBUG] 2021-05-10 17:22:20.237 [http-nio-8080-exec-6] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2021-05-10 17:22:20.237 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='owner'}
+[DEBUG] 2021-05-10 17:22:20.237 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(resource_owners), mappingColumn=contacts, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.237 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(resource_owners), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.237 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(resource_owners), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.238 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(resource_owners), mappingColumn=contacts_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.238 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='contacts_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2021-05-10 17:22:20.238 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='owner'}
+[DEBUG] 2021-05-10 17:22:20.238 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='owner'}
+[DEBUG] 2021-05-10 17:22:20.238 [http-nio-8080-exec-6] CollectionBinder - Collection role: com.hmkurth.entity.ResourceOwner.contacts
+[DEBUG] 2021-05-10 17:22:20.238 [http-nio-8080-exec-6] PropertyBinder - Building property contacts
+[DEBUG] 2021-05-10 17:22:20.238 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(resource_owners), mappingColumn=org_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.238 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property name with lazy=false
+[DEBUG] 2021-05-10 17:22:20.239 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.ResourceOwner:name]
+[DEBUG] 2021-05-10 17:22:20.239 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for name
+[DEBUG] 2021-05-10 17:22:20.239 [http-nio-8080-exec-6] PropertyBinder - Building property name
+[DEBUG] 2021-05-10 17:22:20.239 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(resource_owners), mappingColumn=website, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.239 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property website with lazy=false
+[DEBUG] 2021-05-10 17:22:20.240 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.ResourceOwner:website]
+[DEBUG] 2021-05-10 17:22:20.240 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for website
+[DEBUG] 2021-05-10 17:22:20.240 [http-nio-8080-exec-6] PropertyBinder - Building property website
+[DEBUG] 2021-05-10 17:22:20.240 [http-nio-8080-exec-6] AnnotationBinder - Binding entity from annotated class: com.hmkurth.entity.Location
+[DEBUG] 2021-05-10 17:22:20.240 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2021-05-10 17:22:20.240 [http-nio-8080-exec-6] EntityBinder - Import with entity name Location
+[DEBUG] 2021-05-10 17:22:20.241 [http-nio-8080-exec-6] EntityBinder - Bind entity com.hmkurth.entity.Location on table location
+[DEBUG] 2021-05-10 17:22:20.247 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(location), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.247 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2021-05-10 17:22:20.247 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.Location:id]
+[DEBUG] 2021-05-10 17:22:20.247 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2021-05-10 17:22:20.247 [http-nio-8080-exec-6] PropertyBinder - Building property id
+[DEBUG] 2021-05-10 17:22:20.248 [http-nio-8080-exec-6] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2021-05-10 17:22:20.248 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(location), mappingColumn=bus_info, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.248 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property busInfo with lazy=false
+[DEBUG] 2021-05-10 17:22:20.248 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.Location:busInfo]
+[DEBUG] 2021-05-10 17:22:20.248 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for busInfo
+[DEBUG] 2021-05-10 17:22:20.248 [http-nio-8080-exec-6] PropertyBinder - Building property busInfo
+[DEBUG] 2021-05-10 17:22:20.248 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(location), mappingColumn=city, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.249 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property city with lazy=false
+[DEBUG] 2021-05-10 17:22:20.249 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.Location:city]
+[DEBUG] 2021-05-10 17:22:20.249 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for city
+[DEBUG] 2021-05-10 17:22:20.249 [http-nio-8080-exec-6] PropertyBinder - Building property city
+[DEBUG] 2021-05-10 17:22:20.249 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(location), mappingColumn=comments, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.249 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property comments with lazy=false
+[DEBUG] 2021-05-10 17:22:20.249 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.Location:comments]
+[DEBUG] 2021-05-10 17:22:20.249 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for comments
+[DEBUG] 2021-05-10 17:22:20.249 [http-nio-8080-exec-6] PropertyBinder - Building property comments
+[DEBUG] 2021-05-10 17:22:20.250 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(location), mappingColumn=lat, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.250 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property lat with lazy=false
+[DEBUG] 2021-05-10 17:22:20.250 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.Location:lat]
+[DEBUG] 2021-05-10 17:22:20.250 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for lat
+[DEBUG] 2021-05-10 17:22:20.250 [http-nio-8080-exec-6] PropertyBinder - Building property lat
+[DEBUG] 2021-05-10 17:22:20.253 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(location), mappingColumn=lng, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.253 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property lng with lazy=false
+[DEBUG] 2021-05-10 17:22:20.253 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.Location:lng]
+[DEBUG] 2021-05-10 17:22:20.253 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for lng
+[DEBUG] 2021-05-10 17:22:20.253 [http-nio-8080-exec-6] PropertyBinder - Building property lng
+[DEBUG] 2021-05-10 17:22:20.256 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(location), mappingColumn=name_description, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.257 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property nameDesc with lazy=false
+[DEBUG] 2021-05-10 17:22:20.257 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.Location:nameDesc]
+[DEBUG] 2021-05-10 17:22:20.257 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for nameDesc
+[DEBUG] 2021-05-10 17:22:20.257 [http-nio-8080-exec-6] PropertyBinder - Building property nameDesc
+[DEBUG] 2021-05-10 17:22:20.257 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy=''}
+[DEBUG] 2021-05-10 17:22:20.257 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(location), mappingColumn=resourceId, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.258 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(location), mappingColumn=state, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.259 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property state with lazy=false
+[DEBUG] 2021-05-10 17:22:20.259 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.Location:state]
+[DEBUG] 2021-05-10 17:22:20.259 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for state
+[DEBUG] 2021-05-10 17:22:20.259 [http-nio-8080-exec-6] PropertyBinder - Building property state
+[DEBUG] 2021-05-10 17:22:20.259 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(location), mappingColumn=streetaddr_or_intersection, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.260 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property streetAddressOrIntersection with lazy=false
+[DEBUG] 2021-05-10 17:22:20.260 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.Location:streetAddressOrIntersection]
+[DEBUG] 2021-05-10 17:22:20.260 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for streetAddressOrIntersection
+[DEBUG] 2021-05-10 17:22:20.260 [http-nio-8080-exec-6] PropertyBinder - Building property streetAddressOrIntersection
+[DEBUG] 2021-05-10 17:22:20.260 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(location), mappingColumn=zip, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.260 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property zip with lazy=false
+[DEBUG] 2021-05-10 17:22:20.260 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.Location:zip]
+[DEBUG] 2021-05-10 17:22:20.260 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for zip
+[DEBUG] 2021-05-10 17:22:20.260 [http-nio-8080-exec-6] PropertyBinder - Building property zip
+[DEBUG] 2021-05-10 17:22:20.261 [http-nio-8080-exec-6] AnnotationBinder - Binding entity from annotated class: com.hmkurth.entity.Type
+[DEBUG] 2021-05-10 17:22:20.261 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2021-05-10 17:22:20.261 [http-nio-8080-exec-6] EntityBinder - Import with entity name Type
+[DEBUG] 2021-05-10 17:22:20.261 [http-nio-8080-exec-6] EntityBinder - Bind entity com.hmkurth.entity.Type on table resource_type
+[DEBUG] 2021-05-10 17:22:20.262 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(resource_type), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.262 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2021-05-10 17:22:20.263 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.Type:id]
+[DEBUG] 2021-05-10 17:22:20.263 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2021-05-10 17:22:20.263 [http-nio-8080-exec-6] PropertyBinder - Building property id
+[DEBUG] 2021-05-10 17:22:20.263 [http-nio-8080-exec-6] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2021-05-10 17:22:20.263 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(resource_type), mappingColumn=type_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.263 [http-nio-8080-exec-6] PropertyBinder - MetadataSourceProcessor property name with lazy=false
+[DEBUG] 2021-05-10 17:22:20.263 [http-nio-8080-exec-6] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.hmkurth.entity.Type:name]
+[DEBUG] 2021-05-10 17:22:20.264 [http-nio-8080-exec-6] SimpleValueBinder - building SimpleValue for name
+[DEBUG] 2021-05-10 17:22:20.264 [http-nio-8080-exec-6] PropertyBinder - Building property name
+[DEBUG] 2021-05-10 17:22:20.264 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='type_id'}
+[DEBUG] 2021-05-10 17:22:20.264 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(resource_type), mappingColumn=resources, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.264 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(resource_type), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.264 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(resource_type), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.264 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(resource_type), mappingColumn=resources_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-05-10 17:22:20.265 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='resources_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2021-05-10 17:22:20.265 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='type_id'}
+[DEBUG] 2021-05-10 17:22:20.265 [http-nio-8080-exec-6] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='type_id'}
+[DEBUG] 2021-05-10 17:22:20.265 [http-nio-8080-exec-6] CollectionBinder - Collection role: com.hmkurth.entity.Type.resources
+[DEBUG] 2021-05-10 17:22:20.265 [http-nio-8080-exec-6] PropertyBinder - Building property resources
+[DEBUG] 2021-05-10 17:22:20.269 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2021-05-10 17:22:20.270 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for email
+[DEBUG] 2021-05-10 17:22:20.270 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for firstName
+[DEBUG] 2021-05-10 17:22:20.270 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for lastName
+[DEBUG] 2021-05-10 17:22:20.270 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for password
+[DEBUG] 2021-05-10 17:22:20.270 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for userName
+[DEBUG] 2021-05-10 17:22:20.270 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2021-05-10 17:22:20.270 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for roleName
+[DEBUG] 2021-05-10 17:22:20.270 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for userName
+[DEBUG] 2021-05-10 17:22:20.270 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2021-05-10 17:22:20.270 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for email
+[DEBUG] 2021-05-10 17:22:20.270 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for firstName
+[DEBUG] 2021-05-10 17:22:20.270 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for lastName
+[DEBUG] 2021-05-10 17:22:20.270 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for phone
+[DEBUG] 2021-05-10 17:22:20.270 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2021-05-10 17:22:20.271 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for comments
+[DEBUG] 2021-05-10 17:22:20.271 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for daysOfWeek
+[DEBUG] 2021-05-10 17:22:20.271 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for deliveryDescription
+[DEBUG] 2021-05-10 17:22:20.271 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for deliveryOffered
+[DEBUG] 2021-05-10 17:22:20.271 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for description
+[DEBUG] 2021-05-10 17:22:20.271 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for dietaryConsiderations
+[DEBUG] 2021-05-10 17:22:20.271 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for documentation
+[DEBUG] 2021-05-10 17:22:20.271 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for name
+[DEBUG] 2021-05-10 17:22:20.271 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for serviceArea
+[DEBUG] 2021-05-10 17:22:20.271 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for website
+[DEBUG] 2021-05-10 17:22:20.271 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2021-05-10 17:22:20.271 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for name
+[DEBUG] 2021-05-10 17:22:20.271 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for website
+[DEBUG] 2021-05-10 17:22:20.271 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2021-05-10 17:22:20.271 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for busInfo
+[DEBUG] 2021-05-10 17:22:20.272 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for city
+[DEBUG] 2021-05-10 17:22:20.272 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for comments
+[DEBUG] 2021-05-10 17:22:20.272 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for lat
+[DEBUG] 2021-05-10 17:22:20.272 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for lng
+[DEBUG] 2021-05-10 17:22:20.272 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for nameDesc
+[DEBUG] 2021-05-10 17:22:20.272 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for state
+[DEBUG] 2021-05-10 17:22:20.272 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for streetAddressOrIntersection
+[DEBUG] 2021-05-10 17:22:20.272 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for zip
+[DEBUG] 2021-05-10 17:22:20.272 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2021-05-10 17:22:20.272 [http-nio-8080-exec-6] SimpleValueBinder - Starting fillSimpleValue for name
+[DEBUG] 2021-05-10 17:22:20.284 [http-nio-8080-exec-6] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [users]
+[DEBUG] 2021-05-10 17:22:20.284 [http-nio-8080-exec-6] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [user_roles]
+[DEBUG] 2021-05-10 17:22:20.284 [http-nio-8080-exec-6] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [contact_details]
+[DEBUG] 2021-05-10 17:22:20.284 [http-nio-8080-exec-6] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [food_resources]
+[DEBUG] 2021-05-10 17:22:20.285 [http-nio-8080-exec-6] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [resource_owners]
+[DEBUG] 2021-05-10 17:22:20.285 [http-nio-8080-exec-6] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [location]
+[DEBUG] 2021-05-10 17:22:20.285 [http-nio-8080-exec-6] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [resource_type]
+[DEBUG] 2021-05-10 17:22:20.290 [http-nio-8080-exec-6] PropertyBinder - Building property resourceId
+[DEBUG] 2021-05-10 17:22:20.290 [http-nio-8080-exec-6] PropertyBinder - Building property owner
+[DEBUG] 2021-05-10 17:22:20.291 [http-nio-8080-exec-6] PropertyBinder - Building property location
+[DEBUG] 2021-05-10 17:22:20.291 [http-nio-8080-exec-6] CollectionSecondPass - Second pass for collection: com.hmkurth.entity.User.roles
+[DEBUG] 2021-05-10 17:22:20.293 [http-nio-8080-exec-6] CollectionBinder - Binding a OneToMany: com.hmkurth.entity.User.roles through a foreign key
+[DEBUG] 2021-05-10 17:22:20.295 [http-nio-8080-exec-6] CollectionBinder - Mapping collection: com.hmkurth.entity.User.roles -> user_roles
+[DEBUG] 2021-05-10 17:22:20.300 [http-nio-8080-exec-6] TableBinder - Retrieving property com.hmkurth.entity.UserRoles.user
+[DEBUG] 2021-05-10 17:22:20.300 [http-nio-8080-exec-6] CollectionSecondPass - Mapped collection key: users_id, one-to-many: com.hmkurth.entity.UserRoles
+[DEBUG] 2021-05-10 17:22:20.300 [http-nio-8080-exec-6] CollectionSecondPass - Second pass for collection: com.hmkurth.entity.ResourceOwner.contacts
+[DEBUG] 2021-05-10 17:22:20.300 [http-nio-8080-exec-6] CollectionBinder - Binding a OneToMany: com.hmkurth.entity.ResourceOwner.contacts through a foreign key
+[DEBUG] 2021-05-10 17:22:20.300 [http-nio-8080-exec-6] CollectionBinder - Mapping collection: com.hmkurth.entity.ResourceOwner.contacts -> contact_details
+[DEBUG] 2021-05-10 17:22:20.301 [http-nio-8080-exec-6] TableBinder - Retrieving property com.hmkurth.entity.Contact.owner
+[DEBUG] 2021-05-10 17:22:20.301 [http-nio-8080-exec-6] CollectionSecondPass - Mapped collection key: owner_id, one-to-many: com.hmkurth.entity.Contact
+[DEBUG] 2021-05-10 17:22:20.301 [http-nio-8080-exec-6] CollectionSecondPass - Second pass for collection: com.hmkurth.entity.Type.resources

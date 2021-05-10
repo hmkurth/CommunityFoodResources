@@ -49,7 +49,7 @@
                         <input type="text" class="form-control" id="zip" name ="zip" placeholder="zip"  autocomplete="email" aria-required="true" required>
                     </div>
 
-                    <button type="submit"name=submit"  class="btn btn-primary btn-lg">Search Site</button>
+                    <button type="submit" name=submit"  class="btn btn-primary btn-lg">Search Site</button>
                 </form>
             </div>
         </div>

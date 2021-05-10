@@ -33,8 +33,8 @@ public class FoodResource {
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
     @NonNull
-    @ManyToOne//(fetch = FetchType.LAZY, mappedBy = "food_resources", cascade = CascadeType.ALL)
-    @JoinColumn(name = "type_id",
+    @ManyToOne
+    @JoinColumn(name = "type_Id",
             foreignKey = @ForeignKey(name = "resource_type_food_resources_id_fk")
     )
     private Type typeId;//fk to resource_type
@@ -51,8 +51,6 @@ public class FoodResource {
     @PrimaryKeyJoinColumn
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
-
-   // @Column(name = "location_id")
     private Location location;//fk to location
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
@@ -89,17 +87,17 @@ public class FoodResource {
      *
      * @param id              the id
      * @param name            the name
-     * @param type_id         the type id
+     * @param typeId         the type id
      * @param owner           the owner
      * @param description     the description
      * @param location        the location
      * @param documentation   the documentation
      * @param deliveryOffered the delivery offered
      */
-    public FoodResource(int id, @NonNull String name, @NonNull Type type_id, ResourceOwner owner, @NonNull String description, Location location,String documentation, boolean deliveryOffered) {
+    public FoodResource(int id, @NonNull String name, @NonNull Type typeId, ResourceOwner owner, @NonNull String description, Location location,String documentation, boolean deliveryOffered) {
         this.id = id;
         this.name = name;
-        this.typeId = type_id;
+        this.typeId = typeId;
         this.owner = owner;
         this.description = description;
         this.location = location;
@@ -143,7 +141,7 @@ public class FoodResource {
      *
      * @return the type id
      */
-    public @NonNull Type getType_id() {
+    public @NonNull Type getTypeId() {
         return this.typeId;
     }
 
@@ -276,10 +274,10 @@ public class FoodResource {
     /**
      * Sets type id.
      *
-     * @param type_id the type id
+     * @param typeId the type id
      */
-    public void setType_id(@NonNull Type type_id) {
-        this.typeId = type_id;
+    public void setTypeId(@NonNull Type typeId) {
+        this.typeId = typeId;
     }
 
     /**
@@ -391,7 +389,7 @@ public class FoodResource {
     }
 
     public String toString() {
-        return "FoodResource(id=" + this.getId() + ", name=" + this.getName() + ", type_id=" + this.getType_id() + ", owner=" + this.getOwner() + ", description=" + this.getDescription() + ", location=" + this.getLocation() + ", contactId=" + this.getContactId() + ", comments=" + this.getComments() + ", serviceArea=" + this.getServiceArea() + ", website=" + this.getWebsite() + ", documentation=" + this.getDocumentation() + ", daysOfWeek=" + this.getDaysOfWeek() + ", deliveryOffered=" + this.isDeliveryOffered() + ", deliveryDescription=" + this.getDeliveryDescription() + ", dietaryConsiderations=" + this.getDietaryConsiderations() + ")";
+        return "FoodResource(id=" + this.getId() + ", name=" + this.getName() + ", type_id=" + this.getTypeId() + ", owner=" + this.getOwner() + ", description=" + this.getDescription() + ", location=" + this.getLocation() + ", contactId=" + this.getContactId() + ", comments=" + this.getComments() + ", serviceArea=" + this.getServiceArea() + ", website=" + this.getWebsite() + ", documentation=" + this.getDocumentation() + ", daysOfWeek=" + this.getDaysOfWeek() + ", deliveryOffered=" + this.isDeliveryOffered() + ", deliveryDescription=" + this.getDeliveryDescription() + ", dietaryConsiderations=" + this.getDietaryConsiderations() + ")";
     }
 }
 

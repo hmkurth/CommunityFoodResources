@@ -9,47 +9,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="cleaning up controllers">
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="cleaning up code">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210510 1722.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210510 1725.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210510 1728.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210510 1733.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210510 1742.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210510 1746.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210510 1748.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210510 1749.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210510 1752.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210510 1757.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210510 1800.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210510 1801.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210510 1807.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/ApiLocation/AddressComponentsItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/ApiLocation/AddressComponentsItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/ApiLocation/Bounds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/ApiLocation/Bounds.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/ApiLocation/Geometry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/ApiLocation/Geometry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/ApiLocation/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/ApiLocation/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/ApiLocation/MapLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/ApiLocation/MapLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/ApiLocation/Northeast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/ApiLocation/Northeast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/ApiLocation/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/ApiLocation/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/ApiLocation/ResultsItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/ApiLocation/ResultsItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/ApiLocation/Southwest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/ApiLocation/Southwest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/ApiLocation/Viewport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/ApiLocation/Viewport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ForwardPantries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ForwardPantries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LoginAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210509 0228.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210509 0229.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210510 0011.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchByLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchByLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchFoodResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchFoodResources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Contact.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/ResourceOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/ResourceOwner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/UserRoles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/UserRoles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/GenericDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Type.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/SessionFactoryProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/SessionFactoryProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/rest/ContactApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/rest/ContactApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/rest/ContactService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/rest/ContactService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/utilities/PropertiesLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/utilities/PropertiesLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/api.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/api.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery.mixitup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/jquery.mixitup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/searchByLocation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/searchByLocation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/userSignup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/userSignup.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ContactDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ContactDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/LocationDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/LocationDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/TypeDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/TypeDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/test/util/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/test/util/Database.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +163,7 @@
       <recent name="com.hmkurth.persistence" />
     </key>
   </component>
-  <component name="RunManager" selected="TomEE Server.Tomcat">
+  <component name="RunManager" selected="JUnit.ApiTestServiceClient.testGetNearByLocations">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -184,6 +171,14 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in CommunityFoodResources" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CommunityFoodResources" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -214,22 +209,6 @@
       <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
       <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ApiTestServiceClient" />
       <option name="METHOD_NAME" value="testGetNearByLocations" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FoodResourceTest.getByPropertyLikeSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CommunityFoodResources" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hmkurth.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.FoodResourceTest" />
-      <option name="METHOD_NAME" value="getByPropertyLikeSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -355,20 +334,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.FoodResourceTest.getByPropertyLikeSuccess" />
       <item itemvalue="JUnit.FoodResourceTest.insertSuccess" />
       <item itemvalue="JUnit.TypeDaoTest" />
       <item itemvalue="JUnit.ApiTestServiceClient" />
       <item itemvalue="JUnit.ApiTestServiceClient.testGetNearByLocations" />
       <item itemvalue="TomEE Server.Tomcat" />
+      <item itemvalue="JUnit.All in CommunityFoodResources" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ApiTestServiceClient.testGetNearByLocations" />
+        <item itemvalue="JUnit.All in CommunityFoodResources" />
         <item itemvalue="JUnit.ApiTestServiceClient" />
         <item itemvalue="JUnit.TypeDaoTest" />
         <item itemvalue="JUnit.FoodResourceTest.insertSuccess" />
-        <item itemvalue="JUnit.FoodResourceTest.getByPropertyLikeSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -451,14 +430,7 @@
       <workItem from="1620173440107" duration="594000" />
       <workItem from="1620347926133" duration="1742000" />
       <workItem from="1620349837454" duration="47809000" />
-      <workItem from="1620621464218" duration="5951000" />
-    </task>
-    <task id="LOCAL-00071" summary="gitting untangled">
-      <created>1618627786950</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1618627786950</updated>
+      <workItem from="1620621464218" duration="10176000" />
     </task>
     <task id="LOCAL-00072" summary="gitting untangled">
       <created>1618627812187</created>
@@ -796,7 +768,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620682535945</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="cleaning up code">
+      <created>1620684465297</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1620684465297</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -819,7 +798,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="changed the type entity to have a set of resources." />
     <MESSAGE value="type is now displaying" />
     <MESSAGE value="adding admin directory and security" />
     <MESSAGE value="I moved the deleteUser to the admin folder, and had some problems, I couldn’t access the DeleteUser servlet, so I moved some functionality to the LoginAction servlet, and the rest to the DeleteUser, so no more DeleteUserAction.  When I hit submit, I get a 404, but the user is deleted from the db…" />
@@ -844,7 +822,8 @@
     <MESSAGE value="in testing, not sure about results coming back.." />
     <MESSAGE value="i can't figure out how to get the Ljava.lang.Object that is being returned from the query to display, tried using Arrays.deepToString(arrayOfObjects)," />
     <MESSAGE value="cleaning up controllers" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleaning up controllers" />
+    <MESSAGE value="cleaning up code" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaning up code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -883,7 +862,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
-          <line>29</line>
+          <line>32</line>
           <properties class="com.hmkurth.persistence.ApiTestServiceClient" method="testgeoJSON">
             <option name="EMULATED" value="true" />
           </properties>
@@ -891,7 +870,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
-          <line>58</line>
+          <line>61</line>
           <properties class="com.hmkurth.persistence.ApiTestServiceClient" method="testLocationApiDao">
             <option name="EMULATED" value="true" />
           </properties>
@@ -985,12 +964,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
-          <line>41</line>
+          <line>44</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
-          <line>68</line>
+          <line>71</line>
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1090,8 +1069,28 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
-          <line>95</line>
+          <line>98</line>
           <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
+          <line>104</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
+          <line>110</line>
+          <option name="timeStamp" value="90" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.sql.SQLSyntaxErrorException" package="java.sql" />
@@ -1105,6 +1104,10 @@
           <properties class="java.sql.SQLIntegrityConstraintViolationException" package="java.sql" />
           <option name="timeStamp" value="68" />
         </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="86" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -1113,6 +1116,6 @@
     <SUITE FILE_PATH="coverage/CommunityFoodResources$UserDaoTest.ic" NAME="UserDaoTest Coverage Results" MODIFIED="1614710690280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.hmkurth.persistence.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/CommunityFoodResources$Tomcat.ic" NAME="Tomcat Coverage Results" MODIFIED="1615509403575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/CommunityFoodResources$Tomcat.ic" NAME="Tomcat Coverage Results" MODIFIED="1620685262221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

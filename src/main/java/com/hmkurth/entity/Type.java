@@ -31,6 +31,6 @@ public class Type {
     //references the foreign key
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
-    @OneToMany(mappedBy = "type_id", cascade=CascadeType.ALL, orphanRemoval = true, fetch =FetchType.EAGER )
+    @OneToMany(mappedBy = "typeId", cascade=CascadeType.ALL, orphanRemoval = true, fetch =FetchType.EAGER )
     private Set<FoodResource> resources = new HashSet<>();
 }

@@ -119,7 +119,7 @@ public class LocationApiDao implements PropertiesLoader {
      * @return list of ilocations that are in range
      */
     @Transactional
-    public List<Object> getNearByLocations(float latitude, float longitude, int page) {
+    public List getNearByLocations(float latitude, float longitude, int page) {
         Session sess = getSession();
         Query query = sess.createSQLQuery("SELECT id,(6371 * 2 * ASIN(SQRT(POWER(SIN((:latitude - abs(lat)) * pi()/180 / 2),2) +" +
                 "COS(:latitude * pi()/180 ) * COS(abs(lat) * pi()/180) *" +
@@ -131,6 +131,7 @@ public class LocationApiDao implements PropertiesLoader {
         query.setFirstResult((page - 1) * 10);
         query.setMaxResults(10);
         //i think this returns a list of actual distances(in miles?) from location, how do you get the id???
+        logger.debug("getNearbyLocations query result:" + query.list());
         return query.list();
 
 

@@ -4,6 +4,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hmkurth.ApiLocation.Result;
 import com.hmkurth.entity.Location;
 import lombok.extern.log4j.Log4j2;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.Test;
 
 import javax.ws.rs.client.Client;
@@ -21,6 +23,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @Log4j2
 
 public class ApiTestServiceClient {
+    private final Logger logger = LogManager.getLogger(this.getClass());
     /**
      * Testgeo json.
      *
@@ -47,7 +50,7 @@ public class ApiTestServiceClient {
         String format = df.format(locationToTest);
         double finalValue = (Double)df.parse(format) ;
 
-        assertEquals(43.09, finalValue);
+        assertEquals(43.0932603, finalValue);
     }
 
     /**
@@ -99,12 +102,14 @@ public class ApiTestServiceClient {
         LocationApiDao dao = new LocationApiDao();
         GenericDao<Location> ldao = new GenericDao<>(Location.class);
         Location centerPoint = ldao.getById(2);
-        List<Object> results = dao.getNearByLocations(centerPoint.getLat(), centerPoint.getLng(), 1);
+        var results = (List) dao.getNearByLocations(centerPoint.getLat(), centerPoint.getLng(), 1);
         //how are you going to tst this????? todo more tests
-      //  log.debug("results in array[1], get resource id and name " + results.get(1).getResourceId().getName());
+        log.debug("List Results :" + results );
+       //log.debug("results in array[1], get resource id and name/ class " + results.get(1).getClass());
         int idToTest = 1;
-        assertEquals("???", results.get(1));
+        //assertEquals("???", results.get(1));
         assertEquals("?", Arrays.deepToString(new List[]{results}));
+        logger.debug(Arrays.deepToString(new List[]{results}));
 
     }
 }

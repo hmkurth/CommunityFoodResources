@@ -39,7 +39,7 @@ public class SearchByLocation extends HttpServlet {
      *@param  res                the HttpServletResponse object
      *@exception  ServletException  if there is a Servlet failure
      *@exception IOException       if there is an IO failure
-     */
+     **/
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) {
        LocationApiDao lApiDao = new LocationApiDao();
         GenericDao fdao = new GenericDao(FoodResource.class);
@@ -64,7 +64,7 @@ public class SearchByLocation extends HttpServlet {
         //need to find a way use both lat and long coords
         //take the lat and lng out of the newly transformed address, pass to ldao with distance
         int page= 1;
-        List<Object> results = lApiDao.getNearByLocations(location.getLat(), location.getLng(),page);
+        List<Integer> results = lApiDao.getNearByLocations(location.getLat(), location.getLng(),page);
         req.setAttribute("nearLocations", results);
         logger.debug(results.toString());
 
