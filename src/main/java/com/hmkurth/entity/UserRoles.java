@@ -55,16 +55,13 @@ public class UserRoles {
      *
      * @param roleName the role name
      * @param user     the user
-     * @param roleName the name of the role
-     * @param  userName the userName of the user
+     * @param userName the userName of the user
      */
     public UserRoles(String roleName, User user, String userName) {
         this.roleName = roleName;
         this.user = user;
         this.userName = userName;
     }
-
-
 
 
     /**
@@ -120,6 +117,7 @@ public class UserRoles {
     public void setRoleName(String roleName) {
         this.roleName = roleName;
     }
+
     /**
      * Gets user.
      *

@@ -1,8 +1,6 @@
 package com.hmkurth.persistence;
 
 import com.hmkurth.entity.Contact;
-import com.hmkurth.entity.User;
-import com.hmkurth.entity.UserRoles;
 import com.hmkurth.test.util.Database;
 import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.BeforeEach;
@@ -12,6 +10,9 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * The type Contact dao test.
+ */
 @Log4j2
 /**
  * The type Contact dao test.
@@ -22,7 +23,6 @@ class ContactDaoTest {
      */
 
     GenericDao genericDao;
-
 
 
     /**
@@ -50,6 +50,7 @@ class ContactDaoTest {
         assertEquals(6, contacts.size());
         log.info("get all users test: all users;" + genericDao.getAll());
     }
+
     /**
      * Verify successful get by property (equal match)
      */
@@ -88,6 +89,9 @@ class ContactDaoTest {
 
     }
 
+    /**
+     * Delete success.
+     */
     @Test
     void deleteSuccess() {
         //how many do we have to start
@@ -101,6 +105,9 @@ class ContactDaoTest {
 
     }
 
+    /**
+     * Gets by id success.
+     */
     @Test
     void getByIdSuccess() {
         Contact retrievedUser = (Contact) genericDao.getById(1);
@@ -112,7 +119,7 @@ class ContactDaoTest {
 
     /**
      * Verify successful insert of a contact
-     * */
+     */
     @Test
     void insertSuccess() {
 

@@ -3,11 +3,8 @@ package com.hmkurth.entity;
 
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.search.mapper.pojo.bridge.builtin.annotation.GeoPointBinding;
 import org.hibernate.search.mapper.pojo.mapping.definition.annotation.FullTextField;
 import org.hibernate.search.mapper.pojo.mapping.definition.annotation.GenericField;
-import org.hibernate.search.mapper.pojo.mapping.definition.annotation.Indexed;
-import org.hibernate.search.mapper.pojo.mapping.definition.annotation.IndexedEmbedded;
 
 import javax.persistence.*;
 import java.util.Objects;
@@ -17,7 +14,6 @@ import java.util.Objects;
  *
  * @author hmkurth
  */
-
 @NoArgsConstructor
 @RequiredArgsConstructor
 @Entity(name = "FoodResource")
@@ -41,7 +37,7 @@ public class FoodResource {
     @JoinColumn(name = "type_id",
             foreignKey = @ForeignKey(name = "resource_type_food_resources_id_fk")
     )
-    private Type type_id;//fk to resource_type
+    private Type typeId;//fk to resource_type
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
     @OneToOne
@@ -88,10 +84,22 @@ public class FoodResource {
     private String dietaryConsiderations;
 
 
+    /**
+     * Instantiates a new Food resource.
+     *
+     * @param id              the id
+     * @param name            the name
+     * @param type_id         the type id
+     * @param owner           the owner
+     * @param description     the description
+     * @param location        the location
+     * @param documentation   the documentation
+     * @param deliveryOffered the delivery offered
+     */
     public FoodResource(int id, @NonNull String name, @NonNull Type type_id, ResourceOwner owner, @NonNull String description, Location location,String documentation, boolean deliveryOffered) {
         this.id = id;
         this.name = name;
-        this.type_id = type_id;
+        this.typeId = type_id;
         this.owner = owner;
         this.description = description;
         this.location = location;
@@ -112,122 +120,272 @@ public class FoodResource {
         return Objects.hash(getId(), getName(), getDescription(), getComments(), getServiceArea(), getWebsite(), getDocumentation(), getDaysOfWeek(), isDeliveryOffered(), getDeliveryDescription(), getDietaryConsiderations());
     }
 
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
     public int getId() {
         return this.id;
     }
 
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
     public @NonNull String getName() {
         return this.name;
     }
 
+    /**
+     * Gets type id.
+     *
+     * @return the type id
+     */
     public @NonNull Type getType_id() {
-        return this.type_id;
+        return this.typeId;
     }
 
+    /**
+     * Gets owner.
+     *
+     * @return the owner
+     */
     public ResourceOwner getOwner() {
         return this.owner;
     }
 
+    /**
+     * Gets description.
+     *
+     * @return the description
+     */
     public @NonNull String getDescription() {
         return this.description;
     }
 
+    /**
+     * Gets location.
+     *
+     * @return the location
+     */
     public Location getLocation() {
         return this.location;
     }
 
+    /**
+     * Gets contact id.
+     *
+     * @return the contact id
+     */
     public Contact getContactId() {
         return this.contactId;
     }
 
+    /**
+     * Gets comments.
+     *
+     * @return the comments
+     */
     public String getComments() {
         return this.comments;
     }
 
+    /**
+     * Gets service area.
+     *
+     * @return the service area
+     */
     public String getServiceArea() {
         return this.serviceArea;
     }
 
+    /**
+     * Gets website.
+     *
+     * @return the website
+     */
     public String getWebsite() {
         return this.website;
     }
 
+    /**
+     * Gets documentation.
+     *
+     * @return the documentation
+     */
     public @NonNull String getDocumentation() {
         return this.documentation;
     }
 
+    /**
+     * Gets days of week.
+     *
+     * @return the days of week
+     */
     public String getDaysOfWeek() {
         return this.daysOfWeek;
     }
 
+    /**
+     * Is delivery offered boolean.
+     *
+     * @return the boolean
+     */
     public boolean isDeliveryOffered() {
         return this.deliveryOffered;
     }
 
+    /**
+     * Gets delivery description.
+     *
+     * @return the delivery description
+     */
     public String getDeliveryDescription() {
         return this.deliveryDescription;
     }
 
+    /**
+     * Gets dietary considerations.
+     *
+     * @return the dietary considerations
+     */
     public String getDietaryConsiderations() {
         return this.dietaryConsiderations;
     }
 
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
     public void setId(int id) {
         this.id = id;
     }
 
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
     public void setName(@NonNull String name) {
         this.name = name;
     }
 
+    /**
+     * Sets type id.
+     *
+     * @param type_id the type id
+     */
     public void setType_id(@NonNull Type type_id) {
-        this.type_id = type_id;
+        this.typeId = type_id;
     }
 
+    /**
+     * Sets owner.
+     *
+     * @param owner the owner
+     */
     public void setOwner(ResourceOwner owner) {
         this.owner = owner;
     }
 
+    /**
+     * Sets description.
+     *
+     * @param description the description
+     */
     public void setDescription(@NonNull String description) {
         this.description = description;
     }
 
+    /**
+     * Sets location.
+     *
+     * @param location the location
+     */
     public void setLocation(Location location) {
         this.location = location;
     }
 
+    /**
+     * Sets contact id.
+     *
+     * @param contactId the contact id
+     */
     public void setContactId(Contact contactId) {
         this.contactId = contactId;
     }
 
+    /**
+     * Sets comments.
+     *
+     * @param comments the comments
+     */
     public void setComments(String comments) {
         this.comments = comments;
     }
 
+    /**
+     * Sets service area.
+     *
+     * @param serviceArea the service area
+     */
     public void setServiceArea(String serviceArea) {
         this.serviceArea = serviceArea;
     }
 
+    /**
+     * Sets website.
+     *
+     * @param website the website
+     */
     public void setWebsite(String website) {
         this.website = website;
     }
 
+    /**
+     * Sets documentation.
+     *
+     * @param documentation the documentation
+     */
     public void setDocumentation(@NonNull String documentation) {
         this.documentation = documentation;
     }
 
+    /**
+     * Sets days of week.
+     *
+     * @param daysOfWeek the days of week
+     */
     public void setDaysOfWeek(String daysOfWeek) {
         this.daysOfWeek = daysOfWeek;
     }
 
+    /**
+     * Sets delivery offered.
+     *
+     * @param deliveryOffered the delivery offered
+     */
     public void setDeliveryOffered(boolean deliveryOffered) {
         this.deliveryOffered = deliveryOffered;
     }
 
+    /**
+     * Sets delivery description.
+     *
+     * @param deliveryDescription the delivery description
+     */
     public void setDeliveryDescription(String deliveryDescription) {
         this.deliveryDescription = deliveryDescription;
     }
 
+    /**
+     * Sets dietary considerations.
+     *
+     * @param dietaryConsiderations the dietary considerations
+     */
     public void setDietaryConsiderations(String dietaryConsiderations) {
         this.dietaryConsiderations = dietaryConsiderations;
     }

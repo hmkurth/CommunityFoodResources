@@ -4,23 +4,23 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import org.hibernate.query.Query;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
-import javax.transaction.Transactional;
 import java.util.List;
 
 /**
  * generic dao to take in any type of object, any entity managed by hibernate
- *A generic DAO somewhat inspired by http://rodrigouchoa.wordpress.com
+ * A generic DAO somewhat inspired by http://rodrigouchoa.wordpress.com
+ *
+ * @param <T> the type parameter
  */
 public class GenericDao<T> {//T is placeholder, variable for type
 
 //create instance variable of class you are using
-    private Class<T>  type;
+    private final Class<T>  type;
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     /**
@@ -31,9 +31,12 @@ public class GenericDao<T> {//T is placeholder, variable for type
     public GenericDao(Class<T> type) {
         this.type = type;
     }
+
     /**
      * Gets a entity by id
-     * @param id entity id to search by
+     *
+     * @param <T> the type parameter
+     * @param id  entity id to search by
      * @return a entity
      */
     public <T>T getById(int id) {
@@ -45,8 +48,9 @@ public class GenericDao<T> {//T is placeholder, variable for type
 
     /**
      * get entity by  property name
-     * @param entityName, the table you are searching
-     * @param valueName, the name or value being searched for
+     *
+     * @param entityName the entity name
+     * @param valueName  the value name
      * @return Entities by that  name
      */
     public List<T> getEntityByName(String entityName, String valueName){
@@ -61,9 +65,11 @@ public class GenericDao<T> {//T is placeholder, variable for type
         logger.debug("The list of Entities by entity name " + entities);
         return entities;
     }
+
     /**
      * update Entity
-     * @param entity  entity to be inserted or updated
+     *
+     * @param entity entity to be inserted or updated
      */
     public void saveOrUpdate(T entity) {
         Session session = getSession();
@@ -72,6 +78,7 @@ public class GenericDao<T> {//T is placeholder, variable for type
         transaction.commit();
         session.close();
     }
+
     /**
      * Deletes the entity.
      *

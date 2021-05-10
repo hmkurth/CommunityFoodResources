@@ -11,10 +11,20 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 import java.util.List;
+
+/**
+ * The type Contact service.
+ */
 @Log4j2
 @Path("/contact")
 public class ContactService {
-    // The Java method will process HTTP GET requests
+    /**
+     * Gets contact.
+     *
+     * @return the contact
+     * @throws JsonProcessingException the json processing exception
+     */
+// The Java method will process HTTP GET requests
     @GET
     // The Java method will produce content identified by the MIME Media type "application/json"
     @Produces("application/json")

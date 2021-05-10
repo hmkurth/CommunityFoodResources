@@ -17,9 +17,9 @@ import java.util.List;
 /**
  * this servlet will be the locked down resource that prompts the tomcat login servlet,
  * redirect to the homepage after logging in
+ *
  * @author hmkurth
  */
-
 @WebServlet(
         urlPatterns = {"/loginAction"}
 )

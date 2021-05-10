@@ -2,6 +2,9 @@ package com.hmkurth.ApiLocation;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * The type Bounds.
+ */
 public class Bounds{
 
 	@JsonProperty("southwest")
@@ -10,19 +13,39 @@ public class Bounds{
 	@JsonProperty("northeast")
 	private Northeast northeast;
 
-	public void setSouthwest(Southwest southwest){
+    /**
+     * Set southwest.
+     *
+     * @param southwest the southwest
+     */
+    public void setSouthwest(Southwest southwest){
 		this.southwest = southwest;
 	}
 
-	public Southwest getSouthwest(){
+    /**
+     * Get southwest southwest.
+     *
+     * @return the southwest
+     */
+    public Southwest getSouthwest(){
 		return southwest;
 	}
 
-	public void setNortheast(Northeast northeast){
+    /**
+     * Set northeast.
+     *
+     * @param northeast the northeast
+     */
+    public void setNortheast(Northeast northeast){
 		this.northeast = northeast;
 	}
 
-	public Northeast getNortheast(){
+    /**
+     * Get northeast northeast.
+     *
+     * @return the northeast
+     */
+    public Northeast getNortheast(){
 		return northeast;
 	}
 }

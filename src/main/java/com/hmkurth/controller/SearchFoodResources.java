@@ -18,12 +18,14 @@ import java.io.IOException;
  * This servlet forwards to the searchFoodResources jsp
  * and processes the POST form data, forwarding to a search results jsp
  */
-
 @WebServlet(
         urlPatterns = {"/searchFoodResources"}
 )
 //TODO error handling!  check and redirect!!!
 public class SearchFoodResources extends HttpServlet {
+    /**
+     * The Resource dao.
+     */
     GenericDao resourceDao;
     private final Logger logger = LogManager.getLogger(this.getClass());
 

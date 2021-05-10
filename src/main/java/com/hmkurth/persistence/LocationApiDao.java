@@ -1,6 +1,5 @@
 package com.hmkurth.persistence;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hmkurth.ApiLocation.Result;
 import com.hmkurth.entity.Location;
@@ -18,6 +17,9 @@ import javax.ws.rs.core.Response;
 import java.util.List;
 import java.util.Properties;
 
+/**
+ * The type Location api dao.
+ */
 @Log4j2
 /**
  * This is the data access model for the location api.  it will take in an address and convert to
@@ -29,16 +31,27 @@ public class LocationApiDao implements PropertiesLoader {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
+    /**
+     * The Api key.
+     */
     String apiKey;
+    /**
+     * The Api host.
+     */
     String apiHost;
-    LocationApiDao dao;
+    /**
+     * The Client.
+     */
     Client client;
+    /**
+     * The Target address.
+     */
     String targetAddress = "https://google-maps-geocoding.p.rapidapi.com/geocode/json";
 
     /**
      * constructor that loads properties and assigns them to the meta info needed to access the api
      *
-     * @throws Exception
+     * @throws Exception the exception
      */
     public LocationApiDao() throws Exception {
         client = ClientBuilder.newClient();
@@ -52,9 +65,10 @@ public class LocationApiDao implements PropertiesLoader {
      * a method that takes in a Location object and returns a mappable object/location, MapLocation
      * TODO break this up more(tried and failed)
      *
-     * @return
+     * @param locationToMap the location to map
+     * @return location location
      */
-    public Location convertAddressToLatAndLong(Location locationToMap) throws JsonProcessingException {
+    public Location convertAddressToLatAndLong(Location locationToMap) {
         //take the input location and make parameters
         String street = locationToMap.getStreetAddressOrIntersection();
         String city = locationToMap.getCity();
@@ -97,9 +111,11 @@ public class LocationApiDao implements PropertiesLoader {
 
     /**
      * https://stackoverflow.com/questions/28847954/what-is-the-best-approach-to-find-all-addresses-that-are-in-a-specific-distance
-     *TODO make this take in a location, not lat and lng
-     * @param latitude
-     * @param longitude
+     * TODO make this take in a location, not lat and lng
+     *
+     * @param latitude  the latitude
+     * @param longitude the longitude
+     * @param page      the page
      * @return list of ilocations that are in range
      */
     @Transactional
@@ -115,33 +131,8 @@ public class LocationApiDao implements PropertiesLoader {
         query.setFirstResult((page - 1) * 10);
         query.setMaxResults(10);
         //i think this returns a list of actual distances(in miles?) from location, how do you get the id???
-        List list = query.list();
-        return list;
+        return query.list();
 
 
     }
 }
-/**
-    SELECT z.zip,
-        z.primary_city,
-        z.latitude, z.longitude,
-        p.distance_unit
-        * DEGREES(ACOS(LEAST(1.0, COS(RADIANS(p.latpoint))
-        * COS(RADIANS(z.latitude))
-        * COS(RADIANS(p.longpoint) - RADIANS(z.longitude))
-        + SIN(RADIANS(p.latpoint))
-        * SIN(RADIANS(z.latitude))))) AS distance_in_km
-        FROM zip AS z
-        JOIN (   /* these are the query parameters
-        SELECT  42.81  AS latpoint,  -70.81 AS longpoint,
-        50.0 AS radius,      111.045 AS distance_unit
-        ) AS p ON 1=1
-        WHERE z.latitude
-        BETWEEN p.latpoint  - (p.radius / p.distance_unit)
-        AND p.latpoint  + (p.radius / p.distance_unit)
-        AND z.longitude
-        BETWEEN p.longpoint - (p.radius / (p.distance_unit * COS(RADIANS(p.latpoint))))
-        AND p.longpoint + (p.radius / (p.distance_unit * COS(RADIANS(p.latpoint))))
-        ORDER BY distance_in_km
-        LIMIT 1
- */

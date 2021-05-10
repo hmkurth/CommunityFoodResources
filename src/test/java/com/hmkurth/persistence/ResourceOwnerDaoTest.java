@@ -1,23 +1,19 @@
 package com.hmkurth.persistence;
+
 import com.hmkurth.entity.Contact;
 import com.hmkurth.entity.ResourceOwner;
 import com.hmkurth.test.util.Database;
 import lombok.extern.log4j.Log4j2;
-import lombok.val;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import com.hmkurth.entity.ResourceOwner;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import javax.management.relation.Role;
-import javax.persistence.Entity;
-
-import java.time.LocalDate;
 import java.util.List;
-import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+/**
+ * The type Resource owner dao test.
+ */
 @Log4j2
 /**
  * The type ResourceOwner dao test.
@@ -28,9 +24,14 @@ class ResourceOwnerDaoTest {
      */
 
     GenericDao resourceOwnerDao;
+    /**
+     * The Contact dao.
+     */
     GenericDao contactDao;
+    /**
+     * The Food resource dao.
+     */
     GenericDao foodResourceDao;
-
 
 
     /**
@@ -59,6 +60,7 @@ class ResourceOwnerDaoTest {
         assertEquals(6, ResourceOwners.size());
         log.info("get all ResourceOwners test: all ResourceOwners;" + resourceOwnerDao.getAll());
     }
+
     /**
      * Verify successful get by property (equal match)
      */
@@ -134,6 +136,7 @@ class ResourceOwnerDaoTest {
         ResourceOwner insertedResourceOwner = (ResourceOwner) resourceOwnerDao.getById(id);
         assertEquals(newResourceOwner, insertedResourceOwner);
     }
+
     /**
      * Verify successful insert of a ResourceOwner with contact
      */
@@ -159,7 +162,6 @@ class ResourceOwnerDaoTest {
         assertEquals(newResourceOwner, insertedResourceOwner);
 
     }
-
 
 
     /**

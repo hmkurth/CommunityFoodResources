@@ -2,6 +2,9 @@ package com.hmkurth.ApiLocation;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * The type Geometry.
+ */
 public class Geometry{
 
 	@JsonProperty("viewport")
@@ -16,35 +19,75 @@ public class Geometry{
 	@JsonProperty("location_type")
 	private String locationType;
 
-	public void setViewport(Viewport viewport){
+    /**
+     * Set viewport.
+     *
+     * @param viewport the viewport
+     */
+    public void setViewport(Viewport viewport){
 		this.viewport = viewport;
 	}
 
-	public Viewport getViewport(){
+    /**
+     * Get viewport viewport.
+     *
+     * @return the viewport
+     */
+    public Viewport getViewport(){
 		return viewport;
 	}
 
-	public void setBounds(Bounds bounds){
+    /**
+     * Set bounds.
+     *
+     * @param bounds the bounds
+     */
+    public void setBounds(Bounds bounds){
 		this.bounds = bounds;
 	}
 
-	public Bounds getBounds(){
+    /**
+     * Get bounds bounds.
+     *
+     * @return the bounds
+     */
+    public Bounds getBounds(){
 		return bounds;
 	}
 
-	public void setLocation(Location location){
+    /**
+     * Set location.
+     *
+     * @param location the location
+     */
+    public void setLocation(Location location){
 		this.location = location;
 	}
 
-	public Location getLocation(){
+    /**
+     * Get location location.
+     *
+     * @return the location
+     */
+    public Location getLocation(){
 		return location;
 	}
 
-	public void setLocationType(String locationType){
+    /**
+     * Set location type.
+     *
+     * @param locationType the location type
+     */
+    public void setLocationType(String locationType){
 		this.locationType = locationType;
 	}
 
-	public String getLocationType(){
+    /**
+     * Get location type string.
+     *
+     * @return the string
+     */
+    public String getLocationType(){
 		return locationType;
 	}
 }

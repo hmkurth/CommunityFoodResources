@@ -3,8 +3,6 @@ package com.hmkurth.controller;
 
 import com.hmkurth.entity.FoodResource;
 import com.hmkurth.entity.Location;
-import com.hmkurth.entity.User;
-import com.hmkurth.entity.UserRoles;
 import com.hmkurth.persistence.GenericDao;
 import com.hmkurth.persistence.LocationApiDao;
 import lombok.SneakyThrows;
@@ -43,7 +41,6 @@ public class SearchByLocation extends HttpServlet {
      *@exception IOException       if there is an IO failure
      */
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) {
-        GenericDao dao = new GenericDao(Location.class);
        LocationApiDao lApiDao = new LocationApiDao();
         GenericDao fdao = new GenericDao(FoodResource.class);
         Location location = new Location();

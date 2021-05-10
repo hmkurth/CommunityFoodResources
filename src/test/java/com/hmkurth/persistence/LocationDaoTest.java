@@ -1,6 +1,5 @@
 package com.hmkurth.persistence;
 
-import com.hmkurth.entity.Contact;
 import com.hmkurth.entity.Location;
 import com.hmkurth.test.util.Database;
 import lombok.extern.log4j.Log4j2;
@@ -10,13 +9,18 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+
+/**
+ * The type Location dao test.
+ */
 @Log4j2
 public class LocationDaoTest {
 
 
+    /**
+     * The Generic dao.
+     */
     GenericDao genericDao;
-
 
 
     /**
@@ -44,6 +48,7 @@ public class LocationDaoTest {
         assertEquals(6, locations.size());
         log.info("get all locations test: all locations;" + genericDao.getAll());
     }
+
     /**
      * Verify successful get by property (equal match)
      */
@@ -82,6 +87,9 @@ public class LocationDaoTest {
 
     }
 
+    /**
+     * Delete success.
+     */
     @Test
     void deleteSuccess() {
         //how many do we have to start
@@ -95,6 +103,9 @@ public class LocationDaoTest {
 
     }
 
+    /**
+     * Gets by id success.
+     */
     @Test
     void getByIdSuccess() {
         Location retrievedUser = (Location) genericDao.getById(1);
@@ -106,7 +117,7 @@ public class LocationDaoTest {
 
     /**
      * Verify successful insert of a location
-     * */
+     */
     @Test
     void insertSuccess() {
 

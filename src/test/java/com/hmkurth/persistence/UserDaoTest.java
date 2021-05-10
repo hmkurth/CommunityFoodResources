@@ -1,22 +1,20 @@
 package com.hmkurth.persistence;
+
+import com.hmkurth.entity.User;
 import com.hmkurth.entity.UserRoles;
 import com.hmkurth.test.util.Database;
 import lombok.extern.log4j.Log4j2;
-import lombok.val;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import com.hmkurth.entity.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import javax.management.relation.Role;
-import javax.persistence.Entity;
-
-import java.time.LocalDate;
 import java.util.List;
 import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+/**
+ * The type User dao test.
+ */
 @Log4j2
 /**
  * The type User dao test.
@@ -27,7 +25,6 @@ class UserDaoTest {
      */
 
     GenericDao genericDao;
-
 
 
     /**
@@ -56,6 +53,7 @@ class UserDaoTest {
         assertEquals(6, users.size());
         log.info("get all users test: all users;" + genericDao.getAll());
     }
+
     /**
      * Verify successful get by property (equal match)
      */
@@ -94,20 +92,23 @@ class UserDaoTest {
     log.info("in save or update test");
 
     }
-   /** To test that deleting a user results in deleted roles:
-    Create a user that has at least one role (this might already be part of your cleandb.sql).
-    Get the role id/s for that user's roles (hang on to these as you'll need them below).
-    Delete the user.
-    Assert the user was deleted (getting the user results in null - this part is like your typical delete test)
-    Attempt to get the role/s by id.
-    Assert that the role/s is/are null.
-            2. To test that deleting a role does not delete the user:
-    Create a user that has at least one role (this might already be part of your cleandb.sql).
-    Get the role/s for that user.
-    Delete the role/s.
-            Verify (assert) the role/s was/were deleted.
-    Get the user.
-            Verify (assert) the the user still exists. (edited)*/
+
+    /**
+     * To test that deleting a user results in deleted roles:
+     * Create a user that has at least one role (this might already be part of your cleandb.sql).
+     * Get the role id/s for that user's roles (hang on to these as you'll need them below).
+     * Delete the user.
+     * Assert the user was deleted (getting the user results in null - this part is like your typical delete test)
+     * Attempt to get the role/s by id.
+     * Assert that the role/s is/are null.
+     * 2. To test that deleting a role does not delete the user:
+     * Create a user that has at least one role (this might already be part of your cleandb.sql).
+     * Get the role/s for that user.
+     * Delete the role/s.
+     * Verify (assert) the role/s was/were deleted.
+     * Get the user.
+     * Verify (assert) the the user still exists. (edited)
+     */
     @Test
     void deleteSuccess() {
         //how many do we have to start
@@ -132,7 +133,7 @@ class UserDaoTest {
 
     }
 
-    
+
     /**
      * Verifies a user is returned correctly based on id
      * compare different fields
@@ -159,6 +160,7 @@ class UserDaoTest {
         User insertedUser = (User) genericDao.getById(id);
         assertEquals(newUser, insertedUser);
     }
+
     /**
      * Verify successful insert of a user with user role
      */
@@ -180,7 +182,6 @@ class UserDaoTest {
         assertEquals(newUser, insertedUser);
 
     }
-
 
 
     /**

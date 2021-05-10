@@ -5,14 +5,15 @@ import com.hmkurth.ApiLocation.Result;
 import com.hmkurth.entity.Location;
 import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.Test;
-import java.text.DecimalFormat;
-import java.util.Arrays;
-import java.util.List;
+
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.core.Response;
+import java.text.DecimalFormat;
+import java.util.Arrays;
+import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * The type Api test service client.
@@ -91,8 +92,8 @@ public class ApiTestServiceClient {
     /**
      * Test get near by locations.
      *
+     * @throws Exception the exception
      */
-
     @Test
     public  void testGetNearByLocations() throws Exception {
         LocationApiDao dao = new LocationApiDao();

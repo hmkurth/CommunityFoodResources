@@ -8,10 +8,7 @@ import lombok.RequiredArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.sql.Date;
-import java.util.HashSet;
 import java.util.Objects;
-import java.util.Set;
 
 /**
  * A class to represent a user.
@@ -54,6 +51,14 @@ public class Contact {
         return Objects.hash(getId(), getFirstName(), getLastName(), getEmail(), getPhone());
     }
 
+    /**
+     * Instantiates a new Contact.
+     *
+     * @param firstName the first name
+     * @param lastName  the last name
+     * @param email     the email
+     * @param phone     the phone
+     */
     public Contact(@NonNull String firstName, @NonNull String lastName, String email, String phone) {
         this.firstName = firstName;
         this.lastName = lastName;

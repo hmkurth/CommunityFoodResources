@@ -1,14 +1,9 @@
 package com.hmkurth.controller;
 
 
-import com.hmkurth.entity.FoodResource;
-import com.hmkurth.entity.User;
-import com.hmkurth.entity.UserRoles;
-import com.hmkurth.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;

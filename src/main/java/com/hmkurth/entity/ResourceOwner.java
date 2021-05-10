@@ -31,12 +31,25 @@ public class ResourceOwner {
     @OneToMany(mappedBy = "owner", cascade=CascadeType.ALL, orphanRemoval = true, fetch =FetchType.EAGER )
     private Set<Contact> contacts = new HashSet<Contact>();
 
+    /**
+     * Instantiates a new Resource owner.
+     *
+     * @param name     the name
+     * @param website  the website
+     * @param contacts the contacts
+     */
     public ResourceOwner(@NonNull String name, String website, Set<Contact> contacts) {
         this.name = name;
         this.website = website;
         this.contacts = contacts;
     }
 
+    /**
+     * Instantiates a new Resource owner.
+     *
+     * @param name    the name
+     * @param website the website
+     */
     public ResourceOwner(@NonNull String name, String website) {
         this.name = name;
         this.website = website;
@@ -45,7 +58,7 @@ public class ResourceOwner {
     /**
      * Add contact.
      *
-     * @param contact, the contact name
+     * @param contact the contact
      */
     public void addContact(Contact contact) {
         contacts.add(contact);
@@ -54,6 +67,12 @@ public class ResourceOwner {
     }
 
 
+    /**
+     * Gets contacts.
+     *
+     * @param i the
+     * @return the contacts
+     */
     public Set<Contact> getContacts(int i) {
         return contacts;
     }
