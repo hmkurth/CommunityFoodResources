@@ -9,31 +9,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="in testing, not sure about results coming back..">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210509 0103.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210509 0127.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210509 0135.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210509 0136.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210509 0143.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210509 0144.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210509 0155.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210509 0159.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210509 0200.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210509 0201.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210509 0202.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210509 0203.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210509 0208.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210509 0210.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210509 0211.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210509 0212.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210509 0216.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="i can't figure out how to get the Ljava.lang.Object that is being returned from the query to display, tried using Arrays.deepToString(arrayOfObjects),">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210509 0229.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210510 0011.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/locationSearchResults.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Journal.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Journal.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210509 0044.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210509 0047.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210509 0055.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210509 0103.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210509 0127.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210509 0135.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210509 0136.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210509 0143.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210509 0144.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210509 0155.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210509 0159.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210509 0200.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210509 0201.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210509 0202.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210509 0203.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210509 0208.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210509 0210.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210509 0211.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210509 0212.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210509 0216.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210509 0218.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/DeleteUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/DeleteUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/DeleteUserAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/DeleteUserAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LoginAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchByLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchByLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchFoodResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchFoodResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/UserSignup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/UserSignup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/results.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/results.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,16 +168,14 @@
       <recent name="com.hmkurth.persistence" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApiTestServiceClient.testGetNearByLocations">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="TomEE Server.Tomcat">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -340,8 +351,8 @@
       <item itemvalue="JUnit.FoodResourceTest.insertSuccess" />
       <item itemvalue="JUnit.TypeDaoTest" />
       <item itemvalue="JUnit.ApiTestServiceClient" />
-      <item itemvalue="TomEE Server.Tomcat" />
       <item itemvalue="JUnit.ApiTestServiceClient.testGetNearByLocations" />
+      <item itemvalue="TomEE Server.Tomcat" />
     </list>
     <recent_temporary>
       <list>
@@ -431,14 +442,8 @@
       <workItem from="1620173067006" duration="335000" />
       <workItem from="1620173440107" duration="594000" />
       <workItem from="1620347926133" duration="1742000" />
-      <workItem from="1620349837454" duration="47262000" />
-    </task>
-    <task id="LOCAL-00069" summary="location application class was causing errors, deleted">
-      <created>1618294534430</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1618294534430</updated>
+      <workItem from="1620349837454" duration="47809000" />
+      <workItem from="1620621464218" duration="4182000" />
     </task>
     <task id="LOCAL-00070" summary="updating timelog and uploading latest journal version">
       <created>1618616995139</created>
@@ -776,7 +781,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620540508512</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="i can't figure out how to get the Ljava.lang.Object that is being returned from the query to display, tried using Arrays.deepToString(arrayOfObjects),">
+      <created>1620545686638</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1620545686638</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -799,7 +811,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Got delete working, needs some finesse, but it works." />
     <MESSAGE value="updating journal, etc" />
     <MESSAGE value="changed the type entity to have a set of resources." />
     <MESSAGE value="type is now displaying" />
@@ -824,7 +835,8 @@
     <MESSAGE value="updated CFRL database" />
     <MESSAGE value="location search params in place, ready to test" />
     <MESSAGE value="in testing, not sure about results coming back.." />
-    <option name="LAST_COMMIT_MESSAGE" value="in testing, not sure about results coming back.." />
+    <MESSAGE value="i can't figure out how to get the Ljava.lang.Object that is being returned from the query to display, tried using Arrays.deepToString(arrayOfObjects)," />
+    <option name="LAST_COMMIT_MESSAGE" value="i can't figure out how to get the Ljava.lang.Object that is being returned from the query to display, tried using Arrays.deepToString(arrayOfObjects)," />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -925,12 +937,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchFoodResources.java</url>
-          <line>50</line>
+          <line>62</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" log-message="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchFoodResources.java</url>
-          <line>48</line>
+          <line>60</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1035,22 +1047,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/UserSignup.java</url>
-          <line>36</line>
+          <line>45</line>
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/UserSignup.java</url>
-          <line>42</line>
+          <line>51</line>
           <option name="timeStamp" value="78" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/UserSignup.java</url>
-          <line>31</line>
+          <line>40</line>
           <option name="timeStamp" value="79" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchFoodResources.java</url>
-          <line>45</line>
+          <line>57</line>
           <option name="timeStamp" value="80" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1065,7 +1077,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchFoodResources.java</url>
-          <line>37</line>
+          <line>41</line>
           <option name="timeStamp" value="83" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

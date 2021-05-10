@@ -1,11 +1,9 @@
 package com.hmkurth.controller;
 
-import com.hmkurth.entity.FoodResource;
 import com.hmkurth.entity.User;
 import com.hmkurth.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -29,6 +27,14 @@ import java.util.List;
 public class LoginAction extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
 @Override
+/**
+ *  Handles HTTP GET requests.
+ *
+ *@param  req                 the HttpServletRequest object
+ *@param  res                the HttpServletResponse object
+ *@exception  ServletException  if there is a Servlet failure
+ *@exception IOException       if there is an IO failure
+ **/
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     String url;
     logger.info("The logged in user; " + req.getRemoteUser() + "has a role of  'user' : "  + req.isUserInRole("user") );

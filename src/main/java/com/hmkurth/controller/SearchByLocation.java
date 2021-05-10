@@ -34,18 +34,24 @@ public class SearchByLocation extends HttpServlet {
 
     @SneakyThrows
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    /**
+     *  Handles HTTP GET requests.
+     *
+     *@param  req                 the HttpServletRequest object
+     *@param  res                the HttpServletResponse object
+     *@exception  ServletException  if there is a Servlet failure
+     *@exception IOException       if there is an IO failure
+     */
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) {
         GenericDao dao = new GenericDao(Location.class);
        LocationApiDao lApiDao = new LocationApiDao();
         GenericDao fdao = new GenericDao(FoodResource.class);
-        //do you really want a full adress, or just zip?????
         Location location = new Location();
         location.setStreetAddressOrIntersection(req.getParameter("streetAddressOrIntersection"));
         location.setCity(req.getParameter("city"));
         location.setState(req.getParameter("state"));
         location.setZip(req.getParameter("zip"));
         logger.debug("searchBy Location: " + location);
-        //get
 
         //TODO check if it is a valid location
         //Use the api to get the lat and long
@@ -65,13 +71,7 @@ public class SearchByLocation extends HttpServlet {
         req.setAttribute("nearLocations", results);
         logger.debug(results.toString());
 
-
-
-
-
-
-
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/searchByLocation.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/locationSearchResults.jsp");
         dispatcher.forward(req, resp);
     }
 
