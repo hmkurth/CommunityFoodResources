@@ -26,7 +26,7 @@
 
 *Week 13: 4 hrs
 
-*week 14: 22 hrs
+*Week 14: 22 hrs
 
 *Week 15: 24.5 hrs
 *Week 16: 
