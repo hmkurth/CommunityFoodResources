@@ -6,6 +6,7 @@ import com.hmkurth.entity.Location;
 import com.hmkurth.persistence.GenericDao;
 import com.hmkurth.persistence.LocationApiDao;
 import lombok.SneakyThrows;
+import lombok.extern.log4j.Log4j2;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -24,7 +25,7 @@ import java.util.List;
  */
 //TODO error handling!  check and redirect!!!
 @WebServlet(name = "SearchByLocation", urlPatterns = { "/searchByLocation" } )
-
+@Log4j2
 
 public class SearchByLocation extends HttpServlet {
 
@@ -49,6 +50,7 @@ public class SearchByLocation extends HttpServlet {
         location.setState(req.getParameter("state"));
         location.setZip(req.getParameter("zip"));
         logger.debug("searchBy Location: " + location);
+        log.debug("searchBy Location Log4j annotation: " + location);
 
         //TODO check if it is a valid location
         //Use the api to get the lat and long
@@ -67,6 +69,7 @@ public class SearchByLocation extends HttpServlet {
         List<Integer> results = lApiDao.getNearByLocations(location.getLat(), location.getLng(),page);
         req.setAttribute("nearLocations", results);
         logger.debug(results.toString());
+        log.debug(results.toString());
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/locationSearchResults.jsp");
         dispatcher.forward(req, resp);

@@ -2,6 +2,7 @@ package com.hmkurth.controller;
 
 import com.hmkurth.entity.FoodResource;
 import com.hmkurth.persistence.GenericDao;
+import lombok.extern.log4j.Log4j2;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -18,6 +19,7 @@ import java.io.IOException;
  * This servlet forwards to the searchFoodResources jsp
  * and processes the POST form data, forwarding to a search results jsp
  */
+@Log4j2
 @WebServlet(
         urlPatterns = {"/searchFoodResources"}
 )
@@ -44,20 +46,21 @@ public class SearchFoodResources extends HttpServlet {
 
     @Override
     /**
-     *  Handles HTTP POST requests.
+     *  Handles HTTP post requests.
      *
      *@param  req                 the HttpServletRequest object
      *@param  resp                the HttpServletResponse object
      *@exception  ServletException  if there is a Servlet failure
      *@exception IOException       if there is an IO failure
      */
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost (HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
         resourceDao = new GenericDao(FoodResource.class);
         String  searchTerm = req.getParameter("term");
         String  searchProperty = req.getParameter("categories");
         session.setAttribute("resources", resourceDao.getPropertyByName(searchProperty,searchTerm));
         logger.debug("In search resources servlet, " + searchProperty + " " + searchTerm);
+        log.debug("Log4J annotation In search resources servlet, " + searchProperty + " " + searchTerm);
 
         if (req.getParameter("submit").equals("search")) {
             session.setAttribute("resources", resourceDao.getPropertyByName(searchTerm, searchProperty));

@@ -28,7 +28,7 @@ public class AddResource extends HttpServlet {
      *@param  resp                the HttpServletResponse object
      *@exception  ServletException  if there is a Servlet failure
      *@exception IOException       if there is an IO failure
-     */
+     **/
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         /**todo change for food resources
