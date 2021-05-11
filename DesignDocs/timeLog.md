@@ -22,7 +22,15 @@
 
 *Week 11: 42 hrs(with team project included)
 
-*Week 12: 
+*Week 12: 20.5 hrs
+
+*Week 13: 4 hrs
+
+*week 14: 22 hrs
+
+*Week 15: 24.5 hrs
+*Week 16: 
+
 
 
 

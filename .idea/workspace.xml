@@ -9,38 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="still trying to get location search to work">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210510 1901.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210510 1923.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210510 1932.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210510 1934.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/loggingFromNewUser.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/projectTestCoverage.png" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="ready for presentation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/techSpecs.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/techSpecs.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/timeLog.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/timeLog.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Journal.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Journal.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210510 1722.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210510 1725.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210510 1728.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210510 1733.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210510 1742.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210510 1746.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210510 1748.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210510 1749.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210510 1752.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210510 1757.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210510 1800.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210510 1801.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210510 1807.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210510 1812.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210510 1817.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210510 1819.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate_20210510 1819.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchByLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchByLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchFoodResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchFoodResources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/searchFoodResources.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/searchFoodResources.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -437,14 +412,7 @@
       <workItem from="1620347926133" duration="1742000" />
       <workItem from="1620349837454" duration="47809000" />
       <workItem from="1620621464218" duration="10726000" />
-      <workItem from="1620690530194" duration="3645000" />
-    </task>
-    <task id="LOCAL-00073" summary="working on user signup servlet">
-      <created>1618632515783</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1618632515783</updated>
+      <workItem from="1620690530194" duration="6764000" />
     </task>
     <task id="LOCAL-00074" summary="working on user search and results">
       <created>1618633475545</created>
@@ -782,7 +750,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620688890593</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="ready for presentation">
+      <created>1620694282651</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1620694282651</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -805,7 +780,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adding admin directory and security" />
     <MESSAGE value="I moved the deleteUser to the admin folder, and had some problems, I couldn’t access the DeleteUser servlet, so I moved some functionality to the LoginAction servlet, and the rest to the DeleteUser, so no more DeleteUserAction.  When I hit submit, I get a 404, but the user is deleted from the db…" />
     <MESSAGE value="still working on delete, trying to add some confirmation, not working yet" />
     <MESSAGE value="adding an addLocation jsp and servlet, still need to incorporate api to extract long and lat" />
@@ -830,7 +804,8 @@
     <MESSAGE value="cleaning up controllers" />
     <MESSAGE value="cleaning up code" />
     <MESSAGE value="still trying to get location search to work" />
-    <option name="LAST_COMMIT_MESSAGE" value="still trying to get location search to work" />
+    <MESSAGE value="ready for presentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="ready for presentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
