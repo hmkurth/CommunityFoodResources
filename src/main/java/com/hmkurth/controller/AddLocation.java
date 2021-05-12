@@ -3,8 +3,6 @@ package com.hmkurth.controller;
 
 import com.hmkurth.entity.FoodResource;
 import com.hmkurth.entity.Location;
-import com.hmkurth.entity.User;
-import com.hmkurth.entity.UserRoles;
 import com.hmkurth.persistence.GenericDao;
 import com.hmkurth.persistence.LocationApiDao;
 import org.apache.logging.log4j.LogManager;
@@ -31,13 +29,19 @@ import java.io.IOException;
 public class AddLocation extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
-
+    /**
+     *  Handles HTTP POST requests.
+     *
+     *@param  req                 the HttpServletRequest object
+     *@param  resp                the HttpServletResponse object
+     *@exception  ServletException  if there is a Servlet failure
+     *@exception IOException       if there is an IO failure
+     */
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         GenericDao dao = new GenericDao(Location.class);
         GenericDao fdao = new GenericDao(FoodResource.class);
-        Location returnedLocation = null;
 
         Location location = new Location();
         location.setNameDesc(req.getParameter("nameDesc"));

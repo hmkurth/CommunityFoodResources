@@ -28,7 +28,7 @@
                     <c:forEach var="resource" items="${resourcesAll}" varStatus="iter">
                         <tr>
 
-                            <td>${resource.type_id.name}</td>
+                            <td>${resource.typeId.name}</td>
                             <td>${resource.name}</td>
                             <td>${resource.description}</td>
                             <td>${resource.comments}</td>
@@ -45,7 +45,7 @@
                     </tbody>
                 </table>
 
-
+            </div>
 
         </div>
 

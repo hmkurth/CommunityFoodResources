@@ -9,24 +9,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="fixed adminHome formatting, looking good, working decently..">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210507 0143.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210507 0206.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="updated timelog, changed war for aws deploy, couldn't deploy, updated sql on aws">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210510 2039.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210511 1025.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210511 1040.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/timeLog.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/timeLog.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210507 0125.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210507 0133.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ForwardPantries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ForwardPantries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchFoodResources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/searchResults.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/searchFoodResources.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210510 1819.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210510 1901.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210510 1923.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210510 1932.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210510 1934.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/readMe.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/~$ournal.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/~WRL3031.tmp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -46,7 +54,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="queryBuilding" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -95,6 +103,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
     <property name="database.data.extractors.current.id" value="SQL Inserts" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../BookCollectionFive" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -107,6 +116,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.15503876" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
@@ -157,6 +167,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in CommunityFoodResources" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CommunityFoodResources" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiTestServiceClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
@@ -172,7 +190,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FoodResourceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApiTestServiceClient.testGetNearByLocations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
         <pattern>
@@ -181,23 +199,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.FoodResourceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FoodResourceTest.getByPropertyLikeSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CommunityFoodResources" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hmkurth.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.FoodResourceTest" />
-      <option name="METHOD_NAME" value="getByPropertyLikeSuccess" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ApiTestServiceClient" />
+      <option name="METHOD_NAME" value="testGetNearByLocations" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -323,20 +326,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.FoodResourceTest" />
-      <item itemvalue="JUnit.FoodResourceTest.getByPropertyLikeSuccess" />
       <item itemvalue="JUnit.FoodResourceTest.insertSuccess" />
       <item itemvalue="JUnit.TypeDaoTest" />
       <item itemvalue="JUnit.ApiTestServiceClient" />
+      <item itemvalue="JUnit.ApiTestServiceClient.testGetNearByLocations" />
+      <item itemvalue="JUnit.All in CommunityFoodResources" />
       <item itemvalue="TomEE Server.Tomcat" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in CommunityFoodResources" />
+        <item itemvalue="JUnit.ApiTestServiceClient.testGetNearByLocations" />
         <item itemvalue="JUnit.ApiTestServiceClient" />
         <item itemvalue="JUnit.TypeDaoTest" />
         <item itemvalue="JUnit.FoodResourceTest.insertSuccess" />
-        <item itemvalue="JUnit.FoodResourceTest.getByPropertyLikeSuccess" />
-        <item itemvalue="JUnit.FoodResourceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -418,112 +421,9 @@
       <workItem from="1620173067006" duration="335000" />
       <workItem from="1620173440107" duration="594000" />
       <workItem from="1620347926133" duration="1742000" />
-      <workItem from="1620349837454" duration="22598000" />
-    </task>
-    <task id="LOCAL-00060" summary="for my reference, when i tried adding the removeChildren method, for some reason it made all the getSession() in the generic dao red....wth???">
-      <created>1617511785692</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1617511785692</updated>
-    </task>
-    <task id="LOCAL-00061" summary="updating timelog, journal for week">
-      <created>1617589471898</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1617589471898</updated>
-    </task>
-    <task id="LOCAL-00062" summary="editing header">
-      <created>1617904289646</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1617904289646</updated>
-    </task>
-    <task id="LOCAL-00063" summary="got header and main somewhat how I want it, still need to have an icon">
-      <created>1617906893906</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1617906893906</updated>
-    </task>
-    <task id="LOCAL-00064" summary="working on the location api and trying to get the results i want">
-      <created>1618000639907</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1618000639907</updated>
-    </task>
-    <task id="LOCAL-00065" summary="working on the location api and trying to get the results i want">
-      <created>1618001265843</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1618001265843</updated>
-    </task>
-    <task id="LOCAL-00066" summary="got the location api test working!">
-      <created>1618103743141</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1618103743142</updated>
-    </task>
-    <task id="LOCAL-00067" summary="working on the locationapidao and testing">
-      <created>1618117094364</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1618117094365</updated>
-    </task>
-    <task id="LOCAL-00068" summary="adding user sign up jsps and servlet">
-      <created>1618291123438</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1618291123454</updated>
-    </task>
-    <task id="LOCAL-00069" summary="location application class was causing errors, deleted">
-      <created>1618294534430</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1618294534430</updated>
-    </task>
-    <task id="LOCAL-00070" summary="updating timelog and uploading latest journal version">
-      <created>1618616995139</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1618616995139</updated>
-    </task>
-    <task id="LOCAL-00071" summary="gitting untangled">
-      <created>1618627786950</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1618627786950</updated>
-    </task>
-    <task id="LOCAL-00072" summary="gitting untangled">
-      <created>1618627812187</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1618627812187</updated>
-    </task>
-    <task id="LOCAL-00073" summary="working on user signup servlet">
-      <created>1618632515783</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1618632515783</updated>
-    </task>
-    <task id="LOCAL-00074" summary="working on user search and results">
-      <created>1618633475545</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1618633475545</updated>
+      <workItem from="1620349837454" duration="47809000" />
+      <workItem from="1620621464218" duration="10726000" />
+      <workItem from="1620690530194" duration="12169000" />
     </task>
     <task id="LOCAL-00075" summary="working on user search and results, still, getting a 408 for authentication.  created pageUtil directory for head, foot, etc">
       <created>1618799343272</created>
@@ -763,7 +663,112 @@
       <option name="project" value="LOCAL" />
       <updated>1620369922575</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="working on food resource search, able to locate Attribute with the the given name [null] on this ManagedType [com.hmkurth.entity.FoodResource]">
+      <created>1620373178730</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1620373178730</updated>
+    </task>
+    <task id="LOCAL-00110" summary="refactored Generic Dao">
+      <created>1620441933874</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1620441933874</updated>
+    </task>
+    <task id="LOCAL-00111" summary="updated lat and long to float(10,6)">
+      <created>1620443543577</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1620443543577</updated>
+    </task>
+    <task id="LOCAL-00112" summary="added hibernate search dependencies to pom">
+      <created>1620448361576</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1620448361576</updated>
+    </task>
+    <task id="LOCAL-00113" summary="&lt;property name=&quot;hibernate.search.backend.directory.root&quot;/&gt; in hibernate config">
+      <created>1620450698016</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1620450698016</updated>
+    </task>
+    <task id="LOCAL-00114" summary="annotated location and food resources for hibernate search">
+      <created>1620530606685</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1620530606786</updated>
+    </task>
+    <task id="LOCAL-00115" summary="updated CFRL database">
+      <created>1620534832625</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1620534832625</updated>
+    </task>
+    <task id="LOCAL-00116" summary="location search params in place, ready to test">
+      <created>1620536974772</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1620536974772</updated>
+    </task>
+    <task id="LOCAL-00117" summary="in testing, not sure about results coming back..">
+      <created>1620540508512</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1620540508512</updated>
+    </task>
+    <task id="LOCAL-00118" summary="i can't figure out how to get the Ljava.lang.Object that is being returned from the query to display, tried using Arrays.deepToString(arrayOfObjects),">
+      <created>1620545686638</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1620545686638</updated>
+    </task>
+    <task id="LOCAL-00119" summary="cleaning up controllers">
+      <created>1620682535945</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1620682535945</updated>
+    </task>
+    <task id="LOCAL-00120" summary="cleaning up code">
+      <created>1620684465297</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1620684465297</updated>
+    </task>
+    <task id="LOCAL-00121" summary="still trying to get location search to work">
+      <created>1620688890593</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1620688890593</updated>
+    </task>
+    <task id="LOCAL-00122" summary="ready for presentation">
+      <created>1620694282651</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1620694282651</updated>
+    </task>
+    <task id="LOCAL-00123" summary="updated timelog, changed war for aws deploy, couldn't deploy, updated sql on aws">
+      <created>1620699483332</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1620699483332</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -786,21 +791,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="insert with contact on resource owner dao still broken" />
-    <MESSAGE value="insert with contact on resource owner dao now working" />
-    <MESSAGE value="food resource tests working !!!!!!!!!!!!!!!!!!!!!" />
-    <MESSAGE value="working on user signup, null values" />
-    <MESSAGE value="signup null error gone" />
-    <MESSAGE value="login button position fixed" />
-    <MESSAGE value="Now I can’t get data from the db in the foodPantryjsp…  I feel like I’ve tried everything, it’s just not picking up the search results set in the request param…  I tried putting it in a session variable…am I directing traffic wrong?? It seemed to work in the past exercises, I’m looking at all my past projects and last semesters stuff to find clues…  But it should work like the user display exercise….?????" />
-    <MESSAGE value="foodPANTRY is WORKING!!!!" />
-    <MESSAGE value="creating delete user servlets and jsps" />
-    <MESSAGE value="Got delete working, needs some finesse, but it works." />
-    <MESSAGE value="updating journal, etc" />
-    <MESSAGE value="changed the type entity to have a set of resources." />
-    <MESSAGE value="type is now displaying" />
-    <MESSAGE value="adding admin directory and security" />
-    <MESSAGE value="I moved the deleteUser to the admin folder, and had some problems, I couldn’t access the DeleteUser servlet, so I moved some functionality to the LoginAction servlet, and the rest to the DeleteUser, so no more DeleteUserAction.  When I hit submit, I get a 404, but the user is deleted from the db…" />
     <MESSAGE value="still working on delete, trying to add some confirmation, not working yet" />
     <MESSAGE value="adding an addLocation jsp and servlet, still need to incorporate api to extract long and lat" />
     <MESSAGE value="Started an add location, need to fix resource, it’s coming up null in the db, but in my logs I’m getting a circular mess with the relationships…I have toString.exclude annotations on the related entities, but….????" />
@@ -811,14 +801,29 @@
     <MESSAGE value="FINALLY got delete working again with confirmation, can't believe it took so long, needs cleaning up" />
     <MESSAGE value="still editing admin..." />
     <MESSAGE value="fixed adminHome formatting, looking good, working decently.." />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed adminHome formatting, looking good, working decently.." />
+    <MESSAGE value="working on food resource search, able to locate Attribute with the the given name [null] on this ManagedType [com.hmkurth.entity.FoodResource]" />
+    <MESSAGE value="refactored Generic Dao" />
+    <MESSAGE value="updated lat and long to float(10,6)" />
+    <MESSAGE value="added hibernate search dependencies to pom" />
+    <MESSAGE value="&lt;property name=&quot;hibernate.search.backend.directory.root&quot;/&gt; in hibernate config" />
+    <MESSAGE value="annotated location and food resources for hibernate search" />
+    <MESSAGE value="updated CFRL database" />
+    <MESSAGE value="location search params in place, ready to test" />
+    <MESSAGE value="in testing, not sure about results coming back.." />
+    <MESSAGE value="i can't figure out how to get the Ljava.lang.Object that is being returned from the query to display, tried using Arrays.deepToString(arrayOfObjects)," />
+    <MESSAGE value="cleaning up controllers" />
+    <MESSAGE value="cleaning up code" />
+    <MESSAGE value="still trying to get location search to work" />
+    <MESSAGE value="ready for presentation" />
+    <MESSAGE value="updated timelog, changed war for aws deploy, couldn't deploy, updated sql on aws" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated timelog, changed war for aws deploy, couldn't deploy, updated sql on aws" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
-          <line>73</line>
+          <line>71</line>
           <properties class="com.hmkurth.persistence.UserDaoTest" method="getUsersByLastNameLikeSuccess">
             <option name="EMULATED" value="true" />
           </properties>
@@ -826,7 +831,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
-          <line>52</line>
+          <line>49</line>
           <properties class="com.hmkurth.persistence.UserDaoTest" method="getAllUsersSuccess">
             <option name="EMULATED" value="true" />
           </properties>
@@ -834,7 +839,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java</url>
-          <line>134</line>
+          <line>131</line>
           <properties class="com.hmkurth.persistence.UserRolesDaoTest" method="getByPropertyLikeSuccess">
             <option name="EMULATED" value="true" />
           </properties>
@@ -842,7 +847,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
-          <line>99</line>
+          <line>102</line>
           <properties class="com.hmkurth.persistence.FoodResourceTest" method="saveOrUpdateSuccess">
             <option name="EMULATED" value="true" />
           </properties>
@@ -850,7 +855,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
-          <line>17</line>
+          <line>30</line>
           <properties class="com.hmkurth.persistence.ApiTestServiceClient" method="testgeoJSON">
             <option name="EMULATED" value="true" />
           </properties>
@@ -858,7 +863,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
-          <line>41</line>
+          <line>59</line>
           <properties class="com.hmkurth.persistence.ApiTestServiceClient" method="testLocationApiDao">
             <option name="EMULATED" value="true" />
           </properties>
@@ -866,7 +871,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java</url>
-          <line>140</line>
+          <line>143</line>
           <properties class="com.hmkurth.persistence.ResourceOwnerDaoTest" method="insertWithContactSuccess">
             <option name="EMULATED" value="true" />
           </properties>
@@ -874,7 +879,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
-          <line>170</line>
+          <line>178</line>
           <properties class="com.hmkurth.persistence.FoodResourceTest" method="getByPropertyLikeSuccess">
             <option name="EMULATED" value="true" />
           </properties>
@@ -882,42 +887,42 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java</url>
-          <line>49</line>
+          <line>46</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java</url>
-          <line>51</line>
+          <line>48</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
-          <line>75</line>
+          <line>73</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
-          <line>41</line>
+          <line>38</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
-          <line>44</line>
+          <line>41</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserDaoTest.java</url>
-          <line>53</line>
+          <line>50</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchFoodResources.java</url>
-          <line>50</line>
+          <line>67</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" log-message="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchFoodResources.java</url>
-          <line>48</line>
+          <line>65</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -932,128 +937,148 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ContactDaoTest.java</url>
-          <line>18</line>
+          <line>19</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ContactDaoTest.java</url>
-          <line>45</line>
+          <line>44</line>
           <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/LocationDaoTest.java</url>
-          <line>60</line>
+          <line>64</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
-          <line>159</line>
+          <line>167</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
-          <line>29</line>
+          <line>42</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
-          <line>51</line>
+          <line>69</line>
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java</url>
-          <line>131</line>
+          <line>133</line>
           <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java</url>
-          <line>133</line>
+          <line>135</line>
           <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/TypeDaoTest.java</url>
-          <line>56</line>
+          <line>51</line>
           <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/TypeDaoTest.java</url>
-          <line>41</line>
+          <line>36</line>
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java</url>
-          <line>149</line>
+          <line>152</line>
           <option name="timeStamp" value="65" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java</url>
-          <line>154</line>
+          <line>157</line>
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java</url>
-          <line>157</line>
+          <line>160</line>
           <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
-          <line>20</line>
+          <line>22</line>
           <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
-          <line>105</line>
+          <line>108</line>
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
-          <line>107</line>
+          <line>110</line>
           <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
-          <line>161</line>
+          <line>169</line>
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
-          <line>162</line>
+          <line>170</line>
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/UserSignup.java</url>
-          <line>36</line>
+          <line>45</line>
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/UserSignup.java</url>
-          <line>42</line>
+          <line>51</line>
           <option name="timeStamp" value="78" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/UserSignup.java</url>
-          <line>31</line>
+          <line>40</line>
           <option name="timeStamp" value="79" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchFoodResources.java</url>
-          <line>45</line>
+          <line>61</line>
           <option name="timeStamp" value="80" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/webapp/searchFoodResources.jsp</url>
-          <line>72</line>
+          <line>73</line>
           <option name="timeStamp" value="81" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/webapp/searchFoodResources.jsp</url>
-          <line>77</line>
+          <line>78</line>
           <option name="timeStamp" value="82" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchFoodResources.java</url>
-          <line>37</line>
+          <line>45</line>
           <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="90" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.sql.SQLSyntaxErrorException" package="java.sql" />
@@ -1067,14 +1092,18 @@
           <properties class="java.sql.SQLIntegrityConstraintViolationException" package="java.sql" />
           <option name="timeStamp" value="68" />
         </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="86" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CommunityFoodResources$All_in_CommunityFoodResources.ic" NAME="All in CommunityFoodResources Coverage Results" MODIFIED="1614726724648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/CommunityFoodResources$All_in_CommunityFoodResources.ic" NAME="All in CommunityFoodResources Coverage Results" MODIFIED="1620693551432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/CommunityFoodResources$UserDaoTest.ic" NAME="UserDaoTest Coverage Results" MODIFIED="1614710690280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.hmkurth.persistence.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/CommunityFoodResources$Tomcat.ic" NAME="Tomcat Coverage Results" MODIFIED="1615509403575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/CommunityFoodResources$Tomcat.ic" NAME="Tomcat Coverage Results" MODIFIED="1620685262221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

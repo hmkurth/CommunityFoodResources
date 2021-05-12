@@ -1,13 +1,9 @@
 package com.hmkurth.controller;
 
 
-import com.hmkurth.entity.User;
-import com.hmkurth.entity.UserRoles;
-import com.hmkurth.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -16,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- *a servlet to add a food resource to the database
+ * a servlet to add a food resource to the database
  */
 //TODO error handling!  check and redirect!!!
 @WebServlet(name = "AddResource", urlPatterns = { "/addResource" } )
@@ -25,17 +21,25 @@ import java.io.IOException;
 public class AddResource extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
-
+    /**
+     *  Handles HTTP POST requests.
+     *
+     *@param  req                 the HttpServletRequest object
+     *@param  resp                the HttpServletResponse object
+     *@exception  ServletException  if there is a Servlet failure
+     *@exception IOException       if there is an IO failure
+     **/
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        /**todo change for food resources
+        FoodResource resource = new FoodResource();
 
-        User user = new User();
-        user.setFirstName(req.getParameter("first_name"));
-        user.setLastName(req.getParameter("last_name"));
-        user.setUserName(req.getParameter("user_name"));
-        logger.debug("Adding Username: " + user.getUserName());
-        user.setPassword(req.getParameter("password"));
-        user.setEmail(req.getParameter("email"));
+        resource.setFirstName(req.getParameter("first_name"));
+        resource.setLastName(req.getParameter("last_name"));
+        resource.setUserName(req.getParameter("user_name"));
+        logger.debug("Adding Username: " + resource.getUserName());
+        resource.setPassword(req.getParameter("password"));
+        resource.setEmail(req.getParameter("email"));
         logger.debug("Adding User: " + user);
         UserRoles role = new UserRoles();
         role.setUser(user);
@@ -61,7 +65,7 @@ public class AddResource extends HttpServlet {
             // TODO check if user is already in the database
             GenericDao dao = new GenericDao(User.class);
 
-            dao.insert(user);
+            dao.insert(resource);
 
             //TOdo set the user in the session?? check if this is duplicating entries
             RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/addResourceSuccess.jsp");
@@ -70,6 +74,7 @@ public class AddResource extends HttpServlet {
 
     }
 
+         */
 
-
+}
 }

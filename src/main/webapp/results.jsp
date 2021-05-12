@@ -1,8 +1,8 @@
 
 <%@include file="/taglib.jsp"%>
 <c:set var="title" value="Search Results" />
-<%@include file="head.jsp"%>
-<html><body>
+<%@include file="taglib.jsp"%>
+
 
 <%--Pretty up the results!--%>
 <div class="container-fluid">

@@ -12,8 +12,10 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * The type Food resource test.
+ */
 @Log4j2
 /**
  * The type food resource  dao test.
@@ -71,6 +73,7 @@ public class FoodResourceTest {
         assertEquals(6, foodResources.size());
         log.info("get all FoodResources test: all FoodResources;" + genericDao.getAll());
     }
+
     /**
      * Verify successful get by property (equal match)
      */
@@ -109,6 +112,9 @@ public class FoodResourceTest {
 
     }
 
+    /**
+     * Delete success.
+     */
     @Test
     void deleteSuccess() {
         //how many do we have to start
@@ -122,6 +128,9 @@ public class FoodResourceTest {
 
     }
 
+    /**
+     * Gets by id success.
+     */
     @Test
     void getByIdSuccess() {
         FoodResource retrievedResource = (FoodResource) genericDao.getById(1);
@@ -133,10 +142,9 @@ public class FoodResourceTest {
 
     /**
      * Verify successful insert of a FoodResource
-     *TEST ALL FIELDS TO BE THOROUGH
+     * TEST ALL FIELDS TO BE THOROUGH
      * going to need to bring in all the other entities to insert with their daos
-     *
-     * */
+     */
     @Test
     void insertSuccess() {
 

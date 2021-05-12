@@ -16,6 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
+ * This servlet will take in the user sign up information and add it to the database
  * adapted from FBTR, pawaite
  */
 //TODO error handling!  check and redirect!!!
@@ -27,6 +28,14 @@ public class UserSignup extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     @Override
+    /**
+     *  Handles HTTP POST requests.
+     *
+     *@param  req                 the HttpServletRequest object
+     *@param  resp                the HttpServletResponse object
+     *@exception  ServletException  if there is a Servlet failure
+     *@exception IOException       if there is an IO failure
+     **/
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         User user = new User();
@@ -48,9 +57,6 @@ public class UserSignup extends HttpServlet {
         user.addRole(role);
 
 
-
-            //set the user in a ?session variable
-
         if (req.getParameter("first_name").isEmpty() || (req.getParameter("last_name").isEmpty() || (req.getParameter("user_name").isEmpty() ||
                 (req.getParameter("password").isEmpty() || (req.getParameter("email").isEmpty() )))))
         {
@@ -62,7 +68,7 @@ public class UserSignup extends HttpServlet {
         else
         {
             //add the uses to the database
-            // TODO check if user is already in the database
+            // TODO check if user is already in the database, name, username, and email
             GenericDao dao = new GenericDao(User.class);
 
             dao.insert(user);

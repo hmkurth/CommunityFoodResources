@@ -15,8 +15,7 @@ RESTful services
 CSS
 Bootstrap 
 Data Validation
-Bootstrap Validator for front end
-Explore Hibernate's validation
+
 Logging
 Log4J2
 Hosting
@@ -25,9 +24,9 @@ Independent Research Topic/s: Java Accessibility API
 CI tools in AWS
 
 Google Maps Geocoding API
-Hibernate Validation
+
 Hibernate Search
 Project Lombok
 Unit Testing
-JUnit tests to achieve ####+ code coverage
+JUnit tests to achieve 69%+ code coverage
 IDE: IntelliJ IDEA

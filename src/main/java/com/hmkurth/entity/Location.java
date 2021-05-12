@@ -3,6 +3,9 @@ package com.hmkurth.entity;
 
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.search.mapper.pojo.bridge.builtin.annotation.Latitude;
+import org.hibernate.search.mapper.pojo.bridge.builtin.annotation.Longitude;
+import org.hibernate.search.mapper.pojo.mapping.definition.annotation.GenericField;
 
 import javax.persistence.*;
 import java.util.Objects;
@@ -14,6 +17,7 @@ import java.util.Objects;
  */
 @Data
 
+
 @NoArgsConstructor
 @RequiredArgsConstructor
 @Entity(name = "Location")
@@ -22,6 +26,7 @@ public class Location {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO, generator = "native")
     @GenericGenerator(name="native",strategy="native")
+    @GenericField
     private int id;
     @NonNull
     @Column(name="name_description")  //don't need if names are the same
@@ -38,8 +43,10 @@ public class Location {
     @Column(name="bus_info")
     private String busInfo;
     private String comments;
-    private Double lng;
-    private Double lat;
+    @Longitude
+    private Float lng;
+    @Latitude
+    private Float lat;
     @OneToOne
     @PrimaryKeyJoinColumn
     @ToString.Exclude

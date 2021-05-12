@@ -12,6 +12,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+/**
+ * The type Map location.
+ */
 @Data
 
 @NoArgsConstructor
@@ -32,10 +35,20 @@ public class MapLocation {
     @JsonProperty("name")
     private String name;
 
+    /**
+     * Sets lat.
+     *
+     * @param lat the lat
+     */
     public void setLat(double lat) {
         this.lat = lat;
     }
 
+    /**
+     * Gets lat.
+     *
+     * @return the lat
+     */
     public double getLat() {
         return lat;
     }

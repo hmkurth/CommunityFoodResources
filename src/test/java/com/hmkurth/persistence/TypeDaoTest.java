@@ -1,22 +1,18 @@
 package com.hmkurth.persistence;
+
 import com.hmkurth.entity.Type;
 import com.hmkurth.test.util.Database;
 import lombok.extern.log4j.Log4j2;
-import lombok.val;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import com.hmkurth.entity.Type;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import javax.management.relation.Role;
-import javax.persistence.Entity;
-
-import java.time.LocalDate;
 import java.util.List;
-import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+/**
+ * The type Type dao test.
+ */
 @Log4j2
 /**
  * The type Type dao test.
@@ -27,7 +23,6 @@ class TypeDaoTest {
      */
 
     GenericDao genericDao;
-
 
 
     /**
@@ -57,6 +52,7 @@ class TypeDaoTest {
         assertEquals(6, Types.size());
         log.info("get all Types test: all Types;" + genericDao.getAll());
     }
+
     /**
      * Verify successful get by property (equal match)
      */
@@ -85,6 +81,9 @@ class TypeDaoTest {
 
     }
 
+    /**
+     * Delete success.
+     */
     @Test
     void deleteSuccess() {
         //how many do we have to start
@@ -123,8 +122,6 @@ class TypeDaoTest {
         Type insertedType = (Type) genericDao.getById(id);
         assertEquals(newType, insertedType);
     }
-
-
 
 
     /**

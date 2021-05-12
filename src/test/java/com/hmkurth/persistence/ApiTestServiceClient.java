@@ -4,16 +4,29 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hmkurth.ApiLocation.Result;
 import com.hmkurth.entity.Location;
 import lombok.extern.log4j.Log4j2;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.Test;
-import java.text.DecimalFormat;
+
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.core.Response;
+import java.text.DecimalFormat;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+/**
+ * The type Api test service client.
+ */
 @Log4j2
 
 public class ApiTestServiceClient {
+    private final Logger logger = LogManager.getLogger(this.getClass());
+    /**
+     * Testgeo json.
+     *
+     * @throws Exception the exception
+     */
     @Test
     public void testgeoJSON() throws Exception {
         Client client = ClientBuilder.newClient();
@@ -38,6 +51,11 @@ public class ApiTestServiceClient {
         assertEquals(43.09, finalValue);
     }
 
+    /**
+     * Test location api dao.
+     *
+     * @throws Exception the exception
+     */
     @Test
     public void testLocationApiDao () throws Exception {
         LocationApiDao dao = new LocationApiDao();
@@ -45,13 +63,18 @@ public class ApiTestServiceClient {
         //get a location to test
         Location locationToMap = ldao.getById(2);
         Location returnedLocation = dao.convertAddressToLatAndLong(locationToMap);
-        Double returnedLng = returnedLocation.getLng();
+        Float returnedLng = returnedLocation.getLng();
         DecimalFormat df= new DecimalFormat("00.00");
         String format = df.format(returnedLng);
         double finalValue = (Double)df.parse(format) ;
         assertEquals(-89.33, finalValue);//lng for my house, hargrove
     }
 
+    /**
+     * Test insert of new info.
+     *
+     * @throws Exception the exception
+     */
     @Test
     public void testInsertOfNewInfo () throws Exception {
         LocationApiDao dao = new LocationApiDao();
@@ -59,7 +82,7 @@ public class ApiTestServiceClient {
         Location locationToMap = ldao.getById(2);
         dao.convertAddressToLatAndLong(locationToMap);
         ldao.saveOrUpdate(locationToMap);
-        Double returnedLng = locationToMap.getLng();
+        Float returnedLng = locationToMap.getLng();
         DecimalFormat df= new DecimalFormat("00.00");
         String format = df.format(returnedLng);
         double finalValue = (Double)df.parse(format) ;
@@ -67,5 +90,24 @@ public class ApiTestServiceClient {
         //todo probably some more tests
     }
 
+    /**
+     * Test get near by locations.
+     *
+     * @throws Exception the exception
 
+    @Test
+    public  void testGetNearByLocations() throws Exception {
+        LocationApiDao dao = new LocationApiDao();
+        GenericDao<Location> ldao = new GenericDao<>(Location.class);
+        Location centerPoint = ldao.getById(2);
+        var results = (List) dao.getNearByLocations(centerPoint.getLat(), centerPoint.getLng(), 1);
+        //how are you going to tst this????? todo more tests
+        log.debug("List Results :" + results );
+       //log.debug("results in array[1], get resource id and name/ class " + results.get(1).getClass());
+        int idToTest = 1;
+        //assertEquals("???", results.get(1));
+        assertEquals("?", Arrays.deepToString(new List[]{results}));
+        logger.debug(Arrays.deepToString(new List[]{results}));
+
+    }*/
 }

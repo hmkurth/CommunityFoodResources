@@ -8,6 +8,9 @@ import javax.ws.rs.core.Application;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * The type Contact application.
+ */
 @ApplicationPath("/services") //You may want to add a value here so that all traffic isn't routed to the class below.
 //The java class declares root resource and provider classes
 public class ContactApplication extends Application {

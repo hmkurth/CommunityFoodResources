@@ -26,6 +26,7 @@ public class SessionFactoryProvider {
     private SessionFactoryProvider() {
 
     }
+
     /**
      * Create session factory.
      */

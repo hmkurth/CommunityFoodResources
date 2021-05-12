@@ -1144,11 +1144,11 @@ SELECT|testschema
     </column>
     <column id="338" parent="291" name="lat">
       <Position>10</Position>
-      <DataType>double|0s</DataType>
+      <DataType>float(10,6 digit)|0s</DataType>
     </column>
     <column id="339" parent="291" name="lng">
       <Position>11</Position>
-      <DataType>double|0s</DataType>
+      <DataType>float(10,6 digit)|0s</DataType>
     </column>
     <index id="340" parent="291" name="location_food_resources_id_fk">
       <ColNames>resource_id</ColNames>

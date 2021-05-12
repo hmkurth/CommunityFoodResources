@@ -1,39 +1,27 @@
 package com.hmkurth.persistence;
 
-import com.hmkurth.entity.User;
-import com.hmkurth.entity.UserRoles;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import javax.persistence.Entity;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
 import java.util.List;
-import java.util.Set;
 
 /**
  * generic dao to take in any type of object, any entity managed by hibernate
- *A generic DAO somewhat inspired by http://rodrigouchoa.wordpress.com
+ * A generic DAO somewhat inspired by http://rodrigouchoa.wordpress.com
+ *
+ * @param <T> the type parameter
  */
 public class GenericDao<T> {//T is placeholder, variable for type
 
 //create instance variable of class you are using
-    private Class<T>  type;
+    private final Class<T>  type;
     private final Logger logger = LogManager.getLogger(this.getClass());
-    //WHAT ABOUT SETS OF CHILDREN/one to many??? when i want to delete a role from a set
-  /*  GenericDao dao;
-    GenericDao userDao;
-    GenericDao trailDao;
-
-    TrailReport trailReport;
-    User user;
-    Trail trail;
-    */
 
     /**
      * Instantiates a new Generic dao.
@@ -43,10 +31,12 @@ public class GenericDao<T> {//T is placeholder, variable for type
     public GenericDao(Class<T> type) {
         this.type = type;
     }
-    SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
+
     /**
      * Gets a entity by id
-     * @param id entity id to search by
+     *
+     * @param <T> the type parameter
+     * @param id  entity id to search by
      * @return a entity
      */
     public <T>T getById(int id) {
@@ -58,8 +48,9 @@ public class GenericDao<T> {//T is placeholder, variable for type
 
     /**
      * get entity by  property name
-     * @param entityName, the table you are searching
-     * @param valueName, the name or value being searched for
+     *
+     * @param entityName the entity name
+     * @param valueName  the value name
      * @return Entities by that  name
      */
     public List<T> getEntityByName(String entityName, String valueName){
@@ -69,14 +60,16 @@ public class GenericDao<T> {//T is placeholder, variable for type
         Root<T> root = query.from(type);
         Expression<String> propertyPath = root.get(entityName);
         query.where(builder.like(propertyPath, "%" + valueName + "%"));// the where part, instance variables
-        List<T> entities = (List<T>) session.createQuery(query).getResultList();
+        List<T> entities = session.createQuery(query).getResultList();
         session.close();
         logger.debug("The list of Entities by entity name " + entities);
         return entities;
     }
+
     /**
      * update Entity
-     * @param entity  entity to be inserted or updated
+     *
+     * @param entity entity to be inserted or updated
      */
     public void saveOrUpdate(T entity) {
         Session session = getSession();
@@ -85,6 +78,7 @@ public class GenericDao<T> {//T is placeholder, variable for type
         transaction.commit();
         session.close();
     }
+
     /**
      * Deletes the entity.
      *
@@ -155,7 +149,7 @@ public class GenericDao<T> {//T is placeholder, variable for type
         query.where(builder.like(propertyPath, "%" + value + "%"));// the where part, instance variables
         List<T> entities = session.createQuery(query).getResultList();
         session.close();
-        logger.debug("The list of Entities by propertyName " + propertyName);
+        logger.debug("The list of Entities by propertyName " + propertyName + " and value/search term: " + value);
         return entities;
     }
 
@@ -173,7 +167,7 @@ public class GenericDao<T> {//T is placeholder, variable for type
      * @param entity  entity to be inserted or updated
      */
     public int insert(T entity) {
-        int id = 0;
+        int id;
         Session session = getSession();
         Transaction transaction = session.beginTransaction();
         id = (int)session.save(entity);
@@ -182,8 +176,6 @@ public class GenericDao<T> {//T is placeholder, variable for type
         session.close();
         return id;
     }
-
-
 
 
 }

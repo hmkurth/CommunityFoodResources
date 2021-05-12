@@ -16,7 +16,6 @@ import java.util.Set;
  *
  * @author hmkurth
  */
-
 @Entity(name = "User")
 @Table(name = "users")//case sensitive
 public class User {
@@ -46,9 +45,21 @@ public class User {
 
     private Set<UserRoles> roles = new HashSet<>();
 
+    /**
+     * Instantiates a new User.
+     */
     public User() {
     }
 
+    /**
+     * Instantiates a new User.
+     *
+     * @param firstName the first name
+     * @param lastName  the last name
+     * @param userName  the user name
+     * @param password  the password
+     * @param email     the email
+     */
     public User(@NonNull String firstName, @NonNull String lastName, @NonNull String userName, @NonNull String password, @NonNull String email) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -105,58 +116,128 @@ public class User {
         return Objects.hash(id, firstName, lastName, userName, password, email);
     }
 
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
     public int getId() {
         return this.id;
     }
 
+    /**
+     * Gets first name.
+     *
+     * @return the first name
+     */
     public @NonNull String getFirstName() {
         return this.firstName;
     }
 
+    /**
+     * Gets last name.
+     *
+     * @return the last name
+     */
     public @NonNull String getLastName() {
         return this.lastName;
     }
 
+    /**
+     * Gets user name.
+     *
+     * @return the user name
+     */
     public @NonNull String getUserName() {
         return this.userName;
     }
 
+    /**
+     * Gets password.
+     *
+     * @return the password
+     */
     public @NonNull String getPassword() {
         return this.password;
     }
 
+    /**
+     * Gets email.
+     *
+     * @return the email
+     */
     public @NonNull String getEmail() {
         return this.email;
     }
 
+    /**
+     * Gets roles.
+     *
+     * @return the roles
+     */
     public Set<UserRoles> getRoles() {
         return this.roles;
     }
 
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
     public void setId(int id) {
         this.id = id;
     }
 
+    /**
+     * Sets first name.
+     *
+     * @param firstName the first name
+     */
     public void setFirstName(@NonNull String firstName) {
         this.firstName = firstName;
     }
 
+    /**
+     * Sets last name.
+     *
+     * @param lastName the last name
+     */
     public void setLastName(@NonNull String lastName) {
         this.lastName = lastName;
     }
 
+    /**
+     * Sets user name.
+     *
+     * @param userName the user name
+     */
     public void setUserName(@NonNull String userName) {
         this.userName = userName;
     }
 
+    /**
+     * Sets password.
+     *
+     * @param password the password
+     */
     public void setPassword(@NonNull String password) {
         this.password = password;
     }
 
+    /**
+     * Sets email.
+     *
+     * @param email the email
+     */
     public void setEmail(@NonNull String email) {
         this.email = email;
     }
 
+    /**
+     * Sets roles.
+     *
+     * @param roles the roles
+     */
     public void setRoles(Set<UserRoles> roles) {
         this.roles = roles;
     }

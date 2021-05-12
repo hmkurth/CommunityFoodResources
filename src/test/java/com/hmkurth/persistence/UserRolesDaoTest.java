@@ -4,8 +4,6 @@ import com.hmkurth.entity.User;
 import com.hmkurth.entity.UserRoles;
 import com.hmkurth.test.util.Database;
 import lombok.extern.log4j.Log4j2;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -23,7 +21,6 @@ class UserRolesDaoTest {
      */
 
     GenericDao genericDao;
-
 
 
     /**

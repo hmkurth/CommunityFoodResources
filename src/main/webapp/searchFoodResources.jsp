@@ -32,7 +32,7 @@
         <div class="row text-center pad-top pad-bottom line-bottom">
             <div class="col-md-12">
                 <h1>Search Our Site </h1>
-                <form class="form-inline pad-top-sm" action="${pageContext.request.contextPath}/searchFoodResources" method="get">
+                <form class="form-inline pad-top-sm" action="${pageContext.request.contextPath}/searchFoodResources" method="post">
                     <div class="form-group">
                         <label for="term">Search For:</label>
                         <input type="text" name="term" id="term" class="form-control input-lg" placeholder="search term" />
@@ -57,6 +57,7 @@
         <div class="row pad-bottom">
             <div class="col-md-10 col-md-offset-1">
                 <h2>Search Results</h2>
+                <h3>debug results:  ${resources}</h3>
                 <table class="table table-striped table-bordered">
                 <thead>
                 <tr>
@@ -69,8 +70,8 @@
         <c:forEach var="resource" items="${resources}">
                 <tr>
 
-                    <td>${resource.type}</td>
-                    <td>${resource.name}</td>
+                    <td>Resource Type: ${resource.type}</td>
+                    <td>Resource Name: ${resource.name}</td>
 
                     </tr>
         </c:forEach>

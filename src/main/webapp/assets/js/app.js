@@ -45,7 +45,7 @@ function parallaxIt() {
 
 	// triggers window scroll for refresh
 	$fwindow.trigger('scroll');
-};
+}
 
 $(document).ready(function() {
 

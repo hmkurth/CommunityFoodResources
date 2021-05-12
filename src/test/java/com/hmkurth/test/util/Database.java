@@ -14,19 +14,20 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
+
 /**
  * Provides access the database
  * Created on 8/31/16.
- * @update 3/2/2021
  *
  * @author pwaite
+ * @update 3 /2/2021
  */
 
 public class Database {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
     // create an object of the class Database
-    private static Database instance = new Database();
+    private static final Database instance = new Database();
 
     private Properties properties;
 
@@ -52,15 +53,30 @@ public class Database {
 
     }
 
-    // get the only Database object available
+    /**
+     * Gets instance.
+     *
+     * @return the instance
+     */
+// get the only Database object available
     public static Database getInstance() {
         return instance;
     }
 
+    /**
+     * Gets connection.
+     *
+     * @return the connection
+     */
     public Connection getConnection() {
         return connection;
     }
 
+    /**
+     * Connect.
+     *
+     * @throws Exception the exception
+     */
     public void connect() throws Exception {
         if (connection != null)
             return;
@@ -75,6 +91,9 @@ public class Database {
         connection = DriverManager.getConnection(url, properties.getProperty("username"),  properties.getProperty("password"));
     }
 
+    /**
+     * Disconnect.
+     */
     public void disconnect() {
         if (connection != null) {
             try {

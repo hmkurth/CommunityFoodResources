@@ -26,7 +26,7 @@
 
         <div class="row text-center pad-top pad-bottom line-bottom">
             <div class="col-md-12">
-                <h1>Search For Resources By Location </h1>
+                <h1>Enter a location to search nearby resources </h1>
                 <form class="form-inline pad-top-sm" action="${pageContext.request.contextPath}/searchByLocation" method="get">
 
                     <div class="form-group">
@@ -49,7 +49,7 @@
                         <input type="text" class="form-control" id="zip" name ="zip" placeholder="zip"  autocomplete="email" aria-required="true" required>
                     </div>
 
-                    <button type="submit"name=submit"  class="btn btn-primary btn-lg">Search Site</button>
+                    <button type="submit" name=submit"  class="btn btn-primary btn-lg">Search Site</button>
                 </form>
             </div>
         </div>
