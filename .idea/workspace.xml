@@ -9,24 +9,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="updated timelog, changed war for aws deploy, couldn't deploy, updated sql on aws">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210510 2039.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210511 1025.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210511 1040.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="added presentation video link to readme">
+      <change afterPath="$PROJECT_DIR$/~$ournal.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/timeLog.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/timeLog.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210510 1819.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210510 1901.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210510 1923.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210510 1932.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210510 1934.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Journal.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Journal.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/components.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/home2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/home3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/home4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page11.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page12.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page9.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/readMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/readMe.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/~$ournal.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/~WRL3031.tmp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -423,14 +429,7 @@
       <workItem from="1620347926133" duration="1742000" />
       <workItem from="1620349837454" duration="47809000" />
       <workItem from="1620621464218" duration="10726000" />
-      <workItem from="1620690530194" duration="12169000" />
-    </task>
-    <task id="LOCAL-00075" summary="working on user search and results, still, getting a 408 for authentication.  created pageUtil directory for head, foot, etc">
-      <created>1618799343272</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1618799343273</updated>
+      <workItem from="1620690530194" duration="13727000" />
     </task>
     <task id="LOCAL-00076" summary="undid directory page util, now getting the login error instead of timeout">
       <created>1618803227594</created>
@@ -768,7 +767,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620699483332</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="added presentation video link to readme">
+      <created>1620749698313</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1620749698313</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -791,7 +797,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="still working on delete, trying to add some confirmation, not working yet" />
     <MESSAGE value="adding an addLocation jsp and servlet, still need to incorporate api to extract long and lat" />
     <MESSAGE value="Started an add location, need to fix resource, it’s coming up null in the db, but in my logs I’m getting a circular mess with the relationships…I have toString.exclude annotations on the related entities, but….????" />
     <MESSAGE value="add location with api integration working" />
@@ -816,7 +821,8 @@
     <MESSAGE value="still trying to get location search to work" />
     <MESSAGE value="ready for presentation" />
     <MESSAGE value="updated timelog, changed war for aws deploy, couldn't deploy, updated sql on aws" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated timelog, changed war for aws deploy, couldn't deploy, updated sql on aws" />
+    <MESSAGE value="added presentation video link to readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="added presentation video link to readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
