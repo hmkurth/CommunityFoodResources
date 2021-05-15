@@ -9,30 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="added presentation video link to readme">
-      <change afterPath="$PROJECT_DIR$/~$ournal.docx" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="added live aws link to readme">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/frenchBread.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/prepping.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/page3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/~WRL0003.tmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Journal.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Journal.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/components.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/home2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/home3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/home4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page10.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page11.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page12.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page5.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page6.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page7.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page8.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page9.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/readMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/readMe.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/aboutProject.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/aboutProject.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,19 +144,6 @@
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.Tomcat">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="All in CommunityFoodResources" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <option name="PACKAGE_NAME" value="" />
@@ -429,14 +400,8 @@
       <workItem from="1620347926133" duration="1742000" />
       <workItem from="1620349837454" duration="47809000" />
       <workItem from="1620621464218" duration="10726000" />
-      <workItem from="1620690530194" duration="13727000" />
-    </task>
-    <task id="LOCAL-00076" summary="undid directory page util, now getting the login error instead of timeout">
-      <created>1618803227594</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1618803227662</updated>
+      <workItem from="1620690530194" duration="14306000" />
+      <workItem from="1621009133105" duration="4518000" />
     </task>
     <task id="LOCAL-00077" summary="added form attributes auto complete and aria ...still need to complete this will all user input">
       <created>1618811667853</created>
@@ -774,7 +739,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620749698313</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="added live aws link to readme">
+      <created>1620801878828</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1620801878957</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -797,7 +769,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adding an addLocation jsp and servlet, still need to incorporate api to extract long and lat" />
     <MESSAGE value="Started an add location, need to fix resource, it’s coming up null in the db, but in my logs I’m getting a circular mess with the relationships…I have toString.exclude annotations on the related entities, but….????" />
     <MESSAGE value="add location with api integration working" />
     <MESSAGE value="adding search by location servlet and jsp, not hooked up yet" />
@@ -822,7 +793,8 @@
     <MESSAGE value="ready for presentation" />
     <MESSAGE value="updated timelog, changed war for aws deploy, couldn't deploy, updated sql on aws" />
     <MESSAGE value="added presentation video link to readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="added presentation video link to readme" />
+    <MESSAGE value="added live aws link to readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="added live aws link to readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
