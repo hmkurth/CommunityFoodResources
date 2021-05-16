@@ -32,12 +32,11 @@ public class FoodResource {
     @GenericField
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
-    @NonNull
     @ManyToOne
     @JoinColumn(name = "type_Id",
             foreignKey = @ForeignKey(name = "resource_type_food_resources_id_fk")
     )
-    private Type typeId;//fk to resource_type
+    private @NonNull Type typeId;//fk to resource_type
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
     @OneToOne
@@ -276,7 +275,7 @@ public class FoodResource {
      *
      * @param typeId the type id
      */
-    public void setTypeId(@NonNull Type typeId) {
+    public void setTypeId(Type typeId) {
         this.typeId = typeId;
     }
 

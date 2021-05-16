@@ -18,7 +18,7 @@
     <log4j-version>2.10.0</log4j-version>
     <junit.version>4.12</junit.version>
     <javax.version>7.0</javax.version>
-    <!-- TODO make sure your mysql driver version matches your mysql version -->
+    <!-- make sure your mysql driver version matches your mysql version -->
     <mysql-version>8.0.23</mysql-version>
     <junit-platform-runner-version>1.0.0</junit-platform-runner-version>
     <maven-surefire-plugin-version>2.19</maven-surefire-plugin-version>

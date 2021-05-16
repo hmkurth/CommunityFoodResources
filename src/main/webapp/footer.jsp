@@ -9,7 +9,7 @@
                     <div class="col-xs-3">
                         <ul class="list-unstyled">
                             <li><strong>Home Concepts</strong></li>
-                            <li><a href="index.html">Static Photo</a></li>
+                            <li><a href="../../../DesignDocs/indexTemplate.html">Static Photo</a></li>
                             <li><a href="home2.html">Rotating Photo</a></li>
                             <li><a href="home3.html">Video Background</a></li>
                             <li><a href="home4.html">Coming Soon</a></li>
