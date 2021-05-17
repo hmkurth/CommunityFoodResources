@@ -35,6 +35,9 @@
 
 							<!-- Login dropdown Insert login.jsp  but need a button that points to it for auth  -->
 						<a href="${pageContext.request.contextPath}/loginAction" class=" btn-login" ><em class="fa fa-lock" aria-hidden="true"></em>  Sign In</a>
+						<c:if test="${ !empty loggedInUser}">
+						<a href="${pageContext.request.contextPath}/logOut" class=" btn-login" ><em class="fa fa-lock" aria-hidden="true"></em>  Log Out</a>
+						</c:if>
 					</div>
 				</div>
 

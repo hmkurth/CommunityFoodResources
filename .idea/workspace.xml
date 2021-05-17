@@ -9,19 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="dropdowns connected, finally">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210517 0227.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210517 0230.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210517 0241.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="still working on getting the if test for dropdown working">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LogOut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/logoutConfirmation.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Journal.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Journal.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210517 0110.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210517 0115.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210517 0118.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -417,14 +409,7 @@
       <workItem from="1620349837454" duration="47809000" />
       <workItem from="1620621464218" duration="10726000" />
       <workItem from="1620690530194" duration="14306000" />
-      <workItem from="1621009133105" duration="30553000" />
-    </task>
-    <task id="LOCAL-00080" summary="reconfiguring login to add a loginAction servlet and a button that points to it, but am still getting timeout error">
-      <created>1619626286598</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1619626286599</updated>
+      <workItem from="1621009133105" duration="31619000" />
     </task>
     <task id="LOCAL-00081" summary="got login working, but it's not pretty...">
       <created>1619633996410</created>
@@ -762,7 +747,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621232575645</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="still working on getting the if test for dropdown working">
+      <created>1621238307727</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1621238307727</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -785,7 +777,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="changed include to jsp include" />
     <MESSAGE value="editing admin controls" />
     <MESSAGE value="FINALLY got delete working again with confirmation, can't believe it took so long, needs cleaning up" />
     <MESSAGE value="still editing admin..." />
@@ -810,7 +801,8 @@
     <MESSAGE value="added about project content" />
     <MESSAGE value="working on add resource" />
     <MESSAGE value="dropdowns connected, finally" />
-    <option name="LAST_COMMIT_MESSAGE" value="dropdowns connected, finally" />
+    <MESSAGE value="still working on getting the if test for dropdown working" />
+    <option name="LAST_COMMIT_MESSAGE" value="still working on getting the if test for dropdown working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
