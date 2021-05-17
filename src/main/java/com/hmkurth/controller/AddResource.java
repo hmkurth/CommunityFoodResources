@@ -1,6 +1,7 @@
 package com.hmkurth.controller;
 
 
+import com.hmkurth.entity.FoodResource;
 import com.hmkurth.entity.ResourceOwner;
 import com.hmkurth.entity.Type;
 import com.hmkurth.persistence.GenericDao;
@@ -27,6 +28,9 @@ import java.util.List;
 public class AddResource extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
+    GenericDao<Type> tdao;
+    GenericDao<ResourceOwner> odao;
+
 
     /**
      * Handles HTTP GET requests.
@@ -38,8 +42,6 @@ public class AddResource extends HttpServlet {
      */
     public void doGet(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
-    logger.debug("in do get addResource");
-        req.setAttribute("anything1", "anything message coming through from do get");
         listCategory(req, res);
 
     }
@@ -60,13 +62,12 @@ public class AddResource extends HttpServlet {
             throws ServletException, IOException {
         HttpSession session  = req.getSession();
         //get the list of owners to populate a dropdown menu for the form input
-        GenericDao<ResourceOwner> dao = new GenericDao<>(ResourceOwner.class);
-        List listOwner = dao.getAll();
+         odao = new GenericDao<>(ResourceOwner.class);
+        List listOwner = odao.getAll();
         session.setAttribute("listOwner", listOwner);
-        session.setAttribute("anything", "anything message coming through");
         logger.debug("listOwner value from dropdown menu : " + listOwner);
         //get the list of types of resources to populate a dropdown menu for the form input
-        GenericDao<Type> tdao = new GenericDao<>(Type.class);
+         tdao = new GenericDao<>(Type.class);
         List listType = tdao.getAll();
         session.setAttribute("listType", listType);
         logger.debug("list type : " + listType);
@@ -87,27 +88,46 @@ public class AddResource extends HttpServlet {
      **/
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //todo change for food resources
+
         HttpSession session  = req.getSession();
+        //sets the values from dropdown menus
         int typeId = Integer.parseInt(req.getParameter("type"));
-        session.setAttribute("selectedTypeId", typeId);
+        req.setAttribute("selectedTypeId", typeId);
+        String ownerResponse = req.getParameter("owner");
+        //int ownerId = Integer.parseInt(req.getParameter("owner"));
+        req.setAttribute("selectedOwnerId", ownerResponse);
 
-        int ownerId = Integer.parseInt(req.getParameter("owner"));
-        session.setAttribute("selectedOwnerId", ownerId);
-
+        //get params
+        FoodResource resource = new FoodResource();
+        resource.setName(req.getParameter("name"));
+        Type thisType = tdao.getById(typeId);
+        resource.setTypeId(thisType);
+        logger.debug("type: " + req.getParameter("type"));
+        logger.debug("Adding Type: " + resource.getTypeId());
+    /**
+        //if they choose to add a new owner what happens? == or .equals?
+            if (ownerResponse.equals("newOwner")) {
+                //new resource owner
+                ResourceOwner newOwner = new ResourceOwner();
+                newOwner.setName(req.getParameter("newOwnerName"));
+                newOwner.setWebsite(req.getParameter("newOwnerWebsite"));
+                //what about contacts??? now a new contact?? or just mention that they can edit that later?
+                } else if (ownerResponse.equals("null")) {
+                 //the owner is  null
+                    resource.setOwner(null);
+                 } else{
+                 //the owner is from dropdown
+                    //resource.setOwner(odao.getById(ownerId));
+        }
+**/
 
         listCategory(req, resp);
+
     }
 }
         /**
 
-         FoodResource resource = new FoodResource();
 
-        resource.setName(req.getParameter("name"));
-        //resource.setTypeId(req.getParameter("type"));
-        logger.debug("type: " + req.getParameter("type"));
-
-        logger.debug("Adding Type: " + resource.getTypeId());
       resource.setPassword(req.getParameter("password"));
         resource.setEmail(req.getParameter("email"));
         logger.debug("Adding User: " + user);

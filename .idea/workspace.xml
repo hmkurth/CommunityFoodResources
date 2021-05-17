@@ -9,22 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="working on add resource">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210517 0056.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210517 0110.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210517 0115.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="dropdowns connected, finally">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210517 0227.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210517 0230.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210517 0241.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Journal.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Journal.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210511 1040.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210511 1053.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210515 2219.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210517 0110.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210517 0115.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210517 0118.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/UserSignup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/UserSignup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/GenericDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/adminHome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/adminHome.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -420,14 +417,7 @@
       <workItem from="1620349837454" duration="47809000" />
       <workItem from="1620621464218" duration="10726000" />
       <workItem from="1620690530194" duration="14306000" />
-      <workItem from="1621009133105" duration="24764000" />
-    </task>
-    <task id="LOCAL-00079" summary="sweet auto complete, and aria attributes added to login and sign up">
-      <created>1618812482587</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1618812482587</updated>
+      <workItem from="1621009133105" duration="30553000" />
     </task>
     <task id="LOCAL-00080" summary="reconfiguring login to add a loginAction servlet and a button that points to it, but am still getting timeout error">
       <created>1619626286598</created>
@@ -765,7 +755,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621135463420</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="dropdowns connected, finally">
+      <created>1621232575645</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1621232575645</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -788,7 +785,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adding search by location servlet and jsp, not hooked up yet" />
     <MESSAGE value="changed include to jsp include" />
     <MESSAGE value="editing admin controls" />
     <MESSAGE value="FINALLY got delete working again with confirmation, can't believe it took so long, needs cleaning up" />
@@ -813,7 +809,8 @@
     <MESSAGE value="added live aws link to readme" />
     <MESSAGE value="added about project content" />
     <MESSAGE value="working on add resource" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on add resource" />
+    <MESSAGE value="dropdowns connected, finally" />
+    <option name="LAST_COMMIT_MESSAGE" value="dropdowns connected, finally" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1079,7 +1076,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
-          <line>63</line>
+          <line>65</line>
           <option name="timeStamp" value="91" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">

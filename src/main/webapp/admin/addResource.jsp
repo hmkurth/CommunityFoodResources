@@ -20,9 +20,6 @@
         </div>
 
         <div class="form-group">
-            <h2>test for listTypes : ${listType}</h2>
-            <h2>test for anything from doget: ${anything1}</h2>
-            <h2>test for anything: ${anything}</h2>
             <label for="type">Resource Type, please select the most accurate category for this resource, or select other
                 <select name="type" id="type">
                     <c:forEach items="${listType}" var="type">
@@ -37,13 +34,22 @@
             <!-- //TODO drop down menu of resource owners set in the servlet
                 //https://www.codejava.net/java-ee/jsp/how-to-create-dynamic-drop-down-list-in-jsp-from-database -->
             <select name="owner" id="owner">
+                <!-- option to add new first, then if yes, another menu for adding owner should appear-->
+                <option value="newOwner">Add New Owner</option>
                 <c:forEach items="${listOwner}" var="owner">
                     <option value="${owner.id}" <c:if test="${owner.id eq selectedOwnerId}">selected="selected"</c:if>
                     > owner name:${owner.name}</option>
                 </c:forEach>
             </select>
             </label>
+
+
         </div>
+
+        <c:if test="${req.getAttribute('selectedOwnerId') == ('newOwner')}"  >
+            <h3> new owner fields here </h3>
+
+        </c:if>
 
 
         <hr />
