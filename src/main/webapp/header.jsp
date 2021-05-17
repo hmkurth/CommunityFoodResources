@@ -34,7 +34,9 @@
 					<div class="menu-block pull-right no-pad">
 
 							<!-- Login dropdown Insert login.jsp  but need a button that points to it for auth  -->
+						<c:if test="${ empty loggedInUser}">
 						<a href="${pageContext.request.contextPath}/loginAction" class=" btn-login" ><em class="fa fa-lock" aria-hidden="true"></em>  Sign In</a>
+						</c:if>
 						<c:if test="${ !empty loggedInUser}">
 						<a href="${pageContext.request.contextPath}/logOut" class=" btn-login" ><em class="fa fa-lock" aria-hidden="true"></em>  Log Out</a>
 						</c:if>

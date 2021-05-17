@@ -94,8 +94,8 @@ public class AddResource extends HttpServlet {
         int typeId = Integer.parseInt(req.getParameter("type"));
         req.setAttribute("selectedTypeId", typeId);
         String ownerResponse = req.getParameter("owner");
-        //int ownerId = Integer.parseInt(req.getParameter("owner"));
-        req.setAttribute("selectedOwnerId", ownerResponse);
+        int ownerId = Integer.parseInt(req.getParameter("owner"));
+        req.setAttribute("selectedOwnerId", ownerId);
 
         //get params
         FoodResource resource = new FoodResource();
