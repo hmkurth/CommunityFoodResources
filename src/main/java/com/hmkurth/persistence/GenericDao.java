@@ -9,6 +9,7 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
+import java.sql.SQLException;
 import java.util.List;
 
 /**
@@ -111,6 +112,8 @@ public class GenericDao<T> {//T is placeholder, variable for type
         logger.debug("in get ALL " + list);
         return list;
 
+
+
     }
 
     /** Get entities by property (exact match)
@@ -177,5 +180,37 @@ public class GenericDao<T> {//T is placeholder, variable for type
         return id;
     }
 
+    /**
+     * will return a list of objects to populate dropdown menus, trying this from
+     * https://www.codejava.net/java-ee/jsp/how-to-create-dynamic-drop-down-list-in-jsp-from-database
+     * TODO what is actually different in this method from the getAll method?
+     * @return
+     * @throws SQLException
+
+    public List<T> list(T entity) throws SQLException {
+        List<T> listCategory = new ArrayList<>();
+
+        try (Connection connection = DriverManager.getConnection(databaseURL, user, password)) {
+            String sql = "SELECT * FROM  + "entity" +  ORDER BY name";
+            Statement statement = connection.createStatement();
+            ResultSet result = statement.executeQuery(sql);
+
+            while (result.next()) {
+                int id = result.getInt("category_id");
+                String name = result.getString("name");
+                T category = new T(id, name);
+
+                listCategory.add(category);
+            }
+
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+            throw ex;
+        }
+
+        return listCategory;
+    }
+}
+     */
 
 }

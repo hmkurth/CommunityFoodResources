@@ -1,9 +1,8 @@
 package com.hmkurth.controller;
 
 
-import com.hmkurth.entity.Contact;
-import com.hmkurth.entity.FoodResource;
 import com.hmkurth.entity.ResourceOwner;
+import com.hmkurth.entity.Type;
 import com.hmkurth.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -14,6 +13,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
@@ -29,51 +29,86 @@ public class AddResource extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     /**
-     *  Handles HTTP GET requests.
+     * Handles HTTP GET requests.
      *
-     *@param  req                 the HttpServletRequest object
-     *@param  res                the HttpServletResponse object
-     *@exception  ServletException  if there is a Servlet failure
-     *@exception IOException       if there is an IO failure
+     * @param req the HttpServletRequest object
+     * @param res the HttpServletResponse object
+     * @throws ServletException if there is a Servlet failure
+     * @throws IOException      if there is an IO failure
      */
     public void doGet(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
-        GenericDao dao = new GenericDao(ResourceOwner.class);
-        List<ResourceOwner> listOwner = dao.getAll();
-        req.setAttribute("listOwner", listOwner);
-    //do i really want to list out contacts and locations, more often you would be adding new ones...
-        GenericDao cdao = new GenericDao(Contact.class);
-        List<Contact> listContact = cdao.getAll();
-        req.setAttribute("listContact", listContact);
+    logger.debug("in do get addResource");
+        req.setAttribute("anything1", "anything message coming through from do get");
+        listCategory(req, res);
 
+    }
 
+    /**
+     * https://www.codejava.net/java-ee/jsp/how-to-create-dynamic-drop-down-list-in-jsp-from-database
+     * As you can see, this method reads the value of the drop down list sent the client, stores it as a request’s
+     * attribute, and forwards the request to the same destination page as the doGet() method.
+     * Hence the listCategory() method is created to be reused by both doGet() and doPost() methods.
+     * This gets the params from the form and stores them
+     *
+     * @param req
+     * @param res
+     * @throws ServletException
+     * @throws IOException
+     */
+    private void listCategory(HttpServletRequest req, HttpServletResponse res)
+            throws ServletException, IOException {
+        HttpSession session  = req.getSession();
+        //get the list of owners to populate a dropdown menu for the form input
+        GenericDao<ResourceOwner> dao = new GenericDao<>(ResourceOwner.class);
+        List listOwner = dao.getAll();
+        session.setAttribute("listOwner", listOwner);
+        session.setAttribute("anything", "anything message coming through");
+        logger.debug("listOwner value from dropdown menu : " + listOwner);
+        //get the list of types of resources to populate a dropdown menu for the form input
+        GenericDao<Type> tdao = new GenericDao<>(Type.class);
+        List listType = tdao.getAll();
+        session.setAttribute("listType", listType);
+        logger.debug("list type : " + listType);
 
-
-        String url = "/addResource.jsp";
+        String url = "/admin/addResource.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(req, res);
 
     }
+
     /**
-     *  Handles HTTP POST requests.
+     * Handles HTTP POST requests.
      *
-     *@param  req                 the HttpServletRequest object
-     *@param  resp                the HttpServletResponse object
-     *@exception  ServletException  if there is a Servlet failure
-     *@exception IOException       if there is an IO failure
+     * @param req  the HttpServletRequest object
+     * @param resp the HttpServletResponse object
+     * @throws ServletException if there is a Servlet failure
+     * @throws IOException      if there is an IO failure
      **/
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //todo change for food resources
-        FoodResource resource = new FoodResource();
+        HttpSession session  = req.getSession();
+        int typeId = Integer.parseInt(req.getParameter("type"));
+        session.setAttribute("selectedTypeId", typeId);
+
+        int ownerId = Integer.parseInt(req.getParameter("owner"));
+        session.setAttribute("selectedOwnerId", ownerId);
+
+
+        listCategory(req, resp);
+    }
+}
+        /**
+
+         FoodResource resource = new FoodResource();
 
         resource.setName(req.getParameter("name"));
         //resource.setTypeId(req.getParameter("type"));
         logger.debug("type: " + req.getParameter("type"));
-        int typeId = Integer.parseInt(req.getParameter("type"));
-        req.setAttribute("typeId", typeId);
+
         logger.debug("Adding Type: " + resource.getTypeId());
-    /**    resource.setPassword(req.getParameter("password"));
+      resource.setPassword(req.getParameter("password"));
         resource.setEmail(req.getParameter("email"));
         logger.debug("Adding User: " + user);
         UserRoles role = new UserRoles();
@@ -101,7 +136,7 @@ public class AddResource extends HttpServlet {
             GenericDao dao = new GenericDao(User.class);
 
             dao.insert(resource);
-     **/
+
             //TOdo set the user in the session?? check if this is duplicating entries
             RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/addResourceSuccess.jsp");
             dispatcher.forward(req, resp);
@@ -110,3 +145,4 @@ public class AddResource extends HttpServlet {
     }
 
 
+         **/

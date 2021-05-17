@@ -69,7 +69,7 @@ public class UserSignup extends HttpServlet {
         {
             //add the uses to the database
             // TODO check if user is already in the database, name, username, and email
-            GenericDao dao = new GenericDao(User.class);
+            GenericDao<User> dao = new GenericDao<>(User.class);
 
             dao.insert(user);
 
