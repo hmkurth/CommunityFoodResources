@@ -91,6 +91,7 @@ public class AddResource extends HttpServlet {
 
         HttpSession session  = req.getSession();
         //sets the values from dropdown menus
+
         int typeId = Integer.parseInt(req.getParameter("type"));
         req.setAttribute("selectedTypeId", typeId);
         String ownerResponse = req.getParameter("owner");
@@ -100,10 +101,24 @@ public class AddResource extends HttpServlet {
         //get params
         FoodResource resource = new FoodResource();
         resource.setName(req.getParameter("name"));
+        //set the name attribute so that when the form is resubmitted the data is not lost...but how many times
+        // should i really be submitting one form???...
+        req.setAttribute("resourceName", req.getParameter("name"));
         Type thisType = tdao.getById(typeId);
         resource.setTypeId(thisType);
         logger.debug("type: " + req.getParameter("type"));
         logger.debug("Adding Type: " + resource.getTypeId());
+
+        resource.setDescription(req.getParameter("description"));
+        resource.setServiceArea(req.getParameter("serviceArea"));
+        resource.setWebsite(req.getParameter("website"));
+        resource.setDocumentation(req.getParameter("documentation"));
+        resource.setDaysOfWeek(req.getParameter("days"));
+        resource.setComments(req.getParameter("comments"));
+
+
+
+
     /**
         //if they choose to add a new owner what happens? == or .equals?
             if (ownerResponse.equals("newOwner")) {
@@ -163,6 +178,4 @@ public class AddResource extends HttpServlet {
         }
 
     }
-
-
          **/

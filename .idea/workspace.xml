@@ -9,21 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="logout function added">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210517 0318.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210517 0331.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210517 0333.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="if 'newOwner' tag working">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210517 0349.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Journal.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Journal.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210517 0230.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210517 0241.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210517 0247.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210517 0331.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/logoutConfirmation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/logoutConfirmation.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addResourceSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addResourceSuccess.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -419,14 +413,7 @@
       <workItem from="1620349837454" duration="47809000" />
       <workItem from="1620621464218" duration="10726000" />
       <workItem from="1620690530194" duration="14306000" />
-      <workItem from="1621009133105" duration="33401000" />
-    </task>
-    <task id="LOCAL-00082" summary="fixed mapped by error, added new column on contacts to reference the resource owners id">
-      <created>1619649065262</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1619649065263</updated>
+      <workItem from="1621009133105" duration="38840000" />
     </task>
     <task id="LOCAL-00083" summary="inserted null values for contact ids in sql inserts to avoid fk problems, type dao now working">
       <created>1619653330819</created>
@@ -764,7 +751,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621239581035</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="if 'newOwner' tag working">
+      <created>1621241555423</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1621241555423</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -787,7 +781,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="FINALLY got delete working again with confirmation, can't believe it took so long, needs cleaning up" />
     <MESSAGE value="still editing admin..." />
     <MESSAGE value="fixed adminHome formatting, looking good, working decently.." />
     <MESSAGE value="working on food resource search, able to locate Attribute with the the given name [null] on this ManagedType [com.hmkurth.entity.FoodResource]" />
@@ -812,7 +805,8 @@
     <MESSAGE value="dropdowns connected, finally" />
     <MESSAGE value="still working on getting the if test for dropdown working" />
     <MESSAGE value="logout function added" />
-    <option name="LAST_COMMIT_MESSAGE" value="logout function added" />
+    <MESSAGE value="if 'newOwner' tag working" />
+    <option name="LAST_COMMIT_MESSAGE" value="if 'newOwner' tag working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

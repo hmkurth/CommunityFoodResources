@@ -16,7 +16,9 @@
     <form action="${pageContext.request.contextPath}/addResource"  method="post" autocomplete="on">
         <div class="form-group">
             <label for="name">Resource Name</label>
-            <input type="text" class="form-control" id="name" name ="name" placeholder="Give this resource a name"  aria-required="true" required>
+            <input type="text" class="form-control" id="name" name ="name" placeholder="Give this resource a name"  aria-required="true" required <c:out value="${resourceName}" /> >
+            <!-- TODO if/when form is resubmitted, try to keep the data that the user entered  -->
+
         </div>
 
         <div class="form-group">
@@ -28,6 +30,41 @@
                 </select>
             </label>
         </div>
+
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea class="form-control" id="description" name ="description" aria-required="true" required maxlength="500" >Provide a short description(max 500 characters)</textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="serviceArea">Service Area(if known)</label>
+            <textarea class="form-control" id="serviceArea" name ="serviceArea" aria-required="false"  maxlength="500" >Is there a specific area(city, county, state) that this resource is limited to serving?  Note that you will be able to add the specific location of the resource, if applicable, later </textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="website">Website Link (optional)</label>
+            <input type="text" class="form-control" id="website" name ="website" placeholder="enter website"  aria-required="false" pattern="^((https?|ftp|smtp):\/\/)?(www.)?[a-z0-9]+\.[a-z]+(\/[a-zA-Z0-9#]+\/?)*$">
+        </div>
+]
+        <div class="form-group">
+            <label for="documentation">Documentation</label>
+            <textarea class="form-control" id="documentation" name ="comments" aria-required="true"  maxlength="500"  required>What documentation is needed to access this resource? SSN? ID? None? unknown?
+                </textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="days">Days of Week Offered(optional)</label>
+            <textarea class="form-control" id="days" name ="days" aria-required="false"  maxlength="100"  >Are there specific days of the week this resource is offered? Please enter the full day name separated by commas if needed
+                </textarea>
+        </div>
+
+
+        <div class="form-group">
+            <label for="comments">Comments(optional)</label>
+            <textarea class="form-control" id="comments" name ="comments" aria-required="false"  maxlength="500" >Is there anything else people should know about this resource?(max 500 characters)(max 500 characters)</textarea>
+        </div>
+
+
 
         <div class="form-group">
             <label for="owner">Resource Owner(optional field to connect different food resources with a common owner)
