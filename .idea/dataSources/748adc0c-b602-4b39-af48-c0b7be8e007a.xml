@@ -1061,7 +1061,7 @@ SELECT|testschema
     </column>
     <column id="321" parent="291" name="day_of_week_offered">
       <Position>11</Position>
-      <DataType>varchar(10)|0s</DataType>
+      <DataType>varchar(100)|0s</DataType>
     </column>
     <column id="322" parent="291" name="delivery_offered">
       <Position>12</Position>

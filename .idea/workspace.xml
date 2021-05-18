@@ -9,15 +9,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="if 'newOwner' tag working">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210517 0349.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="continuing with adding resource, may need to break up into smaller chunks">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210518 0055.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210518 0149.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210518 0158.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/addResourceP2.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/748adc0c-b602-4b39-af48-c0b7be8e007a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/748adc0c-b602-4b39-af48-c0b7be8e007a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Journal.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Journal.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210517 0331.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210517 0333.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210517 0344.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210517 0349.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addResourceSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addResourceSuccess.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -413,14 +419,7 @@
       <workItem from="1620349837454" duration="47809000" />
       <workItem from="1620621464218" duration="10726000" />
       <workItem from="1620690530194" duration="14306000" />
-      <workItem from="1621009133105" duration="38840000" />
-    </task>
-    <task id="LOCAL-00083" summary="inserted null values for contact ids in sql inserts to avoid fk problems, type dao now working">
-      <created>1619653330819</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1619653330819</updated>
+      <workItem from="1621009133105" duration="45213000" />
     </task>
     <task id="LOCAL-00084" summary="insert with contact on resource owner dao still broken">
       <created>1619658965983</created>
@@ -758,7 +757,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621241555423</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="continuing with adding resource, may need to break up into smaller chunks">
+      <created>1621315225243</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1621315225243</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -781,7 +787,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="still editing admin..." />
     <MESSAGE value="fixed adminHome formatting, looking good, working decently.." />
     <MESSAGE value="working on food resource search, able to locate Attribute with the the given name [null] on this ManagedType [com.hmkurth.entity.FoodResource]" />
     <MESSAGE value="refactored Generic Dao" />
@@ -806,7 +811,8 @@
     <MESSAGE value="still working on getting the if test for dropdown working" />
     <MESSAGE value="logout function added" />
     <MESSAGE value="if 'newOwner' tag working" />
-    <option name="LAST_COMMIT_MESSAGE" value="if 'newOwner' tag working" />
+    <MESSAGE value="continuing with adding resource, may need to break up into smaller chunks" />
+    <option name="LAST_COMMIT_MESSAGE" value="continuing with adding resource, may need to break up into smaller chunks" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

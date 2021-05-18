@@ -95,8 +95,7 @@ public class AddResource extends HttpServlet {
         int typeId = Integer.parseInt(req.getParameter("type"));
         req.setAttribute("selectedTypeId", typeId);
         String ownerResponse = req.getParameter("owner");
-        int ownerId = Integer.parseInt(req.getParameter("owner"));
-        req.setAttribute("selectedOwnerId", ownerId);
+
 
         //get params
         FoodResource resource = new FoodResource();
@@ -112,35 +111,35 @@ public class AddResource extends HttpServlet {
         resource.setDescription(req.getParameter("description"));
         resource.setServiceArea(req.getParameter("serviceArea"));
         resource.setWebsite(req.getParameter("website"));
-        resource.setDocumentation(req.getParameter("documentation"));
+        resource.setDocumentation(req.getParameter("documentation"));//validate null responses, 'required' attribute not working
         resource.setDaysOfWeek(req.getParameter("days"));
+        resource.setDeliveryOffered(Boolean.parseBoolean(req.getParameter("deliveryB")));
+        resource.setDeliveryDescription(req.getParameter("deliveryDescription"));
+        resource.setDietaryConsiderations(req.getParameter("dietary"));
+
         resource.setComments(req.getParameter("comments"));
-
-
-
-
-    /**
-        //if they choose to add a new owner what happens? == or .equals?
-            if (ownerResponse.equals("newOwner")) {
-                //new resource owner
-                ResourceOwner newOwner = new ResourceOwner();
-                newOwner.setName(req.getParameter("newOwnerName"));
-                newOwner.setWebsite(req.getParameter("newOwnerWebsite"));
-                //what about contacts??? now a new contact?? or just mention that they can edit that later?
-                } else if (ownerResponse.equals("null")) {
-                 //the owner is  null
-                    resource.setOwner(null);
-                 } else{
-                 //the owner is from dropdown
-                    //resource.setOwner(odao.getById(ownerId));
+        logger.debug("Resource at 'confirm: : " + resource.toString());
+        //need to break up this form...add the object to the session? create a boolean to dispatch to the 2nd page after the first submit?
+        String x = req.getParameter("submit");
+        if(x!=null && x.equals("confirm")) {
+            req.setAttribute("newResource", resource);
+            String url = "/admin/addResourceP2.jsp";
+            RequestDispatcher dispatcher = req.getRequestDispatcher(url);
+            dispatcher.forward(req, resp);
         }
-**/
+
+
+
+
 
         listCategory(req, resp);
 
     }
 }
         /**
+
+         int ownerId = Integer.parseInt(req.getParameter("owner"));
+         req.setAttribute("selectedOwnerId", ownerId);
 
 
       resource.setPassword(req.getParameter("password"));
@@ -177,5 +176,6 @@ public class AddResource extends HttpServlet {
             dispatcher.forward(req, resp);
         }
 
-    }
+         /**
+
          **/
