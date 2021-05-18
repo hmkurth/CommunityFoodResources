@@ -123,7 +123,7 @@ public class AddResource extends HttpServlet {
         String x = req.getParameter("submit");
         if(x!=null && x.equals("confirm")) {
             req.setAttribute("newResource", resource);
-            String url = "/admin/addResourceP2.jsp";
+            String url = "/admin/addResourceOwner.jsp";
             RequestDispatcher dispatcher = req.getRequestDispatcher(url);
             dispatcher.forward(req, resp);
         }

@@ -10,20 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="continuing with adding resource, may need to break up into smaller chunks">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210518 0055.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210518 0149.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210518 0158.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/addResourceP2.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/748adc0c-b602-4b39-af48-c0b7be8e007a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/748adc0c-b602-4b39-af48-c0b7be8e007a.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210518 0205.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210518 0210.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210518 0227.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/addResourceOwner.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Journal.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Journal.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210517 0333.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210517 0344.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210517 0349.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210518 0055.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210518 0149.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210518 0158.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addResourceP2.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +41,8 @@
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="jsf" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -419,14 +420,7 @@
       <workItem from="1620349837454" duration="47809000" />
       <workItem from="1620621464218" duration="10726000" />
       <workItem from="1620690530194" duration="14306000" />
-      <workItem from="1621009133105" duration="45213000" />
-    </task>
-    <task id="LOCAL-00084" summary="insert with contact on resource owner dao still broken">
-      <created>1619658965983</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1619658965991</updated>
+      <workItem from="1621009133105" duration="48508000" />
     </task>
     <task id="LOCAL-00085" summary="insert with contact on resource owner dao now working">
       <created>1619709292372</created>
@@ -764,7 +758,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621315225243</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary="continuing with adding resource, may need to break up into smaller chunks">
+      <created>1621321641361</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1621321641361</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

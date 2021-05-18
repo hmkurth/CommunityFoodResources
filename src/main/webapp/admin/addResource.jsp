@@ -85,7 +85,7 @@
     </form>
 
 <c:if test="${param.submit == true}"  >
-    <jsp:include page="/admin/addResourceP2.jsp"/>
+    <jsp:include page="/admin/addResourceOwner.jsp"/>
 
 </c:if>
 
