@@ -50,11 +50,12 @@ public class FoodResource {
     @PrimaryKeyJoinColumn
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
+   //@Column(s) not allowed on a @OneToOne property: com.hmkurth.entity.FoodResource.location
     private Location location;//fk to location
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     @ManyToOne
-    @JoinColumn(name = "contact_id")
+    @JoinColumn(name = "contact_id", nullable = true)
     private Contact contactId;//fk to contact
     @Column(name = "comments")
     @FullTextField

@@ -47,7 +47,7 @@
         </div>
 
         <div class="form-group">
-            <label for="documentation">What Documentation is needed?</label>
+            <label for="documentation">What Documentation is needed? (Required)</label>
             <textarea class="form-control" id="documentation" name ="documentation" aria-required="true"  maxlength="500"  required placeholder="What documentation is needed to access this resource? SSN? ID? None? unknown?"></textarea>
         </div>
 
@@ -85,15 +85,11 @@
     </form>
 
 <c:if test="${param.submit == true}"  >
-    <jsp:include page="/admin/addResourceOwner.jsp"/>
+    <p><a href="/addResourceOwner" class="btn btn-primary btn-lg">Add an owner to this resource</a>
+    <a href="/addContact" class="btn btn-primary btn-lg">Add contact details for this resource</a>>
+    <a href="/addLocation" class="btn btn-primary btn-lg">Add location for this resource</a> </p>
 
 </c:if>
-
-
-
-
-
-
 
 
 </div>

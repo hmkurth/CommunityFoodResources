@@ -9,22 +9,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="continuing with adding resource, may need to break up into smaller chunks">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210518 0205.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210518 0210.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210518 0227.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/addResourceOwner.jsp" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="trying to refactor adding owner to be independent/reusable">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210615 1145.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210615 1147.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210615 1152.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/seedDb.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/748adc0c-b602-4b39-af48-c0b7be8e007a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/748adc0c-b602-4b39-af48-c0b7be8e007a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Journal.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Journal.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210518 0055.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210518 0149.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210518 0158.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210518 0205.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210518 0210.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210518 0227.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addResourceP2.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +106,7 @@
     <property name="database.data.extractors.current.id" value="SQL Inserts" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../BookCollectionFive" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -123,6 +126,7 @@
       <recent name="com.hmkurth.persistence" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\resources" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\img" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\java\com\hmkurth" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main" />
@@ -152,13 +156,15 @@
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.Tomcat">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -420,14 +426,8 @@
       <workItem from="1620349837454" duration="47809000" />
       <workItem from="1620621464218" duration="10726000" />
       <workItem from="1620690530194" duration="14306000" />
-      <workItem from="1621009133105" duration="48508000" />
-    </task>
-    <task id="LOCAL-00085" summary="insert with contact on resource owner dao now working">
-      <created>1619709292372</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1619709292372</updated>
+      <workItem from="1621009133105" duration="65558000" />
+      <workItem from="1623772266318" duration="4067000" />
     </task>
     <task id="LOCAL-00086" summary="food resource tests working !!!!!!!!!!!!!!!!!!!!!">
       <created>1619712684710</created>
@@ -765,7 +765,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621321641361</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="trying to refactor adding owner to be independent/reusable">
+      <created>1621325443681</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1621325443681</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -788,7 +795,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fixed adminHome formatting, looking good, working decently.." />
     <MESSAGE value="working on food resource search, able to locate Attribute with the the given name [null] on this ManagedType [com.hmkurth.entity.FoodResource]" />
     <MESSAGE value="refactored Generic Dao" />
     <MESSAGE value="updated lat and long to float(10,6)" />
@@ -813,7 +819,8 @@
     <MESSAGE value="logout function added" />
     <MESSAGE value="if 'newOwner' tag working" />
     <MESSAGE value="continuing with adding resource, may need to break up into smaller chunks" />
-    <option name="LAST_COMMIT_MESSAGE" value="continuing with adding resource, may need to break up into smaller chunks" />
+    <MESSAGE value="trying to refactor adding owner to be independent/reusable" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying to refactor adding owner to be independent/reusable" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1082,6 +1089,26 @@
           <line>65</line>
           <option name="timeStamp" value="91" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
+          <line>118</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
+          <line>117</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.sql.SQLSyntaxErrorException" package="java.sql" />
           <option name="timeStamp" value="11" />
@@ -1100,6 +1127,11 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.lang.NullPointerException" memberName="cause" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CommunityFoodResources$All_in_CommunityFoodResources.ic" NAME="All in CommunityFoodResources Coverage Results" MODIFIED="1620693551432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

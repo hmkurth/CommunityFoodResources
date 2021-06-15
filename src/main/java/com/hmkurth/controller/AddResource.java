@@ -1,9 +1,7 @@
 package com.hmkurth.controller;
 
 
-import com.hmkurth.entity.FoodResource;
-import com.hmkurth.entity.ResourceOwner;
-import com.hmkurth.entity.Type;
+import com.hmkurth.entity.*;
 import com.hmkurth.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -29,8 +27,10 @@ public class AddResource extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
     GenericDao<Type> tdao;
+    GenericDao<FoodResource> fdao;
     GenericDao<ResourceOwner> odao;
-
+    GenericDao<Location> ldao;
+    GenericDao<Contact> cdao;
 
     /**
      * Handles HTTP GET requests.
@@ -53,8 +53,8 @@ public class AddResource extends HttpServlet {
      * Hence the listCategory() method is created to be reused by both doGet() and doPost() methods.
      * This gets the params from the form and stores them
      *
-     * @param req
-     * @param res
+     * @param req, the request
+     * @param res, the response
      * @throws ServletException
      * @throws IOException
      */
@@ -94,7 +94,7 @@ public class AddResource extends HttpServlet {
 
         int typeId = Integer.parseInt(req.getParameter("type"));
         req.setAttribute("selectedTypeId", typeId);
-        String ownerResponse = req.getParameter("owner");
+        String ownerResponse = req.getParameter("owner");//might be obsolete
 
 
         //get params
@@ -108,6 +108,19 @@ public class AddResource extends HttpServlet {
         logger.debug("type: " + req.getParameter("type"));
         logger.debug("Adding Type: " + resource.getTypeId());
 
+//adding in defaults for  fks so i don't get null pointer
+        ResourceOwner thisOwner = odao.getById(9999);
+        resource.setOwner(thisOwner);
+        logger.debug("this owner = " + thisOwner);
+        ldao = new GenericDao <Location>(Location.class);
+        Location thisLocation = ldao.getById(9999);
+        logger.debug("this location 1 = " + ldao.getById(9999));
+        resource.setLocation(thisLocation);
+        logger.debug("this location = " + thisLocation);
+        cdao = new GenericDao <Contact>(Contact.class);
+        Contact thisContact = cdao.getById(9999);
+        resource.setContactId(thisContact);
+
         resource.setDescription(req.getParameter("description"));
         resource.setServiceArea(req.getParameter("serviceArea"));
         resource.setWebsite(req.getParameter("website"));
@@ -118,11 +131,17 @@ public class AddResource extends HttpServlet {
         resource.setDietaryConsiderations(req.getParameter("dietary"));
 
         resource.setComments(req.getParameter("comments"));
+        fdao = new GenericDao<FoodResource>(FoodResource.class);
         logger.debug("Resource at 'confirm: : " + resource.toString());
         //need to break up this form...add the object to the session? create a boolean to dispatch to the 2nd page after the first submit?
         String x = req.getParameter("submit");
         if(x!=null && x.equals("confirm")) {
-            req.setAttribute("newResource", resource);
+            //add to db now and give option to add location, contacts, owner ala carte
+            fdao.insert(resource);//getting null pointer error because i need to locations and contacts??  what if i just don't save or update untill all infor is added?
+            session.setAttribute("newResourceId", resource.getId());
+            //forward this resource id to add owner, contact, or location servlets
+
+
             String url = "/admin/addResourceOwner.jsp";
             RequestDispatcher dispatcher = req.getRequestDispatcher(url);
             dispatcher.forward(req, resp);
