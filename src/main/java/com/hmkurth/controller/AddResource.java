@@ -91,7 +91,6 @@ public class AddResource extends HttpServlet {
 
         HttpSession session  = req.getSession();
         //sets the values from dropdown menus
-
         int typeId = Integer.parseInt(req.getParameter("type"));
         req.setAttribute("selectedTypeId", typeId);
         String ownerResponse = req.getParameter("owner");//might be obsolete
@@ -108,19 +107,19 @@ public class AddResource extends HttpServlet {
         logger.debug("type: " + req.getParameter("type"));
         logger.debug("Adding Type: " + resource.getTypeId());
 
-//adding in defaults for  fks so i don't get null pointer
-        ResourceOwner thisOwner = odao.getById(9999);
-        resource.setOwner(thisOwner);
-        logger.debug("this owner = " + thisOwner);
-        ldao = new GenericDao <Location>(Location.class);
-        Location thisLocation = ldao.getById(9999);
-        logger.debug("this location 1 = " + ldao.getById(9999));
+/**adding in defaults for  fks so i don't get null pointer
+       // ResourceOwner thisOwner = odao.getById(9999);
+      //  resource.setOwner(thisOwner);
+       // logger.debug("this owner = " + thisOwner);
+       // ldao = new GenericDao <Location>(Location.class);
+    //    Location thisLocation = ldao.getById(9999);
+     //   logger.debug("this location 1 = " + ldao.getById(9999));
         resource.setLocation(thisLocation);
         logger.debug("this location = " + thisLocation);
         cdao = new GenericDao <Contact>(Contact.class);
         Contact thisContact = cdao.getById(9999);
         resource.setContactId(thisContact);
-
+*/
         resource.setDescription(req.getParameter("description"));
         resource.setServiceArea(req.getParameter("serviceArea"));
         resource.setWebsite(req.getParameter("website"));

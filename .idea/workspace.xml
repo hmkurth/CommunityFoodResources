@@ -9,25 +9,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="trying to refactor adding owner to be independent/reusable">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210615 1145.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210615 1147.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210615 1152.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/seedDb.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/748adc0c-b602-4b39-af48-c0b7be8e007a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/748adc0c-b602-4b39-af48-c0b7be8e007a.xml" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="finally got the add resource workable, still need to edit now that I figured out the problem">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210617 1336.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210617 1346.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210617 1350.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/ownerSuccess.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Journal.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Journal.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210518 0205.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210518 0210.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210518 0227.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210615 1147.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210615 1152.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210615 1156.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addResourceOwner.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addResourceOwner.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +39,8 @@
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="jsf" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -427,14 +422,7 @@
       <workItem from="1620621464218" duration="10726000" />
       <workItem from="1620690530194" duration="14306000" />
       <workItem from="1621009133105" duration="65558000" />
-      <workItem from="1623772266318" duration="4067000" />
-    </task>
-    <task id="LOCAL-00086" summary="food resource tests working !!!!!!!!!!!!!!!!!!!!!">
-      <created>1619712684710</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1619712684710</updated>
+      <workItem from="1623772266318" duration="17658000" />
     </task>
     <task id="LOCAL-00087" summary="working on user signup, null values">
       <created>1619716473461</created>
@@ -772,7 +760,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621325443681</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="finally got the add resource workable, still need to edit now that I figured out the problem">
+      <created>1623776863430</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1623776863430</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -795,7 +790,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="working on food resource search, able to locate Attribute with the the given name [null] on this ManagedType [com.hmkurth.entity.FoodResource]" />
     <MESSAGE value="refactored Generic Dao" />
     <MESSAGE value="updated lat and long to float(10,6)" />
     <MESSAGE value="added hibernate search dependencies to pom" />
@@ -820,7 +814,8 @@
     <MESSAGE value="if 'newOwner' tag working" />
     <MESSAGE value="continuing with adding resource, may need to break up into smaller chunks" />
     <MESSAGE value="trying to refactor adding owner to be independent/reusable" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to refactor adding owner to be independent/reusable" />
+    <MESSAGE value="finally got the add resource workable, still need to edit now that I figured out the problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="finally got the add resource workable, still need to edit now that I figured out the problem" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1091,22 +1086,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
-          <line>112</line>
+          <line>111</line>
           <option name="timeStamp" value="92" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
-          <line>108</line>
+          <line>107</line>
           <option name="timeStamp" value="93" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
-          <line>118</line>
+          <line>117</line>
           <option name="timeStamp" value="95" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
-          <line>117</line>
+          <line>116</line>
           <option name="timeStamp" value="96" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">

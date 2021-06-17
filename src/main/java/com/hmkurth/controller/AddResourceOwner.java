@@ -27,7 +27,7 @@ import java.io.IOException;
 public class AddResourceOwner extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
-
+    GenericDao<FoodResource> fdao;
     GenericDao<ResourceOwner> odao;
     GenericDao<Contact> cdao;
     FoodResource resource;
@@ -44,8 +44,10 @@ public class AddResourceOwner extends HttpServlet {
     public void doGet(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
         HttpSession session  = req.getSession();
-        resource = (FoodResource) session.getAttribute("newResourceId");
-       logger.debug("This food resource: " + resource.getName());
+        fdao = new GenericDao<>(FoodResource.class);
+        int resourceId = (int) session.getAttribute("newResourceId");
+        resource = fdao.getById(resourceId);
+       logger.debug("This food resource in doget: " + resource.getName());
         RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/addResourceOwner.jsp");
         dispatcher.forward(req, res);
 
@@ -63,34 +65,35 @@ public class AddResourceOwner extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 
         HttpSession session  = req.getSession();
-        cdao = new GenericDao<>(Contact.class);
-
+        String url;
+        odao = new GenericDao<>(ResourceOwner.class);
         int ownerId = Integer.parseInt(req.getParameter("owner"));
         req.setAttribute("selectedOwnerId", ownerId);
 //set the owner
         if(ownerId == 9999) {
-            //new owner to add
+            /*new owner to add, jsp should display additional fields
             ResourceOwner newOwner = new ResourceOwner();
-            newOwner.setName(req.getParameter("name"));
+           newOwner.setName(req.getParameter("name"));
             newOwner.setWebsite(req.getParameter("website"));
             odao.saveOrUpdate(newOwner);
-            String message = "you have successfully added " + resource.getOwner().getName() + " to the resource " + resource.getName();
-            session.setAttribute("successMessage", message);
-
+*/
+            url = "/admin/addResourceOwner.jsp";
         } else if(ownerId == 8888) {
             //no resource owner for this resource
             resource.setOwner(null);
+            String message = "you have successfully added " + resource.getOwner().getName() + " to the resource " + resource.getName();
+            session.setAttribute("successMessage", message);
+            url= "/admin/ownerSuccess.jsp";
         } else {
+            //choose an existing owner from the list
             resource.setOwner(odao.getById(ownerId));
+            String message = "you have successfully added " + resource.getOwner().getName() + " to the resource " + resource.getName();
+            session.setAttribute("successMessage", message);
             logger.debug("chose an existing owner: " + resource.getOwner().toString());
+            url= "/admin/ownerSuccess.jsp";
         }
 
-
-
-
-
-
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/addResourceOwner.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher(url);
         dispatcher.forward(req, res);
 
     }
