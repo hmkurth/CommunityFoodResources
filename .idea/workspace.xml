@@ -9,15 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="got some of my themes colors integrated into the css.">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/roundLogo250.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/sunLiteLogo2.png" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="looking a little better...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/banners.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/banners.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/banner.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/banner.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -416,14 +411,7 @@
       <workItem from="1620690530194" duration="14306000" />
       <workItem from="1621009133105" duration="65558000" />
       <workItem from="1623772266318" duration="26781000" />
-      <workItem from="1624137221218" duration="28016000" />
-    </task>
-    <task id="LOCAL-00091" summary="foodPANTRY is WORKING!!!!">
-      <created>1619905905218</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1619905905234</updated>
+      <workItem from="1624137221218" duration="28684000" />
     </task>
     <task id="LOCAL-00092" summary="creating delete user servlets and jsps">
       <created>1619911767143</created>
@@ -761,7 +749,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624168198293</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="looking a little better...">
+      <created>1624179434951</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1624179434985</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -784,7 +779,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="&lt;property name=&quot;hibernate.search.backend.directory.root&quot;/&gt; in hibernate config" />
     <MESSAGE value="annotated location and food resources for hibernate search" />
     <MESSAGE value="updated CFRL database" />
     <MESSAGE value="location search params in place, ready to test" />
@@ -809,7 +803,8 @@
     <MESSAGE value="getting resource owner addition going..." />
     <MESSAGE value="trying to edit styles..." />
     <MESSAGE value="got some of my themes colors integrated into the css." />
-    <option name="LAST_COMMIT_MESSAGE" value="got some of my themes colors integrated into the css." />
+    <MESSAGE value="looking a little better..." />
+    <option name="LAST_COMMIT_MESSAGE" value="looking a little better..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

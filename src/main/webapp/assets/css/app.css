@@ -409,7 +409,7 @@ a {
 	background-position: center top;
 	background-size: cover;
 	background-attachment: fixed; 
-	color: #f6f6e9;
+	color: #00583a;
 }
 .vid-banner {
 	background-color: transparent;
@@ -427,10 +427,10 @@ a {
 	padding-top: 30vh;
 }
 .banner-interior {
-	background-color: rgba(0,0,0,0.20);
+	background-color: #e5e5a0;
 }
 .banner h1, .banner h2, .banner h3 { 
-	color: #f6f6e9;
+	color: #00583a;
 	margin-top: 50px;
 	margin-bottom: 18px;
 }
