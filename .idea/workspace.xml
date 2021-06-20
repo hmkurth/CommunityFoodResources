@@ -9,20 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="trying to edit styles...">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210619 2345.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210619 2351.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210620 0000.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="got some of my themes colors integrated into the css.">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/roundLogo250.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/sunLiteLogo2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210617 1546.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210617 1613.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210619 2254.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/banners.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/banners.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/banner.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/banner.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/indexMain.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/indexMain.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -421,14 +416,7 @@
       <workItem from="1620690530194" duration="14306000" />
       <workItem from="1621009133105" duration="65558000" />
       <workItem from="1623772266318" duration="26781000" />
-      <workItem from="1624137221218" duration="17562000" />
-    </task>
-    <task id="LOCAL-00090" summary="Now I can’t get data from the db in the foodPantryjsp…  I feel like I’ve tried everything, it’s just not picking up the search results set in the request param…  I tried putting it in a session variable…am I directing traffic wrong?? It seemed to work in the past exercises, I’m looking at all my past projects and last semesters stuff to find clues…  But it should work like the user display exercise….?????">
-      <created>1619759187398</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1619759187398</updated>
+      <workItem from="1624137221218" duration="28016000" />
     </task>
     <task id="LOCAL-00091" summary="foodPANTRY is WORKING!!!!">
       <created>1619905905218</created>
@@ -766,7 +754,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624164212288</updated>
     </task>
-    <option name="localTasksCounter" value="139" />
+    <task id="LOCAL-00139" summary="got some of my themes colors integrated into the css.">
+      <created>1624168198293</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1624168198293</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -789,7 +784,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added hibernate search dependencies to pom" />
     <MESSAGE value="&lt;property name=&quot;hibernate.search.backend.directory.root&quot;/&gt; in hibernate config" />
     <MESSAGE value="annotated location and food resources for hibernate search" />
     <MESSAGE value="updated CFRL database" />
@@ -814,7 +808,8 @@
     <MESSAGE value="finally got the add resource workable, still need to edit now that I figured out the problem" />
     <MESSAGE value="getting resource owner addition going..." />
     <MESSAGE value="trying to edit styles..." />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to edit styles..." />
+    <MESSAGE value="got some of my themes colors integrated into the css." />
+    <option name="LAST_COMMIT_MESSAGE" value="got some of my themes colors integrated into the css." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

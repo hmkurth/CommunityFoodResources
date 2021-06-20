@@ -46,17 +46,18 @@
 			</div>
 
 
-			<!-- trying to make a row for the headline name -->
-				<div class="container navbar-header">
+			<!-- trying to make a row for the headline name, only for use on index page
+			<c:if test="${ empty loggedInUser}">
+				<div class="container navbar-header banner">
 					<h2 class="text-center">Madison Community Food Resources</h2>
 				</div>
+			</c:if>
 
-
-
+-->
 
 				<div class="container">
 
-					<!-- Mobile hamburger style menu TODO check this-->
+					<!-- Mobile hamburger style menu -->
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top_main_navigation" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
@@ -65,10 +66,12 @@
                             <span class="icon-bar"></span>
                         </button>
 
-						<a class="navbar-brand pad-bottom" href="${pageContext.request.contextPath}/index.jsp">
-							<img src="${pageContext.request.contextPath}/assets/img/sunLiteLogo.png" class="img-circle img-pad  "
-								 alt="Back to home" />
-						</a>
+
+								<a class="navbar-brand pad-bottom" href="${pageContext.request.contextPath}/index.jsp">
+									<img src="${pageContext.request.contextPath}/assets/img/sunLiteLogo.png" class="img-circle "
+										 alt="Back to home" />
+								</a>
+
 					 </div>
 
 
