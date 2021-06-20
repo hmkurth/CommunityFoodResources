@@ -56,14 +56,14 @@
                         </button>
 
 						<a class="navbar-brand" href="${pageContext.request.contextPath}/index.jsp">
-							<img src="${pageContext.request.contextPath}/assets/img/sunLiteLogo.png" class="img-circle"
+							<img src="${pageContext.request.contextPath}/assets/img/sunLiteLogo.png" class="img-circle img-pad "
 								 alt="Back to home" />
 						</a>
 					 </div>
 
 
 				<!-- Main site header -->
-				<div class="collapse navbar-collapse" id="top_main_navigation">
+				<div class="collapse navbar-collapse  pull-right" id="top_main_navigation">
 				<ul class="nav navbar-nav">
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Food Resources<span class="caret"></span></a>
