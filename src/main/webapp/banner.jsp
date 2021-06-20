@@ -8,11 +8,11 @@
                 <div class="col-md-10 col-md-offset-1 text-center">
                     <h1>Welcome To Madison Food Resources</h1>
                     <!--TODO check if user is logged in before displaying -->
-<c:if test="${ empty loggedInUser}">
-                    <p><a href="userSignup.jsp" class="btn btn-primary btn-lg">Sign Up</a> <a href="loginAction" class="btn btn-default btn-lg">Sign In</a></p>
-</c:if>
+                          <c:if test="${ empty loggedInUser}">
+                             <p><a href="userSignup.jsp" class="btn btn-primary btn-lg">Sign Up</a> <a href="loginAction" class="btn btn-default btn-lg">Sign In</a></p>
+                        </c:if>
 
-    </div>
+                 </div>
             </div>
         </div>
     </div>

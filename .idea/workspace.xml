@@ -9,20 +9,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="finally got the add resource workable, still need to edit now that I figured out the problem">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210617 1336.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210617 1346.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210617 1350.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/ownerSuccess.jsp" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="getting resource owner addition going...">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210617 1524.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210617 1546.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210617 1613.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/Madison Food Resources Logo (11) - Shortcut.lnk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/mfrLogo9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/sunLiteLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/sunLogo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Journal.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Journal.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210615 1147.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210615 1152.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210615 1156.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210617 1336.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210617 1346.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210617 1350.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addResourceOwner.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addResourceOwner.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/banners.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/banners.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/banner.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/banner.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/head.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +111,7 @@
     <property name="database.data.extractors.current.id" value="SQL Inserts" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../accessibilityTemplates" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -151,15 +161,13 @@
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.Tomcat">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -422,14 +430,8 @@
       <workItem from="1620621464218" duration="10726000" />
       <workItem from="1620690530194" duration="14306000" />
       <workItem from="1621009133105" duration="65558000" />
-      <workItem from="1623772266318" duration="17658000" />
-    </task>
-    <task id="LOCAL-00087" summary="working on user signup, null values">
-      <created>1619716473461</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1619716473461</updated>
+      <workItem from="1623772266318" duration="26781000" />
+      <workItem from="1624137221218" duration="10845000" />
     </task>
     <task id="LOCAL-00088" summary="signup null error gone">
       <created>1619745931862</created>
@@ -767,7 +769,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623776863430</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="getting resource owner addition going...">
+      <created>1623956586263</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1623956586263</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -790,7 +799,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="refactored Generic Dao" />
     <MESSAGE value="updated lat and long to float(10,6)" />
     <MESSAGE value="added hibernate search dependencies to pom" />
     <MESSAGE value="&lt;property name=&quot;hibernate.search.backend.directory.root&quot;/&gt; in hibernate config" />
@@ -815,7 +823,8 @@
     <MESSAGE value="continuing with adding resource, may need to break up into smaller chunks" />
     <MESSAGE value="trying to refactor adding owner to be independent/reusable" />
     <MESSAGE value="finally got the add resource workable, still need to edit now that I figured out the problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="finally got the add resource workable, still need to edit now that I figured out the problem" />
+    <MESSAGE value="getting resource owner addition going..." />
+    <option name="LAST_COMMIT_MESSAGE" value="getting resource owner addition going..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -926,7 +935,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/webapp/head.jsp</url>
-          <line>5</line>
+          <line>6</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

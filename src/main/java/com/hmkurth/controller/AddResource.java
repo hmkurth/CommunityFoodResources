@@ -136,8 +136,9 @@ public class AddResource extends HttpServlet {
         String x = req.getParameter("submit");
         if(x!=null && x.equals("confirm")) {
             //add to db now and give option to add location, contacts, owner ala carte
-            fdao.insert(resource);//getting null pointer error because i need to locations and contacts??  what if i just don't save or update untill all infor is added?
+           // fdao.insert(resource);  changing this to just save the resource in the request and add later, due to foreign key restraints
             session.setAttribute("newResourceId", resource.getId());
+            req.setAttribute("newResource", resource);
             //forward this resource id to add owner, contact, or location servlets
 
 

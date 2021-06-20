@@ -18,7 +18,7 @@
                 <select name="owner" id="owner">
                     <!-- option to add new first, then if yes, another menu for adding owner should appear-->
                     <option value='9999'>Add New Owner</option>
-                    <option value='8888'>There is no specific owner</option>
+                    <option value='8888'>There is no specific owner or the owner wishes to remain private</option>
                     <c:forEach items="${listOwner}" var="owner">
                         <option value='${owner.id}'<c:if test="${owner.id eq selectedOwnerId}">selected="selected"</c:if>
                         > owner name:${owner.name}</option>

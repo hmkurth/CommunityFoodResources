@@ -43,11 +43,11 @@ public class AddResourceOwner extends HttpServlet {
      */
     public void doGet(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
-        HttpSession session  = req.getSession();
-        fdao = new GenericDao<>(FoodResource.class);
+        HttpSession session = req.getSession();
+
         int resourceId = (int) session.getAttribute("newResourceId");
-        resource = fdao.getById(resourceId);
-       logger.debug("This food resource in doget: " + resource.getName());
+        resource = (FoodResource) req.getAttribute("newResource"); //get the unsaved resource from the previous request
+        logger.debug("This food resource in doget: " + resource.getName());
         RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/addResourceOwner.jsp");
         dispatcher.forward(req, res);
 
@@ -56,45 +56,60 @@ public class AddResourceOwner extends HttpServlet {
     /**
      * Handles HTTP POST requests.
      *
-     * @param req  the HttpServletRequest object
+     * @param req the HttpServletRequest object
      * @param res the HttpServletResponse object
      * @throws ServletException if there is a Servlet failure
      * @throws IOException      if there is an IO failure
      **/
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-
-        HttpSession session  = req.getSession();
+//todo, clean up duplicate code!
+        HttpSession session = req.getSession();
         String url;
+        ResourceOwner thisOwner;
+        resource = (FoodResource) req.getAttribute("newResource"); //get the unsaved resource from the previous request
+        fdao = new GenericDao<>(FoodResource.class);
         odao = new GenericDao<>(ResourceOwner.class);
-        int ownerId = Integer.parseInt(req.getParameter("owner"));
-        req.setAttribute("selectedOwnerId", ownerId);
+        String ownerId = req.getParameter("owner");//nul pointer
+        int ownerInt = Integer.parseInt(req.getParameter("owner"));
+        req.setAttribute("selectedOwnerId", ownerId);//do i still need?
 //set the owner
-        if(ownerId == 9999) {
-            /*new owner to add, jsp should display additional fields
-            ResourceOwner newOwner = new ResourceOwner();
-           newOwner.setName(req.getParameter("name"));
-            newOwner.setWebsite(req.getParameter("website"));
-            odao.saveOrUpdate(newOwner);
-*/
+        if (ownerInt == 9999) {
+            //new owner to add, jsp should display additional fields after the first submit is processed, so redirect
             url = "/admin/addResourceOwner.jsp";
-        } else if(ownerId == 8888) {
-            //no resource owner for this resource
-            resource.setOwner(null);
+        } else if (ownerInt == 8888) {
+            //resource is private, default set in database, id = 8888
+            thisOwner= odao.getById(8888);
+            resource.setOwner(thisOwner);//null pointer
             String message = "you have successfully added " + resource.getOwner().getName() + " to the resource " + resource.getName();
             session.setAttribute("successMessage", message);
-            url= "/admin/ownerSuccess.jsp";
+            url = "/admin/ownerSuccess.jsp";
         } else {
             //choose an existing owner from the list
-            resource.setOwner(odao.getById(ownerId));
+            thisOwner = odao.getById(ownerInt);
+            resource.setOwner(thisOwner);
             String message = "you have successfully added " + resource.getOwner().getName() + " to the resource " + resource.getName();
             session.setAttribute("successMessage", message);
             logger.debug("chose an existing owner: " + resource.getOwner().toString());
-            url= "/admin/ownerSuccess.jsp";
+            url = "/admin/ownerSuccess.jsp";
+        }
+
+        //if new owner is selected, now grab details from the second form
+        String x = req.getParameter("submit2");
+        if ((ownerInt == 9999) && x != null && x.equals("Next")) {
+            thisOwner = new ResourceOwner();
+            thisOwner.setName(req.getParameter("name"));
+            thisOwner.setWebsite(req.getParameter("website"));
+            odao.insert(thisOwner);
+            resource.setOwner(thisOwner);
+            String message = "you have successfully added " + resource.getOwner().getName() + " to the resource " + resource.getName();
+            session.setAttribute("successMessage", message);
+            url = "/admin/ownerSuccess.jsp";
         }
 
         RequestDispatcher dispatcher = req.getRequestDispatcher(url);
         dispatcher.forward(req, res);
+
 
     }
 }
