@@ -1336,3 +1336,7 @@
 [DEBUG] 2021-06-17 16:13:10.321 [http-nio-8080-exec-5] GenericDao - in get ALL [Type(id=1, name=food pantry), Type(id=2, name=free little pantry), Type(id=3, name=community_fridge), Type(id=4, name=meal), Type(id=5, name=government resource), Type(id=6, name=community aid and support groups), Type(id=7, name=other)]
 [DEBUG] 2021-06-17 16:13:10.321 [http-nio-8080-exec-5] AddResource - list type : [Type(id=1, name=food pantry), Type(id=2, name=free little pantry), Type(id=3, name=community_fridge), Type(id=4, name=meal), Type(id=5, name=government resource), Type(id=6, name=community aid and support groups), Type(id=7, name=other)]
 [DEBUG] 2021-06-19 22:54:49.907 [http-nio-8080-exec-3] GenericDao - in get ALL []
+[DEBUG] 2021-06-19 23:45:26.094 [http-nio-8080-exec-3] GenericDao - in get ALL []
+[DEBUG] 2021-06-19 23:51:28.526 [http-nio-8080-exec-5] GenericDao - in get ALL []
+[DEBUG] 2021-06-20 00:00:42.088 [http-nio-8080-exec-3] GenericDao - in get ALL []
+[DEBUG] 2021-06-20 00:05:34.746 [http-nio-8080-exec-8] GenericDao - in get ALL []

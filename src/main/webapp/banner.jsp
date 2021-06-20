@@ -1,7 +1,7 @@
 <%@include file="/taglib.jsp"%>
 
 <!--Banner-->
-<div class="banner home-1"  data-type="background" data-speed="4">
+<div class="banner home-1 pad-top"  data-type="background" data-speed="4">
     <div class="banner-interior">
         <div class="container short">
             <div class="row">

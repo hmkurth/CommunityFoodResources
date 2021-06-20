@@ -44,7 +44,7 @@ h3 {
 }
 h4 {
 	font-size: 18px;
-	color: #00583a;
+	color:  #401905;
 }
 h5 {
 	font-size: 18px;
@@ -69,7 +69,7 @@ blockquote {
 	border-radius: 0;
 }
 a {
-	color: #137e91;
+	color:   #401905;
 }
 
 /* This is a fix for alignment if ul elements are placed adjacent to floated image */
@@ -279,14 +279,14 @@ a {
 	background-color: transparent;
 }
 .navbar-default .navbar-toggle > .icon-bar {
-	background-color: #1d7151;
+	background-color:  #401905;
 }
 .navbar-default .navbar-brand {
 	margin-right: 60px;
 	padding-top: 22px;
 }
 .navbar-default .navbar-brand img {
-	max-width: 150px;
+	max-width: 100px;
 }
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
 	max-height: 500px;
@@ -310,7 +310,7 @@ a {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
 	background-color: transparent;
-	color: #1d7151;
+	color:  #401905;
 }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
 	background-color: #f2f2f2;

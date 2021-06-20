@@ -44,7 +44,17 @@
 					</div>
 				</div>
 			</div>
-					<div class="container">
+
+
+			<!-- trying to make a row for the headline name -->
+				<div class="container navbar-header">
+					<h2 class="text-center">Madison Community Food Resources</h2>
+				</div>
+
+
+
+
+				<div class="container">
 
 					<!-- Mobile hamburger style menu TODO check this-->
 					<div class="navbar-header">
@@ -55,8 +65,8 @@
                             <span class="icon-bar"></span>
                         </button>
 
-						<a class="navbar-brand" href="${pageContext.request.contextPath}/index.jsp">
-							<img src="${pageContext.request.contextPath}/assets/img/sunLiteLogo.png" class="img-circle img-pad "
+						<a class="navbar-brand pad-bottom" href="${pageContext.request.contextPath}/index.jsp">
+							<img src="${pageContext.request.contextPath}/assets/img/sunLiteLogo.png" class="img-circle img-pad  "
 								 alt="Back to home" />
 						</a>
 					 </div>
@@ -64,7 +74,7 @@
 
 				<!-- Main site header -->
 				<div class="collapse navbar-collapse  pull-right" id="top_main_navigation">
-				<ul class="nav navbar-nav">
+				<ul class="nav navbar-nav  pull-right">
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Food Resources<span class="caret"></span></a>
 							<ul class="dropdown-menu">
