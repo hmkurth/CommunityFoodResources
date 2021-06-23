@@ -2,14 +2,12 @@
 <jsp:include page="../head.jsp" />
 <jsp:include page="../header.jsp"/>
 
-<body class="login-bg">
 
-<div class="login-container">
-    <h1 class="text-center pad-bottom-sm">Add A Location For A Resource</h1>
-    <!--TODO display list of resources?? or how to determine what resource it is for... -->
-
-
-    <!--TODO form verification!  -->
+<h2>${message} </h2>
+<h3>Would You like to add a location for this resource?</h3>
+//yes or no, if yes, show form, if, no, move on to ask about contacts
+<div class="login-bg">
+<!--TODO form verification!  -->
 
     <form action="${pageContext.request.contextPath}/addLocation"  method="post" autocomplete="on">
         <!--get the food resource to add location to -->

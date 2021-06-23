@@ -40,7 +40,7 @@ public class AddResourceOwner extends HttpServlet {
      * @param res the HttpServletResponse object
      * @throws ServletException if there is a Servlet failure
      * @throws IOException      if there is an IO failure
-     */
+
     public void doGet(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
         HttpSession session = req.getSession();
@@ -52,7 +52,7 @@ public class AddResourceOwner extends HttpServlet {
         dispatcher.forward(req, res);
 
     }
-
+     */
     /**
      * Handles HTTP POST requests.
      *
@@ -86,17 +86,17 @@ public class AddResourceOwner extends HttpServlet {
                 thisOwner= odao.getById(8888);
                 logger.debug("thisOwner before setting to resource: " + thisOwner);
                 resource.setOwner(thisOwner);
-                String message = "you have successfully added " + resource.getOwner().getName() + " to the resource " + resource.getName();
+                String message = "you have successfully added the owner," + resource.getOwner().getName() + " to the resource " + resource.getName();
                 session.setAttribute("successMessage", message);
-                url = "/admin/ownerSuccess.jsp";
+                url = "/admin/addLocation.jsp";
             } else {
                 //choose an existing owner from the list
                 thisOwner = odao.getById(ownerInt);
                 resource.setOwner(thisOwner);
-                String message = "you have successfully added " + resource.getOwner().getName() + " to the resource " + resource.getName();
+                String message = "you have successfully added the owner, " + resource.getOwner().getName() + " to the resource " + resource.getName();
                 session.setAttribute("successMessage", message);
                 logger.debug("chose an existing owner: " + resource.getOwner().toString());
-                url = "/admin/ownerSuccess.jsp";
+                url = "/admin/addLocation.jsp";
             }//end else
         }//end if int not null, todo what if it is null can it be null if they hit submit??
 
@@ -110,9 +110,9 @@ public class AddResourceOwner extends HttpServlet {
             thisOwner.setWebsite(req.getParameter("website"));
             odao.insert(thisOwner);
             resource.setOwner(thisOwner);
-            String message = "you have successfully added " + resource.getOwner().getName() + " to the resource " + resource.getName();
-            session.setAttribute("successMessage", message);
-            url = "/admin/ownerSuccess.jsp";
+            String message = "you have successfully added the owner" + resource.getOwner().getName() + " to the resource " + resource.getName() + ". " ;
+            session.setAttribute("message", message);
+            url = "/admin/addLocation.jsp";
         }
 
         RequestDispatcher dispatcher = req.getRequestDispatcher(url);
