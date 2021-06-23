@@ -5,6 +5,7 @@
 <jsp:include page="../header.jsp" />
 
 <!-- Image row NEW MARKUP -->
+<div class="container">
 <h3>${message}</h3>
 <div class="row text-center">
 
@@ -55,4 +56,4 @@
     </a>
 </div>
 </div>
-
+</div>

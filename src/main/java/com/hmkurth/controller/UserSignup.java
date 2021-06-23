@@ -54,11 +54,9 @@ public class UserSignup extends HttpServlet {
         }
         else {
             //add the user to the database
-            // TODO check if user is already in the database, name, username, and email
             GenericDao<User> dao = new GenericDao<>(User.class);
             //check if user name exists
             List userExists =  dao.getPropertyByName("userName", thisUserName);
-            logger.debug("list of username that are the same: " + userExists);
             if (userExists.isEmpty()) {
                 user.setUserName(thisUserName);
                 user.setFirstName(thisFirstName);
@@ -66,7 +64,6 @@ public class UserSignup extends HttpServlet {
                 user.setPassword(req.getParameter("password"));
                 //TODO validate email address
                 user.setEmail(req.getParameter("email"));
-                logger.debug("Adding User: " + user);
                 UserRoles role = new UserRoles();
                 role.setUser(user);
                 role.setUserName(user.getUserName());
@@ -74,14 +71,11 @@ public class UserSignup extends HttpServlet {
                 role.setRoleName("user");
                 user.addRole(role);
                 dao.insert(user);
-                logger.debug("Adding Username: " + user.getUserName());
-
                 RequestDispatcher dispatcher = req.getRequestDispatcher("signUpSuccess.jsp");
                 dispatcher.forward(req, resp);
             } else {
                 req.setAttribute("errorMessage", "That user name is already in use, please try another variation");
             }
-
 
             RequestDispatcher dispatcher = req.getRequestDispatcher("/userSignup.jsp");
             dispatcher.forward(req, resp);

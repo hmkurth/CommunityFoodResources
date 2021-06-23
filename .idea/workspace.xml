@@ -9,19 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="trying to add some error handling to delete user,">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210623 1632.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210623 1635.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210623 1638.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="username validation done">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210623 1648.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210623 1823.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210623 1358.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210623 1401.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210623 1514.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210623 1635.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210623 1638.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/UserSignup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/UserSignup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/deleteUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/deleteUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/userSignup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/userSignup.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/adminHome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/adminHome.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -423,14 +423,7 @@
       <workItem from="1621009133105" duration="65558000" />
       <workItem from="1623772266318" duration="26781000" />
       <workItem from="1624137221218" duration="36130000" />
-      <workItem from="1624413567641" duration="20278000" />
-    </task>
-    <task id="LOCAL-00099" summary="still working on delete, trying to add some confirmation, not working yet">
-      <created>1620012708740</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1620012708755</updated>
+      <workItem from="1624413567641" duration="26382000" />
     </task>
     <task id="LOCAL-00100" summary="adding an addLocation jsp and servlet, still need to incorporate api to extract long and lat">
       <created>1620019968590</created>
@@ -768,7 +761,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624480629077</updated>
     </task>
-    <option name="localTasksCounter" value="148" />
+    <task id="LOCAL-00148" summary="username validation done">
+      <created>1624485327749</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1624485327749</updated>
+    </task>
+    <option name="localTasksCounter" value="149" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -791,7 +791,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="cleaning up code" />
     <MESSAGE value="still trying to get location search to work" />
     <MESSAGE value="ready for presentation" />
     <MESSAGE value="updated timelog, changed war for aws deploy, couldn't deploy, updated sql on aws" />
@@ -816,7 +815,8 @@
     <MESSAGE value="Well, it isn’t pretty, definitely needs some cleaning up, but adding the owner works!" />
     <MESSAGE value="refactoring" />
     <MESSAGE value="trying to add some error handling to delete user," />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to add some error handling to delete user," />
+    <MESSAGE value="username validation done" />
+    <option name="LAST_COMMIT_MESSAGE" value="username validation done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

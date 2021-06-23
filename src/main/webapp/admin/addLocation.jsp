@@ -1,14 +1,30 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <jsp:include page="../taglib.jsp" />
 <jsp:include page="../head.jsp" />
 <jsp:include page="../header.jsp"/>
 
+<h3 class = "row text-center warning">This resources has not yet been added, we just need a little more information</h3>
+<h3 class = "row text-center">${message} </h3>
 
-<h2>${message} </h2>
-<h3>Would You like to add a location for this resource?</h3>
-//yes or no, if yes, show form, if, no, move on to ask about contacts
-<div class="login-bg">
-<!--TODO form verification!  -->
+<div class="container pad">
 
+    <form action="${pageContext.request.contextPath}/addLocation"  method="post" autocomplete="on">
+        <div class="form-group">
+            <label  for="nextOptions">What would you like to do next?
+                <select name="nextOptions" id="nextOptions">
+                    <option value='noLocation'>There is no specific location for this resource, go to add contacts</option>
+                    <option value='addLocation'>Add A Location</option>
+
+                </select>
+
+            </label>
+
+            <input type="submit" class="btn btn-primary btn-lg"  name="submit" value="Next">
+
+        </div>
+    </form>
+</div>
+<c:if test="${param.nextOptions.equals('addLocation')}"  >
     <form action="${pageContext.request.contextPath}/addLocation"  method="post" autocomplete="on">
         <!--get the food resource to add location to -->
         <div class="form-group">
@@ -51,10 +67,10 @@
 
 
         <hr />
-        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+        <button type="submit" name ="submit2" value = "Add Location" class="btn btn-primary btn-lg">Submit</button>
     </form>
 
-
+</c:if>
 
 
 </div>
