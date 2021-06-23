@@ -7,7 +7,7 @@
 <div class="login-container">
     <h1 class="text-center pad-bottom-sm">Register</h1>
 
-
+<h2>${errorMessage}</h2>
 <!--TODO form verification! auto complete attribute -->
 
     <form action="${pageContext.request.contextPath}/userSignup"  method="post" autocomplete="on">

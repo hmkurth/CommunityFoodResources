@@ -48,7 +48,7 @@
     <input type="submit" name="submit" class="btn btn-primary btn-lg" value="Submit">
 </form>
 </c:if>
-
+<h2 class="warning">${errorMessage}</h2>
 
 <!-- if submit was pushed, display message only show confirm delete if submit is not null-->
 <c:if test="${param.submit != null}" >
