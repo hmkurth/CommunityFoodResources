@@ -6,12 +6,16 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Owner success</title>
-</head>
+
+<%@include file="../taglib.jsp"%>
+
+<jsp:include page="../head.jsp"/>
+<jsp:include page="../header.jsp"/>
+<title>Add Qwner Success</title>
+<!--TODO show user the added location and resource, maybe confirm? -->
 <body>
 <h1>owner added success
-${successMessage}</h1>
+    ${successMessage}</h1>
 </body>
-</html>
+
+<jsp:include page="../footer.jsp"/>

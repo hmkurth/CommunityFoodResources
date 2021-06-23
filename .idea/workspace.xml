@@ -9,12 +9,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="looking a little better...">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/bootstrap/unminifyed.css" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="styled some of the minified css and reminified">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210620 0005.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210622 1958.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210622 2007.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Journal.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Journal.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/bootstrap/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/bootstrap/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210619 2345.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210619 2351.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210620 0000.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/ownerSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/ownerSuccess.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/bootstrap/unminifyed.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -413,14 +421,7 @@
       <workItem from="1620690530194" duration="14306000" />
       <workItem from="1621009133105" duration="65558000" />
       <workItem from="1623772266318" duration="26781000" />
-      <workItem from="1624137221218" duration="32005000" />
-    </task>
-    <task id="LOCAL-00093" summary="Got delete working, needs some finesse, but it works.">
-      <created>1619929632302</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1619929632303</updated>
+      <workItem from="1624137221218" duration="34274000" />
     </task>
     <task id="LOCAL-00094" summary="updating journal, etc">
       <created>1619930552090</created>
@@ -758,7 +759,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624180083474</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="styled some of the minified css and reminified">
+      <created>1624409353938</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1624409353938</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -781,7 +789,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="annotated location and food resources for hibernate search" />
     <MESSAGE value="updated CFRL database" />
     <MESSAGE value="location search params in place, ready to test" />
     <MESSAGE value="in testing, not sure about results coming back.." />
@@ -806,7 +813,8 @@
     <MESSAGE value="trying to edit styles..." />
     <MESSAGE value="got some of my themes colors integrated into the css." />
     <MESSAGE value="looking a little better..." />
-    <option name="LAST_COMMIT_MESSAGE" value="looking a little better..." />
+    <MESSAGE value="styled some of the minified css and reminified" />
+    <option name="LAST_COMMIT_MESSAGE" value="styled some of the minified css and reminified" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

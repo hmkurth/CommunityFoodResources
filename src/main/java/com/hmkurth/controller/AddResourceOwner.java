@@ -67,11 +67,13 @@ public class AddResourceOwner extends HttpServlet {
         HttpSession session = req.getSession();
         String url;
         ResourceOwner thisOwner;
-        resource = (FoodResource) req.getAttribute("newResource"); //get the unsaved resource from the previous request
-        fdao = new GenericDao<>(FoodResource.class);
-        odao = new GenericDao<>(ResourceOwner.class);
+        resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
+        logger.info("forwarded food resource = " + resource);
+        fdao = new GenericDao<FoodResource>(FoodResource.class);
+        odao = new GenericDao<ResourceOwner>(ResourceOwner.class);
         String ownerId = req.getParameter("owner");//nul pointer
         int ownerInt = Integer.parseInt(req.getParameter("owner"));
+        logger.debug("ownerInt = : " + ownerInt);
         req.setAttribute("selectedOwnerId", ownerId);//do i still need?
 //set the owner
         if (ownerInt == 9999) {
@@ -80,6 +82,7 @@ public class AddResourceOwner extends HttpServlet {
         } else if (ownerInt == 8888) {
             //resource is private, default set in database, id = 8888
             thisOwner= odao.getById(8888);
+            logger.debug("thisOwner before setting to resource: " + thisOwner);
             resource.setOwner(thisOwner);//null pointer
             String message = "you have successfully added " + resource.getOwner().getName() + " to the resource " + resource.getName();
             session.setAttribute("successMessage", message);

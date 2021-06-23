@@ -138,7 +138,7 @@ public class AddResource extends HttpServlet {
             //add to db now and give option to add location, contacts, owner ala carte
            // fdao.insert(resource);  changing this to just save the resource in the request and add later, due to foreign key restraints
             session.setAttribute("newResourceId", resource.getId());
-            req.setAttribute("newResource", resource);
+           session.setAttribute("newResource", resource);
             //forward this resource id to add owner, contact, or location servlets
 
 
