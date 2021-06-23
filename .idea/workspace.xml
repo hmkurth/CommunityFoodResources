@@ -9,14 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="working on ownerSuccess.jsp">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210622 2022.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210622 2037.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="working on owner integer problem">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210622 2049.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210622 2105.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210620 0005.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210622 1958.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210622 2007.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210622 2022.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/ownerSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/ownerSuccess.jsp" afterDir="false" />
     </list>
@@ -147,17 +147,6 @@
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.Tomcat">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="All in CommunityFoodResources" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <option name="PACKAGE_NAME" value="" />
@@ -417,14 +406,8 @@
       <workItem from="1620690530194" duration="14306000" />
       <workItem from="1621009133105" duration="65558000" />
       <workItem from="1623772266318" duration="26781000" />
-      <workItem from="1624137221218" duration="36068000" />
-    </task>
-    <task id="LOCAL-00095" summary="changed the type entity to have a set of resources.">
-      <created>1619935124349</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1619935124380</updated>
+      <workItem from="1624137221218" duration="36130000" />
+      <workItem from="1624413567641" duration="611000" />
     </task>
     <task id="LOCAL-00096" summary="type is now displaying">
       <created>1619936469254</created>
@@ -762,7 +745,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624411647603</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="working on owner integer problem">
+      <created>1624413453260</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1624413453260</updated>
+    </task>
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -785,7 +775,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="location search params in place, ready to test" />
     <MESSAGE value="in testing, not sure about results coming back.." />
     <MESSAGE value="i can't figure out how to get the Ljava.lang.Object that is being returned from the query to display, tried using Arrays.deepToString(arrayOfObjects)," />
     <MESSAGE value="cleaning up controllers" />
@@ -810,7 +799,8 @@
     <MESSAGE value="looking a little better..." />
     <MESSAGE value="styled some of the minified css and reminified" />
     <MESSAGE value="working on ownerSuccess.jsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on ownerSuccess.jsp" />
+    <MESSAGE value="working on owner integer problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on owner integer problem" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

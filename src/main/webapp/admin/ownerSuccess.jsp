@@ -12,10 +12,10 @@
 <jsp:include page="../head.jsp"/>
 <jsp:include page="../header.jsp"/>
 <title>Add Qwner Success</title>
-<!--TODO show user the added location and resource, maybe confirm? -->
+<!--TODO show user the added location and resource, maybe confirm? link  to home-->
 <body>
-<h1>owner added success
-    ${successMessage}</h1>
+<h3>
+    ${successMessage}</h3>
 
 </body>
 

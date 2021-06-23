@@ -65,7 +65,7 @@ public class AddResourceOwner extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 //todo, clean up duplicate code!
         HttpSession session = req.getSession();
-        String url;
+        String url = null;
         ResourceOwner thisOwner;
         resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
         logger.info("forwarded food resource = " + resource);
@@ -74,38 +74,39 @@ public class AddResourceOwner extends HttpServlet {
         String ownerId = req.getParameter("owner");
         req.setAttribute("selectedOwnerId", ownerId);//for selection in the dropdown menu
         if(ownerId != null) {
-           int ownerInt = Integer.parseInt(ownerId)
+           int ownerInt = Integer.parseInt(ownerId);
             logger.debug("ownerInt = : " + ownerInt);
-        }
+
+            //set the owner
+            if (ownerInt == 9999) {
+                //new owner to add, jsp should display additional fields after the first submit is processed, so redirect
+                url = "/admin/addResourceOwner.jsp";
+            } else if (ownerInt == 8888) {
+                //resource is private, default set in database, id = 8888
+                thisOwner= odao.getById(8888);
+                logger.debug("thisOwner before setting to resource: " + thisOwner);
+                resource.setOwner(thisOwner);
+                String message = "you have successfully added " + resource.getOwner().getName() + " to the resource " + resource.getName();
+                session.setAttribute("successMessage", message);
+                url = "/admin/ownerSuccess.jsp";
+            } else {
+                //choose an existing owner from the list
+                thisOwner = odao.getById(ownerInt);
+                resource.setOwner(thisOwner);
+                String message = "you have successfully added " + resource.getOwner().getName() + " to the resource " + resource.getName();
+                session.setAttribute("successMessage", message);
+                logger.debug("chose an existing owner: " + resource.getOwner().toString());
+                url = "/admin/ownerSuccess.jsp";
+            }//end else
+        }//end if int not null, todo what if it is null can it be null if they hit submit??
 
 
-//set the owner
-        if (ownerInt == 9999) {
-            //new owner to add, jsp should display additional fields after the first submit is processed, so redirect
-            url = "/admin/addResourceOwner.jsp";
-        } else if (ownerInt == 8888) {
-            //resource is private, default set in database, id = 8888
-            thisOwner= odao.getById(8888);
-            logger.debug("thisOwner before setting to resource: " + thisOwner);
-            resource.setOwner(thisOwner);
-            String message = "you have successfully added " + resource.getOwner().getName() + " to the resource " + resource.getName();
-            session.setAttribute("successMessage", message);
-            url = "/admin/ownerSuccess.jsp";
-        } else {
-            //choose an existing owner from the list
-            thisOwner = odao.getById(ownerInt);
-            resource.setOwner(thisOwner);
-            String message = "you have successfully added " + resource.getOwner().getName() + " to the resource " + resource.getName();
-            session.setAttribute("successMessage", message);
-            logger.debug("chose an existing owner: " + resource.getOwner().toString());
-            url = "/admin/ownerSuccess.jsp";
-        }
 
         //if new owner is selected, now grab details from the second form
         String x = req.getParameter("submit2");
-        if ((ownerInt == 9999) && x != null && x.equals("Next")) {
+        if ( x != null && x.equals("Next")) {
             thisOwner = new ResourceOwner();
-            thisOwner.setName(req.getParameter("name"));
+            thisOwner.setName(req.getParameter("ownerName"));
             thisOwner.setWebsite(req.getParameter("website"));
             odao.insert(thisOwner);
             resource.setOwner(thisOwner);
