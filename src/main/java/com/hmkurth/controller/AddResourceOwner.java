@@ -87,14 +87,14 @@ public class AddResourceOwner extends HttpServlet {
                 logger.debug("thisOwner before setting to resource: " + thisOwner);
                 resource.setOwner(thisOwner);
                 String message = "you have successfully added the owner," + resource.getOwner().getName() + " to the resource " + resource.getName();
-                session.setAttribute("successMessage", message);
+                session.setAttribute("message", message);
                 url = "/admin/addLocation.jsp";
             } else {
                 //choose an existing owner from the list
                 thisOwner = odao.getById(ownerInt);
                 resource.setOwner(thisOwner);
                 String message = "you have successfully added the owner, " + resource.getOwner().getName() + " to the resource " + resource.getName();
-                session.setAttribute("successMessage", message);
+                session.setAttribute("message", message);
                 logger.debug("chose an existing owner: " + resource.getOwner().toString());
                 url = "/admin/addLocation.jsp";
             }//end else

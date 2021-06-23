@@ -50,11 +50,15 @@ public class DeleteUser extends HttpServlet {
         //check for null to get integer?
         if (idToDelete != null) {
             id = Integer.parseInt(idToDelete);
-            userToDelete = (User) dao.getById(id);
-            //set the user to delete in a session or req variable to forward to the Delete Action Servlet, since it seems like I can't do it all here
-            session.setAttribute("userToDelete", userToDelete);
-            req.setAttribute("userToDelete", userToDelete);
-            logger.debug("user id to delete: " + id);
+            //make sure that it is a valid id number
+            User retrievedUser = (User) dao.getById(id);
+            if (retrievedUser != null) {
+                userToDelete = (User) dao.getById(id);
+                //set the user to delete in a session or req variable to forward to the Delete Action Servlet, since it seems like I can't do it all here
+                session.setAttribute("userToDelete", userToDelete);
+                req.setAttribute("userToDelete", userToDelete);
+                logger.debug("user id to delete: " + id);
+
 
             // confirm delete make a message/popup? Redirect to ???  make sure the id is a valid user id
             if (req.getParameter("submit") != null) {
@@ -66,9 +70,16 @@ public class DeleteUser extends HttpServlet {
                 dispatcher.forward(req, resp);
             }
 
+            } else {
+                //error message todo
+                String errorMessage = "That is not a valid user id, try again";
+                req.setAttribute("errorMessage", errorMessage);
+
+            }
 
         }
-
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/deleteUser.jsp");
+        dispatcher.forward(req, resp);
 
     }
 

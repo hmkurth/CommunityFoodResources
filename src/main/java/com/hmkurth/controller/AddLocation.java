@@ -14,6 +14,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
@@ -42,6 +43,11 @@ public class AddLocation extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         GenericDao dao = new GenericDao(Location.class);
         GenericDao fdao = new GenericDao(FoodResource.class);
+        HttpSession session = req.getSession();
+
+        FoodResource resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
+
+        //do they want to add a location to this resource? if not continue to contacts
 
         Location location = new Location();
         location.setNameDesc(req.getParameter("nameDesc"));
@@ -54,10 +60,6 @@ public class AddLocation extends HttpServlet {
 
 
         logger.debug("Adding Location: " + location);
-        //TODO connect to food resource that it references, need an id...
-        String resourceId = req.getParameter("resourceId");
-        int id =Integer.parseInt(resourceId);
-        FoodResource resource = (FoodResource) fdao.getById(id);
 
         logger.debug("Adding resource to location, resource= : " + resource.toString());
 
