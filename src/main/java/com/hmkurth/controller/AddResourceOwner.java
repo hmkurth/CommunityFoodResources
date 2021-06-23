@@ -71,10 +71,14 @@ public class AddResourceOwner extends HttpServlet {
         logger.info("forwarded food resource = " + resource);
         fdao = new GenericDao<FoodResource>(FoodResource.class);
         odao = new GenericDao<ResourceOwner>(ResourceOwner.class);
-        String ownerId = req.getParameter("owner");//nul pointer
-        int ownerInt = Integer.parseInt(req.getParameter("owner"));
-        logger.debug("ownerInt = : " + ownerInt);
-        req.setAttribute("selectedOwnerId", ownerId);//do i still need?
+        String ownerId = req.getParameter("owner");
+        req.setAttribute("selectedOwnerId", ownerId);//for selection in the dropdown menu
+        if(ownerId != null) {
+           int ownerInt = Integer.parseInt(ownerId)
+            logger.debug("ownerInt = : " + ownerInt);
+        }
+
+
 //set the owner
         if (ownerInt == 9999) {
             //new owner to add, jsp should display additional fields after the first submit is processed, so redirect
@@ -83,7 +87,7 @@ public class AddResourceOwner extends HttpServlet {
             //resource is private, default set in database, id = 8888
             thisOwner= odao.getById(8888);
             logger.debug("thisOwner before setting to resource: " + thisOwner);
-            resource.setOwner(thisOwner);//null pointer
+            resource.setOwner(thisOwner);
             String message = "you have successfully added " + resource.getOwner().getName() + " to the resource " + resource.getName();
             session.setAttribute("successMessage", message);
             url = "/admin/ownerSuccess.jsp";

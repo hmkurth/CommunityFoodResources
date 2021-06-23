@@ -9,20 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="styled some of the minified css and reminified">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210620 0005.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210622 1958.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210622 2007.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="working on ownerSuccess.jsp">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210622 2022.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210622 2037.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210619 2345.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210619 2351.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210620 0000.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210620 0005.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210622 1958.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/ownerSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/ownerSuccess.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/bootstrap/unminifyed.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -421,14 +417,7 @@
       <workItem from="1620690530194" duration="14306000" />
       <workItem from="1621009133105" duration="65558000" />
       <workItem from="1623772266318" duration="26781000" />
-      <workItem from="1624137221218" duration="34274000" />
-    </task>
-    <task id="LOCAL-00094" summary="updating journal, etc">
-      <created>1619930552090</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1619930552090</updated>
+      <workItem from="1624137221218" duration="36068000" />
     </task>
     <task id="LOCAL-00095" summary="changed the type entity to have a set of resources.">
       <created>1619935124349</created>
@@ -766,7 +755,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624409353938</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="working on ownerSuccess.jsp">
+      <created>1624411647603</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1624411647603</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -789,7 +785,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="updated CFRL database" />
     <MESSAGE value="location search params in place, ready to test" />
     <MESSAGE value="in testing, not sure about results coming back.." />
     <MESSAGE value="i can't figure out how to get the Ljava.lang.Object that is being returned from the query to display, tried using Arrays.deepToString(arrayOfObjects)," />
@@ -814,7 +809,8 @@
     <MESSAGE value="got some of my themes colors integrated into the css." />
     <MESSAGE value="looking a little better..." />
     <MESSAGE value="styled some of the minified css and reminified" />
-    <option name="LAST_COMMIT_MESSAGE" value="styled some of the minified css and reminified" />
+    <MESSAGE value="working on ownerSuccess.jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on ownerSuccess.jsp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
