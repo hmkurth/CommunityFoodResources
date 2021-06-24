@@ -48,7 +48,7 @@ public class AddLocation extends HttpServlet {
         String url = "admin/addLocation.jsp";
 
         FoodResource resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
-logger.debug("food resource at add location do post");
+        logger.debug("food resource at add location do post: " + resource);
         //do they want to add a location to this resource? if not continue to contacts
         String x = req.getParameter("submit");
 
@@ -57,52 +57,53 @@ logger.debug("food resource at add location do post");
             if (req.getParameter("nextOptions").equals("noLocation")) {
                 //no location, set null? do i need to actually set it??
                 //resource.setLocation(null);
+                String message = "you have chosen not to add an location to the resource " + resource.getName();
+                session.setAttribute("message", message);
                 logger.debug("resource location set to null");
                 //then forward to addContacts
                 url = "/admin/addContact.jsp";
+            }
+        }
 
-            } else { //forward, and next form will be shown
-                RequestDispatcher dispatcher = req.getRequestDispatcher(url);
-                dispatcher.forward(req, resp);
+        String x2 = req.getParameter("submit2");
+        if (x2 != null) {
+            logger.debug("in submit2 block");
+            //add a new location
+            Location location = new Location();
+            Location location2 = new Location();//location after mapping
+            location.setNameDesc(req.getParameter("nameDesc"));
+            location.setStreetAddressOrIntersection(req.getParameter("streetAddressOrIntersection"));
+            location.setCity(req.getParameter("city"));
+            location.setState(req.getParameter("state"));
+            location.setZip(req.getParameter("zip"));
+            location.setBusInfo(req.getParameter("busInfo"));
+            location.setComments(req.getParameter("comments"));
+            logger.debug("Adding Location1: " + location);
+            logger.debug("Adding resource to location, resource= : " + resource.toString());
+
+            //Use the api to get the lat and long TODO
+            try {
+                LocationApiDao locationApiDao = new LocationApiDao();
+                location2 = locationApiDao.convertAddressToLatAndLong(location);
+                logger.debug("getting long and lat, location2" + location2.toString());
+            } catch (Exception e) {
+                logger.error(e);
             }
 
-            String x2 = req.getParameter("submit2");
-            if (x2 != null && x.equals("Add Location")) {
-                //add a new location
-                Location location = new Location();
-                location.setNameDesc(req.getParameter("nameDesc"));
-                location.setStreetAddressOrIntersection(req.getParameter("streetAddressOrIntersection"));
-                location.setCity(req.getParameter("city"));
-                location.setState(req.getParameter("state"));
-                location.setZip(req.getParameter("zip"));
-                location.setBusInfo(req.getParameter("busInfo"));
-                location.setComments(req.getParameter("comments"));
-                logger.debug("Adding Location: " + location);
-                logger.debug("Adding resource to location, resource= : " + resource.toString());
+            assert location2 != null;
+            resource.setLocation(location2);
+            location2.setResourceId(resource);
+            //add the location to the database
+            dao.insert(location2);
+            String message = "adding location to the resource " + resource.getName();
+            session.setAttribute("message", message);
+            //then forward to contacts
+            url = "/admin/addContact.jsp";
+        }//end if submit2
 
-                //Use the api to get the lat and long TODO
-                try {
-                    LocationApiDao locationApiDao = new LocationApiDao();
-                    location = locationApiDao.convertAddressToLatAndLong(location);
-                    logger.debug("getting long and lat" + location.toString());
-                    } catch (Exception e) {
-                        logger.error(e);
-                    }
-                    resource.setLocation(location);
-                    assert location != null;
-                    location.setResourceId(resource);
-                    //add the location to the database
-                    dao.insert(location);
-                    //then forward to contacts
-                    url = "/admin/addContact.jsp";
-                }
-
-        }//end try
-//TOdo confirmation,
-        //logger.debug("Adding resource to location, resource= : " + resource.toString());
         RequestDispatcher dispatcher = req.getRequestDispatcher(url);
         dispatcher.forward(req, resp);
     }
-
 }
+
 

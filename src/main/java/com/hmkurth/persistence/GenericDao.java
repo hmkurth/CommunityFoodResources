@@ -109,7 +109,6 @@ public class GenericDao<T> {//T is placeholder, variable for type
         Root<T> root = query.from(type);
         List<T> list = session.createQuery(query).getResultList();
         session.close();
-        logger.debug("in get ALL " + list);
         return list;
 
 
