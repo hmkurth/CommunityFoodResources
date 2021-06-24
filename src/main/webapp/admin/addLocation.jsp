@@ -3,65 +3,58 @@
 <jsp:include page="../head.jsp" />
 <jsp:include page="../header.jsp"/>
 
-<h3 class = "row text-center warning">This resources has not yet been added, we just need a little more information</h3>
-<h3 class = "row text-center">${message} </h3>
-
-<div class="container pad">
+<div class="login-container">
+    <h3 class = "row text-center warning pad-bottom-sm">This resources has not yet been added, we just need a little more information</h3>
+    <h3 class = "row text-center pad-bottom-sm">${message} </h3>
 
     <form action="${pageContext.request.contextPath}/addLocation"  method="post" autocomplete="on">
         <div class="form-group">
             <label  for="nextOptions">What would you like to do next?
                 <select name="nextOptions" id="nextOptions">
-                    <option value='noLocation'>There is no specific location for this resource, go to add contacts</option>
                     <option value='addLocation'>Add A Location</option>
-
+                    <option value='noLocation'>There is no specific location for this resource, go to add contacts</option>
                 </select>
-
             </label>
-
             <input type="submit" class="btn btn-primary btn-lg"  name="submit" value="Next">
-
         </div>
     </form>
 </div>
 <c:if test="${param.nextOptions.equals('addLocation')}"  >
+    <div class="login-container">
     <form action="${pageContext.request.contextPath}/addLocation"  method="post" autocomplete="on">
         <!--get the food resource to add location to -->
-        <div class="form-group">
-            <label for="resourceId">Food Resource Name</label>
-            <input type="text" class="form-control" id="resourceId" name ="resourceId" placeholder="Food Resource"  aria-required="true" required>
-        </div>
 
+            <h3>Add location to food resource: ${newResource.name}, please use your best guess if you don't know exact details, as this information will be used to map the location for searches</h3>
 
         <div class="form-group">
-            <label for="nameDesc">Location Name</label>
+            <label for="nameDesc">Location Name or quick description if applicable (required)</label>
             <input type="text" class="form-control" id="nameDesc" name ="nameDesc" placeholder="Location Name"  aria-required="true" required>
         </div>
         <div class="form-group">
-            <label for="streetAddressOrIntersection">Street Address or Intersection</label>
+            <label for="streetAddressOrIntersection">Street Address or Intersection (required)</label>
             <input type="text" class="form-control" id="streetAddressOrIntersection" name ="streetAddressOrIntersection" placeholder="500 Washington St." autocomplete="street" aria-required="true"  required>
         </div>
 
         <div class="form-group">
-            <label for="city">City</label>
-            <input type="text" class="form-control" id="city" name ="city" placeholder="Madison" autocomplete="city" aria-required="true" required>
+            <label for="city">City (required)</label>
+            <input type="text" class="form-control" id="city" name ="city" placeholder="city" autocomplete="city" aria-required="true" required>
         </div>
 
         <div class="form-group">
-            <label for="state">State</label>
-            <input type="text" class="form-control" id="state" name ="state" placeholder="Wisconsin" autocomplete="state" aria-required="true" required>
+            <label for="state">State (required)</label>
+            <input type="text" class="form-control" id="state" name ="state" placeholder="state" autocomplete="state" aria-required="true" required>
         </div>
 
         <div class="form-group">
-            <label for="zip">Zipcode</label>
+            <label for="zip">Zipcode (required)</label>
             <input type="text" class="form-control" id="zip" name ="zip" placeholder="zip"  autocomplete="email" aria-required="true" required>
         </div>
         <div class="form-group">
-            <label for="busInfo">Bus Route Info</label>
+            <label for="busInfo">Bus Route Info (optional)</label>
             <input type="text" class="form-control" id="busInfo" name ="busInfo" placeholder="optional"  >
         </div>
         <div class="form-group">
-            <label for="comments">Comments about this location</label>
+            <label for="comments">Comments about this location (optional)</label>
             <input type="text" class="form-control" id="comments" name ="comments" placeholder="optional"  >
         </div>
 

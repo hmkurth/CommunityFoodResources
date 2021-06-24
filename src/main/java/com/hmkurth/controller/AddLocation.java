@@ -91,9 +91,7 @@ logger.debug("food resource at add location do post");
                     resource.setLocation(location);
                     assert location != null;
                     location.setResourceId(resource);
-
                     //add the location to the database
-
                     dao.insert(location);
                     //then forward to contacts
                     url = "/admin/addContact.jsp";
