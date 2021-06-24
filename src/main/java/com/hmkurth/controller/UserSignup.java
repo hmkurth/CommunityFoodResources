@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * This servlet will take in the user sign up information and add it to the database
@@ -39,24 +40,10 @@ public class UserSignup extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         User user = new User();
-        user.setFirstName(req.getParameter("first_name"));
-        user.setLastName(req.getParameter("last_name"));
-        user.setUserName(req.getParameter("user_name"));
-        //TODO check if user name exists
-        logger.debug("Adding Username: " + user.getUserName());
-        //TODO have them reenter pw to verify
-        user.setPassword(req.getParameter("password"));
-        //TODO validate email address
-        user.setEmail(req.getParameter("email"));
-        logger.debug("Adding User: " + user);
-        UserRoles role = new UserRoles();
-        role.setUser(user);
-        role.setUserName(user.getUserName());
-        //all users get assigned role user first
-        role.setRoleName("user");
-        user.addRole(role);
-
-
+        String thisFirstName = req.getParameter("first_name");
+        String thisLastName = req.getParameter("last_name");
+        String thisUserName = req.getParameter("user_name");
+        //check for empty fields
         if (req.getParameter("first_name").isEmpty() || (req.getParameter("last_name").isEmpty() || (req.getParameter("user_name").isEmpty() ||
                 (req.getParameter("password").isEmpty() || (req.getParameter("email").isEmpty() )))))
         {
@@ -65,16 +52,32 @@ public class UserSignup extends HttpServlet {
             RequestDispatcher dispatcher= req.getRequestDispatcher("userSignup.jsp");
             dispatcher.include(req, resp);
         }
-        else
-        {
-            //add the uses to the database
-            // TODO check if user is already in the database, name, username, and email
-            GenericDao dao = new GenericDao(User.class);
+        else {
+            //add the user to the database
+            GenericDao<User> dao = new GenericDao<>(User.class);
+            //check if user name exists
+            List userExists =  dao.getPropertyByName("userName", thisUserName);
+            if (userExists.isEmpty()) {
+                user.setUserName(thisUserName);
+                user.setFirstName(thisFirstName);
+                user.setLastName(thisLastName);
+                user.setPassword(req.getParameter("password"));
+                //TODO validate email address
+                user.setEmail(req.getParameter("email"));
+                UserRoles role = new UserRoles();
+                role.setUser(user);
+                role.setUserName(user.getUserName());
+                //all users get assigned role user first
+                role.setRoleName("user");
+                user.addRole(role);
+                dao.insert(user);
+                RequestDispatcher dispatcher = req.getRequestDispatcher("signUpSuccess.jsp");
+                dispatcher.forward(req, resp);
+            } else {
+                req.setAttribute("errorMessage", "That user name is already in use, please try another variation");
+            }
 
-            dao.insert(user);
-
-            //TOdo set the user in the session?? check if this is duplicating entries
-            RequestDispatcher dispatcher = req.getRequestDispatcher("signUpSuccess.jsp");
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/userSignup.jsp");
             dispatcher.forward(req, resp);
         }
 

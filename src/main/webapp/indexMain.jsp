@@ -1,7 +1,7 @@
 
 <!-- Begin main page content -->
 
-<div class="content" id="main_content">
+<div class="content  pad-top" id="main_content">
     <div class="container">
 
         <div class="row pad-bottom">

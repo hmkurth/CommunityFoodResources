@@ -9,30 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="added presentation video link to readme">
-      <change afterPath="$PROJECT_DIR$/~$ournal.docx" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="I have a fk to resource owner in the contact, so does the contact go with the owner or the resource???  I think the contact should relate to the resource…">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/5big.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/Madison Food Resources Logo (12).png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Journal.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Journal.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/components.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/home2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/home3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/home4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page10.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page11.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page12.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page5.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page6.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page7.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page8.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accessibilityTemplates/accessible/page9.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/readMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/readMe.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/sunLiteLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/sunLiteLogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="may7" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -111,7 +95,7 @@
     <property name="database.data.extractors.current.id" value="SQL Inserts" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../BookCollectionFive" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../accessibilityTemplates" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -131,17 +115,18 @@
       <recent name="com.hmkurth.persistence" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\resources" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\img" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\java\com\hmkurth" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\test\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\DesignDocs" />
+      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\admin" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\resources" />
-      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\utilPages" />
-      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\results" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -429,203 +414,11 @@
       <workItem from="1620347926133" duration="1742000" />
       <workItem from="1620349837454" duration="47809000" />
       <workItem from="1620621464218" duration="10726000" />
-      <workItem from="1620690530194" duration="13727000" />
-    </task>
-    <task id="LOCAL-00076" summary="undid directory page util, now getting the login error instead of timeout">
-      <created>1618803227594</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1618803227662</updated>
-    </task>
-    <task id="LOCAL-00077" summary="added form attributes auto complete and aria ...still need to complete this will all user input">
-      <created>1618811667853</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1618811667853</updated>
-    </task>
-    <task id="LOCAL-00078" summary="added autocomplete-on to login and signup form attributes">
-      <created>1618812211431</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1618812211431</updated>
-    </task>
-    <task id="LOCAL-00079" summary="sweet auto complete, and aria attributes added to login and sign up">
-      <created>1618812482587</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1618812482587</updated>
-    </task>
-    <task id="LOCAL-00080" summary="reconfiguring login to add a loginAction servlet and a button that points to it, but am still getting timeout error">
-      <created>1619626286598</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1619626286599</updated>
-    </task>
-    <task id="LOCAL-00081" summary="got login working, but it's not pretty...">
-      <created>1619633996410</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1619633996411</updated>
-    </task>
-    <task id="LOCAL-00082" summary="fixed mapped by error, added new column on contacts to reference the resource owners id">
-      <created>1619649065262</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1619649065263</updated>
-    </task>
-    <task id="LOCAL-00083" summary="inserted null values for contact ids in sql inserts to avoid fk problems, type dao now working">
-      <created>1619653330819</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1619653330819</updated>
-    </task>
-    <task id="LOCAL-00084" summary="insert with contact on resource owner dao still broken">
-      <created>1619658965983</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1619658965991</updated>
-    </task>
-    <task id="LOCAL-00085" summary="insert with contact on resource owner dao now working">
-      <created>1619709292372</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1619709292372</updated>
-    </task>
-    <task id="LOCAL-00086" summary="food resource tests working !!!!!!!!!!!!!!!!!!!!!">
-      <created>1619712684710</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1619712684710</updated>
-    </task>
-    <task id="LOCAL-00087" summary="working on user signup, null values">
-      <created>1619716473461</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1619716473461</updated>
-    </task>
-    <task id="LOCAL-00088" summary="signup null error gone">
-      <created>1619745931862</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1619745931862</updated>
-    </task>
-    <task id="LOCAL-00089" summary="login button position fixed">
-      <created>1619749776013</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1619749776013</updated>
-    </task>
-    <task id="LOCAL-00090" summary="Now I can’t get data from the db in the foodPantryjsp…  I feel like I’ve tried everything, it’s just not picking up the search results set in the request param…  I tried putting it in a session variable…am I directing traffic wrong?? It seemed to work in the past exercises, I’m looking at all my past projects and last semesters stuff to find clues…  But it should work like the user display exercise….?????">
-      <created>1619759187398</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1619759187398</updated>
-    </task>
-    <task id="LOCAL-00091" summary="foodPANTRY is WORKING!!!!">
-      <created>1619905905218</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1619905905234</updated>
-    </task>
-    <task id="LOCAL-00092" summary="creating delete user servlets and jsps">
-      <created>1619911767143</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1619911767143</updated>
-    </task>
-    <task id="LOCAL-00093" summary="Got delete working, needs some finesse, but it works.">
-      <created>1619929632302</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1619929632303</updated>
-    </task>
-    <task id="LOCAL-00094" summary="updating journal, etc">
-      <created>1619930552090</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1619930552090</updated>
-    </task>
-    <task id="LOCAL-00095" summary="changed the type entity to have a set of resources.">
-      <created>1619935124349</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1619935124380</updated>
-    </task>
-    <task id="LOCAL-00096" summary="type is now displaying">
-      <created>1619936469254</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1619936469254</updated>
-    </task>
-    <task id="LOCAL-00097" summary="adding admin directory and security">
-      <created>1619940380442</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1619940380457</updated>
-    </task>
-    <task id="LOCAL-00098" summary="I moved the deleteUser to the admin folder, and had some problems, I couldn’t access the DeleteUser servlet, so I moved some functionality to the LoginAction servlet, and the rest to the DeleteUser, so no more DeleteUserAction.  When I hit submit, I get a 404, but the user is deleted from the db…">
-      <created>1619942622018</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1619942622081</updated>
-    </task>
-    <task id="LOCAL-00099" summary="still working on delete, trying to add some confirmation, not working yet">
-      <created>1620012708740</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1620012708755</updated>
-    </task>
-    <task id="LOCAL-00100" summary="adding an addLocation jsp and servlet, still need to incorporate api to extract long and lat">
-      <created>1620019968590</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1620019968621</updated>
-    </task>
-    <task id="LOCAL-00101" summary="Started an add location, need to fix resource, it’s coming up null in the db, but in my logs I’m getting a circular mess with the relationships…I have toString.exclude annotations on the related entities, but….????">
-      <created>1620020981285</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1620020981285</updated>
-    </task>
-    <task id="LOCAL-00102" summary="add location with api integration working">
-      <created>1620064537807</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1620064537839</updated>
-    </task>
-    <task id="LOCAL-00103" summary="adding search by location servlet and jsp, not hooked up yet">
-      <created>1620066185789</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1620066185789</updated>
+      <workItem from="1620690530194" duration="14306000" />
+      <workItem from="1621009133105" duration="65558000" />
+      <workItem from="1623772266318" duration="26781000" />
+      <workItem from="1624137221218" duration="36130000" />
+      <workItem from="1624413567641" duration="46457000" />
     </task>
     <task id="LOCAL-00104" summary="changed include to jsp include">
       <created>1620349642812</created>
@@ -774,7 +567,203 @@
       <option name="project" value="LOCAL" />
       <updated>1620749698313</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="added live aws link to readme">
+      <created>1620801878828</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1620801878957</updated>
+    </task>
+    <task id="LOCAL-00126" summary="added about project content">
+      <created>1621037604491</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1621037604491</updated>
+    </task>
+    <task id="LOCAL-00127" summary="working on add resource">
+      <created>1621135463420</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1621135463420</updated>
+    </task>
+    <task id="LOCAL-00128" summary="dropdowns connected, finally">
+      <created>1621232575645</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1621232575645</updated>
+    </task>
+    <task id="LOCAL-00129" summary="still working on getting the if test for dropdown working">
+      <created>1621238307727</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1621238307727</updated>
+    </task>
+    <task id="LOCAL-00130" summary="logout function added">
+      <created>1621239581034</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1621239581035</updated>
+    </task>
+    <task id="LOCAL-00131" summary="if 'newOwner' tag working">
+      <created>1621241555423</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1621241555423</updated>
+    </task>
+    <task id="LOCAL-00132" summary="continuing with adding resource, may need to break up into smaller chunks">
+      <created>1621315225243</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1621315225243</updated>
+    </task>
+    <task id="LOCAL-00133" summary="continuing with adding resource, may need to break up into smaller chunks">
+      <created>1621321641361</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1621321641361</updated>
+    </task>
+    <task id="LOCAL-00134" summary="trying to refactor adding owner to be independent/reusable">
+      <created>1621325443681</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1621325443681</updated>
+    </task>
+    <task id="LOCAL-00135" summary="finally got the add resource workable, still need to edit now that I figured out the problem">
+      <created>1623776863430</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1623776863430</updated>
+    </task>
+    <task id="LOCAL-00136" summary="getting resource owner addition going...">
+      <created>1623956586263</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1623956586263</updated>
+    </task>
+    <task id="LOCAL-00137" summary="trying to edit styles...">
+      <created>1624161486070</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1624161486070</updated>
+    </task>
+    <task id="LOCAL-00138" summary="trying to edit styles...">
+      <created>1624164212288</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1624164212288</updated>
+    </task>
+    <task id="LOCAL-00139" summary="got some of my themes colors integrated into the css.">
+      <created>1624168198293</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1624168198293</updated>
+    </task>
+    <task id="LOCAL-00140" summary="looking a little better...">
+      <created>1624179434951</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1624179434985</updated>
+    </task>
+    <task id="LOCAL-00141" summary="looking a little better...">
+      <created>1624180083458</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1624180083474</updated>
+    </task>
+    <task id="LOCAL-00142" summary="styled some of the minified css and reminified">
+      <created>1624409353938</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1624409353938</updated>
+    </task>
+    <task id="LOCAL-00143" summary="working on ownerSuccess.jsp">
+      <created>1624411647603</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1624411647603</updated>
+    </task>
+    <task id="LOCAL-00144" summary="working on owner integer problem">
+      <created>1624413453260</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1624413453260</updated>
+    </task>
+    <task id="LOCAL-00145" summary="Well, it isn’t pretty, definitely needs some cleaning up, but adding the owner works!">
+      <created>1624414336543</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1624414336543</updated>
+    </task>
+    <task id="LOCAL-00146" summary="refactoring">
+      <created>1624475822530</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1624475822530</updated>
+    </task>
+    <task id="LOCAL-00147" summary="trying to add some error handling to delete user,">
+      <created>1624480629077</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1624480629077</updated>
+    </task>
+    <task id="LOCAL-00148" summary="username validation done">
+      <created>1624485327749</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1624485327749</updated>
+    </task>
+    <task id="LOCAL-00149" summary="working on integrating the add location and contacts">
+      <created>1624491039568</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1624491039568</updated>
+    </task>
+    <task id="LOCAL-00150" summary="working on integrating the add location and contacts,">
+      <created>1624492852681</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1624492852681</updated>
+    </task>
+    <task id="LOCAL-00151" summary="YES!! Adding location and mapping it with the google api is functional!!!!  Almost time to start data input!">
+      <created>1624542005233</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1624542005233</updated>
+    </task>
+    <task id="LOCAL-00152" summary="I have a fk to resource owner in the contact, so does the contact go with the owner or the resource???  I think the contact should relate to the resource…">
+      <created>1624549139045</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1624549139045</updated>
+    </task>
+    <option name="localTasksCounter" value="153" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -797,32 +786,32 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adding an addLocation jsp and servlet, still need to incorporate api to extract long and lat" />
-    <MESSAGE value="Started an add location, need to fix resource, it’s coming up null in the db, but in my logs I’m getting a circular mess with the relationships…I have toString.exclude annotations on the related entities, but….????" />
-    <MESSAGE value="add location with api integration working" />
-    <MESSAGE value="adding search by location servlet and jsp, not hooked up yet" />
-    <MESSAGE value="changed include to jsp include" />
-    <MESSAGE value="editing admin controls" />
-    <MESSAGE value="FINALLY got delete working again with confirmation, can't believe it took so long, needs cleaning up" />
-    <MESSAGE value="still editing admin..." />
-    <MESSAGE value="fixed adminHome formatting, looking good, working decently.." />
-    <MESSAGE value="working on food resource search, able to locate Attribute with the the given name [null] on this ManagedType [com.hmkurth.entity.FoodResource]" />
-    <MESSAGE value="refactored Generic Dao" />
-    <MESSAGE value="updated lat and long to float(10,6)" />
-    <MESSAGE value="added hibernate search dependencies to pom" />
-    <MESSAGE value="&lt;property name=&quot;hibernate.search.backend.directory.root&quot;/&gt; in hibernate config" />
-    <MESSAGE value="annotated location and food resources for hibernate search" />
-    <MESSAGE value="updated CFRL database" />
-    <MESSAGE value="location search params in place, ready to test" />
-    <MESSAGE value="in testing, not sure about results coming back.." />
-    <MESSAGE value="i can't figure out how to get the Ljava.lang.Object that is being returned from the query to display, tried using Arrays.deepToString(arrayOfObjects)," />
-    <MESSAGE value="cleaning up controllers" />
-    <MESSAGE value="cleaning up code" />
-    <MESSAGE value="still trying to get location search to work" />
-    <MESSAGE value="ready for presentation" />
-    <MESSAGE value="updated timelog, changed war for aws deploy, couldn't deploy, updated sql on aws" />
-    <MESSAGE value="added presentation video link to readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="added presentation video link to readme" />
+    <MESSAGE value="added live aws link to readme" />
+    <MESSAGE value="added about project content" />
+    <MESSAGE value="working on add resource" />
+    <MESSAGE value="dropdowns connected, finally" />
+    <MESSAGE value="still working on getting the if test for dropdown working" />
+    <MESSAGE value="logout function added" />
+    <MESSAGE value="if 'newOwner' tag working" />
+    <MESSAGE value="continuing with adding resource, may need to break up into smaller chunks" />
+    <MESSAGE value="trying to refactor adding owner to be independent/reusable" />
+    <MESSAGE value="finally got the add resource workable, still need to edit now that I figured out the problem" />
+    <MESSAGE value="getting resource owner addition going..." />
+    <MESSAGE value="trying to edit styles..." />
+    <MESSAGE value="got some of my themes colors integrated into the css." />
+    <MESSAGE value="looking a little better..." />
+    <MESSAGE value="styled some of the minified css and reminified" />
+    <MESSAGE value="working on ownerSuccess.jsp" />
+    <MESSAGE value="working on owner integer problem" />
+    <MESSAGE value="Well, it isn’t pretty, definitely needs some cleaning up, but adding the owner works!" />
+    <MESSAGE value="refactoring" />
+    <MESSAGE value="trying to add some error handling to delete user," />
+    <MESSAGE value="username validation done" />
+    <MESSAGE value="working on integrating the add location and contacts" />
+    <MESSAGE value="working on integrating the add location and contacts," />
+    <MESSAGE value="YES!! Adding location and mapping it with the google api is functional!!!!  Almost time to start data input!" />
+    <MESSAGE value="I have a fk to resource owner in the contact, so does the contact go with the owner or the resource???  I think the contact should relate to the resource…" />
+    <option name="LAST_COMMIT_MESSAGE" value="I have a fk to resource owner in the contact, so does the contact go with the owner or the resource???  I think the contact should relate to the resource…" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -933,7 +922,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/webapp/head.jsp</url>
-          <line>5</line>
+          <line>6</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1032,21 +1021,6 @@
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/UserSignup.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="77" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/UserSignup.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/UserSignup.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/SearchFoodResources.java</url>
           <line>61</line>
           <option name="timeStamp" value="80" />
@@ -1086,6 +1060,41 @@
           <line>108</line>
           <option name="timeStamp" value="90" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
+          <line>116</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
+          <line>122</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
+          <line>121</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.sql.SQLSyntaxErrorException" package="java.sql" />
           <option name="timeStamp" value="11" />
@@ -1104,6 +1113,11 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.lang.NullPointerException" memberName="cause" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CommunityFoodResources$All_in_CommunityFoodResources.ic" NAME="All in CommunityFoodResources Coverage Results" MODIFIED="1620693551432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

@@ -1,5 +1,5 @@
 
-<%@include file="/taglib.jsp"%>
+<%@include file="../taglib.jsp"%>
 <jsp:include page="../head.jsp"/>
 <title>Add Resource</title>
 
@@ -9,38 +9,87 @@
     <h1 class="text-center pad-bottom-sm">Add A New Resource</h1>
 
 
-    <!--TODO form verification! auto complete attribute -->
+    <!--TODO aria labeled by labels
+     Note that the value for the attribute items must match the name of the corresponding attribute set in the servlet class.
+     As you can see, the values of the drop down list are the IDs of the categories.-->
 
     <form action="${pageContext.request.contextPath}/addResource"  method="post" autocomplete="on">
         <div class="form-group">
-            <label for="first_name">First Name</label>
-            <input type="text" class="form-control" id="first_name" name ="first_name" placeholder="First Name" autocomplete="given-name" aria-required="true" required>
+            <label for="name">Resource Name</label>
+            <input type="text" class="form-control" id="name" name ="name" placeholder="Give this resource a name"  aria-required="true" required >
+            <!-- TODO if/when form is resubmitted, try to keep the data that the user entered  -->
+
         </div>
+
         <div class="form-group">
-            <label for="last_name">Last Name</label>
-            <input type="text" class="form-control" id="last_name" name ="last_name"placeholder="Last Name"autocomplete="family-name" aria-required="true"  required>
+            <label for="type">Resource Type, please select the most accurate category for this resource, or select other
+                <select name="type" id="type">
+                    <c:forEach items="${listType}" var="type">
+                        <option value="${type.id}">type name: ${type.name}</option>
+                    </c:forEach>
+                </select>
+            </label>
         </div>
-        <!--TODO make sure username is not in use  -->
+
         <div class="form-group">
-            <label for="user_name">User Name</label>
-            <input type="text" class="form-control" id="user_name" name ="user_name"placeholder="User Name"autocomplete="username" aria-required="true"required>
+            <label for="description">Description</label>
+            <textarea class="form-control" id="description" name ="description" aria-required="true" required maxlength="500" placeholder="Provide a short description(max 500 characters)" ></textarea>
         </div>
-        <!--TODO form verification requirements for pw verification?   put the dots in instead of letters? no-->
+
         <div class="form-group">
-            <label for="user_password">Password</label>
-            <input type="text" class="form-control" id="user_password" name ="password"placeholder="Password(password specs here)" autocomplete="new-password" aria-required="true" required>
+            <label for="serviceArea">Service Area(optional/if known)</label>
+            <textarea class="form-control" id="serviceArea" name ="serviceArea" aria-required="false"  maxlength="500"   placeholder="Is there a specific area(city, county, state) that this resource is limited to serving?  Note that you will be able to add the specific location of the resource, if applicable, later "></textarea>
         </div>
-        <!--TODO form verification ensure it's a valid email address-->
+
         <div class="form-group">
-            <label for="email_address">Email address</label>
-            <input type="email" class="form-control" id="email_address" name ="email" placeholder="Email"  autocomplete="email" aria-required="true" required>
+            <label for="website">Website Link (optional)</label>
+            <input type="text" class="form-control" id="website" name ="website" placeholder="enter website"  aria-required="false" pattern="^((https?|ftp|smtp):\/\/)?(www.)?[a-z0-9]+\.[a-z]+(\/[a-zA-Z0-9#]+\/?)*$">
+        </div>
+
+        <div class="form-group">
+            <label for="documentation">What Documentation is needed? (Required)</label>
+            <textarea class="form-control" id="documentation" name ="documentation" aria-required="true"  maxlength="500"  required placeholder="What documentation is needed to access this resource? SSN? ID? None? unknown?"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="days">Days of Week Offered(optional)</label>
+            <textarea class="form-control" id="days" name ="days" aria-required="false"  maxlength="100"  placeholder="Are there specific days of the week this resource is offered? Please enter the full day name separated by commas if needed" ></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="deliveryB">Does this resource offer delivery?
+            <input type="radio" class="form-control" id="deliveryB" name ="deliveryB" aria-required="true"  value="false" checked="checked"  >No  <br/>
+            <input type="radio" class="form-control"  name ="deliveryB" aria-required="true"  value="true"   >Yes
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="deliveryDescription">Details of delivery service if offered?(optional)</label>
+            <textarea class="form-control" id="deliveryDescription" name ="deliveryDescription" aria-required="false"  maxlength="500"  placeholder="Specifics of delivery service, hours, areas, etc" ></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="dietary">Dietary Considerations?(optional)</label>
+            <textarea class="form-control" id="dietary" name ="dietary" aria-required="false"  maxlength="500" placeholder="Are there dietary considerations provided by this service? i.e. able to provide food for people with allergies, gluten intolerance, diabetics, etc?(max 500 characters)" ></textarea>
+        </div>
+
+
+        <div class="form-group">
+            <label for="comments">Comments(optional)</label>
+            <textarea class="form-control" id="comments" name ="comments" aria-required="false"  maxlength="500" placeholder="Is there anything else people should know about this resource?(max 500 characters)" ></textarea>
         </div>
 
         <hr />
-        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+        <h3>Next you be given the option to add a location, a resource owner, and contacts for this resource</h3>
+        <input type="submit" class="btn btn-primary btn-lg"  name="submit" value="confirm">
     </form>
 
+<c:if test="${param.submit == true}"  >
+    <p><a href="/addResourceOwner" class="btn btn-primary btn-lg">Add an owner to this resource</a>
+    <a href="/addContact" class="btn btn-primary btn-lg">Add contact details for this resource</a>>
+    <a href="/addLocation" class="btn btn-primary btn-lg">Add location for this resource</a> </p>
 
+</c:if>
 
 
 </div>

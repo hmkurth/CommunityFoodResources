@@ -1027,6 +1027,7 @@ SELECT|testschema
       <Position>3</Position>
       <Comment>foreign key to resource owner table</Comment>
       <DataType>int|0s</DataType>
+      <DefaultExpression>9999</DefaultExpression>
     </column>
     <column id="314" parent="291" name="description">
       <Position>4</Position>
@@ -1036,6 +1037,7 @@ SELECT|testschema
     <column id="315" parent="291" name="location_id">
       <Position>5</Position>
       <DataType>int|0s</DataType>
+      <DefaultExpression>9999</DefaultExpression>
     </column>
     <column id="316" parent="291" name="contact_id">
       <Position>6</Position>
@@ -1061,7 +1063,7 @@ SELECT|testschema
     </column>
     <column id="321" parent="291" name="day_of_week_offered">
       <Position>11</Position>
-      <DataType>varchar(10)|0s</DataType>
+      <DataType>varchar(500)|0s</DataType>
     </column>
     <column id="322" parent="291" name="delivery_offered">
       <Position>12</Position>
@@ -1167,6 +1169,7 @@ SELECT|testschema
     <column id="343" parent="292" name="resource_id">
       <Position>9</Position>
       <DataType>int|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
     </column>
     <column id="344" parent="292" name="lat">
       <Position>10</Position>

@@ -1,16 +1,11 @@
 /* This file is specific to banners which appear within the web experience */
-.demo-1 {
-	background-image: url(../img/demo/bg1.jpg);
-}
-.demo-2 {
-	background-image: url(../img/demo/bg2.jpg);
-}
-.demo-3 {
-	background-image: url(../img/demo/bg3.jpg);
-}
+
 .home-1 {
-	background-color: #eba327;
-	/*background-image: url(../img/demo/mediterranean-cuisine-2378758__340.webp);
+	background-color: #e5e5a0;
+	color: #00583a;
+	/*
+	display: inline-flex;
+	background-image: url(../img/demo/mediterranean-cuisine-2378758__340.webp);
 	/*height: 500px; /* You must set a specified height
 	background-position: center; /* Center the image */
 }
