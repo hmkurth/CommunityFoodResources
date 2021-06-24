@@ -9,23 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="YES!! Adding location and mapping it with the google api is functional!!!!  Almost time to start data input!">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210624 0958.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210624 1003.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210624 1017.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddContact.java" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="I have a fk to resource owner in the contact, so does the contact go with the owner or the resource???  I think the contact should relate to the resource…">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/5big.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/Madison Food Resources Logo (12).png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210624 0817.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210624 0823.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210624 0831.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/seedDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/seedDb.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addContact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addContact.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/sunLiteLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/sunLiteLogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -427,14 +418,7 @@
       <workItem from="1621009133105" duration="65558000" />
       <workItem from="1623772266318" duration="26781000" />
       <workItem from="1624137221218" duration="36130000" />
-      <workItem from="1624413567641" duration="39878000" />
-    </task>
-    <task id="LOCAL-00103" summary="adding search by location servlet and jsp, not hooked up yet">
-      <created>1620066185789</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1620066185789</updated>
+      <workItem from="1624413567641" duration="46457000" />
     </task>
     <task id="LOCAL-00104" summary="changed include to jsp include">
       <created>1620349642812</created>
@@ -772,7 +756,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624542005233</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <task id="LOCAL-00152" summary="I have a fk to resource owner in the contact, so does the contact go with the owner or the resource???  I think the contact should relate to the resource…">
+      <created>1624549139045</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1624549139045</updated>
+    </task>
+    <option name="localTasksCounter" value="153" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -795,7 +786,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added presentation video link to readme" />
     <MESSAGE value="added live aws link to readme" />
     <MESSAGE value="added about project content" />
     <MESSAGE value="working on add resource" />
@@ -820,7 +810,8 @@
     <MESSAGE value="working on integrating the add location and contacts" />
     <MESSAGE value="working on integrating the add location and contacts," />
     <MESSAGE value="YES!! Adding location and mapping it with the google api is functional!!!!  Almost time to start data input!" />
-    <option name="LAST_COMMIT_MESSAGE" value="YES!! Adding location and mapping it with the google api is functional!!!!  Almost time to start data input!" />
+    <MESSAGE value="I have a fk to resource owner in the contact, so does the contact go with the owner or the resource???  I think the contact should relate to the resource…" />
+    <option name="LAST_COMMIT_MESSAGE" value="I have a fk to resource owner in the contact, so does the contact go with the owner or the resource???  I think the contact should relate to the resource…" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
