@@ -37,17 +37,17 @@
 
         <div class="form-group">
             <label for="city">City (required)</label>
-            <input type="text" class="form-control" id="city" name ="city" placeholder="city" autocomplete="city" aria-required="true" required>
+            <input type="text" class="form-control" id="city" name ="city" placeholder="city"  autocomplete="city" aria-required="true" required>
         </div>
 
         <div class="form-group">
             <label for="state">State (required)</label>
-            <input type="text" class="form-control" id="state" name ="state" placeholder="state" autocomplete="state" aria-required="true" required>
+            <input type="text" class="form-control" id="state" name ="state" placeholder="state"  autocomplete="state" aria-required="true" required>
         </div>
 
         <div class="form-group">
             <label for="zip">Zipcode (required)</label>
-            <input type="text" class="form-control" id="zip" name ="zip" placeholder="zip"  autocomplete="email" aria-required="true" required>
+            <input type="text" class="form-control" id="zip" name ="zip" placeholder="zip"  autocomplete="zip" aria-required="true" required>
         </div>
         <div class="form-group">
             <label for="busInfo">Bus Route Info (optional)</label>

@@ -63,14 +63,19 @@ public class AddResource extends HttpServlet {
         HttpSession session  = req.getSession();
         //get the list of owners to populate a dropdown menu for the form input
          odao = new GenericDao<>(ResourceOwner.class);
-        List listOwner = odao.getAll();
+        List<ResourceOwner> listOwner = odao.getAll();
         session.setAttribute("listOwner", listOwner);
         logger.debug("listOwner value from dropdown menu : " + listOwner);
         //get the list of types of resources to populate a dropdown menu for the form input
          tdao = new GenericDao<>(Type.class);
-        List listType = tdao.getAll();
+        List<Type> listType = tdao.getAll();
         session.setAttribute("listType", listType);
         logger.debug("list type : " + listType);
+        //get the list of contact to populate a dropdown menu for the form input
+        cdao = new GenericDao<>(Contact.class);
+        List<Contact> listContact = cdao.getAll();
+        session.setAttribute("listContact", listContact);
+        logger.debug("list contact : " + listContact);
 
         String url = "/admin/addResource.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);

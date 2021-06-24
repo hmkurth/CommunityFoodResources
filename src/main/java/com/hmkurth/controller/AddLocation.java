@@ -56,7 +56,7 @@ public class AddLocation extends HttpServlet {
         if (x != null && x.equals("Next")) {
             if (req.getParameter("nextOptions").equals("noLocation")) {
                 //no location, set null? do i need to actually set it??
-                //resource.setLocation(null);
+                resource.setLocation(null);
                 String message = "you have chosen not to add an location to the resource " + resource.getName();
                 session.setAttribute("message", message);
                 logger.debug("resource location set to null");

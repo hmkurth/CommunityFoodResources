@@ -1,7 +1,6 @@
 package com.hmkurth.controller;
 
 
-import com.hmkurth.entity.Contact;
 import com.hmkurth.entity.FoodResource;
 import com.hmkurth.entity.ResourceOwner;
 import com.hmkurth.persistence.GenericDao;
@@ -29,7 +28,6 @@ public class AddResourceOwner extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
     GenericDao<FoodResource> fdao;
     GenericDao<ResourceOwner> odao;
-    GenericDao<Contact> cdao;
     FoodResource resource;
 
 
@@ -89,6 +87,8 @@ public class AddResourceOwner extends HttpServlet {
                 String message = "you have chosen not to add an owner to the resource " + resource.getName();
                 session.setAttribute("message", message);
                 url = "/admin/addLocation.jsp";
+                RequestDispatcher dispatcher = req.getRequestDispatcher(url);
+                dispatcher.forward(req, res);
             } else {
                 //choose an existing owner from the list
                 thisOwner = odao.getById(ownerInt);
@@ -97,8 +97,10 @@ public class AddResourceOwner extends HttpServlet {
                 session.setAttribute("message", message);
                 logger.debug("chose an existing owner: " + resource.getOwner().toString());
                 url = "/admin/addLocation.jsp";
+                RequestDispatcher dispatcher = req.getRequestDispatcher(url);
+                dispatcher.forward(req, res);
             }//end else
-        }//end if int not null, todo what if it is null can it be null if they hit submit??
+
 
 
 
@@ -109,11 +111,13 @@ public class AddResourceOwner extends HttpServlet {
             thisOwner.setName(req.getParameter("ownerName"));
             thisOwner.setWebsite(req.getParameter("website"));
             odao.insert(thisOwner);
+            logger.debug("thisOwner before setting to resource: " + thisOwner);
             resource.setOwner(thisOwner);
             String message = "you have successfully added the owner" + resource.getOwner().getName() + " to the resource " + resource.getName() + ". " ;
             session.setAttribute("message", message);
             url = "/admin/addLocation.jsp";
         }
+        }//end if int not null, todo what if it is null can it be null if they hit submit??
 
         RequestDispatcher dispatcher = req.getRequestDispatcher(url);
         dispatcher.forward(req, res);

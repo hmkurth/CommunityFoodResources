@@ -9,19 +9,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="working on integrating the add location and contacts,">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210624 0813.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210624 0817.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210624 0823.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/addContact.jsp" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="YES!! Adding location and mapping it with the google api is functional!!!!  Almost time to start data input!">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210624 0958.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210624 1003.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210624 1017.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddContact.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210623 1827.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210623 1844.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210623 1850.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210624 0817.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210624 0823.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210624 0831.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/GenericDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/seedDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/seedDb.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addContact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addContact.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -423,14 +427,7 @@
       <workItem from="1621009133105" duration="65558000" />
       <workItem from="1623772266318" duration="26781000" />
       <workItem from="1624137221218" duration="36130000" />
-      <workItem from="1624413567641" duration="32879000" />
-    </task>
-    <task id="LOCAL-00102" summary="add location with api integration working">
-      <created>1620064537807</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1620064537839</updated>
+      <workItem from="1624413567641" duration="39878000" />
     </task>
     <task id="LOCAL-00103" summary="adding search by location servlet and jsp, not hooked up yet">
       <created>1620066185789</created>
@@ -768,7 +765,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624492852681</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <task id="LOCAL-00151" summary="YES!! Adding location and mapping it with the google api is functional!!!!  Almost time to start data input!">
+      <created>1624542005233</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1624542005233</updated>
+    </task>
+    <option name="localTasksCounter" value="152" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -791,7 +795,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="updated timelog, changed war for aws deploy, couldn't deploy, updated sql on aws" />
     <MESSAGE value="added presentation video link to readme" />
     <MESSAGE value="added live aws link to readme" />
     <MESSAGE value="added about project content" />
@@ -816,7 +819,8 @@
     <MESSAGE value="username validation done" />
     <MESSAGE value="working on integrating the add location and contacts" />
     <MESSAGE value="working on integrating the add location and contacts," />
-    <option name="LAST_COMMIT_MESSAGE" value="working on integrating the add location and contacts," />
+    <MESSAGE value="YES!! Adding location and mapping it with the google api is functional!!!!  Almost time to start data input!" />
+    <option name="LAST_COMMIT_MESSAGE" value="YES!! Adding location and mapping it with the google api is functional!!!!  Almost time to start data input!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1072,32 +1076,32 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
-          <line>111</line>
+          <line>116</line>
           <option name="timeStamp" value="92" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
-          <line>107</line>
+          <line>112</line>
           <option name="timeStamp" value="93" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
-          <line>117</line>
+          <line>122</line>
           <option name="timeStamp" value="95" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
-          <line>116</line>
+          <line>121</line>
           <option name="timeStamp" value="96" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java</url>
-          <line>67</line>
+          <line>65</line>
           <option name="timeStamp" value="97" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java</url>
-          <line>65</line>
+          <line>63</line>
           <option name="timeStamp" value="98" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
