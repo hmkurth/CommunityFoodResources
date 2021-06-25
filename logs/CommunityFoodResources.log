@@ -2251,3 +2251,81 @@
 [DEBUG] 2021-06-24 10:31:47.864 [http-nio-8080-exec-3] AddContact - contactInt = : 8888
 [DEBUG] 2021-06-24 10:31:47.938 [http-nio-8080-exec-3] AddContact - thiscontact before setting to resource: Contact(id=8888, firstName=default, lastName=default, email=null, phone=null, owner=null)
 [DEBUG] 2021-06-24 10:31:47.978 [http-nio-8080-exec-3] GenericDao - inserting entity Contact(id=10002, firstName=default, lastName=default, email=null, phone=null, owner=null)
+[DEBUG] 2021-06-25 00:29:04.601 [main] ApiTestServiceClient - com.hmkurth.ApiLocation.Result@8851ce1
+[DEBUG] 2021-06-25 00:29:09.820 [main] GenericDao - Searching for person with lastName = Planer
+[DEBUG] 2021-06-25 00:29:10.929 [main] GenericDao - inserting entity Contact(id=23, firstName=Fred, lastName=Flintstone, email=meaty@sharks, phone=6089479889, resource=null)
+[DEBUG] 2021-06-25 00:29:11.476 [main] GenericDao - Searching for person with name = SNAP Program
+[DEBUG] 2021-06-25 00:29:15.663 [main] GenericDao - Searching for person with nameDesc = Easter Seals
+[DEBUG] 2021-06-25 00:29:16.257 [main] GenericDao - inserting entity Location(id=10000, nameDesc=Beacon, streetAddressOrIntersection=322 Jones st, city=Madison, state=WI, zip=56987, busInfo=null, comments=null, lng=null, lat=null)
+[DEBUG] 2021-06-25 00:29:17.085 [main] GenericDao - Searching for person with website = www.SNAP.com
+[DEBUG] 2021-06-25 00:29:17.726 [main] GenericDao - inserting entity ResourceOwner(id=10000, name=Schmidts, website=Schmidts@food.com)
+[DEBUG] 2021-06-25 00:29:18.398 [main] GenericDao - Searching for person with name = other
+[DEBUG] 2021-06-25 00:29:18.820 [main] GenericDao - inserting entity Type(id=23, name=school meal drop off)
+[INFO ] 2021-06-25 00:29:19.335 [main] UserDaoTest - in save or update test
+[DEBUG] 2021-06-25 00:29:19.507 [main] GenericDao - inserting entity User{id=365, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='meaty', email='meaty@sharks', roles=[UserRoles{id=200, userName='Sally', roleName='admin'}]}
+[DEBUG] 2021-06-25 00:29:19.648 [main] GenericDao - Searching for person with lastName = Curry
+[DEBUG] 2021-06-25 00:29:19.820 [main] GenericDao - The list of Entities by propertyName lastName and value/search term: cur
+[DEBUG] 2021-06-25 00:29:19.955 [main] GenericDao - The list of Entities by entity name [User{id=4, firstName='Karen', lastName='Mack', userName='kmack', password='supersecret4', email='least@mail', roles=[UserRoles{id=4, userName='kmack', roleName='user'}]}, User{id=5, firstName='Dianne', lastName='Klein', userName='dklein', password='supersecret5', email='zeast@mail', roles=[UserRoles{id=5, userName='dklein', roleName='all'}]}]
+[DEBUG] 2021-06-25 00:29:19.957 [main] GenericDao - The list of Entities by entity name []
+[INFO ] 2021-06-25 00:29:20.251 [main] UserDaoTest - get all users test: all users;[User{id=1, firstName='Joe', lastName='Coyne', userName='jcoyne', password='supersecret1', email='beast@mail', roles=[UserRoles{id=1, userName='jcoyne', roleName='user'}]}, User{id=2, firstName='Fred', lastName='Hensen', userName='fhensen', password='supersecret2', email='yeast@mail', roles=[UserRoles{id=2, userName='fhensen', roleName='all'}]}, User{id=3, firstName='Barney', lastName='Curry', userName='bcurry', password='supersecret3', email='seast@mail', roles=[UserRoles{id=3, userName='bcurry', roleName='admin'}]}, User{id=4, firstName='Karen', lastName='Mack', userName='kmack', password='supersecret4', email='least@mail', roles=[UserRoles{id=4, userName='kmack', roleName='user'}]}, User{id=5, firstName='Dianne', lastName='Klein', userName='dklein', password='supersecret5', email='zeast@mail', roles=[UserRoles{id=5, userName='dklein', roleName='all'}]}, User{id=6, firstName='tom', lastName='cat', userName='tomcat', password='tomcat', email='QUeast@mail', roles=[UserRoles{id=6, userName='tomcat', roleName='administration'}]}]
+[DEBUG] 2021-06-25 00:29:20.454 [main] GenericDao - inserting entity User{id=366, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='meaty', email='meaty@sharks', roles=[]}
+[INFO ] 2021-06-25 00:29:20.751 [main] UserRolesDaoTest - update role success test
+[DEBUG] 2021-06-25 00:29:20.860 [main] GenericDao - Searching for person with roleName = admin
+[DEBUG] 2021-06-25 00:29:21.001 [main] GenericDao - The list of Entities by propertyName roleName and value/search term: user
+[INFO ] 2021-06-25 00:29:21.126 [main] UserRolesDaoTest - get all userRoles test: all userRoles;[UserRoles{id=1, userName='jcoyne', roleName='user'}, UserRoles{id=2, userName='fhensen', roleName='all'}, UserRoles{id=3, userName='bcurry', roleName='admin'}, UserRoles{id=4, userName='kmack', roleName='user'}, UserRoles{id=5, userName='dklein', roleName='all'}, UserRoles{id=6, userName='tomcat', roleName='administration'}]
+[DEBUG] 2021-06-25 00:29:21.282 [main] GenericDao - The list of Entities by entity name [UserRoles{id=2, userName='fhensen', roleName='all'}, UserRoles{id=5, userName='dklein', roleName='all'}]
+[DEBUG] 2021-06-25 00:29:21.298 [main] GenericDao - The list of Entities by entity name [UserRoles{id=1, userName='jcoyne', roleName='user'}, UserRoles{id=4, userName='kmack', roleName='user'}]
+[DEBUG] 2021-06-25 00:29:21.673 [main] GenericDao - The list of Entities by entity name [User{id=3, firstName='Barney', lastName='Curry', userName='bcurry', password='supersecret3', email='seast@mail', roles=[UserRoles{id=3, userName='bcurry', roleName='admin'}]}]
+[DEBUG] 2021-06-25 00:29:21.673 [main] GenericDao - inserting entity UserRoles{id=201, userName='bcurry', roleName='admin'}
+[DEBUG] 2021-06-25 00:41:09.938 [main] ApiTestServiceClient - com.hmkurth.ApiLocation.Result@730f9695
+[DEBUG] 2021-06-25 00:41:15.313 [main] GenericDao - Searching for person with lastName = Planer
+[DEBUG] 2021-06-25 00:41:16.392 [main] GenericDao - inserting entity Contact(id=24, firstName=Fred, lastName=Flintstone, email=meaty@sharks, phone=6089479889, resource=null)
+[DEBUG] 2021-06-25 00:41:16.892 [main] GenericDao - Searching for person with name = SNAP Program
+[DEBUG] 2021-06-25 00:41:18.282 [main] GenericDao - Searching for person with nameDesc = Easter Seals
+[DEBUG] 2021-06-25 00:41:19.376 [main] GenericDao - inserting entity Location(id=10001, nameDesc=Beacon, streetAddressOrIntersection=322 Jones st, city=Madison, state=WI, zip=56987, busInfo=null, comments=null, lng=null, lat=null)
+[DEBUG] 2021-06-25 00:41:22.223 [main] GenericDao - Searching for person with website = www.SNAP.com
+[DEBUG] 2021-06-25 00:41:22.864 [main] GenericDao - inserting entity ResourceOwner(id=10001, name=Schmidts, website=Schmidts@food.com)
+[DEBUG] 2021-06-25 00:41:23.426 [main] GenericDao - Searching for person with name = other
+[DEBUG] 2021-06-25 00:41:23.989 [main] GenericDao - inserting entity Type(id=24, name=school meal drop off)
+[INFO ] 2021-06-25 00:41:24.380 [main] UserDaoTest - in save or update test
+[DEBUG] 2021-06-25 00:41:24.551 [main] GenericDao - inserting entity User{id=367, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='meaty', email='meaty@sharks', roles=[UserRoles{id=202, userName='Sally', roleName='admin'}]}
+[DEBUG] 2021-06-25 00:41:24.755 [main] GenericDao - Searching for person with lastName = Curry
+[DEBUG] 2021-06-25 00:41:24.911 [main] GenericDao - The list of Entities by propertyName lastName and value/search term: cur
+[DEBUG] 2021-06-25 00:41:25.020 [main] GenericDao - The list of Entities by entity name [User{id=4, firstName='Karen', lastName='Mack', userName='kmack', password='supersecret4', email='least@mail', roles=[UserRoles{id=4, userName='kmack', roleName='user'}]}, User{id=5, firstName='Dianne', lastName='Klein', userName='dklein', password='supersecret5', email='zeast@mail', roles=[UserRoles{id=5, userName='dklein', roleName='all'}]}]
+[DEBUG] 2021-06-25 00:41:25.020 [main] GenericDao - The list of Entities by entity name []
+[INFO ] 2021-06-25 00:41:25.301 [main] UserDaoTest - get all users test: all users;[User{id=1, firstName='Joe', lastName='Coyne', userName='jcoyne', password='supersecret1', email='beast@mail', roles=[UserRoles{id=1, userName='jcoyne', roleName='user'}]}, User{id=2, firstName='Fred', lastName='Hensen', userName='fhensen', password='supersecret2', email='yeast@mail', roles=[UserRoles{id=2, userName='fhensen', roleName='all'}]}, User{id=3, firstName='Barney', lastName='Curry', userName='bcurry', password='supersecret3', email='seast@mail', roles=[UserRoles{id=3, userName='bcurry', roleName='admin'}]}, User{id=4, firstName='Karen', lastName='Mack', userName='kmack', password='supersecret4', email='least@mail', roles=[UserRoles{id=4, userName='kmack', roleName='user'}]}, User{id=5, firstName='Dianne', lastName='Klein', userName='dklein', password='supersecret5', email='zeast@mail', roles=[UserRoles{id=5, userName='dklein', roleName='all'}]}, User{id=6, firstName='tom', lastName='cat', userName='tomcat', password='tomcat', email='QUeast@mail', roles=[UserRoles{id=6, userName='tomcat', roleName='administration'}]}]
+[DEBUG] 2021-06-25 00:41:25.426 [main] GenericDao - inserting entity User{id=368, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='meaty', email='meaty@sharks', roles=[]}
+[INFO ] 2021-06-25 00:41:25.817 [main] UserRolesDaoTest - update role success test
+[DEBUG] 2021-06-25 00:41:25.926 [main] GenericDao - Searching for person with roleName = admin
+[DEBUG] 2021-06-25 00:41:26.098 [main] GenericDao - The list of Entities by propertyName roleName and value/search term: user
+[INFO ] 2021-06-25 00:41:26.255 [main] UserRolesDaoTest - get all userRoles test: all userRoles;[UserRoles{id=1, userName='jcoyne', roleName='user'}, UserRoles{id=2, userName='fhensen', roleName='all'}, UserRoles{id=3, userName='bcurry', roleName='admin'}, UserRoles{id=4, userName='kmack', roleName='user'}, UserRoles{id=5, userName='dklein', roleName='all'}, UserRoles{id=6, userName='tomcat', roleName='administration'}]
+[DEBUG] 2021-06-25 00:41:26.426 [main] GenericDao - The list of Entities by entity name [UserRoles{id=2, userName='fhensen', roleName='all'}, UserRoles{id=5, userName='dklein', roleName='all'}]
+[DEBUG] 2021-06-25 00:41:26.442 [main] GenericDao - The list of Entities by entity name [UserRoles{id=1, userName='jcoyne', roleName='user'}, UserRoles{id=4, userName='kmack', roleName='user'}]
+[DEBUG] 2021-06-25 00:41:26.786 [main] GenericDao - The list of Entities by entity name [User{id=3, firstName='Barney', lastName='Curry', userName='bcurry', password='supersecret3', email='seast@mail', roles=[UserRoles{id=3, userName='bcurry', roleName='admin'}]}]
+[DEBUG] 2021-06-25 00:41:26.801 [main] GenericDao - inserting entity UserRoles{id=203, userName='bcurry', roleName='admin'}
+[DEBUG] 2021-06-25 00:48:06.926 [main] ApiTestServiceClient - com.hmkurth.ApiLocation.Result@fab35b1
+[DEBUG] 2021-06-25 00:48:12.589 [main] GenericDao - Searching for person with lastName = Planer
+[DEBUG] 2021-06-25 00:48:13.542 [main] GenericDao - inserting entity Contact(id=25, firstName=Fred, lastName=Flintstone, email=meaty@sharks, phone=6089479889, resource=null)
+[DEBUG] 2021-06-25 00:48:14.105 [main] GenericDao - Searching for person with name = SNAP Program
+[DEBUG] 2021-06-25 00:48:15.511 [main] GenericDao - Searching for person with nameDesc = Easter Seals
+[DEBUG] 2021-06-25 00:48:16.276 [main] GenericDao - inserting entity Location(id=10002, nameDesc=Beacon, streetAddressOrIntersection=322 Jones st, city=Madison, state=WI, zip=56987, busInfo=null, comments=null, lng=null, lat=null)
+[DEBUG] 2021-06-25 00:48:17.198 [main] GenericDao - Searching for person with website = www.SNAP.com
+[DEBUG] 2021-06-25 00:48:17.714 [main] GenericDao - inserting entity ResourceOwner(id=10002, name=Schmidts, website=Schmidts@food.com)
+[DEBUG] 2021-06-25 00:48:18.261 [main] GenericDao - Searching for person with name = other
+[DEBUG] 2021-06-25 00:48:18.714 [main] GenericDao - inserting entity Type(id=25, name=school meal drop off)
+[INFO ] 2021-06-25 00:48:19.823 [main] UserDaoTest - in save or update test
+[DEBUG] 2021-06-25 00:48:20.636 [main] GenericDao - inserting entity User{id=369, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='meaty', email='meaty@sharks', roles=[UserRoles{id=204, userName='Sally', roleName='admin'}]}
+[DEBUG] 2021-06-25 00:48:21.663 [main] GenericDao - Searching for person with lastName = Curry
+[DEBUG] 2021-06-25 00:48:22.257 [main] GenericDao - The list of Entities by propertyName lastName and value/search term: cur
+[DEBUG] 2021-06-25 00:48:22.366 [main] GenericDao - The list of Entities by entity name [User{id=4, firstName='Karen', lastName='Mack', userName='kmack', password='supersecret4', email='least@mail', roles=[UserRoles{id=4, userName='kmack', roleName='user'}]}, User{id=5, firstName='Dianne', lastName='Klein', userName='dklein', password='supersecret5', email='zeast@mail', roles=[UserRoles{id=5, userName='dklein', roleName='all'}]}]
+[DEBUG] 2021-06-25 00:48:22.366 [main] GenericDao - The list of Entities by entity name []
+[INFO ] 2021-06-25 00:48:22.710 [main] UserDaoTest - get all users test: all users;[User{id=1, firstName='Joe', lastName='Coyne', userName='jcoyne', password='supersecret1', email='beast@mail', roles=[UserRoles{id=1, userName='jcoyne', roleName='user'}]}, User{id=2, firstName='Fred', lastName='Hensen', userName='fhensen', password='supersecret2', email='yeast@mail', roles=[UserRoles{id=2, userName='fhensen', roleName='all'}]}, User{id=3, firstName='Barney', lastName='Curry', userName='bcurry', password='supersecret3', email='seast@mail', roles=[UserRoles{id=3, userName='bcurry', roleName='admin'}]}, User{id=4, firstName='Karen', lastName='Mack', userName='kmack', password='supersecret4', email='least@mail', roles=[UserRoles{id=4, userName='kmack', roleName='user'}]}, User{id=5, firstName='Dianne', lastName='Klein', userName='dklein', password='supersecret5', email='zeast@mail', roles=[UserRoles{id=5, userName='dklein', roleName='all'}]}, User{id=6, firstName='tom', lastName='cat', userName='tomcat', password='tomcat', email='QUeast@mail', roles=[UserRoles{id=6, userName='tomcat', roleName='administration'}]}]
+[DEBUG] 2021-06-25 00:48:22.897 [main] GenericDao - inserting entity User{id=370, firstName='Fred', lastName='Flintstone', userName='fflintstone', password='meaty', email='meaty@sharks', roles=[]}
+[INFO ] 2021-06-25 00:48:23.210 [main] UserRolesDaoTest - update role success test
+[DEBUG] 2021-06-25 00:48:23.335 [main] GenericDao - Searching for person with roleName = admin
+[DEBUG] 2021-06-25 00:48:23.444 [main] GenericDao - The list of Entities by propertyName roleName and value/search term: user
+[INFO ] 2021-06-25 00:48:23.616 [main] UserRolesDaoTest - get all userRoles test: all userRoles;[UserRoles{id=1, userName='jcoyne', roleName='user'}, UserRoles{id=2, userName='fhensen', roleName='all'}, UserRoles{id=3, userName='bcurry', roleName='admin'}, UserRoles{id=4, userName='kmack', roleName='user'}, UserRoles{id=5, userName='dklein', roleName='all'}, UserRoles{id=6, userName='tomcat', roleName='administration'}]
+[DEBUG] 2021-06-25 00:48:23.866 [main] GenericDao - The list of Entities by entity name [UserRoles{id=2, userName='fhensen', roleName='all'}, UserRoles{id=5, userName='dklein', roleName='all'}]
+[DEBUG] 2021-06-25 00:48:23.866 [main] GenericDao - The list of Entities by entity name [UserRoles{id=1, userName='jcoyne', roleName='user'}, UserRoles{id=4, userName='kmack', roleName='user'}]
+[DEBUG] 2021-06-25 00:48:24.132 [main] GenericDao - The list of Entities by entity name [User{id=3, firstName='Barney', lastName='Curry', userName='bcurry', password='supersecret3', email='seast@mail', roles=[UserRoles{id=3, userName='bcurry', roleName='admin'}]}]
+[DEBUG] 2021-06-25 00:48:24.147 [main] GenericDao - inserting entity UserRoles{id=205, userName='bcurry', roleName='admin'}

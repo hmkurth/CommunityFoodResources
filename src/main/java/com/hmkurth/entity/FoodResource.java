@@ -39,8 +39,8 @@ public class FoodResource {
     private @NonNull Type typeId;//fk to resource_type
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
-    @OneToOne
-    @PrimaryKeyJoinColumn
+    @ManyToOne
+    @JoinColumn
     @FullTextField
     private ResourceOwner owner;
     @NonNull

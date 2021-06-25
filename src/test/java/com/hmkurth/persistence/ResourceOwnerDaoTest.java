@@ -1,7 +1,8 @@
 package com.hmkurth.persistence;
 
-import com.hmkurth.entity.Contact;
+import com.hmkurth.entity.FoodResource;
 import com.hmkurth.entity.ResourceOwner;
+import com.hmkurth.entity.Type;
 import com.hmkurth.test.util.Database;
 import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.BeforeEach;
@@ -11,9 +12,6 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * The type Resource owner dao test.
- */
 @Log4j2
 /**
  * The type ResourceOwner dao test.
@@ -24,14 +22,11 @@ class ResourceOwnerDaoTest {
      */
 
     GenericDao resourceOwnerDao;
-    /**
-     * The Contact dao.
-     */
-    GenericDao contactDao;
+
     /**
      * The Food resource dao.
      */
-    GenericDao foodResourceDao;
+    GenericDao fDao;
 
 
     /**
@@ -138,27 +133,26 @@ class ResourceOwnerDaoTest {
     }
 
     /**
-     * Verify successful insert of a ResourceOwner with contact
+     * Verify successful insert of a ResourceOwner with resource
      */
     @Test
-    void insertWithContactSuccess() {
+    void insertWithResourceSuccess() {
         //need to access both objects, bidirectionality
-        GenericDao cdao=new GenericDao<>(Contact.class);
-       //Set<Contact>  contactSet = null;
-       Contact contactToAdd = new Contact("Bill", "Larson", "bill@pantries.com", "6085134568");
-
-        //contactSet.add(contactToAdd);
+        fDao= new GenericDao<>(FoodResource.class);
+        GenericDao tDao = new GenericDao(Type.class);
+        Type thisType = (Type) tDao.getById(3);
+        FoodResource resourceToAdd = (FoodResource) fDao.getById(3);
         String name = "WIC";
         String website = "Wic.com";
         ResourceOwner newResourceOwner = new ResourceOwner(name, website);
 
         int id = resourceOwnerDao.insert(newResourceOwner);
        // resourceOwnerDao.getById(id);
-        newResourceOwner.addContact(contactToAdd);
+        newResourceOwner.addResource(resourceToAdd);
         assertNotEquals(0,id);
         ResourceOwner insertedResourceOwner = (ResourceOwner) resourceOwnerDao.getById(id);
         //verify the contact was added
-        assertEquals(1, newResourceOwner.getContacts(0).size());
+        assertEquals(1, newResourceOwner.getResources(0).size());
         assertEquals(newResourceOwner, insertedResourceOwner);
 
     }

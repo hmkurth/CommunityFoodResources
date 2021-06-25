@@ -34,9 +34,13 @@ public class Contact {
     private String lastName;
     private String email;
     private String phone;
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "owner_id")
-    private ResourceOwner owner;
+
+    @ManyToOne
+    @JoinColumn(name = "resource_id",
+            foreignKey = @ForeignKey(name = "contact_details_food_resources_id_fk")
+    )
+    private FoodResource resource;
+
 
     @Override
     public boolean equals(Object o) {

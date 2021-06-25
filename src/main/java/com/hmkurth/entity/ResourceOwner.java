@@ -29,19 +29,22 @@ public class ResourceOwner {
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
     @OneToMany(mappedBy = "owner", cascade=CascadeType.ALL, orphanRemoval = true, fetch =FetchType.EAGER )
-    private Set<Contact> contacts = new HashSet<Contact>();
+    private Set<FoodResource> resources = new HashSet<FoodResource>();
+
+
+
 
     /**
      * Instantiates a new Resource owner.
      *
      * @param name     the name
      * @param website  the website
-     * @param contacts the contacts
+     * @param resources the food resources associated with this owner
      */
-    public ResourceOwner(@NonNull String name, String website, Set<Contact> contacts) {
+    public ResourceOwner(@NonNull String name, String website, Set<FoodResource>resources) {
         this.name = name;
         this.website = website;
-        this.contacts = contacts;
+        this.resources = resources;
     }
 
     /**
@@ -56,24 +59,25 @@ public class ResourceOwner {
     }
 
     /**
-     * Add contact.
+     * Add resource.
      *
-     * @param contact the contact
+     * @param resource the resource
      */
-    public void addContact(Contact contact) {
-        contacts.add(contact);
+    public void addResource(FoodResource resource){
+       resources.add(resource);
 
 
     }
 
 
     /**
-     * Gets contacts.
+     * Sets resources
      *
      * @param i the
      * @return the contacts
      */
-    public Set<Contact> getContacts(int i) {
-        return contacts;
+    public Set<FoodResource> getResources(int i) {
+        return resources;
     }
+
 }
