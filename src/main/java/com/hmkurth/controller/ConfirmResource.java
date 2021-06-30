@@ -3,7 +3,6 @@ package com.hmkurth.controller;
 
 import com.hmkurth.entity.Contact;
 import com.hmkurth.entity.FoodResource;
-import com.hmkurth.entity.ResourceOwner;
 import com.hmkurth.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -27,9 +26,7 @@ import java.io.IOException;
 public class ConfirmResource extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
-    GenericDao<FoodResource> fdao;
-    GenericDao<ResourceOwner> odao;
-    GenericDao<Contact> cdao;
+    GenericDao<FoodResource> fdao = new GenericDao<>(FoodResource.class);
     FoodResource resource;
 
     /**
@@ -46,20 +43,33 @@ public class ConfirmResource extends HttpServlet {
         HttpSession session = req.getSession();
 
 
-
 //todo show map location and confirm that
-
+        String url = "/admin/confirmResource.jsp";
         Contact thisContact;
         resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
-        logger.info("forwarded food resource = " + resource);
-        fdao = new GenericDao<FoodResource>(FoodResource.class);
-        cdao = new GenericDao<Contact>(Contact.class);
+        String x = req.getParameter("submit");
 
-        fdao.insert(resource);
+        logger.debug("options value : " + req.getParameter("confirmAdd"));
+        if (x != null && x.equals("Next")) {
+            if (req.getParameter("confirmAdd").equals("addData")) {
+                fdao.insert(resource);
+                String message = "you have successfully added a  food resource, " +  resource.getName();
+                session.setAttribute("message", message);
+                url = "/admin/adminHome.jsp";
+            } else if (req.getParameter("confirmAdd").equals("addLocation")) {
+                url = "/admin/addLocation.jsp";
+            } else if (req.getParameter("confirmAdd").equals("addContact")) {
+                url = "/admin/addContact.jsp";
+            } else if (req.getParameter("confirmAdd").equals("addResourceOwner")) {
+                url = "/admin/addResourceOwner.jsp";
+            } else if (req.getParameter("confirmAdd").equals("addResource")) {
+                //todo more edit capabilities,
+                url = "/addResource.jsp";
+            }
+        }
 
 
-
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/confirmSuccess.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher(url);
         dispatcher.forward(req, res);
 
 
