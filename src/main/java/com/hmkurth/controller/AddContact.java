@@ -66,20 +66,20 @@ public class AddContact extends HttpServlet {
                 logger.debug("thiscontact before setting to resource: " + thisContact);
                // cdao.insert(thisContact);
                 resource.setContactId(thisContact);
-                fdao.insert(resource);
+
                 String message = "you have chosen not to add a contact to the resource " + resource.getName();
                 session.setAttribute("message", message);
-                url = "/admin/addResourceSuccess.jsp";
+                url = "/admin/confirmResource.jsp";
             } else {
                 //choose an existing contact from the list
                 thisContact = cdao.getById(contactInt);
                 //cdao.insert(thisContact);
                 resource.setContactId(thisContact);
-                fdao.insert(resource);
+
                 String message = "you have successfully added thecontact, " + resource.getContactId().getFirstName() + " to the resource " + resource.getName();
                 session.setAttribute("message", message);
                 logger.debug("chose an existing owner: " + resource.getContactId().toString());
-                url = "/admin/addResourceSuccess.jsp";
+                url = "/admin/confirmResource.jsp";
 
             }//end else
             RequestDispatcher dispatcher = req.getRequestDispatcher(url);
@@ -103,7 +103,7 @@ public class AddContact extends HttpServlet {
             fdao.insert(resource);
             String message = "you have successfully added the contact" + resource.getContactId().toString() + " to the resource " + resource.getName() + ". " ;
             session.setAttribute("message", message);
-            url = "/admin/addResourceSuccess.jsp";
+            url = "/admin/confirmResource.jsp";
         }
 
         RequestDispatcher dispatcher = req.getRequestDispatcher(url);

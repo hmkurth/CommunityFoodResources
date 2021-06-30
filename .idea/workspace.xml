@@ -9,21 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="regex validation done for location">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210630 1705.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210630 1711.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210630 1719.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="almost done with basic add resource">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210630 1728.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210630 1754.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ConfirmResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/confirmResource.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210630 1113.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210630 1123.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210630 1129.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210630 1711.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210630 1719.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddContact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addContact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addContact.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addResourceSuccess.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +38,8 @@
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="jsf" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -414,14 +412,7 @@
       <workItem from="1623772266318" duration="26781000" />
       <workItem from="1624137221218" duration="36130000" />
       <workItem from="1624413567641" duration="53956000" />
-      <workItem from="1625065570488" duration="10531000" />
-    </task>
-    <task id="LOCAL-00107" summary="still editing admin...">
-      <created>1620369326595</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1620369326595</updated>
+      <workItem from="1625065570488" duration="12627000" />
     </task>
     <task id="LOCAL-00108" summary="fixed adminHome formatting, looking good, working decently..">
       <created>1620369922575</created>
@@ -759,7 +750,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625088035596</updated>
     </task>
-    <option name="localTasksCounter" value="156" />
+    <task id="LOCAL-00156" summary="almost done with basic add resource">
+      <created>1625092177191</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1625092177207</updated>
+    </task>
+    <option name="localTasksCounter" value="157" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -782,7 +780,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="working on add resource" />
     <MESSAGE value="dropdowns connected, finally" />
     <MESSAGE value="still working on getting the if test for dropdown working" />
     <MESSAGE value="logout function added" />
@@ -807,7 +804,8 @@
     <MESSAGE value="I have a fk to resource owner in the contact, so does the contact go with the owner or the resource???  I think the contact should relate to the resource…" />
     <MESSAGE value="add owner working, again" />
     <MESSAGE value="regex validation done for location" />
-    <option name="LAST_COMMIT_MESSAGE" value="regex validation done for location" />
+    <MESSAGE value="almost done with basic add resource" />
+    <option name="LAST_COMMIT_MESSAGE" value="almost done with basic add resource" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
