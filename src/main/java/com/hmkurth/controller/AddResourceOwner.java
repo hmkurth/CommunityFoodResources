@@ -30,27 +30,6 @@ public class AddResourceOwner extends HttpServlet {
     GenericDao<ResourceOwner> odao;
     FoodResource resource;
 
-
-    /**
-     * Handles HTTP GET requests.
-     *
-     * @param req the HttpServletRequest object
-     * @param res the HttpServletResponse object
-     * @throws ServletException if there is a Servlet failure
-     * @throws IOException      if there is an IO failure
-
-    public void doGet(HttpServletRequest req, HttpServletResponse res)
-            throws ServletException, IOException {
-        HttpSession session = req.getSession();
-
-        int resourceId = (int) session.getAttribute("newResourceId");
-        resource = (FoodResource) req.getAttribute("newResource"); //get the unsaved resource from the previous request
-        logger.debug("This food resource in doget: " + resource.getName());
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/addResourceOwner.jsp");
-        dispatcher.forward(req, res);
-
-    }
-     */
     /**
      * Handles HTTP POST requests.
      *
@@ -63,7 +42,7 @@ public class AddResourceOwner extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 //todo, clean up duplicate code!
         HttpSession session = req.getSession();
-        String url = null;
+        String url;
         ResourceOwner thisOwner;
         resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
         logger.info("forwarded food resource = " + resource);
@@ -87,8 +66,7 @@ public class AddResourceOwner extends HttpServlet {
                 String message = "you have chosen not to add an owner to the resource " + resource.getName();
                 session.setAttribute("message", message);
                 url = "/admin/addLocation.jsp";
-                RequestDispatcher dispatcher = req.getRequestDispatcher(url);
-                dispatcher.forward(req, res);
+
             } else {
                 //choose an existing owner from the list
                 thisOwner = odao.getById(ownerInt);
@@ -97,16 +75,18 @@ public class AddResourceOwner extends HttpServlet {
                 session.setAttribute("message", message);
                 logger.debug("chose an existing owner: " + resource.getOwner().toString());
                 url = "/admin/addLocation.jsp";
-                RequestDispatcher dispatcher = req.getRequestDispatcher(url);
-                dispatcher.forward(req, res);
+
             }//end else
+            RequestDispatcher dispatcher = req.getRequestDispatcher(url);
+            dispatcher.forward(req, res);
 
-
-
+        }//end if int not null, todo what if it is null can it be null if they hit submit??
 
         //if new owner is selected, now grab details from the second form
         String x = req.getParameter("submit2");
-        if ( x != null && x.equals("Next")) {
+            logger.debug("string x = :" + req.getParameter("submit2") );
+      //  if (x.equals("Next") && ownerInt == 9999) {
+            logger.debug("in add new resource owner block" );
             thisOwner = new ResourceOwner();
             thisOwner.setName(req.getParameter("ownerName"));
             thisOwner.setWebsite(req.getParameter("website"));
@@ -116,8 +96,8 @@ public class AddResourceOwner extends HttpServlet {
             String message = "you have successfully added the owner" + resource.getOwner().getName() + " to the resource " + resource.getName() + ". " ;
             session.setAttribute("message", message);
             url = "/admin/addLocation.jsp";
-        }
-        }//end if int not null, todo what if it is null can it be null if they hit submit??
+
+
 
         RequestDispatcher dispatcher = req.getRequestDispatcher(url);
         dispatcher.forward(req, res);
