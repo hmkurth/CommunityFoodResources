@@ -80,6 +80,9 @@ public class FoodResource {
     @FullTextField
     @Column(name="dietary_considerations")
     private String dietaryConsiderations;
+    @NonNull
+    @Column(name = "is_verified")
+    boolean verificationStatus;
 
 
     /**

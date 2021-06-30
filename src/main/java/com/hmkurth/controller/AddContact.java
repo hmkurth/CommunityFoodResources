@@ -44,7 +44,7 @@ public class AddContact extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 //todo, clean up duplicate code!
         HttpSession session = req.getSession();
-        String url = null;
+        String url = "/admin/addContact.jsp";
         Contact thisContact;
         resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
         logger.info("forwarded food resource = " + resource);
@@ -64,7 +64,7 @@ public class AddContact extends HttpServlet {
                 //resource is private, default set in database, id = 8888
                 thisContact= cdao.getById(8888);
                 logger.debug("thiscontact before setting to resource: " + thisContact);
-                cdao.insert(thisContact);
+               // cdao.insert(thisContact);
                 resource.setContactId(thisContact);
                 fdao.insert(resource);
                 String message = "you have chosen not to add a contact to the resource " + resource.getName();
@@ -73,7 +73,7 @@ public class AddContact extends HttpServlet {
             } else {
                 //choose an existing contact from the list
                 thisContact = cdao.getById(contactInt);
-                cdao.insert(thisContact);
+                //cdao.insert(thisContact);
                 resource.setContactId(thisContact);
                 fdao.insert(resource);
                 String message = "you have successfully added thecontact, " + resource.getContactId().getFirstName() + " to the resource " + resource.getName();
@@ -82,11 +82,14 @@ public class AddContact extends HttpServlet {
                 url = "/admin/addResourceSuccess.jsp";
 
             }//end else
+            RequestDispatcher dispatcher = req.getRequestDispatcher(url);
+            dispatcher.forward(req, res);
+
         }//end if int not null, todo what if it is null can it be null if they hit submit??
 
 
 
-        //if new owner is selected, now grab details from the second form
+        //if new contact is selected, now grab details from the second form
         String x = req.getParameter("submit2");
         if ( x != null && x.equals("Next")) {
             thisContact = new Contact();

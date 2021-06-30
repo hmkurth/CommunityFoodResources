@@ -75,3 +75,9 @@ INSERT INTO contact_details VALUES (1,'tim','shmidt','tsm@gone.com', '1233333333
                                    (4,'Caleb','Jones','cjn@gone.com', '1255333333', 2),
                                    (5,'Carrie','Tanner','ctan@gone.com', '1255333333', 4),
                                    (6,'Vera','Planer','vera@gobs.com', '1233333333', 5);
+
+INSERT  INTO  resource_owners VALUES (0, 'private or not available', null, null);
+INSERT  INTO  resource_owners VALUES (8888, 'default place holder', null, null);
+INSERT INTO  location VALUES(9999, 'default place holder', 'somewhere', 'Madison', 'WI', '53704', 'n/a', 'this is a placeholder location', null, null, null);
+
+INSERT INTO  contact_details VALUES(8888, 'default', 'default', null, null,null);
