@@ -1,34 +1,56 @@
-<%@ page import="java.util.Enumeration" %>
 <%@include file="../taglib.jsp"%>
     <jsp:include page="../head.jsp"/>
     <title>Add Resource Success</title>
-    <!--TODO show user the added location and resource, maybe confirm? -->
     <jsp:include page="../header.jsp"/>
 
 
 
 
-<div class="container">
-<h3>${message}</h3>
-    <h2>You have successfully added a new resource, please confirm the details</h2>
+<div class="row pad-bottom">
+
+    <div class="col-md-10 col-md-offset-1">
+        <h3>${message}</h3>
+    <h2>Please confirm the details of this resource</h2>
 
 
         <h2>Resource Details</h2>
-        <table class="table table-condensed table-striped table-bordered">
+        <table class="table table-responsive table-striped table-bordered">
             <thead>
             <tr>
                 <th>Type of Resource</th>
                 <th>Resource Name</th>
                 <th>Description</th>
-                <th>Comments</th>
-                <th>Location</th>
-                <th>Service Area</th>
-                <th>Owner</th>
-                <th>Days Of Week Offered</th>
-                <th>Delivery Offered?</th>
-                <th>Dietary Considerations?</th>
-                <th>Contact</th>
-                <th>Website</th>
+                <c:if test="${not empty newResource.comments}">
+                    <th>Comments</th>
+                </c:if>
+                <c:if test="${not empty newResource.location}">
+                    <th>Location </th>
+                </c:if>
+                <c:if test="${not empty newResource.serviceArea}">
+                    <th>Service Area</th>
+                </c:if>
+                <c:if test="${not empty newResource.owner}">
+                    <th>Owner</th>
+                </c:if>
+                <c:if test="${not empty newResource.daysOfWeek}">
+                    <th>Days of Week</th>
+                </c:if>
+                <c:if test="${not empty newResource.deliveryOffered}">
+                    <th>Delivery Offered?</th>
+                </c:if>
+                <c:if test="${not empty newResource.deliveryDescription}">
+                    <th>Delivery Description</th>
+                </c:if>
+                <c:if test="${not empty newResource.dietaryConsiderations}">
+                    <th>Dietary Considerations</th>
+                </c:if>
+
+                <c:if test="${not empty newResource.contactId}">
+                    <th>Contact</th>
+                </c:if>
+                <c:if test="${not empty newResource.website}">
+                    <th>Website</th>
+                </c:if>
             </tr>
             </thead>
             <tbody>
@@ -38,16 +60,37 @@
                     <td>${newResource.typeId.name}</td>
                     <td>${newResource.name}</td>
                     <td>${newResource.description}</td>
-                    <td>optional${newResource.comments}</td>
-                    <td>optional${newResource.location.nameDesc}, lattitude: ${newResource.location.lat} </td>
-                    <td>optional${newResource.serviceArea}</td>
-                    <td>optional${newResource.owner.name}</td>
+                    <c:if test="${not empty newResource.comments}">
+                        <td>Comments</td>
+                    </c:if>
+                    <c:if test="${not empty newResource.location}">
+                        <td>${newResource.location}</td>
+                    </c:if>
+                    <c:if test="${not empty newResource.serviceArea}">
+                        <td>optional${newResource.serviceArea}</td>
+                    </c:if>
+                    <c:if test="${not empty newResource.owner}">
+                    <td>${newResource.owner}</td>
+                    </c:if>
+                    <c:if test="${not empty newResource.daysOfWeek}">
+                    <td>${newResource.daysOfWeek}</td>
+                    </c:if>
+                    <c:if test="${not empty newResource.deliveryOffered}">
+                    <td>${newResource.deliveryOffered}</td>
+                    </c:if>
+                    <c:if test="${not empty newResource.deliveryDescription}">
+                        <td>${newResource.newResource.deliveryDescription}</td>
+                    </c:if>
+                    <c:if test="${not empty newResource.dietaryConsiderations}">
+                    <td>${newResource.dietaryConsiderations}</td>
+                    </c:if>
 
-                    <td>optional${newResource.daysOfWeek}</td>
-                    <td>optional${newResource.deliveryOffered}</td>
-                    <td>optional${newResource.dietaryConsiderations}</td>
-                    <td>optional${newResource.contactId}</td>
-                    <td>optional${newResource.website}</td>
+                    <c:if test="${not empty newResource.contactId}">
+                    <td>${newResource.contactId}</td>
+                    </c:if>
+                    <c:if test="${not empty newResource.website}">
+                    <td>${newResource.website}</td>
+                    </c:if>
                 </tr>
 
             </tbody>
@@ -68,7 +111,8 @@
             </div>
         </form>
 
-
+    </div>
+</div>
 
 
 
@@ -79,17 +123,6 @@
              <tr bgcolor = "#949494">
                  <th>Param Name</th>
                  <th>Param Value(s)</th>
-             </tr>
-             <%
-                 Enumeration paramNames = request.getParameterNames();
-                 while(paramNames.hasMoreElements()) {
-                     String paramName = (String)paramNames.nextElement();
-                     out.print("<tr><td>" + paramName + "</td>\n");
-                     String paramValue = request.getHeader(paramName);
-                     out.println("<td> " + paramValue + "</td></tr>\n");
-                 }
-             %>
-         </table>
-     -->
+             </tr> -->
 
     <jsp:include page="../footer.jsp"/>

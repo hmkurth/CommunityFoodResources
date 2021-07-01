@@ -9,47 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="working on confirming resource">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210630 2247.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210630 2254.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210630 2300.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logos/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logos/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logos/5big.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logos/MFR5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logos/Madison Food Resources Logo (11) - Shortcut.lnk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logos/Madison Food Resources Logo (12).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logos/Madison Food Resources Logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logos/mfrLogo9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logos/mfrLogoRound.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logos/sunLiteLogo2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logos/sunLiteLogoRound.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logos/sunLogo.png" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="editing resource addition">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210630 2337.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210701 0011.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210701 0037.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210630 1832.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210630 1840.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210630 1844.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddContact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ConfirmResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ConfirmResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210630 2247.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210630 2254.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210630 2300.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/confirmResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/confirmResource.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/banners.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/banners.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/5big.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/MFR5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/Madison Food Resources Logo (11) - Shortcut.lnk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/Madison Food Resources Logo (12).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/Madison Food Resources Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/mfrLogo9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/mfrLogoRound.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/roundLogo250.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/sunLiteLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/sunLiteLogo2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/sunLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -440,14 +411,7 @@
       <workItem from="1623772266318" duration="26781000" />
       <workItem from="1624137221218" duration="36130000" />
       <workItem from="1624413567641" duration="53956000" />
-      <workItem from="1625065570488" duration="20120000" />
-    </task>
-    <task id="LOCAL-00110" summary="refactored Generic Dao">
-      <created>1620441933874</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1620441933874</updated>
+      <workItem from="1625065570488" duration="25548000" />
     </task>
     <task id="LOCAL-00111" summary="updated lat and long to float(10,6)">
       <created>1620443543577</created>
@@ -785,7 +749,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625097431633</updated>
     </task>
-    <option name="localTasksCounter" value="159" />
+    <task id="LOCAL-00159" summary="editing resource addition">
+      <created>1625112416587</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1625112416587</updated>
+    </task>
+    <option name="localTasksCounter" value="160" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -808,7 +779,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="still working on getting the if test for dropdown working" />
     <MESSAGE value="logout function added" />
     <MESSAGE value="if 'newOwner' tag working" />
     <MESSAGE value="continuing with adding resource, may need to break up into smaller chunks" />
@@ -833,7 +803,8 @@
     <MESSAGE value="regex validation done for location" />
     <MESSAGE value="almost done with basic add resource" />
     <MESSAGE value="working on confirming resource" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on confirming resource" />
+    <MESSAGE value="editing resource addition" />
+    <option name="LAST_COMMIT_MESSAGE" value="editing resource addition" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

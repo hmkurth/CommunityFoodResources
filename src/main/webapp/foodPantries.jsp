@@ -9,6 +9,8 @@
                 <h2>All Food Resources</h2>
                 <table class="table table-striped table-bordered">
                     <thead>
+
+
                     <tr>
                         <th>Type of Resource</th>
                         <th>Resource Name</th>
