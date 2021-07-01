@@ -8,14 +8,13 @@
 
 
 
-<div class="login-container">
+<div class="container">
 <h3>${message}</h3>
     <h2>You have successfully added a new resource, please confirm the details</h2>
 
-<div class="row pad-bottom">
-    <div class="col-md-10 col-md-offset-1">
+
         <h2>Resource Details</h2>
-        <table class="table table-striped table-bordered">
+        <table class="table table-condensed table-striped table-bordered">
             <thead>
             <tr>
                 <th>Type of Resource</th>
@@ -39,16 +38,16 @@
                     <td>${newResource.typeId.name}</td>
                     <td>${newResource.name}</td>
                     <td>${newResource.description}</td>
-                    <td>${newResource.comments}</td>
-                    <td>${newResource.location.nameDesc}</td>
-                    <td>${newResource.serviceArea}</td>
-                    <td>${newResource.owner.name}</td>
+                    <td>optional${newResource.comments}</td>
+                    <td>optional${newResource.location.nameDesc}, lattitude: ${newResource.location.lat} </td>
+                    <td>optional${newResource.serviceArea}</td>
+                    <td>optional${newResource.owner.name}</td>
 
-                    <td>${newResource.daysOfWeek}</td>
-                    <td>${newResource.deliveryOffered}</td>
-                    <td>${newResource.dietaryConsiderations}</td>
-                    <td>${newResource.contactId}</td>
-                    <td>${newResource.website}</td>
+                    <td>optional${newResource.daysOfWeek}</td>
+                    <td>optional${newResource.deliveryOffered}</td>
+                    <td>optional${newResource.dietaryConsiderations}</td>
+                    <td>optional${newResource.contactId}</td>
+                    <td>optional${newResource.website}</td>
                 </tr>
 
             </tbody>

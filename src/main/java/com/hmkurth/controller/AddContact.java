@@ -47,38 +47,29 @@ public class AddContact extends HttpServlet {
         String url = "/admin/addContact.jsp";
         Contact thisContact;
         resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
-        logger.info("forwarded food resource = " + resource);
         fdao = new GenericDao<FoodResource>(FoodResource.class);
         cdao = new GenericDao<Contact>(Contact.class);
         String contactId = req.getParameter("contact");
         req.setAttribute("selectedContactId", contactId);//for selection in the dropdown menu
         if(contactId != null) {
             int contactInt = Integer.parseInt(contactId);
-            logger.debug("contactInt = : " + contactInt);
-
-            //set the owner
+            //set the contact
             if (contactInt == 9999) {
                 //new contact to add, jsp should display additional fields after the first submit is processed, so redirect
                 url = "/admin/addContact.jsp";
             } else if (contactInt == 8888) {
                 //resource is private, default set in database, id = 8888
                 thisContact= cdao.getById(8888);
-                logger.debug("thiscontact before setting to resource: " + thisContact);
-               // cdao.insert(thisContact);
                 resource.setContactId(thisContact);
-
                 String message = "you have chosen not to add a contact to the resource " + resource.getName();
                 session.setAttribute("message", message);
                 url = "/admin/confirmResource.jsp";
             } else {
                 //choose an existing contact from the list
                 thisContact = cdao.getById(contactInt);
-                //cdao.insert(thisContact);
                 resource.setContactId(thisContact);
-
-                String message = "you have successfully added thecontact, " + resource.getContactId().getFirstName() + " to the resource " + resource.getName();
+                String message = "you have successfully added the contact, " + resource.getContactId().getFirstName() + " to the resource " + resource.getName();
                 session.setAttribute("message", message);
-                logger.debug("chose an existing owner: " + resource.getContactId().toString());
                 url = "/admin/confirmResource.jsp";
 
             }//end else

@@ -1,7 +1,6 @@
 package com.hmkurth.controller;
 
 
-import com.hmkurth.entity.Contact;
 import com.hmkurth.entity.FoodResource;
 import com.hmkurth.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
@@ -39,34 +38,39 @@ public class ConfirmResource extends HttpServlet {
      **/
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-//todo, clean up duplicate code!
         HttpSession session = req.getSession();
 
-
-//todo show map location and confirm that
         String url = "/admin/confirmResource.jsp";
-        Contact thisContact;
         resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
         String x = req.getParameter("submit");
 
         logger.debug("options value : " + req.getParameter("confirmAdd"));
         if (x != null && x.equals("Next")) {
-            if (req.getParameter("confirmAdd").equals("addData")) {
-                fdao.insert(resource);
-                String message = "you have successfully added a  food resource, " +  resource.getName();
-                session.setAttribute("message", message);
-                url = "/admin/adminHome.jsp";
-            } else if (req.getParameter("confirmAdd").equals("addLocation")) {
-                url = "/admin/addLocation.jsp";
-            } else if (req.getParameter("confirmAdd").equals("addContact")) {
-                url = "/admin/addContact.jsp";
-            } else if (req.getParameter("confirmAdd").equals("addResourceOwner")) {
-                url = "/admin/addResourceOwner.jsp";
-            } else if (req.getParameter("confirmAdd").equals("addResource")) {
-                //todo more edit capabilities,
-                url = "/addResource.jsp";
+            switch (req.getParameter("confirmAdd")) {
+                case "addData":
+                    fdao.insert(resource);
+                    String message = "you have successfully added a  food resource, " + resource.getName();
+                    //todo show map location and confirm that
+                    session.setAttribute("message", message);
+                    url = "/admin/adminHome.jsp";
+                    break;
+                case "addLocation":
+                    url = "/admin/addLocation.jsp";
+                    break;
+                case "addContact":
+                    url = "/admin/addContact.jsp";
+                    break;
+                case "addResourceOwner":
+                    url = "/admin/addResourceOwner.jsp";
+                    break;
+                case "addResource":
+                    //todo more edit capabilities,
+                    url = "/admin/addResource.jsp";
+                    break;
             }
         }
+
+
 
 
         RequestDispatcher dispatcher = req.getRequestDispatcher(url);

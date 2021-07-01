@@ -10,17 +10,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="working on confirming resource">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210630 1832.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210630 1840.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210630 1844.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210630 2247.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210630 2254.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210630 2300.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logos/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logos/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logos/5big.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logos/MFR5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logos/Madison Food Resources Logo (11) - Shortcut.lnk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logos/Madison Food Resources Logo (12).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logos/Madison Food Resources Logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logos/mfrLogo9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logos/mfrLogoRound.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logos/sunLiteLogo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logos/sunLiteLogoRound.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logos/sunLogo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210630 1725.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210630 1728.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210630 1754.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210630 1832.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210630 1840.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210630 1844.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddContact.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ConfirmResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ConfirmResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/confirmResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/confirmResource.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/banners.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/banners.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/5big.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/MFR5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/Madison Food Resources Logo (11) - Shortcut.lnk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/Madison Food Resources Logo (12).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/Madison Food Resources Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/mfrLogo9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/mfrLogoRound.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/roundLogo250.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/sunLiteLogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/sunLiteLogo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/sunLogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -411,14 +440,7 @@
       <workItem from="1623772266318" duration="26781000" />
       <workItem from="1624137221218" duration="36130000" />
       <workItem from="1624413567641" duration="53956000" />
-      <workItem from="1625065570488" duration="15845000" />
-    </task>
-    <task id="LOCAL-00109" summary="working on food resource search, able to locate Attribute with the the given name [null] on this ManagedType [com.hmkurth.entity.FoodResource]">
-      <created>1620373178730</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1620373178730</updated>
+      <workItem from="1625065570488" duration="20120000" />
     </task>
     <task id="LOCAL-00110" summary="refactored Generic Dao">
       <created>1620441933874</created>
@@ -756,7 +778,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625094325776</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="working on confirming resource">
+      <created>1625097431633</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1625097431633</updated>
+    </task>
+    <option name="localTasksCounter" value="159" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

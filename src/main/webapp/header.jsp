@@ -68,7 +68,7 @@
 
 
 								<a class="navbar-brand pad-bottom" href="${pageContext.request.contextPath}/index.jsp">
-									<img src="${pageContext.request.contextPath}/assets/img/sunLiteLogo.png"
+									<img src="${pageContext.request.contextPath}/assets/img/logos/sunLiteLogoRound.png" class="img-circle"
 										 alt="Back to home" />
 								</a>
 
@@ -88,7 +88,7 @@
 						</li>
 
 						<li><a href="${pageContext.request.contextPath}/aboutProject.jsp">About This Project</a></li>
-						<li><a href="${pageContext.request.contextPath}/contactMe.jsp">Contact(Not Done)</a></li>
+
 					</ul>
 
 				 </div>
