@@ -1,5 +1,9 @@
 <%@include file="taglib.jsp"%>
 
+<!DOCTYPE html>
+<html lang="en">
+
+
 
 <div class="menu-block pull-right no-pad">
 

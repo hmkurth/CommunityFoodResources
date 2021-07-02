@@ -1,7 +1,5 @@
 package com.hmkurth.controller;
 
-import com.hmkurth.entity.User;
-import com.hmkurth.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -12,7 +10,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
 
 /**
  * this servlet will be the locked down resource that prompts the tomcat login servlet,
@@ -36,7 +33,7 @@ public class LoginAction extends HttpServlet {
  *@exception IOException       if there is an IO failure
  **/
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-    String url;
+   /** String url;
     logger.info("The logged in user; " + req.getRemoteUser() + "has a role of  'user' : "  + req.isUserInRole("user") );
     //if the user is an admin, a special section is shown on the index,, otherwise go to index TODO delete extra code depending on how you want to direct this
      if(req.isUserInRole("admin")) {
@@ -51,7 +48,9 @@ public class LoginAction extends HttpServlet {
     if(req.getRemoteUser() != null) {
         req.getSession().setAttribute("loggedInUser", req.getRemoteUser());
     }
-    RequestDispatcher dispatcher = req.getRequestDispatcher(url);
+
+    **/
+    RequestDispatcher dispatcher = req.getRequestDispatcher("/loginThanks.jsp");
     dispatcher.forward(req, resp);
 
     }

@@ -89,6 +89,8 @@ public class LocationApiDao implements PropertiesLoader {
                 //creates an object from the returned json
                 Result result = mapper.readValue(apiResponse, Result.class);
                 log.info(result);
+//todo check result status, "OK" means at least one result was returned and address validated
+                String status= result.getStatus();
 
                 locationToMap.setLat((float) result.getResults().get(0).getGeometry().getLocation().getLat());
                 locationToMap.setLng(result.getResults().get(0).getGeometry().getLocation().getLng());

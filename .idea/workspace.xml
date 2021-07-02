@@ -9,18 +9,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="editing resource addition">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210630 2337.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210701 0011.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210701 0037.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="the point at which i tried to add the head and header info out of the files(not included), and took out the login logic, and still the login.jsp does not show">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210701 2059.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210701 2118.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210701 2126.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210630 2247.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210630 2254.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210630 2300.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/confirmResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/confirmResource.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210701 0011.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210701 0037.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210701 0041.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ConfirmResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ConfirmResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LoginAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/loginError.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/loginError.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/signUpSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/signUpSuccess.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +57,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -126,8 +132,8 @@
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\test\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\DesignDocs" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp" />
+      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\DesignDocs" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\admin" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\resources" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\utilPages" />
@@ -149,15 +155,13 @@
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.Tomcat">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -411,35 +415,9 @@
       <workItem from="1623772266318" duration="26781000" />
       <workItem from="1624137221218" duration="36130000" />
       <workItem from="1624413567641" duration="53956000" />
-      <workItem from="1625065570488" duration="25548000" />
-    </task>
-    <task id="LOCAL-00111" summary="updated lat and long to float(10,6)">
-      <created>1620443543577</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1620443543577</updated>
-    </task>
-    <task id="LOCAL-00112" summary="added hibernate search dependencies to pom">
-      <created>1620448361576</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1620448361576</updated>
-    </task>
-    <task id="LOCAL-00113" summary="&lt;property name=&quot;hibernate.search.backend.directory.root&quot;/&gt; in hibernate config">
-      <created>1620450698016</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1620450698016</updated>
-    </task>
-    <task id="LOCAL-00114" summary="annotated location and food resources for hibernate search">
-      <created>1620530606685</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1620530606786</updated>
+      <workItem from="1625065570488" duration="31937000" />
+      <workItem from="1625187746774" duration="4892000" />
+      <workItem from="1625196853517" duration="2423000" />
     </task>
     <task id="LOCAL-00115" summary="updated CFRL database">
       <created>1620534832625</created>
@@ -756,7 +734,35 @@
       <option name="project" value="LOCAL" />
       <updated>1625112416587</updated>
     </task>
-    <option name="localTasksCounter" value="160" />
+    <task id="LOCAL-00160" summary="editing display tables">
+      <created>1625118556095</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1625118556095</updated>
+    </task>
+    <task id="LOCAL-00161" summary="creating a new login welcome jsp and loginforward servlet to try to simplify the login in loginAction so that i can style the login.jsp....">
+      <created>1625179980544</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1625179980873</updated>
+    </task>
+    <task id="LOCAL-00162" summary="the point at which i tried to add styling after simplifying logic in login jsp and loginAction servlet...">
+      <created>1625183154408</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1625183154408</updated>
+    </task>
+    <task id="LOCAL-00163" summary="the point at which i tried to add the head and header info out of the files(not included), and took out the login logic, and still the login.jsp does not show">
+      <created>1625189433041</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1625189433041</updated>
+    </task>
+    <option name="localTasksCounter" value="164" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -779,10 +785,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="logout function added" />
-    <MESSAGE value="if 'newOwner' tag working" />
-    <MESSAGE value="continuing with adding resource, may need to break up into smaller chunks" />
-    <MESSAGE value="trying to refactor adding owner to be independent/reusable" />
     <MESSAGE value="finally got the add resource workable, still need to edit now that I figured out the problem" />
     <MESSAGE value="getting resource owner addition going..." />
     <MESSAGE value="trying to edit styles..." />
@@ -804,7 +806,11 @@
     <MESSAGE value="almost done with basic add resource" />
     <MESSAGE value="working on confirming resource" />
     <MESSAGE value="editing resource addition" />
-    <option name="LAST_COMMIT_MESSAGE" value="editing resource addition" />
+    <MESSAGE value="editing display tables" />
+    <MESSAGE value="creating a new login welcome jsp and loginforward servlet to try to simplify the login in loginAction so that i can style the login.jsp...." />
+    <MESSAGE value="the point at which i tried to add styling after simplifying logic in login jsp and loginAction servlet..." />
+    <MESSAGE value="the point at which i tried to add the head and header info out of the files(not included), and took out the login logic, and still the login.jsp does not show" />
+    <option name="LAST_COMMIT_MESSAGE" value="the point at which i tried to add the head and header info out of the files(not included), and took out the login logic, and still the login.jsp does not show" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

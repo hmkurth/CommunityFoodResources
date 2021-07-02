@@ -9,41 +9,85 @@
                 <h2>All Food Resources</h2>
                 <table class="table table-striped table-bordered">
                     <thead>
-
-
                     <tr>
                         <th>Type of Resource</th>
                         <th>Resource Name</th>
                         <th>Description</th>
-                        <th>Comments</th>
-                        <th>Location</th>
-                        <th>Service Area</th>
+                        <c:if test="${not empty (resourcesAll.comments )}">
+                            <th>Comments</th>
+                        </c:if>
+                        <c:if test="${not empty resourcesAll.location}">
+                            <th>Location </th>
+                        </c:if>
+                        <c:if test="${not empty resourcesAll.serviceArea}">
+                            <th>Service Area</th>
+                        </c:if>
+                        <c:if test="${not empty resourcesAll.owner}">
+                            <th>Owner</th>
+                        </c:if>
+                        <c:if test="${not empty resourcesAll.daysOfWeek}">
+                            <th>Days of Week</th>
+                        </c:if>
+                        <c:if test="${not empty resourcesAll.deliveryOffered}">
+                            <th>Delivery Offered?</th>
+                        </c:if>
+                        <c:if test="${not empty resourcesAll.deliveryDescription}">
+                            <th>Delivery Description</th>
+                        </c:if>
+                        <c:if test="${not empty resourcesAll.dietaryConsiderations}">
+                            <th>Dietary Considerations</th>
+                        </c:if>
 
-                        <th>Days Of Week Offered</th>
-                        <th>Delivery Offered?</th>
-                        <th>Dietary Considerations?</th>
-                        <th>Contact</th>
-                        <th>Website</th>
+                        <c:if test="${not empty resourcesAll.contactId}">
+                            <th>Contact</th>
+                        </c:if>
+                        <c:if test="${not empty resourcesAll.website}">
+                            <th>Website</th>
+                        </c:if>
                     </tr>
                     </thead>
                     <tbody>
-                    <c:forEach var="resource" items="${resourcesAll}" varStatus="iter">
-                        <tr>
 
-                            <td>${resource.typeId.name}</td>
-                            <td>${resource.name}</td>
-                            <td>${resource.description}</td>
-                            <td>${resource.comments}</td>
-                            <td>${resource.location.nameDesc}</td>
-                            <td>${resource.serviceArea}</td>
+                    <tr>
+<c:forEach var="resource" items="${resourcesAll}" varStatus="iter">
+                        <td>${resourcesAll.typeId.name}</td>
+                        <td>${resourcesAll.name}</td>
+                        <td>${resourcesAll.description}</td>
+                        <c:if test="${not empty resourcesAll.comments }">
+                            <td>${resourcesAll.comments}</td>
+                        </c:if>
+                        <c:if test="${not empty resourcesAll.location}">
+                            <td>${resourcesAll.location}</td>
+                        </c:if>
+                        <c:if test="${not empty resourcesAll.serviceArea}">
+                            <td>optional${resourcesAll.serviceArea}</td>
+                        </c:if>
+                        <c:if test="${not empty resourcesAll.owner}">
+                            <td>${resourcesAll.owner}</td>
+                        </c:if>
+                        <c:if test="${not empty resourcesAll.daysOfWeek}">
+                            <td>${resourcesAll.daysOfWeek}</td>
+                        </c:if>
+                        <c:if test="${not empty resourcesAll.deliveryOffered}">
+                            <td>${resourcesAll.deliveryOffered}</td>
+                        </c:if>
+                        <c:if test="${not empty resourcesAll.deliveryDescription}">
+                            <td>${resourcesAll.resourcesAll.deliveryDescription}</td>
+                        </c:if>
+                        <c:if test="${not empty resourcesAll.dietaryConsiderations}">
+                            <td>${resourcesAll.dietaryConsiderations}</td>
+                        </c:if>
 
-                            <td>${resource.daysOfWeek}</td>
-                            <td>${resource.deliveryOffered}</td>
-                            <td>${resource.dietaryConsiderations}</td>
-                            <td>${resource.contactId}</td>
-                            <td>${resource.website}</td>
-                        </tr>
+                        <c:if test="${not empty resourcesAll.contactId}">
+                            <td>${resourcesAll.contactId}</td>
+                        </c:if>
+                        <c:if test="${not empty resourcesAll.website}">
+                            <td>${resourcesAll.website}</td>
+                        </c:if>
+
+                    </tr>
                     </c:forEach>
+
                     </tbody>
                 </table>
 

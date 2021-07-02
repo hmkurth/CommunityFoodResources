@@ -49,7 +49,7 @@ public class ConfirmResource extends HttpServlet {
             switch (req.getParameter("confirmAdd")) {
                 case "addData":
                     fdao.insert(resource);
-                    String message = "you have successfully added a  food resource, " + resource.getName();
+                    String message = "you have successfully submitted a  food resource, " + resource.getName() + ", an admin will double check entry before adding to the live database";
                     //todo show map location and confirm that
                     session.setAttribute("message", message);
                     url = "/admin/adminHome.jsp";

@@ -3303,3 +3303,7 @@
 [DEBUG] 2021-07-01 00:47:34.438 [http-nio-8080-exec-8] AddLocation - resource location set to null
 [DEBUG] 2021-07-01 00:47:55.333 [http-nio-8080-exec-3] ConfirmResource - options value : addData
 [DEBUG] 2021-07-01 00:47:55.453 [http-nio-8080-exec-3] GenericDao - inserting entity FoodResource(id=33, name=dgfdfg, type_id=Type(id=1, name=food pantry), owner=ResourceOwner(id=10024, name=fgf, website=), description=fgdfg, location=null, contactId=Contact(id=5, firstName=Carrie, lastName=Tanner, email=ctan@gone.com, phone=1255333333, owner=ResourceOwner(id=4, name=Bethel Lutheran Church, website=www.christalmighty!.com)), comments=, serviceArea=dfgdfg, website=df.com, documentation=fgfg, daysOfWeek=fgfggfgf, deliveryOffered=false, deliveryDescription=, dietaryConsiderations=)
+[DEBUG] 2021-07-01 18:21:54.610 [http-nio-8080-exec-7] GenericDao - The list of Entities by propertyName userName and value/search term: huey
+[DEBUG] 2021-07-01 18:21:55.524 [http-nio-8080-exec-7] GenericDao - inserting entity User{id=381, firstName='Ryder &', lastName='Kurth', userName='huey', password='nood', email='Heathermariek@hotmail.com', roles=[UserRoles{id=216, userName='huey', roleName='user'}]}
+[INFO ] 2021-07-01 20:20:41.989 [http-nio-8080-exec-8] LoginForward - The logged in user; bcurryhas a role of  'user' : false
+[INFO ] 2021-07-01 20:59:02.682 [http-nio-8080-exec-1] LoginForward - The logged in user; bcurryhas a role of  'user' : false
