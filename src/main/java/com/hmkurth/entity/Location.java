@@ -49,9 +49,20 @@ public class Location {
     @Latitude
     private Float lat;
     @OneToMany(cascade=CascadeType.ALL)
-    @PrimaryKeyJoinColumn
+    @JoinColumn(name="location_id")
     @ToString.Exclude
     private Set<FoodResource> resources;
+
+    public Set<FoodResource> getResources() {
+
+        return resources;
+    }
+
+    public void setResources(Set<FoodResource> resources) {
+        this.resources = resources;
+    }
+
+
 
     @Override
     public boolean equals(Object o) {

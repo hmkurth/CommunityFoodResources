@@ -9,16 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="reverted back">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210701 2132.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210703 1836.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="changing location relationship to foodresource, one to many">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210703 1859.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210703 2021.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210703 2025.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210703 2044.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210703 2104.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210701 2059.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/banner.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/banner.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +150,7 @@
       <recent name="com.hmkurth.persistence" />
     </key>
   </component>
-  <component name="RunManager" selected="TomEE Server.Tomcat">
+  <component name="RunManager" selected="JUnit.com.hmkurth.persistence in CommunityFoodResources">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -186,6 +189,21 @@
       <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.FoodResourceTest" />
       <option name="METHOD_NAME" value="insertSuccess" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocationDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CommunityFoodResources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmkurth.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.LocationDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -315,10 +333,12 @@
       <item itemvalue="JUnit.ResourceOwnerDaoTest.insertWithResourceSuccess" />
       <item itemvalue="JUnit.FoodResourceTest.insertSuccess" />
       <item itemvalue="TomEE Server.Tomcat" />
+      <item itemvalue="JUnit.LocationDaoTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.com.hmkurth.persistence in CommunityFoodResources" />
+        <item itemvalue="JUnit.LocationDaoTest" />
         <item itemvalue="JUnit.FoodResourceTest.insertSuccess" />
         <item itemvalue="JUnit.All in CommunityFoodResources" />
         <item itemvalue="JUnit.ResourceOwnerDaoTest.insertWithResourceSuccess" />
@@ -413,14 +433,7 @@
       <workItem from="1625065570488" duration="31937000" />
       <workItem from="1625187746774" duration="4892000" />
       <workItem from="1625196853517" duration="2866000" />
-      <workItem from="1625354801533" duration="3220000" />
-    </task>
-    <task id="LOCAL-00116" summary="location search params in place, ready to test">
-      <created>1620536974772</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1620536974772</updated>
+      <workItem from="1625354801533" duration="6006000" />
     </task>
     <task id="LOCAL-00117" summary="in testing, not sure about results coming back..">
       <created>1620540508512</created>
@@ -758,7 +771,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625201351551</updated>
     </task>
-    <option name="localTasksCounter" value="165" />
+    <task id="LOCAL-00165" summary="changing location relationship to foodresource, one to many">
+      <created>1625361434957</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1625361434958</updated>
+    </task>
+    <option name="localTasksCounter" value="166" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -781,7 +801,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="getting resource owner addition going..." />
     <MESSAGE value="trying to edit styles..." />
     <MESSAGE value="got some of my themes colors integrated into the css." />
     <MESSAGE value="looking a little better..." />
@@ -806,7 +825,8 @@
     <MESSAGE value="the point at which i tried to add styling after simplifying logic in login jsp and loginAction servlet..." />
     <MESSAGE value="the point at which i tried to add the head and header info out of the files(not included), and took out the login logic, and still the login.jsp does not show" />
     <MESSAGE value="reverted back" />
-    <option name="LAST_COMMIT_MESSAGE" value="reverted back" />
+    <MESSAGE value="changing location relationship to foodresource, one to many" />
+    <option name="LAST_COMMIT_MESSAGE" value="changing location relationship to foodresource, one to many" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

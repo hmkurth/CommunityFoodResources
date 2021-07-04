@@ -21,14 +21,14 @@ INSERT INTO user_roles VALUES (1,'jcoyne','user','1'),
                               (6,'tomcat','administration','6');
 
 
-INSERT INTO location (id, name_description, streetaddr_or_intersection, city, state, zip,  comments, resource_id)
+INSERT INTO location (id, name_description, streetaddr_or_intersection, city, state, zip,  comments)
 VALUES
-(1,'eastside near lansing','422 Lansing','Madison', 'WI', 53714,  'near front of property', 55);
-INSERT INTO location (id, name_description, streetaddr_or_intersection, city, state, zip,  comments, resource_id) VALUES (2,'main building','3426 hargrove','Madison','WI', 53714,  'n/a', 65);
-INSERT INTO location (id, name_description, streetaddr_or_intersection, city, state, zip,  comments, resource_id) VALUES (3, 'drop off','655 Main','Madison','WI', 53722,  'n/a', 75);
-INSERT INTO location (id, name_description, streetaddr_or_intersection, city, state, zip,  comments, resource_id) VALUES (4,'River Food Pantry','1002 W. Wash','Madison', 'WI', 537478,  'pickup near front door', 85);
-INSERT INTO location (id, name_description, streetaddr_or_intersection, city, state, zip,  comments, resource_id) VALUES (5,'Easter Seals','corner of Main and Fordem','Madison','WI', 53254,  'near back', 95);
-INSERT INTO location (id, name_description, streetaddr_or_intersection, city, state, zip,  comments, resource_id) VALUES (6,'eastside near lansing','422 Lansing','Madison','WI', 53758,  'n/a', 105);
+(1,'eastside near lansing','422 Lansing','Madison', 'WI', 53714,  'near front of property');
+INSERT INTO location (id, name_description, streetaddr_or_intersection, city, state, zip,  comments) VALUES (2,'main building','3426 hargrove','Madison','WI', 53714,  'n/a');
+INSERT INTO location (id, name_description, streetaddr_or_intersection, city, state, zip,  comments) VALUES (3, 'drop off','655 Main','Madison','WI', 53722,  'n/a');
+INSERT INTO location (id, name_description, streetaddr_or_intersection, city, state, zip,  comments) VALUES (4,'River Food Pantry','1002 W. Wash','Madison', 'WI', 537478,  'pickup near front door');
+INSERT INTO location (id, name_description, streetaddr_or_intersection, city, state, zip,  comments) VALUES (5,'Easter Seals','corner of Main and Fordem','Madison','WI', 53254,  'near back');
+INSERT INTO location (id, name_description, streetaddr_or_intersection, city, state, zip,  comments) VALUES (6,'eastside near lansing','422 Lansing','Madison','WI', 53758,  'n/a');
 
 
 
@@ -75,9 +75,3 @@ INSERT INTO contact_details VALUES (1,'tim','shmidt','tsm@gone.com', '1233333333
                                    (4,'Caleb','Jones','cjn@gone.com', '1255333333', 2),
                                    (5,'Carrie','Tanner','ctan@gone.com', '1255333333', 4),
                                    (6,'Vera','Planer','vera@gobs.com', '1233333333', 5);
-
-INSERT  INTO  resource_owners VALUES (0, 'private or not available', null, null);
-INSERT  INTO  resource_owners VALUES (8888, 'default place holder', null, null);
-INSERT INTO  location VALUES(9999, 'default place holder', 'somewhere', 'Madison', 'WI', '53704', 'n/a', 'this is a placeholder location', null, null, null);
-
-INSERT INTO  contact_details VALUES(8888, 'default', 'default', null, null,null);

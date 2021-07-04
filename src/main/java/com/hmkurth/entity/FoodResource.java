@@ -46,7 +46,7 @@ public class FoodResource {
     @NonNull
     @FullTextField
     private String description;
-    @OneToOne
+    @ManyToOne
     @PrimaryKeyJoinColumn
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
