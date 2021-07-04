@@ -16,7 +16,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.Set;
 
 /**
  * This servlet will allow a user to enter a location into the db,
@@ -93,7 +92,7 @@ public class AddLocation extends HttpServlet {
 
             assert location2 != null;
             resource.setLocation(location2);
-            location2.setResources((Set<FoodResource>) resource);
+            location2.addResource(resource);
             //add the location to the database
             dao.insert(location2);
             String message = "adding location to the resource " + resource.getName();

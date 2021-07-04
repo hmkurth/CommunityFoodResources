@@ -10,18 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="changing location relationship to foodresource, one to many">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210703 1859.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210703 2021.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210703 2025.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210703 2044.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210703 2104.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210703 2107.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210703 2138.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210701 2118.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210701 2126.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210701 2132.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210703 1836.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210703 1859.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210703 2021.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210703 2025.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210703 2044.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,20 +153,7 @@
       <recent name="com.hmkurth.persistence" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.com.hmkurth.persistence in CommunityFoodResources">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TomEE Server.Tomcat">
     <configuration name="cleanDb.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/src/test/resources/cleanDb.sql" />
       <script-mode>FILE</script-mode>
@@ -332,13 +322,13 @@
       <item itemvalue="JUnit.All in CommunityFoodResources" />
       <item itemvalue="JUnit.ResourceOwnerDaoTest.insertWithResourceSuccess" />
       <item itemvalue="JUnit.FoodResourceTest.insertSuccess" />
-      <item itemvalue="TomEE Server.Tomcat" />
       <item itemvalue="JUnit.LocationDaoTest" />
+      <item itemvalue="TomEE Server.Tomcat" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.com.hmkurth.persistence in CommunityFoodResources" />
         <item itemvalue="JUnit.LocationDaoTest" />
+        <item itemvalue="JUnit.com.hmkurth.persistence in CommunityFoodResources" />
         <item itemvalue="JUnit.FoodResourceTest.insertSuccess" />
         <item itemvalue="JUnit.All in CommunityFoodResources" />
         <item itemvalue="JUnit.ResourceOwnerDaoTest.insertWithResourceSuccess" />
@@ -434,6 +424,7 @@
       <workItem from="1625187746774" duration="4892000" />
       <workItem from="1625196853517" duration="2866000" />
       <workItem from="1625354801533" duration="6006000" />
+      <workItem from="1625366067851" duration="1297000" />
     </task>
     <task id="LOCAL-00117" summary="in testing, not sure about results coming back..">
       <created>1620540508512</created>

@@ -8,6 +8,7 @@ import org.hibernate.search.mapper.pojo.bridge.builtin.annotation.Longitude;
 import org.hibernate.search.mapper.pojo.mapping.definition.annotation.GenericField;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
@@ -48,20 +49,43 @@ public class Location {
     private Float lng;
     @Latitude
     private Float lat;
+
+    public void setResources(Set<FoodResource> resources) {
+        this.resources = resources;
+    }
+
     @OneToMany(cascade=CascadeType.ALL)
     @JoinColumn(name="location_id")
     @ToString.Exclude
-    private Set<FoodResource> resources;
+    private Set<FoodResource> resources = new HashSet<>();
+
+
 
     public Set<FoodResource> getResources() {
 
         return resources;
     }
 
-    public void setResources(Set<FoodResource> resources) {
-        this.resources = resources;
+    /**
+     * Add resource.
+     *
+     * @param resource the resource to add
+     */
+    public void addResource(FoodResource resource) {
+        resources.add(resource);
+        resource.setLocation(this);
+
     }
 
+    /**
+     * Delete role.
+     *
+     * @param resource the resource to add
+     */
+    public void deleteResource(FoodResource resource) {
+        resources.remove(resource);
+        resource.setLocation(null);
+    }
 
 
     @Override
