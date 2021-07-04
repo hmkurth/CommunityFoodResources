@@ -19,7 +19,7 @@
                 </div>
 
                 <div class="col-md-6 col-md-offset-1">
-                    <img src="${pageContext.request.contextPath}/assets/img/sunLogo.png" alt="madison food resources logo" class="fa-align-center img-responsive img-circle" />
+                    <img src="${pageContext.request.contextPath}/assets/img/logos/sunLogo.png" alt="madison food resources logo" class="fa-align-center img-responsive img-circle" />
                 </div>
             </div>
 

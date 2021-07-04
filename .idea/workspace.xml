@@ -9,23 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="the point at which i tried to add the head and header info out of the files(not included), and took out the login logic, and still the login.jsp does not show">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210701 2059.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210701 2118.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210701 2126.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="reverted back">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210701 2132.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210703 1836.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210701 0011.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210701 0037.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210701 0041.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ConfirmResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ConfirmResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LoginAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210701 2059.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/banner.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/banner.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/loginError.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/loginError.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/signUpSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/signUpSuccess.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,13 +148,15 @@
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.Tomcat">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -417,14 +412,8 @@
       <workItem from="1624413567641" duration="53956000" />
       <workItem from="1625065570488" duration="31937000" />
       <workItem from="1625187746774" duration="4892000" />
-      <workItem from="1625196853517" duration="2423000" />
-    </task>
-    <task id="LOCAL-00115" summary="updated CFRL database">
-      <created>1620534832625</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1620534832625</updated>
+      <workItem from="1625196853517" duration="2866000" />
+      <workItem from="1625354801533" duration="3220000" />
     </task>
     <task id="LOCAL-00116" summary="location search params in place, ready to test">
       <created>1620536974772</created>
@@ -762,7 +751,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625189433041</updated>
     </task>
-    <option name="localTasksCounter" value="164" />
+    <task id="LOCAL-00164" summary="reverted back">
+      <created>1625201351551</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1625201351551</updated>
+    </task>
+    <option name="localTasksCounter" value="165" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -785,7 +781,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="finally got the add resource workable, still need to edit now that I figured out the problem" />
     <MESSAGE value="getting resource owner addition going..." />
     <MESSAGE value="trying to edit styles..." />
     <MESSAGE value="got some of my themes colors integrated into the css." />
@@ -810,7 +805,8 @@
     <MESSAGE value="creating a new login welcome jsp and loginforward servlet to try to simplify the login in loginAction so that i can style the login.jsp...." />
     <MESSAGE value="the point at which i tried to add styling after simplifying logic in login jsp and loginAction servlet..." />
     <MESSAGE value="the point at which i tried to add the head and header info out of the files(not included), and took out the login logic, and still the login.jsp does not show" />
-    <option name="LAST_COMMIT_MESSAGE" value="the point at which i tried to add the head and header info out of the files(not included), and took out the login logic, and still the login.jsp does not show" />
+    <MESSAGE value="reverted back" />
+    <option name="LAST_COMMIT_MESSAGE" value="reverted back" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

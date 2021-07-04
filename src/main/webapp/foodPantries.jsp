@@ -13,9 +13,9 @@
                         <th>Type of Resource</th>
                         <th>Resource Name</th>
                         <th>Description</th>
-                        <c:if test="${not empty (resourcesAll.comments )}">
+
                             <th>Comments</th>
-                        </c:if>
+
                         <c:if test="${not empty resourcesAll.location}">
                             <th>Location </th>
                         </c:if>

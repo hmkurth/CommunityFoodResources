@@ -9,6 +9,7 @@ import org.hibernate.search.mapper.pojo.mapping.definition.annotation.GenericFie
 
 import javax.persistence.*;
 import java.util.Objects;
+import java.util.Set;
 
 /**
  * A class to represent a location.
@@ -47,12 +48,10 @@ public class Location {
     private Float lng;
     @Latitude
     private Float lat;
-    @OneToOne
+    @OneToMany(cascade=CascadeType.ALL)
     @PrimaryKeyJoinColumn
     @ToString.Exclude
-    //@Column(name="resource_id")
-    private FoodResource resourceId;
-
+    private Set<FoodResource> resources;
 
     @Override
     public boolean equals(Object o) {
