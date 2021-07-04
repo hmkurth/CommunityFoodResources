@@ -3514,3 +3514,11 @@
 [DEBUG] 2021-07-03 22:06:19.132 [http-nio-8080-exec-3] GenericDao - inserting entity Location(id=10024, nameDesc=Poopsies, streetAddressOrIntersection=3426 Hargrove St., city=Madison, state=WI, zip=53714, busInfo=sdf, comments=sdf, lng=-89.33068, lat=43.09326)
 [DEBUG] 2021-07-03 22:06:40.054 [http-nio-8080-exec-5] ConfirmResource - options value : addData
 [DEBUG] 2021-07-03 22:06:40.067 [http-nio-8080-exec-5] GenericDao - inserting entity FoodResource(id=38, name=Poopsies Pantry, type_id=Type(id=1, name=food pantry), owner=null, description=lsovne wsodvih  pwedofj vsds  GHD, location=Location(id=10024, nameDesc=Poopsies, streetAddressOrIntersection=3426 Hargrove St., city=Madison, state=WI, zip=53714, busInfo=sdf, comments=sdf, lng=-89.33068, lat=43.09326), contactId=Contact(id=1, firstName=tim, lastName=shmidt, email=tsm@gone.com, phone=1233333333, owner=ResourceOwner(id=2, name=Salvation Army, website=www.salvationArmy.com)), comments=df, serviceArea=fsdf , website=, documentation=sdfdfd , daysOfWeek=sdfd fsdf sdf , deliveryOffered=true, deliveryDescription=sdfds, dietaryConsiderations=sdfgsd)
+[DEBUG] 2021-07-04 00:37:21.525 [main] GenericDao - Searching for person with name = SNAP Program
+[DEBUG] 2021-07-04 00:37:22.072 [main] GenericDao - Searching for person with verificationStatus = 0
+[DEBUG] 2021-07-04 00:43:11.459 [main] GenericDao - Searching for person with name = SNAP Program
+[DEBUG] 2021-07-04 00:43:12.055 [main] GenericDao - Searching for person with verificationStatus = false
+[DEBUG] 2021-07-04 00:48:24.168 [main] GenericDao - Searching for person with name = SNAP Program
+[DEBUG] 2021-07-04 00:48:24.746 [main] GenericDao - Searching for person with verificationStatus = false
+[DEBUG] 2021-07-04 00:53:34.514 [main] GenericDao - Searching for person with verificationStatus = false
+[DEBUG] 2021-07-04 00:54:36.441 [main] GenericDao - Searching for person with verificationStatus = true

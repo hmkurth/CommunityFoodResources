@@ -49,7 +49,7 @@ public class FoodResource {
     @PrimaryKeyJoinColumn
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
-   //@Column(s) not allowed on a @OneToOne property: com.hmkurth.entity.FoodResource.location
+    //@Column(s) not allowed on a @OneToOne property: com.hmkurth.entity.FoodResource.location
     private Location location;//fk to location
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
@@ -77,8 +77,10 @@ public class FoodResource {
     @Column(name = "delivery_desc")//if delivery is offered, description of services
     private String deliveryDescription;
     @FullTextField
-    @Column(name="dietary_considerations")
+    @Column(name = "dietary_considerations")
     private String dietaryConsiderations;
+
+
     @NonNull
     @Column(name = "is_verified")
     boolean verificationStatus;
@@ -89,14 +91,14 @@ public class FoodResource {
      *
      * @param id              the id
      * @param name            the name
-     * @param typeId         the type id
+     * @param typeId          the type id
      * @param owner           the owner
      * @param description     the description
      * @param location        the location
      * @param documentation   the documentation
      * @param deliveryOffered the delivery offered
      */
-    public FoodResource(int id, @NonNull String name, @NonNull Type typeId, ResourceOwner owner, @NonNull String description, Location location,String documentation, boolean deliveryOffered) {
+    public FoodResource(int id, @NonNull String name, @NonNull Type typeId, ResourceOwner owner, @NonNull String description, Location location, String documentation, boolean deliveryOffered) {
         this.id = id;
         this.name = name;
         this.typeId = typeId;
@@ -393,7 +395,13 @@ public class FoodResource {
     public String toString() {
         return "FoodResource(id=" + this.getId() + ", name=" + this.getName() + ", type_id=" + this.getTypeId() + ", owner=" + this.getOwner() + ", description=" + this.getDescription() + ", location=" + this.getLocation() + ", contactId=" + this.getContactId() + ", comments=" + this.getComments() + ", serviceArea=" + this.getServiceArea() + ", website=" + this.getWebsite() + ", documentation=" + this.getDocumentation() + ", daysOfWeek=" + this.getDaysOfWeek() + ", deliveryOffered=" + this.isDeliveryOffered() + ", deliveryDescription=" + this.getDeliveryDescription() + ", dietaryConsiderations=" + this.getDietaryConsiderations() + ")";
     }
+
+
+    public boolean isVerificationStatus() {
+        return verificationStatus;
+    }
+
+    public void setVerificationStatus(boolean verificationStatus) {
+        this.verificationStatus = verificationStatus;
+    }
 }
-
-
-

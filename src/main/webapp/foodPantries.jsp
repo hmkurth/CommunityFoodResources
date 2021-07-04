@@ -6,7 +6,7 @@
 <div class="content" id="main_content">
     <div class="container">
         <div class="row pad-bottom">
-            <div class="table-responsive">
+            <div class="table-sm">
 
                 <h2>All Food Resources</h2>
                 <table class="table table-striped table-bordered table-sm">
@@ -27,7 +27,7 @@
                         <td>${resource.typeId.name}</td>
                         <td>${resource.name}</td>
                         <td>${resource.description}</td>
-                        <td>optional${resource.location}</td>
+                        <td>optional${resource.location.nameDesc},${resource.location.streetAddressOrIntersection},${resource.location.city}</td>
                         <td><a href="${resource.website}">${resource.website}</a></td>
         </c:forEach>
                     </tr>

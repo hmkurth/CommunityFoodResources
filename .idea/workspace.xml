@@ -9,22 +9,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="working on location , set and add location changes">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210703 2337.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210703 2341.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210703 2347.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210703 2350.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="trying to edit the table css and output">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210704 0001.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210704 0025.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210704 0028.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210704 0037.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210704 0043.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210704 0048.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210703 2104.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210703 2107.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210703 2138.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddContact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210703 2337.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210703 2341.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ForwardPantries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ForwardPantries.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/confirmResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/confirmResource.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/GenericDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +154,7 @@
       <recent name="com.hmkurth.persistence" />
     </key>
   </component>
-  <component name="RunManager" selected="TomEE Server.Tomcat">
+  <component name="RunManager" selected="JUnit.FoodResourceTest.getByPropertyEqualToBoolean">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -170,10 +171,34 @@
       <script-mode>FILE</script-mode>
       <method v="2" />
     </configuration>
-    <configuration name="All in CommunityFoodResources" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FoodResourceTest.getByPropertyEqualSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmkurth.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.FoodResourceTest" />
+      <option name="METHOD_NAME" value="getByPropertyEqualSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FoodResourceTest.getByPropertyEqualToBoolean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CommunityFoodResources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmkurth.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.FoodResourceTest" />
+      <option name="METHOD_NAME" value="getByPropertyEqualToBoolean" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -205,22 +230,6 @@
       <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
       <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.LocationDaoTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ResourceOwnerDaoTest.insertWithResourceSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CommunityFoodResources" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hmkurth.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ResourceOwnerDaoTest" />
-      <option name="METHOD_NAME" value="insertWithResourceSuccess" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -330,19 +339,19 @@
     <list>
       <item itemvalue="Database Script.cleanDb.sql" />
       <item itemvalue="JUnit.com.hmkurth.persistence in CommunityFoodResources" />
-      <item itemvalue="JUnit.All in CommunityFoodResources" />
-      <item itemvalue="JUnit.ResourceOwnerDaoTest.insertWithResourceSuccess" />
       <item itemvalue="JUnit.FoodResourceTest.insertSuccess" />
       <item itemvalue="JUnit.LocationDaoTest" />
       <item itemvalue="TomEE Server.Tomcat" />
+      <item itemvalue="JUnit.FoodResourceTest.getByPropertyEqualSuccess" />
+      <item itemvalue="JUnit.FoodResourceTest.getByPropertyEqualToBoolean" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FoodResourceTest.getByPropertyEqualToBoolean" />
+        <item itemvalue="JUnit.FoodResourceTest.getByPropertyEqualSuccess" />
         <item itemvalue="JUnit.LocationDaoTest" />
         <item itemvalue="JUnit.com.hmkurth.persistence in CommunityFoodResources" />
         <item itemvalue="JUnit.FoodResourceTest.insertSuccess" />
-        <item itemvalue="JUnit.All in CommunityFoodResources" />
-        <item itemvalue="JUnit.ResourceOwnerDaoTest.insertWithResourceSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -435,14 +444,7 @@
       <workItem from="1625187746774" duration="4892000" />
       <workItem from="1625196853517" duration="2866000" />
       <workItem from="1625354801533" duration="6006000" />
-      <workItem from="1625366067851" duration="9804000" />
-    </task>
-    <task id="LOCAL-00118" summary="i can't figure out how to get the Ljava.lang.Object that is being returned from the query to display, tried using Arrays.deepToString(arrayOfObjects),">
-      <created>1620545686638</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1620545686638</updated>
+      <workItem from="1625366067851" duration="11794000" />
     </task>
     <task id="LOCAL-00119" summary="cleaning up controllers">
       <created>1620682535945</created>
@@ -780,7 +782,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625367414003</updated>
     </task>
-    <option name="localTasksCounter" value="167" />
+    <task id="LOCAL-00167" summary="trying to edit the table css and output">
+      <created>1625376063919</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1625376063919</updated>
+    </task>
+    <option name="localTasksCounter" value="168" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -803,7 +812,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="got some of my themes colors integrated into the css." />
     <MESSAGE value="looking a little better..." />
     <MESSAGE value="styled some of the minified css and reminified" />
     <MESSAGE value="working on ownerSuccess.jsp" />
@@ -828,7 +836,8 @@
     <MESSAGE value="reverted back" />
     <MESSAGE value="changing location relationship to foodresource, one to many" />
     <MESSAGE value="working on location , set and add location changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on location , set and add location changes" />
+    <MESSAGE value="trying to edit the table css and output" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying to edit the table css and output" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -859,7 +868,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
-          <line>102</line>
+          <line>116</line>
           <properties class="com.hmkurth.persistence.FoodResourceTest" method="saveOrUpdateSuccess">
             <option name="EMULATED" value="true" />
           </properties>
@@ -883,7 +892,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
-          <line>178</line>
+          <line>192</line>
           <properties class="com.hmkurth.persistence.FoodResourceTest" method="getByPropertyLikeSuccess">
             <option name="EMULATED" value="true" />
           </properties>
@@ -956,7 +965,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
-          <line>167</line>
+          <line>181</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1011,22 +1020,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
-          <line>108</line>
+          <line>122</line>
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
-          <line>110</line>
+          <line>124</line>
           <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
-          <line>169</line>
+          <line>183</line>
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
-          <line>170</line>
+          <line>184</line>
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
