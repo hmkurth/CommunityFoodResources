@@ -29,14 +29,13 @@ public class FoodResource {
     @FullTextField
     private String name;
 
-    @GenericField
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
     @ManyToOne
     @JoinColumn(name = "type_Id",
             foreignKey = @ForeignKey(name = "resource_type_food_resources_id_fk")
     )
-    private @NonNull Type typeId;//fk to resource_type
+    private Type typeId;//fk to resource_type
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
     @OneToOne

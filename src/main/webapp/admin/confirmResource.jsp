@@ -79,7 +79,7 @@
                     <td>${newResource.deliveryOffered}</td>
                     </c:if>
                     <c:if test="${not empty newResource.deliveryDescription}">
-                        <td>${newResource.newResource.deliveryDescription}</td>
+                        <td>${newResource.deliveryDescription}</td>
                     </c:if>
                     <c:if test="${not empty newResource.dietaryConsiderations}">
                     <td>${newResource.dietaryConsiderations}</td>

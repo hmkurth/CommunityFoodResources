@@ -702,4 +702,10 @@ footer .social a {
 	color: #fff;
 	font-weight: 300;
 }
+/*table styling to reduce the size*/
+.table {
+!important font-size: smaller;
+!important max-width: border-box;
 
+
+}

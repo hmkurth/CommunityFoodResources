@@ -91,7 +91,7 @@ public class AddContact extends HttpServlet {
 
             cdao.insert(thisContact);
             resource.setContactId(thisContact);
-            fdao.insert(resource);
+           // fdao.insert(resource);
             String message = "you have successfully added the contact" + resource.getContactId().toString() + " to the resource " + resource.getName() + ". " ;
             session.setAttribute("message", message);
             url = "/admin/confirmResource.jsp";
