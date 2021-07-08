@@ -1,3 +1,4 @@
+<%@ page import="java.util.Enumeration" %>
 <%@include file="../taglib.jsp"%>
 <jsp:include page="../head.jsp" />
 <title>Verify Resources</title>

@@ -42,7 +42,7 @@ public class AddResourceOwner extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 //todo, clean up duplicate code!
         HttpSession session = req.getSession();
-        String url;
+        String url = "addResourceOwner";
         ResourceOwner thisOwner;
         resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
         logger.info("forwarded food resource = " + resource);
@@ -80,7 +80,6 @@ public class AddResourceOwner extends HttpServlet {
             RequestDispatcher dispatcher = req.getRequestDispatcher(url);
             dispatcher.forward(req, res);
 
-        }//end if int not null, todo what if it is null can it be null if they hit submit??
 
         //if new owner is selected, now grab details from the second form
         String x = req.getParameter("submit2");
@@ -97,6 +96,7 @@ public class AddResourceOwner extends HttpServlet {
             session.setAttribute("message", message);
             url = "/admin/addLocation.jsp";
 
+        }//end if int not null, todo what if it is null can it be null if they hit submit??
 
 
         RequestDispatcher dispatcher = req.getRequestDispatcher(url);

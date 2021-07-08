@@ -101,8 +101,8 @@ public class VerifyResources extends HttpServlet {
                     //reset the number of unverified resources
                     req.setAttribute("numberToVerify", fdao.getByPropertyEqualToBoolean("verificationStatus", false).size());
                     url = "/admin/adminHome.jsp";
-                    RequestDispatcher dispatcher = req.getRequestDispatcher(url);
-                    dispatcher.forward(req, res);
+                    //RequestDispatcher dispatcher = req.getRequestDispatcher(url);
+                   // dispatcher.forward(req, res);
                     break;
                 case "addLocation":
                     url = "/addLocation";

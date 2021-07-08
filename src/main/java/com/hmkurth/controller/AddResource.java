@@ -43,10 +43,10 @@ public class AddResource extends HttpServlet {
     public void doGet(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
         HttpSession session = req.getSession();
-        listCategory(req, res);
+
         //set boolean to indicate if it's an edited resource
-        boolean isEdited = true;
-        session.setAttribute("isEdited", false);
+       // session.setAttribute("isEdited", false);
+        listCategory(req, res);
 
     }
 
@@ -100,12 +100,8 @@ public class AddResource extends HttpServlet {
         String url = "/addResource";
         FoodResource resource;
         HttpSession session = req.getSession();
+        resource = new FoodResource();
 
-        if (session.getAttribute("isEdited").equals(false)) {
-            resource = new FoodResource();
-        }else{//it's an edited resource
-            resource = (FoodResource) session.getAttribute("newResource");
-        }
         //sets the values from dropdown menus
         int typeId = Integer.parseInt(req.getParameter("type"));
         req.setAttribute("selectedTypeId", typeId);
@@ -115,9 +111,10 @@ public class AddResource extends HttpServlet {
         // should i really be submitting one form???...
         req.setAttribute("resourceName", req.getParameter("name"));
         Type thisType = tdao.getById(typeId);
-        thisType.addResource(resource);
-        tdao.saveOrUpdate(thisType);
         resource.setTypeId(thisType);
+        thisType.addResource(resource);
+        //tdao.saveOrUpdate(thisType);//saves the resource to list in types, but giving me a constraint violation TODO
+
         logger.debug("type: " + req.getParameter("type"));
         logger.debug("Adding Type: " + resource.getTypeId());
 
@@ -136,14 +133,7 @@ public class AddResource extends HttpServlet {
             session.setAttribute("newResourceId", resource.getId());
             session.setAttribute("newResource", resource);
             //forward this resource id to add owner, contact, or location servlets
-            //if it's an edit, save
-            if (session.getAttribute("isEdited").equals(true)) {
-                fdao.saveOrUpdate(resource);
-                url = "/verifyResources";
-
-            } else {
-                url = "/admin/addResourceOwner.jsp";
-            }
+            url = "/addResourceOwner";
             RequestDispatcher dispatcher = req.getRequestDispatcher(url);
             dispatcher.forward(req, resp);
         }
