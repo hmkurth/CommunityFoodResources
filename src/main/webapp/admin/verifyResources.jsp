@@ -74,7 +74,7 @@
                     <!-- //TODO drop down menu of resources that aren't verified -->
                     <select name="thisResource" id="thisResource">
 
-                        <c:forEach items="${resourcesToVerify}" var="resource1">
+                        <c:forEach items="${unverifiedResources}" var="resource1">
                             <option value='${resource1.id}'<c:if test="${resource1.id eq selectedResourceId}">selected="selected"</c:if>
                             > resource name:${resource1.name}</option>
                         </c:forEach>

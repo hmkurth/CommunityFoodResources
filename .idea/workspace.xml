@@ -10,17 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="generating type lists for resources">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210708 0152.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210708 0204.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210708 0212.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210708 0220.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210708 0013.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210708 0057.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210708 0108.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ForwardResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ForwardResources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/VerifyResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/VerifyResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210708 0152.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/verifyResources.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/verifyResources.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -443,13 +435,6 @@
       <workItem from="1625366067851" duration="12351000" />
       <workItem from="1625701164568" duration="1559000" />
     </task>
-    <task id="LOCAL-00125" summary="added live aws link to readme">
-      <created>1620801878828</created>
-      <option name="number" value="00125" />
-      <option name="presentableId" value="LOCAL-00125" />
-      <option name="project" value="LOCAL" />
-      <updated>1620801878957</updated>
-    </task>
     <task id="LOCAL-00126" summary="added about project content">
       <created>1621037604491</created>
       <option name="number" value="00126" />
@@ -786,7 +771,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625725258729</updated>
     </task>
-    <option name="localTasksCounter" value="174" />
+    <task id="LOCAL-00174" summary="generating type lists for resources">
+      <created>1625729809354</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1625729809354</updated>
+    </task>
+    <option name="localTasksCounter" value="175" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
