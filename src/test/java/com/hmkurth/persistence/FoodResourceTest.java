@@ -79,13 +79,11 @@ public class FoodResourceTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        String s1=Boolean.toString(false);
+
         List<FoodResource> foodResources = genericDao.getByPropertyEqual("name","SNAP Program");
-        List<FoodResource> verifiedResources = genericDao.getByPropertyEqual("verificationStatus", s1);
         assertEquals(1, foodResources.size());
         assertEquals(4, foodResources.get(0).getId());
-        assertEquals(0, verifiedResources.size());
-        assertEquals(4, verifiedResources.get(0).getId());
+
     }
 
     /**
