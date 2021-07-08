@@ -92,7 +92,7 @@
                         <option value='addResource'>Edit Other Details of This resource(this will bring you back to the start of submission )</option>
                     </select>
                 </label>
-                <input type="submit" class="btn btn-primary btn-lg"  name="submit" value="Verify">
+                <input type="submit" class="btn btn-primary btn-lg"  name="submit" value="Next">
             </div>
         </form>
 

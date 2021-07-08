@@ -87,7 +87,7 @@ public class VerifyResources extends HttpServlet {
         session.setAttribute("newResource", resource);
 
 
-        if (x != null && x.equals("Verify")) {
+        if (x != null && x.equals("Next")) {
             //set a boolean attribute to indicate to other controllers whether its an edit(so save/update instead of insert
             session.setAttribute("isEdited",true);
             switch (req.getParameter("confirmVerify")) {

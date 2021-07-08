@@ -42,11 +42,11 @@ public class AddResource extends HttpServlet {
      */
     public void doGet(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
-        HttpSession session  = req.getSession();
+        HttpSession session = req.getSession();
         listCategory(req, res);
         //set boolean to indicate if it's an edited resource
         boolean isEdited = true;
-        session.setAttribute("isEdited",false);
+        session.setAttribute("isEdited", false);
 
     }
 
@@ -64,14 +64,14 @@ public class AddResource extends HttpServlet {
      */
     private void listCategory(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
-        HttpSession session  = req.getSession();
+        HttpSession session = req.getSession();
         //get the list of owners to populate a dropdown menu for the form input
-         odao = new GenericDao<>(ResourceOwner.class);
+        odao = new GenericDao<>(ResourceOwner.class);
         List<ResourceOwner> listOwner = odao.getAll();
         session.setAttribute("listOwner", listOwner);
         logger.debug("listOwner value from dropdown menu : " + listOwner);
         //get the list of types of resources to populate a dropdown menu for the form input
-         tdao = new GenericDao<>(Type.class);
+        tdao = new GenericDao<>(Type.class);
         List<Type> listType = tdao.getAll();
         session.setAttribute("listType", listType);
         logger.debug("list type : " + listType);
@@ -97,39 +97,30 @@ public class AddResource extends HttpServlet {
      **/
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String url = "/addResource";
+        FoodResource resource;
+        HttpSession session = req.getSession();
 
-        HttpSession session  = req.getSession();
+        if (session.getAttribute("isEdited").equals(false)) {
+            resource = new FoodResource();
+        }else{//it's an edited resource
+            resource = (FoodResource) session.getAttribute("newResource");
+        }
         //sets the values from dropdown menus
         int typeId = Integer.parseInt(req.getParameter("type"));
         req.setAttribute("selectedTypeId", typeId);
-        String ownerResponse = req.getParameter("owner");//might be obsolete
-
-
         //get params
-        FoodResource resource = new FoodResource();
         resource.setName(req.getParameter("name"));
         //set the name attribute so that when the form is resubmitted the data is not lost...but how many times
         // should i really be submitting one form???...
         req.setAttribute("resourceName", req.getParameter("name"));
         Type thisType = tdao.getById(typeId);
         thisType.addResource(resource);
+        tdao.saveOrUpdate(thisType);
         resource.setTypeId(thisType);
         logger.debug("type: " + req.getParameter("type"));
         logger.debug("Adding Type: " + resource.getTypeId());
 
-/**adding in defaults for  fks so i don't get null pointer
-       // ResourceOwner thisOwner = odao.getById(9999);
-      //  resource.setOwner(thisOwner);
-       // logger.debug("this owner = " + thisOwner);
-       // ldao = new GenericDao <Location>(Location.class);
-    //    Location thisLocation = ldao.getById(9999);
-     //   logger.debug("this location 1 = " + ldao.getById(9999));
-        resource.setLocation(thisLocation);
-        logger.debug("this location = " + thisLocation);
-        cdao = new GenericDao <Contact>(Contact.class);
-        Contact thisContact = cdao.getById(9999);
-        resource.setContactId(thisContact);
-*/
         resource.setDescription(req.getParameter("description"));
         resource.setServiceArea(req.getParameter("serviceArea"));
         resource.setWebsite(req.getParameter("website"));
@@ -138,73 +129,28 @@ public class AddResource extends HttpServlet {
         resource.setDeliveryOffered(Boolean.parseBoolean(req.getParameter("deliveryB")));
         resource.setDeliveryDescription(req.getParameter("deliveryDescription"));
         resource.setDietaryConsiderations(req.getParameter("dietary"));
-
         resource.setComments(req.getParameter("comments"));
-        fdao = new GenericDao<FoodResource>(FoodResource.class);
         logger.debug("Resource at 'confirm: : " + resource.toString());
-        //need to break up this form...add the object to the session? create a boolean to dispatch to the 2nd page after the first submit?
         String x = req.getParameter("submit");
-        if(x!=null && x.equals("confirm")) {
-            //add to db now and give option to add location, contacts, owner ala carte
-           // fdao.insert(resource);  changing this to just save the resource in the request and add later, due to foreign key restraints
+        if (x != null && x.equals("confirm")) {
             session.setAttribute("newResourceId", resource.getId());
-           session.setAttribute("newResource", resource);
+            session.setAttribute("newResource", resource);
             //forward this resource id to add owner, contact, or location servlets
+            //if it's an edit, save
+            if (session.getAttribute("isEdited").equals(true)) {
+                fdao.saveOrUpdate(resource);
+                url = "/verifyResources";
 
-
-            String url = "/admin/addResourceOwner.jsp";
+            } else {
+                url = "/admin/addResourceOwner.jsp";
+            }
             RequestDispatcher dispatcher = req.getRequestDispatcher(url);
             dispatcher.forward(req, resp);
         }
 
 
-
-
-
         listCategory(req, resp);
-
     }
+
 }
-        /**
 
-         int ownerId = Integer.parseInt(req.getParameter("owner"));
-         req.setAttribute("selectedOwnerId", ownerId);
-
-
-      resource.setPassword(req.getParameter("password"));
-        resource.setEmail(req.getParameter("email"));
-        logger.debug("Adding User: " + user);
-        UserRoles role = new UserRoles();
-        role.setUser(user);
-        role.setUserName(user.getUserName());
-        role.setRoleName("user");
-        user.addRole(role);
-
-
-
-        //set the user in a ?session variable
-
-        if (req.getParameter("first_name").isEmpty() || (req.getParameter("last_name").isEmpty() || (req.getParameter("user_name").isEmpty() ||
-                (req.getParameter("password").isEmpty() || (req.getParameter("email").isEmpty() )))))
-        {
-            req.setAttribute("errorMessage", "Please try again, all fields are required to sign up");
-            logger.info("User Error");
-            RequestDispatcher dispatcher= req.getRequestDispatcher("userSignup.jsp");
-            dispatcher.include(req, resp);
-        }
-        else
-        {
-            //add the uses to the database
-            // TODO check if user is already in the database
-            GenericDao dao = new GenericDao(User.class);
-
-            dao.insert(resource);
-
-            //TOdo set the user in the session?? check if this is duplicating entries
-            RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/confirmResource.jsp");
-            dispatcher.forward(req, resp);
-        }
-
-         /**
-
-         **/
