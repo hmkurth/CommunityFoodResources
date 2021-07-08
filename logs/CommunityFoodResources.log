@@ -3924,3 +3924,19 @@
 [DEBUG] 2021-07-08 01:04:52.847 [http-nio-8080-exec-3] GenericDao - Searching for person with verificationStatus = true
 [DEBUG] 2021-07-08 01:08:04.335 [http-nio-8080-exec-6] GenericDao - Searching for person with verificationStatus = true
 [DEBUG] 2021-07-08 01:13:21.862 [http-nio-8080-exec-3] GenericDao - Searching for person with verificationStatus = true
+[DEBUG] 2021-07-08 01:47:30.198 [http-nio-8080-exec-1] GenericDao - Searching for person with verificationStatus = true
+[INFO ] 2021-07-08 01:48:13.004 [http-nio-8080-exec-8] LoginAction - The logged in user; bcurryhas a role of  'user' : false
+[DEBUG] 2021-07-08 01:48:13.005 [http-nio-8080-exec-8] GenericDao - Searching for person with verificationStatus = false
+[INFO ] 2021-07-08 01:52:56.273 [http-nio-8080-exec-5] LoginAction - The logged in user; bcurryhas a role of  'user' : false
+[DEBUG] 2021-07-08 01:52:56.279 [http-nio-8080-exec-5] GenericDao - Searching for person with verificationStatus = false
+[DEBUG] 2021-07-08 02:04:05.449 [http-nio-8080-exec-2] GenericDao - Searching for person with verificationStatus = true
+[INFO ] 2021-07-08 02:04:22.078 [http-nio-8080-exec-10] LoginAction - The logged in user; bcurryhas a role of  'user' : false
+[DEBUG] 2021-07-08 02:04:22.078 [http-nio-8080-exec-10] GenericDao - Searching for person with verificationStatus = false
+[DEBUG] 2021-07-08 02:04:26.983 [http-nio-8080-exec-4] GenericDao - Searching for person with verificationStatus = false
+[INFO ] 2021-07-08 02:11:58.901 [http-nio-8080-exec-8] LoginAction - The logged in user; bcurryhas a role of  'user' : false
+[DEBUG] 2021-07-08 02:11:58.907 [http-nio-8080-exec-8] GenericDao - Searching for person with verificationStatus = false
+[DEBUG] 2021-07-08 02:12:02.540 [http-nio-8080-exec-1] GenericDao - Searching for person with verificationStatus = false
+[INFO ] 2021-07-08 02:20:42.831 [http-nio-8080-exec-7] LoginAction - The logged in user; bcurryhas a role of  'user' : false
+[DEBUG] 2021-07-08 02:20:42.836 [http-nio-8080-exec-7] GenericDao - Searching for person with verificationStatus = false
+[DEBUG] 2021-07-08 02:20:46.242 [http-nio-8080-exec-10] GenericDao - Searching for person with verificationStatus = false
+[DEBUG] 2021-07-08 02:21:08.864 [http-nio-8080-exec-3] VerifyResources - options value : addData

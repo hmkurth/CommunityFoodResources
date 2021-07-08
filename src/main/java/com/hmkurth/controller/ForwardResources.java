@@ -49,7 +49,7 @@ public class ForwardResources extends HttpServlet {
         //all resources THAT ARE VERIFIED TODO figure out the best way to use multipe queries or filter through the list!!
         List<FoodResource> allVerifiedResources = dao.getByPropertyEqualToBoolean("verificationStatus", true);
         req.setAttribute("resourcesAll", allVerifiedResources);
-//trying to sort by resources, this is pretty clunky, could probably be streamlined
+        //trying to sort by resources, this is pretty clunky, could probably be streamlined
         for(FoodResource resource :  allVerifiedResources){
             int thisType = resource.getTypeId().getId();
 
@@ -65,13 +65,19 @@ public class ForwardResources extends HttpServlet {
                 govResources.add(resource);
             }  else if (thisType == 5){
                 allComAid.add(resource);
-          } else {
+          } else if (thisType == 6) {
         //other
               allOther.add(resource);
             }
         }
         req.setAttribute("allPantries", allPantries);
         req.setAttribute("allFreeLittlePantries", allFreeLittlePantries);
+        req.setAttribute("allMeals", allMeals);
+        req.setAttribute("govResources", govResources);
+        req.setAttribute("allComAid", allComAid);
+        req.setAttribute("allOther", allOther);
+
+
         String url = "/foodPantries.jsp";
 
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);

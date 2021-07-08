@@ -9,15 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="verifying resource">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210708 0057.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210708 0108.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="generating type lists for resources">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210708 0152.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210708 0204.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210708 0212.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210708 0003.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210708 0009.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210708 0013.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210708 0057.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210708 0108.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ForwardResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ForwardResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/VerifyResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/VerifyResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/verifyResources.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/verifyResources.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -439,13 +443,6 @@
       <workItem from="1625366067851" duration="12351000" />
       <workItem from="1625701164568" duration="1559000" />
     </task>
-    <task id="LOCAL-00124" summary="added presentation video link to readme">
-      <created>1620749698313</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1620749698313</updated>
-    </task>
     <task id="LOCAL-00125" summary="added live aws link to readme">
       <created>1620801878828</created>
       <option name="number" value="00125" />
@@ -782,7 +779,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625723953460</updated>
     </task>
-    <option name="localTasksCounter" value="173" />
+    <task id="LOCAL-00173" summary="generating type lists for resources">
+      <created>1625725258729</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1625725258729</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -815,7 +819,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Well, it isn’t pretty, definitely needs some cleaning up, but adding the owner works!" />
     <MESSAGE value="refactoring" />
     <MESSAGE value="trying to add some error handling to delete user," />
     <MESSAGE value="username validation done" />
@@ -840,7 +843,8 @@
     <MESSAGE value="having login problems for non admin users, not sure what ptompted that change...fixed" />
     <MESSAGE value="troubles with accessing field type.id..." />
     <MESSAGE value="verifying resource" />
-    <option name="LAST_COMMIT_MESSAGE" value="verifying resource" />
+    <MESSAGE value="generating type lists for resources" />
+    <option name="LAST_COMMIT_MESSAGE" value="generating type lists for resources" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

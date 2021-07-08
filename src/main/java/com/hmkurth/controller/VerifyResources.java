@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * a servlet to confirm a food resource to the database
@@ -28,6 +29,36 @@ public class VerifyResources extends HttpServlet {
     GenericDao<FoodResource> fdao = new GenericDao<>(FoodResource.class);
     FoodResource resource;
 
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+      listCategory(req, resp);
+    }
+
+    /**
+     * https://www.codejava.net/java-ee/jsp/how-to-create-dynamic-drop-down-list-in-jsp-from-database
+     * As you can see, this method reads the value of the drop down list sent the client, stores it as a request’s
+     * attribute, and forwards the request to the same destination page as the doGet() method.
+     * Hence the listCategory() method is created to be reused by both doGet() and doPost() methods.
+     * This gets the params from the form and stores them
+     *
+     * @param req, the request
+     * @param res, the response
+     * @throws ServletException
+     * @throws IOException
+     */
+    private void listCategory(HttpServletRequest req, HttpServletResponse res)
+            throws ServletException, IOException {
+        HttpSession session  = req.getSession();
+        //get the list of unverified resources to populate a dropdown menu for the form input
+        fdao = new GenericDao<>(FoodResource.class);
+        List<FoodResource> resourcesToVerify = fdao.getByPropertyEqualToBoolean("verificationStatus", false);; //get the unverified resource from the previous request
+        session.setAttribute("unverifiedResources", resourcesToVerify);
+
+        String url = "/admin/verifyResources.jsp";
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
+        dispatcher.forward(req, res);
+
+    }
+
     /**
      * Handles HTTP POST requests.
      *
@@ -41,15 +72,19 @@ public class VerifyResources extends HttpServlet {
         HttpSession session = req.getSession();
 
         String url = "/admin/verifyResources.jsp";
-        resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
         String x = req.getParameter("submit");
+//TODo identify which resource
+        String resourceId = req.getParameter("thisResource");
+        req.setAttribute("selectedResourceId", resourceId);//for selection in the dropdown menu
+        int thisResourceId = Integer.parseInt(resourceId);
+        logger.debug("options value : " + req.getParameter("confirmVerify"));
+        FoodResource resource = fdao.getById( thisResourceId);
 
-        logger.debug("options value : " + req.getParameter("confirmAdd"));
-        if (x != null && x.equals("Next")) {
+        if (x != null && x.equals("Verify")) {
             switch (req.getParameter("confirmAdd")) {
                 case "addData":
-                    fdao.insert(resource);
-                    String message = "you have successfully submitted a  food resource, " + resource.getName() + ", an admin will double check entry before adding to the live database";
+                   resource.setVerificationStatus(true);
+                    String message = "you have successfully verified a  food resource, " + resource.getName() + ".";
                     //todo show map location and confirm that
                     session.setAttribute("message", message);
                     url = "/admin/adminHome.jsp";
