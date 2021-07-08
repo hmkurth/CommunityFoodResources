@@ -6,6 +6,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 
@@ -33,4 +34,48 @@ public class Type {
     @ToString.Exclude
     @OneToMany(mappedBy = "typeId", cascade=CascadeType.ALL, orphanRemoval = true, fetch =FetchType.EAGER )
     private Set<FoodResource> resources = new HashSet<>();
+
+
+    /**
+     * Add resource.
+     *
+     * @param resource the resource to add
+     */
+    public void addResource(FoodResource resource) {
+        resources.add(resource);
+        resource.setTypeId(this);
+
+    }
+
+    /**
+     * Delete role.
+     *
+     * @param resource the resource to add
+     */
+    public void deleteResource(FoodResource resource) {
+        resources.remove(resource);
+        resource.setTypeId(null);
+    }
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Type)) return false;
+        Type type = (Type) o;
+        return getId() == type.getId() && getName().equals(type.getName()) && getResources().equals(type.getResources());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getName(), getResources());
+    }
 }

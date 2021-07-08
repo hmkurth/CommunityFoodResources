@@ -15,22 +15,21 @@
                         <th>Type of Resource</th>
                         <th>Resource Name</th>
                         <th>Description</th>
-                        <th>Location </th>
+                        <th>Location (optional) </th>
                         <th>Website</th>
                     </tr>
                     </thead>
                     <tbody>
+                    <c:forEach var="resource" items="${allPantries}" varStatus="iter">
 
                     <tr>
-        <c:forEach var="resource" items="${resourcesAll}" varStatus="iter">
-
                         <td>${resource.typeId.name}</td>
                         <td>${resource.name}</td>
                         <td>${resource.description}</td>
-                        <td>optional${resource.location.nameDesc},${resource.location.streetAddressOrIntersection},${resource.location.city}</td>
+                        <td>${resource.location.nameDesc}, ${resource.location.streetAddressOrIntersection}, ${resource.location.city}</td>
                         <td><a href="${resource.website}">${resource.website}</a></td>
-        </c:forEach>
                     </tr>
+                    </c:forEach>
                     </tbody>
                 </table>
                 </div>

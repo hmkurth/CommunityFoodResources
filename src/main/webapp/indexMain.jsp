@@ -18,7 +18,7 @@
 
                 <h3>Find Community Support and Resources!</h3>
                 <p>I have tried to bring together all of the food resources available in the Madison Area.  Although all functionality may not be implemented on the first release...</p>
-                <a href="aboutProject" class="btn btn-primary btn-lg">Click Here To Learn More About This Project</a>
+                <a href="aboutProject.jsp" class="btn btn-primary btn-lg">Click Here To Learn More About This Project</a>
             </div>
         </div>
     </div>

@@ -3763,3 +3763,18 @@
 [INFO ] 2021-07-07 20:28:45.096 [http-nio-8080-exec-1] LoginAction - The logged in user; bcurryhas a role of  'user' : false
 [INFO ] 2021-07-07 20:43:42.077 [http-nio-8080-exec-7] LoginAction - The logged in user; pollyhas a role of  'user' : true
 [INFO ] 2021-07-07 20:44:48.317 [http-nio-8080-exec-5] LoginAction - The logged in user; bcurryhas a role of  'user' : false
+[DEBUG] 2021-07-07 21:19:58.527 [http-nio-8080-exec-6] GenericDao - The list of Entities by propertyName userName and value/search term: sduper
+[DEBUG] 2021-07-07 21:19:58.938 [http-nio-8080-exec-6] GenericDao - inserting entity User{id=394, firstName='super', lastName='duper', userName='sduper', password='sduper', email='sduper@dup.com', roles=[UserRoles{id=229, userName='sduper', roleName='user'}]}
+[INFO ] 2021-07-07 21:20:11.652 [http-nio-8080-exec-2] LoginAction - The logged in user; sduperhas a role of  'user' : true
+[DEBUG] 2021-07-07 21:20:34.717 [http-nio-8080-exec-5] GenericDao - Searching for person with isVerified = 1
+[INFO ] 2021-07-07 21:41:16.423 [http-nio-8080-exec-9] LoginAction - The logged in user; pollyhas a role of  'user' : true
+[INFO ] 2021-07-07 21:46:24.354 [http-nio-8080-exec-6] LoginAction - The logged in user; pollyhas a role of  'user' : true
+[DEBUG] 2021-07-07 22:48:40.611 [http-nio-8080-exec-2] GenericDao - Searching for person with typeId = 1
+[DEBUG] 2021-07-07 22:51:38.089 [http-nio-8080-exec-9] GenericDao - Searching for person with type_Id = 1
+[DEBUG] 2021-07-07 22:53:09.620 [http-nio-8080-exec-3] GenericDao - Searching for person with type_id = 1
+[DEBUG] 2021-07-07 22:57:44.009 [http-nio-8080-exec-1] GenericDao - Searching for person with typeId = String.valueOf(1)
+[DEBUG] 2021-07-07 23:02:47.457 [http-nio-8080-exec-3] GenericDao - Searching for person with id = 1
+[DEBUG] 2021-07-07 23:09:44.487 [main] GenericDao - Searching for person with typeId = 1
+[DEBUG] 2021-07-07 23:11:46.929 [main] GenericDao - Searching for person with typeId = 1
+[DEBUG] 2021-07-07 23:16:02.966 [main] GenericDao - Searching for person with typeId = 1
+[DEBUG] 2021-07-07 23:19:26.800 [main] GenericDao - Searching for person with typeId = 1

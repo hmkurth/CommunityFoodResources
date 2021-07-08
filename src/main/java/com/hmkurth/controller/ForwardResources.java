@@ -2,6 +2,7 @@ package com.hmkurth.controller;
 
 
 import com.hmkurth.entity.FoodResource;
+import com.hmkurth.entity.Type;
 import com.hmkurth.persistence.GenericDao;
 
 import javax.servlet.RequestDispatcher;
@@ -20,10 +21,10 @@ import java.util.List;
  * @author hmkurth
  */
 @WebServlet(
-        name = "ForwardPantries",
-        urlPatterns = { "/forwardPantries" }
+        name = "ForwardResources",
+        urlPatterns = { "/forwardResources" }
 )
-public class ForwardPantries extends HttpServlet {
+public class ForwardResources extends HttpServlet {
 
 
 
@@ -38,10 +39,18 @@ public class ForwardPantries extends HttpServlet {
     public void doGet(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
         GenericDao dao = new GenericDao(FoodResource.class);
-        List<FoodResource> verifiedResources = dao.getByPropertyEqual("isVerified", "1");
+        GenericDao tdao = new GenericDao(Type.class);
+        List<FoodResource> allResources = dao.getAll();
         req.setAttribute("resourcesAll", dao.getAll());
+//trying to sort by resources
 
+        //all pantries
+      //  List<Type> allPantries = tdao.getByPropertyEqual("id", String.valueOf(1));
+       List<FoodResource> allPantries = dao.getByPropertyEqual("typeId", String.valueOf(1));
         String url = "/foodPantries.jsp";
+        req.setAttribute("allPantries", allPantries);
+
+
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(req, res);
 

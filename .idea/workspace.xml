@@ -9,21 +9,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="having login problems for non admin users, not sure what ptompted that change...">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210707 2007.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210707 2010.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210707 2024.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="having login problems for non admin users, not sure what ptompted that change...fixed">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210707 2251.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210707 2253.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210707 2257.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210707 2302.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210707 2309.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/verifyResources.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210704 0103.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210707 1840.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210707 1845.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210707 2010.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210707 2024.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210707 2028.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ForwardPantries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ForwardResources.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LoginAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Type.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addLocationSuccess.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/adminHome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/adminHome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/banners.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/banners.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/img/logos/Madison Food Resources Logo (11) - Shortcut.lnk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/banner.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/banner.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/indexMain.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/indexMain.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cleanDb.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +52,8 @@
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="jsf" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -51,11 +63,12 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="june30" />
+        <entry key="$PROJECT_DIR$" value="july7" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="MIXED" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -152,7 +165,7 @@
       <recent name="com.hmkurth.persistence" />
     </key>
   </component>
-  <component name="RunManager" selected="TomEE Server.Tomcat">
+  <component name="RunManager" selected="JUnit.FoodResourceTest.getByPropertyEqualSuccess">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -345,9 +358,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FoodResourceTest.getByPropertyEqualSuccess" />
         <item itemvalue="JUnit.com.hmkurth.persistence in CommunityFoodResources" />
         <item itemvalue="JUnit.FoodResourceTest.getByPropertyEqualToBoolean" />
-        <item itemvalue="JUnit.FoodResourceTest.getByPropertyEqualSuccess" />
         <item itemvalue="JUnit.LocationDaoTest" />
         <item itemvalue="JUnit.FoodResourceTest.insertSuccess" />
       </list>
@@ -444,13 +457,6 @@
       <workItem from="1625354801533" duration="6006000" />
       <workItem from="1625366067851" duration="12351000" />
       <workItem from="1625701164568" duration="1559000" />
-    </task>
-    <task id="LOCAL-00120" summary="cleaning up code">
-      <created>1620684465297</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1620684465297</updated>
     </task>
     <task id="LOCAL-00121" summary="still trying to get location search to work">
       <created>1620688890593</created>
@@ -788,7 +794,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625378161477</updated>
     </task>
-    <option name="localTasksCounter" value="169" />
+    <task id="LOCAL-00169" summary="having login problems for non admin users, not sure what ptompted that change...fixed">
+      <created>1625708742988</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1625708743035</updated>
+    </task>
+    <option name="localTasksCounter" value="170" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -821,7 +834,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="styled some of the minified css and reminified" />
     <MESSAGE value="working on ownerSuccess.jsp" />
     <MESSAGE value="working on owner integer problem" />
     <MESSAGE value="Well, it isn’t pretty, definitely needs some cleaning up, but adding the owner works!" />
@@ -846,7 +858,8 @@
     <MESSAGE value="working on location , set and add location changes" />
     <MESSAGE value="trying to edit the table css and output" />
     <MESSAGE value="Wrote new method and test to access the isVerified boolean in food resources." />
-    <option name="LAST_COMMIT_MESSAGE" value="Wrote new method and test to access the isVerified boolean in food resources." />
+    <MESSAGE value="having login problems for non admin users, not sure what ptompted that change...fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="having login problems for non admin users, not sure what ptompted that change...fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -877,8 +890,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
-          <line>114</line>
-          <properties class="com.hmkurth.persistence.FoodResourceTest">
+          <line>115</line>
+          <properties class="com.hmkurth.persistence.FoodResourceTest" method="saveOrUpdateSuccess">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="42" />
@@ -901,8 +914,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
-          <line>190</line>
-          <properties class="com.hmkurth.persistence.FoodResourceTest">
+          <line>191</line>
+          <properties class="com.hmkurth.persistence.FoodResourceTest" method="getByPropertyLikeSuccess">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="74" />
@@ -974,7 +987,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
-          <line>179</line>
+          <line>180</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1029,22 +1042,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
-          <line>120</line>
+          <line>121</line>
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
-          <line>122</line>
+          <line>123</line>
           <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
-          <line>181</line>
+          <line>182</line>
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
-          <line>182</line>
+          <line>183</line>
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

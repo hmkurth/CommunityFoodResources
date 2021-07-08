@@ -81,7 +81,7 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Food Resources<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="${pageContext.request.contextPath}/forwardPantries">Food Pantries</a></li>
+								<li><a href="${pageContext.request.contextPath}/forwardResources">Food Pantries</a></li>
 								<li><a href="${pageContext.request.contextPath}/searchFoodResources">Search Food Resources</a></li>
 								<li><a href="${pageContext.request.contextPath}/searchByLocation.jsp">Search By Location</a></li>
 							</ul>
