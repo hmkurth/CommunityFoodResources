@@ -9,24 +9,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="Wrote new method and test to access the isVerified boolean in food resources.">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210704 0103.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210707 1840.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210707 1845.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="having login problems for non admin users, not sure what ptompted that change...">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210707 2007.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210707 2010.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210707 2024.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18fbcfde-4302-45f3-a87e-989d509d0ac6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210703 2347.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210703 2350.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210704 0001.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210704 0025.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210704 0028.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210704 0037.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210704 0043.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210704 0048.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210704 0053.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210704 0103.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210707 1840.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210707 1845.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LoginAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,6 +153,17 @@
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.Tomcat">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="cleanDb.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/src/test/resources/cleanDb.sql" />
       <script-mode>FILE</script-mode>
@@ -789,6 +797,16 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -860,7 +878,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
           <line>114</line>
-          <properties class="com.hmkurth.persistence.FoodResourceTest" method="saveOrUpdateSuccess">
+          <properties class="com.hmkurth.persistence.FoodResourceTest">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="42" />
@@ -884,7 +902,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java</url>
           <line>190</line>
-          <properties class="com.hmkurth.persistence.FoodResourceTest" method="getByPropertyLikeSuccess">
+          <properties class="com.hmkurth.persistence.FoodResourceTest">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="74" />
