@@ -9,24 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="Wrote new method and test to access the isVerified boolean in food resources.">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210704 0103.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210707 1840.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210707 1845.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="testing">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210707 1856.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210707 1923.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210703 2347.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210703 2350.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210704 0001.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210704 0025.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210704 0028.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210704 0037.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210704 0043.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210704 0048.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210704 0053.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210704 0103.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210707 1840.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LoginAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -435,14 +428,7 @@
       <workItem from="1625196853517" duration="2866000" />
       <workItem from="1625354801533" duration="6006000" />
       <workItem from="1625366067851" duration="12351000" />
-      <workItem from="1625701164568" duration="1559000" />
-    </task>
-    <task id="LOCAL-00120" summary="cleaning up code">
-      <created>1620684465297</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1620684465297</updated>
+      <workItem from="1625701164568" duration="3433000" />
     </task>
     <task id="LOCAL-00121" summary="still trying to get location search to work">
       <created>1620688890593</created>
@@ -780,7 +766,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625378161477</updated>
     </task>
-    <option name="localTasksCounter" value="169" />
+    <task id="LOCAL-00169" summary="testing">
+      <created>1625702804941</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1625702804941</updated>
+    </task>
+    <option name="localTasksCounter" value="170" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -803,7 +796,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="styled some of the minified css and reminified" />
     <MESSAGE value="working on ownerSuccess.jsp" />
     <MESSAGE value="working on owner integer problem" />
     <MESSAGE value="Well, it isn’t pretty, definitely needs some cleaning up, but adding the owner works!" />
@@ -828,7 +820,8 @@
     <MESSAGE value="working on location , set and add location changes" />
     <MESSAGE value="trying to edit the table css and output" />
     <MESSAGE value="Wrote new method and test to access the isVerified boolean in food resources." />
-    <option name="LAST_COMMIT_MESSAGE" value="Wrote new method and test to access the isVerified boolean in food resources." />
+    <MESSAGE value="testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

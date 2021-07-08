@@ -3640,3 +3640,6 @@
 [INFO ] 2021-07-07 18:45:58.387 [http-nio-8080-exec-7] LoginForward - The logged in user; bcurryhas a role of  'user' : false
 [INFO ] 2021-07-07 18:56:43.756 [http-nio-8080-exec-3] LoginAction - The logged in user; bcurryhas a role of  'user' : false
 [INFO ] 2021-07-07 18:56:53.989 [http-nio-8080-exec-5] LoginForward - The logged in user; bcurryhas a role of  'user' : false
+[INFO ] 2021-07-07 19:23:23.909 [http-nio-8080-exec-2] LoginAction - The logged in user; bcurryhas a role of  'user' : false
+[INFO ] 2021-07-07 19:23:23.909 [http-nio-8080-exec-2] LoginAction - The logged in user; bcurryhas a role of  'user' : false
+[INFO ] 2021-07-07 19:32:34.280 [http-nio-8080-exec-8] LoginAction - The logged in user; bcurryhas a role of  'user' : false
