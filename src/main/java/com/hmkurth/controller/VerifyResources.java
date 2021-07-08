@@ -28,9 +28,14 @@ public class VerifyResources extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
     GenericDao<FoodResource> fdao = new GenericDao<>(FoodResource.class);
     FoodResource resource;
+    List<FoodResource> resourcesToVerify;
 
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-      listCategory(req, resp);
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+         resourcesToVerify = fdao.getByPropertyEqualToBoolean("verificationStatus", false);;//get the unverified resource from the previous request
+        req.setAttribute("resourcesToVerify", resourcesToVerify);
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/verifyResources.jsp");
+        dispatcher.forward(req, res);
+
     }
 
     /**
@@ -44,21 +49,21 @@ public class VerifyResources extends HttpServlet {
      * @param res, the response
      * @throws ServletException
      * @throws IOException
-     */
+
     private void listCategory(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
         HttpSession session  = req.getSession();
         //get the list of unverified resources to populate a dropdown menu for the form input
         fdao = new GenericDao<>(FoodResource.class);
         List<FoodResource> resourcesToVerify = fdao.getByPropertyEqualToBoolean("verificationStatus", false);; //get the unverified resource from the previous request
-        session.setAttribute("unverifiedResources", resourcesToVerify);
+        req.setAttribute("resourcesToVerify", resourcesToVerify);
 
         String url = "/admin/verifyResources.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(req, res);
 
     }
-
+     */
     /**
      * Handles HTTP POST requests.
      *
@@ -70,7 +75,6 @@ public class VerifyResources extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         HttpSession session = req.getSession();
-
         String url = "/admin/verifyResources.jsp";
         String x = req.getParameter("submit");
 //TODo identify which resource
@@ -78,29 +82,40 @@ public class VerifyResources extends HttpServlet {
         req.setAttribute("selectedResourceId", resourceId);//for selection in the dropdown menu
         int thisResourceId = Integer.parseInt(resourceId);
         logger.debug("options value : " + req.getParameter("confirmVerify"));
-        FoodResource resource = fdao.getById( thisResourceId);
+        resource = fdao.getById( thisResourceId);
+        //set the resource in attribute for editing by other controllers
+        session.setAttribute("newResource", resource);
+
 
         if (x != null && x.equals("Verify")) {
-            switch (req.getParameter("confirmAdd")) {
+            //set a boolean attribute to indicate to other controllers whether its an edit(so save/update instead of insert
+            session.setAttribute("isEdited",true);
+            switch (req.getParameter("confirmVerify")) {
                 case "addData":
                    resource.setVerificationStatus(true);
+                   //save or update
+                    fdao.saveOrUpdate(resource);
                     String message = "you have successfully verified a  food resource, " + resource.getName() + ".";
                     //todo show map location and confirm that
-                    session.setAttribute("message", message);
+                    req.setAttribute("message", message);
+                    //reset the number of unverified resources
+                    req.setAttribute("numberToVerify", fdao.getByPropertyEqualToBoolean("verificationStatus", false).size());
                     url = "/admin/adminHome.jsp";
+                    RequestDispatcher dispatcher = req.getRequestDispatcher(url);
+                    dispatcher.forward(req, res);
                     break;
                 case "addLocation":
-                    url = "/admin/addLocation.jsp";
+                    url = "/addLocation";
                     break;
                 case "addContact":
-                    url = "/admin/addContact.jsp";
+                    url = "/addContact";
                     break;
                 case "addResourceOwner":
-                    url = "/admin/addResourceOwner.jsp";
+                    url = "/addResourceOwner";
                     break;
                 case "addResource":
                     //todo more edit capabilities,
-                    url = "/admin/addResource.jsp";
+                    url = "/addResource";
                     break;
             }
         }

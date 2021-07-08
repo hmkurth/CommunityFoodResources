@@ -10,9 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="generating type lists for resources">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210708 0220.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210708 0905.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210708 0912.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210708 0927.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210708 0152.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210708 0212.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210708 0220.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ConfirmResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ConfirmResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/VerifyResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/VerifyResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/GenericDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/verifyResources.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/verifyResources.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -144,17 +154,6 @@
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.Tomcat">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="cleanDb.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/src/test/resources/cleanDb.sql" />
       <script-mode>FILE</script-mode>
@@ -330,8 +329,8 @@
       <item itemvalue="JUnit.LocationDaoTest" />
       <item itemvalue="JUnit.FoodResourceTest.getByPropertyEqualSuccess" />
       <item itemvalue="JUnit.FoodResourceTest.getByPropertyEqualToBoolean" />
-      <item itemvalue="TomEE Server.Tomcat" />
       <item itemvalue="JUnit.FoodResourceTest" />
+      <item itemvalue="TomEE Server.Tomcat" />
     </list>
     <recent_temporary>
       <list>
@@ -434,13 +433,7 @@
       <workItem from="1625354801533" duration="6006000" />
       <workItem from="1625366067851" duration="12351000" />
       <workItem from="1625701164568" duration="1559000" />
-    </task>
-    <task id="LOCAL-00126" summary="added about project content">
-      <created>1621037604491</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1621037604491</updated>
+      <workItem from="1625749325784" duration="6247000" />
     </task>
     <task id="LOCAL-00127" summary="working on add resource">
       <created>1621135463420</created>
@@ -778,7 +771,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625729809354</updated>
     </task>
-    <option name="localTasksCounter" value="175" />
+    <task id="LOCAL-00175" summary="generating type lists for resources">
+      <created>1625730312952</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1625730312952</updated>
+    </task>
+    <option name="localTasksCounter" value="176" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1079,27 +1079,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
-          <line>65</line>
+          <line>69</line>
           <option name="timeStamp" value="91" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
-          <line>117</line>
+          <line>121</line>
           <option name="timeStamp" value="92" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
-          <line>113</line>
+          <line>117</line>
           <option name="timeStamp" value="93" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
-          <line>123</line>
+          <line>127</line>
           <option name="timeStamp" value="95" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
-          <line>122</line>
+          <line>126</line>
           <option name="timeStamp" value="96" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

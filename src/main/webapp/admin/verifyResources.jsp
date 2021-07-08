@@ -9,9 +9,9 @@
 
 <div class="row pad-bottom">
 
-    <div class="col-md-10 col-md-offset-1">
+    <div class="col-md-10 ">
 
-        <h2>Please verify the details of this resource, at this time I have not introduced auto verification, so we want to check for duplicate entries and try to get the location detailed enough to map</h2>
+        <p>Please verify the details of this resource, at this time I have not introduced auto verification, so we want to check for duplicate entries and try to get the location detailed enough to map</p>
 
 
         <h2>Resource Details</h2>
@@ -46,7 +46,7 @@
             </thead>
             <tbody>
 
-            <c:forEach var="resource" items="${unverifiedResources}" varStatus="iter">
+            <c:forEach var="resource" items="${resourcesToVerify}" varStatus="iter">
                 <tr>
                     <td>${resource.typeId.name}</td>
                     <td>${resource.name}</td>
@@ -74,7 +74,7 @@
                     <!-- //TODO drop down menu of resources that aren't verified -->
                     <select name="thisResource" id="thisResource">
 
-                        <c:forEach items="${unverifiedResources}" var="resource1">
+                        <c:forEach items="${resourcesToVerify}" var="resource1">
                             <option value='${resource1.id}'<c:if test="${resource1.id eq selectedResourceId}">selected="selected"</c:if>
                             > resource name:${resource1.name}</option>
                         </c:forEach>

@@ -42,7 +42,11 @@ public class AddResource extends HttpServlet {
      */
     public void doGet(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
+        HttpSession session  = req.getSession();
         listCategory(req, res);
+        //set boolean to indicate if it's an edited resource
+        boolean isEdited = true;
+        session.setAttribute("isEdited",false);
 
     }
 

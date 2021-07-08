@@ -45,6 +45,7 @@ public class AddLocation extends HttpServlet {
         GenericDao dao = new GenericDao(Location.class);
         GenericDao fdao = new GenericDao(FoodResource.class);
         HttpSession session = req.getSession();
+        boolean edit = (boolean) session.getAttribute("isEdited");
         String url = "admin/addLocation.jsp";
 
         FoodResource resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
@@ -97,9 +98,19 @@ public class AddLocation extends HttpServlet {
             dao.insert(location2);
             String message = "adding location to the resource " + resource.getName();
             session.setAttribute("message", message);
+
+
             //then forward to contacts
-            url = "/admin/addContact.jsp";
+            url = "/admin/addContact";
         }//end if submit2
+
+        //if it's an edit, save
+        if(edit == true){
+            fdao.saveOrUpdate(resource);
+            url = "/verifyResources";
+        }
+
+
 
         RequestDispatcher dispatcher = req.getRequestDispatcher(url);
         dispatcher.forward(req, resp);
