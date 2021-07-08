@@ -29,7 +29,18 @@ public class AddResourceOwner extends HttpServlet {
     GenericDao<FoodResource> fdao;
     GenericDao<ResourceOwner> odao;
     FoodResource resource;
-
+    /**
+     *  Handles HTTP GET requests.
+     *
+     *@param  req                 the HttpServletRequest object
+     *@param  resp                the HttpServletResponse object
+     *@exception  ServletException  if there is a Servlet failure
+     *@exception IOException       if there is an IO failure
+     */
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/addResourceOwner.jsp");
+        dispatcher.forward(req, resp);
+    }
     /**
      * Handles HTTP POST requests.
      *
@@ -42,7 +53,7 @@ public class AddResourceOwner extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 //todo, clean up duplicate code!
         HttpSession session = req.getSession();
-        String url = "addResourceOwner";
+        String url = "/admin/addResourceOwner.jsp";
         ResourceOwner thisOwner;
         resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
         logger.info("forwarded food resource = " + resource);
@@ -77,27 +88,26 @@ public class AddResourceOwner extends HttpServlet {
                 url = "/admin/addLocation.jsp";
 
             }//end else
-            RequestDispatcher dispatcher = req.getRequestDispatcher(url);
-            dispatcher.forward(req, res);
+        }else {//end if int not null, todo what if it is null can it be null if they hit submit??
 
 
-        //if new owner is selected, now grab details from the second form
-        String x = req.getParameter("submit2");
-            logger.debug("string x = :" + req.getParameter("submit2") );
-      //  if (x.equals("Next") && ownerInt == 9999) {
-            logger.debug("in add new resource owner block" );
-            thisOwner = new ResourceOwner();
-            thisOwner.setName(req.getParameter("ownerName"));
-            thisOwner.setWebsite(req.getParameter("website"));
-            odao.insert(thisOwner);
-            logger.debug("thisOwner before setting to resource: " + thisOwner);
-            resource.setOwner(thisOwner);
-            String message = "you have successfully added the owner" + resource.getOwner().getName() + " to the resource " + resource.getName() + ". " ;
-            session.setAttribute("message", message);
-            url = "/admin/addLocation.jsp";
+            //if new owner is selected, now grab details from the second form
+            String x = req.getParameter("submit2");
+            logger.debug("string x = :" + req.getParameter("submit2"));
+            if (x.equals("Submit")) {
+                logger.debug("in add new resource owner block");
+                thisOwner = new ResourceOwner();
+                thisOwner.setName(req.getParameter("ownerName"));
+                thisOwner.setWebsite(req.getParameter("website"));
+                odao.insert(thisOwner);
+                logger.debug("thisOwner before setting to resource: " + thisOwner);
+                resource.setOwner(thisOwner);
+                String message = "you have successfully added the owner" + resource.getOwner().getName() + " to the resource " + resource.getName() + ". ";
+                session.setAttribute("message", message);
+                url = "/admin/addLocation.jsp";
+            }
 
-        }//end if int not null, todo what if it is null can it be null if they hit submit??
-
+        }
 
         RequestDispatcher dispatcher = req.getRequestDispatcher(url);
         dispatcher.forward(req, res);

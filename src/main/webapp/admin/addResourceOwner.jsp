@@ -47,7 +47,7 @@
                 </label>
 
 
-                <input type="submit" class="btn btn-primary btn-lg"  name="submit2" value="Next">
+                <input type="submit" class="btn btn-primary btn-lg"  name="submit2" value="Submit">
             </div>
 
         </c:if>
