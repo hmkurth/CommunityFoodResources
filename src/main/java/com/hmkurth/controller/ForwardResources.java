@@ -40,16 +40,15 @@ public class ForwardResources extends HttpServlet {
             throws ServletException, IOException {
         GenericDao dao = new GenericDao(FoodResource.class);
         GenericDao tdao = new GenericDao(Type.class);
+        //all resources
         List<FoodResource> allResources = dao.getAll();
-        req.setAttribute("resourcesAll", dao.getAll());
+        req.setAttribute("resourcesAll", allResources);
 //trying to sort by resources
 
         //all pantries
-      //  List<Type> allPantries = tdao.getByPropertyEqual("id", String.valueOf(1));
-       List<FoodResource> allPantries = dao.getByPropertyEqual("typeId", String.valueOf(1));
-        String url = "/foodPantries.jsp";
+       List<FoodResource> allPantries = dao.getByPropertyEqualToInt("typeId", 1);
         req.setAttribute("allPantries", allPantries);
-
+        String url = "/foodPantries.jsp";
 
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(req, res);

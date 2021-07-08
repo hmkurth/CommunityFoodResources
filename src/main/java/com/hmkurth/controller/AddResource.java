@@ -108,6 +108,7 @@ public class AddResource extends HttpServlet {
         // should i really be submitting one form???...
         req.setAttribute("resourceName", req.getParameter("name"));
         Type thisType = tdao.getById(typeId);
+        thisType.addResource(resource);
         resource.setTypeId(thisType);
         logger.debug("type: " + req.getParameter("type"));
         logger.debug("Adding Type: " + resource.getTypeId());

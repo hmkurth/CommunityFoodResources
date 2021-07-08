@@ -50,7 +50,12 @@
             </div>
             <div class="col-xs-7 col-sm-12">
                 <h4>Verify Resources</h4>
-                <h5>You have ${unverifiedResources.size} resource/s to verify</h5>
+                <c:if test="${numberToVerify gt 0}" >
+                <h5>You have  ${numberToVerify} resource/s to verify</h5>
+                </c:if>
+                <c:if test="${numberToVerify lt 1 }" >
+                    <h5>No new resources to verify</h5>
+                </c:if>
                 <p></p>
             </div>
         </div>

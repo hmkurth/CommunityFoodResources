@@ -6,7 +6,6 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.util.HashSet;
-import java.util.Objects;
 import java.util.Set;
 
 
@@ -66,16 +65,5 @@ public class Type {
         this.id = id;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Type)) return false;
-        Type type = (Type) o;
-        return getId() == type.getId() && getName().equals(type.getName()) && getResources().equals(type.getResources());
-    }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(getId(), getName(), getResources());
-    }
 }
