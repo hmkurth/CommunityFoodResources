@@ -32,22 +32,22 @@
         </div>
         <div class="form-group">
             <label for="streetAddressOrIntersection">Street Address or Intersection (required)</label>
-            <input type="text" class="form-control" id="streetAddressOrIntersection" name ="streetAddressOrIntersection" placeholder="500 Washington St." autocomplete="street" aria-required="true"  required>
+            <input type="text" class="form-control" id="streetAddressOrIntersection" name ="streetAddressOrIntersection" placeholder="500 Washington St." pattern="\d+[ ](?:[A-Za-z0-9.-]+[ ]?)+(?:Avenue|Lane|Road|Boulevard|Drive|Street|Ave|Dr|Rd|Blvd|Ln|St)\.?" autocomplete="street" aria-required="true"  required>
         </div>
 
         <div class="form-group">
             <label for="city">City (required)</label>
-            <input type="text" class="form-control" id="city" name ="city" placeholder="city"  autocomplete="city" aria-required="true" required>
+            <input type="text" class="form-control" id="city" name ="city" placeholder="City"  pattern ="(?:[A-Z][a-z.-]+[ ]?)+" autocomplete="city" aria-required="true" required>
         </div>
 
         <div class="form-group">
             <label for="state">State (required)</label>
-            <input type="text" class="form-control" id="state" name ="state" placeholder="state"  autocomplete="state" aria-required="true" required>
+            <input type="text" class="form-control" id="state" name ="state" placeholder="state"  max-length="2" autocomplete="state" aria-required="true" required>
         </div>
 
         <div class="form-group">
             <label for="zip">Zipcode (required)</label>
-            <input type="text" class="form-control" id="zip" name ="zip" placeholder="zip"  autocomplete="zip" aria-required="true" required>
+            <input type="text" class="form-control" id="zip" name ="zip" placeholder="zip" pattern="\b\d{5}(?:-\d{4})?\b" autocomplete="zip" aria-required="true" required>
         </div>
         <div class="form-group">
             <label for="busInfo">Bus Route Info (optional)</label>

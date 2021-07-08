@@ -196,7 +196,7 @@ public class AddResource extends HttpServlet {
             dao.insert(resource);
 
             //TOdo set the user in the session?? check if this is duplicating entries
-            RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/addResourceSuccess.jsp");
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/confirmResource.jsp");
             dispatcher.forward(req, resp);
         }
 

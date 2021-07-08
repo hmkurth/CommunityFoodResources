@@ -43,7 +43,7 @@
 
     <c:if test="${param.contact == '9999'}"  >
     <h3>Add a new contact for this resource</h3>
-    <form action="${pageContext.request.contextPath}/addResourceOwner"  method="post" autocomplete="on">
+    <form action="${pageContext.request.contextPath}/addContact"  method="post" autocomplete="on">
 
         <div class="form-group">
             <label for="firstName">First Name (required)

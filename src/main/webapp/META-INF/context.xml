@@ -2,7 +2,7 @@
 <Context docBase="CommunityFoodResources" path="/CommunityFoodResources" reloadable="true">
     <Realm className="org.apache.catalina.realm.JDBCRealm"
            driverName="com.mysql.cj.jdbc.Driver"
-           connectionURL="jdbc:mysql://localhost:3306/CFRL?user=tomcat&amp;password=tomcat"
+           connectionURL="jdbc:mysql://localhost:3306/testSchema?user=tomcat&amp;password=tomcat"
            userTable="users" userNameCol="user_name" userCredCol="user_password"
            userRoleTable="user_roles" roleNameCol="role_name" >
     </Realm>

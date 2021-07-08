@@ -92,7 +92,7 @@ public class AddLocation extends HttpServlet {
 
             assert location2 != null;
             resource.setLocation(location2);
-            location2.setResourceId(resource);
+            location2.addResource(resource);
             //add the location to the database
             dao.insert(location2);
             String message = "adding location to the resource " + resource.getName();

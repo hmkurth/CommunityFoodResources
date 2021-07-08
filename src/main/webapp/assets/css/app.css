@@ -287,7 +287,7 @@ a {
 	padding-top: 5px;
 }
 .navbar-default .navbar-brand img {
-	max-width: 200px;
+	max-width: 150px;
 }
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
 	max-height: 500px;
@@ -702,4 +702,10 @@ footer .social a {
 	color: #fff;
 	font-weight: 300;
 }
+/*table styling to reduce the size*/
+.table {
+!important font-size: smaller;
+!important max-width: border-box;
 
+
+}

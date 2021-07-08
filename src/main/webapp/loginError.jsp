@@ -3,7 +3,7 @@
 <title>Login Error</title>
 
 <jsp:include page="/header.jsp"/>
-<jsp:include page="/banner.jsp"/>
+
 <div class="col-md-4 col-md-offset-1">
     <h3>>There was an error logging you in</h3>
 

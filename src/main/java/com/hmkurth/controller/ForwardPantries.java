@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * This is the servlet for food pantry search, the only purpose is to load the resources from the dao into an attribute and
@@ -37,6 +38,7 @@ public class ForwardPantries extends HttpServlet {
     public void doGet(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
         GenericDao dao = new GenericDao(FoodResource.class);
+        List<FoodResource> verifiedResources = dao.getByPropertyEqual("isVerified", "1");
         req.setAttribute("resourcesAll", dao.getAll());
 
         String url = "/foodPantries.jsp";
