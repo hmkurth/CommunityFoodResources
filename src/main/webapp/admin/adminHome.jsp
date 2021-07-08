@@ -42,7 +42,7 @@
 <hr class="visible-xs col-xs-12" />
 
 <div class="col-sm-4">
-    <a href="${pageContext.request.contextPath}/admin/verifyResources.jsp" class="no-hover fancy-hover">
+    <a href="${pageContext.request.contextPath}/verifyResources" class="no-hover fancy-hover">
         <div class="row mobile-left">
             <div class="col-xs-5 col-sm-12">
                 <img src="${pageContext.request.contextPath}/assets/img/demo/madisonCapitol.jpg" alt="Madison Capitol" class="img-responsive img-circle img-pad"

@@ -2,7 +2,6 @@ package com.hmkurth.controller;
 
 
 import com.hmkurth.entity.FoodResource;
-import com.hmkurth.entity.Type;
 import com.hmkurth.persistence.GenericDao;
 
 import javax.servlet.RequestDispatcher;
@@ -39,15 +38,33 @@ public class ForwardResources extends HttpServlet {
     public void doGet(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
         GenericDao dao = new GenericDao(FoodResource.class);
-        GenericDao tdao = new GenericDao(Type.class);
-        //all resources
-        List<FoodResource> allResources = dao.getAll();
-        req.setAttribute("resourcesAll", allResources);
-//trying to sort by resources
+        List<FoodResource> allPantries = null;
+        List<FoodResource> allFreeLittlePantries = null;
+        List<FoodResource> allMeals = null;
+        List<FoodResource> govResources = null;
+        List<FoodResource> allComAid = null;
+        List<FoodResource> allOther= null;
 
-        //all pantries
-       List<FoodResource> allPantries = dao.getByPropertyEqualToInt("typeId", 1);
-        req.setAttribute("allPantries", allPantries);
+        //all resources THAT ARE VERIFIED TODO figure out the best way to use multipe queries or filter through the list!!
+        List<FoodResource> allVerifiedResources = dao.getByPropertyEqualToBoolean("verificationStatus", true);
+        req.setAttribute("resourcesAll", allVerifiedResources);
+//trying to sort by resources
+        for(FoodResource resource :  allVerifiedResources){
+            int thisType = resource.getTypeId().getId();
+
+            if(thisType == 1){
+                //that is type pantry, add to the pantry list
+                allPantries.add(resource);
+                req.setAttribute("allPantries", allPantries);
+            } else if (thisType == 2){
+                //free little pantries
+                allFreeLittlePantries.add(resource);
+                req.setAttribute("allFreeLittlePantries", allFreeLittlePantries);
+
+            }
+        }
+
+
         String url = "/foodPantries.jsp";
 
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);

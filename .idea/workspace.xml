@@ -9,26 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="troubles with accessing field type.id...">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210707 2353.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210708 0001.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210708 0003.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="verifying resource">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210708 0009.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210708 0013.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/VerifyResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210707 2251.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210707 2253.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210707 2257.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210707 2302.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210707 2309.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210707 2316.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210708 0001.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ForwardResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ForwardResources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LoginAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Type.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/GenericDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/adminHome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/adminHome.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/FoodResourceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/verifyResources.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/verifyResources.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +37,8 @@
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="jsf" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -450,13 +442,6 @@
       <workItem from="1625366067851" duration="12351000" />
       <workItem from="1625701164568" duration="1559000" />
     </task>
-    <task id="LOCAL-00122" summary="ready for presentation">
-      <created>1620694282651</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1620694282651</updated>
-    </task>
     <task id="LOCAL-00123" summary="updated timelog, changed war for aws deploy, couldn't deploy, updated sql on aws">
       <created>1620699483332</created>
       <option name="number" value="00123" />
@@ -793,7 +778,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625718052060</updated>
     </task>
-    <option name="localTasksCounter" value="171" />
+    <task id="LOCAL-00171" summary="verifying resource">
+      <created>1625721454252</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1625721454252</updated>
+    </task>
+    <option name="localTasksCounter" value="172" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -826,7 +818,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="working on owner integer problem" />
     <MESSAGE value="Well, it isn’t pretty, definitely needs some cleaning up, but adding the owner works!" />
     <MESSAGE value="refactoring" />
     <MESSAGE value="trying to add some error handling to delete user," />
@@ -851,7 +842,8 @@
     <MESSAGE value="Wrote new method and test to access the isVerified boolean in food resources." />
     <MESSAGE value="having login problems for non admin users, not sure what ptompted that change...fixed" />
     <MESSAGE value="troubles with accessing field type.id..." />
-    <option name="LAST_COMMIT_MESSAGE" value="troubles with accessing field type.id..." />
+    <MESSAGE value="verifying resource" />
+    <option name="LAST_COMMIT_MESSAGE" value="verifying resource" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
