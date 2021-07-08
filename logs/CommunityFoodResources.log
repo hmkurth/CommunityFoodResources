@@ -3920,3 +3920,7 @@
 [DEBUG] 2021-07-08 00:09:14.849 [http-nio-8080-exec-3] GenericDao - Searching for person with verificationStatus = false
 [INFO ] 2021-07-08 00:13:59.047 [http-nio-8080-exec-8] LoginAction - The logged in user; bcurryhas a role of  'user' : false
 [DEBUG] 2021-07-08 00:13:59.057 [http-nio-8080-exec-8] GenericDao - Searching for person with verificationStatus = false
+[DEBUG] 2021-07-08 00:57:24.427 [http-nio-8080-exec-9] GenericDao - Searching for person with verificationStatus = true
+[DEBUG] 2021-07-08 01:04:52.847 [http-nio-8080-exec-3] GenericDao - Searching for person with verificationStatus = true
+[DEBUG] 2021-07-08 01:08:04.335 [http-nio-8080-exec-6] GenericDao - Searching for person with verificationStatus = true
+[DEBUG] 2021-07-08 01:13:21.862 [http-nio-8080-exec-3] GenericDao - Searching for person with verificationStatus = true
