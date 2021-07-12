@@ -46,6 +46,12 @@ public class AddResource extends HttpServlet {
 
         //set boolean to indicate if it's an edited resource
        // session.setAttribute("isEdited", false);
+        //get the resource to edit (from verifyResource)
+        if(!(req.getAttribute("resourceToEdit") == null)){
+            FoodResource resource = (FoodResource) req.getAttribute("resourceToEdit");
+            List<Type> listType = tdao.getAll();
+            session.setAttribute("listType", listType);
+        }
         listCategory(req, res);
 
     }
@@ -100,20 +106,31 @@ public class AddResource extends HttpServlet {
         String url = "admin/addResourceOwner.jsp";
         FoodResource resource;
         HttpSession session = req.getSession();
-        resource = new FoodResource();
+        int typeId;
+
+        //get the resource to edit (from verifyResource)
+        if(!(req.getAttribute("resourceToEdit") == null)){
+            resource = (FoodResource) req.getAttribute("resourceToEdit");
+            req.setAttribute("newResource", resource);
+           //listCategory(req, resp);//trying to get the listType to populate on edit
+        }else {
+            resource = new FoodResource();
+            req.setAttribute("newResource", resource);
+        }
 
         //sets the values from dropdown menus
-        int typeId = Integer.parseInt(req.getParameter("type"));
-        req.setAttribute("selectedTypeId", typeId);
+        if(req.getParameter("type") != null) {
+            typeId = Integer.parseInt(req.getParameter("type"));
+            req.setAttribute("selectedTypeId", typeId);
+            Type thisType = tdao.getById(typeId);
+            resource.setTypeId(thisType);
+            thisType.addResource(resource);
+            //tdao.saveOrUpdate(thisType);//saves the resource to list in types, but giving me a constraint violation TODO
+        }
+
         //get params
         resource.setName(req.getParameter("name"));
-        //set the name attribute so that when the form is resubmitted the data is not lost...but how many times
-        // should i really be submitting one form???...
-        req.setAttribute("resourceName", req.getParameter("name"));
-        Type thisType = tdao.getById(typeId);
-        resource.setTypeId(thisType);
-        thisType.addResource(resource);
-        //tdao.saveOrUpdate(thisType);//saves the resource to list in types, but giving me a constraint violation TODO
+
 
         logger.debug("type: " + req.getParameter("type"));
         logger.debug("Adding Type: " + resource.getTypeId());
@@ -139,7 +156,7 @@ public class AddResource extends HttpServlet {
          RequestDispatcher dispatcher = req.getRequestDispatcher(url);
          dispatcher.forward(req, resp);
 
-       // listCategory(req, resp);
+       //listCategory(req, resp);
     }
 
 }

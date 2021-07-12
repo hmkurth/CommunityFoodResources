@@ -9,18 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="fixed resourc-recource owner mess">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210711 2109.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210711 2115.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210711 2119.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="adding resource back working, verification done">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210711 2329.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210711 2332.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210711 2338.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210711 2057.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210711 2103.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210711 2107.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210711 2109.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210711 2115.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210711 2119.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/VerifyResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/VerifyResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -412,14 +413,7 @@
       <workItem from="1624137221218" duration="36130000" />
       <workItem from="1624413567641" duration="46457000" />
       <workItem from="1625777917480" duration="4740000" />
-      <workItem from="1626051096473" duration="5772000" />
-    </task>
-    <task id="LOCAL-00106" summary="FINALLY got delete working again with confirmation, can't believe it took so long, needs cleaning up">
-      <created>1620365033149</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1620365033149</updated>
+      <workItem from="1626051096473" duration="13857000" />
     </task>
     <task id="LOCAL-00107" summary="still editing admin...">
       <created>1620369326595</created>
@@ -757,7 +751,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626055852335</updated>
     </task>
-    <option name="localTasksCounter" value="155" />
+    <task id="LOCAL-00155" summary="adding resource back working, verification done">
+      <created>1626057164885</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1626057164885</updated>
+    </task>
+    <option name="localTasksCounter" value="156" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -790,7 +791,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="working on add resource" />
     <MESSAGE value="dropdowns connected, finally" />
     <MESSAGE value="still working on getting the if test for dropdown working" />
     <MESSAGE value="logout function added" />
@@ -815,7 +815,8 @@
     <MESSAGE value="I have a fk to resource owner in the contact, so does the contact go with the owner or the resource???  I think the contact should relate to the resource…" />
     <MESSAGE value="setting up vars for edited resources , but now it's kindof a mess. and now it's a git mess" />
     <MESSAGE value="fixed resourc-recource owner mess" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed resourc-recource owner mess" />
+    <MESSAGE value="adding resource back working, verification done" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding resource back working, verification done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1066,12 +1067,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
-          <line>69</line>
+          <line>75</line>
           <option name="timeStamp" value="91" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
-          <line>120</line>
+          <line>137</line>
           <option name="timeStamp" value="93" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

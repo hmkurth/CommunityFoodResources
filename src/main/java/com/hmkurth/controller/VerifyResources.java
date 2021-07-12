@@ -90,6 +90,7 @@ public class VerifyResources extends HttpServlet {
         if (x != null && x.equals("Next")) {
             //set a boolean attribute to indicate to other controllers whether its an edit(so save/update instead of insert
             session.setAttribute("isEdited",true);
+            req.setAttribute("resourceToEdit", resource);
             switch (req.getParameter("confirmVerify")) {
                 case "addData":
                    resource.setVerificationStatus(true);
@@ -103,16 +104,17 @@ public class VerifyResources extends HttpServlet {
                     url = "/admin/adminHome.jsp";
                     break;
                 case "addLocation":
-                    url = "/addLocation";
+                    url = "/admin/addLocation.jsp";
                     break;
                 case "addContact":
-                    url = "/addContact";
+                    url = "/admin/addContact.jsp";
                     break;
                 case "addResourceOwner":
-                    url = "/addResourceOwner";
+                    url = "/admin/addResourceOwner.jsp";
                     break;
                 case "addResource":
-                    //todo more edit capabilities,
+                    //todo more edit capabilities, this just starts over
+
                     url = "/addResource";
                     break;
             }
