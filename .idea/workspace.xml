@@ -9,19 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="setting up vars for edited resources , but now it's kindof a mess. and now it's a git mess">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210711 2042.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210711 2053.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210711 2057.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="fixed resourc-recource owner mess">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210711 2109.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210711 2115.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210711 2119.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210708 1314.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210708 1631.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210708 1639.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addResourceOwner.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addResourceOwner.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210711 2057.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210711 2103.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210711 2107.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -413,14 +412,7 @@
       <workItem from="1624137221218" duration="36130000" />
       <workItem from="1624413567641" duration="46457000" />
       <workItem from="1625777917480" duration="4740000" />
-      <workItem from="1626051096473" duration="4302000" />
-    </task>
-    <task id="LOCAL-00105" summary="editing admin controls">
-      <created>1620354571563</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1620354571563</updated>
+      <workItem from="1626051096473" duration="5772000" />
     </task>
     <task id="LOCAL-00106" summary="FINALLY got delete working again with confirmation, can't believe it took so long, needs cleaning up">
       <created>1620365033149</created>
@@ -758,7 +750,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625781148156</updated>
     </task>
-    <option name="localTasksCounter" value="154" />
+    <task id="LOCAL-00154" summary="fixed resourc-recource owner mess">
+      <created>1626055852335</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1626055852335</updated>
+    </task>
+    <option name="localTasksCounter" value="155" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -791,7 +790,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added about project content" />
     <MESSAGE value="working on add resource" />
     <MESSAGE value="dropdowns connected, finally" />
     <MESSAGE value="still working on getting the if test for dropdown working" />
@@ -816,7 +814,8 @@
     <MESSAGE value="YES!! Adding location and mapping it with the google api is functional!!!!  Almost time to start data input!" />
     <MESSAGE value="I have a fk to resource owner in the contact, so does the contact go with the owner or the resource???  I think the contact should relate to the resource…" />
     <MESSAGE value="setting up vars for edited resources , but now it's kindof a mess. and now it's a git mess" />
-    <option name="LAST_COMMIT_MESSAGE" value="setting up vars for edited resources , but now it's kindof a mess. and now it's a git mess" />
+    <MESSAGE value="fixed resourc-recource owner mess" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed resourc-recource owner mess" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
