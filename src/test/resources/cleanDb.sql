@@ -51,9 +51,9 @@ VALUES
 INSERT INTO food_resources (id,  type_id, resource_name,  description,location_id, contact_id, documentation_needed, delivery_offered )
 VALUES
 (4,6,'SNAP Program', 'gov program','1', null, 'social security number and id', false);
-INSERT INTO food_resources (id, resource_name,  description,location_id, contact_id, documentation_needed, delivery_offered )
+INSERT INTO food_resources (id, type_id , resource_name,  description,location_id, contact_id, documentation_needed, delivery_offered )
 VALUES
-(5,'Christ Lutheran Church Pantry', 'food pantry','6', null, 'social security number and id', false);
+(5,5, 'Christ Lutheran Church Pantry', 'food pantry','6', null, 'social security number and id', false);
 INSERT INTO food_resources (id,  type_id, resource_name,  description, contact_id, documentation_needed, delivery_offered )
 VALUES
 (6,4, 'Dane County Neighbors Helping neighbors ', 'facebook page', null, 'n/a', false);

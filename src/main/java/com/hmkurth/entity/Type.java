@@ -33,4 +33,37 @@ public class Type {
     @ToString.Exclude
     @OneToMany(mappedBy = "typeId", cascade=CascadeType.ALL, orphanRemoval = true, fetch =FetchType.EAGER )
     private Set<FoodResource> resources = new HashSet<>();
+
+
+    /**
+     * Add resource.
+     *
+     * @param resource the resource to add
+     */
+    public void addResource(FoodResource resource) {
+        resources.add(resource);
+        resource.setTypeId(this);
+
+    }
+
+    /**
+     * Delete role.
+     *
+     * @param resource the resource to add
+     */
+    public void deleteResource(FoodResource resource) {
+        resources.remove(resource);
+        resource.setTypeId(null);
+    }
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+
 }

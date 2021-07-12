@@ -94,7 +94,7 @@ public class LocationApiDao implements PropertiesLoader {
 
                 locationToMap.setLat((float) result.getResults().get(0).getGeometry().getLocation().getLat());
                 locationToMap.setLng(result.getResults().get(0).getGeometry().getLocation().getLng());
-                log.info("lng, lat");
+                log.info("lng, " +result.getResults().get(0).getGeometry().getLocation().getLng());
             }
         } finally {
             return locationToMap;

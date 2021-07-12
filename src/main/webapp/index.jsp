@@ -5,7 +5,7 @@
 <jsp:include page="header.jsp" />
 <jsp:include page="banner.jsp" />
 <!--show admin controls if logged in user is admin
-<c:if test="${pageContext.request.isUserInRole('admin')}">
+<c:if test="${!pageContext.request.isUserInRole('admin')}">
     <jsp:include page="admin/adminHome.jsp" />
 </c:if>
 <jsp:include page="indexMain.jsp" />

@@ -42,14 +42,20 @@
 <hr class="visible-xs col-xs-12" />
 
 <div class="col-sm-4">
-    <a href="${pageContext.request.contextPath}/admin/addLocation.jsp" class="no-hover fancy-hover">
+    <a href="${pageContext.request.contextPath}/verifyResources" class="no-hover fancy-hover">
         <div class="row mobile-left">
             <div class="col-xs-5 col-sm-12">
-                <img src="${pageContext.request.contextPath}/assets/img/demo/madisonCapitol.jpg" alt="placeholder image" class="img-responsive img-circle img-pad"
+                <img src="${pageContext.request.contextPath}/assets/img/demo/madisonCapitol.jpg" alt="Madison Capitol" class="img-responsive img-circle img-pad"
                     />
             </div>
             <div class="col-xs-7 col-sm-12">
-                <h4>Add a Location</h4>
+                <h4>Verify Resources</h4>
+                <c:if test="${numberToVerify gt 0}" >
+                <h5>You have  ${numberToVerify} resource/s to verify</h5>
+                </c:if>
+                <c:if test="${numberToVerify lt 1 }" >
+                    <h5>No new resources to verify</h5>
+                </c:if>
                 <p></p>
             </div>
         </div>

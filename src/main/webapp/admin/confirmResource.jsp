@@ -1,3 +1,4 @@
+<%@ page import="java.util.Enumeration" %>
 <%@include file="../taglib.jsp"%>
     <jsp:include page="../head.jsp"/>
     <title>Add Resource Success</title>
@@ -117,12 +118,6 @@
 
 
 
-        <!--  https://www.tutorialspoint.com/jsp/jsp_form_processing.htm
-         <h2>HTTP Header Request Example</h2>
-         <table width = "100%" border = "1" align = "center">
-             <tr bgcolor = "#949494">
-                 <th>Param Name</th>
-                 <th>Param Value(s)</th>
-             </tr> -->
+
 
     <jsp:include page="../footer.jsp"/>

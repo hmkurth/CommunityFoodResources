@@ -30,7 +30,7 @@ import java.io.IOException;
 public class AddLocation extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
-
+    FoodResource resource;
     /**
      * Handles HTTP POST requests.
      *
@@ -45,9 +45,10 @@ public class AddLocation extends HttpServlet {
         GenericDao dao = new GenericDao(Location.class);
         GenericDao fdao = new GenericDao(FoodResource.class);
         HttpSession session = req.getSession();
-        String url = "admin/addLocation.jsp";
+       // boolean edit = (boolean) session.getAttribute("isEdited");
+        String url = "/admin/addLocation.jsp";
 
-        FoodResource resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
+       resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
         logger.debug("food resource at add location do post: " + resource);
         //do they want to add a location to this resource? if not continue to contacts
         String x = req.getParameter("submit");
@@ -97,9 +98,18 @@ public class AddLocation extends HttpServlet {
             dao.insert(location2);
             String message = "adding location to the resource " + resource.getName();
             session.setAttribute("message", message);
+
             //then forward to contacts
             url = "/admin/addContact.jsp";
         }//end if submit2
+
+        /**if it's an edit, save
+        if(edit == true){
+            fdao.saveOrUpdate(resource);
+            url = "/verifyResources";
+        }
+**/
+
 
         RequestDispatcher dispatcher = req.getRequestDispatcher(url);
         dispatcher.forward(req, resp);
