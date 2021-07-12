@@ -9,16 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="setting up vars for edited resources , but now it's kindof a mess.">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210708 1631.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210708 1639.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="setting up vars for edited resources , but now it's kindof a mess. and now it's a git mess">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210711 2042.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210711 2053.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210711 2057.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210708 1247.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210708 1309.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210708 1314.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210708 1631.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210708 1639.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/VerifyResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/VerifyResources.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addResourceOwner.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addResourceOwner.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +49,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="f45b8dc193ae164dc6b7c2f09dc4c62c365b97aa" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -149,17 +151,6 @@
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.Tomcat">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="All in CommunityFoodResources" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <option name="PACKAGE_NAME" value="" />
@@ -421,14 +412,8 @@
       <workItem from="1623772266318" duration="26781000" />
       <workItem from="1624137221218" duration="36130000" />
       <workItem from="1624413567641" duration="46457000" />
-      <workItem from="1625777917480" duration="3130000" />
-    </task>
-    <task id="LOCAL-00104" summary="changed include to jsp include">
-      <created>1620349642812</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1620349642812</updated>
+      <workItem from="1625777917480" duration="4740000" />
+      <workItem from="1626051096473" duration="4302000" />
     </task>
     <task id="LOCAL-00105" summary="editing admin controls">
       <created>1620354571563</created>
@@ -766,7 +751,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624549139045</updated>
     </task>
-    <option name="localTasksCounter" value="153" />
+    <task id="LOCAL-00153" summary="setting up vars for edited resources , but now it's kindof a mess. and now it's a git mess">
+      <created>1625781148156</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1625781148156</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -774,6 +766,16 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -789,7 +791,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added live aws link to readme" />
     <MESSAGE value="added about project content" />
     <MESSAGE value="working on add resource" />
     <MESSAGE value="dropdowns connected, finally" />
@@ -814,7 +815,8 @@
     <MESSAGE value="working on integrating the add location and contacts," />
     <MESSAGE value="YES!! Adding location and mapping it with the google api is functional!!!!  Almost time to start data input!" />
     <MESSAGE value="I have a fk to resource owner in the contact, so does the contact go with the owner or the resource???  I think the contact should relate to the resource…" />
-    <option name="LAST_COMMIT_MESSAGE" value="I have a fk to resource owner in the contact, so does the contact go with the owner or the resource???  I think the contact should relate to the resource…" />
+    <MESSAGE value="setting up vars for edited resources , but now it's kindof a mess. and now it's a git mess" />
+    <option name="LAST_COMMIT_MESSAGE" value="setting up vars for edited resources , but now it's kindof a mess. and now it's a git mess" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1075,12 +1077,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java</url>
-          <line>55</line>
+          <line>61</line>
           <option name="timeStamp" value="97" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java</url>
-          <line>53</line>
+          <line>58</line>
           <option name="timeStamp" value="98" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">

@@ -33,13 +33,18 @@ public class AddResourceOwner extends HttpServlet {
      *  Handles HTTP GET requests.
      *
      *@param  req                 the HttpServletRequest object
-     *@param  resp                the HttpServletResponse object
+     *@param  res               the HttpServletResponse object
      *@exception  ServletException  if there is a Servlet failure
      *@exception IOException       if there is an IO failure
      */
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        HttpSession session = req.getSession();
+        int resourceId = (int) session.getAttribute("newResourceId");
+        resource = (FoodResource) req.getAttribute("newResource"); //get the unsaved resource from the previous request
+        logger.debug("This food resource in doget: " + resource.getName());
         RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/addResourceOwner.jsp");
-        dispatcher.forward(req, resp);
+        dispatcher.forward(req, res);
+
     }
     /**
      * Handles HTTP POST requests.
@@ -53,7 +58,8 @@ public class AddResourceOwner extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 //todo, clean up duplicate code!
         HttpSession session = req.getSession();
-        String url = "/admin/addResourceOwner.jsp";
+
+        String url = "/admin/addLocation.jsp";
         ResourceOwner thisOwner;
         resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
         logger.info("forwarded food resource = " + resource);
@@ -61,17 +67,19 @@ public class AddResourceOwner extends HttpServlet {
         odao = new GenericDao<ResourceOwner>(ResourceOwner.class);
         String ownerId = req.getParameter("owner");
         req.setAttribute("selectedOwnerId", ownerId);//for selection in the dropdown menu
-        if(ownerId != null) {
-           int ownerInt = Integer.parseInt(ownerId);
+
+        if (ownerId != null) {
+            int ownerInt = Integer.parseInt(ownerId);
             logger.debug("ownerInt = : " + ownerInt);
 
             //set the owner
             if (ownerInt == 9999) {
                 //new owner to add, jsp should display additional fields after the first submit is processed, so redirect
                 url = "/admin/addResourceOwner.jsp";
+
             } else if (ownerInt == 8888) {
                 //resource is private, default set in database, id = 8888
-                thisOwner= odao.getById(8888);
+                thisOwner = odao.getById(8888);
                 logger.debug("thisOwner before setting to resource: " + thisOwner);
                 resource.setOwner(thisOwner);
                 String message = "you have chosen not to add an owner to the resource " + resource.getName();
@@ -88,13 +96,16 @@ public class AddResourceOwner extends HttpServlet {
                 url = "/admin/addLocation.jsp";
 
             }//end else
-        }else {//end if int not null, todo what if it is null can it be null if they hit submit??
+            RequestDispatcher dispatcher = req.getRequestDispatcher(url);
+            dispatcher.forward(req, res);
+        }//end if not null
+
 
 
             //if new owner is selected, now grab details from the second form
             String x = req.getParameter("submit2");
             logger.debug("string x = :" + req.getParameter("submit2"));
-            if (x.equals("Submit")) {
+        if (x != null && x.equals("Submit")) {
                 logger.debug("in add new resource owner block");
                 thisOwner = new ResourceOwner();
                 thisOwner.setName(req.getParameter("ownerName"));
@@ -105,13 +116,10 @@ public class AddResourceOwner extends HttpServlet {
                 String message = "you have successfully added the owner" + resource.getOwner().getName() + " to the resource " + resource.getName() + ". ";
                 session.setAttribute("message", message);
                 url = "/admin/addLocation.jsp";
+
+                RequestDispatcher dispatcher = req.getRequestDispatcher(url);
+                dispatcher.forward(req, res);
             }
 
-        }
-
-        RequestDispatcher dispatcher = req.getRequestDispatcher(url);
-        dispatcher.forward(req, res);
-
-
-    }
+    }//end do post
 }

@@ -97,7 +97,7 @@ public class AddResource extends HttpServlet {
      **/
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String url = "/addResource";
+        String url = "admin/addResourceOwner.jsp";
         FoodResource resource;
         HttpSession session = req.getSession();
         resource = new FoodResource();
@@ -133,13 +133,13 @@ public class AddResource extends HttpServlet {
             session.setAttribute("newResourceId", resource.getId());
             session.setAttribute("newResource", resource);
             //forward this resource id to add owner, contact, or location servlets
-            url = "/addResourceOwner";
-            RequestDispatcher dispatcher = req.getRequestDispatcher(url);
-            dispatcher.forward(req, resp);
+          //  url = "/addResourceOwner";//to the jsp or servlet?????
+
         }
+         RequestDispatcher dispatcher = req.getRequestDispatcher(url);
+         dispatcher.forward(req, resp);
 
-
-        listCategory(req, resp);
+       // listCategory(req, resp);
     }
 
 }
