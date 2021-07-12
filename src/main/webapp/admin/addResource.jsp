@@ -26,7 +26,7 @@
         <div class="form-group">
             <label for="type">Resource Type, please select the most accurate category for this resource, or select other
                 <select name="type" id="type">
-                    <option value="${newResource.type.id}">type name: ${newResource.type.name}</option>
+
                     <c:forEach items="${listType}" var="type">
                         <option value="${type.id}">type name: ${type.name}</option>
                     </c:forEach>

@@ -115,7 +115,7 @@ public class VerifyResources extends HttpServlet {
                 case "addResource":
                     //todo more edit capabilities, this just starts over
 
-                    url = "/addResource";
+                    url = "/admin/addResource.jsp";
                     break;
             }
         }
