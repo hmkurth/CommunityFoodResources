@@ -2,7 +2,10 @@ package com.hmkurth.controller;
 
 
 import com.hmkurth.entity.FoodResource;
+import com.hmkurth.entity.Location;
 import com.hmkurth.persistence.GenericDao;
+import com.hmkurth.persistence.LocationApiDao;
+import lombok.SneakyThrows;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -72,17 +75,23 @@ public class VerifyResources extends HttpServlet {
      * @throws ServletException if there is a Servlet failure
      * @throws IOException      if there is an IO failure
      **/
+    @SneakyThrows
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         HttpSession session = req.getSession();
         String url = "/admin/verifyResources.jsp";
         String x = req.getParameter("submit");
+        LocationApiDao ldao = new LocationApiDao();
+
 //TODo identify which resource
         String resourceId = req.getParameter("thisResource");
         req.setAttribute("selectedResourceId", resourceId);//for selection in the dropdown menu
         int thisResourceId = Integer.parseInt(resourceId);
         logger.debug("options value : " + req.getParameter("confirmVerify"));
         resource = fdao.getById( thisResourceId);
+        Location thisLocation = resource.getLocation();
+        ldao.addMarker(thisLocation);//this sets/creates a marker in a map, but then what??
+
         //set the resource in attribute for editing by other controllers
         session.setAttribute("newResource", resource);
 

@@ -13,6 +13,8 @@ import org.hibernate.query.Query;
 import javax.transaction.Transactional;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.WebTarget;
+import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +31,7 @@ import java.util.Properties;
  **/
 
 public class LocationApiDao implements PropertiesLoader {
-List<com.hmkurth.ApiLocation.Location> allLocations = new ArrayList<com.hmkurth.ApiLocation.Location>();
+List<Location> allLocations = new ArrayList<Location>();
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     /**
@@ -98,18 +100,42 @@ List<com.hmkurth.ApiLocation.Location> allLocations = new ArrayList<com.hmkurth.
                 log.info("lng, " +result.getResults().get(0).getGeometry().getLocation().getLng());
 
                 logger.debug("status: " + status);
-                if(status == "OK")
 
-                allLocations.add(result.getResults().get(0).getGeometry().getLocation());
-                logger.debug("arraylist of good locations: " + allLocations.toString());
+
             }
         } finally {
             return locationToMap;
+
         }
     }
-/**
- * add the location to an array list
- */
+
+    /**
+    * add the location to an array list, which would be needed for the google JS maps api
+    */
+    public List<Location> addLocation(Location location) {
+        allLocations.add(location);
+        logger.debug("arraylist of good locations: " + allLocations.toString());
+        return allLocations;
+    }
+
+    /**
+     * place a marker on a map that is centered on Madison through the maps static api, testing
+     * @param location, the location to mark
+     */
+        public void addMarker(Location location) {
+        double lat = location.getLat();
+        double lng = location.getLng();
+            Client client = ClientBuilder.newClient();
+            WebTarget target =
+                    client.target("https://maps.googleapis.com/maps/api/staticmap?center=43.0731,-89.4012&zoom=10&size=400x400&markers=my%20house%7C" + lat + ",%20" + lng + "&key=AIzaSyCLGoKo1ZhK7TyAsvpPwQZmlLsAQxWnpRM");
+            String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
+
+
+
+        }
+
+
+
     /**
      * Returns an open session from the SessionFactory
      *
