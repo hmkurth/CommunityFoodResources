@@ -14,6 +14,7 @@ import javax.transaction.Transactional;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.core.Response;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
@@ -28,7 +29,7 @@ import java.util.Properties;
  **/
 
 public class LocationApiDao implements PropertiesLoader {
-
+List<com.hmkurth.ApiLocation.Location> allLocations = new ArrayList<com.hmkurth.ApiLocation.Location>();
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     /**
@@ -95,12 +96,20 @@ public class LocationApiDao implements PropertiesLoader {
                 locationToMap.setLat((float) result.getResults().get(0).getGeometry().getLocation().getLat());
                 locationToMap.setLng(result.getResults().get(0).getGeometry().getLocation().getLng());
                 log.info("lng, " +result.getResults().get(0).getGeometry().getLocation().getLng());
+
+                logger.debug("status: " + status);
+                if(status == "OK")
+
+                allLocations.add(result.getResults().get(0).getGeometry().getLocation());
+                logger.debug("arraylist of good locations: " + allLocations.toString());
             }
         } finally {
             return locationToMap;
         }
     }
-
+/**
+ * add the location to an array list
+ */
     /**
      * Returns an open session from the SessionFactory
      *

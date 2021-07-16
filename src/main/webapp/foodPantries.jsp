@@ -35,6 +35,7 @@
                 </div>
             </div>
         </div>
+    <div id="map"></div>
 
     <jsp:include page="/map.jsp"/>
     <jsp:include page="/footer.jsp"/>
