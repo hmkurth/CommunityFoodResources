@@ -46,7 +46,7 @@
 
         <div class="form-group">
             <label for="website">Website Link (optional)</label>
-            <input type="text" class="form-control" id="website" name ="website" placeholder="enter website"  aria-required="false" pattern="^((https?|ftp|smtp):\/\/)?(www.)?[a-z0-9]+\.[a-z]+(\/[a-zA-Z0-9#]+\/?)*$" value="${newResource.website}" >
+            <input type="text" class="form-control" id="website" name ="website" placeholder="enter website"  aria-required="false"  value="${newResource.website}" >
         </div>
 
         <div class="form-group">

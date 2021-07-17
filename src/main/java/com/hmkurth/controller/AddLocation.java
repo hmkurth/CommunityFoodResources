@@ -49,7 +49,7 @@ public class AddLocation extends HttpServlet {
         String url = "/admin/addLocation.jsp";
 
        resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
-        logger.debug("food resource at add location do post: " + resource);
+        //logger.debug("food resource at add location do post: " + resource);
         //do they want to add a location to this resource? if not continue to contacts
         String x = req.getParameter("submit");
 
@@ -79,8 +79,8 @@ public class AddLocation extends HttpServlet {
             location.setZip(req.getParameter("zip"));
             location.setBusInfo(req.getParameter("busInfo"));
             location.setComments(req.getParameter("comments"));
-            logger.debug("Adding Location1: " + location);
-            logger.debug("Adding resource to location, resource= : " + resource.toString());
+          //  logger.debug("Adding Location1: " + location);
+          //  logger.debug("Adding resource to location, resource= : " + resource.toString());
 
             //Use the api to get the lat and long TODO
             try {

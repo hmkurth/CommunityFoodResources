@@ -964,7 +964,7 @@ SELECT|testschema
     </column>
     <column id="300" parent="289" name="phone">
       <Position>5</Position>
-      <DataType>varchar(13)|0s</DataType>
+      <DataType>varchar(17)|0s</DataType>
     </column>
     <column id="301" parent="289" name="owner_id">
       <Position>6</Position>

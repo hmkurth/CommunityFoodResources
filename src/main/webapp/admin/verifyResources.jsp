@@ -91,6 +91,7 @@
                         <option value='addContact'>Add or Edit A Contact</option>
                         <option value='addResourceOwner'>Add or Edit A Resource Owner</option>
                         <option value='addResource'>Edit Other Details of This resource(this will bring you back to the start of submission )</option>
+                        <option value='deleteResource'>Delete This resource</option>
                     </select>
                 </label>
                 <input type="submit" class="btn btn-primary btn-lg"  name="submit" value="Next">

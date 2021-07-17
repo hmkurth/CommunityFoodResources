@@ -39,14 +39,10 @@
 </div>
     <!-- if submit was  NOT pushed, display form-->
     <c:if test="${req.getAttribute('submitted') != true}" >
-<form action="${pageContext.request.contextPath}/deleteUser"  method="post" autocomplete="on">
-    <div class="form-group">
-        <label for="delete">Enter a User Id to Delete</label>
-        <input type="text" class="form-control" id="delete" name ="delete" placeholder="id to delete"  required>
-    </div>
-    <hr />
-    <input type="submit" name="submit" class="btn btn-primary btn-lg" value="Submit">
-</form>
+        <form action="${pageContext.request.contextPath}/deleteResource"  method="post" autocomplete="on">
+
+            <input type="submit" name="confirmDelete" value = "confirmDelete" class="btn btn-primary btn-lg">
+        </form>
 </c:if>
 <h2 class="warning">${errorMessage}</h2>
 
