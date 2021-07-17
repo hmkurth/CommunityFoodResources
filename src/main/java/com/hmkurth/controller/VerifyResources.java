@@ -98,10 +98,8 @@ public class VerifyResources extends HttpServlet {
                 case "addResourceOwner":
                     url = "/admin/addResourceOwner.jsp";
                     break;
-                case "addResource":
-                    //todo more edit capabilities, this just starts over
-
-                    url = "/admin/addResource.jsp";
+                case "editResource":
+                    url = "/admin/editResources.jsp";
                     break;
                 case "deleteResource":
                     message = "are you sure you want to delete  food resource, " + resource.getName() + "?";

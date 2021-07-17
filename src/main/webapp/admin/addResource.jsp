@@ -1,38 +1,15 @@
 
 <%@include file="../taglib.jsp"%>
 <jsp:include page="../head.jsp"/>
-<title>Add Resource</title>
+<title>Add or Edit a Resource</title>
 
 <jsp:include page="../header.jsp"/>
 
 <div class="login-container">
-    <h1 class="text-center pad-bottom-sm">Edit an existing resource</h1>
-
-    <form action="${pageContext.request.contextPath}/addResource"  method="post" autocomplete="on">
-
-        <div class="form-group">
-            <label for="resourceToEdit">Choose A resource to edit
-                <select name="resourceToEdit" id="resourceToEdit">
-                    <c:forEach items="${listAll}" var="resource">
-                        <option value='${resource.id}'<c:if test="${resource.id eq selectedResourceId}">selected="selected"</c:if>
-                        > resource name:${resource.name}</option>
-                    </c:forEach>
-                </select>
-
-            </label>
-
-            <input type="submit" class="btn btn-primary btn-lg"  name="submit" value="Next">
-
-        </div>
-    </form>
+    <h1 class="text-center pad-bottom-sm">Add a new resource</h1>
 
 
-    <h1 class="text-center pad-bottom-sm">Add A New Resource</h1>
-    <c:if test="${not empty requestScope.resource}">
-        <h3>The resource to edit: <c:out value='${requestScope.newResource.name}'/></h3>
-    </c:if>
 
-    <
     <!--TODO aria labeled by labels
      Note that the value for the attribute items must match the name of the corresponding attribute set in the servlet class.
      As you can see, the values of the drop down list are the IDs of the categories.-->

@@ -9,34 +9,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="delete resource working">
-      <change afterPath="$PROJECT_DIR$/DesignDocs/cfrl_contact_details.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignDocs/cfrl_food_resources.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignDocs/cfrl_location.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignDocs/cfrl_resource_owners.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignDocs/cfrl_resource_type.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignDocs/cfrl_user_roles.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignDocs/cfrl_users.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignDocs/sqlExportData.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210717 1145.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210717 1211.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210717 1311.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/748adc0c-b602-4b39-af48-c0b7be8e007a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/748adc0c-b602-4b39-af48-c0b7be8e007a.xml" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="adding edit resource dropdown menu">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210717 1454.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210717 1500.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210717 1508.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/EditResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/editResources.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210717 1114.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210717 1120.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210717 1124.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddContact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210717 1145.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210717 1211.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210717 1311.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ConfirmResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ConfirmResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/DeleteResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/DeleteResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addContact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addContact.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/VerifyResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/VerifyResources.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/deleteResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/deleteResource.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/verifyResources.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/verifyResources.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +42,8 @@
         <option value="Interface" />
         <option value="jsf" />
         <option value="JavaScript File" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -449,14 +437,7 @@
       <workItem from="1624413567641" duration="46457000" />
       <workItem from="1625777917480" duration="4740000" />
       <workItem from="1626051096473" duration="15326000" />
-      <workItem from="1626453003726" duration="36117000" />
-    </task>
-    <task id="LOCAL-00113" summary="&lt;property name=&quot;hibernate.search.backend.directory.root&quot;/&gt; in hibernate config">
-      <created>1620450698016</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1620450698016</updated>
+      <workItem from="1626453003726" duration="41981000" />
     </task>
     <task id="LOCAL-00114" summary="annotated location and food resources for hibernate search">
       <created>1620530606685</created>
@@ -794,7 +775,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626539579830</updated>
     </task>
-    <option name="localTasksCounter" value="162" />
+    <task id="LOCAL-00162" summary="adding edit resource dropdown menu">
+      <created>1626546831188</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1626546831188</updated>
+    </task>
+    <option name="localTasksCounter" value="163" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -827,7 +815,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="trying to refactor adding owner to be independent/reusable" />
     <MESSAGE value="finally got the add resource workable, still need to edit now that I figured out the problem" />
     <MESSAGE value="getting resource owner addition going..." />
     <MESSAGE value="trying to edit styles..." />
@@ -852,7 +839,8 @@
     <MESSAGE value="messing around with google maps apis" />
     <MESSAGE value="working on a delete resource action" />
     <MESSAGE value="delete resource working" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete resource working" />
+    <MESSAGE value="adding edit resource dropdown menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding edit resource dropdown menu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

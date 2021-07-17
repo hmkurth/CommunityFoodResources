@@ -111,15 +111,6 @@ public class AddResource extends HttpServlet {
         HttpSession session = req.getSession();
         int typeId;
 
-        String resourceId = req.getParameter("resourceToEdit");
-        req.setAttribute("selectedResourceId", resourceId);//for selection in the dropdown menu
-        //get the resource to edit (from verifyResource or from dropdown menu)
-        if(!(req.getAttribute("resourceToEdit") == null)){
-            resource = (FoodResource) req.getAttribute("resourceToEdit");
-            logger.debug("editing this resource: " + resource);
-            req.setAttribute("newResource", resource);
-           //listCategory(req, resp);//trying to get the listType to populate on edit
-        }else {
             resource = new FoodResource();
             req.setAttribute("newResource", resource);
             //get params
@@ -133,7 +124,7 @@ public class AddResource extends HttpServlet {
             resource.setDeliveryDescription(req.getParameter("deliveryDescription"));
             resource.setDietaryConsiderations(req.getParameter("dietary"));
             resource.setComments(req.getParameter("comments"));
-        }
+
 
         //sets the values from dropdown menus
         if(req.getParameter("type") != null) {
