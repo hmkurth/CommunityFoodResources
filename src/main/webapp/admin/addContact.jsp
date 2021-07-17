@@ -13,8 +13,8 @@
 
 
 <div class="login-container">
-    <h2  class="text-center pad-bottom-sm">${message}</h2>
-    <h3 class="text-center pad-bottom-sm">Almost Done!  Add Contact/s for this resource </h3>
+    <h3  class="text-center pad-bottom-sm">${message}</h3>
+    <h4 class="text-center pad-bottom-sm">Almost Done!  Add Contact/s for this resource </h4>
 
 
     <form action="${pageContext.request.contextPath}/addContact"  method="post" autocomplete="on">
@@ -46,14 +46,14 @@
     <form action="${pageContext.request.contextPath}/addContact"  method="post" autocomplete="on">
 
         <div class="form-group">
-            <label for="firstName">First Name (required)
-                <input type="text" class="form-control" id="firstName" name ="firstName" placeholder="first name"  aria-required="true" required >
+            <label for="firstName">First Name (opt)
+                <input type="text" class="form-control" id="firstName" name ="firstName" placeholder="first name"  >
             </label>
-            <label for="lastName">Last Name (required)
+            <label for="lastName">Last Name or Org name(required)
                 <input type="text" class="form-control" id="lastName" name ="lastName" placeholder="last name"  aria-required="true" required >
             </label>
 
-            <label for="website">Website (optional)
+            <label for="website">Email Address or Website (optional)
                 <input type="text" class="form-control" id="website" name ="website" placeholder="website for the org/owner"  aria-required="false"  >
             </label>
 

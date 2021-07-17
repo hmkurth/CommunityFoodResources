@@ -113,6 +113,7 @@ public class AddResourceOwner extends HttpServlet {
                 odao.insert(thisOwner);
                 logger.debug("thisOwner before setting to resource: " + thisOwner);
                 resource.setOwner(thisOwner);
+            logger.debug("thisOwner after setting to resource: " + resource.getOwner().getName());
                 String message = "you have successfully added the owner" + resource.getOwner().getName() + " to the resource " + resource.getName() + ". ";
                 session.setAttribute("message", message);
                 url = "/admin/addLocation.jsp";

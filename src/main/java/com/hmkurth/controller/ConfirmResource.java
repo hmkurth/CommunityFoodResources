@@ -55,13 +55,13 @@ public class ConfirmResource extends HttpServlet {
                     url = "/admin/adminHome.jsp";
                     break;
                 case "addLocation":
-                    url = "/addLocation";
+                    url = "/addLocation.jsp";
                     break;
                 case "addContact":
-                    url = "/addContact";
+                    url = "/addContact.jsp";
                     break;
                 case "addResourceOwner":
-                    url = "/addResourceOwner";
+                    url = "/addResourceOwner.jsp";
                     break;
                 case "addResource":
                     //todo more edit capabilities,

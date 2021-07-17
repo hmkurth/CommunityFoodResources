@@ -60,7 +60,7 @@ public class AddContact extends HttpServlet {
             } else if (contactInt == 8888) {
                 //resource is private, default set in database, id = 8888
                 thisContact= cdao.getById(8888);
-                resource.setContactId(thisContact);
+                resource.setContactId(null);//trying null
                 String message = "you have chosen not to add a contact to the resource " + resource.getName();
                 session.setAttribute("message", message);
                 url = "/admin/confirmResource.jsp";

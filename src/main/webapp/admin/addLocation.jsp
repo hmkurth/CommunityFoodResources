@@ -4,8 +4,8 @@
 <jsp:include page="../header.jsp"/>
 
 <div class="login-container">
-    <h3 class = "row text-center warning pad-bottom-sm">This resources has not yet been added, we just need a little more information</h3>
-    <h3 class = "row text-center pad-bottom-sm">${message} </h3>
+    <h4 class = "row text-center warning pad-bottom-sm">This resources has not yet been added, we just need a little more information</h4>
+    <h5 class = "row text-center pad-bottom-sm">${message} </h5>
 
     <form action="${pageContext.request.contextPath}/addLocation"  method="post" autocomplete="on">
         <div class="form-group">
@@ -32,7 +32,7 @@
         </div>
         <div class="form-group">
             <label for="streetAddressOrIntersection">Street Address or Intersection (required)</label>
-            <input type="text" class="form-control" id="streetAddressOrIntersection" name ="streetAddressOrIntersection" placeholder="500 Washington St." pattern="\d+[ ](?:[A-Za-z0-9.-]+[ ]?)+(?:Avenue|Lane|Road|Boulevard|Drive|Street|Ave|Dr|Rd|Blvd|Ln|St)\.?" autocomplete="street" aria-required="true"  required>
+            <input type="text" class="form-control" id="streetAddressOrIntersection" name ="streetAddressOrIntersection" placeholder="500 Washington St." pattern="\d+[ ](?:[A-Za-z0-9.-]+[ ]?)+(?:Avenue|Lane|Road|Boulevard|Drive|Street|Ave|Dr|Rd|Blvd|Ln|St|Court)\.?" autocomplete="street" aria-required="true"  required>
         </div>
 
         <div class="form-group">

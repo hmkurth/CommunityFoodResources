@@ -23,13 +23,6 @@ import java.io.IOException;
 public class DeleteResource extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
-/**
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/deleteResource.jsp");
-        dispatcher.forward(req, resp);
-    }
- **/
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

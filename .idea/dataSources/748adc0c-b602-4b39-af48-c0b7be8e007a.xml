@@ -1086,6 +1086,7 @@ SELECT|testschema
       <RefTableName>resource_owners</RefTableName>
       <RefColNames>id</RefColNames>
       <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
     </foreign-key>
     <foreign-key id="327" parent="290" name="food_resources_location_id_fk">
       <ColNames>location_id</ColNames>

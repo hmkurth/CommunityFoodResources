@@ -86,6 +86,9 @@ public class AddResource extends HttpServlet {
         List<Contact> listContact = cdao.getAll();
         session.setAttribute("listContact", listContact);
         logger.debug("list contact : " + listContact);
+        fdao = new GenericDao<>(FoodResource.class);
+        List<FoodResource> listAll = fdao.getAll();
+        session.setAttribute("listAll", listAll);
 
         String url = "/admin/addResource.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
@@ -108,14 +111,28 @@ public class AddResource extends HttpServlet {
         HttpSession session = req.getSession();
         int typeId;
 
-        //get the resource to edit (from verifyResource)
+        String resourceId = req.getParameter("resourceToEdit");
+        req.setAttribute("selectedResourceId", resourceId);//for selection in the dropdown menu
+        //get the resource to edit (from verifyResource or from dropdown menu)
         if(!(req.getAttribute("resourceToEdit") == null)){
             resource = (FoodResource) req.getAttribute("resourceToEdit");
+            logger.debug("editing this resource: " + resource);
             req.setAttribute("newResource", resource);
            //listCategory(req, resp);//trying to get the listType to populate on edit
         }else {
             resource = new FoodResource();
             req.setAttribute("newResource", resource);
+            //get params
+            resource.setName(req.getParameter("name"));
+            resource.setDescription(req.getParameter("description"));
+            resource.setServiceArea(req.getParameter("serviceArea"));
+            resource.setWebsite(req.getParameter("website"));
+            resource.setDocumentation(req.getParameter("documentation"));//validate null responses, 'required' attribute not working
+            resource.setDaysOfWeek(req.getParameter("days"));
+            resource.setDeliveryOffered(Boolean.parseBoolean(req.getParameter("deliveryB")));
+            resource.setDeliveryDescription(req.getParameter("deliveryDescription"));
+            resource.setDietaryConsiderations(req.getParameter("dietary"));
+            resource.setComments(req.getParameter("comments"));
         }
 
         //sets the values from dropdown menus
@@ -128,22 +145,7 @@ public class AddResource extends HttpServlet {
             //tdao.saveOrUpdate(thisType);//saves the resource to list in types, but giving me a constraint violation TODO
         }
 
-        //get params
-        resource.setName(req.getParameter("name"));
 
-
-        logger.debug("type: " + req.getParameter("type"));
-        logger.debug("Adding Type: " + resource.getTypeId());
-
-        resource.setDescription(req.getParameter("description"));
-        resource.setServiceArea(req.getParameter("serviceArea"));
-        resource.setWebsite(req.getParameter("website"));
-        resource.setDocumentation(req.getParameter("documentation"));//validate null responses, 'required' attribute not working
-        resource.setDaysOfWeek(req.getParameter("days"));
-        resource.setDeliveryOffered(Boolean.parseBoolean(req.getParameter("deliveryB")));
-        resource.setDeliveryDescription(req.getParameter("deliveryDescription"));
-        resource.setDietaryConsiderations(req.getParameter("dietary"));
-        resource.setComments(req.getParameter("comments"));
         logger.debug("Resource at 'confirm: : " + resource.toString());
         String x = req.getParameter("submit");
         if (x != null && x.equals("confirm")) {
