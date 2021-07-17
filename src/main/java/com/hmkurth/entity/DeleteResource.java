@@ -23,26 +23,24 @@ import java.io.IOException;
 public class DeleteResource extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
-
+/**
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/deleteResource.jsp");
         dispatcher.forward(req, resp);
     }
+ **/
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
         GenericDao dao = new GenericDao(FoodResource.class);
-        FoodResource resourceToDelete = (FoodResource) req.getAttribute("resourceToEdit");
-        //get user by id
-        int idToDelete = resourceToDelete.getId();
-        int id;
-
-
+        logger.debug("resource to edit : " + req.getAttribute("resourceToEdit"));
+        FoodResource resourceToDelete = (FoodResource) session.getAttribute("newResource");
+    logger.debug("resource to delete : " + resourceToDelete);
         if (req.getParameter("confirmDelete") != null) {
             dao.delete(resourceToDelete);
-            String message = "You have deleted user: " + resourceToDelete.getName() + " .";
+            String message = "You have deleted the resource: " + resourceToDelete.getName() + " .";
             req.setAttribute("message", message);
         }
         RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/adminHome.jsp");

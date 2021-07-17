@@ -41,32 +41,7 @@ public class VerifyResources extends HttpServlet {
 
     }
 
-    /**
-     * https://www.codejava.net/java-ee/jsp/how-to-create-dynamic-drop-down-list-in-jsp-from-database
-     * As you can see, this method reads the value of the drop down list sent the client, stores it as a request’s
-     * attribute, and forwards the request to the same destination page as the doGet() method.
-     * Hence the listCategory() method is created to be reused by both doGet() and doPost() methods.
-     * This gets the params from the form and stores them
-     *
-     * @param req, the request
-     * @param res, the response
-     * @throws ServletException
-     * @throws IOException
 
-    private void listCategory(HttpServletRequest req, HttpServletResponse res)
-            throws ServletException, IOException {
-        HttpSession session  = req.getSession();
-        //get the list of unverified resources to populate a dropdown menu for the form input
-        fdao = new GenericDao<>(FoodResource.class);
-        List<FoodResource> resourcesToVerify = fdao.getByPropertyEqualToBoolean("verificationStatus", false);; //get the unverified resource from the previous request
-        req.setAttribute("resourcesToVerify", resourcesToVerify);
-
-        String url = "/admin/verifyResources.jsp";
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
-        dispatcher.forward(req, res);
-
-    }
-     */
     /**
      * Handles HTTP POST requests.
      *
@@ -86,15 +61,16 @@ public class VerifyResources extends HttpServlet {
 //TODo identify which resource
         String resourceId = req.getParameter("thisResource");
         req.setAttribute("selectedResourceId", resourceId);//for selection in the dropdown menu
-        int thisResourceId = Integer.parseInt(resourceId);
-        logger.debug("options value : " + req.getParameter("confirmVerify"));
-        resource = fdao.getById( thisResourceId);
-        Location thisLocation = resource.getLocation();
-       // ldao.addMarker(thisLocation);//this sets/creates a marker in a map, but then what??
+        if(resourceId != null) {
+            int thisResourceId = Integer.parseInt(resourceId);
+            logger.debug("options value : " + req.getParameter("confirmVerify"));
+            resource = fdao.getById(thisResourceId);
+            Location thisLocation = resource.getLocation();
+            // ldao.addMarker(thisLocation);//this sets/creates a marker in a map, but then what??
 
-        //set the resource in attribute for editing by other controllers
-        session.setAttribute("newResource", resource);
-
+            //set the resource in attribute for editing by other controllers
+            session.setAttribute("newResource", resource);
+        }
 
         if (x != null && x.equals("Next")) {
             //set a boolean attribute to indicate to other controllers whether its an edit(so save/update instead of insert

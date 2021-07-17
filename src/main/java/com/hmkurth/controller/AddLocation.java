@@ -86,14 +86,14 @@ public class AddLocation extends HttpServlet {
             try {
                 LocationApiDao locationApiDao = new LocationApiDao();
                 location2 = locationApiDao.convertAddressToLatAndLong(location);
-                logger.debug("getting long and lat, location2" + location2.toString());
+                //logger.debug("getting long and lat, location2" + location2.toString());
             } catch (Exception e) {
                 logger.error(e);
             }
 
             assert location2 != null;
             resource.setLocation(location2);
-            location2.addResource(resource);
+           // location2.addResource(resource);  resource is getting added twice, so ...
             //add the location to the database
             dao.insert(location2);
             String message = "adding location to the resource " + resource.getName();

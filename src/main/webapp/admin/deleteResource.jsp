@@ -6,11 +6,11 @@
 <jsp:include page="../header.jsp" />
 
 <div class="container">
-    <h3>${message}</h3>
+    <h6>${message}</h6>
 
 
     <div class="login-container">
-        <h1 class="text-center pad-bottom-sm">Delete this Resource: ${resourceToEdit}</h1>
+        <h3 class="text-center pad-bottom-sm">Delete this Resource: ${resourceToEdit}</h3>
         <div class="row pad-bottom">
 
             <h2>Resource Details</h2>
@@ -23,34 +23,7 @@
                     <c:if test="${not empty resourceToEdit.comments}">
                         <th>Comments</th>
                     </c:if>
-                    <c:if test="${not empty resourceToEdit.location}">
-                        <th>Location </th>
-                    </c:if>
-                    <c:if test="${not empty resourceToEdit.serviceArea}">
-                        <th>Service Area</th>
-                    </c:if>
-                    <c:if test="${not empty resourceToEdit.owner}">
-                        <th>Owner</th>
-                    </c:if>
-                    <c:if test="${not empty resourceToEdit.daysOfWeek}">
-                        <th>Days of Week</th>
-                    </c:if>
-                    <c:if test="${not empty resourceToEdit.deliveryOffered}">
-                        <th>Delivery Offered?</th>
-                    </c:if>
-                    <c:if test="${not empty resourceToEdit.deliveryDescription}">
-                        <th>Delivery Description</th>
-                    </c:if>
-                    <c:if test="${not empty resourceToEdit.dietaryConsiderations}">
-                        <th>Dietary Considerations</th>
-                    </c:if>
 
-                    <c:if test="${not empty resourceToEdit.contactId}">
-                        <th>Contact</th>
-                    </c:if>
-                    <c:if test="${not empty resourceToEdit.website}">
-                        <th>Website</th>
-                    </c:if>
                 </tr>
                 </thead>
                 <tbody>
@@ -63,34 +36,7 @@
                     <c:if test="${not empty resourceToEdit.comments}">
                         <td>Comments</td>
                     </c:if>
-                    <c:if test="${not empty resourceToEdit.location}">
-                        <td>${resourceToEdit.location}</td>
-                    </c:if>
-                    <c:if test="${not empty resourceToEdit.serviceArea}">
-                        <td>optional${resourceToEdit.serviceArea}</td>
-                    </c:if>
-                    <c:if test="${not empty resourceToEdit.owner}">
-                        <td>${resourceToEdit.owner}</td>
-                    </c:if>
-                    <c:if test="${not empty resourceToEdit.daysOfWeek}">
-                        <td>${resourceToEdit.daysOfWeek}</td>
-                    </c:if>
-                    <c:if test="${not empty resourceToEdit.deliveryOffered}">
-                        <td>${resourceToEdit.deliveryOffered}</td>
-                    </c:if>
-                    <c:if test="${not empty resourceToEdit.deliveryDescription}">
-                        <td>${resourceToEdit.deliveryDescription}</td>
-                    </c:if>
-                    <c:if test="${not empty resourceToEdit.dietaryConsiderations}">
-                        <td>${resourceToEdit.dietaryConsiderations}</td>
-                    </c:if>
 
-                    <c:if test="${not empty resourceToEdit.contactId}">
-                        <td>${resourceToEdit.contactId}</td>
-                    </c:if>
-                    <c:if test="${not empty resourceToEdit.website}">
-                        <td>${resourceToEdit.website}</td>
-                    </c:if>
                 </tr>
 
                 </tbody>
