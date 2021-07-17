@@ -8,12 +8,13 @@
 <div class="login-container">
     <h1 class="text-center pad-bottom-sm">Edit an existing resource</h1>
 
-    <form action="${pageContext.request.contextPath}/editResource"  method="post" autocomplete="on">
+    <form action="${pageContext.request.contextPath}/editResource"  method="get" autocomplete="on">
 
         <div class="form-group">
             <label for="resourceToEdit">Choose A resource to edit
                 <select name="resourceToEdit" id="resourceToEdit">
                     <option value='${resourceToEdit.id}'>${resourceToEdit.name}</option>
+
 
                     <c:forEach items="${listAll}" var="resource">
                         <option value='${resource.id}'<c:if test="${resource.id eq selectedResourceId}">selected="selected"</c:if>
@@ -34,12 +35,12 @@
         <h3>The resource to edit: <c:out value='${requestScope.resourceToEdit.name}'/></h3>
     </c:if>
 
-    <
+
     <!--TODO aria labeled by labels
      Note that the value for the attribute items must match the name of the corresponding attribute set in the servlet class.
      As you can see, the values of the drop down list are the IDs of the categories.-->
 
-    <form action="${pageContext.request.contextPath}/addResource"  method="post" autocomplete="on">
+    <form action="${pageContext.request.contextPath}/editResource"  method="post" autocomplete="on">
         <div class="form-group">
             <label for="name">Resource Name</label>
             <input type="text" class="form-control" id="name" name ="name" placeholder="Give this resource a name"  aria-required="true" required value="${newResource.name}">
@@ -107,17 +108,20 @@
         </div>
 
         <hr />
-        <h3>Next you be given the option to add a location, a resource owner, and contacts for this resource</h3>
-        <input type="submit" class="btn btn-primary btn-lg"  name="submit" value="confirm">
-    </form>
+        <div class="form-group">
+        <label  for="confirmVerify">Choose From the following options
+            <select name="confirmVerify" id="confirmVerify">
+                <option value='addData'>Ready To Display/Verify</option>
+                <option value='addLocation'>Add or Edit A Location</option>
+                <option value='addContact'>Add or Edit A Contact</option>
+                <option value='addResourceOwner'>Add or Edit A Resource Owner</option>
+                <option value='deleteResource'>Delete This resource</option>
+            </select>
+        </label>
+        </div>
+        <input type="submit" class="btn btn-primary btn-lg"  name="submit2" value="Next">
 
-    <c:if test="${param.submit == true}"  >
-        <p><a href="/addResourceOwner" class="btn btn-primary btn-lg">Add an owner to this resource</a>
-            <a href="/addContact" class="btn btn-primary btn-lg">Add contact details for this resource</a>>
-            <a href="/addLocation" class="btn btn-primary btn-lg">Add location for this resource</a> </p>
-
-    </c:if>
-
+</form>
 
 </div>
 <jsp:include page="../footer.jsp"/>

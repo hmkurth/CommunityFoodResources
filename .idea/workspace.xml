@@ -9,22 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="adding edit resource dropdown menu">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210717 1454.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210717 1500.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210717 1508.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/EditResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/editResources.jsp" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="creating separate controller and jsp for edit resource">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210717 1706.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210717 1717.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210717 1721.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210717 1145.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210717 1211.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210717 1311.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/VerifyResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/VerifyResources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/verifyResources.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/verifyResources.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210717 1500.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210717 1508.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210717 1512.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/EditResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/EditResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/editResources.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/editResources.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -437,14 +433,7 @@
       <workItem from="1624413567641" duration="46457000" />
       <workItem from="1625777917480" duration="4740000" />
       <workItem from="1626051096473" duration="15326000" />
-      <workItem from="1626453003726" duration="41981000" />
-    </task>
-    <task id="LOCAL-00114" summary="annotated location and food resources for hibernate search">
-      <created>1620530606685</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1620530606786</updated>
+      <workItem from="1626453003726" duration="49673000" />
     </task>
     <task id="LOCAL-00115" summary="updated CFRL database">
       <created>1620534832625</created>
@@ -782,7 +771,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626546831188</updated>
     </task>
-    <option name="localTasksCounter" value="163" />
+    <task id="LOCAL-00163" summary="creating separate controller and jsp for edit resource">
+      <created>1626552999193</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1626552999240</updated>
+    </task>
+    <option name="localTasksCounter" value="164" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -815,7 +811,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="finally got the add resource workable, still need to edit now that I figured out the problem" />
     <MESSAGE value="getting resource owner addition going..." />
     <MESSAGE value="trying to edit styles..." />
     <MESSAGE value="got some of my themes colors integrated into the css." />
@@ -840,7 +835,8 @@
     <MESSAGE value="working on a delete resource action" />
     <MESSAGE value="delete resource working" />
     <MESSAGE value="adding edit resource dropdown menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding edit resource dropdown menu" />
+    <MESSAGE value="creating separate controller and jsp for edit resource" />
+    <option name="LAST_COMMIT_MESSAGE" value="creating separate controller and jsp for edit resource" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
