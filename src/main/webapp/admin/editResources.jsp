@@ -11,11 +11,9 @@
     <form action="${pageContext.request.contextPath}/editResource"  method="get" autocomplete="on">
 
         <div class="form-group">
-            <label for="resourceToEdit">Choose A resource to edit
+            <label for="resourceToEdit">Choose A resource to edit, and press the edit button to load info
                 <select name="resourceToEdit" id="resourceToEdit">
                     <option value='${resourceToEdit.id}'>${resourceToEdit.name}</option>
-
-
                     <c:forEach items="${listAll}" var="resource">
                         <option value='${resource.id}'<c:if test="${resource.id eq selectedResourceId}">selected="selected"</c:if>
                         > resource name:${resource.name}</option>

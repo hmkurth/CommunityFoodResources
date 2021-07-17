@@ -46,6 +46,8 @@ public class EditResource extends HttpServlet {
         HttpSession session = req.getSession();
         fdao = new GenericDao<>(FoodResource.class);
         tdao = new GenericDao<>(Type.class);
+        List<FoodResource> listAll = fdao.getAll();
+        session.setAttribute("listAll", listAll);
         List<Type> listType = tdao.getAll();
         session.setAttribute("listType", listType);
 
