@@ -63,11 +63,22 @@ public class EditResource extends HttpServlet {
                 req.setAttribute("selectedResourceId", resourceId);//for selection in the dropdown menu
                 int intId = Integer.parseInt(resourceId);
                 resource = fdao.getById(intId);
-                req.setAttribute("newResource", resource);
+
+                session.setAttribute("newResource", resource);
                 logger.debug("resource to Edit " + req.getAttribute("resourceToEdit"));
             }
         }
-        String url = "/admin/editResources.jsp";
+/*set session attributes for further editing
+        Location location = resource.getLocation();
+        session.setAttribute("location", location);
+        Contact contact = resource.getContactId();
+        session.setAttribute("contact", contact);
+        ResourceOwner owner = resource.getOwner();
+        session.setAttribute("owner", owner);
+*/
+
+
+                String url = "/admin/editResources.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(req, res);
 
@@ -119,7 +130,13 @@ public class EditResource extends HttpServlet {
         String x = req.getParameter("submit2");
         if (x != null && x.equals("Next")) {
                 logger.debug("Resource at 'confirm: : " + resource.toString());
-
+                //set session attributes for further editing
+                Location location = resource.getLocation();
+                session.setAttribute("location", location);
+                Contact contact = resource.getContactId();
+                session.setAttribute("contact", contact);
+                ResourceOwner owner = resource.getOwner();
+                session.setAttribute("owner", owner);
                 switch (req.getParameter("confirmVerify")) {
                     case "addData":
                         resource.setVerificationStatus(true);

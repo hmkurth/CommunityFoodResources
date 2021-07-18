@@ -31,6 +31,29 @@ public class AddLocation extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
     FoodResource resource;
+
+    /**
+     * Handles HTTP GET requests.
+     *
+     * @param req the HttpServletRequest object
+     * @param res the HttpServletResponse object
+     * @throws ServletException if there is a Servlet failure
+     * @throws IOException      if there is an IO failure
+     */
+    public void doGet(HttpServletRequest req, HttpServletResponse res)
+            throws ServletException, IOException {
+        HttpSession session = req.getSession();
+        GenericDao<FoodResource> fdao;
+        fdao = new GenericDao<>(FoodResource.class);
+        FoodResource resource = (FoodResource) req.getAttribute("newResource");
+        Location location = resource.getLocation();
+        session.setAttribute("location", location);
+        String url = "/admin/addLocation.jsp";
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
+        dispatcher.forward(req, res);
+    }
+
+
     /**
      * Handles HTTP POST requests.
      *
@@ -97,6 +120,7 @@ public class AddLocation extends HttpServlet {
             //add the location to the database
             dao.insert(location2);
             String message = "adding location to the resource " + resource.getName();
+            session.setAttribute("location", location);
             session.setAttribute("message", message);
 
             //then forward to contacts

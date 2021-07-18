@@ -10,19 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="edit is working!!">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210717 1735.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210717 1741.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210717 1746.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210717 1845.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210717 1849.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210717 1855.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210717 1717.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210717 1721.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddContact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210717 1741.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210717 1746.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210717 1753.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/EditResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/EditResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/DeleteResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/DeleteResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/adminHome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/adminHome.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/editResources.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/editResources.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -435,14 +434,7 @@
       <workItem from="1624413567641" duration="46457000" />
       <workItem from="1625777917480" duration="4740000" />
       <workItem from="1626051096473" duration="15326000" />
-      <workItem from="1626453003726" duration="51923000" />
-    </task>
-    <task id="LOCAL-00116" summary="location search params in place, ready to test">
-      <created>1620536974772</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1620536974772</updated>
+      <workItem from="1626453003726" duration="54795000" />
     </task>
     <task id="LOCAL-00117" summary="in testing, not sure about results coming back..">
       <created>1620540508512</created>
@@ -780,7 +772,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626561163077</updated>
     </task>
-    <option name="localTasksCounter" value="165" />
+    <task id="LOCAL-00165" summary="edit is working!!">
+      <created>1626563601378</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1626563601378</updated>
+    </task>
+    <option name="localTasksCounter" value="166" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
