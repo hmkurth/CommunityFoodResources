@@ -71,6 +71,39 @@ public class ApiTestServiceClient {
     }
 
     /**
+     * Test location add to array.
+     *
+     * @throws Exception the exception
+     */
+    @Test
+    public void testaddToArray () throws Exception {
+        LocationApiDao dao = new LocationApiDao();
+        GenericDao<Location> ldao = new GenericDao<>(Location.class);
+        //get a location to test
+        Location locationToMap = ldao.getById(2);
+        Location returnedLocation = dao.convertAddressToLatAndLong(locationToMap);
+       dao.addLocation(returnedLocation);
+        assertEquals(1, dao.allLocations.size());
+    }
+
+    /**
+     * test to see if markers show up on the map.  it produces an image, so not sure how to test that...
+     * @throws Exception
+     */
+    @org.junit.Test
+    public void testStaticMapAPI() throws Exception {
+        LocationApiDao dao = new LocationApiDao();
+        GenericDao<Location> ldao = new GenericDao<>(Location.class);
+        Location locationToMap = ldao.getById(2);
+        Location returnedLocation = dao.convertAddressToLatAndLong(locationToMap);
+        dao.addMarker(returnedLocation);
+
+
+       // assertEquals("???", dao.addMarker(returnedLocation));//returns an image with a point where my house is, not very usefull
+    }
+
+
+    /**
      * Test insert of new info.
      *
      * @throws Exception the exception

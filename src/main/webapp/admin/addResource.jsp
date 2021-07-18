@@ -1,15 +1,14 @@
 
 <%@include file="../taglib.jsp"%>
 <jsp:include page="../head.jsp"/>
-<title>Add Resource</title>
+<title>Add or Edit a Resource</title>
 
 <jsp:include page="../header.jsp"/>
 
 <div class="login-container">
-    <h1 class="text-center pad-bottom-sm">Add A New Resource</h1>
-    <c:if test="${not empty requestScope.resource}">
-        <h3>The resource to edit: <c:out value='${requestScope.newResource.name}'/></h3>
-    </c:if>
+    <h1 class="text-center pad-bottom-sm">Add a new resource</h1>
+
+
 
     <!--TODO aria labeled by labels
      Note that the value for the attribute items must match the name of the corresponding attribute set in the servlet class.
@@ -46,7 +45,7 @@
 
         <div class="form-group">
             <label for="website">Website Link (optional)</label>
-            <input type="text" class="form-control" id="website" name ="website" placeholder="enter website"  aria-required="false" pattern="^((https?|ftp|smtp):\/\/)?(www.)?[a-z0-9]+\.[a-z]+(\/[a-zA-Z0-9#]+\/?)*$" value="${newResource.website}" >
+            <input type="text" class="form-control" id="website" name ="website" placeholder="enter website"  aria-required="false"  value="${newResource.website}" >
         </div>
 
         <div class="form-group">

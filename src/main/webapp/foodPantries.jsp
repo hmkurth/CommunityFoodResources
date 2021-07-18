@@ -20,7 +20,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <c:forEach var="resource" items="${allFreeLittlePantries}" varStatus="iter">
+                    <c:forEach var="resource" items="${resourcesAll}" varStatus="iter">
 
                     <tr>
                         <td>${resource.typeId.name}</td>
@@ -35,6 +35,7 @@
                 </div>
             </div>
         </div>
+    <div id="map"></div>
 
     <jsp:include page="/map.jsp"/>
     <jsp:include page="/footer.jsp"/>

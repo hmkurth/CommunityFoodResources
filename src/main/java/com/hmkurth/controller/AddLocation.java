@@ -31,6 +31,29 @@ public class AddLocation extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
     FoodResource resource;
+
+    /**
+     * Handles HTTP GET requests.
+     *
+     * @param req the HttpServletRequest object
+     * @param res the HttpServletResponse object
+     * @throws ServletException if there is a Servlet failure
+     * @throws IOException      if there is an IO failure
+     */
+    public void doGet(HttpServletRequest req, HttpServletResponse res)
+            throws ServletException, IOException {
+        HttpSession session = req.getSession();
+        GenericDao<FoodResource> fdao;
+        fdao = new GenericDao<>(FoodResource.class);
+        FoodResource resource = (FoodResource) req.getAttribute("newResource");
+        Location location = resource.getLocation();
+        session.setAttribute("location", location);
+        String url = "/admin/addLocation.jsp";
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
+        dispatcher.forward(req, res);
+    }
+
+
     /**
      * Handles HTTP POST requests.
      *
@@ -49,7 +72,7 @@ public class AddLocation extends HttpServlet {
         String url = "/admin/addLocation.jsp";
 
        resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
-        logger.debug("food resource at add location do post: " + resource);
+        //logger.debug("food resource at add location do post: " + resource);
         //do they want to add a location to this resource? if not continue to contacts
         String x = req.getParameter("submit");
 
@@ -79,24 +102,25 @@ public class AddLocation extends HttpServlet {
             location.setZip(req.getParameter("zip"));
             location.setBusInfo(req.getParameter("busInfo"));
             location.setComments(req.getParameter("comments"));
-            logger.debug("Adding Location1: " + location);
-            logger.debug("Adding resource to location, resource= : " + resource.toString());
+          //  logger.debug("Adding Location1: " + location);
+          //  logger.debug("Adding resource to location, resource= : " + resource.toString());
 
             //Use the api to get the lat and long TODO
             try {
                 LocationApiDao locationApiDao = new LocationApiDao();
                 location2 = locationApiDao.convertAddressToLatAndLong(location);
-                logger.debug("getting long and lat, location2" + location2.toString());
+                //logger.debug("getting long and lat, location2" + location2.toString());
             } catch (Exception e) {
                 logger.error(e);
             }
 
             assert location2 != null;
             resource.setLocation(location2);
-            location2.addResource(resource);
+           // location2.addResource(resource);  resource is getting added twice, so ...
             //add the location to the database
             dao.insert(location2);
             String message = "adding location to the resource " + resource.getName();
+            session.setAttribute("location", location);
             session.setAttribute("message", message);
 
             //then forward to contacts

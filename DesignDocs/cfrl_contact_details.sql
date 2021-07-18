@@ -1,0 +1,4 @@
+INSERT INTO cfrl.contact_details (id, first_name, last_name, email, phone, owner_id) VALUES (8888, 'default', 'default', null, null, null);
+INSERT INTO cfrl.contact_details (id, first_name, last_name, email, phone, owner_id) VALUES (8889, 'pantry', 'volunteer Coordinator', null, '608.257.3577', null);
+INSERT INTO cfrl.contact_details (id, first_name, last_name, email, phone, owner_id) VALUES (8890, 'Catholic Multicultural Center', 'admin', null, '608-661-3512', null);
+INSERT INTO cfrl.contact_details (id, first_name, last_name, email, phone, owner_id) VALUES (8891, '', 'Goodman Community Center', null, '608.241.1574', null);

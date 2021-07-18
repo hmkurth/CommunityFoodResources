@@ -9,18 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="figuring out null in params when editing resource">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210711 2346.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210711 2355.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210711 2358.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="edit is working!!">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210717 1845.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210717 1849.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210717 1855.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210711 2329.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210711 2332.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210711 2338.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/VerifyResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/VerifyResources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210717 1741.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210717 1746.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210717 1753.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/EditResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/EditResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +38,7 @@
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="jsf" />
+        <option value="JavaScript File" />
         <option value="Class" />
         <option value="Jsp File" />
       </list>
@@ -48,7 +50,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="f45b8dc193ae164dc6b7c2f09dc4c62c365b97aa" />
+        <entry key="$PROJECT_DIR$" value="gitMess" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -100,7 +102,7 @@
     <property name="database.data.extractors.current.id" value="SQL Inserts" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../accessibilityTemplates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/DesignDocs/sqlExportData.sql" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -150,10 +152,13 @@
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.Tomcat">
-    <configuration name="All in CommunityFoodResources" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CommunityFoodResources" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -173,7 +178,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiTestServiceClient.testGetNearByLocations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApiTestServiceClient.testLocationaddToArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
         <pattern>
@@ -183,13 +188,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
       <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ApiTestServiceClient" />
-      <option name="METHOD_NAME" value="testGetNearByLocations" />
+      <option name="METHOD_NAME" value="testLocationaddToArray" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FoodResourceTest.insertSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApiTestServiceClient.testStaticMapAPI" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
         <pattern>
@@ -198,14 +203,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.FoodResourceTest" />
-      <option name="METHOD_NAME" value="insertSuccess" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ApiTestServiceClient" />
+      <option name="METHOD_NAME" value="testStaticMapAPI" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TypeDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestStaticMapAPI" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
         <pattern>
@@ -214,8 +219,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.TypeDaoTest" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.TestStaticMapAPI" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestStaticMapAPI.testStaticMapAPI" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CommunityFoodResources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmkurth.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.TestStaticMapAPI" />
+      <option name="METHOD_NAME" value="testStaticMapAPI" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -309,20 +330,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.FoodResourceTest.insertSuccess" />
-      <item itemvalue="JUnit.TypeDaoTest" />
       <item itemvalue="JUnit.ApiTestServiceClient" />
-      <item itemvalue="JUnit.ApiTestServiceClient.testGetNearByLocations" />
-      <item itemvalue="JUnit.All in CommunityFoodResources" />
       <item itemvalue="TomEE Server.Tomcat" />
+      <item itemvalue="JUnit.TestStaticMapAPI" />
+      <item itemvalue="JUnit.ApiTestServiceClient.testLocationaddToArray" />
+      <item itemvalue="JUnit.TestStaticMapAPI.testStaticMapAPI" />
+      <item itemvalue="JUnit.ApiTestServiceClient.testStaticMapAPI" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in CommunityFoodResources" />
-        <item itemvalue="JUnit.ApiTestServiceClient.testGetNearByLocations" />
+        <item itemvalue="JUnit.ApiTestServiceClient.testStaticMapAPI" />
+        <item itemvalue="JUnit.TestStaticMapAPI.testStaticMapAPI" />
         <item itemvalue="JUnit.ApiTestServiceClient" />
-        <item itemvalue="JUnit.TypeDaoTest" />
-        <item itemvalue="JUnit.FoodResourceTest.insertSuccess" />
+        <item itemvalue="JUnit.ApiTestServiceClient.testLocationaddToArray" />
+        <item itemvalue="JUnit.TestStaticMapAPI" />
       </list>
     </recent_temporary>
   </component>
@@ -412,70 +433,8 @@
       <workItem from="1624137221218" duration="36130000" />
       <workItem from="1624413567641" duration="46457000" />
       <workItem from="1625777917480" duration="4740000" />
-      <workItem from="1626051096473" duration="14822000" />
-    </task>
-    <task id="LOCAL-00108" summary="fixed adminHome formatting, looking good, working decently..">
-      <created>1620369922575</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1620369922575</updated>
-    </task>
-    <task id="LOCAL-00109" summary="working on food resource search, able to locate Attribute with the the given name [null] on this ManagedType [com.hmkurth.entity.FoodResource]">
-      <created>1620373178730</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1620373178730</updated>
-    </task>
-    <task id="LOCAL-00110" summary="refactored Generic Dao">
-      <created>1620441933874</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1620441933874</updated>
-    </task>
-    <task id="LOCAL-00111" summary="updated lat and long to float(10,6)">
-      <created>1620443543577</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1620443543577</updated>
-    </task>
-    <task id="LOCAL-00112" summary="added hibernate search dependencies to pom">
-      <created>1620448361576</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1620448361576</updated>
-    </task>
-    <task id="LOCAL-00113" summary="&lt;property name=&quot;hibernate.search.backend.directory.root&quot;/&gt; in hibernate config">
-      <created>1620450698016</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1620450698016</updated>
-    </task>
-    <task id="LOCAL-00114" summary="annotated location and food resources for hibernate search">
-      <created>1620530606685</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1620530606786</updated>
-    </task>
-    <task id="LOCAL-00115" summary="updated CFRL database">
-      <created>1620534832625</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1620534832625</updated>
-    </task>
-    <task id="LOCAL-00116" summary="location search params in place, ready to test">
-      <created>1620536974772</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1620536974772</updated>
+      <workItem from="1626051096473" duration="15326000" />
+      <workItem from="1626453003726" duration="54795000" />
     </task>
     <task id="LOCAL-00117" summary="in testing, not sure about results coming back..">
       <created>1620540508512</created>
@@ -757,7 +716,70 @@
       <option name="project" value="LOCAL" />
       <updated>1626065538370</updated>
     </task>
-    <option name="localTasksCounter" value="157" />
+    <task id="LOCAL-00157" summary="ready to merge for now">
+      <created>1626066406830</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1626066406830</updated>
+    </task>
+    <task id="LOCAL-00158" summary="messing around with google maps apis">
+      <created>1626463169654</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1626463169654</updated>
+    </task>
+    <task id="LOCAL-00159" summary="messing around with google maps apis">
+      <created>1626478795476</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1626478795507</updated>
+    </task>
+    <task id="LOCAL-00160" summary="working on a delete resource action">
+      <created>1626490628114</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1626490628114</updated>
+    </task>
+    <task id="LOCAL-00161" summary="delete resource working">
+      <created>1626539579830</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1626539579830</updated>
+    </task>
+    <task id="LOCAL-00162" summary="adding edit resource dropdown menu">
+      <created>1626546831188</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1626546831188</updated>
+    </task>
+    <task id="LOCAL-00163" summary="creating separate controller and jsp for edit resource">
+      <created>1626552999193</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1626552999240</updated>
+    </task>
+    <task id="LOCAL-00164" summary="edit is working!!">
+      <created>1626561163046</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1626561163077</updated>
+    </task>
+    <task id="LOCAL-00165" summary="edit is working!!">
+      <created>1626563601378</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1626563601378</updated>
+    </task>
+    <option name="localTasksCounter" value="166" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -790,13 +812,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="still working on getting the if test for dropdown working" />
-    <MESSAGE value="logout function added" />
-    <MESSAGE value="if 'newOwner' tag working" />
-    <MESSAGE value="continuing with adding resource, may need to break up into smaller chunks" />
-    <MESSAGE value="trying to refactor adding owner to be independent/reusable" />
-    <MESSAGE value="finally got the add resource workable, still need to edit now that I figured out the problem" />
-    <MESSAGE value="getting resource owner addition going..." />
     <MESSAGE value="trying to edit styles..." />
     <MESSAGE value="got some of my themes colors integrated into the css." />
     <MESSAGE value="looking a little better..." />
@@ -815,7 +830,14 @@
     <MESSAGE value="fixed resourc-recource owner mess" />
     <MESSAGE value="adding resource back working, verification done" />
     <MESSAGE value="figuring out null in params when editing resource" />
-    <option name="LAST_COMMIT_MESSAGE" value="figuring out null in params when editing resource" />
+    <MESSAGE value="ready to merge for now" />
+    <MESSAGE value="messing around with google maps apis" />
+    <MESSAGE value="working on a delete resource action" />
+    <MESSAGE value="delete resource working" />
+    <MESSAGE value="adding edit resource dropdown menu" />
+    <MESSAGE value="creating separate controller and jsp for edit resource" />
+    <MESSAGE value="edit is working!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit is working!!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1046,33 +1068,28 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
-          <line>96</line>
+          <line>129</line>
           <option name="timeStamp" value="85" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
-          <line>100</line>
+          <line>133</line>
           <option name="timeStamp" value="87" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
-          <line>106</line>
+          <line>139</line>
           <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
-          <line>108</line>
+          <line>141</line>
           <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
           <line>75</line>
           <option name="timeStamp" value="91" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
-          <line>137</line>
-          <option name="timeStamp" value="93" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java</url>

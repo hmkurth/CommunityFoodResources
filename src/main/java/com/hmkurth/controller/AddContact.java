@@ -58,9 +58,7 @@ public class AddContact extends HttpServlet {
                 //new contact to add, jsp should display additional fields after the first submit is processed, so redirect
                 url = "/admin/addContact.jsp";
             } else if (contactInt == 8888) {
-                //resource is private, default set in database, id = 8888
-                thisContact= cdao.getById(8888);
-                resource.setContactId(thisContact);
+                resource.setContactId(null);
                 String message = "you have chosen not to add a contact to the resource " + resource.getName();
                 session.setAttribute("message", message);
                 url = "/admin/confirmResource.jsp";

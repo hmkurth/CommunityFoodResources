@@ -90,12 +90,25 @@
                         <option value='addLocation'>Add or Edit A Location</option>
                         <option value='addContact'>Add or Edit A Contact</option>
                         <option value='addResourceOwner'>Add or Edit A Resource Owner</option>
-                        <option value='addResource'>Edit Other Details of This resource(this will bring you back to the start of submission )</option>
+                        <option value='editResource'>Edit Other Details of This resource(this will bring you back to the start of submission )</option>
+                        <option value='deleteResource'>Delete This resource</option>
                     </select>
                 </label>
                 <input type="submit" class="btn btn-primary btn-lg"  name="submit" value="Next">
             </div>
         </form>
+
+        <h3>My Google Maps Demo</h3>
+        <!--The div element for the map -->
+        <div id="map"></div>
+
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <script
+                Client client = ClientBuilder.newClient();
+                WebTarget target =
+                        client.target("https://maps.googleapis.com/maps/api/staticmap?center=43.0731,-89.4012&zoom=10&size=400x400&markers=my%20house%7C" + lat + ",%20" + lng + "&key=AIzaSyCLGoKo1ZhK7TyAsvpPwQZmlLsAQxWnpRM");
+                async
+        ></script>
 
     </div>
 </div>
