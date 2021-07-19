@@ -55,19 +55,18 @@ public class EditResource extends HttpServlet {
         //first check to see if the resource was set in verify
         if (!(req.getAttribute("resourceToEdit") == null)) {
             resource = (FoodResource) req.getAttribute("resourceToEdit");
-            logger.debug("editing this resource: " + resource);
-
+            logger.debug("editing this resource, from the req.attribute resourceToEdit: " + resource);
         } else if (req.getParameter("resourceToEdit") != null) {
             String resourceId = req.getParameter("resourceToEdit");
             if (resourceId != null) {
                 req.setAttribute("selectedResourceId", resourceId);//for selection in the dropdown menu
                 int intId = Integer.parseInt(resourceId);
                 resource = fdao.getById(intId);
-
-                session.setAttribute("newResource", resource);
-                logger.debug("resource to Edit " + req.getAttribute("resourceToEdit"));
             }
         }
+        session.setAttribute("newResource", resource);
+        session.setAttribute("resourceToEdit", resource);//set for delete resource
+        logger.debug("resource to Edit, from newResource session attribute " +session.getAttribute("newResource"));
 /*set session attributes for further editing
         Location location = resource.getLocation();
         session.setAttribute("location", location);
@@ -98,12 +97,12 @@ public class EditResource extends HttpServlet {
         String url = "/admin/editResources.jsp";
         String message;
         HttpSession session = req.getSession();
-      // resource= (FoodResource) req.getAttribute("newResource");
+      resource= (FoodResource) session.getAttribute("newResource");
         tdao = new GenericDao<>(Type.class);
         List<Type> listType = tdao.getAll();
         session.setAttribute("listType", listType);
         int typeId;
-
+logger.debug("resource at doPost: " + resource);
                 //get params
                 resource.setName(req.getParameter("name"));
                 resource.setDescription(req.getParameter("description"));

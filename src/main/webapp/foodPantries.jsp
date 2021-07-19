@@ -7,7 +7,7 @@
     <div class="container">
         <div class="row pad-bottom">
             <div class="table-sm">
-
+                <form action="${pageContext.request.contextPath}/displayDetails"  method="get" autocomplete="on">
                 <h2>All Food Resources</h2>
                 <table class="table table-striped table-bordered table-sm">
                     <thead>
@@ -17,6 +17,7 @@
                         <th>Description</th>
                         <th>Location (optional) </th>
                         <th>Website</th>
+                        <th>Click for full listing of details</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -28,6 +29,7 @@
                         <td>${resource.description}</td>
                         <td>${resource.location.nameDesc}, ${resource.location.streetAddressOrIntersection}, ${resource.location.city}</td>
                         <td><a href="${resource.website}">${resource.website}</a></td>
+                        <td><input type="submit" class="btn btn-primary btn-sm"  name="details" value=${resource.id}>Click For Details</td>
                     </tr>
                     </c:forEach>
                     </tbody>
