@@ -9,23 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="added dropdown menu in addLocation to choose from existing locations">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210719 1333.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210719 1524.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210719 1535.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/DisplayDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/displayDetails.jsp" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="adding display details">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210719 1537.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210719 1542.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/geoData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210719 1223.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210719 1234.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210719 1238.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/EditResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/EditResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/persistence/LocationApiDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/js/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/head.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210719 1524.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/displayDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/displayDetails.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +36,7 @@
         <option value="JavaScript File" />
         <option value="Jsp File" />
         <option value="Class" />
+        <option value="package.json" />
       </list>
     </option>
   </component>
@@ -446,14 +438,7 @@
       <workItem from="1625777917480" duration="4740000" />
       <workItem from="1626051096473" duration="15326000" />
       <workItem from="1626453003726" duration="55434000" />
-      <workItem from="1626705693789" duration="13248000" />
-    </task>
-    <task id="LOCAL-00119" summary="cleaning up controllers">
-      <created>1620682535945</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1620682535945</updated>
+      <workItem from="1626705693789" duration="15754000" />
     </task>
     <task id="LOCAL-00120" summary="cleaning up code">
       <created>1620684465297</created>
@@ -791,7 +776,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626716557124</updated>
     </task>
-    <option name="localTasksCounter" value="168" />
+    <task id="LOCAL-00168" summary="adding display details">
+      <created>1626727540585</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1626727540585</updated>
+    </task>
+    <option name="localTasksCounter" value="169" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -824,7 +816,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="looking a little better..." />
     <MESSAGE value="styled some of the minified css and reminified" />
     <MESSAGE value="working on ownerSuccess.jsp" />
     <MESSAGE value="working on owner integer problem" />
@@ -849,7 +840,8 @@
     <MESSAGE value="edit is working!!" />
     <MESSAGE value="trying to get the edited resource's info to persist for editing location" />
     <MESSAGE value="added dropdown menu in addLocation to choose from existing locations" />
-    <option name="LAST_COMMIT_MESSAGE" value="added dropdown menu in addLocation to choose from existing locations" />
+    <MESSAGE value="adding display details" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding display details" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

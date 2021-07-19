@@ -1,0 +1,10 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [43.09, -89.33]
+  },
+  "properties": {
+    "name": "Heather's House"
+  }
+}
