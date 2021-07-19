@@ -52,6 +52,11 @@ public class AddResource extends HttpServlet {
             List<Type> listType = tdao.getAll();
             session.setAttribute("listType", listType);
         }
+        //clear existing info if present
+        if(req.getParameter("clear") !=null) {
+            session.setAttribute("newResource", null);
+
+        }
         listCategory(req, res);
 
     }

@@ -68,7 +68,7 @@
                         <td>${newResource.location}</td>
                     </c:if>
                     <c:if test="${not empty newResource.serviceArea}">
-                        <td>optional${newResource.serviceArea}</td>
+                        <td>optional: ${newResource.serviceArea}</td>
                     </c:if>
                     <c:if test="${not empty newResource.owner}">
                     <td>${newResource.owner}</td>

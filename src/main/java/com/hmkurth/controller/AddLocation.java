@@ -16,6 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * This servlet will allow a user to enter a location into the db,
@@ -31,6 +32,8 @@ public class AddLocation extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
     FoodResource resource;
+    GenericDao<FoodResource> fdao;
+    GenericDao<Location> ldao;
 
     /**
      * Handles HTTP GET requests.
@@ -45,10 +48,28 @@ public class AddLocation extends HttpServlet {
         HttpSession session = req.getSession();
         GenericDao<FoodResource> fdao;
         fdao = new GenericDao<>(FoodResource.class);
-        FoodResource resource = (FoodResource) req.getAttribute("newResource");
+        ldao= new GenericDao<>(Location.class);
+        List<Location> allLocations = ldao.getAll();
+        req.setAttribute("allLocations", allLocations);
+        FoodResource resource = (FoodResource) session.getAttribute("newResource");
         Location location = resource.getLocation();
         session.setAttribute("location", location);
         String url = "/admin/addLocation.jsp";
+
+        String x = req.getParameter("submit");
+
+        logger.debug("options value : " + req.getParameter("nextOptions"));
+        if (x != null && x.equals("Next")) {
+            if (req.getParameter("nextOptions").equals("noLocation")) {
+                //no location, set null? do i need to actually set it??
+                resource.setLocation(null);
+                String message = "you have chosen not to add an location to the resource ";
+                session.setAttribute("message", message);
+                logger.debug("resource location set to null");
+                //then forward to addContacts
+                url = "/admin/addContact.jsp";
+            }
+        }
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(req, res);
     }
@@ -68,27 +89,42 @@ public class AddLocation extends HttpServlet {
         GenericDao dao = new GenericDao(Location.class);
         GenericDao fdao = new GenericDao(FoodResource.class);
         HttpSession session = req.getSession();
+        Location thisLocation;
+        resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
        // boolean edit = (boolean) session.getAttribute("isEdited");
         String url = "/admin/addLocation.jsp";
+        String locationId = req.getParameter("chooseLocation");
+        req.setAttribute("selectedLocationId", locationId);//for selection in the dropdown menu
 
-       resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
-        //logger.debug("food resource at add location do post: " + resource);
-        //do they want to add a location to this resource? if not continue to contacts
-        String x = req.getParameter("submit");
+        String xl = req.getParameter("submitLocation");
+        if (xl != null && xl.equals("Next")) {
 
-        logger.debug("options value : " + req.getParameter("nextOptions"));
-        if (x != null && x.equals("Next")) {
-            if (req.getParameter("nextOptions").equals("noLocation")) {
-                //no location, set null? do i need to actually set it??
-                resource.setLocation(null);
-                String message = "you have chosen not to add an location to the resource " + resource.getName();
+          if (locationId != null) {
+            int locationInt = Integer.parseInt(locationId);
+            logger.debug("locationInt = : " + locationInt);
+            //set the owner
+              if (locationInt == 9999) {
+                //new location to add, jsp should display additional fields after the first submit is processed, so redirect
+                url = "/admin/addLocation.jsp";
+             } else {
+                //choose an existing location from the list
+                thisLocation = ldao.getById(locationInt);
+                resource.setLocation(thisLocation);
+                String message = "you have successfully added the location, " + thisLocation.getNameDesc() + " to the resource " + resource.getName();
                 session.setAttribute("message", message);
-                logger.debug("resource location set to null");
-                //then forward to addContacts
+                session.setAttribute("location", thisLocation);
+                logger.debug("chose an existing location: " + resource.getLocation().toString());
                 url = "/admin/addContact.jsp";
-            }
-        }
+                RequestDispatcher dispatcher = req.getRequestDispatcher(url);
+                dispatcher.forward(req, resp);
 
+            }//end else
+        }
+        }//end if not null
+        //populate
+
+
+//if new location is selected, grab details from second form
         String x2 = req.getParameter("submit2");
         if (x2 != null) {
             logger.debug("in submit2 block");

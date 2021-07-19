@@ -7,7 +7,7 @@
     <h4 class = "row text-center warning pad-bottom-sm">This resource has not yet been added, we just need a little more information</h4>
     <h5 class = "row text-center pad-bottom-sm">${message} </h5>
 
-    <form action="${pageContext.request.contextPath}/addLocation"  method="post" autocomplete="on">
+    <form action="${pageContext.request.contextPath}/addLocation"  method="get" autocomplete="on">
         <div class="form-group">
             <label  for="nextOptions">What would you like to do next?
                 <select name="nextOptions" id="nextOptions">
@@ -25,14 +25,33 @@
         <!--get the food resource to add location to -->
 
             <h3>Add location to food resource: ${newResource.name}, please use your best guess if you don't know exact details, as this information will be used to map the location for searches</h3>
+        <div class="form-group">
+            <label  for="chooseLocation">Choose New Location or an existing location
+                <select name="chooseLocation" id="chooseLocation">
+                    <option value='9999'>Add A new Location</option>
+                    <c:forEach items="${allLocations}" var="location">
+                        <option value='${location.id}'<c:if test="${location.id eq selectedLocationId}">selected="selected"</c:if>
+                        > location name:${location.nameDesc}</option>
+                    </c:forEach>
+                </select>
+            </label>
+            <input type="submit" class="btn btn-primary btn-lg"  name="submitLocation" value="Next">
+        </div>
+    </form>
+</c:if>
 
+    <c:if test="${param.chooseLocation == '9999'}"  >
+        <div class="login-container">
+        <form action="${pageContext.request.contextPath}/addLocation"  method="post" autocomplete="on">
         <div class="form-group">
             <label for="nameDesc">Location Name or quick description if applicable (required)</label>
-            <input type="text" class="form-control" id="nameDesc" name ="nameDesc" placeholder="Location Name" <c:out value="${newResource.location.nameDesc}"/> aria-required="true" required>
+            <input type="text" class="form-control" id="nameDesc" name ="nameDesc" placeholder="Location Name" <c:out value="${location.nameDesc}"/> aria-required="true" required>
         </div>
+
+
         <div class="form-group">
             <label for="streetAddressOrIntersection">Street Address or Intersection (required)</label>
-            <input type="text" class="form-control" id="streetAddressOrIntersection" name ="streetAddressOrIntersection" placeholder="500 Washington St." pattern="\d+[ ](?:[A-Za-z0-9.-]+[ ]?)+(?:Avenue|Lane|Road|Boulevard|Drive|Street|Ave|Dr|Rd|Blvd|Ln|St|Court)\.?" autocomplete="street" aria-required="true" <c:out value="${location.streetAddressOrIntersection}"/> required>
+            <input type="text" class="form-control" id="streetAddressOrIntersection" name ="streetAddressOrIntersection" placeholder="500 Washington St." pattern="\d+[ ](?:[A-Za-z0-9.-]+[ ]?)+(?:Avenue|Lane|Road|Boulevard|Drive|Street|Ave|Dr|Rd|Blvd|Ln|St|Court|Heights)\.?" autocomplete="street" aria-required="true" <c:out value="${location.streetAddressOrIntersection}"/> required>
         </div>
 
         <div class="form-group">
@@ -64,7 +83,7 @@
     </form>
 
 </c:if>
-
+</div>
 
 </div>
 <jsp:include page="../footer.jsp"/>

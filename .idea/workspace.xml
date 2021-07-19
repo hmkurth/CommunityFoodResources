@@ -9,19 +9,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="edit is working!!">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210717 1845.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210717 1849.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210717 1855.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="trying to get the edited resource's info to persist for editing location">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210719 1220.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210719 1223.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210719 1234.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210717 1741.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210717 1746.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210717 1753.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210717 1849.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210717 1855.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210717 1858.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/EditResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/EditResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ConfirmResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ConfirmResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/confirmResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/confirmResource.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +66,11 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="hmkurth" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="CommunityFoodResources" />
   </component>
   <component name="JspContextManager">
     <jsp-to-context jsp-file="file://$PROJECT_DIR$/src/main/webapp/header.jsp" context-file="file://$PROJECT_DIR$/src/main/webapp/userSignup.jsp" />
@@ -152,17 +160,6 @@
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.Tomcat">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ApiTestServiceClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
@@ -331,11 +328,11 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.ApiTestServiceClient" />
-      <item itemvalue="TomEE Server.Tomcat" />
       <item itemvalue="JUnit.TestStaticMapAPI" />
       <item itemvalue="JUnit.ApiTestServiceClient.testLocationaddToArray" />
       <item itemvalue="JUnit.TestStaticMapAPI.testStaticMapAPI" />
       <item itemvalue="JUnit.ApiTestServiceClient.testStaticMapAPI" />
+      <item itemvalue="TomEE Server.Tomcat" />
     </list>
     <recent_temporary>
       <list>
@@ -434,14 +431,8 @@
       <workItem from="1624413567641" duration="46457000" />
       <workItem from="1625777917480" duration="4740000" />
       <workItem from="1626051096473" duration="15326000" />
-      <workItem from="1626453003726" duration="54795000" />
-    </task>
-    <task id="LOCAL-00117" summary="in testing, not sure about results coming back..">
-      <created>1620540508512</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1620540508512</updated>
+      <workItem from="1626453003726" duration="55434000" />
+      <workItem from="1626705693789" duration="7795000" />
     </task>
     <task id="LOCAL-00118" summary="i can't figure out how to get the Ljava.lang.Object that is being returned from the query to display, tried using Arrays.deepToString(arrayOfObjects),">
       <created>1620545686638</created>
@@ -779,7 +770,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626563601378</updated>
     </task>
-    <option name="localTasksCounter" value="166" />
+    <task id="LOCAL-00166" summary="trying to get the edited resource's info to persist for editing location">
+      <created>1626566635721</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1626566635767</updated>
+    </task>
+    <option name="localTasksCounter" value="167" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -812,7 +810,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="trying to edit styles..." />
     <MESSAGE value="got some of my themes colors integrated into the css." />
     <MESSAGE value="looking a little better..." />
     <MESSAGE value="styled some of the minified css and reminified" />
@@ -837,7 +834,8 @@
     <MESSAGE value="adding edit resource dropdown menu" />
     <MESSAGE value="creating separate controller and jsp for edit resource" />
     <MESSAGE value="edit is working!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit is working!!" />
+    <MESSAGE value="trying to get the edited resource's info to persist for editing location" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying to get the edited resource's info to persist for editing location" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1088,7 +1086,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
-          <line>75</line>
+          <line>80</line>
           <option name="timeStamp" value="91" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
