@@ -45,19 +45,44 @@
         let map;
         // Initialize and add the map
         function initMap() {
-            let options = {//map options
-                zoom: 12,
-                center: {lat: 43.0731, lng: -89.4012}//Madison
+
+            const image = {
+                url:"${pageContext.request.contextPath}/assets/img/icons/imgPantry.png",
+                size: new google.maps.Size(20, 32),
+                // The origin for this image is (0, 0).
+                origin: new google.maps.Point(0, 0),
+                // The anchor for this image is the base of the flagpole at (0, 32).
+                anchor: new google.maps.Point(0, 32),
             }
+
+
+            // Create an info window to share between markers.
+            const infoWindow = new google.maps.InfoWindow();
+
+
             const thisLoc = { lat:  <c:out value="${toDisplay.location.lat}"/>, lng:  <c:out value="${toDisplay.location.lng}"/>};
-            // The map, centered at Madison
-            const map = new google.maps.Map(document.getElementById("map"), options);
+            const map = new google.maps.Map(document.getElementById("map"), {
+
+                zoom: 14,
+                center: thisLoc
+            });
             // The marker, positioned at Uluru
             const marker = new google.maps.Marker({
                 position: thisLoc,
                 map: map,
-                label:  <c:out value="${toDisplay.location.nameDesc}"/>,
+                icon: image,
+                title:  "<c:out value="${toDisplay.location.nameDesc}"/>",
+                label:  "<c:out value="${toDisplay.location.nameDesc}"/>"
             });
+
+            marker.addListener("click", () => {
+                infowindow.open({
+                    anchor: marker,
+                    map,
+                    shouldFocus: false,
+                });
+            });
+
         }
 
 

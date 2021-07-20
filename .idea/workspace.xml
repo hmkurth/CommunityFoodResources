@@ -9,12 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="got a map working with labels and hardcoded info">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210720 1136.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="YAHOO! used jstl to use java variables in the JS for mapping a single marker on displayDetails">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210720 1510.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210720 1513.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210720 1516.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/icons/imgPantry.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210720 0945.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210720 1103.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210720 1136.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/displayDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/displayDetails.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/mapDemo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/mapDemo.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -436,14 +442,7 @@
       <workItem from="1625777917480" duration="4740000" />
       <workItem from="1626051096473" duration="15326000" />
       <workItem from="1626453003726" duration="55434000" />
-      <workItem from="1626705693789" duration="26917000" />
-    </task>
-    <task id="LOCAL-00122" summary="ready for presentation">
-      <created>1620694282651</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1620694282651</updated>
+      <workItem from="1626705693789" duration="32392000" />
     </task>
     <task id="LOCAL-00123" summary="updated timelog, changed war for aws deploy, couldn't deploy, updated sql on aws">
       <created>1620699483332</created>
@@ -781,7 +780,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626800630913</updated>
     </task>
-    <option name="localTasksCounter" value="171" />
+    <task id="LOCAL-00171" summary="YAHOO! used jstl to use java variables in the JS for mapping a single marker on displayDetails">
+      <created>1626805639811</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1626805640030</updated>
+    </task>
+    <option name="localTasksCounter" value="172" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -814,7 +820,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="working on owner integer problem" />
     <MESSAGE value="Well, it isn’t pretty, definitely needs some cleaning up, but adding the owner works!" />
     <MESSAGE value="refactoring" />
     <MESSAGE value="trying to add some error handling to delete user," />
@@ -839,7 +844,8 @@
     <MESSAGE value="adding display details" />
     <MESSAGE value="trying JS maps" />
     <MESSAGE value="got a map working with labels and hardcoded info" />
-    <option name="LAST_COMMIT_MESSAGE" value="got a map working with labels and hardcoded info" />
+    <MESSAGE value="YAHOO! used jstl to use java variables in the JS for mapping a single marker on displayDetails" />
+    <option name="LAST_COMMIT_MESSAGE" value="YAHOO! used jstl to use java variables in the JS for mapping a single marker on displayDetails" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
