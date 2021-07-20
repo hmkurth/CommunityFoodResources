@@ -45,44 +45,21 @@
         let map;
         // Initialize and add the map
         function initMap() {
-            // The location of Madison
-            const madison = { lat: 43.0731, lng:  -89.4012};
+            let options = {//map options
+                zoom: 12,
+                center: {lat: 43.0731, lng: -89.4012}//Madison
+            }
+            const thisLoc = { lat:  <c:out value="${toDisplay.location.lat}"/>, lng:  <c:out value="${toDisplay.location.lng}"/>};
             // The map, centered at Madison
-            const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 9,
-                center: madison,
+            const map = new google.maps.Map(document.getElementById("map"), options);
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: thisLoc,
+                map: map,
+                label:  <c:out value="${toDisplay.location.nameDesc}"/>,
             });
-            // Create a <script> tag and set the geodata as the source.
-            const script = document.createElement("script");
-            script.src =
-                "/resources/geoData.json";
-            document.getElementsByTagName("head")[0].appendChild(script);
         }
 
-        // Loop through the results array and place a marker for each
-        // set of coordinates.
-        const eqfeed_callback = function (results) {
-            for (let i = 0; i < results.features.length; i++) {
-                const coords = results.features[i].geometry.coordinates;
-                const latLng = new google.maps.LatLng(coords[1], coords[0]);
-                new google.maps.Marker({
-                    position: latLng,
-                    map: map,
-                });
-            }
-        };
-
-
-            /* The marker, positioned at Madison
-            const marker = new google.maps.Marker({
-                position: madison,
-                map: map,
-            });
-/*/
-            // NOTE: This uses cross-domain XHR, and may not work on older browsers.
-           // map.data.loadGeoJson(
-              //  "https://storage.googleapis.com/mapsdevsite/json/google.json"
-           // );
 
     </script>
 </head>
@@ -172,7 +149,7 @@
             <td>${toDisplay.contactId}</td>
         </c:if>
         <c:if test="${not empty toDisplay.website}">
-            <td>${toDisplay.website}</td>
+            <td><a href="${toDisplay.website}">${toDisplay.website}</a></td>
         </c:if>
     </tr>
 

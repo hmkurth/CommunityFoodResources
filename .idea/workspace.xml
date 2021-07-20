@@ -9,16 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="trying JS maps">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210720 0945.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210720 1103.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="got a map working with labels and hardcoded info">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210720 1136.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210719 1535.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210719 1537.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210719 1542.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/displayDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/displayDetails.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/mapDemo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/mapDemo.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -441,14 +436,7 @@
       <workItem from="1625777917480" duration="4740000" />
       <workItem from="1626051096473" duration="15326000" />
       <workItem from="1626453003726" duration="55434000" />
-      <workItem from="1626705693789" duration="24378000" />
-    </task>
-    <task id="LOCAL-00121" summary="still trying to get location search to work">
-      <created>1620688890593</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1620688890593</updated>
+      <workItem from="1626705693789" duration="26917000" />
     </task>
     <task id="LOCAL-00122" summary="ready for presentation">
       <created>1620694282651</created>
@@ -786,7 +774,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626730017338</updated>
     </task>
-    <option name="localTasksCounter" value="170" />
+    <task id="LOCAL-00170" summary="got a map working with labels and hardcoded info">
+      <created>1626800630913</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1626800630913</updated>
+    </task>
+    <option name="localTasksCounter" value="171" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -819,7 +814,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="working on ownerSuccess.jsp" />
     <MESSAGE value="working on owner integer problem" />
     <MESSAGE value="Well, it isn’t pretty, definitely needs some cleaning up, but adding the owner works!" />
     <MESSAGE value="refactoring" />
@@ -844,7 +838,8 @@
     <MESSAGE value="added dropdown menu in addLocation to choose from existing locations" />
     <MESSAGE value="adding display details" />
     <MESSAGE value="trying JS maps" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying JS maps" />
+    <MESSAGE value="got a map working with labels and hardcoded info" />
+    <option name="LAST_COMMIT_MESSAGE" value="got a map working with labels and hardcoded info" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
