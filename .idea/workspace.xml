@@ -9,26 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="trying to get a custom marker made for pins">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210720 2049.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210720 2052.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210720 2057.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/icons/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/icons/roundBlack.png" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="working on addContact editing">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210720 2227.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210720 2236.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210720 2243.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210720 1513.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210720 1516.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210720 1518.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddContact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/EditResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/EditResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210720 2052.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210720 2057.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210720 2101.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addContact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addContact.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/editResources.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/editResources.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/displayDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/displayDetails.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -438,14 +430,8 @@
       <workItem from="1626051096473" duration="15326000" />
       <workItem from="1626453003726" duration="55434000" />
       <workItem from="1626705693789" duration="34171000" />
-      <workItem from="1626816618415" duration="16099000" />
-    </task>
-    <task id="LOCAL-00124" summary="added presentation video link to readme">
-      <created>1620749698313</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1620749698313</updated>
+      <workItem from="1626816618415" duration="17461000" />
+      <workItem from="1626835895685" duration="3487000" />
     </task>
     <task id="LOCAL-00125" summary="added live aws link to readme">
       <created>1620801878828</created>
@@ -783,7 +769,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626812605892</updated>
     </task>
-    <option name="localTasksCounter" value="173" />
+    <task id="LOCAL-00173" summary="working on addContact editing">
+      <created>1626833300546</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1626833300546</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -816,7 +809,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="refactoring" />
     <MESSAGE value="trying to add some error handling to delete user," />
     <MESSAGE value="username validation done" />
     <MESSAGE value="working on integrating the add location and contacts" />
@@ -841,7 +833,8 @@
     <MESSAGE value="got a map working with labels and hardcoded info" />
     <MESSAGE value="YAHOO! used jstl to use java variables in the JS for mapping a single marker on displayDetails" />
     <MESSAGE value="trying to get a custom marker made for pins" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to get a custom marker made for pins" />
+    <MESSAGE value="working on addContact editing" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on addContact editing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

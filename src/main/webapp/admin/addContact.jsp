@@ -42,17 +42,16 @@
         </div>
     </form>
 
-
-    <c:if test="${(param.contact.equals('2222') or (param.contact == 2222) or (param.contact == 9999))} "  >
+<c:if test="${param.contact.equals('9999') or param.contact.equals('2222')}">
     <h3>Add  or edit a contact for this resource</h3>
     <form action="${pageContext.request.contextPath}/addContact"  method="post" autocomplete="on">
 
         <div class="form-group">
             <label for="firstName">First Name (opt)
-                <input type="text" class="form-control" id="firstName" name ="firstName" placeholder="first name"  value="${contact.firstName}" >
+                <input type="text" class="form-control" id="firstName" name ="firstName" placeholder="first name" value=" ${contact.firstName}" >
             </label>
             <label for="lastName">Last Name or Org name(required)
-                <input type="text" class="form-control" id="lastName" name ="lastName" placeholder="last name"  aria-required="true"  required  value="${contact.lastName}"  >
+                <input type="text" class="form-control" id="lastName" name ="lastName" placeholder="last name"  aria-required="true"  required value="${contact.lastName}" >
             </label>
 
             <label for="website">Email Address or Website (optional)
@@ -60,7 +59,7 @@
             </label>
 
             <label for="phone">Phone Number (optional)
-                <input type="text" class="form-control" id="phone" name ="phone" placeholder="phone number"  aria-required="false" value="${contact.phone}" >
+                <input type="text" class="form-control" id="phone" name ="phone" placeholder="phone number"  aria-required="false"  value="${contact.phone}" >
             </label>
 
 
@@ -68,8 +67,7 @@
         </div>
     </form>
 
-        </c:if>
-
+</c:if>
 
 
 
