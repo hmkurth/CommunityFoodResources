@@ -9,18 +9,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="working on addContact editing">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210720 2227.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210720 2236.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210720 2243.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="addContact edit working">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210721 1148.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210721 1202.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210721 1203.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/748adc0c-b602-4b39-af48-c0b7be8e007a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/748adc0c-b602-4b39-af48-c0b7be8e007a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/cfrl_resource_owners.sql" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/cfrl_resource_owners.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210720 2052.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210720 2057.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210720 2101.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addContact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addContact.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210720 2236.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210720 2243.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210720 2249.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/ResourceOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/ResourceOwner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Type.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,6 +163,17 @@
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.Tomcat">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiTestServiceClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
@@ -168,22 +185,6 @@
       <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
       <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ApiTestServiceClient" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiTestServiceClient.testLocationaddToArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CommunityFoodResources" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hmkurth.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ApiTestServiceClient" />
-      <option name="METHOD_NAME" value="testLocationaddToArray" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -204,7 +205,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestStaticMapAPI" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FoodResourceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
         <pattern>
@@ -213,7 +214,22 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.TestStaticMapAPI" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.FoodResourceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResourceOwnerDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CommunityFoodResources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmkurth.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ResourceOwnerDaoTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -325,19 +341,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.ApiTestServiceClient" />
-      <item itemvalue="JUnit.TestStaticMapAPI" />
-      <item itemvalue="JUnit.ApiTestServiceClient.testLocationaddToArray" />
       <item itemvalue="JUnit.TestStaticMapAPI.testStaticMapAPI" />
       <item itemvalue="JUnit.ApiTestServiceClient.testStaticMapAPI" />
       <item itemvalue="TomEE Server.Tomcat" />
+      <item itemvalue="JUnit.ResourceOwnerDaoTest" />
+      <item itemvalue="JUnit.FoodResourceTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FoodResourceTest" />
+        <item itemvalue="JUnit.ResourceOwnerDaoTest" />
         <item itemvalue="JUnit.ApiTestServiceClient.testStaticMapAPI" />
         <item itemvalue="JUnit.TestStaticMapAPI.testStaticMapAPI" />
         <item itemvalue="JUnit.ApiTestServiceClient" />
-        <item itemvalue="JUnit.ApiTestServiceClient.testLocationaddToArray" />
-        <item itemvalue="JUnit.TestStaticMapAPI" />
       </list>
     </recent_temporary>
   </component>
@@ -431,14 +447,7 @@
       <workItem from="1626453003726" duration="55434000" />
       <workItem from="1626705693789" duration="34171000" />
       <workItem from="1626816618415" duration="17461000" />
-      <workItem from="1626835895685" duration="3487000" />
-    </task>
-    <task id="LOCAL-00125" summary="added live aws link to readme">
-      <created>1620801878828</created>
-      <option name="number" value="00125" />
-      <option name="presentableId" value="LOCAL-00125" />
-      <option name="project" value="LOCAL" />
-      <updated>1620801878957</updated>
+      <workItem from="1626835895685" duration="6183000" />
     </task>
     <task id="LOCAL-00126" summary="added about project content">
       <created>1621037604491</created>
@@ -776,7 +785,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626833300546</updated>
     </task>
-    <option name="localTasksCounter" value="174" />
+    <task id="LOCAL-00174" summary="addContact edit working">
+      <created>1626839599433</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1626839599433</updated>
+    </task>
+    <option name="localTasksCounter" value="175" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -809,7 +825,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="trying to add some error handling to delete user," />
     <MESSAGE value="username validation done" />
     <MESSAGE value="working on integrating the add location and contacts" />
     <MESSAGE value="working on integrating the add location and contacts," />
@@ -834,7 +849,8 @@
     <MESSAGE value="YAHOO! used jstl to use java variables in the JS for mapping a single marker on displayDetails" />
     <MESSAGE value="trying to get a custom marker made for pins" />
     <MESSAGE value="working on addContact editing" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on addContact editing" />
+    <MESSAGE value="addContact edit working" />
+    <option name="LAST_COMMIT_MESSAGE" value="addContact edit working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

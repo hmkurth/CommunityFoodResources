@@ -21,6 +21,7 @@ import java.util.Set;
 @Table(name = "resource_type")//case sensitive
 public class Type {
     @Id
+    @ToString.Exclude
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
     private int id;

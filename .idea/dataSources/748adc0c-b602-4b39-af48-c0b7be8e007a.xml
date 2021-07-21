@@ -1168,7 +1168,7 @@ SELECT|testschema
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="343" parent="292" name="contact_id">
+    <column id="343" parent="292" name="resource_id">
       <Position>3</Position>
       <DataType>int|0s</DataType>
     </column>
@@ -1176,8 +1176,8 @@ SELECT|testschema
       <Position>4</Position>
       <DataType>varchar(100)|0s</DataType>
     </column>
-    <index id="345" parent="292" name="resource_owners_contact_details_id_fk">
-      <ColNames>contact_id</ColNames>
+    <index id="345" parent="292" name="resource_owners_food_resources_id_fk">
+      <ColNames>resource_id</ColNames>
       <Type>btree</Type>
     </index>
     <key id="346" parent="292" name="PRIMARY">
@@ -1185,9 +1185,9 @@ SELECT|testschema
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="347" parent="292" name="resource_owners_contact_details_id_fk">
-      <ColNames>contact_id</ColNames>
-      <RefTableName>contact_details</RefTableName>
+    <foreign-key id="347" parent="292" name="resource_owners_food_resources_id_fk">
+      <ColNames>resource_id</ColNames>
+      <RefTableName>food_resources</RefTableName>
       <RefColNames>id</RefColNames>
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>

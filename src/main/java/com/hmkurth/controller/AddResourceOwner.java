@@ -77,25 +77,26 @@ public class AddResourceOwner extends HttpServlet {
                 //new owner to add, jsp should display additional fields after the first submit is processed, so redirect
                 url = "/admin/addResourceOwner.jsp";
 
-            } else if (ownerInt == 8888) {
-                //resource is private, default set in database, id = 8888
-                thisOwner = odao.getById(8888);
-                logger.debug("thisOwner before setting to resource: " + thisOwner);
-                resource.setOwner(thisOwner);
-                String message = "you have chosen not to add an owner to the resource " + resource.getName();
-                session.setAttribute("message", message);
-                url = "/admin/addLocation.jsp";
-
             } else {
-                //choose an existing owner from the list
-                thisOwner = odao.getById(ownerInt);
-                resource.setOwner(thisOwner);
-                String message = "you have successfully added the owner, " + resource.getOwner().getName() + " to the resource " + resource.getName();
-                session.setAttribute("message", message);
-                logger.debug("chose an existing owner: " + resource.getOwner().toString());
-                url = "/admin/addLocation.jsp";
+                if (ownerInt == 8888) {
+                    //resource is private, default set in database, id = 8888
+                    thisOwner = odao.getById(8888);
+                    logger.debug("thisOwner before setting to resource: " + thisOwner);
+                    resource.setOwner(null);
+                    String message = "you have chosen not to add an owner to the resource " + resource.getName();
+                    session.setAttribute("message", message);
 
-            }//end else
+                } else {
+                    //choose an existing owner from the list
+                    thisOwner = odao.getById(ownerInt);
+                    resource.setOwner(thisOwner);
+                    String message = "you have successfully added the owner, " + resource.getOwner().getName() + " to the resource " + resource.getName();
+                    session.setAttribute("message", message);
+                    logger.debug("chose an existing owner: " + resource.getOwner().toString());
+
+                }//end else
+                url = "/admin/addLocation.jsp";
+            }
             RequestDispatcher dispatcher = req.getRequestDispatcher(url);
             dispatcher.forward(req, res);
         }//end if not null

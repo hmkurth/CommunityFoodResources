@@ -26,6 +26,7 @@ import java.util.Set;
 @Table(name = "location")//case sensitive
 public class Location {
     @Id
+    @ToString.Exclude
     @GeneratedValue(strategy= GenerationType.AUTO, generator = "native")
     @GenericGenerator(name="native",strategy="native")
     @GenericField
