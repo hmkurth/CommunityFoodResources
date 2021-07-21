@@ -4,8 +4,8 @@
 <jsp:include page="../header.jsp"/>
 
 <div class="login-container">
-    <h4 class = "row text-center warning pad-bottom-sm">This resource has not yet been added, we just need a little more information</h4>
     <h5 class = "row text-center pad-bottom-sm">${message} </h5>
+    <h4 class = "row text-center warning pad-bottom-sm">This resource has not yet been added, we just need a little more information</h4>
 
     <form action="${pageContext.request.contextPath}/addLocation"  method="get" autocomplete="on">
         <div class="form-group">

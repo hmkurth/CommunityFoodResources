@@ -45,9 +45,20 @@
         let map;
         // Initialize and add the map
         function initMap() {
+            const contentString =
+                '<div id="content">' +
+                '<div id="siteNotice">' +
+                "</div>" +
+                '<h3 id="firstHeading" class="firstHeading">' + "<c:out value="${toDisplay.name}"/>" + '</h3>' +
+                '<div id="bodyContent">' +
+                '<h4><b>Description: </b>' + "<c:out value="${toDisplay.description}"/>" +
+                '<br><b>Location: </b>' + "<c:out value="${toDisplay.location}"/>" +
+                '<br><b>Website: </b><a href="<c:out value="${toDisplay.website}"/>">' + "<c:out value="${toDisplay.website}"/>" +
+                '</h4></div></div>';
 
+            //this works, but need a better icon so it sticks out
             const image = {
-                url:"${pageContext.request.contextPath}/assets/img/icons/imgPantry.png",
+                url:"${pageContext.request.contextPath}/assets/img/icons/roundBlack.png",
                 size: new google.maps.Size(20, 32),
                 // The origin for this image is (0, 0).
                 origin: new google.maps.Point(0, 0),
@@ -57,24 +68,23 @@
 
 
             // Create an info window to share between markers.
-            const infoWindow = new google.maps.InfoWindow();
-
+            const infowindow = new google.maps.InfoWindow({
+                content: contentString,
+            });
 
             const thisLoc = { lat:  <c:out value="${toDisplay.location.lat}"/>, lng:  <c:out value="${toDisplay.location.lng}"/>};
             const map = new google.maps.Map(document.getElementById("map"), {
 
-                zoom: 14,
+                zoom: 12,
                 center: thisLoc
             });
-            // The marker, positioned at Uluru
+            // The marker, positioned at this location
             const marker = new google.maps.Marker({
                 position: thisLoc,
                 map: map,
-                icon: image,
                 title:  "<c:out value="${toDisplay.location.nameDesc}"/>",
                 label:  "<c:out value="${toDisplay.location.nameDesc}"/>"
             });
-
             marker.addListener("click", () => {
                 infowindow.open({
                     anchor: marker,
@@ -82,9 +92,7 @@
                     shouldFocus: false,
                 });
             });
-
         }
-
 
     </script>
 </head>
@@ -183,6 +191,7 @@
 
 
         <h3>If there is a valid location for this resource,a marker will appear the map will appear below</h3>
+       <p>Tip: drag the 'pegman' on the side of the map to the location and you may be able to see pictures of the inside of the location and streetview, try it, it's pretty neat!</p>
         <!--The div element for the map -->
         <div id="map"></div>
 

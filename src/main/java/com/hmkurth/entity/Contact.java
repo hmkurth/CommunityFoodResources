@@ -26,7 +26,7 @@ public class Contact {
     @GeneratedValue(strategy= GenerationType.AUTO, generator = "native")
     @GenericGenerator(name="native",strategy="native")
     private int id;
-    @NonNull
+
     @Column(name="first_name")
     private String firstName;
     @NonNull

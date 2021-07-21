@@ -29,7 +29,7 @@
                         <td>${resource.description}</td>
                         <td>${resource.location.nameDesc}, ${resource.location.streetAddressOrIntersection}, ${resource.location.city}${resource.location.lat}${resource.location.lng}</td>
                         <td><a href="${resource.website}">${resource.website}</a></td>
-                        <td><input type="submit" class="btn btn-primary btn-sm"  name="details" value=${resource.id}>Click For Details</td>
+                        <td><input type="submit" class="btn btn-primary btn-sm"  name="details" value=${resource.id}>Click For Details and Map</td>
                     </tr>
                     </c:forEach>
                     </tbody>

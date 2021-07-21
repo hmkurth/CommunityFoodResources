@@ -26,11 +26,11 @@ import java.util.List;
 public class EditResource extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
-    GenericDao<Type> tdao;
-    GenericDao<FoodResource> fdao;
+    GenericDao<Type> tdao = new GenericDao<>(Type.class);
+    GenericDao<FoodResource> fdao = new GenericDao<>(FoodResource.class);
     GenericDao<ResourceOwner> odao;
     GenericDao<Location> ldao;
-    GenericDao<Contact> cdao;
+    GenericDao<Contact>  cdao = new GenericDao<>(Contact.class);
     FoodResource resource;
 
     /**
@@ -44,8 +44,10 @@ public class EditResource extends HttpServlet {
     public void doGet(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
         HttpSession session = req.getSession();
-        fdao = new GenericDao<>(FoodResource.class);
-        tdao = new GenericDao<>(Type.class);
+
+
+        List<Contact> listContact = cdao.getAll();
+        session.setAttribute("listContact", listContact);
         List<FoodResource> listAll = fdao.getAll();
         session.setAttribute("listAll", listAll);
         List<Type> listType = tdao.getAll();
@@ -55,6 +57,7 @@ public class EditResource extends HttpServlet {
         //first check to see if the resource was set in verify
         if (!(req.getAttribute("resourceToEdit") == null)) {
             resource = (FoodResource) req.getAttribute("resourceToEdit");
+            session.setAttribute("newResource", resource);
             logger.debug("editing this resource, from the req.attribute resourceToEdit: " + resource);
         } else if (req.getParameter("resourceToEdit") != null) {
             String resourceId = req.getParameter("resourceToEdit");
@@ -62,12 +65,13 @@ public class EditResource extends HttpServlet {
                 req.setAttribute("selectedResourceId", resourceId);//for selection in the dropdown menu
                 int intId = Integer.parseInt(resourceId);
                 resource = fdao.getById(intId);
+                session.setAttribute("newResource", resource);
             }
         }
-        session.setAttribute("newResource", resource);
-        session.setAttribute("resourceToEdit", resource);//set for delete resource
+
+
         logger.debug("resource to Edit, from newResource session attribute " +session.getAttribute("newResource"));
-/*set session attributes for further editing
+/*set session attributes for further editing, this creates errors
         Location location = resource.getLocation();
         session.setAttribute("location", location);
         Contact contact = resource.getContactId();
@@ -136,11 +140,12 @@ logger.debug("resource at doPost: " + resource);
                 session.setAttribute("contact", contact);
                 ResourceOwner owner = resource.getOwner();
                 session.setAttribute("owner", owner);
+                fdao.saveOrUpdate(resource);
                 switch (req.getParameter("confirmVerify")) {
                     case "addData":
                         resource.setVerificationStatus(true);
                         //save or update
-                        fdao.saveOrUpdate(resource);
+
                         message = "you have successfully verified a  food resource, " + resource.getName() + ".";
                         //todo show map location and confirm that
                         req.setAttribute("message", message);
@@ -149,12 +154,15 @@ logger.debug("resource at doPost: " + resource);
                         url = "/admin/adminHome.jsp";
                         break;
                     case "addLocation":
+                        session.setAttribute("location", location);
                         url = "/admin/addLocation.jsp";
                         break;
                     case "addContact":
+                        session.setAttribute("contact", contact);
                         url = "/admin/addContact.jsp";
                         break;
                     case "addResourceOwner":
+                        session.setAttribute("owner", owner);
                         url = "/admin/addResourceOwner.jsp";
                         break;
                     case "deleteResource":

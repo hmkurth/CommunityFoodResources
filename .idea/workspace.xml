@@ -9,18 +9,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="YAHOO! used jstl to use java variables in the JS for mapping a single marker on displayDetails">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210720 1510.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210720 1513.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210720 1516.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/icons/imgPantry.png" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="trying to get a custom marker made for pins">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210720 2049.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210720 2052.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210720 2057.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/icons/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/icons/roundBlack.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210720 0945.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210720 1103.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210720 1136.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210720 1513.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210720 1516.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210720 1518.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddContact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/EditResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/EditResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addContact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addContact.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/editResources.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/editResources.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/displayDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/displayDetails.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +115,7 @@
     <property name="database.data.extractors.current.id" value="SQL Inserts" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/DesignDocs/sqlExportData.sql" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/assets/img/icons" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -127,11 +135,11 @@
       <recent name="com.hmkurth.persistence" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\assets\img\icons" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\resources" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\img" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\java\com\hmkurth" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main" />
-      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\test\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\DesignDocs" />
@@ -157,19 +165,6 @@
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.Tomcat">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ApiTestServiceClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
@@ -442,14 +437,8 @@
       <workItem from="1625777917480" duration="4740000" />
       <workItem from="1626051096473" duration="15326000" />
       <workItem from="1626453003726" duration="55434000" />
-      <workItem from="1626705693789" duration="32392000" />
-    </task>
-    <task id="LOCAL-00123" summary="updated timelog, changed war for aws deploy, couldn't deploy, updated sql on aws">
-      <created>1620699483332</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1620699483332</updated>
+      <workItem from="1626705693789" duration="34171000" />
+      <workItem from="1626816618415" duration="16099000" />
     </task>
     <task id="LOCAL-00124" summary="added presentation video link to readme">
       <created>1620749698313</created>
@@ -787,7 +776,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626805640030</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="trying to get a custom marker made for pins">
+      <created>1626812605892</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1626812605892</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -820,7 +816,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Well, it isn’t pretty, definitely needs some cleaning up, but adding the owner works!" />
     <MESSAGE value="refactoring" />
     <MESSAGE value="trying to add some error handling to delete user," />
     <MESSAGE value="username validation done" />
@@ -845,7 +840,8 @@
     <MESSAGE value="trying JS maps" />
     <MESSAGE value="got a map working with labels and hardcoded info" />
     <MESSAGE value="YAHOO! used jstl to use java variables in the JS for mapping a single marker on displayDetails" />
-    <option name="LAST_COMMIT_MESSAGE" value="YAHOO! used jstl to use java variables in the JS for mapping a single marker on displayDetails" />
+    <MESSAGE value="trying to get a custom marker made for pins" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying to get a custom marker made for pins" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
