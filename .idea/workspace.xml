@@ -9,38 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="fixed resource owner relationship problem">
-      <change afterPath="$PROJECT_DIR$/DesignDocs/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignDocs/sql/cfrl_contact_details_1.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignDocs/sql/cfrl_food_resources_1.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignDocs/sql/cfrl_location_1.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignDocs/sql/cfrl_resource_owners_1.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210722 0044.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210722 0058.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210722 0104.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="refactoring deleteUser">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/cfrl_contact_details.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/cfrl_food_resources.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/cfrl_location.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/cfrl_resource_owners.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/cfrl_resource_type.sql" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/sql/cfrl_resource_type_1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/cfrl_user_roles.sql" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/sql/cfrl_user_roles_1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/cfrl_users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/sql/cfrl_users_1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/sqlExportData.sql" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/sql/sqlExportData.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210721 1148.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210721 1202.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210721 1203.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210722 0058.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210722 0104.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210722 0200.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/EditResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/EditResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/deleteUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/deleteUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/v1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/v1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/editResources.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/editResources.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -452,14 +430,8 @@
       <workItem from="1626705693789" duration="34171000" />
       <workItem from="1626816618415" duration="17461000" />
       <workItem from="1626835895685" duration="27158000" />
-      <workItem from="1626936363992" duration="1495000" />
-    </task>
-    <task id="LOCAL-00127" summary="working on add resource">
-      <created>1621135463420</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1621135463420</updated>
+      <workItem from="1626936363992" duration="7750000" />
+      <workItem from="1626974882380" duration="5761000" />
     </task>
     <task id="LOCAL-00128" summary="dropdowns connected, finally">
       <created>1621232575645</created>
@@ -797,7 +769,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626887450443</updated>
     </task>
-    <option name="localTasksCounter" value="176" />
+    <task id="LOCAL-00176" summary="refactoring deleteUser">
+      <created>1626938199602</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1626938199602</updated>
+    </task>
+    <option name="localTasksCounter" value="177" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -830,7 +809,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="working on integrating the add location and contacts" />
     <MESSAGE value="working on integrating the add location and contacts," />
     <MESSAGE value="YES!! Adding location and mapping it with the google api is functional!!!!  Almost time to start data input!" />
     <MESSAGE value="I have a fk to resource owner in the contact, so does the contact go with the owner or the resource???  I think the contact should relate to the resource…" />
@@ -855,7 +833,8 @@
     <MESSAGE value="working on addContact editing" />
     <MESSAGE value="addContact edit working" />
     <MESSAGE value="fixed resource owner relationship problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed resource owner relationship problem" />
+    <MESSAGE value="refactoring deleteUser" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring deleteUser" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

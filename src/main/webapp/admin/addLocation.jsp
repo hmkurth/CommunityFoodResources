@@ -4,6 +4,7 @@
 <jsp:include page="../header.jsp"/>
 
 <div class="login-container">
+    <h3>Location Details</h3>
     <h5 class = "row text-center pad-bottom-sm">${message} </h5>
     <h4 class = "row text-center warning pad-bottom-sm">This resource has not yet been added, we just need a little more information</h4>
 
@@ -41,7 +42,7 @@
 
         <div class="form-group">
             <label for="streetAddressOrIntersection">Street Address or Intersection (required)</label>
-            <input type="text" class="form-control" id="streetAddressOrIntersection" name ="streetAddressOrIntersection" placeholder="500 Washington St." pattern="\d+[ ](?:[A-Za-z0-9.-]+[ ]?)+(?:Avenue|Lane|Road|Boulevard|Drive|Street|Ave|Dr|Rd|Blvd|Ln|St|Court|Heights)\.?" autocomplete="street" aria-required="true"  value="${location.streetAddressOrIntersection}"/> required>
+            <input type="text" class="form-control" id="streetAddressOrIntersection" name ="streetAddressOrIntersection" placeholder="500 Washington St." pattern="\d+[ ](?:[A-Za-z0-9.-]+[ ]?)+(?:Avenue|Lane|Road|Boulevard|Drive|Street|Ave|Dr|Rd|Blvd|Ln|St|Court|Heights)\.?" autocomplete="street" aria-required="true"  value="${location.streetAddressOrIntersection}"required>
         </div>
 
         <div class="form-group">
@@ -69,7 +70,7 @@
 
 
         <hr />
-            <button type ="submit" name ="submit2" value = "Add Location" class="btn btn-primary btn-lg"></button>
+            <input type ="submit" name ="submit2" value = "Add/Update Location" class="btn btn-primary btn-lg">
     </form>
 
 </c:if>
