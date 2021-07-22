@@ -121,7 +121,6 @@ public class AddLocation extends HttpServlet {
         HttpSession session = req.getSession();
         String message;
         String url = "/admin/addLocation.jsp";
-
         Location location2 = new Location();//holder for the converted location
         resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
         location = (Location)session.getAttribute("location");
@@ -132,25 +131,27 @@ public class AddLocation extends HttpServlet {
         String zip=req.getParameter("zip");
         String busInfo=req.getParameter("busInfo");
         String comments=req.getParameter("comments");
-        logger.debug("Is this new, isNew variable? " + isNew);
+        /**logger.debug("Is this new, isNew variable? " + isNew);
         logger.debug("Is this new, isNew session? " + session.getAttribute("isNew"));
 
         logger.debug("Location1: " + location);
         logger.debug("Location1from session att: " + session.getAttribute("location"));
         logger.debug("Location1 resource.getLoc: " + resource.getLocation());
         logger.debug("Location1:req att:  " + req.getAttribute("location"));
-
+*/
 
         String x2 = req.getParameter("submit2");
         logger.debug("value x2 : " + x2);
         if (x2 != null ) {
-            logger.debug("in submit2 block");
+         /*   logger.debug("in submit2 block");
             logger.debug("2 Location1: " + location);
             logger.debug("value x2 : " + x2);
 
             logger.debug("2 Location1 resource.getLoc: " + resource.getLocation());
             logger.debug("2 Location1:req att:  " + req.getAttribute("location"));
             logger.debug("2 Location1from session att: " + session.getAttribute("location"));
+            */
+
             location.setNameDesc(nameDesc);
             location.setStreetAddressOrIntersection(streetAddress);
             location.setCity(city);

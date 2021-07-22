@@ -32,6 +32,7 @@ public class Contact {
     private String lastName;
     private String email;
     private String phone;
+    @ToString.Exclude
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "owner_id")
     private ResourceOwner owner;

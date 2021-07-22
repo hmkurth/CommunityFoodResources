@@ -102,12 +102,13 @@
 
 
 
+<div class="content  pad-top" id="main_content">
+    <div class="container">
+
 <div class="row pad-bottom">
 
-    <div class="col-md-10 col-md-offset-1">
-
         <h2>Resource Details</h2>
-<table class="table table-responsive table-striped table-bordered">
+<table class="table table-responsive table-striped  table-condensed table-bordered">
     <thead>
     <tr>
         <th>Type of Resource</th>
@@ -202,3 +203,6 @@
         ></script>
     </div>
 </div>
+    </div>
+</div>
+<jsp:include page="/footer.jsp"/>

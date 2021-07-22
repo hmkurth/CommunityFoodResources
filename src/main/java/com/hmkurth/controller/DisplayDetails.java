@@ -56,10 +56,10 @@ public class DisplayDetails extends HttpServlet {
             req.setAttribute("toDisplay", toDisplay);
             //try to make a marker for the map
             Location location = toDisplay.getLocation();
-            if(location != null) {
+           /** if(location != null) {
                 ldao.addMarker(location);
             }
-
+*/
         }
 
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
