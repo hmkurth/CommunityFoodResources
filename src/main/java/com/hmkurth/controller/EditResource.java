@@ -45,13 +45,27 @@ public class EditResource extends HttpServlet {
             throws ServletException, IOException {
         HttpSession session = req.getSession();
 
-
-        List<Contact> listContact = cdao.getAll();
-        session.setAttribute("listContact", listContact);
-        List<FoodResource> listAll = fdao.getAll();
-        session.setAttribute("listAll", listAll);
+//get the list of entities  to populate a dropdown menu for the form input
+        odao = new GenericDao<>(ResourceOwner.class);
+        List<ResourceOwner> listOwner = odao.getAll();
+        session.setAttribute("listOwner", listOwner);
+        logger.debug("listOwner value from dropdown menu : " + listOwner);
+        //get the list of types of resources to populate a dropdown menu for the form input
+        tdao = new GenericDao<>(Type.class);
         List<Type> listType = tdao.getAll();
         session.setAttribute("listType", listType);
+        logger.debug("list type : " + listType);
+        //get the list of contact to populate a dropdown menu for the form input
+        cdao = new GenericDao<>(Contact.class);
+        List<Contact> listContact = cdao.getAll();
+        session.setAttribute("listContact", listContact);
+        logger.debug("list contact : " + listContact);
+        fdao = new GenericDao<>(FoodResource.class);
+        List<FoodResource> listAll = fdao.getAll();
+        session.setAttribute("listAll", listAll);
+        ldao = new GenericDao<>(Location.class);
+        List<Location> listLocation = ldao.getAll();
+        session.setAttribute("allLocations", listLocation);
 
         //select a resource, either continuing from the verify screen, choosing from the dropdown menu,
         //first check to see if the resource was set in verify

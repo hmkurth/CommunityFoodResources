@@ -94,6 +94,9 @@ public class AddResource extends HttpServlet {
         fdao = new GenericDao<>(FoodResource.class);
         List<FoodResource> listAll = fdao.getAll();
         session.setAttribute("listAll", listAll);
+        ldao = new GenericDao<>(Location.class);
+        List<Location> listLocation = ldao.getAll();
+        session.setAttribute("allLocations", listLocation);
 
         String url = "/admin/addResource.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);

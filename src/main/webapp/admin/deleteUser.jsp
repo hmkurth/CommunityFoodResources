@@ -39,10 +39,20 @@
 </div>
     <!-- if submit was  NOT pushed, display form-->
     <c:if test="${req.getAttribute('submitted') != true}" >
-        <form action="${pageContext.request.contextPath}/deleteResource"  method="post" autocomplete="on">
+<form action="${pageContext.request.contextPath}/deleteUser"  method="post" autocomplete="on">
+    <div class="form-group">
+        <label for="delete">Contact Details(optional field to connect a food resource with a point of contact)
+            <select name="delete" id="delete">
+                <c:forEach items="${AllUsers}" var="user">
+                    <option value='${user.id}'<c:if test="${user.id eq selectedUsertId}">selected="selected"</c:if>
+                    > user name:${user.firstName}, ${user.lastName}</option>
+                </c:forEach>
+            </select>
 
-            <input type="submit" name="confirmDelete" value = "confirmDelete" class="btn btn-primary btn-lg">
-        </form>
+        </label>
+    </div>
+    <input type="submit" name="submit" class="btn btn-primary btn-lg" value="Submit">
+</form>
 </c:if>
 <h2 class="warning">${errorMessage}</h2>
 

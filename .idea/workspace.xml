@@ -9,24 +9,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="addContact edit working">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210721 1148.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210721 1202.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210721 1203.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/748adc0c-b602-4b39-af48-c0b7be8e007a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/748adc0c-b602-4b39-af48-c0b7be8e007a.xml" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="fixed resource owner relationship problem">
+      <change afterPath="$PROJECT_DIR$/DesignDocs/desktop.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignDocs/sql/cfrl_contact_details_1.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignDocs/sql/cfrl_food_resources_1.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignDocs/sql/cfrl_location_1.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesignDocs/sql/cfrl_resource_owners_1.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210722 0044.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210722 0058.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210722 0104.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/cfrl_resource_owners.sql" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/cfrl_resource_owners.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/cfrl_contact_details.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/cfrl_food_resources.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/cfrl_location.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/cfrl_resource_owners.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/cfrl_resource_type.sql" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/sql/cfrl_resource_type_1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/cfrl_user_roles.sql" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/sql/cfrl_user_roles_1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/cfrl_users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/sql/cfrl_users_1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/sqlExportData.sql" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/sql/sqlExportData.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210720 2236.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210720 2243.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210720 2249.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Contact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/FoodResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/ResourceOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/ResourceOwner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Type.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210721 1148.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210721 1202.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210721 1203.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/EditResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/EditResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/deleteUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/deleteUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/v1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/v1.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +127,7 @@
     <property name="database.data.extractors.current.id" value="SQL Inserts" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/assets/img/icons" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../accessibilityTemplates" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -140,11 +154,11 @@
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\DesignDocs\sql" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\DesignDocs" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\admin" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\resources" />
-      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\utilPages" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -163,17 +177,6 @@
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.Tomcat">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ApiTestServiceClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
@@ -252,11 +255,12 @@
       </method>
     </configuration>
     <configuration name="Tomcat" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 8.5.57" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="11">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="CommunityFoodResources:war">
           <settings>
-            <option name="CONTEXT_PATH" value="/CommunityFoodResources" />
+            <option name="CONTEXT_PATH" value="" />
           </settings>
         </artifact>
       </deployment>
@@ -343,9 +347,9 @@
       <item itemvalue="JUnit.ApiTestServiceClient" />
       <item itemvalue="JUnit.TestStaticMapAPI.testStaticMapAPI" />
       <item itemvalue="JUnit.ApiTestServiceClient.testStaticMapAPI" />
-      <item itemvalue="TomEE Server.Tomcat" />
       <item itemvalue="JUnit.ResourceOwnerDaoTest" />
       <item itemvalue="JUnit.FoodResourceTest" />
+      <item itemvalue="TomEE Server.Tomcat" />
     </list>
     <recent_temporary>
       <list>
@@ -447,14 +451,8 @@
       <workItem from="1626453003726" duration="55434000" />
       <workItem from="1626705693789" duration="34171000" />
       <workItem from="1626816618415" duration="17461000" />
-      <workItem from="1626835895685" duration="6183000" />
-    </task>
-    <task id="LOCAL-00126" summary="added about project content">
-      <created>1621037604491</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1621037604491</updated>
+      <workItem from="1626835895685" duration="27158000" />
+      <workItem from="1626936363992" duration="1495000" />
     </task>
     <task id="LOCAL-00127" summary="working on add resource">
       <created>1621135463420</created>
@@ -792,7 +790,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626839599433</updated>
     </task>
-    <option name="localTasksCounter" value="175" />
+    <task id="LOCAL-00175" summary="fixed resource owner relationship problem">
+      <created>1626887450443</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1626887450443</updated>
+    </task>
+    <option name="localTasksCounter" value="176" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -825,7 +830,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="username validation done" />
     <MESSAGE value="working on integrating the add location and contacts" />
     <MESSAGE value="working on integrating the add location and contacts," />
     <MESSAGE value="YES!! Adding location and mapping it with the google api is functional!!!!  Almost time to start data input!" />
@@ -850,7 +854,8 @@
     <MESSAGE value="trying to get a custom marker made for pins" />
     <MESSAGE value="working on addContact editing" />
     <MESSAGE value="addContact edit working" />
-    <option name="LAST_COMMIT_MESSAGE" value="addContact edit working" />
+    <MESSAGE value="fixed resource owner relationship problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed resource owner relationship problem" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
