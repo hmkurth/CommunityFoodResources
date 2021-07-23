@@ -1,5 +1,5 @@
 
-
+<%@include file="/taglib.jsp"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +29,6 @@
                 center: {lat: 43.0731, lng: -89.4012}
             }
             // The location of Madison
-            var tempValue = '<%="sMessage"%>';//to set a java variable
             //  const madison = {lat: 43.0731, lng: -89.4012};
             // The map, centered at Madison
             const map = new google.maps.Map(document.getElementById("map"), options);

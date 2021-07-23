@@ -9,6 +9,7 @@
             <div class="table-sm">
                 <form action="${pageContext.request.contextPath}/displayDetails"  method="get" autocomplete="on">
                 <h2>All Food Resources</h2>
+
                 <table class="table table-striped table-bordered table-hover table-condensed table-sm">
                     <thead>
                     <tr>

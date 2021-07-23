@@ -14,7 +14,7 @@
    // <title>Accessible - Home</title>
     <meta name="title" content="max 65 character title">-->
     <meta name="description" content="this is the home page of the community food resource locator app">
-    <meta name="keywords" content="comma, separated, list">
+    <meta nresource_ownersame="keywords" content="comma, separated, list">
     <meta name="author" content="heather kurth">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>${title}</title>

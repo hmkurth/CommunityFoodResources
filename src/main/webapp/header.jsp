@@ -84,7 +84,7 @@
 								<li><a href="${pageContext.request.contextPath}/forwardResources">Food Pantries</a></li>
 								<li><a href="${pageContext.request.contextPath}/searchFoodResources">Search Food Resources</a></li>
 								<li><a href="${pageContext.request.contextPath}/searchByLocation.jsp">Search By Location</a></li>
-								<li><a href="${pageContext.request.contextPath}/mapDemo.jsp">Map Demo</a></li>
+								<li><a href="${pageContext.request.contextPath}/mapAll">Map Demo</a></li>
 							</ul>
 						</li>
 

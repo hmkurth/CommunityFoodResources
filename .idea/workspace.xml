@@ -9,19 +9,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="refactored add/update location">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210722 1419.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210722 1441.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210722 1450.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="editing css">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210722 2221.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210722 2225.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210722 2229.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/MapAll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/mapAll.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/DisplayDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/DisplayDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Contact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210722 1441.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210722 1450.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210722 1454.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/displayDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/displayDetails.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/mapDemo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/mapDemo.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +43,9 @@
         <option value="Interface" />
         <option value="jsf" />
         <option value="JavaScript File" />
-        <option value="Jsp File" />
-        <option value="Class" />
         <option value="package.json" />
+        <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -158,6 +162,17 @@
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.Tomcat">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiTestServiceClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
@@ -434,14 +449,7 @@
       <workItem from="1626816618415" duration="17461000" />
       <workItem from="1626835895685" duration="27158000" />
       <workItem from="1626936363992" duration="7750000" />
-      <workItem from="1626974882380" duration="8752000" />
-    </task>
-    <task id="LOCAL-00129" summary="still working on getting the if test for dropdown working">
-      <created>1621238307727</created>
-      <option name="number" value="00129" />
-      <option name="presentableId" value="LOCAL-00129" />
-      <option name="project" value="LOCAL" />
-      <updated>1621238307727</updated>
+      <workItem from="1626974882380" duration="32395000" />
     </task>
     <task id="LOCAL-00130" summary="logout function added">
       <created>1621239581034</created>
@@ -779,7 +787,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626980815341</updated>
     </task>
-    <option name="localTasksCounter" value="178" />
+    <task id="LOCAL-00178" summary="editing css">
+      <created>1626984029250</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1626984029250</updated>
+    </task>
+    <option name="localTasksCounter" value="179" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -812,7 +827,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="YES!! Adding location and mapping it with the google api is functional!!!!  Almost time to start data input!" />
     <MESSAGE value="I have a fk to resource owner in the contact, so does the contact go with the owner or the resource???  I think the contact should relate to the resource…" />
     <MESSAGE value="setting up vars for edited resources , but now it's kindof a mess. and now it's a git mess" />
     <MESSAGE value="fixed resourc-recource owner mess" />
@@ -837,7 +851,8 @@
     <MESSAGE value="fixed resource owner relationship problem" />
     <MESSAGE value="refactoring deleteUser" />
     <MESSAGE value="refactored add/update location" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactored add/update location" />
+    <MESSAGE value="editing css" />
+    <option name="LAST_COMMIT_MESSAGE" value="editing css" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
