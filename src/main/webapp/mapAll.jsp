@@ -3,8 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Add Map</title>
-
+    <title>Map of Madison Food Resources</title>
     <style type="text/css">
         /* Set the size of the div element that contains the map */
         #map {
@@ -19,27 +18,31 @@
         // Initialize and add the map
         let map;
         let marker;
+        let allResourcesJS;
 
         let options;
         function initMap() {
+console.log("initMap start");
+      //     let resource1= JSON.parse('${allMapped[0]}');  //convert the string to a JSON object, causes syntax error, missing ')' after argument list
+         //   console.log('resource1: ' + resource1);//this returns all the info from the toString , too much
+                //loop through java list to extract variables and reassign, or use JS map function
 
-                //loop through java list to extract variables and reassign
-        const allResources = [
+            //console.log("allMapped list from java: " +  ${allMapped});
+            allResourcesJS = [
 
             <c:forEach items="${allMapped}" var="item">
                     {
-                     type: "${item.typeId.name}",
+                     idType: "${item.type}",
                       name: "${item.name}",
                       id: "${item.id}",
                      lat:${item.location.lat},
                      lng: ${item.location.lng},
+
                 } ,
+                console.log("foreach: " +  allResourcesJS.idType)//this is not running
             </c:forEach>
         ];
 
-        for(let i = 0; i < allResources.length; i++) {
-            console.log(allResources[i].name);
-        }
 
                 const contentString =
                     '<div id="content">' +
@@ -62,8 +65,9 @@
 
                 // Create the markers.
                 function setMarkers(map) {
-                    for (let i = 0; i < allResources.length; i++) {
-                        const pantry = allResources[i];
+                    console.log("settingMarkers:, allresources.length: "+  allResourcesJS.length)
+                    for (let i = 0; i < allResourcesJS.length; i++) {
+                        const pantry = allResourcesJS[i];
                         marker = new google.maps.Marker({
                             position: {lat: parseFloat(pantry[3]), lng: parseFloat(pantry[4])},
                             map,
@@ -74,16 +78,21 @@
 
                         marker.addListener("click", () => {
                             infoWindow.close();
-                            console.log("in add listener")
+                            console.log("in add listener")//not running
                             infoWindow.setContent(marker.getTitle());
                             infoWindow.open(marker.getMap(), marker);
                         })//info window
                     }//foreach
+/*
+                    console.log("allResourcesJS: " + allResourcesJS.toString());//runs, but blank
+                    for (let i = 0; i < allResourcesJS.length; i++) {
+                        console.log(allResourcesJS[i].name);//doesn't run
+                    }
+                    */
 
-                    console.log("allResources: " + allResources.toString());
                 }
-
         }
+
     </script>
 
 </head>

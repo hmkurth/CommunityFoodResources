@@ -9,23 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="editing css">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210722 2221.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210722 2225.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210722 2229.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/MapAll.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/mapAll.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="stuck on getting multiple markers to populate map">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210723 0154.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210723 0202.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210722 1441.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210722 1450.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210722 1454.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/displayDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/displayDetails.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/mapDemo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/mapDemo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210722 2225.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210722 2229.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210722 2233.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/MapAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/MapAll.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/mapAll.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/mapAll.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -449,14 +444,7 @@
       <workItem from="1626816618415" duration="17461000" />
       <workItem from="1626835895685" duration="27158000" />
       <workItem from="1626936363992" duration="7750000" />
-      <workItem from="1626974882380" duration="32395000" />
-    </task>
-    <task id="LOCAL-00130" summary="logout function added">
-      <created>1621239581034</created>
-      <option name="number" value="00130" />
-      <option name="presentableId" value="LOCAL-00130" />
-      <option name="project" value="LOCAL" />
-      <updated>1621239581035</updated>
+      <workItem from="1626974882380" duration="43458000" />
     </task>
     <task id="LOCAL-00131" summary="if 'newOwner' tag working">
       <created>1621241555423</created>
@@ -794,7 +782,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626984029250</updated>
     </task>
-    <option name="localTasksCounter" value="179" />
+    <task id="LOCAL-00179" summary="stuck on getting multiple markers to populate map">
+      <created>1627011783218</created>
+      <option name="number" value="00179" />
+      <option name="presentableId" value="LOCAL-00179" />
+      <option name="project" value="LOCAL" />
+      <updated>1627011783218</updated>
+    </task>
+    <option name="localTasksCounter" value="180" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -827,7 +822,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="I have a fk to resource owner in the contact, so does the contact go with the owner or the resource???  I think the contact should relate to the resource…" />
     <MESSAGE value="setting up vars for edited resources , but now it's kindof a mess. and now it's a git mess" />
     <MESSAGE value="fixed resourc-recource owner mess" />
     <MESSAGE value="adding resource back working, verification done" />
@@ -852,7 +846,8 @@
     <MESSAGE value="refactoring deleteUser" />
     <MESSAGE value="refactored add/update location" />
     <MESSAGE value="editing css" />
-    <option name="LAST_COMMIT_MESSAGE" value="editing css" />
+    <MESSAGE value="stuck on getting multiple markers to populate map" />
+    <option name="LAST_COMMIT_MESSAGE" value="stuck on getting multiple markers to populate map" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1139,6 +1134,10 @@
         <PinnedItemInfo parentTag="java.lang.NullPointerException" memberName="cause" />
       </pinned-members>
     </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CommunityFoodResources$All_in_CommunityFoodResources.ic" NAME="All in CommunityFoodResources Coverage Results" MODIFIED="1620693551432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

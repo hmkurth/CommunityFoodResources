@@ -3,6 +3,9 @@ package com.hmkurth.controller;
 
 import com.hmkurth.entity.FoodResource;
 import com.hmkurth.persistence.GenericDao;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.json.JSONArray;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -26,7 +29,7 @@ import java.util.List;
         urlPatterns = { "/mapAll" }
 )
 public class MapAll extends HttpServlet {
-
+    private final Logger logger = LogManager.getLogger(this.getClass());
     /**
      * Handles HTTP GET requests.
      *
@@ -53,9 +56,30 @@ public class MapAll extends HttpServlet {
 
                 allMapped.add(resource);
             }
+
         }
+        //trying to convert to json array for map, can't find these classes,
+        // or at least pare down the exact info with no weird commas, would that be better in JS map, reduce filter, or here?? what's faster??
+        JSONArray jList = new JSONArray();
+        for (FoodResource resource : allMapped) {
+            //how to pare down the values, I don't need all of them going to the map
+
+            String latStr = String.valueOf(resource.getLocation().getLat());
+            String lngStr = String.valueOf(resource.getLocation().getLat());
+            String name = resource.getName();
+            String type = resource.getTypeId().getName();
+            String desc = resource.getDescription();
+            //this is probably cumbersome and dumb, but it's one way i've seen on stack overflow
+            //there must be a better way by now than this...
+            String resourcePared ="{" + type + "," +  name +"," + desc +  "," + latStr +  "," + lngStr + "}";
+            //add the resource to the json string array
+            jList.put(resourcePared);
+
+        }
+      //  logger.debug("the jList of strings :" + jList);
         session.setAttribute("allMapped", allMapped);
-        req.setAttribute("allMapped", allMapped);
+       // req.setAttribute("allMapped", allMapped);
+        logger.debug("session attribute allMapped." + session.getAttribute("allMapped"));
 
         String url = "/mapAll.jsp";
 
