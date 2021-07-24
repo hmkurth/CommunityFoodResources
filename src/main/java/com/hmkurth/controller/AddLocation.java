@@ -120,7 +120,7 @@ public class AddLocation extends HttpServlet {
         GenericDao fdao = new GenericDao(FoodResource.class);
         HttpSession session = req.getSession();
         String message;
-        String url = "/admin/addLocation.jsp";
+        String url = "/admin/addLocation,jsp";
         Location location2 = new Location();//holder for the converted location
         resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
         location = (Location)session.getAttribute("location");
@@ -165,34 +165,33 @@ public class AddLocation extends HttpServlet {
                 LocationApiDao locationApiDao = new LocationApiDao();
                 location2 = locationApiDao.convertAddressToLatAndLong(location);
                 //logger.debug("getting long and lat, location2" + location2.toString());
+                //save or insert depending on if new
+                if (isNew) {
+                    //if new insert
+                    //add the location to the database
+                    // dao.insert(location2);  taking this off because the resource is getting added twice...so maybe the location gets added when the resource does??
+                    message = "you have successfully  added a  location to the resource " + resource.getName();
+                    //then forward to contacts
+                    url = "/admin/addContact.jsp";
+                } else {
+                    // update
+                    ldao.saveOrUpdate(location2);
+                    message = "you have successfully edited this resource";
+                    //then forward to edit
+                    url = "/admin/editResources.jsp";
+                }//end ifNew
+                resource.setLocation(location2);
+                // location2.addResource(resource);  resource is getting added twice, so ...
+                //save the info on resource
+                fdao.saveOrUpdate(resource);
+                //update the  req or ses variables
+                session.setAttribute("location", location2);
+                session.setAttribute("message", message);
             } catch (Exception e) {
                 logger.error(e);
-            }
-
-            //save or insert depending on if new
-            if(isNew){
-                //if new insert
-                //add the location to the database
-                dao.insert(location2);
-                message = "you have successfully  added a  location to the resource " + resource.getName();
-                //then forward to contacts
-                url = "/admin/addContact.jsp";
-            } else {
-               // update
-                ldao.saveOrUpdate(location2);
-                message = "you have successfully edited this resource";
-                //then forward to edit
-                url = "/admin/editResources.jsp";
-            }
-            resource.setLocation(location2);
-            // location2.addResource(resource);  resource is getting added twice, so ...
-            //save the info on resource
-            fdao.saveOrUpdate(resource);
-            //update the  req or ses variables
-            session.setAttribute("location", location2);
-            session.setAttribute("message", message);
-        }
-        RequestDispatcher dispatcher = req.getRequestDispatcher(url);
-        dispatcher.forward(req, resp);
-    }
+            }//end try catch
+            RequestDispatcher dispatcher = req.getRequestDispatcher(url);
+            dispatcher.forward(req, resp);
+        }//end if not null
+    }//end doPost
 }
