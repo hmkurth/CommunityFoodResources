@@ -9,18 +9,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="stuck on getting multiple markers to populate map">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210723 0154.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210723 0202.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="map stopped loading all together with no devtools/inspect loading">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210724 0107.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210724 0113.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210724 0125.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/sql/cfrl_contact_details_1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/cfrl_contact_details_1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/sql/cfrl_food_resources_1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/cfrl_food_resources_1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/sql/cfrl_location_1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/cfrl_location_1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/sql/cfrl_resource_owners_1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/cfrl_resource_owners_1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/sql/cfrl_resource_type_1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/cfrl_resource_type_1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/sql/cfrl_user_roles_1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/cfrl_user_roles_1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/sql/cfrl_users_1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/cfrl_users_1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/sql/sqlExportData.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/sqlExportData.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210722 2225.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210722 2229.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210722 2233.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/MapAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/MapAll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/mapAll.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/mapAll.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210723 0154.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210723 0202.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/EditResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/EditResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/ResourceOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/ResourceOwner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/seedDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/seedDb.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/adminHome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/adminHome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/julySql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/julySql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/v1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/v1.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,11 +149,11 @@
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\resources\sql" />
+      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\resources" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\DesignDocs\sql" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\DesignDocs" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp" />
-      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\admin" />
-      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp\resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -157,13 +172,15 @@
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.Tomcat">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -444,14 +461,8 @@
       <workItem from="1626816618415" duration="17461000" />
       <workItem from="1626835895685" duration="27158000" />
       <workItem from="1626936363992" duration="7750000" />
-      <workItem from="1626974882380" duration="43458000" />
-    </task>
-    <task id="LOCAL-00131" summary="if 'newOwner' tag working">
-      <created>1621241555423</created>
-      <option name="number" value="00131" />
-      <option name="presentableId" value="LOCAL-00131" />
-      <option name="project" value="LOCAL" />
-      <updated>1621241555423</updated>
+      <workItem from="1626974882380" duration="44716000" />
+      <workItem from="1627101853099" duration="6254000" />
     </task>
     <task id="LOCAL-00132" summary="continuing with adding resource, may need to break up into smaller chunks">
       <created>1621315225243</created>
@@ -789,7 +800,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627011783218</updated>
     </task>
-    <option name="localTasksCounter" value="180" />
+    <task id="LOCAL-00180" summary="map stopped loading all together with no devtools/inspect loading">
+      <created>1627024551549</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1627024551549</updated>
+    </task>
+    <option name="localTasksCounter" value="181" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -822,7 +840,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="setting up vars for edited resources , but now it's kindof a mess. and now it's a git mess" />
     <MESSAGE value="fixed resourc-recource owner mess" />
     <MESSAGE value="adding resource back working, verification done" />
     <MESSAGE value="figuring out null in params when editing resource" />
@@ -847,7 +864,8 @@
     <MESSAGE value="refactored add/update location" />
     <MESSAGE value="editing css" />
     <MESSAGE value="stuck on getting multiple markers to populate map" />
-    <option name="LAST_COMMIT_MESSAGE" value="stuck on getting multiple markers to populate map" />
+    <MESSAGE value="map stopped loading all together with no devtools/inspect loading" />
+    <option name="LAST_COMMIT_MESSAGE" value="map stopped loading all together with no devtools/inspect loading" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1098,7 +1116,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java</url>
-          <line>80</line>
+          <line>93</line>
           <option name="timeStamp" value="91" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

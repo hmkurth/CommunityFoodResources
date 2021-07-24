@@ -8,12 +8,6 @@
 <div class="login-container">
     <h1 class="text-center pad-bottom-sm">Add a new resource</h1>
 
-
-    <form action="${pageContext.request.contextPath}/addResource"  method="get" autocomplete="on">
-        <h5>Clear previous info, if present, if not an edit</h5>
-        <input type="submit" class="btn btn-primary btn-sm"  name="clear" value="clear">
-    </form>
-
     <form action="${pageContext.request.contextPath}/addResource"  method="post" autocomplete="on">
         <div class="form-group">
             <label for="name">Resource Name</label>

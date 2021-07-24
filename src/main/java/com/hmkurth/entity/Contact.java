@@ -37,19 +37,6 @@ public class Contact {
     @JoinColumn(name = "owner_id")
     private ResourceOwner owner;
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Contact)) return false;
-        Contact contact = (Contact) o;
-        return getId() == contact.getId() && getFirstName().equals(contact.getFirstName()) && getLastName().equals(contact.getLastName()) && Objects.equals(getEmail(), contact.getEmail()) && Objects.equals(getPhone(), contact.getPhone());
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getId(), getFirstName(), getLastName(), getEmail(), getPhone());
-    }
-
     /**
      * Instantiates a new Contact.
      *
@@ -65,4 +52,24 @@ public class Contact {
         this.phone = phone;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Contact)) return false;
+        Contact contact = (Contact) o;
+        return getId() == contact.getId() && getFirstName().equals(contact.getFirstName()) && getLastName().equals(contact.getLastName()) && Objects.equals(getEmail(), contact.getEmail()) && Objects.equals(getPhone(), contact.getPhone());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getFirstName(), getLastName(), getEmail(), getPhone());
+    }
+
+
+    @Override
+
+    public String toString(){
+        String thisString = firstName + "  " + lastName + ", email:  " + email + " ,  phone: " + phone  ;
+        return thisString;
+    }
 }

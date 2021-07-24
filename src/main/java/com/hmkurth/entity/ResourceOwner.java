@@ -77,4 +77,12 @@ public class ResourceOwner {
     public Set<Contact> getContacts(int i) {
         return contacts;
     }
+
+    @Override
+
+    public String toString(){
+        String thisString = name + "  , website(opt): " + website ;
+        return thisString;
+    }
+
 }

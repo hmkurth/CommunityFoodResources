@@ -26,7 +26,7 @@ import java.util.List;
 public class AddResource extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
-    GenericDao<Type> tdao;
+    GenericDao<Type> tdao = new GenericDao<>(Type.class);
     GenericDao<FoodResource> fdao;
     GenericDao<ResourceOwner> odao;
     GenericDao<Location> ldao;
@@ -43,20 +43,33 @@ public class AddResource extends HttpServlet {
     public void doGet(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
         HttpSession session = req.getSession();
-
+        String message;
+        List<Type> listType = tdao.getAll();
+        session.setAttribute("listType", listType);
         //set boolean to indicate if it's an edited resource
        // session.setAttribute("isEdited", false);
         //get the resource to edit (from verifyResource)
         if(!(req.getAttribute("resourceToEdit") == null)){
             FoodResource resource = (FoodResource) req.getAttribute("resourceToEdit");
-            List<Type> listType = tdao.getAll();
-            session.setAttribute("listType", listType);
+            session.setAttribute("newResource", resource);
+            req.setAttribute("newResource", resource);
+            message = "Editing Food Resource: " + req.getAttribute("resourceToEdit");
+            req.setAttribute("message", message);
+
+        } else {
+            session.setAttribute("newResource", null);
+            req.setAttribute("newResource", null);
         }
+
+
         //clear existing info if present
         if(req.getParameter("clear") !=null) {
-            session.setAttribute("newResource", null);
+           session.setAttribute("newResource", null);
+            req.setAttribute("newResource", null);
 
         }
+
+
         listCategory(req, res);
 
     }

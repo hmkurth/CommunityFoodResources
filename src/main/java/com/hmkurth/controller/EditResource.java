@@ -80,6 +80,7 @@ public class EditResource extends HttpServlet {
                 int intId = Integer.parseInt(resourceId);
                 resource = fdao.getById(intId);
                 session.setAttribute("newResource", resource);
+                session.setAttribute("resourceToEdit", resource);
             }
         }
 
