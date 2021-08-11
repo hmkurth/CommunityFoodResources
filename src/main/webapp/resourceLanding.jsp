@@ -1,16 +1,10 @@
-
+<%@include file="taglib.jsp"%>
 <c:import url="/head.jsp" />
-<%@include file="/taglib.jsp"%>
-<title>Home</title>
+<title>Resources</title>
 
 <c:import url="/header.jsp" />
-<c:import url="/banner.jsp" />
 
-
-<c:import url="/indexSearchShowcase.jsp" />
-
-
-<c:import url="/map.jsp" />
+<c:import url="/searchShowcase.jsp" />
 
 <c:import url="/footer.jsp" />
 

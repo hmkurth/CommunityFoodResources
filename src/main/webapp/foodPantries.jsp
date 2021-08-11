@@ -22,7 +22,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <c:forEach var="resource" items="${resourcesAll}" varStatus="iter">
+                    <c:forEach var="resource" items="${allPantries}" varStatus="iter">
 
                     <tr>
                         <td>${resource.typeId.name}</td>

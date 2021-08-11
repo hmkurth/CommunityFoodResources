@@ -58,7 +58,7 @@ public class LoginAction extends HttpServlet {
         url="/admin/adminHome.jsp";
 
       } else {
-        url="index.jsp";
+        url="/index.jsp";
     }
 
     req.getSession().setAttribute("loggedInUser", req.getRemoteUser());

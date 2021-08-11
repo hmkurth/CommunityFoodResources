@@ -42,7 +42,7 @@
 
         <div class="form-group">
             <label for="streetAddressOrIntersection">Street Address or Intersection (required)</label>
-            <input type="text" class="form-control" id="streetAddressOrIntersection" name ="streetAddressOrIntersection" placeholder="500 Washington St." pattern="\d+[ ](?:[A-Za-z0-9.-]+[ ]?)+(?:Avenue|Lane|Road|Boulevard|Drive|Street|Ave|Dr|Rd|Blvd|Ln|St|Court|Heights)\.?" autocomplete="street" aria-required="true"  value="${location.streetAddressOrIntersection}"required>
+            <input type="text" class="form-control" id="streetAddressOrIntersection" name ="streetAddressOrIntersection" placeholder="500 Washington St."  autocomplete="street" aria-required="true"  value="${location.streetAddressOrIntersection}"required>
         </div>
 
         <div class="form-group">

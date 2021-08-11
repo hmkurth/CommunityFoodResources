@@ -10,12 +10,8 @@ delete from resource_owners;
 INSERT INTO users VALUES (1,'Joe','Coyne','j','1','beast@mail');
 
 INSERT INTO user_roles VALUES (1,'j','admin','1');
-INSERT  INTO  resource_owners VALUES (0, 'private or not available', null, null);
-INSERT  INTO  resource_owners VALUES (8888, 'default place holder', null, null);
-INSERT INTO  location VALUES(9999, 'default place holder', 'somewhere', 'Madison', 'WI', '53704', 'n/a', 'this is a placeholder location', null, null, null);
 
 
-INSERT INTO  contact_details VALUES(8888, 'default', 'default', null, null,null);
 
 INSERT INTO food_resources (type_id, resource_name,  description, documentation_needed,service_area, website, day_of_week_offered, delivery_offered )
 VALUES

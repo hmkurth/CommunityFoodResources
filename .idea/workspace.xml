@@ -10,18 +10,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="editing add resource">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210724 0249.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210724 0310.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210724 0320.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210810 1937.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210810 1946.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210810 1956.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/allFreeLittlePantries.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/allResources.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/communityAidAndSupport.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/communityMeals.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/govResources.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210724 0107.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210724 0113.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210724 0125.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210724 0310.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210724 0320.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ForwardResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ForwardResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LoginAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/seedDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/seedDb.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/banner.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/banner.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/indexSearchShowcase.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/searchShowcase.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resourceLanding.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resourceLanding.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,6 +229,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LocationDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CommunityFoodResources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmkurth.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.LocationDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ResourceOwnerDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
@@ -228,22 +255,6 @@
       <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
       <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ResourceOwnerDaoTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestStaticMapAPI.testStaticMapAPI" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CommunityFoodResources" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hmkurth.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.TestStaticMapAPI" />
-      <option name="METHOD_NAME" value="testStaticMapAPI" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -339,19 +350,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.ApiTestServiceClient" />
-      <item itemvalue="JUnit.TestStaticMapAPI.testStaticMapAPI" />
       <item itemvalue="JUnit.ApiTestServiceClient.testStaticMapAPI" />
       <item itemvalue="JUnit.ResourceOwnerDaoTest" />
       <item itemvalue="JUnit.FoodResourceTest" />
+      <item itemvalue="JUnit.LocationDaoTest" />
       <item itemvalue="TomEE Server.Tomcat" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LocationDaoTest" />
+        <item itemvalue="JUnit.ApiTestServiceClient" />
         <item itemvalue="JUnit.FoodResourceTest" />
         <item itemvalue="JUnit.ResourceOwnerDaoTest" />
         <item itemvalue="JUnit.ApiTestServiceClient.testStaticMapAPI" />
-        <item itemvalue="JUnit.TestStaticMapAPI.testStaticMapAPI" />
-        <item itemvalue="JUnit.ApiTestServiceClient" />
       </list>
     </recent_temporary>
   </component>
@@ -448,14 +459,11 @@
       <workItem from="1626835895685" duration="27158000" />
       <workItem from="1626936363992" duration="7750000" />
       <workItem from="1626974882380" duration="44716000" />
-      <workItem from="1627101853099" duration="12168000" />
-    </task>
-    <task id="LOCAL-00133" summary="continuing with adding resource, may need to break up into smaller chunks">
-      <created>1621321641361</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1621321641361</updated>
+      <workItem from="1627101853099" duration="17793000" />
+      <workItem from="1628397230266" duration="574000" />
+      <workItem from="1628616015165" duration="2897000" />
+      <workItem from="1628621479561" duration="854000" />
+      <workItem from="1628622415227" duration="9443000" />
     </task>
     <task id="LOCAL-00134" summary="trying to refactor adding owner to be independent/reusable">
       <created>1621325443681</created>
@@ -793,7 +801,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627108525435</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary="editing add resource">
+      <created>1627116575319</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1627116575319</updated>
+    </task>
+    <option name="localTasksCounter" value="183" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1114,6 +1129,26 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java</url>
           <line>58</line>
           <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/resourceLanding.jsp</url>
+          <line>5</line>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/admin/adminHome.jsp</url>
+          <line>47</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/searchShowcase.jsp</url>
+          <line>7</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/searchShowcase.jsp</url>
+          <line>6</line>
+          <option name="timeStamp" value="102" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.sql.SQLSyntaxErrorException" package="java.sql" />

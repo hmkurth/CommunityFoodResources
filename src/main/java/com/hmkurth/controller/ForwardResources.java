@@ -10,6 +10,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -38,6 +39,7 @@ public class ForwardResources extends HttpServlet {
      */
     public void doGet(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
+        HttpSession session = req.getSession();
         GenericDao dao = new GenericDao(FoodResource.class);
         List<FoodResource> allPantries = new ArrayList<FoodResource>() ;
         List<FoodResource> allFreeLittlePantries = new ArrayList<FoodResource>();
@@ -48,7 +50,7 @@ public class ForwardResources extends HttpServlet {
 
         //all resources THAT ARE VERIFIED TODO figure out the best way to use multipe queries or filter through the list!!
         List<FoodResource> allVerifiedResources = dao.getByPropertyEqualToBoolean("verificationStatus", true);
-        req.setAttribute("resourcesAll", allVerifiedResources);
+        session.setAttribute("resourcesAll", allVerifiedResources);
         //trying to sort by resources, this is pretty clunky, could probably be streamlined
         for(FoodResource resource :  allVerifiedResources){
             int thisType = resource.getTypeId().getId();
@@ -56,29 +58,29 @@ public class ForwardResources extends HttpServlet {
             if(thisType == 1){
                 //that is type pantry, add to the pantry list
                 allPantries.add(resource);
-            } else if (thisType == 2){
-                //free little pantries
+            } else if (thisType == 2 || thisType == 3){
+                //free little pantries and fridges
                 allFreeLittlePantries.add(resource);
-            } else if (thisType == 3){
+            } else if (thisType == 4){
                 allMeals.add(resource);
-            } else if (thisType == 4) {
+            } else if (thisType == 5) {
                 govResources.add(resource);
-            }  else if (thisType == 5){
+            }  else if (thisType ==6){
                 allComAid.add(resource);
-          } else if (thisType == 6) {
+          } else if (thisType == 7) {
         //other
               allOther.add(resource);
             }
         }
-        req.setAttribute("allPantries", allPantries);
-        req.setAttribute("allFreeLittlePantries", allFreeLittlePantries);
-        req.setAttribute("allMeals", allMeals);
-        req.setAttribute("govResources", govResources);
-        req.setAttribute("allComAid", allComAid);
-        req.setAttribute("allOther", allOther);
+        session.setAttribute("allPantries", allPantries);
+        session.setAttribute("allFreeLittlePantries", allFreeLittlePantries);
+        session.setAttribute("allMeals", allMeals);
+        session.setAttribute("govResources", govResources);
+        session.setAttribute("allComAid", allComAid);
+        session.setAttribute("allOther", allOther);
 
 
-        String url = "/foodPantries.jsp";
+        String url = "/resourceLanding.jsp";
 
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(req, res);

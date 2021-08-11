@@ -6,12 +6,12 @@
 			<div class="top-header">
 				<div class="container">
 
-					<!-- Skip to content link allows users rendering the site on a screen reader to skip past navigational elements -->
+					<!-- Skip to content link allows users rendering the site on a screen reader to skip past navigational elements
 					<div class="menu-block pull-left no-pad hidden-xs">
 						<a href="indexMain.jsp" class="btn btn-link scroller"><em class="fa fa-level-down" aria-hidden="true"></em> Skip to Content &nbsp;</a>
 					</div>
-
-					<!-- This is optional, comment out if you do not need this set of dropdowns at the top   TODO try to get these langs to work!	-->
+-->
+					<!-- This is optional, comment out if you do not need this set of dropdowns at the top   TODO try to get these langs to work!
 					<div class="dropdown pull-left">
 						<button class="btn btn-link dropdown-toggle" type="button" id="lang_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 						<em class="fa fa-globe" aria-hidden="true"></em> English
@@ -24,7 +24,7 @@
 							<li><a href="#">Russian</a></li>
 						</ul>
 					</div>
-
+-->
 
 
 					<!-- Enable the user to adjust the font size of the web page -->
@@ -81,9 +81,8 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Food Resources<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="${pageContext.request.contextPath}/forwardResources">Food Pantries</a></li>
-								<li><a href="${pageContext.request.contextPath}/searchFoodResources">Search Food Resources</a></li>
-								<li><a href="${pageContext.request.contextPath}/searchByLocation.jsp">Search By Location</a></li>
+								<li><a href="${pageContext.request.contextPath}/forwardResources">Find Food Resources</a></li>
+
 								<li><a href="${pageContext.request.contextPath}/mapAll">Map Demo</a></li>
 							</ul>
 						</li>

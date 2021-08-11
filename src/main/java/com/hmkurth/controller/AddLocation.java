@@ -33,8 +33,8 @@ public class AddLocation extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
     FoodResource resource;
     Location location;
-    GenericDao<FoodResource> fdao;
-    GenericDao<Location> ldao;
+    GenericDao<FoodResource>  fdao = new GenericDao<>(FoodResource.class);
+    GenericDao<Location> ldao = new GenericDao<>(Location.class);
     Boolean isNew;
 
     /**
@@ -48,9 +48,6 @@ public class AddLocation extends HttpServlet {
     public void doGet(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
         HttpSession session = req.getSession();
-        GenericDao<FoodResource> fdao;
-        fdao = new GenericDao<>(FoodResource.class);
-        ldao = new GenericDao<>(Location.class);
         List<Location> allLocations = ldao.getAll();
         req.setAttribute("allLocations", allLocations);
         FoodResource resource = (FoodResource) session.getAttribute("newResource");
@@ -84,7 +81,7 @@ public class AddLocation extends HttpServlet {
                     //edit existing location
                     location = resource.getLocation();
                     isNew = false;
-                    session.setAttribute("isNew", isNew);
+                    session.setAttribute("isNew", false);//always false
                     session.setAttribute("location", location);
                     break;
                 default:
@@ -116,8 +113,7 @@ public class AddLocation extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        GenericDao dao = new GenericDao(Location.class);
-        GenericDao fdao = new GenericDao(FoodResource.class);
+
         HttpSession session = req.getSession();
         String message;
         String url = "/admin/addLocation,jsp";
@@ -134,23 +130,23 @@ public class AddLocation extends HttpServlet {
         /**logger.debug("Is this new, isNew variable? " + isNew);
         logger.debug("Is this new, isNew session? " + session.getAttribute("isNew"));
 
-        logger.debug("Location1: " + location);
+
         logger.debug("Location1from session att: " + session.getAttribute("location"));
         logger.debug("Location1 resource.getLoc: " + resource.getLocation());
         logger.debug("Location1:req att:  " + req.getAttribute("location"));
 */
-
+        logger.debug("Location1: " + location);
         String x2 = req.getParameter("submit2");
         logger.debug("value x2 : " + x2);
         if (x2 != null ) {
-         /*   logger.debug("in submit2 block");
-            logger.debug("2 Location1: " + location);
+           logger.debug("in submit2 block");
+
             logger.debug("value x2 : " + x2);
 
             logger.debug("2 Location1 resource.getLoc: " + resource.getLocation());
             logger.debug("2 Location1:req att:  " + req.getAttribute("location"));
             logger.debug("2 Location1from session att: " + session.getAttribute("location"));
-            */
+
 
             location.setNameDesc(nameDesc);
             location.setStreetAddressOrIntersection(streetAddress);
@@ -159,39 +155,48 @@ public class AddLocation extends HttpServlet {
             location.setZip(zip);
             location.setBusInfo(busInfo);
             location.setComments(comments);
-
+            logger.debug("before try Location1: " + location);
             //Use the api to get the lat and long
             try {
                 LocationApiDao locationApiDao = new LocationApiDao();
                 location2 = locationApiDao.convertAddressToLatAndLong(location);
-                //logger.debug("getting long and lat, location2" + location2.toString());
-                //save or insert depending on if new
-                if (isNew) {
-                    //if new insert
-                    //add the location to the database
-                    // dao.insert(location2);  taking this off because the resource is getting added twice...so maybe the location gets added when the resource does??
-                    message = "you have successfully  added a  location to the resource " + resource.getName();
-                    //then forward to contacts
-                    url = "/admin/addContact.jsp";
-                } else {
-                    // update
-                    ldao.saveOrUpdate(location2);
-                    message = "you have successfully edited this resource";
-                    //then forward to edit
-                    url = "/admin/editResources.jsp";
-                }//end ifNew
-                resource.setLocation(location2);
-                // location2.addResource(resource);  resource is getting added twice, so ...
-                //save the info on resource
-                fdao.saveOrUpdate(resource);
-                //update the  req or ses variables
-                session.setAttribute("location", location2);
-                session.setAttribute("message", message);
+                logger.debug("TRY getting long and lat, location2" + location2.toString());
             } catch (Exception e) {
                 logger.error(e);
             }//end try catch
+
+
+            //save or insert depending on if new
+            if (isNew) {
+                logger.debug("isNew" + isNew + " lat : " + location2.getLat());
+                //if new insert
+                //add the location to the database
+                //ldao.insert(location2); // taking this off because the resource is getting added twice...so maybe the location gets added when the resource does??
+                message = "you have successfully  added a  location to the resource " + resource.getName();
+                //then forward to contacts
+                url = "/admin/addContact.jsp";
+            } else {
+                logger.debug("else, not new, location2.lat : " + location2.getLat());
+
+                message = "you have successfully edited this resource";
+                //then forward to edit
+                url = "/admin/editResources.jsp";
+            }//end ifNew
+            logger.debug("setting this location to the resource: " + location2);
+            //set the location to the resource
+            resource.setLocation(location2);
+           //  location2.addResource(resource);  //got an error on this, persistence
+            // update the location in the location table
+            ldao.saveOrUpdate(location2);
+            //save the info on resource
+            fdao.saveOrUpdate(resource);
+            //update the  req or ses variables
+            session.setAttribute("location", location2);
+            session.setAttribute("message", message);
+
             RequestDispatcher dispatcher = req.getRequestDispatcher(url);
             dispatcher.forward(req, resp);
         }//end if not null
-    }//end doPost
+}//end doPost
+
 }
