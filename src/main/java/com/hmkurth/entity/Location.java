@@ -120,7 +120,7 @@ public class Location {
 
 
 
-    String thisString = nameDesc + " address: " + streetAddressOrIntersection + "  " + city + " , " + state + sBus + sComm ;
+    String thisString = nameDesc + " address: " + streetAddressOrIntersection + "  " + city + " , " + state + sBus + sComm + " " ;
         return thisString;
     }
 }

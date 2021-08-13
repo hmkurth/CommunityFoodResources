@@ -66,6 +66,7 @@ public class AddContact extends HttpServlet {
             }else if (contactInt == 2222) {
                 contact = resource.getContactId();
                 session.setAttribute("contact", contact);
+
             } else {
                 //choose an existing contact from the list
                 contact = cdao.getById(contactInt);
@@ -97,14 +98,14 @@ public class AddContact extends HttpServlet {
 //todo, clean up duplicate code!
         HttpSession session = req.getSession();
         String url = "/admin/addContact.jsp";
-        String message;
+        String message = "";
         String x1 = req.getParameter("submit");
-
+            contact= (Contact) session.getAttribute("contact");
             resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
             //i keep getting nulls on these values, so i'm trying to find a way around that
             String firstName = req.getParameter("firstName");
             String lastName = req.getParameter("lastName");
-            String email = req.getParameter("email");
+            String email = req.getParameter("website");
             String phone = req.getParameter("phone");
 
 
@@ -113,36 +114,38 @@ public class AddContact extends HttpServlet {
             //if new contact is selected, now grab details from the second form
             String x = req.getParameter("submit2");
             logger.debug("x at submit2: " + x);
-            if (x != null && contact == null) {//it's a brand new resource
+            if (x != null ) {
+                if (contact.getLastName() != null) {//it's a save/update
+                    contact = (Contact) session.getAttribute("contact");
+                    contact.setFirstName(firstName);
+                    contact.setLastName(lastName);
+                    contact.setEmail(email);
+                    contact.setPhone(phone);
+                    message = "you have successfully edited/ updated this contact";
+                    url = "admin/editResources.jsp";
+                } else {//it's a brand new resource
 
-                contact.setFirstName(firstName);
-                contact.setLastName(lastName);
-                contact.setEmail(email);
-                contact.setPhone(phone);
-                logger.debug("in submit2 block, contact first name:" + contact.getFirstName());
-                cdao.insert(contact);
+                    logger.debug("add new contact, should be null, contact = " + contact);
+                    contact.setFirstName(firstName);
+                    contact.setLastName(lastName);
+                    contact.setEmail(email);
+                    contact.setPhone(phone);
+                    logger.debug("in submit2 block, contact first name:" + contact.getFirstName());
+                   // cdao.insert(contact);// trying this b/c was adding twice
+                   // cdao.saveOrUpdate(contact);
+                    // fdao.insert(resource);  when i had this here it was adding to my db twice
+                    message = "you have successfully added the contact" + resource.getContactId().toString() + " to the resource " + resource.getName() + ". ";
+                    url = "/admin/confirmResource.jsp";
+                }
                 resource.setContactId(contact);
+                cdao.saveOrUpdate(contact); //adding twice so removing, NOT,
+                fdao.saveOrUpdate(resource);
 
-                // fdao.insert(resource);  when i had this here it was adding to my db twice
-                message = "you have successfully added the contact" + resource.getContactId().toString() + " to the resource " + resource.getName() + ". ";
-                url = "/admin/confirmResource.jsp";
-
+                session.setAttribute("message", message);
                 RequestDispatcher dispatcher = req.getRequestDispatcher(url);
                 dispatcher.forward(req, res);
-            } else {//it's a save/update
-                contact = (Contact) session.getAttribute("contact");
-                contact.setFirstName(firstName);
-                contact.setLastName(lastName);
-                contact.setEmail(email);
-                contact.setPhone(phone);
-                resource.setContactId(contact);
-                cdao.saveOrUpdate(contact);
-                fdao.saveOrUpdate(resource);
-                message = "you have updated this contact";
-                url = "admin/editResources.jsp";
             }
 
-            session.setAttribute("message", message);
 
             RequestDispatcher dispatcher = req.getRequestDispatcher(url);
             dispatcher.forward(req, res);

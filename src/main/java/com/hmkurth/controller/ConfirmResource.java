@@ -71,6 +71,7 @@ public class ConfirmResource extends HttpServlet {
             switch (req.getParameter("confirmAdd")) {
                 case "addData":
                     fdao.insert(resource);
+                    logger.debug("FOOD RESOURCE INSERTED");
                     String message = "you have successfully submitted a  food resource, " + resource.getName() + ", an admin will double check entry before adding to the live database";
                     //todo show map location and confirm that
                     session.setAttribute("message", message);

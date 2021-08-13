@@ -665,6 +665,13 @@ footer .social a {
 		padding-right: 0;
 	}
 }
+/*sizes of pictures on showcase pages*/
+.showcaseImg {
+	max-width: 156px;
+	max-height: 200px;
+}
+
+
 
 /* Login and registration process */
 .login-bg {

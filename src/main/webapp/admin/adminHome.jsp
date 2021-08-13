@@ -14,7 +14,7 @@
         <a href="${pageContext.request.contextPath}/deleteUser" class="no-hover fancy-hover">
             <div class="row mobile-left">
                 <div class="col-xs-5 col-sm-12">
-                    <img src="${pageContext.request.contextPath}/assets/img/demo/FLP_marshal.jpg" alt="placeholder image" class="img-responsive img-circle img-pad" />
+                    <img src="${pageContext.request.contextPath}/assets/img/demo/FLP_marshal.jpg" alt="placeholder image" class="showcaseImg img-responsive img-circle img-pad" />
                 </div>
                 <div class="col-xs-7 col-sm-12">
                     <h4>Delete User</h4>
@@ -30,7 +30,7 @@
         <a href="${pageContext.request.contextPath}/addResource" class="no-hover fancy-hover">
             <div class="row mobile-left">
                 <div class="col-xs-5 col-sm-12">
-                    <img src ="${pageContext.request.contextPath}/assets/img/demo/FLP_milwaukee_lansing3.jpg"  alt="placeholder image" class="img-responsive img-circle img-pad" />
+                    <img src ="${pageContext.request.contextPath}/assets/img/demo/FLP_milwaukee_lansing3.jpg"  alt="placeholder image" class="showcaseImg img-responsive img-circle img-pad" />
                 </div>
                 <div class="col-xs-7 col-sm-12">
                     <h4>Add a new food resource</h4>
@@ -45,7 +45,7 @@
         <a href="${pageContext.request.contextPath}/editResource" class="no-hover fancy-hover">
             <div class="row mobile-left">
                 <div class="col-xs-5 col-sm-12">
-                    <img src="${pageContext.request.contextPath}/assets/img/demo/FLP_milwaukee_lansing.jpg" alt="placeholder image" class="img-responsive img-circle img-pad" />
+                    <img src="${pageContext.request.contextPath}/assets/img/demo/FLP_milwaukee_lansing.jpg" alt="placeholder image" class="showcaseImg img-responsive img-circle img-pad" />
                 </div>
                 <div class="col-xs-7 col-sm-12">
                     <h4>Edit Existing food resource</h4>
@@ -61,7 +61,7 @@
     <a href="${pageContext.request.contextPath}/verifyResources" class="no-hover fancy-hover">
         <div class="row mobile-left">
             <div class="col-xs-5 col-sm-12">
-                <img src="${pageContext.request.contextPath}/assets/img/demo/madisonCapitol.jpg" alt="Madison Capitol" class="img-responsive img-circle img-pad"
+                <img src="${pageContext.request.contextPath}/assets/img/demo/madisonCapitol.jpg" alt="Madison Capitol" class="showcaseImg img-responsive img-circle img-pad"
                     />
             </div>
             <div class="col-xs-7 col-sm-12">

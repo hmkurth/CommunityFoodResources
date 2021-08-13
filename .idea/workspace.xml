@@ -9,17 +9,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="reconfiguring resource displays">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210810 2027.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210810 2037.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="update tech specs">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210813 1753.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210813 1807.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210813 1815.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210813 1823.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignDocs/techSpecs.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/techSpecs.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210810 1946.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210810 1956.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210810 2015.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210810 2027.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210810 2037.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddContact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ConfirmResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ConfirmResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/adminHome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/adminHome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/searchShowcase.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/searchShowcase.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/userProfile.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,12 +51,12 @@
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="master" />
+    <option name="BRANCH" value="origin/master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="gitMess" />
+        <entry key="$PROJECT_DIR$" value="july12" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -155,7 +162,18 @@
       <recent name="com.hmkurth.persistence" />
     </key>
   </component>
-  <component name="RunManager" selected="TomEE Server.Tomcat">
+  <component name="RunManager" selected="JUnit.ApiTestServiceClient.testLocationApiDao">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiTestServiceClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
@@ -171,7 +189,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiTestServiceClient.testStaticMapAPI" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApiTestServiceClient.testLocationApiDao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
         <pattern>
@@ -181,7 +199,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
       <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ApiTestServiceClient" />
-      <option name="METHOD_NAME" value="testStaticMapAPI" />
+      <option name="METHOD_NAME" value="testLocationApiDao" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTestServiceClient.testgeoJSON" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CommunityFoodResources" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hmkurth.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
+      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ApiTestServiceClient" />
+      <option name="METHOD_NAME" value="testgeoJSON" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -212,21 +246,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
       <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.LocationDaoTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ResourceOwnerDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CommunityFoodResources" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hmkurth.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hmkurth.persistence" />
-      <option name="MAIN_CLASS_NAME" value="com.hmkurth.persistence.ResourceOwnerDaoTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -323,19 +342,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.ApiTestServiceClient" />
-      <item itemvalue="JUnit.ApiTestServiceClient.testStaticMapAPI" />
-      <item itemvalue="JUnit.ResourceOwnerDaoTest" />
       <item itemvalue="JUnit.FoodResourceTest" />
       <item itemvalue="JUnit.LocationDaoTest" />
       <item itemvalue="TomEE Server.Tomcat" />
+      <item itemvalue="JUnit.ApiTestServiceClient.testgeoJSON" />
+      <item itemvalue="JUnit.ApiTestServiceClient.testLocationApiDao" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApiTestServiceClient.testLocationApiDao" />
+        <item itemvalue="JUnit.ApiTestServiceClient.testgeoJSON" />
         <item itemvalue="JUnit.LocationDaoTest" />
         <item itemvalue="JUnit.ApiTestServiceClient" />
         <item itemvalue="JUnit.FoodResourceTest" />
-        <item itemvalue="JUnit.ResourceOwnerDaoTest" />
-        <item itemvalue="JUnit.ApiTestServiceClient.testStaticMapAPI" />
       </list>
     </recent_temporary>
   </component>
@@ -437,14 +456,7 @@
       <workItem from="1628616015165" duration="2897000" />
       <workItem from="1628621479561" duration="854000" />
       <workItem from="1628622415227" duration="11902000" />
-      <workItem from="1628791947534" duration="1911000" />
-    </task>
-    <task id="LOCAL-00135" summary="finally got the add resource workable, still need to edit now that I figured out the problem">
-      <created>1623776863430</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1623776863430</updated>
+      <workItem from="1628791947534" duration="13325000" />
     </task>
     <task id="LOCAL-00136" summary="getting resource owner addition going...">
       <created>1623956586263</created>
@@ -782,7 +794,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628645432749</updated>
     </task>
-    <option name="localTasksCounter" value="184" />
+    <task id="LOCAL-00184" summary="update tech specs">
+      <created>1628884991167</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1628884991169</updated>
+    </task>
+    <option name="localTasksCounter" value="185" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -815,7 +834,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="figuring out null in params when editing resource" />
     <MESSAGE value="ready to merge for now" />
     <MESSAGE value="messing around with google maps apis" />
     <MESSAGE value="working on a delete resource action" />
@@ -840,7 +858,8 @@
     <MESSAGE value="map stopped loading all together with no devtools/inspect loading" />
     <MESSAGE value="editing add resource" />
     <MESSAGE value="reconfiguring resource displays" />
-    <option name="LAST_COMMIT_MESSAGE" value="reconfiguring resource displays" />
+    <MESSAGE value="update tech specs" />
+    <option name="LAST_COMMIT_MESSAGE" value="update tech specs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -886,14 +905,6 @@
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
-          <line>59</line>
-          <properties class="com.hmkurth.persistence.ApiTestServiceClient" method="testLocationApiDao">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ResourceOwnerDaoTest.java</url>
           <line>143</line>
           <properties class="com.hmkurth.persistence.ResourceOwnerDaoTest" method="insertWithContactSuccess">
@@ -908,6 +919,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java</url>
+          <line>59</line>
+          <properties class="com.hmkurth.persistence.ApiTestServiceClient" method="testLocationApiDao">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="103" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/UserRolesDaoTest.java</url>

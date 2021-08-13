@@ -90,7 +90,7 @@ public class ApiTestServiceClient {
      * test to see if markers show up on the map.  it produces an image, so not sure how to test that...
      * @throws Exception
      */
-    @org.junit.Test
+    @Test
     public void testStaticMapAPI() throws Exception {
         LocationApiDao dao = new LocationApiDao();
         GenericDao<Location> ldao = new GenericDao<>(Location.class);
