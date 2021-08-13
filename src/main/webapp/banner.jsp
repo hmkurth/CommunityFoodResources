@@ -2,8 +2,9 @@
 
 <!--Banner-->
 <div class="banner home-1"  data-type="background" data-speed="4">
-    <div class="banner-interior">
-        <div class="container short">
+    <div class="container short">
+        <div class="banner-interior">
+
             <div class="row">
                 <div class="col-md-5 " >
                     <h2>Welcome To Madison Food Resources</h2>
@@ -16,7 +17,7 @@
                 </div>
 
                 <div class="col-md-6 ">
-                    <img src="${pageContext.request.contextPath}/assets/img/logos/sunLogo.png" alt="madison food resources logo" class="fa-align-center img  img-circle" />
+                    <img src="${pageContext.request.contextPath}/assets/img/logos/sunLogo.png" alt="madison food resources logo" class="fa-align-center img img-responsive img-circle" />
                 </div>
             </div>
 

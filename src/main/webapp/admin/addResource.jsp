@@ -8,17 +8,11 @@
 <div class="login-container">
     <h1 class="text-center pad-bottom-sm">Add a new resource</h1>
 
-
-
-    <!--TODO aria labeled by labels
-     Note that the value for the attribute items must match the name of the corresponding attribute set in the servlet class.
-     As you can see, the values of the drop down list are the IDs of the categories.-->
-
     <form action="${pageContext.request.contextPath}/addResource"  method="post" autocomplete="on">
         <div class="form-group">
             <label for="name">Resource Name</label>
             <input type="text" class="form-control" id="name" name ="name" placeholder="Give this resource a name"  aria-required="true" required value="${newResource.name}">
-            <!-- TODO if/when form is resubmitted, try to keep the data that the user entered  -->
+
 
         </div>
 

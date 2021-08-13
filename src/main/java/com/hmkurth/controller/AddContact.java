@@ -16,9 +16,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * a servlet to add a contact to a food resource to the database
+ * this will also need to retrieve values for editing, confirming, and verifying the resource, set the drop down list for allContacts
  */
 //TODO error handling!  check and redirect!!!
 @WebServlet(name = "AddContact", urlPatterns = { "/addContact" } )
@@ -27,10 +29,60 @@ import java.io.IOException;
 public class AddContact extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
-    GenericDao<FoodResource> fdao;
-    GenericDao<ResourceOwner> odao;
-    GenericDao<Contact> cdao;
+    GenericDao<FoodResource>  fdao = new GenericDao<>(FoodResource.class);
+    GenericDao<ResourceOwner>  odao = new GenericDao<>(ResourceOwner.class);
+    GenericDao<Contact>  cdao = new GenericDao<>(Contact.class);
     FoodResource resource;
+    Contact contact;
+    List<Contact> listContact = cdao.getAll();
+    /**
+     *  Handles HTTP GET requests.
+     *
+     *@param  req                 the HttpServletRequest object
+     *@param  res               the HttpServletResponse object
+     *@exception  ServletException  if there is a Servlet failure
+     *@exception IOException       if there is an IO failure
+     */
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        HttpSession session = req.getSession();
+        String url = "/admin/addContact.jsp";
+        session.setAttribute("listContact", listContact);
+        resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
+
+        String contactId = req.getParameter("contact");
+        req.setAttribute("selectedContactId", contactId);//for selection in the dropdown menu
+        if(contactId != null) {
+            int contactInt = Integer.parseInt(contactId);
+            //set the contact
+            if (contactInt == 9999) {
+                //new contact to add, jsp should display additional fields after the first submit is processed, so redirect
+                contact = new Contact();
+
+            } else if (contactInt == 8888) {
+                resource.setContactId(null);
+                String message = "you have chosen not to add a contact to the resource " + resource.getName();
+                session.setAttribute("message", message);
+                url = "/admin/confirmResource.jsp";
+            }else if (contactInt == 2222) {
+                contact = resource.getContactId();
+                session.setAttribute("contact", contact);
+            } else {
+                //choose an existing contact from the list
+                contact = cdao.getById(contactInt);
+                resource.setContactId(contact);
+                session.setAttribute("contact", contact);
+                String message = "you have successfully added the contact, " + resource.getContactId().getFirstName() + " to the resource " + resource.getName();
+                session.setAttribute("message", message);
+                url = "/admin/confirmResource.jsp";
+
+            }//end else
+            session.setAttribute("contact", contact);
+
+
+        }//end if int not null,
+        RequestDispatcher dispatcher = req.getRequestDispatcher(url);
+        dispatcher.forward(req, res);
+    }
 
     /**
      * Handles HTTP POST requests.
@@ -45,59 +97,55 @@ public class AddContact extends HttpServlet {
 //todo, clean up duplicate code!
         HttpSession session = req.getSession();
         String url = "/admin/addContact.jsp";
-        Contact thisContact;
-        resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
-        fdao = new GenericDao<FoodResource>(FoodResource.class);
-        cdao = new GenericDao<Contact>(Contact.class);
-        String contactId = req.getParameter("contact");
-        req.setAttribute("selectedContactId", contactId);//for selection in the dropdown menu
-        if(contactId != null) {
-            int contactInt = Integer.parseInt(contactId);
-            //set the contact
-            if (contactInt == 9999) {
-                //new contact to add, jsp should display additional fields after the first submit is processed, so redirect
-                url = "/admin/addContact.jsp";
-            } else if (contactInt == 8888) {
-                resource.setContactId(null);
-                String message = "you have chosen not to add a contact to the resource " + resource.getName();
-                session.setAttribute("message", message);
-                url = "/admin/confirmResource.jsp";
-            } else {
-                //choose an existing contact from the list
-                thisContact = cdao.getById(contactInt);
-                resource.setContactId(thisContact);
-                String message = "you have successfully added the contact, " + resource.getContactId().getFirstName() + " to the resource " + resource.getName();
-                session.setAttribute("message", message);
+        String message;
+        String x1 = req.getParameter("submit");
+
+            resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
+            //i keep getting nulls on these values, so i'm trying to find a way around that
+            String firstName = req.getParameter("firstName");
+            String lastName = req.getParameter("lastName");
+            String email = req.getParameter("email");
+            String phone = req.getParameter("phone");
+
+
+            logger.debug("doPost firstname = " + firstName);
+
+            //if new contact is selected, now grab details from the second form
+            String x = req.getParameter("submit2");
+            logger.debug("x at submit2: " + x);
+            if (x != null && contact == null) {//it's a brand new resource
+
+                contact.setFirstName(firstName);
+                contact.setLastName(lastName);
+                contact.setEmail(email);
+                contact.setPhone(phone);
+                logger.debug("in submit2 block, contact first name:" + contact.getFirstName());
+                cdao.insert(contact);
+                resource.setContactId(contact);
+
+                // fdao.insert(resource);  when i had this here it was adding to my db twice
+                message = "you have successfully added the contact" + resource.getContactId().toString() + " to the resource " + resource.getName() + ". ";
                 url = "/admin/confirmResource.jsp";
 
-            }//end else
+                RequestDispatcher dispatcher = req.getRequestDispatcher(url);
+                dispatcher.forward(req, res);
+            } else {//it's a save/update
+                contact = (Contact) session.getAttribute("contact");
+                contact.setFirstName(firstName);
+                contact.setLastName(lastName);
+                contact.setEmail(email);
+                contact.setPhone(phone);
+                resource.setContactId(contact);
+                cdao.saveOrUpdate(contact);
+                fdao.saveOrUpdate(resource);
+                message = "you have updated this contact";
+                url = "admin/editResources.jsp";
+            }
+
+            session.setAttribute("message", message);
+
             RequestDispatcher dispatcher = req.getRequestDispatcher(url);
             dispatcher.forward(req, res);
 
-        }//end if int not null, todo what if it is null can it be null if they hit submit??
-
-
-
-        //if new contact is selected, now grab details from the second form
-        String x = req.getParameter("submit2");
-        if ( x != null && x.equals("Next")) {
-            thisContact = new Contact();
-            thisContact.setFirstName(req.getParameter("firstName"));
-            thisContact.setLastName(req.getParameter("lastName"));
-            thisContact.setEmail(req.getParameter("email"));
-            thisContact.setPhone(req.getParameter("phone"));
-
-            cdao.insert(thisContact);
-            resource.setContactId(thisContact);
-           // fdao.insert(resource);
-            String message = "you have successfully added the contact" + resource.getContactId().toString() + " to the resource " + resource.getName() + ". " ;
-            session.setAttribute("message", message);
-            url = "/admin/confirmResource.jsp";
         }
-
-        RequestDispatcher dispatcher = req.getRequestDispatcher(url);
-        dispatcher.forward(req, res);
-
-
     }
-}

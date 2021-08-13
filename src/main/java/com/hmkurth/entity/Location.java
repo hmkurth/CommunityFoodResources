@@ -26,6 +26,7 @@ import java.util.Set;
 @Table(name = "location")//case sensitive
 public class Location {
     @Id
+    @ToString.Exclude
     @GeneratedValue(strategy= GenerationType.AUTO, generator = "native")
     @GenericGenerator(name="native",strategy="native")
     @GenericField
@@ -95,9 +96,31 @@ public class Location {
         Location location = (Location) o;
         return getId() == location.getId() && getNameDesc().equals(location.getNameDesc()) && getStreetAddressOrIntersection().equals(location.getStreetAddressOrIntersection()) && getCity().equals(location.getCity()) && getState().equals(location.getState()) && getZip().equals(location.getZip()) && Objects.equals(getBusInfo(), location.getBusInfo()) && Objects.equals(getComments(), location.getComments());
     }
-
     @Override
+
     public int hashCode() {
         return Objects.hash(getId(), getNameDesc(), getStreetAddressOrIntersection(), getCity(), getState(), getZip(), getBusInfo(), getComments());
+    }
+
+    @Override
+
+    public String toString(){
+        String sBus;
+        if (busInfo != null){
+             sBus= ",  Bus info if available: " + busInfo;
+        } else {
+            sBus= "";
+        }
+        String sComm;
+        if (busInfo != null){
+            sComm= ",  Comments: " + comments;
+        } else {
+            sComm= "";
+        }
+
+
+
+    String thisString = nameDesc + " address: " + streetAddressOrIntersection + "  " + city + " , " + state + sBus + sComm ;
+        return thisString;
     }
 }

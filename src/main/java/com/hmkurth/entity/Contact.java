@@ -1,10 +1,7 @@
 package com.hmkurth.entity;
 
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -23,10 +20,11 @@ import java.util.Objects;
 @Table(name = "contact_details")//case sensitive
 public class Contact {
     @Id
+    @ToString.Exclude
     @GeneratedValue(strategy= GenerationType.AUTO, generator = "native")
     @GenericGenerator(name="native",strategy="native")
     private int id;
-    @NonNull
+
     @Column(name="first_name")
     private String firstName;
     @NonNull
@@ -34,22 +32,10 @@ public class Contact {
     private String lastName;
     private String email;
     private String phone;
+    @ToString.Exclude
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "owner_id")
     private ResourceOwner owner;
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Contact)) return false;
-        Contact contact = (Contact) o;
-        return getId() == contact.getId() && getFirstName().equals(contact.getFirstName()) && getLastName().equals(contact.getLastName()) && Objects.equals(getEmail(), contact.getEmail()) && Objects.equals(getPhone(), contact.getPhone());
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getId(), getFirstName(), getLastName(), getEmail(), getPhone());
-    }
 
     /**
      * Instantiates a new Contact.
@@ -66,4 +52,24 @@ public class Contact {
         this.phone = phone;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Contact)) return false;
+        Contact contact = (Contact) o;
+        return getId() == contact.getId() && getFirstName().equals(contact.getFirstName()) && getLastName().equals(contact.getLastName()) && Objects.equals(getEmail(), contact.getEmail()) && Objects.equals(getPhone(), contact.getPhone());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getFirstName(), getLastName(), getEmail(), getPhone());
+    }
+
+
+    @Override
+
+    public String toString(){
+        String thisString = firstName + "  " + lastName + ", email:  " + email + " ,  phone: " + phone  ;
+        return thisString;
+    }
 }

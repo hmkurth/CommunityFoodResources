@@ -27,6 +27,7 @@
     <script src="${pageContext.request.contextPath}/assets/js/jquery.smooth-scroll.min.js"></script>
     <script src="${pageContext.request.contextPath}/assets/js/jquery.vide.min.js"></script>
     <script src="${pageContext.request.contextPath}/assets/js/jquery.bgswitcher.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/js/map.js"></script>
     <!--[if lt IE 9]>
     <script src="${pageContext.request.contextPath}/assets/js/html5shiv.min.js"></script>
     <script src="${pageContext.request.contextPath}/assets/js/respond.min.js"></script>

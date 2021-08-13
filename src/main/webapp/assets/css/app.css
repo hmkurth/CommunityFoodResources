@@ -17,7 +17,7 @@ lighter terracotta= fb8139
 body {
 	font-family: 'Domine', serif;
 	/*font-family: 'Roboto', sans-serif; */
-	font-size: 16px;
+	font-size: 14px;
 	color: #666;
 	padding-top: 123px;
 	-webkit-font-smoothing: antialiased;
@@ -409,7 +409,7 @@ a {
 	background-position: center top;
 	background-size: cover;
 	background-attachment: fixed; 
-	color: #00583a;
+	color: #0b0e0d;
 }
 .vid-banner {
 	background-color: transparent;
@@ -465,9 +465,7 @@ a {
 	.banner p {
 		text-align: center;
 	}
-	.banner-interior {
-		background-color: rgba(0,0,0,0.35);
-	}
+
 	.banner .container, .banner .container.tall {
 		min-height: 280px;
 		width: 100%;

@@ -26,11 +26,11 @@ import java.util.List;
 public class EditResource extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
-    GenericDao<Type> tdao;
-    GenericDao<FoodResource> fdao;
+    GenericDao<Type> tdao = new GenericDao<>(Type.class);
+    GenericDao<FoodResource> fdao = new GenericDao<>(FoodResource.class);
     GenericDao<ResourceOwner> odao;
     GenericDao<Location> ldao;
-    GenericDao<Contact> cdao;
+    GenericDao<Contact>  cdao = new GenericDao<>(Contact.class);
     FoodResource resource;
 
     /**
@@ -44,31 +44,49 @@ public class EditResource extends HttpServlet {
     public void doGet(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
         HttpSession session = req.getSession();
-        fdao = new GenericDao<>(FoodResource.class);
+
+//get the list of entities  to populate a dropdown menu for the form input
+        odao = new GenericDao<>(ResourceOwner.class);
+        List<ResourceOwner> listOwner = odao.getAll();
+        session.setAttribute("listOwner", listOwner);
+        logger.debug("listOwner value from dropdown menu : " + listOwner);
+        //get the list of types of resources to populate a dropdown menu for the form input
         tdao = new GenericDao<>(Type.class);
-        List<FoodResource> listAll = fdao.getAll();
-        session.setAttribute("listAll", listAll);
         List<Type> listType = tdao.getAll();
         session.setAttribute("listType", listType);
+        logger.debug("list type : " + listType);
+        //get the list of contact to populate a dropdown menu for the form input
+        cdao = new GenericDao<>(Contact.class);
+        List<Contact> listContact = cdao.getAll();
+        session.setAttribute("listContact", listContact);
+        logger.debug("list contact : " + listContact);
+        fdao = new GenericDao<>(FoodResource.class);
+        List<FoodResource> listAll = fdao.getAll();
+        session.setAttribute("listAll", listAll);
+        ldao = new GenericDao<>(Location.class);
+        List<Location> listLocation = ldao.getAll();
+        session.setAttribute("allLocations", listLocation);
 
         //select a resource, either continuing from the verify screen, choosing from the dropdown menu,
         //first check to see if the resource was set in verify
         if (!(req.getAttribute("resourceToEdit") == null)) {
             resource = (FoodResource) req.getAttribute("resourceToEdit");
-            logger.debug("editing this resource: " + resource);
-
+            session.setAttribute("newResource", resource);
+            logger.debug("editing this resource, from the req.attribute resourceToEdit: " + resource);
         } else if (req.getParameter("resourceToEdit") != null) {
             String resourceId = req.getParameter("resourceToEdit");
             if (resourceId != null) {
                 req.setAttribute("selectedResourceId", resourceId);//for selection in the dropdown menu
                 int intId = Integer.parseInt(resourceId);
                 resource = fdao.getById(intId);
-
                 session.setAttribute("newResource", resource);
-                logger.debug("resource to Edit " + req.getAttribute("resourceToEdit"));
+                session.setAttribute("resourceToEdit", resource);
             }
         }
-/*set session attributes for further editing
+
+
+        logger.debug("resource to Edit, from newResource session attribute " +session.getAttribute("newResource"));
+/*set session attributes for further editing, this creates errors
         Location location = resource.getLocation();
         session.setAttribute("location", location);
         Contact contact = resource.getContactId();
@@ -98,12 +116,12 @@ public class EditResource extends HttpServlet {
         String url = "/admin/editResources.jsp";
         String message;
         HttpSession session = req.getSession();
-      // resource= (FoodResource) req.getAttribute("newResource");
+      resource= (FoodResource) session.getAttribute("newResource");
         tdao = new GenericDao<>(Type.class);
         List<Type> listType = tdao.getAll();
         session.setAttribute("listType", listType);
         int typeId;
-
+logger.debug("resource at doPost: " + resource);
                 //get params
                 resource.setName(req.getParameter("name"));
                 resource.setDescription(req.getParameter("description"));
@@ -137,11 +155,12 @@ public class EditResource extends HttpServlet {
                 session.setAttribute("contact", contact);
                 ResourceOwner owner = resource.getOwner();
                 session.setAttribute("owner", owner);
+                fdao.saveOrUpdate(resource);
                 switch (req.getParameter("confirmVerify")) {
                     case "addData":
                         resource.setVerificationStatus(true);
                         //save or update
-                        fdao.saveOrUpdate(resource);
+
                         message = "you have successfully verified a  food resource, " + resource.getName() + ".";
                         //todo show map location and confirm that
                         req.setAttribute("message", message);
@@ -150,12 +169,15 @@ public class EditResource extends HttpServlet {
                         url = "/admin/adminHome.jsp";
                         break;
                     case "addLocation":
+                        session.setAttribute("location", location);
                         url = "/admin/addLocation.jsp";
                         break;
                     case "addContact":
+                        session.setAttribute("contact", contact);
                         url = "/admin/addContact.jsp";
                         break;
                     case "addResourceOwner":
+                        session.setAttribute("owner", owner);
                         url = "/admin/addResourceOwner.jsp";
                         break;
                     case "deleteResource":

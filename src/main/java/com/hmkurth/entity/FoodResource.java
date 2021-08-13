@@ -21,6 +21,7 @@ import java.util.Objects;
 public class FoodResource {
     @GenericField
     @Id
+    @ToString.Exclude
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
@@ -38,9 +39,10 @@ public class FoodResource {
     private Type typeId;//fk to resource_type
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
-    @OneToOne
-    @PrimaryKeyJoinColumn
-    @FullTextField
+    @ManyToOne
+    @JoinColumn(name = "resource_owner",
+            foreignKey = @ForeignKey(name = "resource_owners_food_resources_id_fk")
+    )
     private ResourceOwner owner;
     @NonNull
     @FullTextField
@@ -79,8 +81,6 @@ public class FoodResource {
     @FullTextField
     @Column(name = "dietary_considerations")
     private String dietaryConsiderations;
-
-
     @NonNull
     @Column(name = "is_verified")
     boolean verificationStatus;

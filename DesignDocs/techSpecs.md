@@ -3,30 +3,56 @@
 
 
 Project Technologies/Techniques
-Security/Authentication
-Tomcat's JDBC Realm Authentication
-Database
-MySQL 8.0.23
-ORM Framework
-Hibernate 5
-Dependency Management
-Maven
-RESTful services
-CSS
-Bootstrap 
-Data Validation
+*Security/Authentication
 
-Logging
-Log4J2
-Hosting
-AWS
-Independent Research Topic/s: Java Accessibility API
-CI tools in AWS
+*Tomcat's JDBC Realm Authentication
 
-Google Maps Geocoding API
+*Database :  MySQL 8.0.23
 
-Hibernate Search
-Project Lombok
-Unit Testing
-JUnit tests to achieve 69%+ code coverage
-IDE: IntelliJ IDEA
+*ORM Framework
+
+*Hibernate 5
+
+*Dependency Management
+
+*Maven
+
+*RESTful services
+
+*CSS
+
+*Html
+
+*Javascript
+
+*Bootstrap 
+
+*Data Validation
+
+*Logging
+
+*Log4J2
+
+*Hosting
+
+*AWS
+
+*Independent Research Topic/s: Java Accessibility API
+
+*CI tools in AWS
+
+*Git
+
+*Google Maps Geocoding API
+
+*Google Maps Javascript API
+
+*Project Lombok
+
+*Unit Testing
+
+*JUnit tests to achieve 69%+ code coverage
+
+*IDE: IntelliJ IDEA
+
+*Canva

@@ -30,11 +30,11 @@
         <a href="${pageContext.request.contextPath}/addResource" class="no-hover fancy-hover">
             <div class="row mobile-left">
                 <div class="col-xs-5 col-sm-12">
-                    <img src="${pageContext.request.contextPath}/assets/img/demo/FLP_milwaukee_lansing.jpg" alt="placeholder image" class="img-responsive img-circle img-pad" />
+                    <img src ="${pageContext.request.contextPath}/assets/img/demo/FLP_milwaukee_lansing3.jpg"  alt="placeholder image" class="img-responsive img-circle img-pad" />
                 </div>
                 <div class="col-xs-7 col-sm-12">
                     <h4>Add a new food resource</h4>
-                    <p>Add a new resource to the database, you will then have the option to add a location, if applicable, for the resource</p>
+                    <p>Add a new resource to the database, we will want information on the details, location, and contacts, if applicable, for the resource</p>
                 </div>
             </div>
         </a>

@@ -129,7 +129,7 @@ List<Location> allLocations = new ArrayList<Location>();
             WebTarget target =
                     client.target("https://maps.googleapis.com/maps/api/staticmap?center=43.0731,-89.4012&zoom=10&size=400x400&markers=my%20house%7C" + lat + ",%20" + lng + "&key=AIzaSyCLGoKo1ZhK7TyAsvpPwQZmlLsAQxWnpRM");
             String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
-
+    //now how do i connect this marker to the map??
 
 
         }

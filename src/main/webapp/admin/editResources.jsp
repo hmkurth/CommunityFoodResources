@@ -6,7 +6,8 @@
 <jsp:include page="../header.jsp"/>
 
 <div class="login-container">
-    <h1 class="text-center pad-bottom-sm">Edit an existing resource</h1>
+    <h5 class = "row text-center pad-bottom-sm">${message} </h5>
+    <h3 class="text-center pad-bottom-sm">Edit an existing resource</h3>
 
     <form action="${pageContext.request.contextPath}/editResource"  method="get" autocomplete="on">
 
@@ -28,7 +29,7 @@
     </form>
 
 
-    <h1 class="text-center pad-bottom-sm">Edit a Resource</h1>
+
     <c:if test="${not empty resourceToEdit}">
         <h3>The resource to edit: <c:out value='${requestScope.resourceToEdit.name}'/></h3>
     </c:if>
@@ -49,7 +50,6 @@
         <div class="form-group">
             <label for="type">Resource Type, please select the most accurate category for this resource, or select other
                 <select name="type" id="type">
-
                     <c:forEach items="${listType}" var="type">
                         <option value="${type.id}">type name: ${type.name}</option>
                     </c:forEach>
