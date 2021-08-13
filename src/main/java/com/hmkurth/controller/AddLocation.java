@@ -81,7 +81,7 @@ public class AddLocation extends HttpServlet {
                     //edit existing location
                     location = resource.getLocation();
                     isNew = false;
-                    session.setAttribute("isNew", false);//always false
+                    session.setAttribute("isNew", isNew);//always false
                     session.setAttribute("location", location);
                     break;
                 default:
@@ -116,7 +116,7 @@ public class AddLocation extends HttpServlet {
 
         HttpSession session = req.getSession();
         String message;
-        String url = "/admin/addLocation,jsp";
+        String url = "/admin/addLocation.jsp";
         Location location2 = new Location();//holder for the converted location
         resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
         location = (Location)session.getAttribute("location");
@@ -127,10 +127,10 @@ public class AddLocation extends HttpServlet {
         String zip=req.getParameter("zip");
         String busInfo=req.getParameter("busInfo");
         String comments=req.getParameter("comments");
-        /**logger.debug("Is this new, isNew variable? " + isNew);
+       logger.debug("Is this new, isNew variable? " + isNew);
         logger.debug("Is this new, isNew session? " + session.getAttribute("isNew"));
 
-
+        /**
         logger.debug("Location1from session att: " + session.getAttribute("location"));
         logger.debug("Location1 resource.getLoc: " + resource.getLocation());
         logger.debug("Location1:req att:  " + req.getAttribute("location"));
@@ -143,8 +143,8 @@ public class AddLocation extends HttpServlet {
 
             logger.debug("value x2 : " + x2);
 
-            logger.debug("2 Location1 resource.getLoc: " + resource.getLocation());
-            logger.debug("2 Location1:req att:  " + req.getAttribute("location"));
+            //logger.debug("2 Location1 resource.getLoc: " + resource.getLocation());//works
+           // logger.debug("2 Location1:req att:  " + req.getAttribute("location"));//null
             logger.debug("2 Location1from session att: " + session.getAttribute("location"));
 
 
@@ -160,7 +160,7 @@ public class AddLocation extends HttpServlet {
             try {
                 LocationApiDao locationApiDao = new LocationApiDao();
                 location2 = locationApiDao.convertAddressToLatAndLong(location);
-                logger.debug("TRY getting long and lat, location2" + location2.toString());
+                logger.debug("In TRY getting long and lat, location2 lat : " + location2.getLat());
             } catch (Exception e) {
                 logger.error(e);
             }//end try catch
@@ -176,7 +176,7 @@ public class AddLocation extends HttpServlet {
                 //then forward to contacts
                 url = "/admin/addContact.jsp";
             } else {
-                logger.debug("else, not new, location2.lat : " + location2.getLat());
+                logger.debug("else, not new, location2.lat : " + location2.getLat());//lat is null
 
                 message = "you have successfully edited this resource";
                 //then forward to edit

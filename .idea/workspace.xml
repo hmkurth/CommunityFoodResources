@@ -9,31 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="editing add resource">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210810 1937.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210810 1946.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210810 1956.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/allFreeLittlePantries.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/allResources.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/communityAidAndSupport.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/communityMeals.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/govResources.jsp" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="reconfiguring resource displays">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210810 2027.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210810 2037.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignDocs/techSpecs.md" beforeDir="false" afterPath="$PROJECT_DIR$/DesignDocs/techSpecs.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210724 0310.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210724 0320.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210810 1946.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210810 1956.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210810 2015.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ForwardResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ForwardResources.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/LoginAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/seedDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/seedDb.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/foodPantries.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/indexSearchShowcase.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/searchShowcase.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resourceLanding.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resourceLanding.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,19 +156,6 @@
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.Tomcat">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ApiTestServiceClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
@@ -463,14 +436,8 @@
       <workItem from="1628397230266" duration="574000" />
       <workItem from="1628616015165" duration="2897000" />
       <workItem from="1628621479561" duration="854000" />
-      <workItem from="1628622415227" duration="9443000" />
-    </task>
-    <task id="LOCAL-00134" summary="trying to refactor adding owner to be independent/reusable">
-      <created>1621325443681</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1621325443681</updated>
+      <workItem from="1628622415227" duration="11902000" />
+      <workItem from="1628791947534" duration="1911000" />
     </task>
     <task id="LOCAL-00135" summary="finally got the add resource workable, still need to edit now that I figured out the problem">
       <created>1623776863430</created>
@@ -808,7 +775,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627116575319</updated>
     </task>
-    <option name="localTasksCounter" value="183" />
+    <task id="LOCAL-00183" summary="reconfiguring resource displays">
+      <created>1628645432749</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1628645432749</updated>
+    </task>
+    <option name="localTasksCounter" value="184" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -841,7 +815,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adding resource back working, verification done" />
     <MESSAGE value="figuring out null in params when editing resource" />
     <MESSAGE value="ready to merge for now" />
     <MESSAGE value="messing around with google maps apis" />
@@ -866,7 +839,8 @@
     <MESSAGE value="stuck on getting multiple markers to populate map" />
     <MESSAGE value="map stopped loading all together with no devtools/inspect loading" />
     <MESSAGE value="editing add resource" />
-    <option name="LAST_COMMIT_MESSAGE" value="editing add resource" />
+    <MESSAGE value="reconfiguring resource displays" />
+    <option name="LAST_COMMIT_MESSAGE" value="reconfiguring resource displays" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
