@@ -9,19 +9,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="before trying to move the add resource function to main">
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="after moving the add Resource suite to open app">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210814 0301.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210814 0335.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210814 0341.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddContact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ConfirmResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ConfirmResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/EditResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/EditResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addContact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addContact.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addLocation.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addResource.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addResourceOwner.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addResourceOwner.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/confirmResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/confirmResource.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210813 1851.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210814 0042.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210814 0108.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ForwardResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ForwardResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/VerifyResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/VerifyResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addResource.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/confirmResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/confirmResource.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/indexMain.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/indexMain.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/signUpSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/signUpSuccess.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,6 +164,17 @@
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.Tomcat">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiTestServiceClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
@@ -442,14 +459,7 @@
       <workItem from="1628622415227" duration="11902000" />
       <workItem from="1628791947534" duration="14777000" />
       <workItem from="1628919416255" duration="1263000" />
-      <workItem from="1628921194746" duration="1660000" />
-    </task>
-    <task id="LOCAL-00138" summary="trying to edit styles...">
-      <created>1624164212288</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1624164212288</updated>
+      <workItem from="1628921194746" duration="8235000" />
     </task>
     <task id="LOCAL-00139" summary="got some of my themes colors integrated into the css.">
       <created>1624168198293</created>
@@ -787,7 +797,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628922686833</updated>
     </task>
-    <option name="localTasksCounter" value="187" />
+    <task id="LOCAL-00187" summary="after moving the add Resource suite to open app">
+      <created>1628923573170</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1628923573170</updated>
+    </task>
+    <option name="localTasksCounter" value="188" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -820,7 +837,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="working on a delete resource action" />
     <MESSAGE value="delete resource working" />
     <MESSAGE value="adding edit resource dropdown menu" />
     <MESSAGE value="creating separate controller and jsp for edit resource" />
@@ -845,7 +861,8 @@
     <MESSAGE value="update tech specs" />
     <MESSAGE value="working on add contact again" />
     <MESSAGE value="before trying to move the add resource function to main" />
-    <option name="LAST_COMMIT_MESSAGE" value="before trying to move the add resource function to main" />
+    <MESSAGE value="after moving the add Resource suite to open app" />
+    <option name="LAST_COMMIT_MESSAGE" value="after moving the add Resource suite to open app" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

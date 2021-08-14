@@ -4,11 +4,19 @@
 <title>Add or Edit a Resource</title>
 
 <jsp:include page="header.jsp"/>
+<!-- Begin main page content -->
+<div class="content" id="main_content">
+    <div class="container">
+    <br/>
+    <br/>
+    <h1 class="text-center pad-bottom-sm pad-top">Add a new community food resource</h1>
+    <p class="lead"><strong>Thank you for contributing to the community resource collection.</strong><br/>
+        Our database takes in information about the resource in 4 sections, or related fields.
+    The first section will go through general details, the next section asks for a specific location, if applicable.  You will next have the option to add a resource owner, for groups that may have more than one resource/service to offer.
+    You will then have the option to add contact details.  This could be a specific person, or the office of an agency.  Please provide as accurate answers as possible in order to provide the best service to our community.
+    Thanks for your contribution!</p>
 
-<div class="login-container">
-    <h1 class="text-center pad-bottom-sm">Add a new resource</h1>
-
-    <form action="${pageContext.request.contextPath}/addResource"  method="post" autocomplete="on">
+    <form action="${pageContext.request.contextPath}/addResource"  method="post" autocomplete="on" class="form-inline pad-top-sm">
         <div class="form-group">
             <label for="name">Resource Name</label>
             <input type="text" class="form-control" id="name" name ="name" placeholder="Give this resource a name"  aria-required="true" required value="${newResource.name}">
@@ -28,7 +36,7 @@
         </div>
 
         <div class="form-group">
-            <label for="description">Description</label>
+            <label for="description">Description of service</label>
             <textarea class="form-control" id="description" name ="description" aria-required="true" required maxlength="500" placeholder="Provide a short description(max 500 characters)"><c:out value="${newResource.description}"/></textarea>
         </div>
 

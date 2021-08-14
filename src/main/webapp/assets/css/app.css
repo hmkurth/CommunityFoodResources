@@ -156,6 +156,7 @@ a {
 }
 .btn-primary {
 	background-color: #eba327;
+	color: #0b0e0d;
 	border-color:#975128;
 	border-radius: 30px;
 	font-weight: 700;
@@ -198,8 +199,9 @@ a {
 /* Styling for navigation menu */
 .top-header {
 	font-size: 14px;
-	background-color: #3b8b69;
 	color: #f6f6e9;
+	background-color: #975128;
+
 }
 .navbar-white .top-header {
 	background-color: #f6f6e9;

@@ -12,7 +12,7 @@
             <div class="col-md-4 col-md-offset-1">
                 <h3>Madison Community Food Resources</h3>
                 <p class="lead">From government programs to free little pantries down the street, community meals to local aid and support, we have you covered if you need help with food.</p>
-                <a href="${pageContext.request.contextPath}/forwardResources" class="btn btn-success btn-lg">Find Food Resources</a>
+                <a href="${pageContext.request.contextPath}/forwardResources" class="btn btn-primary btn-lg">Find Food Resources</a>
                 <hr />
 
 

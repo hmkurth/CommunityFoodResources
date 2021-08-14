@@ -78,15 +78,8 @@
 				<!-- Main site header -->
 				<div class="collapse navbar-collapse  pull-right" id="top_main_navigation">
 				<ul class="nav navbar-nav  pull-right">
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Food Resources<span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="${pageContext.request.contextPath}/forwardResources">Find Food Resources</a></li>
-
-								<li><a href="${pageContext.request.contextPath}/mapAll">Map Demo</a></li>
-							</ul>
-						</li>
-
+						<li><a href="${pageContext.request.contextPath}/forwardResources">Find Food Resources</a></li>
+						<li><a href="${pageContext.request.contextPath}/addResource">Add A Community Food Resource</a></li>
 						<li><a href="${pageContext.request.contextPath}/aboutProject.jsp">About This Project</a></li>
 
 					</ul>

@@ -90,13 +90,13 @@ public class VerifyResources extends HttpServlet {
                     url = "/admin/adminHome.jsp";
                     break;
                 case "addLocation":
-                    url = "/admin/addLocation.jsp";
+                    url = "/addLocation.jsp";
                     break;
                 case "addContact":
-                    url = "/admin/addContact.jsp";
+                    url = "/addContact.jsp";
                     break;
                 case "addResourceOwner":
-                    url = "/admin/addResourceOwner.jsp";
+                    url = "/addResourceOwner.jsp";
                     break;
                 case "editResource":
                     url = "/admin/editResources.jsp";

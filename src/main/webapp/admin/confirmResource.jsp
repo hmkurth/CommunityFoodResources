@@ -1,8 +1,8 @@
 <%@ page import="java.util.Enumeration" %>
-<%@include file="taglib.jsp"%>
-    <jsp:include page="head.jsp"/>
+<%@include file="../taglib.jsp"%>
+    <jsp:include page="../head.jsp"/>
     <title>Add Resource Success</title>
-    <jsp:include page="header.jsp"/>
+    <jsp:include page="../header.jsp"/>
 
 
 
@@ -120,4 +120,4 @@
 
 
 
-    <jsp:include page="footer.jsp"/>
+    <jsp:include page="../footer.jsp"/>
