@@ -1,5 +1,5 @@
 <!-- Image row NEW MARKUP -->
-<div class="row text-center">
+<div class="row text-center pad-bottom">
 
     <hr class="visible-xs col-xs-12" />
 
@@ -51,6 +51,7 @@
     </div>
 </div>
 
+<hr/>
 
 <!-- Image row NEW MARKUP -->
 <div class="row text-center">

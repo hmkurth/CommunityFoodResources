@@ -9,24 +9,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="update tech specs">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210813 1753.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210813 1807.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210813 1815.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210813 1823.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="working on add contact again">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210813 1851.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210814 0042.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210814 0108.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210810 2027.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210810 2037.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddContact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ConfirmResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ConfirmResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/entity/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/adminHome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/adminHome.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210813 1753.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210813 1807.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210813 1815.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210813 1823.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/cfrl_contact_details_1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/currentData/cfrl_contact_details.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/cfrl_food_resources_1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/currentData/cfrl_food_resources.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/cfrl_location_1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/currentData/cfrl_location.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/cfrl_resource_owners_1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/currentData/cfrl_resource_owners.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/cfrl_resource_type_1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/currentData/cfrl_resource_type.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/cfrl_user_roles_1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/currentData/cfrl_user_roles.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/cfrl_users_1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/currentData/cfrl_users.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/seedDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/seedDb.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/sqlExportData.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/indexMain.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/indexMain.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/searchShowcase.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/searchShowcase.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/userProfile.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hmkurth/persistence/ApiTestServiceClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +117,7 @@
     <property name="database.data.extractors.current.id" value="SQL Inserts" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../accessibilityTemplates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/DesignDocs" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -140,11 +144,11 @@
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\resources\sql\currentData" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\resources\sql" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\resources" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\DesignDocs\sql" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\DesignDocs" />
-      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -162,18 +166,7 @@
       <recent name="com.hmkurth.persistence" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApiTestServiceClient.testLocationApiDao">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TomEE Server.Tomcat">
     <configuration name="ApiTestServiceClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
@@ -344,9 +337,9 @@
       <item itemvalue="JUnit.ApiTestServiceClient" />
       <item itemvalue="JUnit.FoodResourceTest" />
       <item itemvalue="JUnit.LocationDaoTest" />
-      <item itemvalue="TomEE Server.Tomcat" />
       <item itemvalue="JUnit.ApiTestServiceClient.testgeoJSON" />
       <item itemvalue="JUnit.ApiTestServiceClient.testLocationApiDao" />
+      <item itemvalue="TomEE Server.Tomcat" />
     </list>
     <recent_temporary>
       <list>
@@ -456,14 +449,9 @@
       <workItem from="1628616015165" duration="2897000" />
       <workItem from="1628621479561" duration="854000" />
       <workItem from="1628622415227" duration="11902000" />
-      <workItem from="1628791947534" duration="13325000" />
-    </task>
-    <task id="LOCAL-00136" summary="getting resource owner addition going...">
-      <created>1623956586263</created>
-      <option name="number" value="00136" />
-      <option name="presentableId" value="LOCAL-00136" />
-      <option name="project" value="LOCAL" />
-      <updated>1623956586263</updated>
+      <workItem from="1628791947534" duration="14777000" />
+      <workItem from="1628919416255" duration="1263000" />
+      <workItem from="1628921194746" duration="973000" />
     </task>
     <task id="LOCAL-00137" summary="trying to edit styles...">
       <created>1624161486070</created>
@@ -801,7 +789,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628884991169</updated>
     </task>
-    <option name="localTasksCounter" value="185" />
+    <task id="LOCAL-00185" summary="working on add contact again">
+      <created>1628897982373</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1628897982373</updated>
+    </task>
+    <option name="localTasksCounter" value="186" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -834,7 +829,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ready to merge for now" />
     <MESSAGE value="messing around with google maps apis" />
     <MESSAGE value="working on a delete resource action" />
     <MESSAGE value="delete resource working" />
@@ -859,7 +853,8 @@
     <MESSAGE value="editing add resource" />
     <MESSAGE value="reconfiguring resource displays" />
     <MESSAGE value="update tech specs" />
-    <option name="LAST_COMMIT_MESSAGE" value="update tech specs" />
+    <MESSAGE value="working on add contact again" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on add contact again" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

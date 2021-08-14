@@ -997,3 +997,13 @@ Those coming to the food pantry are invited to choose food based on what is avai
 [DEBUG] 2021-08-13 18:38:54.952 [http-nio-8080-exec-6] EditResource - resource at doPost: FoodResource(id=64, name=Prairie Rd Pantry, type_id=Type(name=food pantry), owner=null, description=Free Little Pantry, location=Prairie Rd Pantry address: 1417 Prairie Rd  Madison , WI,  Bus info if available: ,  Comments:  , contactId= Nicki  Stapleton, email:  nicki.stapleton@gmail.com ,  phone: , comments=, serviceArea=, website=, documentation=none, daysOfWeek=, deliveryOffered=false, deliveryDescription=, dietaryConsiderations=)
 [DEBUG] 2021-08-13 18:38:54.987 [http-nio-8080-exec-6] EditResource - Resource at 'confirm: : FoodResource(id=64, name=Prairie Rd Pantry, type_id=Type(name=free little pantry), owner=null, description=Free Little Pantry, location=Prairie Rd Pantry address: 1417 Prairie Rd  Madison , WI,  Bus info if available: ,  Comments:  , contactId= Nicki  Stapleton, email:  nicki.stapleton@gmail.com ,  phone: , comments=, serviceArea=, website=, documentation=none, daysOfWeek=, deliveryOffered=false, deliveryDescription=, dietaryConsiderations=)
 [DEBUG] 2021-08-13 18:38:55.768 [http-nio-8080-exec-6] GenericDao - Searching for person with verificationStatus = false
+[DEBUG] 2021-08-13 18:45:33.347 [http-nio-8080-exec-2] GenericDao - Searching for person with verificationStatus = true
+[DEBUG] 2021-08-13 18:51:29.281 [http-nio-8080-exec-4] GenericDao - Searching for person with verificationStatus = false
+[INFO ] 2021-08-14 00:42:55.492 [main] LocationApiDao - com.hmkurth.ApiLocation.Result@470f0637
+[INFO ] 2021-08-14 00:42:55.496 [main] LocationApiDao - lng, -89.33068
+[DEBUG] 2021-08-14 00:42:55.496 [main] LocationApiDao - status: OK
+[INFO ] 2021-08-14 01:08:39.658 [main] LocationApiDao - com.hmkurth.ApiLocation.Result@3387ab0
+[INFO ] 2021-08-14 01:08:39.674 [main] LocationApiDao - lng, -89.33068
+[DEBUG] 2021-08-14 01:08:39.674 [main] LocationApiDao - status: OK
+[DEBUG] 2021-08-14 01:27:29.300 [http-nio-8080-exec-3] GenericDao - Searching for person with verificationStatus = true
+[DEBUG] 2021-08-14 01:27:44.625 [http-nio-8080-exec-5] GenericDao - Searching for person with verificationStatus = true
