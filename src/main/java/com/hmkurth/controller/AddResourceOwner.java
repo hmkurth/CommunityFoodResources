@@ -42,7 +42,7 @@ public class AddResourceOwner extends HttpServlet {
         int resourceId = (int) session.getAttribute("newResourceId");
         resource = (FoodResource) req.getAttribute("newResource"); //get the unsaved resource from the previous request
         logger.debug("This food resource in doget: " + resource.getName());
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/addResourceOwner.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/addResourceOwner.jsp");
         dispatcher.forward(req, res);
 
     }
@@ -59,7 +59,7 @@ public class AddResourceOwner extends HttpServlet {
 //todo, clean up duplicate code!
         HttpSession session = req.getSession();
 
-        String url = "/admin/addLocation.jsp";
+        String url = "/addLocation.jsp";
         ResourceOwner thisOwner;
         resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
         logger.info("forwarded food resource = " + resource);
@@ -75,7 +75,7 @@ public class AddResourceOwner extends HttpServlet {
             //set the owner
             if (ownerInt == 9999) {
                 //new owner to add, jsp should display additional fields after the first submit is processed, so redirect
-                url = "/admin/addResourceOwner.jsp";
+                url = "/addResourceOwner.jsp";
 
             } else {
                 if (ownerInt == 8888) {
@@ -95,7 +95,7 @@ public class AddResourceOwner extends HttpServlet {
                     logger.debug("chose an existing owner: " + resource.getOwner().toString());
 
                 }//end else
-                url = "/admin/addLocation.jsp";
+                url = "/addLocation.jsp";
             }
             RequestDispatcher dispatcher = req.getRequestDispatcher(url);
             dispatcher.forward(req, res);
@@ -117,7 +117,7 @@ public class AddResourceOwner extends HttpServlet {
             logger.debug("thisOwner after setting to resource: " + resource.getOwner().getName());
                 String message = "you have successfully added the owner" + resource.getOwner().getName() + " to the resource " + resource.getName() + ". ";
                 session.setAttribute("message", message);
-                url = "/admin/addLocation.jsp";
+                url = "/addLocation.jsp";
 
                 RequestDispatcher dispatcher = req.getRequestDispatcher(url);
                 dispatcher.forward(req, res);

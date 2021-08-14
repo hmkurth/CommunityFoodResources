@@ -44,7 +44,7 @@ public class ConfirmResource extends HttpServlet {
         FoodResource resource = (FoodResource) session.getAttribute("newResource");
         Location location = resource.getLocation();
         session.setAttribute("location", location);
-        String url = "/admin/confirmResource.jsp";
+        String url = "/confirmResource.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(req, res);
     }
@@ -61,7 +61,7 @@ public class ConfirmResource extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         HttpSession session = req.getSession();
 
-        String url = "/admin/confirmResource.jsp";
+        String url = "/confirmResource.jsp";
         resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
         String x = req.getParameter("submit");
         session.setAttribute("newResource", resource);//for forwarding/editing purposes
@@ -79,16 +79,16 @@ public class ConfirmResource extends HttpServlet {
 
                     break;
                 case "addLocation":
-                    url = "/admin/addLocation.jsp";
+                    url = "/addLocation.jsp";
                     break;
                 case "addContact":
-                    url = "/admin/addContact.jsp";
+                    url = "/addContact.jsp";
                     break;
                 case "addResourceOwner":
                     url = "/admin/addResourceOwner.jsp";
                     break;
                 case "addResource":
-                    url = "/admin/addResource.jsp";
+                    url = "/addResource.jsp";
                     break;
             }
         }

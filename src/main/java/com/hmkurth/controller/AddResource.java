@@ -111,7 +111,7 @@ public class AddResource extends HttpServlet {
         List<Location> listLocation = ldao.getAll();
         session.setAttribute("allLocations", listLocation);
 
-        String url = "/admin/addResource.jsp";
+        String url = "/addResource.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(req, res);
 
@@ -127,7 +127,7 @@ public class AddResource extends HttpServlet {
      **/
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String url = "admin/addResourceOwner.jsp";
+        String url = "addResourceOwner.jsp";
         FoodResource resource;
         HttpSession session = req.getSession();
         int typeId;
@@ -154,7 +154,7 @@ public class AddResource extends HttpServlet {
             Type thisType = tdao.getById(typeId);
             resource.setTypeId(thisType);
             thisType.addResource(resource);
-            //tdao.saveOrUpdate(thisType);//saves the resource to list in types, but giving me a constraint violation TODO
+
         }
 
 

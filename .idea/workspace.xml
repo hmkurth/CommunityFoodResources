@@ -9,28 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="working on add contact again">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210813 1851.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210814 0042.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210814 0108.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="before trying to move the add resource function to main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210813 1753.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210813 1807.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210813 1815.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210813 1823.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/cfrl_contact_details_1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/currentData/cfrl_contact_details.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/cfrl_food_resources_1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/currentData/cfrl_food_resources.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/cfrl_location_1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/currentData/cfrl_location.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/cfrl_resource_owners_1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/currentData/cfrl_resource_owners.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/cfrl_resource_type_1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/currentData/cfrl_resource_type.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/cfrl_user_roles_1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/currentData/cfrl_user_roles.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/cfrl_users_1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/currentData/cfrl_users.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/seedDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/seedDb.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/sqlExportData.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/indexMain.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/indexMain.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/searchShowcase.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/searchShowcase.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddContact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResourceOwner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ConfirmResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/ConfirmResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/EditResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/EditResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addContact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addContact.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addLocation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addResource.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/addResourceOwner.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addResourceOwner.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/confirmResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/confirmResource.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +72,7 @@
   </component>
   <component name="JspContextManager">
     <jsp-to-context jsp-file="file://$PROJECT_DIR$/src/main/webapp/header.jsp" context-file="file://$PROJECT_DIR$/src/main/webapp/userSignup.jsp" />
-    <jsp-to-context jsp-file="file://$PROJECT_DIR$/src/main/webapp/head.jsp" context-file="file://$PROJECT_DIR$/src/main/webapp/admin/addLocation.jsp" />
+    <jsp-to-context jsp-file="file://$PROJECT_DIR$/src/main/webapp/head.jsp" context-file="file://$PROJECT_DIR$/src/main/webapp/addLocation.jsp" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -144,11 +135,11 @@
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\webapp" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\resources\sql\currentData" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\resources\sql" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\src\main\resources" />
       <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\DesignDocs\sql" />
-      <recent name="C:\Users\heath\IdeaProjects\CommunityFoodResources\CommunityFoodResources\DesignDocs" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -451,14 +442,7 @@
       <workItem from="1628622415227" duration="11902000" />
       <workItem from="1628791947534" duration="14777000" />
       <workItem from="1628919416255" duration="1263000" />
-      <workItem from="1628921194746" duration="973000" />
-    </task>
-    <task id="LOCAL-00137" summary="trying to edit styles...">
-      <created>1624161486070</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1624161486070</updated>
+      <workItem from="1628921194746" duration="1660000" />
     </task>
     <task id="LOCAL-00138" summary="trying to edit styles...">
       <created>1624164212288</created>
@@ -796,7 +780,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628897982373</updated>
     </task>
-    <option name="localTasksCounter" value="186" />
+    <task id="LOCAL-00186" summary="before trying to move the add resource function to main">
+      <created>1628922686817</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1628922686833</updated>
+    </task>
+    <option name="localTasksCounter" value="187" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -829,7 +820,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="messing around with google maps apis" />
     <MESSAGE value="working on a delete resource action" />
     <MESSAGE value="delete resource working" />
     <MESSAGE value="adding edit resource dropdown menu" />
@@ -854,7 +844,8 @@
     <MESSAGE value="reconfiguring resource displays" />
     <MESSAGE value="update tech specs" />
     <MESSAGE value="working on add contact again" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on add contact again" />
+    <MESSAGE value="before trying to move the add resource function to main" />
+    <option name="LAST_COMMIT_MESSAGE" value="before trying to move the add resource function to main" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

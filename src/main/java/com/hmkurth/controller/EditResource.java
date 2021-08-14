@@ -170,15 +170,15 @@ logger.debug("resource at doPost: " + resource);
                         break;
                     case "addLocation":
                         session.setAttribute("location", location);
-                        url = "/admin/addLocation.jsp";
+                        url = "/addLocation.jsp";
                         break;
                     case "addContact":
                         session.setAttribute("contact", contact);
-                        url = "/admin/addContact.jsp";
+                        url = "/addContact.jsp";
                         break;
                     case "addResourceOwner":
                         session.setAttribute("owner", owner);
-                        url = "/admin/addResourceOwner.jsp";
+                        url = "/addResourceOwner.jsp";
                         break;
                     case "deleteResource":
                         message = "are you sure you want to delete  food resource, " + resource.getName() + "?";

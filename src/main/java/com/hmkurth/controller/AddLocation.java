@@ -53,7 +53,7 @@ public class AddLocation extends HttpServlet {
         FoodResource resource = (FoodResource) session.getAttribute("newResource");
 
         session.setAttribute("location", location);
-        String url = "/admin/addLocation.jsp";
+        String url = "/addLocation.jsp";
 
         String x = req.getParameter("submit");
 
@@ -68,7 +68,7 @@ public class AddLocation extends HttpServlet {
                     session.setAttribute("message", message);
                     logger.debug("resource location set to null");
                     //then forward to addContacts
-                    url = "/admin/addContact.jsp";
+                    url = "/addContact.jsp";
                     break;
                 case "addNewLocation":
                     //new location
@@ -89,7 +89,7 @@ public class AddLocation extends HttpServlet {
                     int locationId = Integer.parseInt(req.getParameter("nextOptions"));
                     location = ldao.getById(locationId);
                     resource.setLocation(location);
-                    url = "/admin/addContact.jsp";
+                    url = "/addContact.jsp";
                     break;
             }
 
@@ -116,7 +116,7 @@ public class AddLocation extends HttpServlet {
 
         HttpSession session = req.getSession();
         String message;
-        String url = "/admin/addLocation.jsp";
+        String url = "/addLocation.jsp";
         Location location2 = new Location();//holder for the converted location
         resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
         location = (Location)session.getAttribute("location");
@@ -174,7 +174,7 @@ public class AddLocation extends HttpServlet {
                 //ldao.insert(location2); // taking this off because the resource is getting added twice...so maybe the location gets added when the resource does??
                 message = "you have successfully  added a  location to the resource " + resource.getName();
                 //then forward to contacts
-                url = "/admin/addContact.jsp";
+                url = "/addContact.jsp";
             } else {
                 logger.debug("else, not new, location2.lat : " + location2.getLat());//lat is null
 

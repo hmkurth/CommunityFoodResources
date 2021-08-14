@@ -5,10 +5,10 @@
   Time: 7:31 AM
   To change this template use File | Settings | File Templates.
 --%>
-<%@include file="../taglib.jsp"%>
-<jsp:include page="../head.jsp"/>
+<%@include file="taglib.jsp"%>
+<jsp:include page="head.jsp"/>
 <title>Add Contact</title>
-<jsp:include page="../header.jsp"/>
+<jsp:include page="header.jsp"/>
 
 
 
@@ -72,4 +72,4 @@
 
 
 </div>
-<jsp:include page="../footer.jsp"/>
+<jsp:include page="footer.jsp"/>

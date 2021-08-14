@@ -1,9 +1,9 @@
 
-<%@include file="../taglib.jsp"%>
-<jsp:include page="../head.jsp"/>
+<%@include file="taglib.jsp"%>
+<jsp:include page="head.jsp"/>
 <title>Add or Edit a Resource</title>
 
-<jsp:include page="../header.jsp"/>
+<jsp:include page="header.jsp"/>
 
 <div class="login-container">
     <h1 class="text-center pad-bottom-sm">Add a new resource</h1>
@@ -89,4 +89,4 @@
 
 
 </div>
-<jsp:include page="../footer.jsp"/>
+<jsp:include page="footer.jsp"/>

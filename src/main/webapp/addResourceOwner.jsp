@@ -1,7 +1,7 @@
-<%@include file="../taglib.jsp"%>
-<jsp:include page="../head.jsp"/>
+<%@include file="taglib.jsp"%>
+<jsp:include page="head.jsp"/>
 <title>Add Resource Owner</title>
-<jsp:include page="../header.jsp"/>
+<jsp:include page="header.jsp"/>
 
 
 
@@ -13,8 +13,7 @@
 
         <div class="form-group">
             <label for="owner">Resource Owner(optional field to connect different food resources with a common owner)
-                <!-- //TODO drop down menu of resource owners set in the servlet
-                    //https://www.codejava.net/java-ee/jsp/how-to-create-dynamic-drop-down-list-in-jsp-from-database -->
+                <!-- drop down menu of resource owners set in the servlet -->
                 <select name="owner" id="owner">
                     <!-- option to add new first, then if yes, another menu for adding owner should appear-->
                     <option value='9999'>Add New Owner</option>
@@ -67,4 +66,4 @@
 
 
 </div>
-<jsp:include page="../footer.jsp"/>
+<jsp:include page="footer.jsp"/>

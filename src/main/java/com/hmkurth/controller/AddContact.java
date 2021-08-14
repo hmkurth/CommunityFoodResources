@@ -45,7 +45,7 @@ public class AddContact extends HttpServlet {
      */
     protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         HttpSession session = req.getSession();
-        String url = "/admin/addContact.jsp";
+        String url = "/addContact.jsp";
         session.setAttribute("listContact", listContact);
         resource = (FoodResource) session.getAttribute("newResource"); //get the unsaved resource from the previous request
 
@@ -62,7 +62,7 @@ public class AddContact extends HttpServlet {
                 resource.setContactId(null);
                 String message = "you have chosen not to add a contact to the resource " + resource.getName();
                 session.setAttribute("message", message);
-                url = "/admin/confirmResource.jsp";
+                url = "/confirmResource.jsp";
             }else if (contactInt == 2222) {
                 contact = resource.getContactId();
                 session.setAttribute("contact", contact);
@@ -74,7 +74,7 @@ public class AddContact extends HttpServlet {
                 session.setAttribute("contact", contact);
                 String message = "you have successfully added the contact, " + resource.getContactId().getFirstName() + " to the resource " + resource.getName();
                 session.setAttribute("message", message);
-                url = "/admin/confirmResource.jsp";
+                url = "/confirmResource.jsp";
 
             }//end else
             session.setAttribute("contact", contact);
@@ -97,7 +97,7 @@ public class AddContact extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 //todo, clean up duplicate code!
         HttpSession session = req.getSession();
-        String url = "/admin/addContact.jsp";
+        String url = "/addContact.jsp";
         String message = "";
         String x1 = req.getParameter("submit");
             contact= (Contact) session.getAttribute("contact");
@@ -135,7 +135,7 @@ public class AddContact extends HttpServlet {
                    // cdao.saveOrUpdate(contact);
                     // fdao.insert(resource);  when i had this here it was adding to my db twice
                     message = "you have successfully added the contact" + resource.getContactId().toString() + " to the resource " + resource.getName() + ". ";
-                    url = "/admin/confirmResource.jsp";
+                    url = "/confirmResource.jsp";
                 }
                 resource.setContactId(contact);
                 cdao.saveOrUpdate(contact); //adding twice so removing, NOT,

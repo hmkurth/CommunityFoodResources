@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<jsp:include page="../taglib.jsp" />
-<jsp:include page="../head.jsp" />
-<jsp:include page="../header.jsp"/>
+<jsp:include page="taglib.jsp" />
+<jsp:include page="head.jsp" />
+<jsp:include page="header.jsp"/>
 
 <div class="login-container">
     <h3>Location Details</h3>
@@ -77,4 +77,4 @@
 </div>
 
 </div>
-<jsp:include page="../footer.jsp"/>
+<jsp:include page="footer.jsp"/>
