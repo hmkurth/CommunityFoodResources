@@ -12,7 +12,9 @@
 <title>Delete User Confirmation</title>
 
 <!-- if submit was pushed, display message only show confirm delete if submit is not null -->
-
+<!-- Begin main page content -->
+<div class="content" id="main_content">
+    <div class="container">
     <h3>${message}</h3>
 
     <form action="${pageContext.request.contextPath}/deleteUserAction"  method="post" autocomplete="on">

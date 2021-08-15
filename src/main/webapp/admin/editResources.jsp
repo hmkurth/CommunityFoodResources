@@ -4,8 +4,9 @@
 <title>Add or Edit a Resource</title>
 
 <jsp:include page="../header.jsp"/>
-
-<div class="login-container">
+<!-- Begin main page content -->
+<div class="content" id="main_content">
+    <div class="container">
     <h5 class = "row text-center pad-bottom-sm">${message} </h5>
     <h3 class="text-center pad-bottom-sm">Edit an existing resource</h3>
 

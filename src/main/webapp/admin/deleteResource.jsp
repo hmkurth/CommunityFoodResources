@@ -4,8 +4,9 @@
 <title>Delete Resource</title>
 
 <jsp:include page="../header.jsp" />
-
-<div class="container">
+<!-- Begin main page content -->
+<div class="content" id="main_content">
+    <div class="container">
     <h4>${message}</h4>
 
 

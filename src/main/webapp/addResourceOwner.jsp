@@ -3,7 +3,8 @@
 <title>Add Resource Owner</title>
 <jsp:include page="header.jsp"/>
 
-
+<!-- Begin main page content -->
+<div class="content" id="main_content">
 
 <div class="login-container">
     <h1 class="text-center pad-bottom-sm">Add Resource Owner </h1>

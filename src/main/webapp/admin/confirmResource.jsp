@@ -6,7 +6,9 @@
 
 
 
-
+<!-- Begin main page content -->
+<div class="content" id="main_content">
+    <div class="container">
 <div class="row pad-bottom">
 
     <div class="col-md-10 col-md-offset-1">

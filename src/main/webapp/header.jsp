@@ -6,27 +6,6 @@
 			<div class="top-header">
 				<div class="container">
 
-					<!-- Skip to content link allows users rendering the site on a screen reader to skip past navigational elements
-					<div class="menu-block pull-left no-pad hidden-xs">
-						<a href="indexMain.jsp" class="btn btn-link scroller"><em class="fa fa-level-down" aria-hidden="true"></em> Skip to Content &nbsp;</a>
-					</div>
--->
-					<!-- This is optional, comment out if you do not need this set of dropdowns at the top   TODO try to get these langs to work!
-					<div class="dropdown pull-left">
-						<button class="btn btn-link dropdown-toggle" type="button" id="lang_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-						<em class="fa fa-globe" aria-hidden="true"></em> English
-						<span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu" aria-labelledby="lang_menu">
-							<li><a href="#">English</a></li>
-							<li><a href="#">French</a></li>
-							<li><a href="#">Spanish</a></li>
-							<li><a href="#">Russian</a></li>
-						</ul>
-					</div>
--->
-
-
 					<!-- Enable the user to adjust the font size of the web page -->
 					<div class="menu-block pull-left hidden-xs">Increase Text Size:</div>
 					<button type="button" class="btn btn-link pull-left hidden-xs increase-font" aria-label="Increase"><em class="fa fa-plus" aria-hidden="true"></em></button>
@@ -46,12 +25,13 @@
 			</div>
 
 
-			<!-- trying to make a row for the headline name, only for use on index page
-			<c:if test="${ empty loggedInUser}">
-				<div class="container navbar-header banner">
-					<h2 class="text-center">Madison Community Food Resources</h2>
-				</div>
-			</c:if>
+
+				<!-- trying to make a row for the headline name, only for use on index page
+				<c:if test="${ empty loggedInUser}">
+					<div class="container navbar-header banner">
+						<h2 class="text-center">Madison Community Food Resources</h2>
+					</div>
+				</c:if>
 
 -->
 
@@ -68,7 +48,7 @@
 
 
 								<a class="navbar-brand pad-bottom" href="${pageContext.request.contextPath}/index.jsp">
-									<img src="${pageContext.request.contextPath}/assets/img/logos/sunLiteLogoRound.png" class="img-circle"
+									<img src="${pageContext.request.contextPath}/assets/img/logos/sunLiteLogoRound.png" class="img-circle img-responsive"
 										 alt="Back to home" />
 								</a>
 
@@ -76,8 +56,8 @@
 
 
 				<!-- Main site header -->
-				<div class="collapse navbar-collapse  pull-right" id="top_main_navigation">
-				<ul class="nav navbar-nav  pull-right">
+				<div class="collapse navbar-collapse " id="top_main_navigation">
+				<ul class="nav navbar-nav ">
 						<li><a href="${pageContext.request.contextPath}/forwardResources">Find Food Resources</a></li>
 						<li><a href="${pageContext.request.contextPath}/addResource">Add A Community Food Resource</a></li>
 						<li><a href="${pageContext.request.contextPath}/aboutProject.jsp">About This Project</a></li>
@@ -85,7 +65,6 @@
 					</ul>
 
 				 </div>
-			</div>
 			</div>
 
 		</nav>

@@ -2,6 +2,8 @@
 <jsp:include page="taglib.jsp" />
 <jsp:include page="head.jsp" />
 <jsp:include page="header.jsp"/>
+<!-- Begin main page content -->
+<div class="content" id="main_content">
 
 <div class="login-container">
     <h3>Location Details</h3>

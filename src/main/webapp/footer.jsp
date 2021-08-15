@@ -6,7 +6,7 @@
 
 
                 <address>
-                    <strong>Built by: Heather Kurth</strong>
+                    <strong>A Java Webapp by Heather Kurth.  I am actively seeking employment in Web Software and Java Development, get in touch with me with opportunities.</strong>
                 </address>
 
         </div>

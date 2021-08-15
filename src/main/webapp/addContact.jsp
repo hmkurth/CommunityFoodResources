@@ -10,6 +10,8 @@
 <title>Add Contact</title>
 <jsp:include page="header.jsp"/>
 
+<!-- Begin main page content -->
+<div class="content" id="main_content">
 
 
 <div class="login-container">

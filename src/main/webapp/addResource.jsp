@@ -16,7 +16,7 @@
     You will then have the option to add contact details.  This could be a specific person, or the office of an agency.  Please provide as accurate answers as possible in order to provide the best service to our community.
     Thanks for your contribution!</p>
 
-    <form action="${pageContext.request.contextPath}/addResource"  method="post" autocomplete="on" class="form-inline pad-top-sm">
+    <form action="${pageContext.request.contextPath}/addResource"  method="post" autocomplete="on" class="form pad-top-sm">
         <div class="form-group">
             <label for="name">Resource Name</label>
             <input type="text" class="form-control" id="name" name ="name" placeholder="Give this resource a name"  aria-required="true" required value="${newResource.name}">
