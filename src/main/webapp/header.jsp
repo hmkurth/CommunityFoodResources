@@ -15,10 +15,15 @@
 					<div class="menu-block pull-right no-pad">
 						<!-- Login dropdown Insert login.jsp  but need a button that points to it for auth  -->
 						<c:if test="${ empty loggedInUser}">
+							<p>Welcome To Madison Food Resources, please
 							<a href="${pageContext.request.contextPath}/loginAction" class=" btn-login" ><em class="fa fa-lock" aria-hidden="true"></em>  Sign In</a>
+							</p>
 						</c:if>
+
 						<c:if test="${ !empty loggedInUser}">
+							<p>Welcome, ${loggedInUser}
 							<a href="${pageContext.request.contextPath}/logOut" class=" btn-login" ><em class="fa fa-lock" aria-hidden="true"></em>  Log Out</a>
+							</p>
 						</c:if>
 					</div>
 				</div>
@@ -48,7 +53,7 @@
 
 
 								<a class="navbar-brand pad-bottom" href="${pageContext.request.contextPath}/index.jsp">
-									<img src="${pageContext.request.contextPath}/assets/img/logos/sunLiteLogoRound.png" class="img-circle img-responsive"
+									<img src="${pageContext.request.contextPath}/assets/img/logos/sunLiteLogoRound.png" class="img-circle "
 										 alt="Back to home" />
 								</a>
 
@@ -56,8 +61,8 @@
 
 
 				<!-- Main site header -->
-				<div class="collapse navbar-collapse " id="top_main_navigation">
-				<ul class="nav navbar-nav ">
+				<div class="collapse navbar-collapse navbar-default  myBlock " id="top_main_navigation">
+				<ul class="nav navbar-nav">
 						<li><a href="${pageContext.request.contextPath}/forwardResources">Find Food Resources</a></li>
 						<li><a href="${pageContext.request.contextPath}/addResource">Add A Community Food Resource</a></li>
 						<li><a href="${pageContext.request.contextPath}/aboutProject.jsp">About This Project</a></li>

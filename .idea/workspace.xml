@@ -9,28 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="styling ad resource">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210814 0405.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210814 0412.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210814 2240.log" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="editing styles, looking at mobile/responsiveness">
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210814 2357.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210815 0023.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210814 0301.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210814 0335.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210814 0341.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/addContact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addContact.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/addLocation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addLocation.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/addResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addResource.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/addResourceOwner.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addResourceOwner.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/confirmResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/confirmResource.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/deleteResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/deleteResource.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/deleteUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/deleteUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/deleteUserConfirmation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/deleteUserConfirmation.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/editResources.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/editResources.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/logoutConfirmation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/logoutConfirmation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210814 0405.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210814 0412.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/adminHome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/adminHome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/bootstrap/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/bootstrap/bootstrap.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/footer.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -453,14 +442,7 @@
       <workItem from="1628791947534" duration="14777000" />
       <workItem from="1628919416255" duration="1263000" />
       <workItem from="1628921194746" duration="10005000" />
-      <workItem from="1629000911827" duration="2283000" />
-    </task>
-    <task id="LOCAL-00140" summary="looking a little better...">
-      <created>1624179434951</created>
-      <option name="number" value="00140" />
-      <option name="presentableId" value="LOCAL-00140" />
-      <option name="project" value="LOCAL" />
-      <updated>1624179434985</updated>
+      <workItem from="1629000911827" duration="10218000" />
     </task>
     <task id="LOCAL-00141" summary="looking a little better...">
       <created>1624180083458</created>
@@ -798,7 +780,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628931009633</updated>
     </task>
-    <option name="localTasksCounter" value="189" />
+    <task id="LOCAL-00189" summary="editing styles, looking at mobile/responsiveness">
+      <created>1629003540341</created>
+      <option name="number" value="00189" />
+      <option name="presentableId" value="LOCAL-00189" />
+      <option name="project" value="LOCAL" />
+      <updated>1629003540341</updated>
+    </task>
+    <option name="localTasksCounter" value="190" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -831,7 +820,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adding edit resource dropdown menu" />
     <MESSAGE value="creating separate controller and jsp for edit resource" />
     <MESSAGE value="edit is working!!" />
     <MESSAGE value="trying to get the edited resource's info to persist for editing location" />
@@ -856,7 +844,8 @@
     <MESSAGE value="before trying to move the add resource function to main" />
     <MESSAGE value="after moving the add Resource suite to open app" />
     <MESSAGE value="styling ad resource" />
-    <option name="LAST_COMMIT_MESSAGE" value="styling ad resource" />
+    <MESSAGE value="editing styles, looking at mobile/responsiveness" />
+    <option name="LAST_COMMIT_MESSAGE" value="editing styles, looking at mobile/responsiveness" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
