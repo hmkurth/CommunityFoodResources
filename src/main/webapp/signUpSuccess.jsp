@@ -16,8 +16,8 @@
             <div class="col-md-4 col-md-offset-1">
                 <h3>Thank-you for signing up with Madison Food Resources</h3>
                 <p class="lead">This is a work in progress, and your feedback and contributions are important!<br/>
-                   Please contact me with any problems you have accessing these resources.  <a href="mailto:hmkurth@madisoncollege.edu">Contact Administrator</a><br/>
-                    You can now login to begin exploring</p>
+                   Please contact me with any problems you have accessing these resources, or any suggestions or feedback you may have.  <a href="mailto:hmkurth@madisoncollege.edu">Contact Administrator</a><br/>
+                    You can now login to begin exploring the existing food resources, or add one to our database!</p>
 
                 <a href="${pageContext.request.contextPath}/loginAction" class="btn btn-primary btn-lg">Login </a>
             </div>

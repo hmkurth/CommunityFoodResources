@@ -5,9 +5,7 @@
         <div class="row footer-one">
 
 
-                <address>
-                    <strong>A Java Webapp by Heather Kurth.  I am actively seeking employment in Web Software and Java Development, get in touch with me with opportunities.</strong>
-                </address>
+
 
         </div>
         <div class="row footer-links">
@@ -20,7 +18,10 @@
         </div>
         <div class="row">
             <div class="col-sm-12">
-                <p>Thanks for visiting. This is a work in progress, and your feedback and contributions are important!<br/>
+                <address>
+                    <strong>A Java Webapp by Heather Kurth.  I am actively seeking employment in Web Software and Java Development, get in touch with me with opportunities.</strong>
+                </address>
+                <p>Thank-you for your participation. This is a work in progress, and your feedback and contributions are important!<br/>
                     <a href="mailto:hmkurth@madisoncollege.edu">Please contact me with any problems you have accessing these resources. </a> </p>
                 <p>&copy; 2021 <strong>Madison Food Resources</strong>. All Rights Reserved.</p>
             </div>

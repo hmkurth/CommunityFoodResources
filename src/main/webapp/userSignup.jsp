@@ -34,7 +34,6 @@
             <label for="email_address">Email address</label>
             <input type="email" class="form-control" id="email_address" name ="email" placeholder="Email"  autocomplete="email" aria-required="true" required>
         </div>
-
         <hr />
         <button type="submit" class="btn btn-primary btn-lg">Submit</button>
     </form>

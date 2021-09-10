@@ -8,16 +8,20 @@
             <div class="row">
                 <div class="col-md-5 " >
                     <h2>Welcome To Madison Food Resources</h2>
-                    <h3>A guide to community and public pantries, programs, and other food aid resources</h3>
+                    <h3>A service to find and contribute community and public pantries, programs, and other food aid resources.</h3>
 
                     <!--check if user is logged in before displaying -->
                     <c:if test="${ empty loggedInUser}">
                         <p class="pad-top"><a href="userSignup.jsp" class="btn btn-primary btn-lg">Sign Up</a> <a href="loginAction" class="btn btn-default btn-lg">Sign In</a></p>
                     </c:if>
+                    <c:if test="${ !empty loggedInUser}">
+                    <a href="${pageContext.request.contextPath}/forwardResources" class="btn btn-primary btn-lg">Find Food Resources</a>
+                    </c:if>
                 </div>
 
                 <div class="col-md-6 ">
                     <img src="${pageContext.request.contextPath}/assets/img/logos/sunLogo.png" alt="madison food resources logo" class="fa-align-center img img-responsive img-circle" />
+
                 </div>
             </div>
 

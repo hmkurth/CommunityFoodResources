@@ -6,15 +6,16 @@
 <jsp:include page="header.jsp"/>
 <!-- Begin main page content -->
 <div class="content" id="main_content">
-    <div class="container">
-    <br/>
-    <br/>
-    <h1 class="text-center pad-bottom-sm pad-top">Add a new community food resource</h1>
-    <p class="lead"><strong>Thank you for contributing to the community resource collection.</strong><br/>
-        Our database takes in information about the resource in 4 sections, or related fields.
-    The first section will go through general details, the next section asks for a specific location, if applicable.  You will next have the option to add a resource owner, for groups that may have more than one resource/service to offer.
-    You will then have the option to add contact details.  This could be a specific person, or the office of an agency.  Please provide as accurate answers as possible in order to provide the best service to our community.
-    Thanks for your contribution!</p>
+    <div class="container-fluid login-container">
+    <h2 class="text-center pad-bottom-sm pad-top">Add a new community food resource</h2>
+        <p class="lead"><strong>Thank you for contributing to the community resource collection.</strong><br/></p>
+        <p>
+        Our database takes in information about the resource in 4 sections, or related fields. <br>
+    The first section will go through general details, the next section asks for a specific location, if applicable. <br>
+        You will next have the option to add a resource owner, for groups that may have more than one resource/service to offer. <br>
+    You will then have the option to add contact details.  This could be a specific person, or the office of an agency.  <br>
+        Please provide as accurate answers as possible in order to provide the best service to our community.
+    Thank you for your contribution!</p>
 
     <form action="${pageContext.request.contextPath}/addResource"  method="post" autocomplete="on" class="form pad-top-sm">
         <div class="form-group">
@@ -85,16 +86,8 @@
 
         <hr />
         <h3>Next you be given the option to add a location, a resource owner, and contacts for this resource</h3>
-        <input type="submit" class="btn btn-primary btn-lg"  name="submit" value="confirm">
+        <input type="submit" class="btn btn-primary btn-lg"  name="submit" value="Next">
     </form>
-
-<c:if test="${param.submit == true}"  >
-    <p><a href="/addResourceOwner" class="btn btn-primary btn-lg">Add an owner to this resource</a>
-    <a href="/addContact" class="btn btn-primary btn-lg">Add contact details for this resource</a>>
-    <a href="/addLocation" class="btn btn-primary btn-lg">Add location for this resource</a> </p>
-
-</c:if>
-
 
 </div>
 <jsp:include page="footer.jsp"/>

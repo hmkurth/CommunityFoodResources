@@ -160,7 +160,7 @@ public class AddResource extends HttpServlet {
 
         logger.debug("Resource at 'confirm: : " + resource.toString());
         String x = req.getParameter("submit");
-        if (x != null && x.equals("confirm")) {
+        if (x != null && x.equals("Next")) {
             session.setAttribute("newResourceId", resource.getId());
             session.setAttribute("newResource", resource);
             //forward this resource id to add owner, contact, or location servlets
