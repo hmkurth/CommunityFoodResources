@@ -9,31 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="editing styles, looking at mobile/responsiveness, better, but not quite there">
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210910 0027.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210910 0036.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/hibernate_20210910 0438.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/data9_21/cfrl_contact_details.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/data9_21/cfrl_food_resources.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/data9_21/cfrl_location.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/data9_21/cfrl_resource_owners.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/data9_21/cfrl_resource_type.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/data9_21/cfrl_user_roles.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/data9_21/cfrl_users.sql" afterDir="false" />
+    <list default="true" id="bc1f50c6-bc07-45b2-a2de-a05b9d34fc8f" name="Default Changelist" comment="content edits">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/CommunityFoodResources.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/CommunityFoodResources.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/hibernate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210814 2357.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210815 0023.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/hibernate_20210815 0028.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/addResource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addResource.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/bootstrap/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/bootstrap/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/banner.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/banner.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/indexMain.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/indexMain.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/signUpSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/signUpSuccess.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/userSignup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/userSignup.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hmkurth/controller/AddLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/aboutProject.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/aboutProject.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,17 +149,6 @@
     </key>
   </component>
   <component name="RunManager" selected="TomEE Server.Tomcat">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ApiTestServiceClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CommunityFoodResources" />
       <extension name="coverage">
@@ -467,14 +435,9 @@
       <workItem from="1628919416255" duration="1263000" />
       <workItem from="1628921194746" duration="10005000" />
       <workItem from="1629000911827" duration="12083000" />
-      <workItem from="1631250916360" duration="7126000" />
-    </task>
-    <task id="LOCAL-00142" summary="styled some of the minified css and reminified">
-      <created>1624409353938</created>
-      <option name="number" value="00142" />
-      <option name="presentableId" value="LOCAL-00142" />
-      <option name="project" value="LOCAL" />
-      <updated>1624409353938</updated>
+      <workItem from="1631250916360" duration="8039000" />
+      <workItem from="1632253218812" duration="435000" />
+      <workItem from="1632437081974" duration="1869000" />
     </task>
     <task id="LOCAL-00143" summary="working on ownerSuccess.jsp">
       <created>1624411647603</created>
@@ -812,7 +775,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629012139505</updated>
     </task>
-    <option name="localTasksCounter" value="191" />
+    <task id="LOCAL-00191" summary="content edits">
+      <created>1631268543331</created>
+      <option name="number" value="00191" />
+      <option name="presentableId" value="LOCAL-00191" />
+      <option name="project" value="LOCAL" />
+      <updated>1631268543331</updated>
+    </task>
+    <option name="localTasksCounter" value="192" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -845,7 +815,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit is working!!" />
     <MESSAGE value="trying to get the edited resource's info to persist for editing location" />
     <MESSAGE value="added dropdown menu in addLocation to choose from existing locations" />
     <MESSAGE value="adding display details" />
@@ -870,7 +839,8 @@
     <MESSAGE value="styling ad resource" />
     <MESSAGE value="editing styles, looking at mobile/responsiveness" />
     <MESSAGE value="editing styles, looking at mobile/responsiveness, better, but not quite there" />
-    <option name="LAST_COMMIT_MESSAGE" value="editing styles, looking at mobile/responsiveness, better, but not quite there" />
+    <MESSAGE value="content edits" />
+    <option name="LAST_COMMIT_MESSAGE" value="content edits" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

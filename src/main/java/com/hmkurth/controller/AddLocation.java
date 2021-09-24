@@ -21,12 +21,9 @@ import java.util.List;
 /**
  * This servlet will allow a user to enter a location into the db,
  * It will also use the geolocation Api to get the lat and lng of that location, and input that as well
- * TODO how to use maplocation, do i really need that?? I think everything i need  is in the api location class,
  * should that be in a different servlet, or do i want to do it all while inserting/adding?
  */
-//TODO error handling!  check and redirect!!!
 @WebServlet(name = "AddLocation", urlPatterns = { "/addLocation" } )
-
 
 public class AddLocation extends HttpServlet {
 
